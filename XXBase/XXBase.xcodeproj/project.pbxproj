@@ -10,6 +10,7 @@
 		9AF3E9E61C3CBC60009DDD15 /* XXBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AF3E9E51C3CBC60009DDD15 /* XXBase.h */; };
 		9AF3E9FF1C3CBD0B009DDD15 /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9FC1C3CBD0B009DDD15 /* NSStringEx.m */; };
 		9AF3EA001C3CBD0B009DDD15 /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9FE1C3CBD0B009DDD15 /* PYMethod.m */; };
+		9AF3EA191C3CC23C009DDD15 /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3EA181C3CC23C009DDD15 /* UIScreenEx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,8 @@
 		9AF3E9FC1C3CBD0B009DDD15 /* NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringEx.m; sourceTree = "<group>"; };
 		9AF3E9FD1C3CBD0B009DDD15 /* PYMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMethod.h; sourceTree = "<group>"; };
 		9AF3E9FE1C3CBD0B009DDD15 /* PYMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMethod.m; sourceTree = "<group>"; };
+		9AF3EA171C3CC23C009DDD15 /* UIScreenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreenEx.h; sourceTree = "<group>"; };
+		9AF3EA181C3CC23C009DDD15 /* UIScreenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenEx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				9AF3E9FC1C3CBD0B009DDD15 /* NSStringEx.m */,
 				9AF3E9FD1C3CBD0B009DDD15 /* PYMethod.h */,
 				9AF3E9FE1C3CBD0B009DDD15 /* PYMethod.m */,
+				9AF3EA171C3CC23C009DDD15 /* UIScreenEx.h */,
+				9AF3EA181C3CC23C009DDD15 /* UIScreenEx.m */,
 			);
 			path = kindextension;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF3E9FF1C3CBD0B009DDD15 /* NSStringEx.m in Sources */,
+				9AF3EA191C3CC23C009DDD15 /* UIScreenEx.m in Sources */,
 				9AF3EA001C3CBD0B009DDD15 /* PYMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +334,7 @@
 				9AF3E9ED1C3CBC60009DDD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AF3E9F81C3CBCE7009DDD15 /* Build configuration list for PBXNativeTarget "kindextension" */ = {
 			isa = XCConfigurationList;
@@ -336,6 +343,7 @@
 				9AF3E9FA1C3CBCE7009DDD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
