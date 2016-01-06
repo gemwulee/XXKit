@@ -9,14 +9,34 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>foundationex.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>kindextension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>uikitex.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>9ADF87F21C3D384C0021D17C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9ADF87FF1C3D426D0021D17C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9AF3E9E11C3CBC60009DDD15</key>
 		<dict>
 			<key>primary</key>

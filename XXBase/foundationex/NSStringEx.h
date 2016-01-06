@@ -11,7 +11,7 @@
 
 @interface NSString (other)
 -(NSRange)firstRangeOfEmojiInRange:(NSRange)searchRange;
-+(NSString *)removeSpaceAndLinebreak:(NSString *)str;
+-(NSString *)stringByTrim;
 @end
 
 @interface NSString(NSData)

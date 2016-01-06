@@ -118,9 +118,9 @@ char convertCharFromAsc(unichar uchar) {
     return retRange;
 }
 
-+ (NSString *)removeSpaceAndLinebreak:(NSString *)str
+- (NSString *)stringByTrim
 {
-    if (str == nil) return nil;
+    if (self == nil) return nil;
     NSString *temp = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (temp == nil) return nil;
     NSString *result = [temp stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];

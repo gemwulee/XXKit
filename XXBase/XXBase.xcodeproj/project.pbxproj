@@ -7,13 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9ADF88031C3D426D0021D17C /* uikitex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ADF88021C3D426D0021D17C /* uikitex.h */; };
+		9ADF88051C3D426D0021D17C /* uikitex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF88041C3D426D0021D17C /* uikitex.m */; };
+		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
+		9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880C1C3D42C90021D17C /* PYMethod.m */; };
+		9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880E1C3D42C90021D17C /* UIScreenEx.m */; };
 		9AF3E9E61C3CBC60009DDD15 /* XXBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AF3E9E51C3CBC60009DDD15 /* XXBase.h */; };
-		9AF3E9FF1C3CBD0B009DDD15 /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9FC1C3CBD0B009DDD15 /* NSStringEx.m */; };
-		9AF3EA001C3CBD0B009DDD15 /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9FE1C3CBD0B009DDD15 /* PYMethod.m */; };
-		9AF3EA191C3CC23C009DDD15 /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3EA181C3CC23C009DDD15 /* UIScreenEx.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9ADF87F11C3D384C0021D17C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				9ADF88031C3D426D0021D17C /* uikitex.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ADF87FE1C3D426D0021D17C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF3E9E01C3CBC60009DDD15 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,38 +45,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AF3E9F01C3CBCE7009DDD15 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9ADF87F31C3D384C0021D17C /* libfoundationex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfoundationex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ADF88001C3D426D0021D17C /* libuikitex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuikitex.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ADF88021C3D426D0021D17C /* uikitex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uikitex.h; sourceTree = "<group>"; };
+		9ADF88041C3D426D0021D17C /* uikitex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uikitex.m; sourceTree = "<group>"; };
+		9ADF88091C3D42C90021D17C /* NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringEx.h; sourceTree = "<group>"; };
+		9ADF880A1C3D42C90021D17C /* NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringEx.m; sourceTree = "<group>"; };
+		9ADF880B1C3D42C90021D17C /* PYMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMethod.h; sourceTree = "<group>"; };
+		9ADF880C1C3D42C90021D17C /* PYMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMethod.m; sourceTree = "<group>"; };
+		9ADF880D1C3D42C90021D17C /* UIScreenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreenEx.h; sourceTree = "<group>"; };
+		9ADF880E1C3D42C90021D17C /* UIScreenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenEx.m; sourceTree = "<group>"; };
 		9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXXBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9E51C3CBC60009DDD15 /* XXBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBase.h; sourceTree = "<group>"; };
-		9AF3E9F21C3CBCE7009DDD15 /* libkindextension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libkindextension.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AF3E9FB1C3CBD0B009DDD15 /* NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringEx.h; sourceTree = "<group>"; };
-		9AF3E9FC1C3CBD0B009DDD15 /* NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringEx.m; sourceTree = "<group>"; };
-		9AF3E9FD1C3CBD0B009DDD15 /* PYMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMethod.h; sourceTree = "<group>"; };
-		9AF3E9FE1C3CBD0B009DDD15 /* PYMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMethod.m; sourceTree = "<group>"; };
-		9AF3EA171C3CC23C009DDD15 /* UIScreenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreenEx.h; sourceTree = "<group>"; };
-		9AF3EA181C3CC23C009DDD15 /* UIScreenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenEx.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9AF3E9DF1C3CBC60009DDD15 /* Frameworks */ = {
+		9ADF87F01C3D384C0021D17C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AF3E9EF1C3CBCE7009DDD15 /* Frameworks */ = {
+		9ADF87FD1C3D426D0021D17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF3E9DF1C3CBC60009DDD15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,11 +87,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9ADF87F41C3D384C0021D17C /* foundationex */ = {
+			isa = PBXGroup;
+			children = (
+				9ADF88091C3D42C90021D17C /* NSStringEx.h */,
+				9ADF880A1C3D42C90021D17C /* NSStringEx.m */,
+				9ADF880B1C3D42C90021D17C /* PYMethod.h */,
+				9ADF880C1C3D42C90021D17C /* PYMethod.m */,
+				9ADF880D1C3D42C90021D17C /* UIScreenEx.h */,
+				9ADF880E1C3D42C90021D17C /* UIScreenEx.m */,
+			);
+			path = foundationex;
+			sourceTree = "<group>";
+		};
+		9ADF88011C3D426D0021D17C /* uikitex */ = {
+			isa = PBXGroup;
+			children = (
+				9ADF88021C3D426D0021D17C /* uikitex.h */,
+				9ADF88041C3D426D0021D17C /* uikitex.m */,
+			);
+			path = uikitex;
+			sourceTree = "<group>";
+		};
 		9AF3E9D91C3CBC60009DDD15 = {
 			isa = PBXGroup;
 			children = (
 				9AF3E9E41C3CBC60009DDD15 /* XXBase */,
-				9AF3E9F31C3CBCE7009DDD15 /* kindextension */,
+				9ADF87F41C3D384C0021D17C /* foundationex */,
+				9ADF88011C3D426D0021D17C /* uikitex */,
 				9AF3E9E31C3CBC60009DDD15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */,
-				9AF3E9F21C3CBCE7009DDD15 /* libkindextension.a */,
+				9ADF87F31C3D384C0021D17C /* libfoundationex.a */,
+				9ADF88001C3D426D0021D17C /* libuikitex.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,22 +137,43 @@
 			path = XXBase;
 			sourceTree = "<group>";
 		};
-		9AF3E9F31C3CBCE7009DDD15 /* kindextension */ = {
-			isa = PBXGroup;
-			children = (
-				9AF3E9FB1C3CBD0B009DDD15 /* NSStringEx.h */,
-				9AF3E9FC1C3CBD0B009DDD15 /* NSStringEx.m */,
-				9AF3E9FD1C3CBD0B009DDD15 /* PYMethod.h */,
-				9AF3E9FE1C3CBD0B009DDD15 /* PYMethod.m */,
-				9AF3EA171C3CC23C009DDD15 /* UIScreenEx.h */,
-				9AF3EA181C3CC23C009DDD15 /* UIScreenEx.m */,
-			);
-			path = kindextension;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9ADF87F21C3D384C0021D17C /* foundationex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ADF87FB1C3D384C0021D17C /* Build configuration list for PBXNativeTarget "foundationex" */;
+			buildPhases = (
+				9ADF87EF1C3D384C0021D17C /* Sources */,
+				9ADF87F01C3D384C0021D17C /* Frameworks */,
+				9ADF87F11C3D384C0021D17C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foundationex;
+			productName = foundationex;
+			productReference = 9ADF87F31C3D384C0021D17C /* libfoundationex.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9ADF87FF1C3D426D0021D17C /* uikitex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ADF88061C3D426D0021D17C /* Build configuration list for PBXNativeTarget "uikitex" */;
+			buildPhases = (
+				9ADF87FC1C3D426D0021D17C /* Sources */,
+				9ADF87FD1C3D426D0021D17C /* Frameworks */,
+				9ADF87FE1C3D426D0021D17C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uikitex;
+			productName = uikitex;
+			productReference = 9ADF88001C3D426D0021D17C /* libuikitex.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9AF3E9E11C3CBC60009DDD15 /* XXBase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AF3E9EB1C3CBC60009DDD15 /* Build configuration list for PBXNativeTarget "XXBase" */;
@@ -124,23 +191,6 @@
 			productReference = 9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9AF3E9F11C3CBCE7009DDD15 /* kindextension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9AF3E9F81C3CBCE7009DDD15 /* Build configuration list for PBXNativeTarget "kindextension" */;
-			buildPhases = (
-				9AF3E9EE1C3CBCE7009DDD15 /* Sources */,
-				9AF3E9EF1C3CBCE7009DDD15 /* Frameworks */,
-				9AF3E9F01C3CBCE7009DDD15 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = kindextension;
-			productName = kindextension;
-			productReference = 9AF3E9F21C3CBCE7009DDD15 /* libkindextension.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,11 +200,14 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = tomxiang;
 				TargetAttributes = {
-					9AF3E9E11C3CBC60009DDD15 = {
+					9ADF87F21C3D384C0021D17C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = ANJ48A5GCY;
 					};
-					9AF3E9F11C3CBCE7009DDD15 = {
+					9ADF87FF1C3D426D0021D17C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9AF3E9E11C3CBC60009DDD15 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = ANJ48A5GCY;
 					};
@@ -173,12 +226,31 @@
 			projectRoot = "";
 			targets = (
 				9AF3E9E11C3CBC60009DDD15 /* XXBase */,
-				9AF3E9F11C3CBCE7009DDD15 /* kindextension */,
+				9ADF87F21C3D384C0021D17C /* foundationex */,
+				9ADF87FF1C3D426D0021D17C /* uikitex */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9ADF87EF1C3D384C0021D17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */,
+				9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */,
+				9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ADF87FC1C3D426D0021D17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADF88051C3D426D0021D17C /* uikitex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AF3E9DE1C3CBC60009DDD15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,19 +258,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AF3E9EE1C3CBCE7009DDD15 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AF3E9FF1C3CBD0B009DDD15 /* NSStringEx.m in Sources */,
-				9AF3EA191C3CC23C009DDD15 /* UIScreenEx.m in Sources */,
-				9AF3EA001C3CBD0B009DDD15 /* PYMethod.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9ADF87F91C3D384C0021D17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9ADF87FA1C3D384C0021D17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9ADF88071C3D426D0021D17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9ADF88081C3D426D0021D17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9AF3E9E91C3CBC60009DDD15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -297,27 +395,25 @@
 			};
 			name = Release;
 		};
-		9AF3E9F91C3CBCE7009DDD15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9AF3E9FA1C3CBCE7009DDD15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9ADF87FB1C3D384C0021D17C /* Build configuration list for PBXNativeTarget "foundationex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ADF87F91C3D384C0021D17C /* Debug */,
+				9ADF87FA1C3D384C0021D17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9ADF88061C3D426D0021D17C /* Build configuration list for PBXNativeTarget "uikitex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ADF88071C3D426D0021D17C /* Debug */,
+				9ADF88081C3D426D0021D17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9AF3E9DD1C3CBC60009DDD15 /* Build configuration list for PBXProject "XXBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -332,15 +428,6 @@
 			buildConfigurations = (
 				9AF3E9EC1C3CBC60009DDD15 /* Debug */,
 				9AF3E9ED1C3CBC60009DDD15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9AF3E9F81C3CBCE7009DDD15 /* Build configuration list for PBXNativeTarget "kindextension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9AF3E9F91C3CBCE7009DDD15 /* Debug */,
-				9AF3E9FA1C3CBCE7009DDD15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

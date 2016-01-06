@@ -91,6 +91,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9ADF87EE1C3D36DF0021D17C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */,
+				9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */,
+				9AF3E9AC1C3CBB55009DDD15 /* ViewController.h */,
+				9AF3E9AD1C3CBB55009DDD15 /* ViewController.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
 		9AF3E99A1C3CBB55009DDD15 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +127,7 @@
 		9AF3E9A51C3CBB55009DDD15 /* XXKit */ = {
 			isa = PBXGroup;
 			children = (
-				9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */,
-				9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */,
-				9AF3E9AC1C3CBB55009DDD15 /* ViewController.h */,
-				9AF3E9AD1C3CBB55009DDD15 /* ViewController.m */,
+				9ADF87EE1C3D36DF0021D17C /* App */,
 				9AF3E9AF1C3CBB55009DDD15 /* Main.storyboard */,
 				9AF3E9B21C3CBB55009DDD15 /* Assets.xcassets */,
 				9AF3E9B41C3CBB55009DDD15 /* LaunchScreen.storyboard */,
@@ -441,7 +449,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/XXBase/";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/XXBase/",
+					"$(PROJECT_DIR)/XXBase/XXBase/",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -479,7 +490,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/XXBase/";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/XXBase/",
+					"$(PROJECT_DIR)/XXBase/XXBase/",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
