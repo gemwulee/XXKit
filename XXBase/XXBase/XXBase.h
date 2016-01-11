@@ -10,4 +10,5 @@
 
 #import "foundationex/NSStringEx.h"
 #import "foundationex/UISCreenEx.h"
+#import "macro/XXMacro.h"
 

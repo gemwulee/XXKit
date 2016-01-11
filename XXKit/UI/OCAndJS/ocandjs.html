@@ -1,0 +1,36 @@
+<html>
+    <!--描述网页信息-->
+    <head>
+        <meta charset="UTF-8"/>
+        <title>iOS上webView与JS交互的demo</title>
+        <script>
+            function show()
+            {
+                alert('你调用了show->1');
+            }
+            function showTitle()
+            {
+                alert(document.title);
+            }
+            function repost()
+            {
+                location.href = "http://www.iosxxx.com";
+            }
+            function sum()
+            {
+                return 1 + 1;
+            }
+            function btnClick()
+            {
+                location.href = "xmg://call";
+            }
+        </script>
+    </head>
+    <!--网页具体内容-->
+    <body>
+        电话号码: 11111111</br>
+        邮箱: xcysuccess@qq.com</br>
+        <button style = "background: red; height: 150px; width: 150px;" onclick = "btnClick();">按钮</button>
+    </body>
+
+</html>

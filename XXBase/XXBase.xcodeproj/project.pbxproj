@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9ADF88031C3D426D0021D17C /* uikitex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ADF88021C3D426D0021D17C /* uikitex.h */; };
-		9ADF88051C3D426D0021D17C /* uikitex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF88041C3D426D0021D17C /* uikitex.m */; };
 		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
 		9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880C1C3D42C90021D17C /* PYMethod.m */; };
 		9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880E1C3D42C90021D17C /* UIScreenEx.m */; };
@@ -22,7 +20,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9ADF88031C3D426D0021D17C /* uikitex.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,14 +47,13 @@
 /* Begin PBXFileReference section */
 		9ADF87F31C3D384C0021D17C /* libfoundationex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfoundationex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADF88001C3D426D0021D17C /* libuikitex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuikitex.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ADF88021C3D426D0021D17C /* uikitex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uikitex.h; sourceTree = "<group>"; };
-		9ADF88041C3D426D0021D17C /* uikitex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uikitex.m; sourceTree = "<group>"; };
 		9ADF88091C3D42C90021D17C /* NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringEx.h; sourceTree = "<group>"; };
 		9ADF880A1C3D42C90021D17C /* NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringEx.m; sourceTree = "<group>"; };
 		9ADF880B1C3D42C90021D17C /* PYMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMethod.h; sourceTree = "<group>"; };
 		9ADF880C1C3D42C90021D17C /* PYMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYMethod.m; sourceTree = "<group>"; };
 		9ADF880D1C3D42C90021D17C /* UIScreenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreenEx.h; sourceTree = "<group>"; };
 		9ADF880E1C3D42C90021D17C /* UIScreenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenEx.m; sourceTree = "<group>"; };
+		9AF3020B1C43882000FA232D /* XXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXMacro.h; sourceTree = "<group>"; };
 		9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXXBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9E51C3CBC60009DDD15 /* XXBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,16 +99,23 @@
 		9ADF88011C3D426D0021D17C /* uikitex */ = {
 			isa = PBXGroup;
 			children = (
-				9ADF88021C3D426D0021D17C /* uikitex.h */,
-				9ADF88041C3D426D0021D17C /* uikitex.m */,
 			);
 			path = uikitex;
+			sourceTree = "<group>";
+		};
+		9AF3020A1C43880300FA232D /* macro */ = {
+			isa = PBXGroup;
+			children = (
+				9AF3020B1C43882000FA232D /* XXMacro.h */,
+			);
+			path = macro;
 			sourceTree = "<group>";
 		};
 		9AF3E9D91C3CBC60009DDD15 = {
 			isa = PBXGroup;
 			children = (
 				9AF3E9E41C3CBC60009DDD15 /* XXBase */,
+				9AF3020A1C43880300FA232D /* macro */,
 				9ADF87F41C3D384C0021D17C /* foundationex */,
 				9ADF88011C3D426D0021D17C /* uikitex */,
 				9AF3E9E31C3CBC60009DDD15 /* Products */,
@@ -247,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ADF88051C3D426D0021D17C /* uikitex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +407,7 @@
 				9ADF87FA1C3D384C0021D17C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ADF88061C3D426D0021D17C /* Build configuration list for PBXNativeTarget "uikitex" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +416,7 @@
 				9ADF88081C3D426D0021D17C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AF3E9DD1C3CBC60009DDD15 /* Build configuration list for PBXProject "XXBase" */ = {
 			isa = XCConfigurationList;
