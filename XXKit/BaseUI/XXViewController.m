@@ -7,7 +7,28 @@
 //
 
 #import "XXViewController.h"
+#import "XXBase.h"
 
 @implementation XXViewController
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor colorWithRed:0xfd/255.0 green:0xfe/255.0 blue:0xf9/255.0 alpha:1]];
+}
+
+-(instancetype)init
+{
+    if(self = [super init]){
+        [self initViewController];
+    }
+    return self;
+}
+
+-(void) initViewController
+{
+    self.extendedLayoutIncludesOpaqueBars = YES;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+}
 
 @end
