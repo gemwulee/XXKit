@@ -74,7 +74,7 @@ CGSize getScreenSize()
 int getStatusBarHeight()
 {
     if (static_statusbarHeight == 0) {
-        CGRect statusBarFrame = kCZUIApplication.statusBarFrame;
+        CGRect statusBarFrame = [UIApplication sharedApplication].statusBarFrame;
         static_statusbarHeight = MIN(statusBarFrame.size.width, statusBarFrame.size.height);
     }
     return static_statusbarHeight;

@@ -121,7 +121,7 @@ char convertCharFromAsc(unichar uchar) {
 - (NSString *)stringByTrim
 {
     if (self == nil) return nil;
-    NSString *temp = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSString *temp = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     if (temp == nil) return nil;
     NSString *result = [temp stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return result;
