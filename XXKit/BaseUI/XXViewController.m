@@ -13,7 +13,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.view setBackgroundColor:[UIColor colorWithRed:0xfd/255.0 green:0xfe/255.0 blue:0xf9/255.0 alpha:1]];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"fdfef9"];
 }
 
 -(instancetype)init

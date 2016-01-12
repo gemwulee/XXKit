@@ -8,11 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6752FE1C451E8100099AF1 /* UIColorEx.m */; };
+		9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6753041C45234600099AF1 /* UIDeviceEx.m */; };
 		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
 		9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880C1C3D42C90021D17C /* PYMethod.m */; };
 		9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880E1C3D42C90021D17C /* UIScreenEx.m */; };
 		9AF3E9E61C3CBC60009DDD15 /* XXBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AF3E9E51C3CBC60009DDD15 /* XXBase.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A67530A1C45287B00099AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF3E9DA1C3CBC60009DDD15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ADF87F21C3D384C0021D17C;
+			remoteInfo = foundationex;
+		};
+		9A67530C1C45287B00099AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF3E9DA1C3CBC60009DDD15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ADF87FF1C3D426D0021D17C;
+			remoteInfo = uikitex;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9ADF87F11C3D384C0021D17C /* CopyFiles */ = {
@@ -48,6 +66,8 @@
 /* Begin PBXFileReference section */
 		9A6752FD1C451E8100099AF1 /* UIColorEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorEx.h; sourceTree = "<group>"; };
 		9A6752FE1C451E8100099AF1 /* UIColorEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorEx.m; sourceTree = "<group>"; };
+		9A6753031C45234600099AF1 /* UIDeviceEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceEx.h; sourceTree = "<group>"; };
+		9A6753041C45234600099AF1 /* UIDeviceEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceEx.m; sourceTree = "<group>"; };
 		9ADF87F31C3D384C0021D17C /* libfoundationex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfoundationex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADF88001C3D426D0021D17C /* libuikitex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuikitex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADF88091C3D42C90021D17C /* NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringEx.h; sourceTree = "<group>"; };
@@ -97,6 +117,8 @@
 				9ADF880E1C3D42C90021D17C /* UIScreenEx.m */,
 				9A6752FD1C451E8100099AF1 /* UIColorEx.h */,
 				9A6752FE1C451E8100099AF1 /* UIColorEx.m */,
+				9A6753031C45234600099AF1 /* UIDeviceEx.h */,
+				9A6753041C45234600099AF1 /* UIDeviceEx.m */,
 			);
 			path = foundationex;
 			sourceTree = "<group>";
@@ -193,6 +215,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				9A67530B1C45287B00099AF1 /* PBXTargetDependency */,
+				9A67530D1C45287B00099AF1 /* PBXTargetDependency */,
 			);
 			name = XXBase;
 			productName = XXBase;
@@ -248,6 +272,7 @@
 				9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */,
 				9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */,
 				9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */,
+				9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */,
 				9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +292,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A67530B1C45287B00099AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ADF87F21C3D384C0021D17C /* foundationex */;
+			targetProxy = 9A67530A1C45287B00099AF1 /* PBXContainerItemProxy */;
+		};
+		9A67530D1C45287B00099AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ADF87FF1C3D426D0021D17C /* uikitex */;
+			targetProxy = 9A67530C1C45287B00099AF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9ADF87F91C3D384C0021D17C /* Debug */ = {
