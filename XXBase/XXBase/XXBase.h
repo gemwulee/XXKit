@@ -10,5 +10,6 @@
 
 #import "foundationex/NSStringEx.h"
 #import "foundationex/UISCreenEx.h"
+#import "foundationex/UIColorEx.h"
 #import "macro/XXMacro.h"
 
