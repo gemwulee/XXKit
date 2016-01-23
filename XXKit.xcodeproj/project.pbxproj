@@ -12,8 +12,6 @@
 		4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F751C53242500308B12 /* libfoundationex.a */; };
 		9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF302151C438B7E00FA232D /* XXNavigationController.m */; };
 		9AF302191C438B9400FA232D /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF302181C438B9400FA232D /* XXViewController.m */; };
-		9AF3021B1C438C5C00FA232D /* ocandjs.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AF3021A1C438C5C00FA232D /* ocandjs.html */; };
-		9AF3021E1C438CAC00FA232D /* OCAndJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3021D1C438CAC00FA232D /* OCAndJSViewController.m */; };
 		9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9A71C3CBB55009DDD15 /* main.m */; };
 		9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */; };
 		9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AD1C3CBB55009DDD15 /* ViewController.m */; };
@@ -54,9 +52,6 @@
 		9AF302151C438B7E00FA232D /* XXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNavigationController.m; sourceTree = "<group>"; };
 		9AF302171C438B9400FA232D /* XXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXViewController.h; sourceTree = "<group>"; };
 		9AF302181C438B9400FA232D /* XXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXViewController.m; sourceTree = "<group>"; };
-		9AF3021A1C438C5C00FA232D /* ocandjs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ocandjs.html; sourceTree = "<group>"; };
-		9AF3021C1C438CAC00FA232D /* OCAndJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCAndJSViewController.h; sourceTree = "<group>"; };
-		9AF3021D1C438CAC00FA232D /* OCAndJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCAndJSViewController.m; sourceTree = "<group>"; };
 		9AF3E9A31C3CBB55009DDD15 /* XXKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9A71C3CBB55009DDD15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,19 +129,8 @@
 		9AF302071C43861D00FA232D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9AF302081C43861D00FA232D /* OCAndJS */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		9AF302081C43861D00FA232D /* OCAndJS */ = {
-			isa = PBXGroup;
-			children = (
-				9AF3021C1C438CAC00FA232D /* OCAndJSViewController.h */,
-				9AF3021D1C438CAC00FA232D /* OCAndJSViewController.m */,
-				9AF3021A1C438C5C00FA232D /* ocandjs.html */,
-			);
-			path = OCAndJS;
 			sourceTree = "<group>";
 		};
 		9AF302101C438B4F00FA232D /* BaseUI */ = {
@@ -342,7 +326,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */,
-				9AF3021B1C438C5C00FA232D /* ocandjs.html in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
 			);
@@ -418,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
-				9AF3021E1C438CAC00FA232D /* OCAndJSViewController.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
 				9AF302191C438B9400FA232D /* XXViewController.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
