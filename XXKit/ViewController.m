@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "XXBase.h"
-#import "OCAndJSViewController.h"
 
 @interface ViewController ()
 
@@ -25,12 +24,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)onJumpToOCAndJSController:(UIButton *)sender{
-    
-    OCAndJSViewController *ocjsVC = [[OCAndJSViewController alloc] init];
-    [self.navigationController pushViewController:ocjsVC animated:YES];
-    
 }
 
 @end
