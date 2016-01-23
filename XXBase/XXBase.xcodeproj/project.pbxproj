@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B181F7C1C5324D300308B12 /* XXBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B181F7B1C5324D300308B12 /* XXBase.m */; };
 		9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6752FE1C451E8100099AF1 /* UIColorEx.m */; };
 		9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6753041C45234600099AF1 /* UIDeviceEx.m */; };
 		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
 		9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880C1C3D42C90021D17C /* PYMethod.m */; };
 		9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880E1C3D42C90021D17C /* UIScreenEx.m */; };
-		9AF3E9E61C3CBC60009DDD15 /* XXBase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AF3E9E51C3CBC60009DDD15 /* XXBase.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,13 +57,14 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9AF3E9E61C3CBC60009DDD15 /* XXBase.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B181F7A1C5324D300308B12 /* XXBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBase.h; sourceTree = SOURCE_ROOT; };
+		4B181F7B1C5324D300308B12 /* XXBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBase.m; sourceTree = SOURCE_ROOT; };
 		9A6752FD1C451E8100099AF1 /* UIColorEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorEx.h; sourceTree = "<group>"; };
 		9A6752FE1C451E8100099AF1 /* UIColorEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorEx.m; sourceTree = "<group>"; };
 		9A6753031C45234600099AF1 /* UIDeviceEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceEx.h; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		9ADF880E1C3D42C90021D17C /* UIScreenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenEx.m; sourceTree = "<group>"; };
 		9AF3020B1C43882000FA232D /* XXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXMacro.h; sourceTree = "<group>"; };
 		9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXXBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AF3E9E51C3CBC60009DDD15 /* XXBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +162,8 @@
 		9AF3E9E41C3CBC60009DDD15 /* XXBase */ = {
 			isa = PBXGroup;
 			children = (
-				9AF3E9E51C3CBC60009DDD15 /* XXBase.h */,
+				4B181F7A1C5324D300308B12 /* XXBase.h */,
+				4B181F7B1C5324D300308B12 /* XXBase.m */,
 			);
 			path = XXBase;
 			sourceTree = "<group>";
@@ -288,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B181F7C1C5324D300308B12 /* XXBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,18 +428,22 @@
 		9AF3E9EC1C3CBC60009DDD15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		9AF3E9ED1C3CBC60009DDD15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

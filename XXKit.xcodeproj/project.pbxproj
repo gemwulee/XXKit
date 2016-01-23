@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A6753091C45283D00099AF1 /* libXXBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6753081C45283D00099AF1 /* libXXBase.a */; };
+		4B181F731C53233600308B12 /* libXXBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F721C53233600308B12 /* libXXBase.a */; };
+		4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F741C53242500308B12 /* libAFNetworking.a */; };
+		4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F751C53242500308B12 /* libfoundationex.a */; };
 		9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF302151C438B7E00FA232D /* XXNavigationController.m */; };
 		9AF302191C438B9400FA232D /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF302181C438B9400FA232D /* XXViewController.m */; };
 		9AF3021B1C438C5C00FA232D /* ocandjs.html in Resources */ = {isa = PBXBuildFile; fileRef = 9AF3021A1C438C5C00FA232D /* ocandjs.html */; };
@@ -42,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		2AA3AC528F81E8B6AE8B0185 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B181F721C53233600308B12 /* libXXBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXXBase.a; path = "XXBase/build/Debug-iphoneos/libXXBase.a"; sourceTree = "<group>"; };
+		4B181F741C53242500308B12 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		4B181F751C53242500308B12 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-hkzedohowdjljhcypvoclyixszyz/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
+		4B181F761C53242500308B12 /* libuikitex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikitex.a; path = "XXBase/build/Debug-iphoneos/libuikitex.a"; sourceTree = "<group>"; };
 		9A6753061C45276500099AF1 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
 		9A6753081C45283D00099AF1 /* libXXBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXXBase.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libXXBase.a"; sourceTree = "<group>"; };
 		9AF302141C438B7E00FA232D /* XXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNavigationController.h; sourceTree = "<group>"; };
@@ -76,7 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A6753091C45283D00099AF1 /* libXXBase.a in Frameworks */,
+				4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */,
+				4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */,
+				4B181F731C53233600308B12 /* libXXBase.a in Frameworks */,
 				A18F73462600C6CD5719875F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +109,10 @@
 		157F5C4D49594E0D382284C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B181F741C53242500308B12 /* libAFNetworking.a */,
+				4B181F751C53242500308B12 /* libfoundationex.a */,
+				4B181F761C53242500308B12 /* libuikitex.a */,
+				4B181F721C53233600308B12 /* libXXBase.a */,
 				9A6753081C45283D00099AF1 /* libXXBase.a */,
 				9A6753061C45276500099AF1 /* libfoundationex.a */,
 				2AA3AC528F81E8B6AE8B0185 /* libPods.a */,
@@ -560,6 +572,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XXBase/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.mqq.XXKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -572,6 +589,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XXKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XXBase/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.mqq.XXKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

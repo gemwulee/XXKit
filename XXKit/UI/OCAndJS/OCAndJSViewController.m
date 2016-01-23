@@ -8,6 +8,7 @@
 //http://blog.csdn.net/siwen1990/article/details/50504431
 
 #import "OCAndJSViewController.h"
+#import "foundationex/UIColorEx.h"
 
 @interface OCAndJSViewController()<UIWebViewDelegate>
 @property(nonatomic,strong) UIWebView *webView;
@@ -33,7 +34,7 @@
 -(void) initViews
 {
     self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-    self.webView.backgroundColor = [UIColor clearColor];
+    self.webView.backgroundColor = UIColorHex(233344);
     self.webView.scalesPageToFit = YES;
     self.webView.delegate = self;
     

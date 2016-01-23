@@ -2,7 +2,7 @@
 //  XXBase.h
 //  XXBase
 //
-//  Created by tomxiang on 16/1/6.
+//  Created by XiangChenyu on 16/1/23.
 //  Copyright © 2016年 tomxiang. All rights reserved.
 //
 
@@ -13,3 +13,6 @@
 #import "foundationex/UIColorEx.h"
 #import "macro/XXMacro.h"
 
+@interface XXBase : NSObject
+
+@end
