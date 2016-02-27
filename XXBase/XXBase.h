@@ -12,6 +12,7 @@
 #import "foundationex/UISCreenEx.h"
 #import "foundationex/UIColorEx.h"
 #import "macro/XXMacro.h"
+#import "uikit/XXFPSMonitorEngine.h"
 
 @interface XXBase : NSObject
 

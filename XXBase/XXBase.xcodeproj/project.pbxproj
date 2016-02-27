@@ -10,6 +10,8 @@
 		4B181F7C1C5324D300308B12 /* XXBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B181F7B1C5324D300308B12 /* XXBase.m */; };
 		9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6752FE1C451E8100099AF1 /* UIColorEx.m */; };
 		9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6753041C45234600099AF1 /* UIDeviceEx.m */; };
+		9AC4E2EF1C819E1500893ABA /* XXFPSMonitorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4E2EE1C819E1500893ABA /* XXFPSMonitorEngine.m */; };
+		9AC4E2F51C81B95900893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F41C81B95900893ABA /* CoreText.framework */; };
 		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
 		9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880C1C3D42C90021D17C /* PYMethod.m */; };
 		9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880E1C3D42C90021D17C /* UIScreenEx.m */; };
@@ -23,17 +25,10 @@
 			remoteGlobalIDString = 9ADF87F21C3D384C0021D17C;
 			remoteInfo = foundationex;
 		};
-		9A67530C1C45287B00099AF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AF3E9DA1C3CBC60009DDD15 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9ADF87FF1C3D426D0021D17C;
-			remoteInfo = uikitex;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9ADF87F11C3D384C0021D17C /* CopyFiles */ = {
+		9AC4E2E21C819D7400893ABA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -42,7 +37,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9ADF87FE1C3D426D0021D17C /* CopyFiles */ = {
+		9ADF87F11C3D384C0021D17C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -69,8 +64,11 @@
 		9A6752FE1C451E8100099AF1 /* UIColorEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorEx.m; sourceTree = "<group>"; };
 		9A6753031C45234600099AF1 /* UIDeviceEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceEx.h; sourceTree = "<group>"; };
 		9A6753041C45234600099AF1 /* UIDeviceEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceEx.m; sourceTree = "<group>"; };
+		9AC4E2E41C819D7400893ABA /* libuikit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuikit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC4E2ED1C819E1500893ABA /* XXFPSMonitorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXFPSMonitorEngine.h; sourceTree = "<group>"; };
+		9AC4E2EE1C819E1500893ABA /* XXFPSMonitorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXFPSMonitorEngine.m; sourceTree = "<group>"; };
+		9AC4E2F41C81B95900893ABA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		9ADF87F31C3D384C0021D17C /* libfoundationex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfoundationex.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ADF88001C3D426D0021D17C /* libuikitex.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuikitex.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADF88091C3D42C90021D17C /* NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringEx.h; sourceTree = "<group>"; };
 		9ADF880A1C3D42C90021D17C /* NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringEx.m; sourceTree = "<group>"; };
 		9ADF880B1C3D42C90021D17C /* PYMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYMethod.h; sourceTree = "<group>"; };
@@ -82,14 +80,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9ADF87F01C3D384C0021D17C /* Frameworks */ = {
+		9AC4E2E11C819D7400893ABA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC4E2F51C81B95900893ABA /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9ADF87FD1C3D426D0021D17C /* Frameworks */ = {
+		9ADF87F01C3D384C0021D17C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AC4E2E51C819D7400893ABA /* uikit */ = {
+			isa = PBXGroup;
+			children = (
+				9AC4E2ED1C819E1500893ABA /* XXFPSMonitorEngine.h */,
+				9AC4E2EE1C819E1500893ABA /* XXFPSMonitorEngine.m */,
+			);
+			path = uikit;
+			sourceTree = "<group>";
+		};
 		9ADF87F41C3D384C0021D17C /* foundationex */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +131,6 @@
 			path = foundationex;
 			sourceTree = "<group>";
 		};
-		9ADF88011C3D426D0021D17C /* uikitex */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = uikitex;
-			sourceTree = "<group>";
-		};
 		9AF3020A1C43880300FA232D /* macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +142,11 @@
 		9AF3E9D91C3CBC60009DDD15 = {
 			isa = PBXGroup;
 			children = (
+				9AC4E2F41C81B95900893ABA /* CoreText.framework */,
 				9AF3E9E41C3CBC60009DDD15 /* XXBase */,
 				9AF3020A1C43880300FA232D /* macro */,
 				9ADF87F41C3D384C0021D17C /* foundationex */,
-				9ADF88011C3D426D0021D17C /* uikitex */,
+				9AC4E2E51C819D7400893ABA /* uikit */,
 				9AF3E9E31C3CBC60009DDD15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,7 +156,7 @@
 			children = (
 				9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */,
 				9ADF87F31C3D384C0021D17C /* libfoundationex.a */,
-				9ADF88001C3D426D0021D17C /* libuikitex.a */,
+				9AC4E2E41C819D7400893ABA /* libuikit.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +173,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9AC4E2E31C819D7400893ABA /* uikit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC4E2EA1C819D7400893ABA /* Build configuration list for PBXNativeTarget "uikit" */;
+			buildPhases = (
+				9AC4E2E01C819D7400893ABA /* Sources */,
+				9AC4E2E11C819D7400893ABA /* Frameworks */,
+				9AC4E2E21C819D7400893ABA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uikit;
+			productName = uikit;
+			productReference = 9AC4E2E41C819D7400893ABA /* libuikit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		9ADF87F21C3D384C0021D17C /* foundationex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ADF87FB1C3D384C0021D17C /* Build configuration list for PBXNativeTarget "foundationex" */;
@@ -188,23 +207,6 @@
 			productReference = 9ADF87F31C3D384C0021D17C /* libfoundationex.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9ADF87FF1C3D426D0021D17C /* uikitex */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9ADF88061C3D426D0021D17C /* Build configuration list for PBXNativeTarget "uikitex" */;
-			buildPhases = (
-				9ADF87FC1C3D426D0021D17C /* Sources */,
-				9ADF87FD1C3D426D0021D17C /* Frameworks */,
-				9ADF87FE1C3D426D0021D17C /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = uikitex;
-			productName = uikitex;
-			productReference = 9ADF88001C3D426D0021D17C /* libuikitex.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		9AF3E9E11C3CBC60009DDD15 /* XXBase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AF3E9EB1C3CBC60009DDD15 /* Build configuration list for PBXNativeTarget "XXBase" */;
@@ -217,7 +219,6 @@
 			);
 			dependencies = (
 				9A67530B1C45287B00099AF1 /* PBXTargetDependency */,
-				9A67530D1C45287B00099AF1 /* PBXTargetDependency */,
 			);
 			name = XXBase;
 			productName = XXBase;
@@ -233,12 +234,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = tomxiang;
 				TargetAttributes = {
+					9AC4E2E31C819D7400893ABA = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					9ADF87F21C3D384C0021D17C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = ANJ48A5GCY;
-					};
-					9ADF87FF1C3D426D0021D17C = {
-						CreatedOnToolsVersion = 7.2;
 					};
 					9AF3E9E11C3CBC60009DDD15 = {
 						CreatedOnToolsVersion = 7.2;
@@ -260,12 +261,20 @@
 			targets = (
 				9AF3E9E11C3CBC60009DDD15 /* XXBase */,
 				9ADF87F21C3D384C0021D17C /* foundationex */,
-				9ADF87FF1C3D426D0021D17C /* uikitex */,
+				9AC4E2E31C819D7400893ABA /* uikit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9AC4E2E01C819D7400893ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC4E2EF1C819E1500893ABA /* XXFPSMonitorEngine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9ADF87EF1C3D384C0021D17C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,13 +284,6 @@
 				9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */,
 				9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */,
 				9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9ADF87FC1C3D426D0021D17C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +303,29 @@
 			target = 9ADF87F21C3D384C0021D17C /* foundationex */;
 			targetProxy = 9A67530A1C45287B00099AF1 /* PBXContainerItemProxy */;
 		};
-		9A67530D1C45287B00099AF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9ADF87FF1C3D426D0021D17C /* uikitex */;
-			targetProxy = 9A67530C1C45287B00099AF1 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9AC4E2EB1C819D7400893ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9AC4E2EC1C819D7400893ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9ADF87F91C3D384C0021D17C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,24 +336,6 @@
 			name = Debug;
 		};
 		9ADF87FA1C3D384C0021D17C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9ADF88071C3D426D0021D17C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		9ADF88081C3D426D0021D17C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
@@ -450,20 +449,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9AC4E2EA1C819D7400893ABA /* Build configuration list for PBXNativeTarget "uikit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC4E2EB1C819D7400893ABA /* Debug */,
+				9AC4E2EC1C819D7400893ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9ADF87FB1C3D384C0021D17C /* Build configuration list for PBXNativeTarget "foundationex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9ADF87F91C3D384C0021D17C /* Debug */,
 				9ADF87FA1C3D384C0021D17C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9ADF88061C3D426D0021D17C /* Build configuration list for PBXNativeTarget "uikitex" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9ADF88071C3D426D0021D17C /* Debug */,
-				9ADF88081C3D426D0021D17C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
