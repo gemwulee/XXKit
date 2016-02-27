@@ -5,6 +5,7 @@
 //  Created by tomxiang on 16/2/27.
 //  Copyright © 2016年 tomxiang. All rights reserved.
 //  https://github.com/RolandasRazma/RRFPSBar
+//  http://www.jianshu.com/p/c35a81c3b9eb
 
 #import "XXFPSMonitorEngine.h"
 #import "UIScreenEx.h"
@@ -39,7 +40,10 @@
         
         self.backgroundColor = [UIColor yellowColor];
         [self setWindowLevel:UIWindowLevelAlert + 10000000];
-        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
+        self.frame = CGRectMake(10, SCREEN_HEIGHT - kSize.height - 10 , kSize.width, kSize.height);
+//        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
+        _disLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(disTick:)];
+        [_disLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         
         [self initLabel];
     }
@@ -65,15 +69,20 @@
     [_disLink removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
+-(void) disTick:(CADisplayLink *)link
+{
+    
+}
+
 -(void) startMonistor
 {
-    self.frame = CGRectMake(10, SCREEN_HEIGHT - kSize.height - 10 , kSize.width, kSize.height);
     [self makeKeyAndVisible];
 }
 
 -(void) stopMonistor
 {
     [_disLink invalidate];
+    [self setHidden:YES];
 }
 
 @end
