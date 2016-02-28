@@ -13,7 +13,6 @@
 +(XXFPSMonitorEngine *)sharedInstance;
 
 -(void) startMonistor;
-
--(void) stopMonistor;
+-(void) endMonistor;
 
 @end

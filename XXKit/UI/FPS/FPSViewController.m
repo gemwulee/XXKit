@@ -67,5 +67,13 @@
     [cell configureForData:indexPath.row];
     return cell;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if(indexPath.row %2 == 0){
+        [[XXFPSMonitorEngine sharedInstance] startMonistor];
+    }else{
+        [[XXFPSMonitorEngine sharedInstance] endMonistor];
+    }
+}
 @end
