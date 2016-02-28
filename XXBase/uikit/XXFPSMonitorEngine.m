@@ -36,10 +36,9 @@
 -(instancetype)init
 {
     if (self = [super init]) {
-        if([[UIDevice currentDevice].systemVersion floatValue] >= 9.0){
-            self.rootViewController = [UIViewController new];
-        }
-
+//        if([[UIDevice currentDevice].systemVersion floatValue] >= 9.0){
+//            self.rootViewController = [UIViewController new];
+//        }
         self.backgroundColor = [UIColor yellowColor];
         [self setWindowLevel:UIWindowLevelAlert + 10000000];
         self.frame = CGRectMake(10, SCREEN_HEIGHT - kSize.height - 10 , kSize.width, kSize.height);
@@ -72,6 +71,7 @@
 }
 - (void)dealloc {
     [_disLink setPaused:YES];
+    [_disLink invalidate];
     [_disLink removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
@@ -104,7 +104,6 @@
 
 -(void) endMonistor
 {
-    [_disLink invalidate];
     _disLink.paused = YES;
     [self setHidden:YES];
 }
