@@ -41,7 +41,7 @@
 //        }
         self.backgroundColor = [UIColor yellowColor];
         [self setWindowLevel:UIWindowLevelAlert + 10000000];
-        self.frame = CGRectMake(10, SCREEN_HEIGHT - kSize.height - 10 , kSize.width, kSize.height);
+        self.frame = CGRectMake(10, SCREEN_HEIGHT - kSize.height - 44 - 10 , kSize.width, kSize.height);
 //        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
         _disLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(disTick:)];
         [_disLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
