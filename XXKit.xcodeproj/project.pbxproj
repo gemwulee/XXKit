@@ -24,6 +24,11 @@
 		9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF3E9B41C3CBB55009DDD15 /* LaunchScreen.storyboard */; };
 		9AF3E9C11C3CBB55009DDD15 /* XXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9C01C3CBB55009DDD15 /* XXKitTests.m */; };
 		9AF3E9CC1C3CBB55009DDD15 /* XXKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */; };
+		9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */; };
+		9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */; };
+		9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE91C86DE07001304D2 /* MineViewController.m */; };
+		9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCEC1C86DE14001304D2 /* CallViewController.m */; };
+		9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */; };
 		A18F73462600C6CD5719875F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA3AC528F81E8B6AE8B0185 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +83,16 @@
 		9AF3E9C71C3CBB55009DDD15 /* XXKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXKitUITests.m; sourceTree = "<group>"; };
 		9AF3E9CD1C3CBB55009DDD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarController.h; sourceTree = "<group>"; };
+		9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarController.m; sourceTree = "<group>"; };
+		9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarItem.h; sourceTree = "<group>"; };
+		9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarItem.m; sourceTree = "<group>"; };
+		9AF4FCE81C86DE07001304D2 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		9AF4FCE91C86DE07001304D2 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		9AF4FCEB1C86DE14001304D2 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		9AF4FCEC1C86DE14001304D2 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		9AF4FCEF1C86DFEB001304D2 /* WorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldViewController.h; sourceTree = "<group>"; };
+		9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldViewController.m; sourceTree = "<group>"; };
 		BBBAE1266467850FE6E768E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6B32E2D742FAF463927253D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +169,9 @@
 		9AF302071C43861D00FA232D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9AF4FCEE1C86DFDF001304D2 /* World */,
+				9AF4FCE61C86DDEF001304D2 /* Call */,
+				9AF4FCE71C86DDEF001304D2 /* Mine */,
 				9AC4E2D91C8199FF00893ABA /* FPS */,
 			);
 			path = UI;
@@ -162,6 +180,7 @@
 		9AF302101C438B4F00FA232D /* BaseUI */ = {
 			isa = PBXGroup;
 			children = (
+				9AF4FCDF1C86DB36001304D2 /* TabBar */,
 				9AF302141C438B7E00FA232D /* XXNavigationController.h */,
 				9AF302151C438B7E00FA232D /* XXNavigationController.m */,
 				9AF302171C438B9400FA232D /* XXViewController.h */,
@@ -231,6 +250,46 @@
 				9AF3E9CD1C3CBB55009DDD15 /* Info.plist */,
 			);
 			path = XXKitUITests;
+			sourceTree = "<group>";
+		};
+		9AF4FCDF1C86DB36001304D2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */,
+				9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */,
+				9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */,
+				9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9AF4FCE61C86DDEF001304D2 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4FCEB1C86DE14001304D2 /* CallViewController.h */,
+				9AF4FCEC1C86DE14001304D2 /* CallViewController.m */,
+			);
+			name = Call;
+			path = XXKit/UI/Call;
+			sourceTree = SOURCE_ROOT;
+		};
+		9AF4FCE71C86DDEF001304D2 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4FCE81C86DE07001304D2 /* MineViewController.h */,
+				9AF4FCE91C86DE07001304D2 /* MineViewController.m */,
+			);
+			name = Mine;
+			path = XXKit/UI/Mine;
+			sourceTree = SOURCE_ROOT;
+		};
+		9AF4FCEE1C86DFDF001304D2 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				9AF4FCEF1C86DFEB001304D2 /* WorldViewController.h */,
+				9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */,
+			);
+			path = World;
 			sourceTree = "<group>";
 		};
 		BF25314DD4D97617C2672B89 /* Pods */ = {
@@ -430,9 +489,14 @@
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
 				9AF302191C438B9400FA232D /* XXViewController.m in Sources */,
+				9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */,
 				9AC4E2DF1C819B7400893ABA /* FPSTableCell.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
+				9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */,
 				9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */,
+				9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */,
+				9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */,
+				9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

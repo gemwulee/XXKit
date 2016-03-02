@@ -10,4 +10,6 @@
 
 @interface XXNavigationController : UINavigationController
 
++ (instancetype)newWithRootViewController:(UIViewController *)rootViewController;
+
 @end

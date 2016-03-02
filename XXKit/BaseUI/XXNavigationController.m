@@ -10,4 +10,8 @@
 
 @implementation XXNavigationController
 
++ (instancetype)newWithRootViewController:(UIViewController *)rootViewController {
+    return [[self alloc] initWithRootViewController:rootViewController];
+}
+
 @end

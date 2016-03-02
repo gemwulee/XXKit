@@ -26,13 +26,12 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.title = @"FPSTest";
     [self initData];
 }
 
 -(void) initData
 {
-    [[XXFPSMonitorEngine sharedInstance] startMonistor];
+//    [[XXFPSMonitorEngine sharedInstance] startMonistor];
 }
 
 -(void)loadView

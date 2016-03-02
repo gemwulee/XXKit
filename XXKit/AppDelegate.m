@@ -7,6 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "XXTabBarItem.h"
+#import "XXNavigationController.h"
+#import "FPSViewController.h"
+#import "CallViewController.h"
+#import "MineViewController.h"
+#import "WorldViewController.h"
+
+#define XX_MESSAGE @"XX"
+#define XX_CALL @"电话"
+#define XX_WORLD @"特产"
+#define XX_ME @"我"
 
 @interface AppDelegate ()
 
@@ -17,6 +28,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self launchAfterGuideWindow];
+    
     return YES;
 }
 
@@ -40,6 +54,52 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)launchAfterGuideWindow
+{
+    [self initUI];
+}
+
+- (void) initUI
+{
+    FPSViewController  *fpsVC  = [FPSViewController new];
+    CallViewController *callVC = [CallViewController new];
+    WorldViewController *worldVC = [WorldViewController new];
+    MineViewController *mineVC = [MineViewController new];
+    
+    fpsVC.title = XX_MESSAGE;
+    callVC.title = XX_CALL;
+    worldVC.title = XX_WORLD;
+    mineVC.title = XX_ME;
+
+    //动态0
+    XXTabBarItem *item0 = [[XXTabBarItem alloc] initWithTitle:XX_MESSAGE image:[UIImage imageNamed:@"tab_recent_nor.png"] selectedImage:[UIImage imageNamed:@"tab_recent_press.png"]];
+    XXNavigationController * navTabCtr0 = [XXNavigationController newWithRootViewController:fpsVC];
+    navTabCtr0.tabBarItem = item0;
+    
+    //动态1
+    XXTabBarItem *item1 = [[XXTabBarItem alloc] initWithTitle:XX_CALL image:[UIImage imageNamed:@"tab_call_nor.png"] selectedImage:[UIImage imageNamed:@"tab_call_press.png"]];
+    XXNavigationController * navTabCtr1 = [XXNavigationController newWithRootViewController:callVC];
+    navTabCtr1.tabBarItem = item1;
+    
+    //动态2
+    XXTabBarItem *item2 = [[XXTabBarItem alloc] initWithTitle:XX_WORLD image:[UIImage imageNamed:@"tab_qworld_nor.png"] selectedImage:[UIImage imageNamed:@"tab_qworld_press.png"]];
+    XXNavigationController * navTabCtr2 = [XXNavigationController newWithRootViewController:worldVC];
+    navTabCtr2.tabBarItem = item2;
+    
+    //动态3
+    XXTabBarItem *item3 = [[XXTabBarItem alloc] initWithTitle:XX_ME image:[UIImage imageNamed:@"tab_buddy_nor.png"] selectedImage:[UIImage imageNamed:@"tab_buddy_press.png"]];
+    XXNavigationController * navTabCtr3 = [XXNavigationController newWithRootViewController:mineVC];
+    navTabCtr3.tabBarItem = item3;
+    
+    NSArray * arr = [NSArray arrayWithObjects:navTabCtr0,navTabCtr1,navTabCtr2,navTabCtr3,nil];
+
+    self.tabCtr = [XXTabBarController new];
+    [self.tabCtr setViewControllers:arr animated:NO];
+    
+    self.window.rootViewController = self.tabCtr;
+    [self.window makeKeyAndVisible];
 }
 
 @end
