@@ -13,6 +13,8 @@
 #import "CallViewController.h"
 #import "MineViewController.h"
 #import "WorldViewController.h"
+#import "XXTabBar.h"
+#import "XXTabBarController.h"
 
 #define XX_MESSAGE @"XX"
 #define XX_CALL @"电话"
@@ -64,6 +66,7 @@
 - (void) initUI
 {
     FPSViewController  *fpsVC  = [FPSViewController new];
+    
     CallViewController *callVC = [CallViewController new];
     WorldViewController *worldVC = [WorldViewController new];
     MineViewController *mineVC = [MineViewController new];
@@ -74,22 +77,31 @@
     mineVC.title = XX_ME;
 
     //动态0
-    XXTabBarItem *item0 = [[XXTabBarItem alloc] initWithTitle:XX_MESSAGE image:[UIImage imageNamed:@"tab_recent_nor.png"] selectedImage:[UIImage imageNamed:@"tab_recent_press.png"]];
+    XXTabBarItem *item0 = [[XXTabBarItem alloc] initWithTitle:XX_MESSAGE tag:0];
+    item0.normalImageName = @"tab_recent_nor.png";
+    item0.hiImageName = @"tab_recent_press.png";
+    
     XXNavigationController * navTabCtr0 = [XXNavigationController newWithRootViewController:fpsVC];
     navTabCtr0.tabBarItem = item0;
     
     //动态1
-    XXTabBarItem *item1 = [[XXTabBarItem alloc] initWithTitle:XX_CALL image:[UIImage imageNamed:@"tab_call_nor.png"] selectedImage:[UIImage imageNamed:@"tab_call_press.png"]];
+    XXTabBarItem *item1 = [[XXTabBarItem alloc] initWithTitle:XX_CALL tag:1];
+    item1.normalImageName =  @"tab_call_nor.png";
+    item1.hiImageName = @"tab_call_press.png";
     XXNavigationController * navTabCtr1 = [XXNavigationController newWithRootViewController:callVC];
     navTabCtr1.tabBarItem = item1;
     
     //动态2
-    XXTabBarItem *item2 = [[XXTabBarItem alloc] initWithTitle:XX_WORLD image:[UIImage imageNamed:@"tab_qworld_nor.png"] selectedImage:[UIImage imageNamed:@"tab_qworld_press.png"]];
+    XXTabBarItem *item2 = [[XXTabBarItem alloc] initWithTitle:XX_WORLD tag:2];
+    item2.normalImageName = @"tab_qworld_nor.png";
+    item2.hiImageName = @"tab_qworld_press.png";
     XXNavigationController * navTabCtr2 = [XXNavigationController newWithRootViewController:worldVC];
     navTabCtr2.tabBarItem = item2;
     
     //动态3
-    XXTabBarItem *item3 = [[XXTabBarItem alloc] initWithTitle:XX_ME image:[UIImage imageNamed:@"tab_buddy_nor.png"] selectedImage:[UIImage imageNamed:@"tab_buddy_press.png"]];
+    XXTabBarItem *item3 = [[XXTabBarItem alloc] initWithTitle:XX_ME tag:3];
+    item3.normalImageName = @"tab_buddy_nor.png";
+    item3.hiImageName = @"tab_buddy_press.png";
     XXNavigationController * navTabCtr3 = [XXNavigationController newWithRootViewController:mineVC];
     navTabCtr3.tabBarItem = item3;
     

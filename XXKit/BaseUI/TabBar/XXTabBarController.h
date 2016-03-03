@@ -10,4 +10,8 @@
 
 @interface XXTabBarController : UITabBarController
 
+- (NSUInteger)tabBarIndex;
+
+- (void)setViewControllers:(NSArray *)viewControllers animated:(BOOL)animated;
+
 @end

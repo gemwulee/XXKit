@@ -1,5 +1,5 @@
 //
-//  XXFPSMonitorEngine.h
+//  XXFPSEngine.h
 //  XXBase
 //
 //  Created by tomxiang on 16/2/27.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XXFPSMonitorEngine : UIWindow
+@interface XXFPSEngine : UIWindow
 
-+(XXFPSMonitorEngine *)sharedInstance;
++(XXFPSEngine *)sharedInstance;
 
 -(void) startMonistor;
 -(void) endMonistor;

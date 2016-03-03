@@ -10,4 +10,12 @@
 
 @implementation XXTabBarItem
 
+-(instancetype)initWithTitle:(NSString *)title tag:(NSInteger)tag;
+{
+    if (self = [super initWithTitle:title image:nil tag:tag]) {
+        
+    }
+    return self;
+}
+
 @end

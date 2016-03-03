@@ -1,5 +1,5 @@
 //
-//  XXFPSMonitorEngine.m
+//  XXFPSEngine.m
 //  XXBase
 //
 //  Created by tomxiang on 16/2/27.
@@ -7,28 +7,28 @@
 //  https://github.com/RolandasRazma/RRFPSBar
 //  http://www.jianshu.com/p/c35a81c3b9eb
 
-#import "XXFPSMonitorEngine.h"
+#import "XXFPSEngine.h"
 #import "UIScreenEx.h"
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 
 #define kSize CGSizeMake(55, 20)
 
-@interface XXFPSMonitorEngine()
+@interface XXFPSEngine()
 @property(nonatomic,strong) CADisplayLink *disLink;
 @property(nonatomic,strong) UILabel *label;
 @property(nonatomic,assign) NSInteger count;
 @property(nonatomic,assign) NSTimeInterval lastTime;
 @end
 
-@implementation XXFPSMonitorEngine
+@implementation XXFPSEngine
 
-+(XXFPSMonitorEngine *)sharedInstance
++(XXFPSEngine *)sharedInstance
 {
-    static XXFPSMonitorEngine *_sharedInstance;
+    static XXFPSEngine *_sharedInstance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[XXFPSMonitorEngine alloc] init];
+        _sharedInstance = [[XXFPSEngine alloc] init];
     });
     return _sharedInstance;
 }

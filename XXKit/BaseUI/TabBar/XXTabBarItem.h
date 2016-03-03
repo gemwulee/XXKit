@@ -10,4 +10,9 @@
 
 @interface XXTabBarItem : UITabBarItem
 
+@property(nonatomic,strong)NSString * normalImageName ;
+@property(nonatomic,strong)NSString * hiImageName ;
+
+-(instancetype)initWithTitle:(NSString *)title tag:(NSInteger)tag;
+
 @end

@@ -24,6 +24,9 @@
 		9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF3E9B41C3CBB55009DDD15 /* LaunchScreen.storyboard */; };
 		9AF3E9C11C3CBB55009DDD15 /* XXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9C01C3CBB55009DDD15 /* XXKitTests.m */; };
 		9AF3E9CC1C3CBB55009DDD15 /* XXKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */; };
+		9AF41A6A1C87DD6A00C17947 /* XXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A691C87DD6A00C17947 /* XXTabBar.m */; };
+		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; };
+		9AF41A841C8834B500C17947 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF41A831C8834B500C17947 /* libutility.a */; };
 		9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */; };
 		9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */; };
 		9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE91C86DE07001304D2 /* MineViewController.m */; };
@@ -83,6 +86,11 @@
 		9AF3E9C71C3CBB55009DDD15 /* XXKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXKitUITests.m; sourceTree = "<group>"; };
 		9AF3E9CD1C3CBB55009DDD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF41A681C87DD6A00C17947 /* XXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBar.h; sourceTree = "<group>"; };
+		9AF41A691C87DD6A00C17947 /* XXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBar.m; sourceTree = "<group>"; };
+		9AF41A701C881DD600C17947 /* UIViewController+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwizzleMethod.h"; sourceTree = "<group>"; };
+		9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwizzleMethod.m"; sourceTree = "<group>"; };
+		9AF41A831C8834B500C17947 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-ccalcbdubkuyldedpmwohggzzjzh/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
 		9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarController.h; sourceTree = "<group>"; };
 		9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarController.m; sourceTree = "<group>"; };
 		9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarItem.h; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF41A841C8834B500C17947 /* libutility.a in Frameworks */,
 				9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */,
 				9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */,
 				4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */,
@@ -131,6 +140,7 @@
 		157F5C4D49594E0D382284C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AF41A831C8834B500C17947 /* libutility.a */,
 				9AC4E2F21C81B93A00893ABA /* CoreText.framework */,
 				9AC4E2F01C819E5F00893ABA /* libuikit.a */,
 				4B181F741C53242500308B12 /* libAFNetworking.a */,
@@ -214,6 +224,7 @@
 		9AF3E9A51C3CBB55009DDD15 /* XXKit */ = {
 			isa = PBXGroup;
 			children = (
+				9AF41A6E1C881D7A00C17947 /* Core */,
 				9AF302101C438B4F00FA232D /* BaseUI */,
 				9AF302071C43861D00FA232D /* UI */,
 				9ADF87EE1C3D36DF0021D17C /* App */,
@@ -252,11 +263,30 @@
 			path = XXKitUITests;
 			sourceTree = "<group>";
 		};
+		9AF41A6E1C881D7A00C17947 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9AF41A6F1C881DA200C17947 /* ObjectSwizzleMethod */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9AF41A6F1C881DA200C17947 /* ObjectSwizzleMethod */ = {
+			isa = PBXGroup;
+			children = (
+				9AF41A701C881DD600C17947 /* UIViewController+SwizzleMethod.h */,
+				9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */,
+			);
+			path = ObjectSwizzleMethod;
+			sourceTree = "<group>";
+		};
 		9AF4FCDF1C86DB36001304D2 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */,
 				9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */,
+				9AF41A681C87DD6A00C17947 /* XXTabBar.h */,
+				9AF41A691C87DD6A00C17947 /* XXTabBar.m */,
 				9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */,
 				9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */,
 			);
@@ -487,12 +517,14 @@
 			files = (
 				9AC4E2DC1C8199FF00893ABA /* FPSViewController.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
+				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
 				9AF302191C438B9400FA232D /* XXViewController.m in Sources */,
 				9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */,
 				9AC4E2DF1C819B7400893ABA /* FPSTableCell.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
 				9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */,
+				9AF41A6A1C87DD6A00C17947 /* XXTabBar.m in Sources */,
 				9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */,
 				9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */,
 				9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */,

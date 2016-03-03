@@ -8,7 +8,7 @@
 
 #import "FPSViewController.h"
 #import "FPSTableCell.h"
-#import "uikit/XXFPSMonitorEngine.h"
+#import "utility/XXFPSEngine.h"
 
 @interface FPSViewController()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) UITableView *xxTableView;
@@ -70,9 +70,9 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.row %2 == 0){
-        [[XXFPSMonitorEngine sharedInstance] startMonistor];
+        [[XXFPSEngine sharedInstance] startMonistor];
     }else{
-        [[XXFPSMonitorEngine sharedInstance] endMonistor];
+        [[XXFPSEngine sharedInstance] endMonistor];
     }
 }
 @end
