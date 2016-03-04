@@ -10,5 +10,13 @@
 
 @interface UIViewController (SwizzleMethod)
 
+- (void)XXViewDidAppear:(BOOL)animated;
+
+
+- (void)XXViewDidDisappear:(BOOL)animated;
+
+
+- (void)XXViewWillDisappear:(BOOL)animated;
+
 @end
 

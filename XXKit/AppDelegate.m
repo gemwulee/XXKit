@@ -15,6 +15,7 @@
 #import "WorldViewController.h"
 #import "XXTabBar.h"
 #import "XXTabBarController.h"
+#import "NSObject+SwizzleMethod.h"
 
 #define XX_MESSAGE @"XX"
 #define XX_CALL @"电话"
@@ -30,6 +31,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    [NSObject switchAllMethod];
     
     [self launchAfterGuideWindow];
     
@@ -63,10 +66,11 @@
     [self initUI];
 }
 
+
+#pragma mark- UI
 - (void) initUI
 {
     FPSViewController  *fpsVC  = [FPSViewController new];
-    
     CallViewController *callVC = [CallViewController new];
     WorldViewController *worldVC = [WorldViewController new];
     MineViewController *mineVC = [MineViewController new];

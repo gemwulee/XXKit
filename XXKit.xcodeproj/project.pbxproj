@@ -25,8 +25,9 @@
 		9AF3E9C11C3CBB55009DDD15 /* XXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9C01C3CBB55009DDD15 /* XXKitTests.m */; };
 		9AF3E9CC1C3CBB55009DDD15 /* XXKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */; };
 		9AF41A6A1C87DD6A00C17947 /* XXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A691C87DD6A00C17947 /* XXTabBar.m */; };
-		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; };
+		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9AF41A841C8834B500C17947 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF41A831C8834B500C17947 /* libutility.a */; };
+		9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */; };
 		9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */; };
 		9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE91C86DE07001304D2 /* MineViewController.m */; };
@@ -91,6 +92,8 @@
 		9AF41A701C881DD600C17947 /* UIViewController+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwizzleMethod.h"; sourceTree = "<group>"; };
 		9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwizzleMethod.m"; sourceTree = "<group>"; };
 		9AF41A831C8834B500C17947 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-ccalcbdubkuyldedpmwohggzzjzh/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
+		9AF4DEF21C89688A00E4CCB0 /* NSObject+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleMethod.h"; sourceTree = "<group>"; };
+		9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleMethod.m"; sourceTree = "<group>"; };
 		9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarController.h; sourceTree = "<group>"; };
 		9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarController.m; sourceTree = "<group>"; };
 		9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarItem.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 			children = (
 				9AF41A701C881DD600C17947 /* UIViewController+SwizzleMethod.h */,
 				9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */,
+				9AF4DEF21C89688A00E4CCB0 /* NSObject+SwizzleMethod.h */,
+				9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */,
 			);
 			path = ObjectSwizzleMethod;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 				9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */,
 				9AF41A6A1C87DD6A00C17947 /* XXTabBar.m in Sources */,
 				9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */,
+				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
 				9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */,
 				9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */,
 				9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */,

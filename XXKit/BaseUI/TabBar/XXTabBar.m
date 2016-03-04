@@ -31,7 +31,8 @@
         button.tag = item.tag;
         [button setImage:[UIImage imageNamed:item.normalImageName] selectImage:[UIImage imageNamed:item.hiImageName] withTitle:item.title];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-   
+        [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateSelected];
+
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:button];
