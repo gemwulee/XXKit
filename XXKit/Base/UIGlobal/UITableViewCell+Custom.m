@@ -33,7 +33,6 @@
     NSInteger rows = [tableView.dataSource tableView:tableView numberOfRowsInSection:section];
     
     // QQ5.0 普通状态下用色值代替
-    UIColor * color = QQGLOBAL_COLOR(kTableViewCellBackgroundColorNormal);
     [self setBackgroundColor:QQGLOBAL_COLOR(kTableViewCellBackgroundColorNormal)];
     // 按下背景图
     [self updateSelectedBackgroundViewAtRow:row sectionRows:rows];
