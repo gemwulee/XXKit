@@ -9,6 +9,7 @@
 #import "FPSViewController.h"
 #import "FPSTableCell.h"
 #import "utility/XXFPSEngine.h"
+#import "UITableView+Global.h"
 
 @interface FPSViewController()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) UITableView *xxTableView;
@@ -38,11 +39,8 @@
 {
     [super loadView];
     
-    _xxTableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    _xxTableView = [UITableView commonPlainStyledTableView:self dataSource:self frame:self.view.bounds];
     [_xxTableView registerClass:[FPSTableCell class] forCellReuseIdentifier:XXCELLIDENDIFIFY];
-    _xxTableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    _xxTableView.delegate = self;
-    _xxTableView.dataSource = self;
     
     [self.view addSubview:_xxTableView];
 }

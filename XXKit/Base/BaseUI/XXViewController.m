@@ -13,7 +13,7 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithHexString:@"fdfef9"];
+    self.view.backgroundColor = UIColorHex(0xf5f5f8);
 }
 
 -(instancetype)init

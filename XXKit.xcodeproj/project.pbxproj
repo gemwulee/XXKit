@@ -10,12 +10,24 @@
 		4B181F731C53233600308B12 /* libXXBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F721C53233600308B12 /* libXXBase.a */; };
 		4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F741C53242500308B12 /* libAFNetworking.a */; };
 		4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F751C53242500308B12 /* libfoundationex.a */; };
+		9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834021C8AACCB00747277 /* XXTabBar.m */; };
+		9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834041C8AACCB00747277 /* XXTabBarController.m */; };
+		9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834061C8AACCB00747277 /* XXTabBarItem.m */; };
+		9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834081C8AACCB00747277 /* XXNavigationController.m */; };
+		9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88340A1C8AACCB00747277 /* XXViewController.m */; };
+		9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834121C8AAF2700747277 /* UIView+Global.m */; };
+		9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834151C8AAF6A00747277 /* UITableView+Global.m */; };
+		9A8834191C8AB29600747277 /* MineTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834181C8AB29600747277 /* MineTableCell.m */; };
+		9A88341C1C8AB3C400747277 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88341B1C8AB3C400747277 /* MineViewModel.m */; };
+		9A88341E1C8AB90A00747277 /* SettingViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A88341D1C8AB90A00747277 /* SettingViewController.plist */; };
+		9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834241C8ACD8F00747277 /* XXGlobalColor.m */; };
+		9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834271C8ACE3400747277 /* XXThemeConfig.m */; };
+		9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A8834291C8ACF5700747277 /* DefaultThemeConfig.plist */; };
+		9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */; };
 		9AC4E2DC1C8199FF00893ABA /* FPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4E2DB1C8199FF00893ABA /* FPSViewController.m */; };
 		9AC4E2DF1C819B7400893ABA /* FPSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4E2DE1C819B7400893ABA /* FPSTableCell.m */; };
 		9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F01C819E5F00893ABA /* libuikit.a */; };
 		9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F21C81B93A00893ABA /* CoreText.framework */; };
-		9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF302151C438B7E00FA232D /* XXNavigationController.m */; };
-		9AF302191C438B9400FA232D /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF302181C438B9400FA232D /* XXViewController.m */; };
 		9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9A71C3CBB55009DDD15 /* main.m */; };
 		9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */; };
 		9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AD1C3CBB55009DDD15 /* ViewController.m */; };
@@ -24,12 +36,9 @@
 		9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF3E9B41C3CBB55009DDD15 /* LaunchScreen.storyboard */; };
 		9AF3E9C11C3CBB55009DDD15 /* XXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9C01C3CBB55009DDD15 /* XXKitTests.m */; };
 		9AF3E9CC1C3CBB55009DDD15 /* XXKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */; };
-		9AF41A6A1C87DD6A00C17947 /* XXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A691C87DD6A00C17947 /* XXTabBar.m */; };
 		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9AF41A841C8834B500C17947 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF41A831C8834B500C17947 /* libutility.a */; };
 		9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */; };
-		9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */; };
 		9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE91C86DE07001304D2 /* MineViewController.m */; };
 		9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCEC1C86DE14001304D2 /* CallViewController.m */; };
 		9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */; };
@@ -61,16 +70,38 @@
 		4B181F761C53242500308B12 /* libuikitex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikitex.a; path = "XXBase/build/Debug-iphoneos/libuikitex.a"; sourceTree = "<group>"; };
 		9A6753061C45276500099AF1 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
 		9A6753081C45283D00099AF1 /* libXXBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXXBase.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libXXBase.a"; sourceTree = "<group>"; };
+		9A8834011C8AACCB00747277 /* XXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBar.h; sourceTree = "<group>"; };
+		9A8834021C8AACCB00747277 /* XXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBar.m; sourceTree = "<group>"; };
+		9A8834031C8AACCB00747277 /* XXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarController.h; sourceTree = "<group>"; };
+		9A8834041C8AACCB00747277 /* XXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarController.m; sourceTree = "<group>"; };
+		9A8834051C8AACCB00747277 /* XXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarItem.h; sourceTree = "<group>"; };
+		9A8834061C8AACCB00747277 /* XXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarItem.m; sourceTree = "<group>"; };
+		9A8834071C8AACCB00747277 /* XXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNavigationController.h; sourceTree = "<group>"; };
+		9A8834081C8AACCB00747277 /* XXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNavigationController.m; sourceTree = "<group>"; };
+		9A8834091C8AACCB00747277 /* XXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXViewController.h; sourceTree = "<group>"; };
+		9A88340A1C8AACCB00747277 /* XXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXViewController.m; sourceTree = "<group>"; };
+		9A8834111C8AAF2700747277 /* UIView+Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Global.h"; sourceTree = "<group>"; };
+		9A8834121C8AAF2700747277 /* UIView+Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Global.m"; sourceTree = "<group>"; };
+		9A8834141C8AAF6A00747277 /* UITableView+Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Global.h"; sourceTree = "<group>"; };
+		9A8834151C8AAF6A00747277 /* UITableView+Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Global.m"; sourceTree = "<group>"; };
+		9A8834171C8AB29600747277 /* MineTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableCell.h; sourceTree = "<group>"; };
+		9A8834181C8AB29600747277 /* MineTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableCell.m; sourceTree = "<group>"; };
+		9A88341A1C8AB3C400747277 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
+		9A88341B1C8AB3C400747277 /* MineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
+		9A88341D1C8AB90A00747277 /* SettingViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingViewController.plist; sourceTree = "<group>"; };
+		9A8834231C8ACD8F00747277 /* XXGlobalColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXGlobalColor.h; sourceTree = "<group>"; };
+		9A8834241C8ACD8F00747277 /* XXGlobalColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXGlobalColor.m; sourceTree = "<group>"; };
+		9A8834261C8ACE3400747277 /* XXThemeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXThemeConfig.h; sourceTree = "<group>"; };
+		9A8834271C8ACE3400747277 /* XXThemeConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXThemeConfig.m; sourceTree = "<group>"; };
+		9A8834291C8ACF5700747277 /* DefaultThemeConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultThemeConfig.plist; sourceTree = "<group>"; };
+		9A88342B1C8AD4D200747277 /* UITableViewCell+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Custom.h"; sourceTree = "<group>"; };
+		9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Custom.m"; sourceTree = "<group>"; };
 		9AC4E2DA1C8199FF00893ABA /* FPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSViewController.h; sourceTree = "<group>"; };
 		9AC4E2DB1C8199FF00893ABA /* FPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSViewController.m; sourceTree = "<group>"; };
 		9AC4E2DD1C819B7400893ABA /* FPSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSTableCell.h; sourceTree = "<group>"; };
 		9AC4E2DE1C819B7400893ABA /* FPSTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSTableCell.m; sourceTree = "<group>"; };
 		9AC4E2F01C819E5F00893ABA /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "XXBase/build/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9AC4E2F21C81B93A00893ABA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		9AF302141C438B7E00FA232D /* XXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNavigationController.h; sourceTree = "<group>"; };
-		9AF302151C438B7E00FA232D /* XXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNavigationController.m; sourceTree = "<group>"; };
-		9AF302171C438B9400FA232D /* XXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXViewController.h; sourceTree = "<group>"; };
-		9AF302181C438B9400FA232D /* XXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXViewController.m; sourceTree = "<group>"; };
 		9AF3E9A31C3CBB55009DDD15 /* XXKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9A71C3CBB55009DDD15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,17 +118,11 @@
 		9AF3E9C71C3CBB55009DDD15 /* XXKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXKitUITests.m; sourceTree = "<group>"; };
 		9AF3E9CD1C3CBB55009DDD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AF41A681C87DD6A00C17947 /* XXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBar.h; sourceTree = "<group>"; };
-		9AF41A691C87DD6A00C17947 /* XXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBar.m; sourceTree = "<group>"; };
 		9AF41A701C881DD600C17947 /* UIViewController+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwizzleMethod.h"; sourceTree = "<group>"; };
 		9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwizzleMethod.m"; sourceTree = "<group>"; };
 		9AF41A831C8834B500C17947 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-ccalcbdubkuyldedpmwohggzzjzh/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
 		9AF4DEF21C89688A00E4CCB0 /* NSObject+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleMethod.h"; sourceTree = "<group>"; };
 		9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleMethod.m"; sourceTree = "<group>"; };
-		9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarController.h; sourceTree = "<group>"; };
-		9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarController.m; sourceTree = "<group>"; };
-		9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXTabBarItem.h; sourceTree = "<group>"; };
-		9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXTabBarItem.m; sourceTree = "<group>"; };
 		9AF4FCE81C86DE07001304D2 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		9AF4FCE91C86DE07001304D2 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		9AF4FCEB1C86DE14001304D2 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
@@ -157,6 +182,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A8833FE1C8AACCB00747277 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9A8834221C8ACD8F00747277 /* Skin */,
+				9A8834101C8AAE9C00747277 /* UIGlobal */,
+				9A8833FF1C8AACCB00747277 /* BaseUI */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9A8833FF1C8AACCB00747277 /* BaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				9A8834001C8AACCB00747277 /* TabBar */,
+				9A8834071C8AACCB00747277 /* XXNavigationController.h */,
+				9A8834081C8AACCB00747277 /* XXNavigationController.m */,
+				9A8834091C8AACCB00747277 /* XXViewController.h */,
+				9A88340A1C8AACCB00747277 /* XXViewController.m */,
+			);
+			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		9A8834001C8AACCB00747277 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9A8834011C8AACCB00747277 /* XXTabBar.h */,
+				9A8834021C8AACCB00747277 /* XXTabBar.m */,
+				9A8834031C8AACCB00747277 /* XXTabBarController.h */,
+				9A8834041C8AACCB00747277 /* XXTabBarController.m */,
+				9A8834051C8AACCB00747277 /* XXTabBarItem.h */,
+				9A8834061C8AACCB00747277 /* XXTabBarItem.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9A8834101C8AAE9C00747277 /* UIGlobal */ = {
+			isa = PBXGroup;
+			children = (
+				9A8834111C8AAF2700747277 /* UIView+Global.h */,
+				9A8834121C8AAF2700747277 /* UIView+Global.m */,
+				9A8834141C8AAF6A00747277 /* UITableView+Global.h */,
+				9A8834151C8AAF6A00747277 /* UITableView+Global.m */,
+				9A88342B1C8AD4D200747277 /* UITableViewCell+Custom.h */,
+				9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */,
+			);
+			path = UIGlobal;
+			sourceTree = "<group>";
+		};
+		9A8834221C8ACD8F00747277 /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				9A8834231C8ACD8F00747277 /* XXGlobalColor.h */,
+				9A8834241C8ACD8F00747277 /* XXGlobalColor.m */,
+				9A8834261C8ACE3400747277 /* XXThemeConfig.h */,
+				9A8834271C8ACE3400747277 /* XXThemeConfig.m */,
+				9A8834291C8ACF5700747277 /* DefaultThemeConfig.plist */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
 		9AC4E2D91C8199FF00893ABA /* FPS */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,18 +275,6 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		9AF302101C438B4F00FA232D /* BaseUI */ = {
-			isa = PBXGroup;
-			children = (
-				9AF4FCDF1C86DB36001304D2 /* TabBar */,
-				9AF302141C438B7E00FA232D /* XXNavigationController.h */,
-				9AF302151C438B7E00FA232D /* XXNavigationController.m */,
-				9AF302171C438B9400FA232D /* XXViewController.h */,
-				9AF302181C438B9400FA232D /* XXViewController.m */,
-			);
-			path = BaseUI;
-			sourceTree = "<group>";
-		};
 		9AF3E99A1C3CBB55009DDD15 = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				9AF41A6E1C881D7A00C17947 /* Core */,
-				9AF302101C438B4F00FA232D /* BaseUI */,
+				9A8833FE1C8AACCB00747277 /* Base */,
 				9AF302071C43861D00FA232D /* UI */,
 				9ADF87EE1C3D36DF0021D17C /* App */,
 				9AF3E9AF1C3CBB55009DDD15 /* Main.storyboard */,
@@ -285,19 +358,6 @@
 			path = ObjectSwizzleMethod;
 			sourceTree = "<group>";
 		};
-		9AF4FCDF1C86DB36001304D2 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				9AF4FCE01C86DB36001304D2 /* XXTabBarController.h */,
-				9AF4FCE11C86DB36001304D2 /* XXTabBarController.m */,
-				9AF41A681C87DD6A00C17947 /* XXTabBar.h */,
-				9AF41A691C87DD6A00C17947 /* XXTabBar.m */,
-				9AF4FCE31C86DB4E001304D2 /* XXTabBarItem.h */,
-				9AF4FCE41C86DB4E001304D2 /* XXTabBarItem.m */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
 		9AF4FCE61C86DDEF001304D2 /* Call */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +373,11 @@
 			children = (
 				9AF4FCE81C86DE07001304D2 /* MineViewController.h */,
 				9AF4FCE91C86DE07001304D2 /* MineViewController.m */,
+				9A8834171C8AB29600747277 /* MineTableCell.h */,
+				9A8834181C8AB29600747277 /* MineTableCell.m */,
+				9A88341A1C8AB3C400747277 /* MineViewModel.h */,
+				9A88341B1C8AB3C400747277 /* MineViewModel.m */,
+				9A88341D1C8AB90A00747277 /* SettingViewController.plist */,
 			);
 			name = Mine;
 			path = XXKit/UI/Mine;
@@ -446,7 +511,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */,
+				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
+				9A88341E1C8AB90A00747277 /* SettingViewController.plist in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,21 +587,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8834191C8AB29600747277 /* MineTableCell.m in Sources */,
 				9AC4E2DC1C8199FF00893ABA /* FPSViewController.m in Sources */,
+				9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
+				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
+				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
+				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
-				9AF302191C438B9400FA232D /* XXViewController.m in Sources */,
-				9AF4FCE51C86DB4E001304D2 /* XXTabBarItem.m in Sources */,
+				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
+				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
+				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
+				9A88341C1C8AB3C400747277 /* MineViewModel.m in Sources */,
 				9AC4E2DF1C819B7400893ABA /* FPSTableCell.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
+				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
 				9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */,
-				9AF41A6A1C87DD6A00C17947 /* XXTabBar.m in Sources */,
-				9AF302161C438B7E00FA232D /* XXNavigationController.m in Sources */,
 				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
 				9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */,
-				9AF4FCE21C86DB36001304D2 /* XXTabBarController.m in Sources */,
 				9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */,
+				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
+				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,9 @@ extern "C" {
     
     CGFloat fitScreenWidthBy6(CGFloat value);
     CGFloat fitScreenHeightBy6(CGFloat value);
+    
+    CGFloat screenFontSize();
+
 #ifdef __cplusplus
 }
 #endif
@@ -52,6 +55,8 @@ extern "C" {
 #define STATUSBAR_HEIGHT        getStatusBarHeight()
 #define APPLICATION_WIDTH       (SCREEN_WIDTH)
 #define APPLICATION_HEIGHT      (SCREEN_HEIGHT - STATUSBAR_HEIGHT)
+
+#define FontScreenSize screenFontSize()
 
 #endif
 /* defined(__baseUI__UIScreenEx__) */

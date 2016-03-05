@@ -16,6 +16,7 @@
 #import "XXTabBar.h"
 #import "XXTabBarController.h"
 #import "NSObject+SwizzleMethod.h"
+#import "XXThemeConfig.h"
 
 #define XX_MESSAGE @"XX"
 #define XX_CALL @"电话"
@@ -64,8 +65,14 @@
 - (void)launchAfterGuideWindow
 {
     [self initUI];
+    [self loadDefaultTheme];
 }
 
+#pragma mark- 加载默认主题
+-(void) loadDefaultTheme
+{
+    [[XXThemeConfig sharedInstance] refreshTheme:@"DefaultThemeConfig"];
+}
 
 #pragma mark- UI
 - (void) initUI

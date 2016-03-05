@@ -97,4 +97,10 @@ CGFloat fitScreenHeightBy6(CGFloat value)
     return (value/667.0f)*getScreenHeight();
 }
 
+CGFloat screenFontSize()
+{
+    //设计师rachel说不再需要32号的字
+    //     if(320 == getScreenWidth()) return 16.0f*screenScale();
+    return 17.0f;
+}
 
