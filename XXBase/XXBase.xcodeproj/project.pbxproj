@@ -13,6 +13,7 @@
 		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
 		9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880C1C3D42C90021D17C /* PYMethod.m */; };
 		9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880E1C3D42C90021D17C /* UIScreenEx.m */; };
+		9AF3BEAF1C8EBF7D00672910 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3BEAE1C8EBF7D00672910 /* UIImage+TintColor.m */; };
 		9AF41A6D1C881C1300C17947 /* XXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A6C1C881C1300C17947 /* XXButton.m */; };
 		9AF41A821C88345200C17947 /* XXFPSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A811C88345200C17947 /* XXFPSEngine.m */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,8 @@
 		9ADF880D1C3D42C90021D17C /* UIScreenEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreenEx.h; sourceTree = "<group>"; };
 		9ADF880E1C3D42C90021D17C /* UIScreenEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScreenEx.m; sourceTree = "<group>"; };
 		9AF3020B1C43882000FA232D /* XXMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXMacro.h; sourceTree = "<group>"; };
+		9AF3BEAD1C8EBF7D00672910 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
+		9AF3BEAE1C8EBF7D00672910 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintColor.m"; sourceTree = "<group>"; };
 		9AF3E9E21C3CBC60009DDD15 /* libXXBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXXBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF41A6B1C881C1300C17947 /* XXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXButton.h; sourceTree = "<group>"; };
 		9AF41A6C1C881C1300C17947 /* XXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXButton.m; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				9A6752FE1C451E8100099AF1 /* UIColorEx.m */,
 				9A6753031C45234600099AF1 /* UIDeviceEx.h */,
 				9A6753041C45234600099AF1 /* UIDeviceEx.m */,
+				9AF3BEAD1C8EBF7D00672910 /* UIImage+TintColor.h */,
+				9AF3BEAE1C8EBF7D00672910 /* UIImage+TintColor.m */,
 			);
 			path = foundationex;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			files = (
 				9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */,
 				9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */,
+				9AF3BEAF1C8EBF7D00672910 /* UIImage+TintColor.m in Sources */,
 				9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */,
 				9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */,
 				9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */,
@@ -568,6 +574,7 @@
 				9AF41A7F1C88341300C17947 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

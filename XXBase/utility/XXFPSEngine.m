@@ -39,7 +39,7 @@
 //        if([[UIDevice currentDevice].systemVersion floatValue] >= 9.0){
 //            self.rootViewController = [UIViewController new];
 //        }
-        self.backgroundColor = [UIColor yellowColor];
+        self.backgroundColor = [UIColor clearColor];
         [self setWindowLevel:UIWindowLevelAlert + 10000000];
         self.frame = CGRectMake(10, SCREEN_HEIGHT - kSize.height - 44 - 10 , kSize.width, kSize.height);
 //        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
@@ -89,7 +89,7 @@
         return;
     
     _lastTime = link.timestamp;
-    NSLog(@"%zd %lf",_count,delta);
+//    NSLog(@"%zd %lf",_count,delta);
     float fps = _count / delta;
     _count = 0;
     

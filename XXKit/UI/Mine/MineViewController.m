@@ -19,7 +19,7 @@
 #define ITEM_ACCOUNT @"itemAccount"
 #define ITEM_VALUE @"itemValue"
 
-@interface MineViewController()<UITableViewDelegate,UITableViewDataSource>
+@interface MineViewController()<UITableViewDelegate,UITableViewDataSource,MineTableCellDelegate>
 @property(nonatomic,strong) UITableView *mineTableView;
 @property(nonatomic,strong) MineViewModel *mineViewModel;
 @end
@@ -121,8 +121,14 @@
     NSArray * array = [dict objectForKey:ITEM_CONTENT];
     NSDictionary * dictObject = [array objectAtIndex:row];
     NSString * value = [dictObject objectForKey:ITEM_VALUE];
+    NSString * key = [dictObject objectForKey:ITEM_KEY];
     
-    [cell configureData:value];
+    if ([key isEqualToString:@"itemFPS"]) {
+        [cell configureDataWithUISwtich:NO tipText:value delegate:self];
+    }else{
+        [cell configureData:value];
+    }
+    
     [cell updateBackgroundViewInTableView:tableView atIndexPath:indexPath];
     
     return cell;
@@ -131,7 +137,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if(indexPath.row %2 == 0){
+}
+
+#pragma mark- MineTableCellDelegate
+-(void) switchAction : (BOOL) isOn
+{
+    if (isOn) {
         [[XXFPSEngine sharedInstance] startMonistor];
     }else{
         [[XXFPSEngine sharedInstance] endMonistor];

@@ -11,8 +11,16 @@
 #define MINETableCellHeight (100.f)
 #define MINECELLIDENDIFIFY @"MINE_CELL_IDENDIFIFY"
 
+
+@protocol MineTableCellDelegate <NSObject>
+-(void) switchAction : (BOOL) isOn;
+@end
+
 @interface MineTableCell : UITableViewCell
 
--(void) configureData:(NSString*) value;
+-(void) configureData:(NSString*) tipText;
+
+-(void) configureDataWithUISwtich:(BOOL) isOn tipText:(NSString*) tipText delegate:(id<MineTableCellDelegate>) delegate;
+
 
 @end

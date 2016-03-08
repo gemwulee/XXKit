@@ -67,10 +67,5 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if(indexPath.row %2 == 0){
-        [[XXFPSEngine sharedInstance] startMonistor];
-    }else{
-        [[XXFPSEngine sharedInstance] endMonistor];
-    }
 }
 @end
