@@ -245,10 +245,6 @@
 		9ADF87EE1C3D36DF0021D17C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				9AF2A2AB1C8FD893005FE17F /* Contacts */,
-				9AF2A2AE1C8FD893005FE17F /* Discover */,
-				9AF2A2B11C8FD893005FE17F /* Home */,
-				9AF2A2B61C8FD894005FE17F /* Me */,
 				9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */,
 				9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */,
 				9AF3E9AC1C3CBB55009DDD15 /* ViewController.h */,
@@ -263,8 +259,7 @@
 				9AF2A2AC1C8FD893005FE17F /* ContactsViewController.h */,
 				9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */,
 			);
-			name = Contacts;
-			path = UI/Contacts;
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 		9AF2A2AE1C8FD893005FE17F /* Discover */ = {
@@ -273,8 +268,7 @@
 				9AF2A2AF1C8FD893005FE17F /* DiscoverViewController.h */,
 				9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */,
 			);
-			name = Discover;
-			path = UI/Discover;
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		9AF2A2B11C8FD893005FE17F /* Home */ = {
@@ -285,8 +279,7 @@
 				9AF2A2C81C8FD8CF005FE17F /* HomeViewController.h */,
 				9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */,
 			);
-			name = Home;
-			path = UI/Home;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		9AF2A2B61C8FD894005FE17F /* Me */ = {
@@ -300,13 +293,16 @@
 				9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */,
 				9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */,
 			);
-			name = Me;
-			path = UI/Me;
+			path = Me;
 			sourceTree = "<group>";
 		};
 		9AF302071C43861D00FA232D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9AF2A2AB1C8FD893005FE17F /* Contacts */,
+				9AF2A2AE1C8FD893005FE17F /* Discover */,
+				9AF2A2B11C8FD893005FE17F /* Home */,
+				9AF2A2B61C8FD894005FE17F /* Me */,
 			);
 			path = UI;
 			sourceTree = "<group>";
