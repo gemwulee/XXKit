@@ -10,6 +10,7 @@
 #import "XXBase.h"
 
 @implementation XXViewController
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -28,7 +29,8 @@
 {
     self.extendedLayoutIncludesOpaqueBars = YES;
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    
 }
+
+
 
 @end

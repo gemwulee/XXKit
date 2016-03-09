@@ -12,6 +12,7 @@
 #import "UIViewController+SwizzleMethod.h"
 #import "XXTabBarItem.h"
 
+#define Global_tintColor [UIColor colorWithRed:0 green:(190 / 255.0) blue:(12 / 255.0) alpha:1]
 
 @implementation XXTabBar
 
@@ -31,7 +32,8 @@
         button.tag = item.tag;
         [button setImage:[UIImage imageNamed:item.normalImageName] selectImage:[UIImage imageNamed:item.hiImageName] withTitle:item.title];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateSelected];
+
+        [button setTitleColor:Global_tintColor forState:UIControlStateSelected];
 
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         

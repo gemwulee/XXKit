@@ -17,17 +17,20 @@
 		9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88340A1C8AACCB00747277 /* XXViewController.m */; };
 		9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834121C8AAF2700747277 /* UIView+Global.m */; };
 		9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834151C8AAF6A00747277 /* UITableView+Global.m */; };
-		9A8834191C8AB29600747277 /* MineTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834181C8AB29600747277 /* MineTableCell.m */; };
-		9A88341C1C8AB3C400747277 /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88341B1C8AB3C400747277 /* MineViewModel.m */; };
-		9A88341E1C8AB90A00747277 /* SettingViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A88341D1C8AB90A00747277 /* SettingViewController.plist */; };
 		9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834241C8ACD8F00747277 /* XXGlobalColor.m */; };
 		9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834271C8ACE3400747277 /* XXThemeConfig.m */; };
 		9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A8834291C8ACF5700747277 /* DefaultThemeConfig.plist */; };
 		9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */; };
-		9AC4E2DC1C8199FF00893ABA /* FPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4E2DB1C8199FF00893ABA /* FPSViewController.m */; };
-		9AC4E2DF1C819B7400893ABA /* FPSTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4E2DE1C819B7400893ABA /* FPSTableCell.m */; };
 		9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F01C819E5F00893ABA /* libuikit.a */; };
 		9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F21C81B93A00893ABA /* CoreText.framework */; };
+		9AF2A2BE1C8FD894005FE17F /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */; };
+		9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */; };
+		9AF2A2C21C8FD894005FE17F /* MineTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2B81C8FD894005FE17F /* MineTableCell.m */; };
+		9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BA1C8FD894005FE17F /* MineViewController.m */; };
+		9AF2A2C41C8FD894005FE17F /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */; };
+		9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */; };
+		9AF2A2CA1C8FD8CF005FE17F /* HomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */; };
+		9AF2A2CB1C8FD8CF005FE17F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */; };
 		9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9A71C3CBB55009DDD15 /* main.m */; };
 		9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */; };
 		9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AD1C3CBB55009DDD15 /* ViewController.m */; };
@@ -39,9 +42,6 @@
 		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9AF41A841C8834B500C17947 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF41A831C8834B500C17947 /* libutility.a */; };
 		9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCE91C86DE07001304D2 /* MineViewController.m */; };
-		9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCEC1C86DE14001304D2 /* CallViewController.m */; };
-		9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */; };
 		A18F73462600C6CD5719875F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA3AC528F81E8B6AE8B0185 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -84,11 +84,6 @@
 		9A8834121C8AAF2700747277 /* UIView+Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Global.m"; sourceTree = "<group>"; };
 		9A8834141C8AAF6A00747277 /* UITableView+Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Global.h"; sourceTree = "<group>"; };
 		9A8834151C8AAF6A00747277 /* UITableView+Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Global.m"; sourceTree = "<group>"; };
-		9A8834171C8AB29600747277 /* MineTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableCell.h; sourceTree = "<group>"; };
-		9A8834181C8AB29600747277 /* MineTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableCell.m; sourceTree = "<group>"; };
-		9A88341A1C8AB3C400747277 /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
-		9A88341B1C8AB3C400747277 /* MineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
-		9A88341D1C8AB90A00747277 /* SettingViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingViewController.plist; sourceTree = "<group>"; };
 		9A8834231C8ACD8F00747277 /* XXGlobalColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXGlobalColor.h; sourceTree = "<group>"; };
 		9A8834241C8ACD8F00747277 /* XXGlobalColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXGlobalColor.m; sourceTree = "<group>"; };
 		9A8834261C8ACE3400747277 /* XXThemeConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXThemeConfig.h; sourceTree = "<group>"; };
@@ -96,12 +91,23 @@
 		9A8834291C8ACF5700747277 /* DefaultThemeConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultThemeConfig.plist; sourceTree = "<group>"; };
 		9A88342B1C8AD4D200747277 /* UITableViewCell+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Custom.h"; sourceTree = "<group>"; };
 		9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Custom.m"; sourceTree = "<group>"; };
-		9AC4E2DA1C8199FF00893ABA /* FPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSViewController.h; sourceTree = "<group>"; };
-		9AC4E2DB1C8199FF00893ABA /* FPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSViewController.m; sourceTree = "<group>"; };
-		9AC4E2DD1C819B7400893ABA /* FPSTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSTableCell.h; sourceTree = "<group>"; };
-		9AC4E2DE1C819B7400893ABA /* FPSTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSTableCell.m; sourceTree = "<group>"; };
 		9AC4E2F01C819E5F00893ABA /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "XXBase/build/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9AC4E2F21C81B93A00893ABA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9AF2A2AC1C8FD893005FE17F /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		9AF2A2AF1C8FD893005FE17F /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		9AF2A2B71C8FD894005FE17F /* MineTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableCell.h; sourceTree = "<group>"; };
+		9AF2A2B81C8FD894005FE17F /* MineTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableCell.m; sourceTree = "<group>"; };
+		9AF2A2B91C8FD894005FE17F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		9AF2A2BA1C8FD894005FE17F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		9AF2A2BB1C8FD894005FE17F /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
+		9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
+		9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingViewController.plist; sourceTree = "<group>"; };
+		9AF2A2C61C8FD8CF005FE17F /* HomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableCell.h; sourceTree = "<group>"; };
+		9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableCell.m; sourceTree = "<group>"; };
+		9AF2A2C81C8FD8CF005FE17F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		9AF3E9A31C3CBB55009DDD15 /* XXKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9A71C3CBB55009DDD15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,12 +129,6 @@
 		9AF41A831C8834B500C17947 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-ccalcbdubkuyldedpmwohggzzjzh/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
 		9AF4DEF21C89688A00E4CCB0 /* NSObject+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleMethod.h"; sourceTree = "<group>"; };
 		9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleMethod.m"; sourceTree = "<group>"; };
-		9AF4FCE81C86DE07001304D2 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		9AF4FCE91C86DE07001304D2 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		9AF4FCEB1C86DE14001304D2 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
-		9AF4FCEC1C86DE14001304D2 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
-		9AF4FCEF1C86DFEB001304D2 /* WorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldViewController.h; sourceTree = "<group>"; };
-		9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorldViewController.m; sourceTree = "<group>"; };
 		BBBAE1266467850FE6E768E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6B32E2D742FAF463927253D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,20 +242,13 @@
 			path = Skin;
 			sourceTree = "<group>";
 		};
-		9AC4E2D91C8199FF00893ABA /* FPS */ = {
-			isa = PBXGroup;
-			children = (
-				9AC4E2DA1C8199FF00893ABA /* FPSViewController.h */,
-				9AC4E2DB1C8199FF00893ABA /* FPSViewController.m */,
-				9AC4E2DD1C819B7400893ABA /* FPSTableCell.h */,
-				9AC4E2DE1C819B7400893ABA /* FPSTableCell.m */,
-			);
-			path = FPS;
-			sourceTree = "<group>";
-		};
 		9ADF87EE1C3D36DF0021D17C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9AF2A2AB1C8FD893005FE17F /* Contacts */,
+				9AF2A2AE1C8FD893005FE17F /* Discover */,
+				9AF2A2B11C8FD893005FE17F /* Home */,
+				9AF2A2B61C8FD894005FE17F /* Me */,
 				9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */,
 				9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */,
 				9AF3E9AC1C3CBB55009DDD15 /* ViewController.h */,
@@ -264,13 +257,56 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		9AF2A2AB1C8FD893005FE17F /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2A2AC1C8FD893005FE17F /* ContactsViewController.h */,
+				9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */,
+			);
+			name = Contacts;
+			path = UI/Contacts;
+			sourceTree = "<group>";
+		};
+		9AF2A2AE1C8FD893005FE17F /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2A2AF1C8FD893005FE17F /* DiscoverViewController.h */,
+				9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */,
+			);
+			name = Discover;
+			path = UI/Discover;
+			sourceTree = "<group>";
+		};
+		9AF2A2B11C8FD893005FE17F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2A2C61C8FD8CF005FE17F /* HomeTableCell.h */,
+				9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */,
+				9AF2A2C81C8FD8CF005FE17F /* HomeViewController.h */,
+				9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */,
+			);
+			name = Home;
+			path = UI/Home;
+			sourceTree = "<group>";
+		};
+		9AF2A2B61C8FD894005FE17F /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2A2B71C8FD894005FE17F /* MineTableCell.h */,
+				9AF2A2B81C8FD894005FE17F /* MineTableCell.m */,
+				9AF2A2B91C8FD894005FE17F /* MineViewController.h */,
+				9AF2A2BA1C8FD894005FE17F /* MineViewController.m */,
+				9AF2A2BB1C8FD894005FE17F /* MineViewModel.h */,
+				9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */,
+				9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */,
+			);
+			name = Me;
+			path = UI/Me;
+			sourceTree = "<group>";
+		};
 		9AF302071C43861D00FA232D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9AF4FCEE1C86DFDF001304D2 /* World */,
-				9AF4FCE61C86DDEF001304D2 /* Call */,
-				9AF4FCE71C86DDEF001304D2 /* Mine */,
-				9AC4E2D91C8199FF00893ABA /* FPS */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -356,40 +392,6 @@
 				9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */,
 			);
 			path = ObjectSwizzleMethod;
-			sourceTree = "<group>";
-		};
-		9AF4FCE61C86DDEF001304D2 /* Call */ = {
-			isa = PBXGroup;
-			children = (
-				9AF4FCEB1C86DE14001304D2 /* CallViewController.h */,
-				9AF4FCEC1C86DE14001304D2 /* CallViewController.m */,
-			);
-			name = Call;
-			path = XXKit/UI/Call;
-			sourceTree = SOURCE_ROOT;
-		};
-		9AF4FCE71C86DDEF001304D2 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				9AF4FCE81C86DE07001304D2 /* MineViewController.h */,
-				9AF4FCE91C86DE07001304D2 /* MineViewController.m */,
-				9A8834171C8AB29600747277 /* MineTableCell.h */,
-				9A8834181C8AB29600747277 /* MineTableCell.m */,
-				9A88341A1C8AB3C400747277 /* MineViewModel.h */,
-				9A88341B1C8AB3C400747277 /* MineViewModel.m */,
-				9A88341D1C8AB90A00747277 /* SettingViewController.plist */,
-			);
-			name = Mine;
-			path = XXKit/UI/Mine;
-			sourceTree = SOURCE_ROOT;
-		};
-		9AF4FCEE1C86DFDF001304D2 /* World */ = {
-			isa = PBXGroup;
-			children = (
-				9AF4FCEF1C86DFEB001304D2 /* WorldViewController.h */,
-				9AF4FCF01C86DFEB001304D2 /* WorldViewController.m */,
-			);
-			path = World;
 			sourceTree = "<group>";
 		};
 		BF25314DD4D97617C2672B89 /* Pods */ = {
@@ -511,9 +513,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */,
+				9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */,
 				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
-				9A88341E1C8AB90A00747277 /* SettingViewController.plist in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,26 +589,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8834191C8AB29600747277 /* MineTableCell.m in Sources */,
-				9AC4E2DC1C8199FF00893ABA /* FPSViewController.m in Sources */,
 				9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */,
+				9AF2A2C41C8FD894005FE17F /* MineViewModel.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
 				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
+				9AF2A2C21C8FD894005FE17F /* MineTableCell.m in Sources */,
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
+				9AF2A2CA1C8FD8CF005FE17F /* HomeTableCell.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
+				9AF2A2BE1C8FD894005FE17F /* ContactsViewController.m in Sources */,
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
-				9A88341C1C8AB3C400747277 /* MineViewModel.m in Sources */,
-				9AC4E2DF1C819B7400893ABA /* FPSTableCell.m in Sources */,
+				9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
+				9AF2A2CB1C8FD8CF005FE17F /* HomeViewController.m in Sources */,
+				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
-				9AF4FCEA1C86DE07001304D2 /* MineViewController.m in Sources */,
 				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
-				9AF4FCED1C86DE14001304D2 /* CallViewController.m in Sources */,
-				9AF4FCF11C86DFEB001304D2 /* WorldViewController.m in Sources */,
 				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
 				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
 			);
@@ -750,6 +752,7 @@
 			baseConfigurationReference = C6B32E2D742FAF463927253D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -774,6 +777,7 @@
 			baseConfigurationReference = BBBAE1266467850FE6E768E2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",

@@ -9,23 +9,16 @@
 #import "AppDelegate.h"
 #import "XXTabBarItem.h"
 #import "XXNavigationController.h"
-#import "FPSViewController.h"
-#import "CallViewController.h"
-#import "MineViewController.h"
-#import "WorldViewController.h"
 #import "XXTabBar.h"
 #import "XXTabBarController.h"
 #import "NSObject+SwizzleMethod.h"
 #import "XXThemeConfig.h"
+#import "XXViewController.h"
 
-#define XX_MESSAGE @"XX"
-#define XX_CALL @"电话"
-#define XX_WORLD @"特产"
-#define XX_ME @"我"
-
-@interface AppDelegate ()
-
-@end
+#define kClassKey   @"rootVCClassString"
+#define kTitleKey   @"title"
+#define kImgKey     @"imageName"
+#define kSelImgKey  @"selectedImageName"
 
 @implementation AppDelegate
 
@@ -77,52 +70,60 @@
 #pragma mark- UI
 - (void) initUI
 {
-    FPSViewController  *fpsVC  = [FPSViewController new];
-    CallViewController *callVC = [CallViewController new];
-    WorldViewController *worldVC = [WorldViewController new];
-    MineViewController *mineVC = [MineViewController new];
+    NSArray *childItemsArray = @[
+                                 @{kClassKey  : @"HomeViewController",
+                                   kTitleKey  : @"微信",
+                                   kImgKey    : @"tabbar_mainframe",
+                                   kSelImgKey : @"tabbar_mainframeHL"},
+                                 
+                                 @{kClassKey  : @"ContactsViewController",
+                                   kTitleKey  : @"通讯录",
+                                   kImgKey    : @"tabbar_contacts",
+                                   kSelImgKey : @"tabbar_contactsHL"},
+                                 
+                                 @{kClassKey  : @"DiscoverViewController",
+                                   kTitleKey  : @"发现",
+                                   kImgKey    : @"tabbar_discover",
+                                   kSelImgKey : @"tabbar_discoverHL"},
+                                 
+                                 @{kClassKey  : @"MineViewController",
+                                   kTitleKey  : @"我",
+                                   kImgKey    : @"tabbar_me",
+                                   kSelImgKey : @"tabbar_meHL"} ];
     
-    fpsVC.title = XX_MESSAGE;
-    callVC.title = XX_CALL;
-    worldVC.title = XX_WORLD;
-    mineVC.title = XX_ME;
-
-    //动态0
-    XXTabBarItem *item0 = [[XXTabBarItem alloc] initWithTitle:XX_MESSAGE tag:0];
-    item0.normalImageName = @"tab_recent_nor.png";
-    item0.hiImageName = @"tab_recent_press.png";
-    
-    XXNavigationController * navTabCtr0 = [XXNavigationController newWithRootViewController:fpsVC];
-    navTabCtr0.tabBarItem = item0;
-    
-    //动态1
-    XXTabBarItem *item1 = [[XXTabBarItem alloc] initWithTitle:XX_CALL tag:1];
-    item1.normalImageName =  @"tab_call_nor.png";
-    item1.hiImageName = @"tab_call_press.png";
-    XXNavigationController * navTabCtr1 = [XXNavigationController newWithRootViewController:callVC];
-    navTabCtr1.tabBarItem = item1;
-    
-    //动态2
-    XXTabBarItem *item2 = [[XXTabBarItem alloc] initWithTitle:XX_WORLD tag:2];
-    item2.normalImageName = @"tab_qworld_nor.png";
-    item2.hiImageName = @"tab_qworld_press.png";
-    XXNavigationController * navTabCtr2 = [XXNavigationController newWithRootViewController:worldVC];
-    navTabCtr2.tabBarItem = item2;
-    
-    //动态3
-    XXTabBarItem *item3 = [[XXTabBarItem alloc] initWithTitle:XX_ME tag:3];
-    item3.normalImageName = @"tab_buddy_nor.png";
-    item3.hiImageName = @"tab_buddy_press.png";
-    XXNavigationController * navTabCtr3 = [XXNavigationController newWithRootViewController:mineVC];
-    navTabCtr3.tabBarItem = item3;
-    
-    NSArray * arr = [NSArray arrayWithObjects:navTabCtr0,navTabCtr1,navTabCtr2,navTabCtr3,nil];
+    NSMutableArray * arrVC = [NSMutableArray array];
+    [childItemsArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {
+        XXViewController *vc = [NSClassFromString(dict[kClassKey]) new];
+        vc.title = dict[kTitleKey];
+        
+        XXNavigationController *nav = [[XXNavigationController alloc] initWithRootViewController:vc];
+        XXTabBarItem *item = [[XXTabBarItem alloc] initWithTitle:dict[kTitleKey] tag:idx];
+       
+        item.normalImageName = dict[kImgKey];
+        item.hiImageName = dict[kSelImgKey];
+        nav.tabBarItem = item;
+        [arrVC addObject:nav];
+    }];
 
     self.tabCtr = [XXTabBarController new];
-    [self.tabCtr setViewControllers:arr animated:NO];
+    [self.tabCtr setViewControllers:arrVC animated:NO];
     
     self.window.rootViewController = self.tabCtr;
     [self.window makeKeyAndVisible];
+    
+    [self initNavBar];
 }
 
+#pragma mark- Navigation
+
+- (void) initNavBar
+{
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    UINavigationBar *bar = [UINavigationBar appearance];
+    CGFloat rgb = 0.1;
+    bar.barTintColor = [UIColor colorWithRed:rgb green:rgb blue:rgb alpha:0.9];
+    bar.tintColor = [UIColor whiteColor];
+    bar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+}
 @end

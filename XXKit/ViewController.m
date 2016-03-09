@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "XXBase.h"
-#import "FPSViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -26,10 +26,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onPushFPSVC:(UIButton *)sender {
-    
-    FPSViewController *fpsVC = [[FPSViewController alloc] init];
-    [self.navigationController pushViewController:fpsVC animated:YES];
-    
-}
 @end
