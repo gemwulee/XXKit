@@ -92,8 +92,21 @@ static const CGFloat ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN         = 15;//button和
 - (void)configureForData:(XXMessageModel*) xxMsgModel row:(NSInteger) msgRow
 {
     [self setCustomAccessoryViewEnabled:NO];
+    UIImage* image = [UIImage imageNamed:xxMsgModel.imageName];
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+        
+        UIGraphicsBeginImageContextWithOptions(image.size, NO, image.scale);
+        [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, image.size.width, image.size.height) byRoundingCorners:UIRectCornerAllCorners cornerRadii: CGSizeMake(12.f, 12.f)] addClip];
+        [image drawAtPoint:CGPointZero];
+        UIImage *tempImg = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            _iconImageView.image = tempImg;
+        });
+    });
     
-    _iconImageView.image = [UIImage imageNamed:xxMsgModel.imageName];
     _nameLabel.text = xxMsgModel.name;
     _messageLabel.text = xxMsgModel.message;
     
