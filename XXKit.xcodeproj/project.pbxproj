@@ -27,8 +27,6 @@
 		9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */; };
 		9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BA1C8FD894005FE17F /* MineViewController.m */; };
 		9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */; };
-		9AF2A2CA1C8FD8CF005FE17F /* HomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */; };
-		9AF2A2CB1C8FD8CF005FE17F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */; };
 		9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2A2E31C9003C1005FE17F /* DiscoverViewController.plist */; };
 		9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2E71C9009AD005FE17F /* XXBaseViewController.m */; };
 		9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2EA1C9009D2005FE17F /* XXBaseTableCell.m */; };
@@ -44,6 +42,10 @@
 		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9AF41A841C8834B500C17947 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF41A831C8834B500C17947 /* libutility.a */; };
 		9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9AF5234F1C91638400A59967 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF523461C91638400A59967 /* HomeViewController.m */; };
+		9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF523491C91638400A59967 /* SDAnalogDataGenerator.m */; };
+		9AF523511C91638400A59967 /* XXMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5234B1C91638400A59967 /* XXMessageModel.m */; };
+		9AF523521C91638400A59967 /* HomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5234E1C91638400A59967 /* HomeTableCell.m */; };
 		A18F73462600C6CD5719875F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA3AC528F81E8B6AE8B0185 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -102,10 +104,6 @@
 		9AF2A2B91C8FD894005FE17F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		9AF2A2BA1C8FD894005FE17F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingViewController.plist; sourceTree = "<group>"; };
-		9AF2A2C61C8FD8CF005FE17F /* HomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableCell.h; sourceTree = "<group>"; };
-		9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableCell.m; sourceTree = "<group>"; };
-		9AF2A2C81C8FD8CF005FE17F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		9AF2A2E31C9003C1005FE17F /* DiscoverViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DiscoverViewController.plist; sourceTree = "<group>"; };
 		9AF2A2E61C9009AD005FE17F /* XXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBaseViewController.h; sourceTree = "<group>"; };
 		9AF2A2E71C9009AD005FE17F /* XXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBaseViewController.m; sourceTree = "<group>"; };
@@ -134,6 +132,14 @@
 		9AF41A831C8834B500C17947 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-ccalcbdubkuyldedpmwohggzzjzh/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
 		9AF4DEF21C89688A00E4CCB0 /* NSObject+SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleMethod.h"; sourceTree = "<group>"; };
 		9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleMethod.m"; sourceTree = "<group>"; };
+		9AF523451C91638400A59967 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		9AF523461C91638400A59967 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9AF523481C91638400A59967 /* SDAnalogDataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAnalogDataGenerator.h; sourceTree = "<group>"; };
+		9AF523491C91638400A59967 /* SDAnalogDataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAnalogDataGenerator.m; sourceTree = "<group>"; };
+		9AF5234A1C91638400A59967 /* XXMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXMessageModel.h; sourceTree = "<group>"; };
+		9AF5234B1C91638400A59967 /* XXMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXMessageModel.m; sourceTree = "<group>"; };
+		9AF5234D1C91638400A59967 /* HomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableCell.h; sourceTree = "<group>"; };
+		9AF5234E1C91638400A59967 /* HomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableCell.m; sourceTree = "<group>"; };
 		BBBAE1266467850FE6E768E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6B32E2D742FAF463927253D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,10 +286,9 @@
 		9AF2A2B11C8FD893005FE17F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9AF2A2C61C8FD8CF005FE17F /* HomeTableCell.h */,
-				9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */,
-				9AF2A2C81C8FD8CF005FE17F /* HomeViewController.h */,
-				9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */,
+				9AF523441C91638400A59967 /* controller */,
+				9AF523471C91638400A59967 /* model */,
+				9AF5234C1C91638400A59967 /* view */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -404,6 +409,35 @@
 				9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */,
 			);
 			path = ObjectSwizzleMethod;
+			sourceTree = "<group>";
+		};
+		9AF523441C91638400A59967 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AF523451C91638400A59967 /* HomeViewController.h */,
+				9AF523461C91638400A59967 /* HomeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9AF523471C91638400A59967 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9AF523481C91638400A59967 /* SDAnalogDataGenerator.h */,
+				9AF523491C91638400A59967 /* SDAnalogDataGenerator.m */,
+				9AF5234A1C91638400A59967 /* XXMessageModel.h */,
+				9AF5234B1C91638400A59967 /* XXMessageModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9AF5234C1C91638400A59967 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9AF5234D1C91638400A59967 /* HomeTableCell.h */,
+				9AF5234E1C91638400A59967 /* HomeTableCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BF25314DD4D97617C2672B89 /* Pods */ = {
@@ -603,12 +637,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */,
+				9AF523511C91638400A59967 /* XXMessageModel.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
 				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
-				9AF2A2CA1C8FD8CF005FE17F /* HomeTableCell.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
 				9AF2A2BE1C8FD894005FE17F /* ContactsViewController.m in Sources */,
@@ -617,14 +651,16 @@
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
 				9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
-				9AF2A2CB1C8FD8CF005FE17F /* HomeViewController.m in Sources */,
 				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
+				9AF523521C91638400A59967 /* HomeTableCell.m in Sources */,
 				9AF2A2EE1C900CEA005FE17F /* XXBaseViewModel.m in Sources */,
+				9AF5234F1C91638400A59967 /* HomeViewController.m in Sources */,
 				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
 				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
 				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
 				9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */,
+				9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
