@@ -10,6 +10,7 @@
 #import "XXMessageModel.h"
 #import "XXGlobalColor.h"
 #import "UITableViewCell+Custom.h"
+#import "XXBase.h"
 
 static const CGFloat ADDCOMMENDFRIEND_CELL_HEAD_HOR_MARGIN      = 15;//headImage的x
 static const CGFloat ADDCOMMENDFRIEND_CELL_HEAD_VERTICAL_MARGIN = 6;//headImage的y
@@ -33,6 +34,7 @@ static const CGFloat ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN         = 15;//button和
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
         [self setupView];
+        [self setupGestureRecognizer];
     }
     return self;
 }
@@ -72,6 +74,11 @@ static const CGFloat ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN         = 15;//button和
     [self insertSubview:_tagButton belowSubview:self.contentView];
 }
 
+- (void) setupGestureRecognizer
+{
+
+}
+
 -(void)layoutSubviews
 {
     [super layoutSubviews];
@@ -85,7 +92,7 @@ static const CGFloat ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN         = 15;//button和
     
     _nameLabel.frame = CGRectMake(tx, ty, tw, _nameLabel.font.lineHeight);
     
-    _messageLabel.frame = CGRectMake(tx, ty + _nameLabel.font.lineHeight + 5, tw, _messageLabel.font.lineHeight);
+    _messageLabel.frame = CGRectMake(_nameLabel.left, _nameLabel.bottom + 5, tw, _messageLabel.font.lineHeight);
 }
 
 

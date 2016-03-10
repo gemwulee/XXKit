@@ -811,6 +811,7 @@
 					"$(PROJECT_DIR)/XXBase/",
 				);
 				INFOPLIST_FILE = XXKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -836,6 +837,7 @@
 					"$(PROJECT_DIR)/XXBase/",
 				);
 				INFOPLIST_FILE = XXKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

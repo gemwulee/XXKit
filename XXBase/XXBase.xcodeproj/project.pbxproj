@@ -16,6 +16,7 @@
 		9AF3BEAF1C8EBF7D00672910 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3BEAE1C8EBF7D00672910 /* UIImage+TintColor.m */; };
 		9AF41A6D1C881C1300C17947 /* XXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A6C1C881C1300C17947 /* XXButton.m */; };
 		9AF41A821C88345200C17947 /* XXFPSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A811C88345200C17947 /* XXFPSEngine.m */; };
+		9AF523551C91898700A59967 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF523541C91898700A59967 /* UIView+Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		9AF41A771C88341300C17947 /* libutility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutility.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF41A801C88345200C17947 /* XXFPSEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXFPSEngine.h; sourceTree = "<group>"; };
 		9AF41A811C88345200C17947 /* XXFPSEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXFPSEngine.m; sourceTree = "<group>"; };
+		9AF523531C91898700A59967 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		9AF523541C91898700A59967 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				9A6753041C45234600099AF1 /* UIDeviceEx.m */,
 				9AF3BEAD1C8EBF7D00672910 /* UIImage+TintColor.h */,
 				9AF3BEAE1C8EBF7D00672910 /* UIImage+TintColor.m */,
+				9AF523531C91898700A59967 /* UIView+Common.h */,
+				9AF523541C91898700A59967 /* UIView+Common.m */,
 			);
 			path = foundationex;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF523551C91898700A59967 /* UIView+Common.m in Sources */,
 				9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */,
 				9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */,
 				9AF3BEAF1C8EBF7D00672910 /* UIImage+TintColor.m in Sources */,

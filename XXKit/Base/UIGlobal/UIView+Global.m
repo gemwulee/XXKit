@@ -10,4 +10,5 @@
 
 @implementation UIView (Global)
 
+
 @end

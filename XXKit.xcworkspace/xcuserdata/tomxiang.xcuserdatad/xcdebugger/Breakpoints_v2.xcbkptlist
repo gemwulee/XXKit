@@ -69,5 +69,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Home/controller/HomeViewController.m"
+            timestampString = "479306053.772306"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-tableView:editActionsForRowAtIndexPath:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HomeViewController tableView:editActionsForRowAtIndexPath:]"
+                  moduleName = "XXKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Home/controller/HomeViewController.m"
+                  timestampString = "479306054.789555"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__61-[HomeViewController tableView:editActionsForRowAtIndexPath:]_block_invoke"
+                  moduleName = "XXKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Home/controller/HomeViewController.m"
+                  timestampString = "479306054.789675"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "74">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
