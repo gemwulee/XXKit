@@ -21,6 +21,7 @@
 {
     if (self = [super init]) {
         _tabBarView = [[XXTabBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, XXVIEW_CONTROLLER_TOOLBAR_HEIGHT)];
+        _tabBarView.userInteractionEnabled = YES; //这一步一定要设置为YES，否则不能和用户交互
         _tabBarView.delegate = self;
     }
     return self;
@@ -34,7 +35,8 @@
 - (void)setViewControllers:(NSArray *)viewControllers animated:(BOOL)animated
 {
     [super setViewControllers:viewControllers animated:animated];
-    
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+
     for (UIView *subView in self.tabBar.subviews) {
         [subView removeFromSuperview];
     }

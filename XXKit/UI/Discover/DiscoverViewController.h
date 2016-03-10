@@ -7,7 +7,8 @@
 //
 
 #import "XXViewController.h"
+#import "XXBaseViewController.h"
 
-@interface DiscoverViewController : XXViewController
+@interface DiscoverViewController : XXBaseViewController
 
 @end

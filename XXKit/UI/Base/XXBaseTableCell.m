@@ -1,21 +1,21 @@
 //
-//  MineTableCell.m
+//  XXBaseTableCell.m
 //  XXKit
 //
-//  Created by tomxiang on 16/3/5.
+//  Created by tomxiang on 16/3/9.
 //  Copyright © 2016年 tomxiang. All rights reserved.
 //
 
-#import "MineTableCell.h"
+#import "XXBaseTableCell.h"
 #import "XXGlobalColor.h"
 #import "UITableViewCell+Custom.h"
 #import "foundationex/UIScreenEx.h"
 
-@interface MineTableCell()
-@property(nonatomic,weak) id<MineTableCellDelegate> delegate;
+@interface XXBaseTableCell()
+@property(nonatomic,weak) id<BaseTableCellDelegate> delegate;
 @end
 
-@implementation MineTableCell
+@implementation XXBaseTableCell
 
 -(nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(nonnull NSString *)reuseIdentifier indexPath:(nonnull NSIndexPath*) indexPath
 {
@@ -27,25 +27,34 @@
         
         self.userInteractionEnabled = YES;
         
-
+        
     }
     return self;
 }
 
--(void) configureData:(NSString*) tipText
+-(void) configureData:(NSString*) tipText imageKey:(NSString*) imageKey
 {
     [self setCustomAccessoryViewEnabled:YES];
+    
     self.textLabel.text = tipText;
+    if(imageKey.length > 0){
+        self.imageView.image = [UIImage imageNamed:imageKey];
+    }
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
 }
 
--(void) configureDataWithUISwtich:(BOOL) isOn tipText:(NSString*) tipText delegate:(id<MineTableCellDelegate>) delegate
+-(void) configureDataWithUISwtich:(BOOL) isOn tipText:(NSString*) tipText delegate:(id<BaseTableCellDelegate>) delegate
 {
+    [self setCustomAccessoryViewEnabled:NO];
+    
     self.delegate = delegate;
     
     UISwitch *mySwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
     [self.contentView addSubview:mySwitch];
     self.accessoryView = mySwitch;
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     [mySwitch setOn:isOn];
     [mySwitch addTarget:self action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
     self.textLabel.text = tipText;

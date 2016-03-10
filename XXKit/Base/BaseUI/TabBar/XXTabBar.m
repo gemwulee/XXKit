@@ -39,6 +39,12 @@
         
         [self addSubview:button];
     }
+    
+    for (UIView* subView in self.subviews) {
+        if([subView isKindOfClass:[UIButton class]] && subView.tag == 0){
+            ((UIButton*)subView).selected = YES;
+        }
+    }
 }
 
 -(void) buttonClick:(id) sender

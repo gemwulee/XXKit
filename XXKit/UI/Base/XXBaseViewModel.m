@@ -1,29 +1,28 @@
 //
-//  MineViewModel.m
+//  XXBaseViewModel.m
 //  XXKit
 //
-//  Created by tomxiang on 16/3/5.
+//  Created by tomxiang on 16/3/9.
 //  Copyright © 2016年 tomxiang. All rights reserved.
 //
 
-#import "MineViewModel.h"
+#import "XXBaseViewModel.h"
 
-@interface MineViewModel()
+@interface XXBaseViewModel()
 @property(nonatomic,strong) NSMutableArray *listContentData;
 @end
 
+@implementation XXBaseViewModel
 
-@implementation MineViewModel
-
--(instancetype)init{
+-(instancetype)initWithFileName:(NSString*) fileName{
     if (self = [super init]) {
-        [self initData];
+        [self initData:fileName];
     }
     return self;
 }
 
--(void)initData{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SettingViewController" ofType:@"plist"];
+-(void)initData:(NSString*) fileName{
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];//@"SettingViewController"
     self.listContentData = [[NSMutableArray alloc] initWithArray:[NSArray arrayWithContentsOfFile:path]];
 }
 
@@ -35,4 +34,7 @@
 -(NSDictionary*) getObjectAtIndex:(NSUInteger) section{
     return [_listContentData objectAtIndex:section];
 }
+
+
+
 @end

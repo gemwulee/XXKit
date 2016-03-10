@@ -25,12 +25,14 @@
 		9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F21C81B93A00893ABA /* CoreText.framework */; };
 		9AF2A2BE1C8FD894005FE17F /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */; };
 		9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */; };
-		9AF2A2C21C8FD894005FE17F /* MineTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2B81C8FD894005FE17F /* MineTableCell.m */; };
 		9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BA1C8FD894005FE17F /* MineViewController.m */; };
-		9AF2A2C41C8FD894005FE17F /* MineViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */; };
 		9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */; };
 		9AF2A2CA1C8FD8CF005FE17F /* HomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */; };
 		9AF2A2CB1C8FD8CF005FE17F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */; };
+		9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2A2E31C9003C1005FE17F /* DiscoverViewController.plist */; };
+		9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2E71C9009AD005FE17F /* XXBaseViewController.m */; };
+		9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2EA1C9009D2005FE17F /* XXBaseTableCell.m */; };
+		9AF2A2EE1C900CEA005FE17F /* XXBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2ED1C900CEA005FE17F /* XXBaseViewModel.m */; };
 		9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9A71C3CBB55009DDD15 /* main.m */; };
 		9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AA1C3CBB55009DDD15 /* AppDelegate.m */; };
 		9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9AD1C3CBB55009DDD15 /* ViewController.m */; };
@@ -97,17 +99,20 @@
 		9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		9AF2A2AF1C8FD893005FE17F /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
-		9AF2A2B71C8FD894005FE17F /* MineTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableCell.h; sourceTree = "<group>"; };
-		9AF2A2B81C8FD894005FE17F /* MineTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableCell.m; sourceTree = "<group>"; };
 		9AF2A2B91C8FD894005FE17F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		9AF2A2BA1C8FD894005FE17F /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
-		9AF2A2BB1C8FD894005FE17F /* MineViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewModel.h; sourceTree = "<group>"; };
-		9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewModel.m; sourceTree = "<group>"; };
 		9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingViewController.plist; sourceTree = "<group>"; };
 		9AF2A2C61C8FD8CF005FE17F /* HomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableCell.h; sourceTree = "<group>"; };
 		9AF2A2C71C8FD8CF005FE17F /* HomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableCell.m; sourceTree = "<group>"; };
 		9AF2A2C81C8FD8CF005FE17F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		9AF2A2C91C8FD8CF005FE17F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		9AF2A2E31C9003C1005FE17F /* DiscoverViewController.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DiscoverViewController.plist; sourceTree = "<group>"; };
+		9AF2A2E61C9009AD005FE17F /* XXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBaseViewController.h; sourceTree = "<group>"; };
+		9AF2A2E71C9009AD005FE17F /* XXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBaseViewController.m; sourceTree = "<group>"; };
+		9AF2A2E91C9009D2005FE17F /* XXBaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBaseTableCell.h; sourceTree = "<group>"; };
+		9AF2A2EA1C9009D2005FE17F /* XXBaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBaseTableCell.m; sourceTree = "<group>"; };
+		9AF2A2EC1C900CEA005FE17F /* XXBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBaseViewModel.h; sourceTree = "<group>"; };
+		9AF2A2ED1C900CEA005FE17F /* XXBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBaseViewModel.m; sourceTree = "<group>"; };
 		9AF3E9A31C3CBB55009DDD15 /* XXKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF3E9A71C3CBB55009DDD15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9AF3E9A91C3CBB55009DDD15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -267,6 +272,7 @@
 			children = (
 				9AF2A2AF1C8FD893005FE17F /* DiscoverViewController.h */,
 				9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */,
+				9AF2A2E31C9003C1005FE17F /* DiscoverViewController.plist */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -285,23 +291,33 @@
 		9AF2A2B61C8FD894005FE17F /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				9AF2A2B71C8FD894005FE17F /* MineTableCell.h */,
-				9AF2A2B81C8FD894005FE17F /* MineTableCell.m */,
 				9AF2A2B91C8FD894005FE17F /* MineViewController.h */,
 				9AF2A2BA1C8FD894005FE17F /* MineViewController.m */,
-				9AF2A2BB1C8FD894005FE17F /* MineViewModel.h */,
-				9AF2A2BC1C8FD894005FE17F /* MineViewModel.m */,
 				9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */,
 			);
 			path = Me;
 			sourceTree = "<group>";
 		};
+		9AF2A2E51C900960005FE17F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9AF2A2E61C9009AD005FE17F /* XXBaseViewController.h */,
+				9AF2A2E71C9009AD005FE17F /* XXBaseViewController.m */,
+				9AF2A2E91C9009D2005FE17F /* XXBaseTableCell.h */,
+				9AF2A2EA1C9009D2005FE17F /* XXBaseTableCell.m */,
+				9AF2A2EC1C900CEA005FE17F /* XXBaseViewModel.h */,
+				9AF2A2ED1C900CEA005FE17F /* XXBaseViewModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		9AF302071C43861D00FA232D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9AF2A2E51C900960005FE17F /* Base */,
+				9AF2A2B11C8FD893005FE17F /* Home */,
 				9AF2A2AB1C8FD893005FE17F /* Contacts */,
 				9AF2A2AE1C8FD893005FE17F /* Discover */,
-				9AF2A2B11C8FD893005FE17F /* Home */,
 				9AF2A2B61C8FD894005FE17F /* Me */,
 			);
 			path = UI;
@@ -510,6 +526,7 @@
 			files = (
 				9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */,
 				9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */,
+				9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */,
 				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
@@ -586,11 +603,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */,
-				9AF2A2C41C8FD894005FE17F /* MineViewModel.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
 				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
-				9AF2A2C21C8FD894005FE17F /* MineTableCell.m in Sources */,
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
+				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
 				9AF2A2CA1C8FD8CF005FE17F /* HomeTableCell.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
@@ -604,9 +620,11 @@
 				9AF2A2CB1C8FD8CF005FE17F /* HomeViewController.m in Sources */,
 				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
+				9AF2A2EE1C900CEA005FE17F /* XXBaseViewModel.m in Sources */,
 				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
 				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
 				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
+				9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

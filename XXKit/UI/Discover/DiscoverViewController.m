@@ -7,26 +7,13 @@
 //
 
 #import "DiscoverViewController.h"
-#import "foundationex/UIImage+TintColor.h"
+#import "XXBaseTableCell.h"
+#import "XXBaseViewModel.h"
 
 @implementation DiscoverViewController
 
--(void)viewDidLoad
-{
-    [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
-    
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-    
-    UIImage *imageCardList = [UIImage imageNamed:@"card_list_icon"];
-    
-    imageCardList = [imageCardList imageWithTintColor:[UIColor orangeColor]];
-    
-    imageView.image = imageCardList;
-    
-    
-    
-    [self.view addSubview:imageView];
+-(NSString*) getViewModelFileName{
+    return @"DiscoverViewController";
 }
 
 @end

@@ -17,24 +17,32 @@
 		<key>itemContent</key>
 		<array>
 			<dict>
+				<key>itemImage</key>
+				<string>ff_IconShowAlbum.png</string>
 				<key>itemKey</key>
 				<string>itemPhoto</string>
 				<key>itemValue</key>
 				<string>相册</string>
 			</dict>
 			<dict>
+				<key>itemImage</key>
+				<string>MoreMyFavorites.png</string>
 				<key>itemKey</key>
 				<string>itemCollect</string>
 				<key>itemValue</key>
 				<string>收藏</string>
 			</dict>
 			<dict>
+				<key>itemImage</key>
+				<string>MoreMyBankCard.png</string>
 				<key>itemKey</key>
 				<string>itemWallet</string>
 				<key>itemValue</key>
 				<string>钱包</string>
 			</dict>
 			<dict>
+				<key>itemImage</key>
+				<string>MyCardPackageIcon.png</string>
 				<key>itemKey</key>
 				<string>itemCoupon</string>
 				<key>itemValue</key>

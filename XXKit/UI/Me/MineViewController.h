@@ -7,7 +7,8 @@
 //
 
 #import "XXViewController.h"
+#import "XXBaseViewController.h"
 
-@interface MineViewController : XXViewController
+@interface MineViewController : XXBaseViewController
 
 @end
