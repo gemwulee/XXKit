@@ -65,30 +65,37 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return NO;
-}
+#pragma mark- 左滑
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     return YES;
 }
+//此方法必须执行，否则会有问题
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{}
 
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewRowAction *action0 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"关注" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
-        NSLog(@"点击了关注");
+    //设置删除按钮
+    UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除"handler:^(UITableViewRowAction *action,NSIndexPath *indexPath) {
         
-        // 收回左滑出现的按钮(退出编辑模式)
-        tableView.editing = NO;
-    }];
-    
-    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
         [self.dataArray removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.xxTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
     }];
     
-    return @[action1, action0];
+    //设置未读按钮
+    UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"标记未读" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        
+        [self.dataArray exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
+        NSIndexPath *firstIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.section];
+        [tableView moveRowAtIndexPath:indexPath toIndexPath:firstIndexPath];
+        
+        
+    }];
+    
+    topRowAction.backgroundColor = [UIColor grayColor];
+
+    return  @[deleteRowAction,topRowAction];
 }
 
 
