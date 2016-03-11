@@ -79,17 +79,19 @@
     UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除"handler:^(UITableViewRowAction *action,NSIndexPath *indexPath) {
         
         [self.dataArray removeObjectAtIndex:indexPath.row];
-        [self.xxTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+//        [self.xxTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [self.xxTableView reloadData];
         
     }];
     
     //设置未读按钮
-    UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"标记未读" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+    UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"置顶" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
         
-        [self.dataArray exchangeObjectAtIndex:indexPath.row withObjectAtIndex:0];
-        NSIndexPath *firstIndexPath = [NSIndexPath indexPathForRow:0 inSection:indexPath.section];
-        [tableView moveRowAtIndexPath:indexPath toIndexPath:firstIndexPath];
+        NSObject *object = [self.dataArray objectAtIndex:indexPath.row];
+        [self.dataArray removeObjectAtIndex:indexPath.row];
+        [self.dataArray insertObject:object atIndex:0];
         
+        [self.xxTableView reloadData];
         
     }];
     
