@@ -7,8 +7,8 @@
 //
 
 #import "XXTabBar.h"
-#import "foundationex/UIScreenEx.h"
-#import "uikit/XXButton.h"
+#import "UIScreenEx.h"
+#import "XXButton.h"
 #import "UIViewController+SwizzleMethod.h"
 #import "XXTabBarItem.h"
 

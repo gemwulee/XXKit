@@ -809,6 +809,10 @@
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
 					"$(PROJECT_DIR)/XXBase/XXBase/",
 					"$(PROJECT_DIR)/XXBase/",
+					"$(PROJECT_DIR)/XXBase/macro/",
+					"$(PROJECT_DIR)/XXBase/uikit/",
+					"$(PROJECT_DIR)/XXBase/foundationex/",
+					"$(PROJECT_DIR)/XXBase/utility/",
 				);
 				INFOPLIST_FILE = XXKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -835,6 +839,10 @@
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
 					"$(PROJECT_DIR)/XXBase/XXBase/",
 					"$(PROJECT_DIR)/XXBase/",
+					"$(PROJECT_DIR)/XXBase/macro/",
+					"$(PROJECT_DIR)/XXBase/uikit/",
+					"$(PROJECT_DIR)/XXBase/foundationex/",
+					"$(PROJECT_DIR)/XXBase/utility/",
 				);
 				INFOPLIST_FILE = XXKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;

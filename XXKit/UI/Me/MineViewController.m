@@ -7,11 +7,11 @@
 //
 
 #import "MineViewController.h"
-#import "utility/XXFPSEngine.h"
+#import "XXFPSEngine.h"
 #import "UITableView+Global.h"
 #import "XXBaseTableCell.h"
 #import "XXBaseViewModel.h"
-#import "foundationex/UIScreenEx.h"
+#import "UIScreenEx.h"
 #import "UITableViewCell+Custom.h"
 
 @interface MineViewController()<BaseTableCellDelegate>

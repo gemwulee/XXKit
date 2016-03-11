@@ -9,7 +9,7 @@
 #import "XXBaseTableCell.h"
 #import "XXGlobalColor.h"
 #import "UITableViewCell+Custom.h"
-#import "foundationex/UIScreenEx.h"
+#import "UIScreenEx.h"
 
 @interface XXBaseTableCell()
 @property(nonatomic,weak) id<BaseTableCellDelegate> delegate;

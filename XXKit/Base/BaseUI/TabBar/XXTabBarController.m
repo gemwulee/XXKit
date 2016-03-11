@@ -9,7 +9,7 @@
 #import "XXTabBarController.h"
 #import "XXTabBar.h"
 #import "UIViewController+SwizzleMethod.h"
-#import "foundationex/UISCreenEx.h"
+#import "UISCreenEx.h"
 
 @interface XXTabBarController()<XXTabBarDelegate>
 @property(strong, nonatomic) XXTabBar* tabBarView; // 覆盖uiTabBar的
