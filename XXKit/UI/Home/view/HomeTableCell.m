@@ -4,13 +4,15 @@
 //
 //  Created by tomxiang on 16/2/27.
 //  Copyright © 2016年 tomxiang. All rights reserved.
-//
+//  AutoLayout学习:http://liuyanwei.jumppo.com/2015/06/14/ios-library-masonry.html
+//                http://adad184.com/2014/09/28/use-masonry-to-quick-solve-autolayout/
 
 #import "HomeTableCell.h"
 #import "XXMessageModel.h"
 #import "XXGlobalColor.h"
 #import "UITableViewCell+Custom.h"
 #import "XXBase.h"
+#import "Masonry.h"
 
 static const CGFloat ADDCOMMENDFRIEND_CELL_HEAD_HOR_MARGIN      = 15;//headImage的x
 static const CGFloat ADDCOMMENDFRIEND_CELL_HEAD_VERTICAL_MARGIN = 6;//headImage的y
@@ -34,7 +36,6 @@ static const CGFloat ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN         = 15;//button和
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
         [self setupView];
-        [self setupGestureRecognizer];
     }
     return self;
 }
@@ -61,44 +62,32 @@ static const CGFloat ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN         = 15;//button和
     _messageLabel.font = fontDetail;
     [self.contentView addSubview:_messageLabel];
     
-    _deleteButton = [UIButton new];
-    _deleteButton.backgroundColor = [UIColor redColor];
-    [_deleteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_deleteButton setTitle:@"删除" forState:UIControlStateNormal];
-    [self insertSubview:_deleteButton belowSubview:self.contentView];
-
-    _tagButton = [UIButton new];
-    _tagButton.backgroundColor =[UIColor lightGrayColor];
-    [_tagButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_tagButton setTitle:@"标记未读" forState:UIControlStateNormal];
-    [self insertSubview:_tagButton belowSubview:self.contentView];
-}
-
-- (void) setupGestureRecognizer
-{
-
-}
-
--(void)layoutSubviews
-{
-    [super layoutSubviews];
-    int tableViewWidth = self.contentView.frame.size.width;
-
+    [_iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView).with.offset(ADDCOMMENDFRIEND_CELL_HEAD_HOR_MARGIN);
+        make.top.equalTo(self.contentView).with.offset(ADDCOMMENDFRIEND_CELL_HEAD_VERTICAL_MARGIN);
+        make.height.and.width.mas_equalTo(ADDCOMMENDFRIEND_LISTSTYLE_HEAD_SIZE);
+    }];
+    
     int tx = ADDCOMMENDFRIEND_CELL_HEAD_HOR_MARGIN + ADDCOMMENDFRIEND_LISTSTYLE_HEAD_SIZE + ADDCOMMENDFRIEND_CELL_HEAD_HOR_MARGIN;
-    int ty = ADDCOMMENDFRIEND_CELL_VERTICAL_MARGIN2;//
-    int tw = tableViewWidth - tx - ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN;
-
-    _iconImageView.frame = CGRectMake(ADDCOMMENDFRIEND_CELL_HEAD_HOR_MARGIN, ADDCOMMENDFRIEND_CELL_HEAD_VERTICAL_MARGIN, ADDCOMMENDFRIEND_LISTSTYLE_HEAD_SIZE, ADDCOMMENDFRIEND_LISTSTYLE_HEAD_SIZE);
+    [_nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView).with.offset(tx);
+        make.right.equalTo(self.contentView).with.offset(-ADDCOMMENDFRIEND_CELL_RIGHT_MARGIN);
+        make.top.equalTo(self.contentView).with.offset(ADDCOMMENDFRIEND_CELL_VERTICAL_MARGIN2);
+    }];
     
-    _nameLabel.frame = CGRectMake(tx, ty, tw, _nameLabel.font.lineHeight);
-    
-    _messageLabel.frame = CGRectMake(_nameLabel.left, _nameLabel.bottom + 5, tw, _messageLabel.font.lineHeight);
+    [_messageLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(_nameLabel.mas_left);
+        make.right.mas_equalTo(_nameLabel.mas_right);
+        make.top.mas_equalTo(_nameLabel.mas_bottom).offset(5.f);
+    }];
 }
+
 
 
 - (void)configureForData:(XXMessageModel*) xxMsgModel row:(NSInteger) msgRow
 {
     [self setCustomAccessoryViewEnabled:NO];
+    
     UIImage* image = [UIImage imageNamed:xxMsgModel.imageName];
 
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){

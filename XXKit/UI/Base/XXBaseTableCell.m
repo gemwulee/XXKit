@@ -4,7 +4,7 @@
 //
 //  Created by tomxiang on 16/3/9.
 //  Copyright © 2016年 tomxiang. All rights reserved.
-//
+//  
 
 #import "XXBaseTableCell.h"
 #import "XXGlobalColor.h"
