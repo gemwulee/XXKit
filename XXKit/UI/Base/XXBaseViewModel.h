@@ -8,7 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+#define ITEM_CONTENT @"itemContent"
+#define ITEM_KEY     @"itemKey"
+#define ITEM_ACCOUNT @"itemAccount"
+#define ITEM_VALUE   @"itemValue"
+#define ITEM_IMAGE   @"itemImage"
+
 @interface XXBaseViewModel : NSObject
+{
+@protected
+    NSMutableArray *_listContentData;
+}
+
 
 -(instancetype)initWithFileName:(NSString*) fileName;
 

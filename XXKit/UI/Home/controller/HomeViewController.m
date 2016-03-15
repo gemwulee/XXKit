@@ -46,10 +46,13 @@
     self.dataArray = [NSMutableArray array];
     
     for (int i = 0; i < count; i++) {
-        XXMessageModel *model = [XXMessageModel new];
-        model.imageName = [SDAnalogDataGenerator indexImageName:i];
-        model.name = [SDAnalogDataGenerator indexName:i];
-        model.message = [SDAnalogDataGenerator indexMessage:i];
+       
+        NSString *imageName = [SDAnalogDataGenerator indexImageName:i];
+        NSString *name = [SDAnalogDataGenerator indexName:i];
+        NSString *message = [SDAnalogDataGenerator indexMessage:i];
+        
+        XXMessageModel *model = [[XXMessageModel alloc] initWithModel:imageName name:name message:message seq:0];
+        
         [self.dataArray addObject:model];
     }
 }

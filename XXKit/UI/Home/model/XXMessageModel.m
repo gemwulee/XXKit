@@ -10,4 +10,16 @@
 
 @implementation XXMessageModel
 
+-(instancetype) initWithModel:(NSString*) imageName name:(NSString*) name message:(NSString*) message seq:(NSInteger) seq
+{
+    if (self = [super init]) {
+        self.imageName = imageName;
+        self.name = name;
+        self.message = message;
+        self.seq = seq;
+        
+    }
+    return self;
+}
+
 @end

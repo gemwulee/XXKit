@@ -10,12 +10,6 @@
 #import "XXViewController.h"
 @class XXBaseViewModel;
 
-#define ITEM_CONTENT @"itemContent"
-#define ITEM_KEY     @"itemKey"
-#define ITEM_ACCOUNT @"itemAccount"
-#define ITEM_VALUE @"itemValue"
-#define ITEM_IMAGE @"itemImage"
-
 @protocol XXBaseVCRequireMethod <NSObject>
 @required
 -(NSString*) getViewModelFileName;

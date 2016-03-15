@@ -7,7 +7,8 @@
 //
 
 #import "XXViewController.h"
+#import "XXBaseViewController.h"
 
-@interface ContactsViewController : XXViewController
+@interface ContactsViewController : XXBaseViewController
 
 @end

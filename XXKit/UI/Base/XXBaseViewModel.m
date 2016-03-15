@@ -9,7 +9,6 @@
 #import "XXBaseViewModel.h"
 
 @interface XXBaseViewModel()
-@property(nonatomic,strong) NSMutableArray *listContentData;
 @end
 
 @implementation XXBaseViewModel
@@ -17,13 +16,14 @@
 -(instancetype)initWithFileName:(NSString*) fileName{
     if (self = [super init]) {
         [self initData:fileName];
+        [self initOtherDataSource];
     }
     return self;
 }
 
 -(void)initData:(NSString*) fileName{
     NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];//@"SettingViewController"
-    self.listContentData = [[NSMutableArray alloc] initWithArray:[NSArray arrayWithContentsOfFile:path]];
+    _listContentData = [[NSMutableArray alloc] initWithArray:[NSArray arrayWithContentsOfFile:path]];
 }
 
 
@@ -35,6 +35,6 @@
     return [_listContentData objectAtIndex:section];
 }
 
-
+-(void) initOtherDataSource{}
 
 @end

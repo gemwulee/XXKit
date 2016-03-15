@@ -23,7 +23,9 @@
 		9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */; };
 		9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F01C819E5F00893ABA /* libuikit.a */; };
 		9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F21C81B93A00893ABA /* CoreText.framework */; };
-		9AF2A2BE1C8FD894005FE17F /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */; };
+		9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0BC9D1C97E79300B602C6 /* ContactsViewController.m */; };
+		9AF0BCA71C97E9AF00B602C6 /* ContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0BCA61C97E9AF00B602C6 /* ContactViewModel.m */; };
+		9AF0BCA91C97FC8900B602C6 /* ContactConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF0BCA81C97FC8900B602C6 /* ContactConfig.plist */; };
 		9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */; };
 		9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BA1C8FD894005FE17F /* MineViewController.m */; };
 		9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF2A2BD1C8FD894005FE17F /* SettingViewController.plist */; };
@@ -97,8 +99,11 @@
 		9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Custom.m"; sourceTree = "<group>"; };
 		9AC4E2F01C819E5F00893ABA /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "XXBase/build/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9AC4E2F21C81B93A00893ABA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		9AF2A2AC1C8FD893005FE17F /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
-		9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		9AF0BC9C1C97E79300B602C6 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		9AF0BC9D1C97E79300B602C6 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		9AF0BCA51C97E9AF00B602C6 /* ContactViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewModel.h; sourceTree = "<group>"; };
+		9AF0BCA61C97E9AF00B602C6 /* ContactViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewModel.m; sourceTree = "<group>"; };
+		9AF0BCA81C97FC8900B602C6 /* ContactConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ContactConfig.plist; sourceTree = "<group>"; };
 		9AF2A2AF1C8FD893005FE17F /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		9AF2A2B01C8FD893005FE17F /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		9AF2A2B91C8FD894005FE17F /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
@@ -264,11 +269,46 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		9AF0BC9B1C97E79300B602C6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AF0BC9C1C97E79300B602C6 /* ContactsViewController.h */,
+				9AF0BC9D1C97E79300B602C6 /* ContactsViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9AF0BC9E1C97E79300B602C6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9AF0BCA81C97FC8900B602C6 /* ContactConfig.plist */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9AF0BC9F1C97E79300B602C6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9AF0BCA41C97E9A100B602C6 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				9AF0BCA51C97E9AF00B602C6 /* ContactViewModel.h */,
+				9AF0BCA61C97E9AF00B602C6 /* ContactViewModel.m */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
 		9AF2A2AB1C8FD893005FE17F /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				9AF2A2AC1C8FD893005FE17F /* ContactsViewController.h */,
-				9AF2A2AD1C8FD893005FE17F /* ContactsViewController.m */,
+				9AF0BC9B1C97E79300B602C6 /* controller */,
+				9AF0BCA41C97E9A100B602C6 /* viewmodel */,
+				9AF0BC9E1C97E79300B602C6 /* model */,
+				9AF0BC9F1C97E79300B602C6 /* view */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -563,6 +603,7 @@
 				9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */,
 				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
+				9AF0BCA91C97FC8900B602C6 /* ContactConfig.plist in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,15 +678,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */,
+				9AF0BCA71C97E9AF00B602C6 /* ContactViewModel.m in Sources */,
 				9AF523511C91638400A59967 /* XXMessageModel.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
 				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
+				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
-				9AF2A2BE1C8FD894005FE17F /* ContactsViewController.m in Sources */,
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,

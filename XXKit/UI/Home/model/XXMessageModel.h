@@ -15,4 +15,6 @@
 @property (nonatomic, copy)   NSString *message;
 @property (nonatomic, assign) NSInteger seq;
 
+-(instancetype) initWithModel:(NSString*) imageName name:(NSString*) name message:(NSString*) message seq:(NSInteger) seq;
+
 @end
