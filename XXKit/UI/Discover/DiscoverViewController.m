@@ -9,6 +9,7 @@
 #import "DiscoverViewController.h"
 #import "XXBaseTableCell.h"
 #import "XXBaseViewModel.h"
+#import "OSMOPhoneController.h"
 
 @implementation DiscoverViewController
 
@@ -16,4 +17,18 @@
     return @"DiscoverViewController";
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    
+    OSMOPhoneController *osmoVC = [[OSMOPhoneController alloc] init];
+    osmoVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:osmoVC animated:YES];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+//    [self.navigationController.navigationBar setHidden:YES];
+}
 @end

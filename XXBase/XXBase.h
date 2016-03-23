@@ -11,6 +11,7 @@
 #import "foundationex/NSStringEx.h"
 #import "foundationex/UISCreenEx.h"
 #import "foundationex/UIColorEx.h"
+#import "foundationex/UIDeviceEx.h"
 #import "foundationex/UIView+Common.h"
 
 

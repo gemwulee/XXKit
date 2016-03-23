@@ -22,4 +22,6 @@ extern "C" {
 
 @interface UIDevice(Ex)
 
++ (BOOL)isLandscape;
+
 @end

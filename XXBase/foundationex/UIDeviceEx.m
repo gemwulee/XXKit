@@ -10,4 +10,13 @@
 
 @implementation UIDevice(Ex)
 
++ (BOOL)isLandscape{
+    if([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationLandscapeRight || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationLandscapeLeft){
+        return YES;
+    }
+    else{
+        return NO;
+    }
+}
+
 @end
