@@ -18,12 +18,8 @@
 
 //AVCaptureSession对象来执行输入设备和输出设备之间的数据传递
 @property (nonatomic, strong) AVCaptureSession            *session;
-//AVCaptureDeviceInput对象是输入流
-@property (nonatomic, strong) AVCaptureDeviceInput        *videoInput;
-//照片输出流对象，当然我的照相机只有拍照功能，所以只需要这个对象就够了
-@property (nonatomic, strong) AVCaptureVideoDataOutput   *dataOutput;
 //预览图层，来显示照相机拍摄到的画面
-@property (nonatomic, strong) AVCaptureVideoPreviewLayer  *previewLayer;
+@property (nonatomic, strong) CALayer  *previewLayer;
 //预览界面
 @property (nonatomic, strong) OSMOPhoneView *cameraShowView;
 //滤镜
@@ -32,6 +28,8 @@
 @property (nonatomic, strong) CIContext *context;
 
 @property (nonatomic, strong) NSArray *filterNames;
+
+@property (nonatomic, strong) CIImage *ciImage;
 @end
 
 @implementation OSMOPhoneController
@@ -87,18 +85,6 @@
     self.cameraShowView.frame = self.view.bounds;
     [self.previewLayer setFrame:self.cameraShowView.bounds];
     
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if (deviceOrientation == UIInterfaceOrientationPortraitUpsideDown)
-        [_previewLayer.connection setVideoOrientation:AVCaptureVideoOrientationPortraitUpsideDown];
-    
-    else if (deviceOrientation == UIInterfaceOrientationPortrait)
-        [_previewLayer.connection setVideoOrientation:AVCaptureVideoOrientationPortrait];
-    
-    else if (deviceOrientation == UIInterfaceOrientationLandscapeLeft)
-        [_previewLayer.connection setVideoOrientation:AVCaptureVideoOrientationLandscapeLeft];
-    
-    else
-        [_previewLayer.connection setVideoOrientation:AVCaptureVideoOrientationLandscapeRight];
     
 }
 - (BOOL)prefersStatusBarHidden//for iOS7.0
@@ -132,7 +118,6 @@
         @weakify(self);
         self.cameraShowView.selectBlock = ^(NSInteger row){
             @strongify(self)
-//            [self showAllFilters];
             NSLog(@"row:%ld",row);
             NSString *filterName = [self.filterNames objectAtIndex:row];
             self.filter = [CIFilter filterWithName:filterName];
@@ -151,33 +136,28 @@
 
 - (void) initialSession
 {
-    //这个方法的执行我放在init方法里了
-    self.session = [[AVCaptureSession alloc] init];
+    self.session = [AVCaptureSession new];
     [self.session beginConfiguration];
-    self.session.sessionPreset = AVCaptureSessionPresetLow;
+    self.session.sessionPreset = AVCaptureSessionPresetHigh;
     
-    self.videoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self frontCamera] error:nil];
-    //[self fronCamera]方法会返回一个AVCaptureDevice对象，因为我初始化时是采用前摄像头，所以这么写，具体的实现方法后面会介绍
-    self.dataOutput = [[AVCaptureVideoDataOutput alloc] init];
-
-    //[[NSDictionary alloc] initWithObjectsAndKeys:kCVPixelFormatType_32BGRA,(NSString*)kCVPixelBufferPixelFormatTypeKey, nil];
-    //这是输出流的设置参数AVVideoCodecJPEG参数表示以JPEG的图片格式输出图片
-    //[[NSDictionary alloc] initWithObjectsAndKeys:AVVideoCodecJPEG,AVVideoCodecKey, nil];
-
-    NSDictionary * outputSettings =   [NSDictionary dictionaryWithObject: [NSNumber numberWithInt:kCVPixelFormatType_32BGRA] forKey:(id)kCVPixelBufferPixelFormatTypeKey];
-    
-    self.dataOutput.videoSettings = outputSettings;
-    self.dataOutput.alwaysDiscardsLateVideoFrames = true;
-    
-    if ([self.session canAddInput:self.videoInput]) {
-        [self.session addInput:self.videoInput];
+    //AVCaptureDeviceInput对象是输入流
+    AVCaptureDeviceInput   *videoInput = [[AVCaptureDeviceInput alloc] initWithDevice:[self backCamera] error:nil];
+    if ([self.session canAddInput:videoInput]) {
+        [self.session addInput:videoInput];
     }
-    if ([self.session canAddOutput:self.dataOutput]) {
-        [self.session addOutput:self.dataOutput];
+    
+    AVCaptureVideoDataOutput *dataOutput = [[AVCaptureVideoDataOutput alloc] init];
+    NSDictionary * outputSettings =   [NSDictionary dictionaryWithObject: [NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey];
+    dataOutput.videoSettings = outputSettings;
+    
+    dataOutput.alwaysDiscardsLateVideoFrames = true;
+    
+    if ([self.session canAddOutput:dataOutput]) {
+        [self.session addOutput:dataOutput];
     }
     
     dispatch_queue_t queue = dispatch_queue_create("VideoQueue", DISPATCH_QUEUE_SERIAL);
-    [self.dataOutput setSampleBufferDelegate:self queue:queue];
+    [dataOutput setSampleBufferDelegate:self queue:queue];
     
     [self.session commitConfiguration];
 }
@@ -205,42 +185,43 @@
 - (void) setUpCameraLayer
 {
     if (self.previewLayer == nil) {
-        self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.session];
-        UIView * view = self.cameraShowView;
-        CALayer * viewLayer = [view layer];
-        [viewLayer setMasksToBounds:YES];
+        self.previewLayer = [CALayer layer];
+        // previewLayer.bounds = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+        // previewLayer.position = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+        // previewLayer.setAffineTransform(CGAffineTransformMakeRotation(CGFloat(M_PI / 2.0)));
+        self.previewLayer.anchorPoint = CGPointZero;
+        self.previewLayer.bounds = self.view.bounds;
         
-        CGRect bounds = [view bounds];
         
-        [self.previewLayer setFrame:bounds];
-        [self.previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
-        
-        [viewLayer insertSublayer:self.previewLayer below:[[viewLayer sublayers] objectAtIndex:0]];
+        [self.view.layer insertSublayer:_previewLayer atIndex:0];
     }
 }
 
 - (void) setCIFilter{
     EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     NSDictionary *options = @{kCIContextWorkingColorSpace :  [NSNull null]};
-    self.context = [[CIContext alloc] init];
     self.context = [CIContext contextWithEAGLContext:eaglContext options:options];
 }
 
 #pragma mark- capture delegate
--(void)captureOutput:(AVCaptureOutput *)captureOutput didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
+-(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
     
     CIImage *outputImage = [[CIImage alloc]initWithCVPixelBuffer:imageBuffer];
     
     if(_filter != nil){
-        [_filter setValue:outputImage forKey:kCIInputImageKey];
+        [self.filter setValue:outputImage forKey:kCIInputImageKey];
         outputImage = _filter.outputImage;
+    }else{
+        self.filter = [CIFilter filterWithName:@"CIPhotoEffectInstant"];
+
     }
     CGImageRef cgImage = [_context createCGImage:outputImage fromRect:outputImage.extent];
-    
+    self.ciImage = outputImage;
     dispatch_async(dispatch_get_main_queue(), ^{
         self.previewLayer.contents = (__bridge id _Nullable)(cgImage);
+        CGImageRelease(cgImage);
     });
 }
 

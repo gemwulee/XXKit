@@ -27,7 +27,7 @@
     if(_pickerView == nil){
          self.pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, self.height - 200, self.width, 150)];
         // 显示选中框
-        _pickerView.backgroundColor = [UIColor clearColor];
+        _pickerView.backgroundColor = [UIColor yellowColor];
         _pickerView.showsSelectionIndicator=YES;
         _pickerView.dataSource = self;
         _pickerView.delegate = self;
