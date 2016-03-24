@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^SelectFilterRowBlock)(NSInteger row);
+
 @interface OSMOPhoneView : UIView
+
+@property(nonatomic,strong) NSArray *filterArray;
+@property(nonatomic, copy)  SelectFilterRowBlock selectBlock;
 
 @end
