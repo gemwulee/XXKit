@@ -13,6 +13,7 @@
 #import "XXBase.h"
 #import "Masonry.h"
 #import <CoreImage/CoreImage.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface OSMOPhoneController ()<AVCaptureVideoDataOutputSampleBufferDelegate>
 
@@ -186,9 +187,9 @@
 {
     if (self.previewLayer == nil) {
         self.previewLayer = [CALayer layer];
-        // previewLayer.bounds = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
-        // previewLayer.position = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
-        // previewLayer.setAffineTransform(CGAffineTransformMakeRotation(CGFloat(M_PI / 2.0)));
+         self.previewLayer.bounds = CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width);
+         self.previewLayer.position = CGPointMake(self.view.frame.size.width / 2.0, self.view.frame.size.height / 2.0);
+//        [self.previewLayer setAffineTransform:CGAffineTransformMakeRotation(M_PI/2.0)];
         self.previewLayer.anchorPoint = CGPointZero;
         self.previewLayer.bounds = self.view.bounds;
         
@@ -217,6 +218,20 @@
         self.filter = [CIFilter filterWithName:@"CIPhotoEffectInstant"];
 
     }
+    
+    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+    CGAffineTransform t;
+    if(orientation == UIDeviceOrientationPortrait) {
+        t = CGAffineTransformMakeRotation((CGFloat)(-M_PI / 2.0));
+    } else if(orientation == UIDeviceOrientationPortraitUpsideDown) {
+        t = CGAffineTransformMakeRotation((CGFloat)(M_PI / 2.0));
+    } else if (orientation == UIDeviceOrientationLandscapeRight) {
+        t = CGAffineTransformMakeRotation((CGFloat)(M_PI));
+    } else {
+        t = CGAffineTransformMakeRotation(0);
+    }
+    outputImage = [outputImage imageByApplyingTransform:t];
+    
     CGImageRef cgImage = [_context createCGImage:outputImage fromRect:outputImage.extent];
     self.ciImage = outputImage;
     dispatch_async(dispatch_get_main_queue(), ^{
