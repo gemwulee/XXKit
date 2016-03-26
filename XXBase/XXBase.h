@@ -20,7 +20,7 @@
 #import "utility/XXFPSEngine.h"
 
 #import "uikit/XXButton.h"
-
+#import "foundationex/UIDevice+DJIUIKit.h"
 
 
 

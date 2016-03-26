@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OSMOCaptureToolView">
+            <connections>
+                <outlet property="camModePotraitArrowIcon" destination="qIb-et-jya" id="7zO-5b-uT9"/>
+                <outlet property="cameraModeView" destination="yxz-Gg-kax" id="xzv-6G-sZX"/>
+                <outlet property="captureBtnView" destination="dQL-OO-Z75" id="S14-ZQ-46I"/>
+                <outlet property="captureButtonView" destination="Cyo-0W-0Jn" id="kQF-9a-gm8"/>
+                <outlet property="halfHourCounter" destination="VaS-bn-oDV" id="NnP-hY-6p3"/>
+                <outlet property="modeButton" destination="rci-8C-kDa" id="ZOQ-fl-cBU"/>
+                <outlet property="paramButton" destination="VNC-yS-uNj" id="pTD-qG-dtj"/>
+                <outlet property="photoButton" destination="WfN-g1-Eq0" id="lGy-rd-Esn"/>
+                <outlet property="photoButtonBg" destination="Dan-yZ-buP" id="yCW-ml-i8U"/>
+                <outlet property="photoSavingBg" destination="o2U-N5-I8N" id="qv7-2f-ceR"/>
+                <outlet property="playBackButton" destination="cIL-us-2aw" id="U3V-Eq-BC0"/>
+                <outlet property="playbackView" destination="wRU-QV-mh6" id="ODs-e8-FTu"/>
+                <outlet property="psmaView" destination="PQe-S9-XXr" id="4zU-Wt-2KN"/>
+                <outlet property="videoButton" destination="erP-AJ-Siv" id="hJB-Xh-p43"/>
+                <outlet property="videoButtonBg" destination="OLg-Fm-0EF" id="ivU-ck-dan"/>
+                <outlet property="videoButtonView" destination="jHc-Tm-0Rh" id="FFI-4V-SUv"/>
+                <outlet property="videoSavingBg" destination="sbX-EY-tI0" id="1Vf-cv-FJV"/>
+                <outlet property="workModeSwitch" destination="1E3-fS-ap6" id="vTl-U2-MfV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1E3-fS-ap6" customClass="DJICameraControlSwitch">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxC-NE-Xic" customClass="DJISwitch">
+                            <rect key="frame" x="0.0" y="17" width="70" height="36"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="handlePotraitSwitchBg" translatesAutoresizingMaskIntoConstraints="NO" id="NAq-3O-Qb2" userLabel="switch bg">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="36"/>
+                                </imageView>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="handleSwitchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gRY-po-GXZ" userLabel="switch on">
+                                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enW-np-VMS" userLabel="capture button" customClass="DJIButton">
+                                    <rect key="frame" x="0.0" y="-17" width="35" height="70"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="handleVideoCaptureButtonAction:" destination="1E3-fS-ap6" eventType="touchUpInside" id="hXA-YJ-cZI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUX-pq-dw5" userLabel="video button" customClass="DJIButton">
+                                    <rect key="frame" x="35" y="-17" width="35" height="70"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="handleVideoCaptureButtonAction:" destination="1E3-fS-ap6" eventType="touchUpInside" id="Xqa-GP-jgv"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="bgView" destination="NAq-3O-Qb2" id="Y9y-Jr-uE1"/>
+                                <outlet property="delegate" destination="1E3-fS-ap6" id="lfe-uH-pr3"/>
+                                <outlet property="iconView" destination="gRY-po-GXZ" id="iSR-Qs-q5W"/>
+                            </connections>
+                        </view>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RML-i1-eF4" userLabel="captureIconPlaceView">
+                            <rect key="frame" x="9" y="27" width="16" height="16"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="handleCamModeOn" translatesAutoresizingMaskIntoConstraints="NO" id="V3k-Vc-cTu" userLabel="capture icon" customClass="DJIImageView">
+                                    <rect key="frame" x="0.0" y="2" width="16" height="13"/>
+                                </imageView>
+                            </subviews>
+                        </view>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oy7-5I-tC9" userLabel="videoIconPlaceView">
+                            <rect key="frame" x="44" y="27" width="16" height="16"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="handleVideoModeOff" translatesAutoresizingMaskIntoConstraints="NO" id="hB7-VK-aRa" userLabel="video icon" customClass="DJIImageView">
+                                    <rect key="frame" x="0.0" y="1" width="16" height="13"/>
+                                </imageView>
+                            </subviews>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="captureButton" destination="enW-np-VMS" id="PvB-Cd-IRA"/>
+                        <outlet property="captureIcon" destination="V3k-Vc-cTu" id="i65-Yy-txp"/>
+                        <outlet property="delegate" destination="-1" id="35n-6j-v7q"/>
+                        <outlet property="videoButton" destination="KUX-pq-dw5" id="90K-Td-fet"/>
+                        <outlet property="videoIcon" destination="hB7-VK-aRa" id="8vh-DU-YlT"/>
+                        <outlet property="workModeSwitch" destination="mxC-NE-Xic" id="Jb8-Qu-QEQ"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-Gg-kax" userLabel="cameraModeView">
+                    <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handleArrowPotraitOff" translatesAutoresizingMaskIntoConstraints="NO" id="qIb-et-jya">
+                            <rect key="frame" x="25" y="11" width="20" height="9"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rci-8C-kDa" userLabel="cameraModeButton" customClass="DJIStateButton">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                            <state key="normal" image="handleCameraOff">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickPhotoModeButtonAction:" destination="-1" eventType="touchUpInside" id="FLQ-aB-bAz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQL-OO-Z75" userLabel="captureVideoBtnPlaceView">
+                    <rect key="frame" x="128" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-0W-0Jn" userLabel="capture btn view" customClass="DJIView">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handle_camera_tool_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Dan-yZ-buP" userLabel="capture bg" customClass="DJIImageView">
+                                    <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                </imageView>
+                                <imageView hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="handle_camera_tool_saving" translatesAutoresizingMaskIntoConstraints="NO" id="o2U-N5-I8N" userLabel="photo saving" customClass="DJIImageView">
+                                    <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfN-g1-Eq0" userLabel="capture button" customClass="DJIButton">
+                                    <rect key="frame" x="2" y="2" width="60" height="60"/>
+                                    <state key="normal" image="handle_camera_tool_photo">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="photoButtonCancel:" destination="-1" eventType="touchUpOutside" id="GDb-NL-EkV"/>
+                                        <action selector="photoButtonCancel:" destination="-1" eventType="touchCancel" id="xKf-0M-76V"/>
+                                        <action selector="photoButtonDown:" destination="-1" eventType="touchDown" id="Bsi-qI-wsc"/>
+                                        <action selector="photoButtonUpInside:" destination="-1" eventType="touchUpInside" id="rU8-5l-hMI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHc-Tm-0Rh" userLabel="video btn view" customClass="DJIView">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handle_camera_tool_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OLg-Fm-0EF" userLabel="video bg" customClass="DJIImageView">
+                                    <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                </imageView>
+                                <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="handle_camera_tool_saving" translatesAutoresizingMaskIntoConstraints="NO" id="sbX-EY-tI0" userLabel="video saving" customClass="DJIImageView">
+                                    <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erP-AJ-Siv" userLabel="video button" customClass="DJIButton">
+                                    <rect key="frame" x="2" y="2" width="60" height="60"/>
+                                    <state key="normal" image="handle_camera_tool_video">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="videoButtonAction:" destination="-1" eventType="touchUpInside" id="Pg1-MC-uHI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaS-bn-oDV">
+                    <rect key="frame" x="128" y="-5" width="64" height="14"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQe-S9-XXr" userLabel="advancedView">
+                    <rect key="frame" x="192" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNC-yS-uNj" userLabel="advBtn" customClass="DJIStateButton">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                            <state key="normal" image="captureTool_pasm_pmode_off">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="advancedButtonAction:" destination="-1" eventType="touchUpInside" id="WJg-gJ-mj5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wRU-QV-mh6" userLabel="playBackView">
+                    <rect key="frame" x="256" y="0.0" width="64" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIL-us-2aw" userLabel="playback button" customClass="DJIButton">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                            <state key="normal" image="handle_playback">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="playBackButtonAction:" destination="-1" eventType="touchUpInside" id="NWO-fV-sfu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+            </subviews>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="429" y="626"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="captureTool_pasm_pmode_off" width="26" height="30"/>
+        <image name="handleArrowPotraitOff" width="16" height="7"/>
+        <image name="handleCamModeOn" width="22" height="22"/>
+        <image name="handleCameraOff" width="28" height="18"/>
+        <image name="handlePotraitSwitchBg" width="61" height="31"/>
+        <image name="handleSwitchIcon" width="30" height="29"/>
+        <image name="handleVideoModeOff" width="22" height="22"/>
+        <image name="handle_camera_tool_bg" width="51" height="50"/>
+        <image name="handle_camera_tool_photo" width="42" height="42"/>
+        <image name="handle_camera_tool_saving" width="50" height="50"/>
+        <image name="handle_camera_tool_video" width="42" height="42"/>
+        <image name="handle_playback" width="29" height="19"/>
+    </resources>
+</document>

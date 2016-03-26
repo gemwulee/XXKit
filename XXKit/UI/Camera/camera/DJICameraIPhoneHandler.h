@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+
 @class DJIIPhoneCameraView;
 @class AVCaptureSession;
 
@@ -18,5 +20,14 @@
 -(void) openCamera:(AVCaptureSession*) session;
 -(void) closeCamera:(AVCaptureSession*) session;
 
+//摄像头
+- (AVCaptureDevice *)cameraWithPosition:(AVCaptureDevicePosition) position;
+- (void) swapFrontAndBack:(AVCaptureSession*) session;
+
+//拍照
+- (void)takePhoto:(CIImage*) ciImage context:(CIContext*) context;
+
+//获取旋转角度
+-(CGAffineTransform) getCameraTransform;
 
 @end

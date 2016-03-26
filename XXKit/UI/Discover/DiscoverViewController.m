@@ -10,7 +10,7 @@
 #import "XXBaseTableCell.h"
 #import "XXBaseViewModel.h"
 #import "OSMOIPhoneViewController.h"
-#import "OSMOPhoneController.h"
+#import "OSMOIPhoneViewController.h"
 
 @implementation DiscoverViewController
 
@@ -22,16 +22,10 @@
 {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     if(indexPath.section == 0 && indexPath.row == 0){
-    OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
-    osmoVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:osmoVC animated:YES];
-    }
-    else{
-        OSMOPhoneController *osmoVC= [[OSMOPhoneController alloc] init];
+        OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
         osmoVC.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:osmoVC animated:YES];
     }
-    
 }
 
 

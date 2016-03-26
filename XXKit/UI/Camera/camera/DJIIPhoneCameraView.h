@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class DJIIPhoneCameraModel;
 
 @interface DJIIPhoneCameraView : UIView
@@ -21,4 +22,10 @@
 
 //旋转的时候调用回调
 -(void) resetCameraFrame:(CGRect) bounds;
+
+//拍照
+-(void) takePhoto;
+
+
+
 @end

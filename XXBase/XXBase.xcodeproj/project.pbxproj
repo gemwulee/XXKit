@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B181F7C1C5324D300308B12 /* XXBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B181F7B1C5324D300308B12 /* XXBase.m */; };
+		9A176DAD1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176DAC1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.m */; };
 		9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6752FE1C451E8100099AF1 /* UIColorEx.m */; };
 		9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6753041C45234600099AF1 /* UIDeviceEx.m */; };
 		9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF880A1C3D42C90021D17C /* NSStringEx.m */; };
@@ -71,6 +72,8 @@
 /* Begin PBXFileReference section */
 		4B181F7A1C5324D300308B12 /* XXBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBase.h; sourceTree = SOURCE_ROOT; };
 		4B181F7B1C5324D300308B12 /* XXBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBase.m; sourceTree = SOURCE_ROOT; };
+		9A176DAB1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DJIUIKit.h"; sourceTree = "<group>"; };
+		9A176DAC1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DJIUIKit.m"; sourceTree = "<group>"; };
 		9A6752FD1C451E8100099AF1 /* UIColorEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorEx.h; sourceTree = "<group>"; };
 		9A6752FE1C451E8100099AF1 /* UIColorEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorEx.m; sourceTree = "<group>"; };
 		9A6753031C45234600099AF1 /* UIDeviceEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceEx.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 		9ADF87F41C3D384C0021D17C /* foundationex */ = {
 			isa = PBXGroup;
 			children = (
+				9A176DAB1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.h */,
+				9A176DAC1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.m */,
 				9ADF88091C3D42C90021D17C /* NSStringEx.h */,
 				9ADF880A1C3D42C90021D17C /* NSStringEx.m */,
 				9ADF880B1C3D42C90021D17C /* PYMethod.h */,
@@ -341,6 +346,7 @@
 				9A6752FF1C451E8100099AF1 /* UIColorEx.m in Sources */,
 				9ADF880F1C3D42C90021D17C /* NSStringEx.m in Sources */,
 				9AF3BEAF1C8EBF7D00672910 /* UIImage+TintColor.m in Sources */,
+				9A176DAD1CA6CDFD00807EF3 /* UIDevice+DJIUIKit.m in Sources */,
 				9ADF88111C3D42C90021D17C /* UIScreenEx.m in Sources */,
 				9A6753051C45234600099AF1 /* UIDeviceEx.m in Sources */,
 				9ADF88101C3D42C90021D17C /* PYMethod.m in Sources */,

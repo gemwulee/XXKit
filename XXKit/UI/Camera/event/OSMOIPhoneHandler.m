@@ -7,6 +7,7 @@
 //
 
 #import "OSMOIPhoneHandler.h"
+//#import "DJIGimbalLogic.h"
 
 @implementation OSMOIPhoneHandler
 
@@ -18,7 +19,7 @@
 }
 
      
-//网络层 收发包
+////网络层 收发包
 //-(void)startListen
 //{
 //    weakSelf(target);
@@ -36,12 +37,13 @@
 //}
 //-(void)handleGimblePushData:(GimbalAttiCMDResponseData)tmpGimbalData{
 //    //
-//    tmpGimbalData.rollAngleValue;
-//    tmpGimbalData.pitchAngleValue;
-//    tmpGimbalData.yawAngleValue;
+////    tmpGimbalData.rollAngleValue;
+////    tmpGimbalData.pitchAngleValue;
+////    tmpGimbalData.yawAngleValue;
 //}
 //
-//-(void)sendPack{
+//-(void)sendTimeLapsePack:(SuccessBlock) successBlock failedBlock:(FailedBlock) failedBlock{
+//    
 //    DJIGimbalTLPControlPack* pack = [[DJIGimbalTLPControlPack alloc] init];
 //    //pack.retryTime = 3;    //pack.retryInterval = 0.8;
 //    /*
@@ -49,14 +51,25 @@
 //     pack.requestBody->motionOrStationary
 //     
 //     */
+//    
 //    [[DJIPackManager sharedInstance] sendPack:pack completion:^(DJIBasePack *recPack, DJIPackState state) {
 //        if(state == DJIPackStateSuccess){
-//            
+//            successBlock();
 //        }
 //        else{
-//            
+//             failedBlock();
 //        }
 //    }];
+//}
+//
+//- (void) sendModelPack:(uint8_t) valueData successBlock:(SuccessBlock) successblock failedBlock:(FailedBlock) failedBlock{
+//    [[DJIGimbalLogic sharedInstance]setUserConfigWithValue:valueData id:0 length:1 callBack:^(BOOL isSuccess){
+//        if (isSuccess) {
+//            successblock();
+//        }else{
+//            failedBlock();
+//        }
+//    }] ;
 //}
 
 @end
