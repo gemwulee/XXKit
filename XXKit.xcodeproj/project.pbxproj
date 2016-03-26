@@ -10,6 +10,8 @@
 		4B181F731C53233600308B12 /* libXXBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F721C53233600308B12 /* libXXBase.a */; };
 		4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F741C53242500308B12 /* libAFNetworking.a */; };
 		4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F751C53242500308B12 /* libfoundationex.a */; };
+		9A4D7DCF1CA69D7500184011 /* DJIIPhoneCameraView_landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D7DCD1CA69D7500184011 /* DJIIPhoneCameraView_landscape.xib */; };
+		9A4D7DD01CA69D7500184011 /* DJIIPhoneCameraView_potrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D7DCE1CA69D7500184011 /* DJIIPhoneCameraView_potrait.xib */; };
 		9A5A75B81CA27AE5009E3A1E /* OSMOPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A75B71CA27AE5009E3A1E /* OSMOPhoneController.m */; };
 		9A5A75BB1CA27CDA009E3A1E /* OSMOPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A75BA1CA27CDA009E3A1E /* OSMOPhoneView.m */; };
 		9A5A75C11CA27D11009E3A1E /* OSMOPhoneViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5A75C01CA27D11009E3A1E /* OSMOPhoneViewModel.m */; };
@@ -87,6 +89,8 @@
 		4B181F741C53242500308B12 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
 		4B181F751C53242500308B12 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-hkzedohowdjljhcypvoclyixszyz/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
 		4B181F761C53242500308B12 /* libuikitex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikitex.a; path = "XXBase/build/Debug-iphoneos/libuikitex.a"; sourceTree = "<group>"; };
+		9A4D7DCD1CA69D7500184011 /* DJIIPhoneCameraView_landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJIIPhoneCameraView_landscape.xib; sourceTree = "<group>"; };
+		9A4D7DCE1CA69D7500184011 /* DJIIPhoneCameraView_potrait.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DJIIPhoneCameraView_potrait.xib; sourceTree = "<group>"; };
 		9A5A75B61CA27AE5009E3A1E /* OSMOPhoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneController.h; sourceTree = "<group>"; };
 		9A5A75B71CA27AE5009E3A1E /* OSMOPhoneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOPhoneController.m; sourceTree = "<group>"; };
 		9A5A75B91CA27CDA009E3A1E /* OSMOPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneView.h; sourceTree = "<group>"; };
@@ -309,6 +313,8 @@
 		9A61F40C1CA4E8F000924120 /* camera */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D7DCD1CA69D7500184011 /* DJIIPhoneCameraView_landscape.xib */,
+				9A4D7DCE1CA69D7500184011 /* DJIIPhoneCameraView_potrait.xib */,
 				9A61F40D1CA4E8F000924120 /* DJICameraIPhoneHandler.h */,
 				9A61F40E1CA4E8F000924120 /* DJICameraIPhoneHandler.m */,
 				9A61F40F1CA4E8F000924120 /* DJIIPhoneCameraModel.h */,
@@ -701,7 +707,7 @@
 				TargetAttributes = {
 					9AF3E9A21C3CBB55009DDD15 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 8ECQ727W8H;
+						DevelopmentTeam = 7UL3LRJL93;
 					};
 					9AF3E9BB1C3CBB55009DDD15 = {
 						CreatedOnToolsVersion = 7.2;
@@ -743,10 +749,12 @@
 				9AF3E9B61C3CBB55009DDD15 /* LaunchScreen.storyboard in Resources */,
 				9A5A75CB1CA29F39009E3A1E /* OSMOPhoneView_landscape.xib in Resources */,
 				9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */,
+				9A4D7DCF1CA69D7500184011 /* DJIIPhoneCameraView_landscape.xib in Resources */,
 				9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */,
 				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
 				9AF0BCA91C97FC8900B602C6 /* ContactConfig.plist in Resources */,
+				9A4D7DD01CA69D7500184011 /* DJIIPhoneCameraView_potrait.xib in Resources */,
 				9A5A75CD1CA2A00B009E3A1E /* OSMOPhoneView_potrait.xib in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
 			);

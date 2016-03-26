@@ -21,5 +21,4 @@
 
 //旋转的时候调用回调
 -(void) resetCameraFrame:(CGRect) bounds;
-
 @end

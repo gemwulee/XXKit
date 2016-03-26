@@ -230,6 +230,8 @@
     } else {
         t = CGAffineTransformMakeRotation(0);
     }
+    
+    
     outputImage = [outputImage imageByApplyingTransform:t];
     
     CGImageRef cgImage = [_context createCGImage:outputImage fromRect:outputImage.extent];
