@@ -23,14 +23,6 @@
 
 @property (weak, nonatomic) IBOutlet UIView *playbackView;
 
-/**
- *  29:50 stop counter
- */
 @property (weak, nonatomic) IBOutlet UILabel *halfHourCounter;
-
-
-
-
-
 
 @end

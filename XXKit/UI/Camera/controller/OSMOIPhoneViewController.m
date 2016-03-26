@@ -10,23 +10,17 @@
 #import "DJIIPhoneCameraView.h"
 #import "OSMOIPhoneHandler.h"
 #import "DJIIPhoneCameraModel.h"
-//#import "Macro.h"
-//#import "DJIHandleMainController.h"
-#import "OSMOIPhoneViewController+LandScape.h"
-#import "OSMOIPhoneViewController+Portrait.h"
-//#import "DJIHandleSettingViewController.h"
-//#import "DJIHandleRightBarController.h"
 #import "OSMOCaptureToolView.h"
 #import "OSMOCaptureToolController.h"
 
 @interface OSMOIPhoneViewController ()
-@property(nonatomic,strong) DJIIPhoneCameraView  *camera;
-@property(nonatomic,strong) OSMOIPhoneHandler    *handler;
-@property(nonatomic,strong) DJIIPhoneCameraModel *model;
 
+@property(nonatomic,strong)  UIView *captureToolPlaceView;
+@property(nonatomic,strong)  UIView *rightSettingPlaceView;
 
-//UI
-//@property(nonatomic,assign)  DJILayoutType type;
+@property(nonatomic,strong)  DJIIPhoneCameraView  *camera;
+@property(nonatomic,strong)  OSMOIPhoneHandler    *handler;
+@property(nonatomic,strong)  DJIIPhoneCameraModel *model;
 
 @end
 
@@ -35,70 +29,26 @@
 
 -(instancetype)init{
     if (self = [super init]) {
-        self.model = [DJIIPhoneCameraModel new];
-        
-        self.camera = [[DJIIPhoneCameraView alloc] initWithFrame:self.view.frame cameraModel:_model];
+        _model = [DJIIPhoneCameraModel new];
+        _camera = [[DJIIPhoneCameraView alloc] initWithFrame:self.view.frame cameraModel:_model];
         [self.view addSubview:_camera];
-        _camera.layer.zPosition = -1000;
-        
-        self.handler = [OSMOIPhoneHandler new];
+        _handler = [OSMOIPhoneHandler new];
     }
     return self;
 }
 
--(void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+- (void) viewDidLoad{
+    [super viewDidLoad];
 }
-
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [self.camera openCamera];
+    [_camera openCamera];
 }
 
 - (void) viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear: animated];
-    [self.camera closeCamera];
+    [_camera closeCamera];
 }
-
-//- (void) initData{
-//    _type = DJILayoutUnknown;
-//}
-//
-//- (void)viewDidLoad
-//{
-//    [super viewDidLoad];
-//    
-//    self.captureToolController = [[OSMOCaptureToolController alloc] init];
-//    self.rightBarController = [[DJIHandleRightBarController alloc] init];
-//
-//}
-//
-//#pragma mark- Event
-//-(void)clickHandleSettingButtonRightBarController:(id)sender{
-//    if ( _settingVC == nil ){
-//        _settingVC = [[DJIHandleSettingViewController alloc] initWithDefaultNib];
-//        
-//        _settingVC.view.backgroundColor=[UIColor clearColor];
-//        
-//        
-//        self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-//        self.modalPresentationStyle = UIModalPresentationCurrentContext;
-//        _settingVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-//        weakSelf(target);
-//        _settingVC.exitFromSetting = ^(){
-//            weakReturn(target);
-//            //点了退出
-//            
-//        };
-//        
-//        [self presentViewController:_settingVC animated:YES completion:nil];
-//        
-//    }
-//    else{
-//        [_settingVC.stageVC popToRootViewWithAnimated:NO] ;
-//        [self presentViewController:_settingVC animated:YES completion:nil];
-//    }
-//}
 
 #pragma mark- 横竖屏
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
@@ -107,39 +57,17 @@
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return [[UIApplication sharedApplication] statusBarOrientation];
 }
+
+- (BOOL)prefersStatusBarHidden{
+    return YES;
+}
+
 -(void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
-    [self.camera resetCameraFrame:self.view.bounds];
+    [_camera resetCameraFrame:self.view.bounds];
 }
 
--(void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-//    [self caculateOrientation];
-}
-
-//-(void)caculateOrientation{
-//    DJILayoutType type = DJILayoutUnknown;
-//    if(MAIN_SCREEN_HEIGHT < MAIN_SCREEN_WIDTH){
-//        type = DJILandscape;
-//    }
-//    else{
-//        type = DJIPotrait;
-//    }
-//    if(_type != type){
-//        _type = type;
-//        [self relayout];
-//    }
-//}
-//- (void)relayout{
-//    if(_type == DJILandscape)
-//        [self layoutInLandscape];
-//    else
-//        [self layoutInPotrait];
-//    
-//    [self layoutHandleSubViews:_type];
-//}
-
-
+-(void) 
 
 
 @end

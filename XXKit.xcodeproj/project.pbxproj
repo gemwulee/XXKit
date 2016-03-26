@@ -33,17 +33,20 @@
 		9A176D9D1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D801CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m */; };
 		9A176D9E1CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D821CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m */; };
 		9A176D9F1CA6CCCF00807EF3 /* DJIIPhoneCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D841CA6CCCF00807EF3 /* DJIIPhoneCameraView.m */; };
-		9A176DA01CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D881CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.m */; };
-		9A176DA11CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D8A1CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.m */; };
 		9A176DA21CA6CCCF00807EF3 /* OSMOIPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D8C1CA6CCCF00807EF3 /* OSMOIPhoneViewController.m */; };
-		9A176DA31CA6CCCF00807EF3 /* OSMOIPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A176D8D1CA6CCCF00807EF3 /* OSMOIPhoneViewController.xib */; };
 		9A176DA41CA6CCCF00807EF3 /* OSMOIPhoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D901CA6CCCF00807EF3 /* OSMOIPhoneHandler.m */; };
 		9A176DA51CA6CCCF00807EF3 /* OSMOCapture_landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A176D931CA6CCCF00807EF3 /* OSMOCapture_landscape.xib */; };
 		9A176DA61CA6CCCF00807EF3 /* OSMOCapture_potrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A176D941CA6CCCF00807EF3 /* OSMOCapture_potrait.xib */; };
-		9A176DA71CA6CCCF00807EF3 /* OSMOCapture_potrait_iPhone5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A176D951CA6CCCF00807EF3 /* OSMOCapture_potrait_iPhone5.xib */; };
 		9A176DA81CA6CCCF00807EF3 /* OSMOCaptureToolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D971CA6CCCF00807EF3 /* OSMOCaptureToolController.m */; };
 		9A176DA91CA6CCCF00807EF3 /* OSMOCaptureToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D991CA6CCCF00807EF3 /* OSMOCaptureToolView.m */; };
 		9A176DAA1CA6CCCF00807EF3 /* OSMORightBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D9C1CA6CCCF00807EF3 /* OSMORightBarController.m */; };
+		9A176DC01CA6D0F800807EF3 /* OSMOPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176DB11CA6D0F800807EF3 /* OSMOPhoneController.m */; };
+		9A176DC11CA6D0F800807EF3 /* OSMOPhoneEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176DB41CA6D0F800807EF3 /* OSMOPhoneEvent.m */; };
+		9A176DC21CA6D0F800807EF3 /* OSMOPhoneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176DB71CA6D0F800807EF3 /* OSMOPhoneModel.m */; };
+		9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176DBA1CA6D0F800807EF3 /* OSMOPhoneView.m */; };
+		9A176DC41CA6D0F800807EF3 /* OSMOPhoneView_landscape.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A176DBB1CA6D0F800807EF3 /* OSMOPhoneView_landscape.xib */; };
+		9A176DC51CA6D0F800807EF3 /* OSMOPhoneView_potrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A176DBC1CA6D0F800807EF3 /* OSMOPhoneView_potrait.xib */; };
+		9A176DC61CA6D0F800807EF3 /* OSMOPhoneViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176DBF1CA6D0F800807EF3 /* OSMOPhoneViewModel.m */; };
 		9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */; };
 		9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834021C8AACCB00747277 /* XXTabBar.m */; };
 		9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834041C8AACCB00747277 /* XXTabBarController.m */; };
@@ -136,24 +139,30 @@
 		9A176D831CA6CCCF00807EF3 /* DJIIPhoneCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIIPhoneCameraView.h; sourceTree = "<group>"; };
 		9A176D841CA6CCCF00807EF3 /* DJIIPhoneCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIIPhoneCameraView.m; sourceTree = "<group>"; };
 		9A176D851CA6CCCF00807EF3 /* DJIIPhoneConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIIPhoneConfig.h; sourceTree = "<group>"; };
-		9A176D871CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSMOIPhoneViewController+LandScape.h"; sourceTree = "<group>"; };
-		9A176D881CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OSMOIPhoneViewController+LandScape.m"; sourceTree = "<group>"; };
-		9A176D891CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSMOIPhoneViewController+Portrait.h"; sourceTree = "<group>"; };
-		9A176D8A1CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OSMOIPhoneViewController+Portrait.m"; sourceTree = "<group>"; };
 		9A176D8B1CA6CCCF00807EF3 /* OSMOIPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOIPhoneViewController.h; sourceTree = "<group>"; };
 		9A176D8C1CA6CCCF00807EF3 /* OSMOIPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOIPhoneViewController.m; sourceTree = "<group>"; };
-		9A176D8D1CA6CCCF00807EF3 /* OSMOIPhoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOIPhoneViewController.xib; sourceTree = "<group>"; };
 		9A176D8F1CA6CCCF00807EF3 /* OSMOIPhoneHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOIPhoneHandler.h; sourceTree = "<group>"; };
 		9A176D901CA6CCCF00807EF3 /* OSMOIPhoneHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOIPhoneHandler.m; sourceTree = "<group>"; };
 		9A176D931CA6CCCF00807EF3 /* OSMOCapture_landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOCapture_landscape.xib; sourceTree = "<group>"; };
 		9A176D941CA6CCCF00807EF3 /* OSMOCapture_potrait.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOCapture_potrait.xib; sourceTree = "<group>"; };
-		9A176D951CA6CCCF00807EF3 /* OSMOCapture_potrait_iPhone5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOCapture_potrait_iPhone5.xib; sourceTree = "<group>"; };
 		9A176D961CA6CCCF00807EF3 /* OSMOCaptureToolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureToolController.h; sourceTree = "<group>"; };
 		9A176D971CA6CCCF00807EF3 /* OSMOCaptureToolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureToolController.m; sourceTree = "<group>"; };
 		9A176D981CA6CCCF00807EF3 /* OSMOCaptureToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureToolView.h; sourceTree = "<group>"; };
 		9A176D991CA6CCCF00807EF3 /* OSMOCaptureToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureToolView.m; sourceTree = "<group>"; };
 		9A176D9B1CA6CCCF00807EF3 /* OSMORightBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMORightBarController.h; sourceTree = "<group>"; };
 		9A176D9C1CA6CCCF00807EF3 /* OSMORightBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMORightBarController.m; sourceTree = "<group>"; };
+		9A176DB01CA6D0F800807EF3 /* OSMOPhoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneController.h; sourceTree = "<group>"; };
+		9A176DB11CA6D0F800807EF3 /* OSMOPhoneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOPhoneController.m; sourceTree = "<group>"; };
+		9A176DB31CA6D0F800807EF3 /* OSMOPhoneEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneEvent.h; sourceTree = "<group>"; };
+		9A176DB41CA6D0F800807EF3 /* OSMOPhoneEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOPhoneEvent.m; sourceTree = "<group>"; };
+		9A176DB61CA6D0F800807EF3 /* OSMOPhoneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneModel.h; sourceTree = "<group>"; };
+		9A176DB71CA6D0F800807EF3 /* OSMOPhoneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOPhoneModel.m; sourceTree = "<group>"; };
+		9A176DB91CA6D0F800807EF3 /* OSMOPhoneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneView.h; sourceTree = "<group>"; };
+		9A176DBA1CA6D0F800807EF3 /* OSMOPhoneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOPhoneView.m; sourceTree = "<group>"; };
+		9A176DBB1CA6D0F800807EF3 /* OSMOPhoneView_landscape.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOPhoneView_landscape.xib; sourceTree = "<group>"; };
+		9A176DBC1CA6D0F800807EF3 /* OSMOPhoneView_potrait.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOPhoneView_potrait.xib; sourceTree = "<group>"; };
+		9A176DBE1CA6D0F800807EF3 /* OSMOPhoneViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOPhoneViewModel.h; sourceTree = "<group>"; };
+		9A176DBF1CA6D0F800807EF3 /* OSMOPhoneViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOPhoneViewModel.m; sourceTree = "<group>"; };
 		9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9A6753061C45276500099AF1 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
 		9A6753081C45283D00099AF1 /* libXXBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXXBase.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libXXBase.a"; sourceTree = "<group>"; };
@@ -395,13 +404,13 @@
 		9A176D7E1CA6CCCF00807EF3 /* camera */ = {
 			isa = PBXGroup;
 			children = (
-				9A176D7F1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.h */,
-				9A176D801CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m */,
+				9A176D851CA6CCCF00807EF3 /* DJIIPhoneConfig.h */,
 				9A176D811CA6CCCF00807EF3 /* DJIIPhoneCameraModel.h */,
 				9A176D821CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m */,
 				9A176D831CA6CCCF00807EF3 /* DJIIPhoneCameraView.h */,
 				9A176D841CA6CCCF00807EF3 /* DJIIPhoneCameraView.m */,
-				9A176D851CA6CCCF00807EF3 /* DJIIPhoneConfig.h */,
+				9A176D7F1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.h */,
+				9A176D801CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m */,
 			);
 			path = camera;
 			sourceTree = "<group>";
@@ -409,13 +418,8 @@
 		9A176D861CA6CCCF00807EF3 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				9A176D871CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.h */,
-				9A176D881CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.m */,
-				9A176D891CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.h */,
-				9A176D8A1CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.m */,
 				9A176D8B1CA6CCCF00807EF3 /* OSMOIPhoneViewController.h */,
 				9A176D8C1CA6CCCF00807EF3 /* OSMOIPhoneViewController.m */,
-				9A176D8D1CA6CCCF00807EF3 /* OSMOIPhoneViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -443,7 +447,6 @@
 			children = (
 				9A176D931CA6CCCF00807EF3 /* OSMOCapture_landscape.xib */,
 				9A176D941CA6CCCF00807EF3 /* OSMOCapture_potrait.xib */,
-				9A176D951CA6CCCF00807EF3 /* OSMOCapture_potrait_iPhone5.xib */,
 				9A176D961CA6CCCF00807EF3 /* OSMOCaptureToolController.h */,
 				9A176D971CA6CCCF00807EF3 /* OSMOCaptureToolController.m */,
 				9A176D981CA6CCCF00807EF3 /* OSMOCaptureToolView.h */,
@@ -459,6 +462,65 @@
 				9A176D9C1CA6CCCF00807EF3 /* OSMORightBarController.m */,
 			);
 			path = rightsettingbar;
+			sourceTree = "<group>";
+		};
+		9A176DAE1CA6D0F800807EF3 /* CameraTest */ = {
+			isa = PBXGroup;
+			children = (
+				9A176DAF1CA6D0F800807EF3 /* controller */,
+				9A176DB21CA6D0F800807EF3 /* event */,
+				9A176DB51CA6D0F800807EF3 /* model */,
+				9A176DB81CA6D0F800807EF3 /* view */,
+				9A176DBD1CA6D0F800807EF3 /* viewmodel */,
+			);
+			path = CameraTest;
+			sourceTree = "<group>";
+		};
+		9A176DAF1CA6D0F800807EF3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A176DB01CA6D0F800807EF3 /* OSMOPhoneController.h */,
+				9A176DB11CA6D0F800807EF3 /* OSMOPhoneController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9A176DB21CA6D0F800807EF3 /* event */ = {
+			isa = PBXGroup;
+			children = (
+				9A176DB31CA6D0F800807EF3 /* OSMOPhoneEvent.h */,
+				9A176DB41CA6D0F800807EF3 /* OSMOPhoneEvent.m */,
+			);
+			path = event;
+			sourceTree = "<group>";
+		};
+		9A176DB51CA6D0F800807EF3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9A176DB61CA6D0F800807EF3 /* OSMOPhoneModel.h */,
+				9A176DB71CA6D0F800807EF3 /* OSMOPhoneModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9A176DB81CA6D0F800807EF3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9A176DB91CA6D0F800807EF3 /* OSMOPhoneView.h */,
+				9A176DBA1CA6D0F800807EF3 /* OSMOPhoneView.m */,
+				9A176DBB1CA6D0F800807EF3 /* OSMOPhoneView_landscape.xib */,
+				9A176DBC1CA6D0F800807EF3 /* OSMOPhoneView_potrait.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9A176DBD1CA6D0F800807EF3 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				9A176DBE1CA6D0F800807EF3 /* OSMOPhoneViewModel.h */,
+				9A176DBF1CA6D0F800807EF3 /* OSMOPhoneViewModel.m */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 		9A8833FE1C8AACCB00747277 /* Base */ = {
@@ -625,6 +687,7 @@
 		9AF302071C43861D00FA232D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9A176DAE1CA6D0F800807EF3 /* CameraTest */,
 				9A176D7D1CA6CCCF00807EF3 /* Camera */,
 				9AF2A2E51C900960005FE17F /* Base */,
 				9AF2A2B11C8FD893005FE17F /* Home */,
@@ -874,8 +937,8 @@
 				9A176DA51CA6CCCF00807EF3 /* OSMOCapture_landscape.xib in Resources */,
 				9A176B2A1CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B341CA6CA2F00807EF3 /* Contents.json in Resources */,
+				9A176DC41CA6D0F800807EF3 /* OSMOPhoneView_landscape.xib in Resources */,
 				9A176B391CA6CA2F00807EF3 /* VoiceSearchStartBtnHL@2x.png in Resources */,
-				9A176DA31CA6CCCF00807EF3 /* OSMOIPhoneViewController.xib in Resources */,
 				9A176B2D1CA6CA2F00807EF3 /* RecordingBkg@3x.png in Resources */,
 				9AF2A2C51C8FD894005FE17F /* SettingViewController.plist in Resources */,
 				9A176B301CA6CA2F00807EF3 /* Contents.json in Resources */,
@@ -886,13 +949,13 @@
 				9A176B311CA6CA2F00807EF3 /* user_avatar_default@2x.png in Resources */,
 				9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */,
 				9A176DA61CA6CCCF00807EF3 /* OSMOCapture_potrait.xib in Resources */,
+				9A176DC51CA6D0F800807EF3 /* OSMOPhoneView_potrait.xib in Resources */,
 				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
 				9A176B371CA6CA2F00807EF3 /* VoiceSearchStartBtn@2x.png in Resources */,
 				9AF3E9B31C3CBB55009DDD15 /* Assets.xcassets in Resources */,
 				9AF0BCA91C97FC8900B602C6 /* ContactConfig.plist in Resources */,
 				9A176B2E1CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9AF3E9B11C3CBB55009DDD15 /* Main.storyboard in Resources */,
-				9A176DA71CA6CCCF00807EF3 /* OSMOCapture_potrait_iPhone5.xib in Resources */,
 				9A176B261CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B331CA6CA2F00807EF3 /* VoiceSearchIcon@2x.png in Resources */,
 				9A176B361CA6CA2F00807EF3 /* Contents.json in Resources */,
@@ -970,7 +1033,6 @@
 			files = (
 				9A88340B1C8AACCB00747277 /* XXTabBar.m in Sources */,
 				9AF0BCA71C97E9AF00B602C6 /* ContactViewModel.m in Sources */,
-				9A176DA11CA6CCCF00807EF3 /* OSMOIPhoneViewController+Portrait.m in Sources */,
 				9AF523511C91638400A59967 /* XXMessageModel.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
 				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
@@ -978,9 +1040,9 @@
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
 				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
+				9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
-				9A176DA01CA6CCCF00807EF3 /* OSMOIPhoneViewController+LandScape.m in Sources */,
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A176D9E1CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m in Sources */,
@@ -988,13 +1050,16 @@
 				9A176D9F1CA6CCCF00807EF3 /* DJIIPhoneCameraView.m in Sources */,
 				9A176DA41CA6CCCF00807EF3 /* OSMOIPhoneHandler.m in Sources */,
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
+				9A176DC21CA6D0F800807EF3 /* OSMOPhoneModel.m in Sources */,
 				9A176DAA1CA6CCCF00807EF3 /* OSMORightBarController.m in Sources */,
 				9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
+				9A176DC11CA6D0F800807EF3 /* OSMOPhoneEvent.m in Sources */,
 				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A176DA21CA6CCCF00807EF3 /* OSMOIPhoneViewController.m in Sources */,
 				9A176D9D1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
+				9A176DC61CA6D0F800807EF3 /* OSMOPhoneViewModel.m in Sources */,
 				9AF523521C91638400A59967 /* HomeTableCell.m in Sources */,
 				9AF2A2EE1C900CEA005FE17F /* XXBaseViewModel.m in Sources */,
 				9AF5234F1C91638400A59967 /* HomeViewController.m in Sources */,
@@ -1004,6 +1069,7 @@
 				9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */,
 				9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */,
 				9A176DA91CA6CCCF00807EF3 /* OSMOCaptureToolView.m in Sources */,
+				9A176DC01CA6D0F800807EF3 /* OSMOPhoneController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

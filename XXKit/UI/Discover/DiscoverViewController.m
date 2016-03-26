@@ -22,9 +22,8 @@
 {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     if(indexPath.section == 0 && indexPath.row == 0){
-        OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
-        osmoVC.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:osmoVC animated:YES];
+        OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] initWithNibName:@"OSMOIPhoneViewController" bundle:<#(nullable NSBundle *)#>];
+        [self.navigationController presentViewController:osmoVC animated:YES completion:^{}];
     }
 }
 
