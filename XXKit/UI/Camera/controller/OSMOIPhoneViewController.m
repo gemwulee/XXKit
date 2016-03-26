@@ -67,7 +67,5 @@
     [_camera resetCameraFrame:self.view.bounds];
 }
 
--(void) 
-
 
 @end

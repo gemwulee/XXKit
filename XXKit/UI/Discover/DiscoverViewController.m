@@ -22,7 +22,7 @@
 {
     [super tableView:tableView didSelectRowAtIndexPath:indexPath];
     if(indexPath.section == 0 && indexPath.row == 0){
-        OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] initWithNibName:@"OSMOIPhoneViewController" bundle:<#(nullable NSBundle *)#>];
+        OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
         [self.navigationController presentViewController:osmoVC animated:YES completion:^{}];
     }
 }
