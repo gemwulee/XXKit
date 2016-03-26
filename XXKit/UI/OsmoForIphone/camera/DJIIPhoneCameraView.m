@@ -22,6 +22,7 @@
 @property (nonatomic, strong) CIFilter               *filter;            //滤镜
 @property (nonatomic, strong) CIContext              *context;
 @property (nonatomic, strong) NSArray                *filterNames;
+@property (nonatomic, strong) CIImage                *ciImage;
 @end
 
 @implementation DJIIPhoneCameraView
@@ -151,7 +152,7 @@
 
     
     CGImageRef cgImage = [_context createCGImage:outputImage fromRect:outputImage.extent];
-//    CIImage    *ciImage = outputImage;
+    self.ciImage = outputImage;
     dispatch_async(dispatch_get_main_queue(), ^{
         self.previewLayer.contents = (__bridge_transfer id _Nullable)((cgImage));
     });
@@ -167,6 +168,36 @@
 -(void) openCamera{
     [self.handler openCamera:_session];
 }
+
+#pragma mark- 拍照
+- (IBAction)takePhoto:(UIButton *)sender {
+    
+    if (self.ciImage == nil){
+        return;
+    }
+    
+    CGImageRef cgImage = [_context createCGImage:_ciImage fromRect:_ciImage.extent];
+    UIImageWriteToSavedPhotosAlbum([UIImage imageWithCGImage: cgImage], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+}
+
+// 指定回调方法
+- (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
+{
+    NSString *msg = nil ;
+    if(error != NULL){
+        msg = @"保存图片失败" ;
+    }else{
+        msg = @"保存图片成功" ;
+    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"保存图片结果提示"
+                                                    message:msg
+                                                   delegate:self
+                                          cancelButtonTitle:@"确定"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+
 
 -(void) closeCamera{
     [self.handler closeCamera:_session];

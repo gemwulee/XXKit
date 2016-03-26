@@ -15,6 +15,9 @@
                     <rect key="frame" x="492" y="722" width="40" height="36"/>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="拍照"/>
+                    <connections>
+                        <action selector="takePhoto:" destination="-1" eventType="touchUpInside" id="Ke4-My-9Lk"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pY5-Wl-kWs">
                     <rect key="frame" x="10" y="10" width="1004" height="49"/>
