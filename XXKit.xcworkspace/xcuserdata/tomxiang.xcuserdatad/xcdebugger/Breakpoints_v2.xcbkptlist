@@ -57,13 +57,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/controller/OSMOIPhoneViewController.m"
-            timestampString = "480852906.870173"
+            filePath = "XXKit/UI/Camera/view/capturetool/OSMOModeView.m"
+            timestampString = "480864884.099673"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-refreshViewFrame"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "-layoutPortrait"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/view/capturetool/OSMOModeView.m"
+            timestampString = "480864884.099673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-buttonClick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

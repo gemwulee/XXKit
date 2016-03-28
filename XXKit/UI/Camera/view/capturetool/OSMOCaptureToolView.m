@@ -40,14 +40,14 @@
 -(void)initViewsWithCamera:(DJIIPhoneCameraView*) camera
 {
     _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME];
-    _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME];
+    _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _advancedButton     = [[UIButton alloc] initWithFrame:OSMO_ICON_FRAME];
     _playBackButton     = [[UIButton alloc] initWithFrame:OSMO_ICON_FRAME];
     
     _swtichView.backgroundColor = [UIColor redColor];
-    _modeView.backgroundColor = [UIColor greenColor];
-    _photoVideoButton.backgroundColor = [UIColor blueColor];
+    _modeView.backgroundColor = [UIColor clearColor];
+    _photoVideoButton.backgroundColor = [UIColor clearColor];
     _advancedButton.backgroundColor = [UIColor blackColor];
     _playBackButton.backgroundColor = [UIColor grayColor];
     
@@ -66,6 +66,14 @@
     }else{
         [self layoutPortrait];
     }
+    
+    for(UIView *subView in self.subviews){
+        if([subView isKindOfClass:[OSMOView class]] && [subView respondsToSelector:@selector(reloadSkins)]){
+            OSMOView *osView = (OSMOView*) subView;
+            [osView reloadSkins];
+        }
+    }
+    
 }
 
 -(void) layoutLanscape
@@ -84,6 +92,7 @@
     _advancedButton.origin     = CGPointMake(_photoVideoButton.right, 0);
     _playBackButton.origin     = CGPointMake(_advancedButton.right, 0);
 }
+
 
 @end
 

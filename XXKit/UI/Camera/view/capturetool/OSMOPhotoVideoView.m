@@ -9,14 +9,12 @@
 #import "OSMOPhotoVideoView.h"
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
-#import "OSMOCaptureToolView.h"
 #import "DJIIPhoneCameraView.h"
 
 @interface OSMOPhotoVideoView()
 @property(nonatomic,strong) UIImageView *imageViewBg;
 @property(nonatomic,strong) UIImageView *imageViewSaving;
 @property(nonatomic,strong) UIButton    *buttonCapture;
-@property(nonatomic,weak)   OSMOCaptureToolView *captureToolView;
 
 @property(nonatomic,weak)   DJIIPhoneCameraView       *delegateHandler;
 

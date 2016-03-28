@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OSMOView.h"
 
-@interface OSMOSwitchView : UIView
+@interface OSMOSwitchView : OSMOView
 
 @end

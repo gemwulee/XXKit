@@ -7,6 +7,11 @@
 //
 
 #import "OSMOSwitchView.h"
+#import "Masonry.h"
+#import "DJIIPhoneCameraModel.h"
+#import "OSMOCaptureToolView.h"
+#import "UIDevice+DJIUIKit.h"
+
 
 @implementation OSMOSwitchView
 
@@ -17,5 +22,25 @@
     // Drawing code
 }
 */
+
+
+-(void) reloadSkins
+{
+    if([UIDevice isLandscape]){
+        [self layoutLandscape];
+    }else{
+        [self layoutPortrait];
+    }
+}
+
+-(void) layoutLandscape
+{
+//    _imageArrow.frame = CGRectMake(OSMOModeView_IMAGE_LANDSCAPE_X, OSMOModeView_IMAGE_LANDSCAPE_Y, OSMOModeView_IMAGE_WIDTH, OSMOModeView_IMAGE_HEIGHT);
+}
+
+-(void) layoutPortrait
+{
+//    _imageArrow.frame = CGRectMake(OSMOModeView_IMAGE_PORTRAIT_X, OSMOModeView_IMAGE_PORTRAIT_Y, OSMOModeView_IMAGE_HEIGHT, OSMOModeView_IMAGE_WIDTH);
+}
 
 @end
