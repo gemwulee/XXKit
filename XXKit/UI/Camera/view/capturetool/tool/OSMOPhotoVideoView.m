@@ -10,27 +10,16 @@
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
 #import "DJIIPhoneCameraView.h"
+#import "DJIIPhoneCameraViewController.h"
 
 @interface OSMOPhotoVideoView()
 @property(nonatomic,strong) UIImageView *imageViewBg;
 @property(nonatomic,strong) UIImageView *imageViewSaving;
 @property(nonatomic,strong) UIButton    *buttonCapture;
 
-@property(nonatomic,weak)   DJIIPhoneCameraView       *delegateHandler;
-
 @end
 
 @implementation OSMOPhotoVideoView
-
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraView*) camera
-{
-    if(self = [super initWithFrame:frame]){
-        self.cameraModel = model;
-        self.delegateHandler = camera;
-        [self initViews];
-    }
-    return self;
-}
 
 -(void) initViews
 {
@@ -60,8 +49,8 @@
         make.size.mas_equalTo(CGSizeMake(OSMOPhotoVideoView_BUTTON_WIDTH, OSMOPhotoVideoView_BUTTON_HEIGHT));
     }];
     _buttonCapture.userInteractionEnabled = YES;
-    if(_delegateHandler){
-        [_buttonCapture addTarget:_delegateHandler action:@selector(takePhoto) forControlEvents:UIControlEventTouchUpInside];
+    if(self.camera){
+        [_buttonCapture addTarget:self.camera action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
 
     }else{
         assert(0);

@@ -14,21 +14,23 @@
 #import "DJIIPhoneCameraModel.h"
 #import "XXBase.h"
 #import "DJICameraIPhoneHandler.h"
-
+#import "DJIIPhoneCameraViewController.h"
+#import "OSMOPlayBackView.h"
+#import "OSMOAdvanceView.h"
 
 @interface OSMOCaptureToolView()
 
 @property(nonatomic,strong) OSMOSwitchView            *swtichView;
 @property(nonatomic,strong) OSMOModeView              *modeView;
 @property(nonatomic,strong) OSMOPhotoVideoView        *photoVideoButton;
-@property(nonatomic,strong) UIButton                  *advancedButton;
-@property(nonatomic,strong) UIButton                  *playBackButton;
+@property(nonatomic,strong) OSMOAdvanceView           *advancedButton;
+@property(nonatomic,strong) OSMOPlayBackView          *playBackButton;
 @end
 
 
 @implementation OSMOCaptureToolView
 
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraView*) camera
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera
 {
     if(self = [super initWithFrame:frame]){
         self.cameraModel = model;
@@ -37,19 +39,19 @@
     return self;
 }
 
--(void)initViewsWithCamera:(DJIIPhoneCameraView*) camera
+-(void)initViewsWithCamera:(DJIIPhoneCameraViewController*) camera
 {
     _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME];
     _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
-    _advancedButton     = [[UIButton alloc] initWithFrame:OSMO_ICON_FRAME];
-    _playBackButton     = [[UIButton alloc] initWithFrame:OSMO_ICON_FRAME];
+    _advancedButton     = [[OSMOAdvanceView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
+    _playBackButton     = [[OSMOPlayBackView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     
     _swtichView.backgroundColor = [UIColor redColor];
     _modeView.backgroundColor = [UIColor clearColor];
     _photoVideoButton.backgroundColor = [UIColor clearColor];
-    _advancedButton.backgroundColor = [UIColor blackColor];
-    _playBackButton.backgroundColor = [UIColor grayColor];
+    _advancedButton.backgroundColor = [UIColor clearColor];
+    _playBackButton.backgroundColor = [UIColor clearColor];
     
     
     [self addSubview:_swtichView];

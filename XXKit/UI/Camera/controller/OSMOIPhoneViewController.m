@@ -12,15 +12,14 @@
 #import "DJIIPhoneCameraModel.h"
 #import "OSMOCaptureToolView.h"
 #import "XXBase.h"
-
-#define rightBarWidth 44
+#import "DJIIPhoneCameraViewController.h"
 
 @interface OSMOIPhoneViewController ()
 
 @property(nonatomic,strong)  OSMOCaptureToolView *captureToolPlaceView;
 @property(nonatomic,strong)  UIView *rightSettingPlaceView;
 
-@property(nonatomic,strong)  DJIIPhoneCameraView  *camera;
+@property(nonatomic,strong)  DJIIPhoneCameraViewController  *camera;
 @property(nonatomic,strong)  OSMOIPhoneHandler    *handler;
 @property(nonatomic,strong)  DJIIPhoneCameraModel *model;
 
@@ -32,7 +31,7 @@
 -(instancetype)init{
     if (self = [super init]) {
         _model = [DJIIPhoneCameraModel new];
-        _camera = [[DJIIPhoneCameraView alloc] initWithFrame:CGRectZero withModel:_model];
+        _camera =  [[DJIIPhoneCameraViewController alloc] initWithModel:_model];
         _handler = [OSMOIPhoneHandler new];
     }
     return self;
@@ -64,9 +63,8 @@
     _rightSettingPlaceView = [[UIView alloc] initWithFrame:CGRectZero];
     _rightSettingPlaceView.backgroundColor = [UIColor yellowColor];
     
-    _camera.frame = self.view.frame;
     
-    [self.view addSubview:_camera];
+    [self.camera layoutInView:self.view];
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];
 }

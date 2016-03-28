@@ -7,6 +7,7 @@
 //
 
 #import "OSMOView.h"
+#import "DJIIPhoneCameraViewController.h"
 
 @implementation OSMOView
 
@@ -27,8 +28,19 @@
     assert(0);
 }
 
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model withHandler:(DJIIPhoneCameraView*) handler
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera
+{
+    if(self = [super initWithFrame:frame]){
+        self.cameraModel = model;
+        self.camera = camera;
+        [self initViews];
+    }
+    return self;
+}
+
+-(void) initViews
 {
     assert(0);
 }
+
 @end

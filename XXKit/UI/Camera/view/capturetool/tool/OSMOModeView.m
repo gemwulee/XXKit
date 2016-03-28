@@ -18,21 +18,10 @@
 @property(nonatomic,strong) UIButton *modeButton;
 @property(nonatomic,strong) UIImageView *imageArrow;
 
-@property(nonatomic,weak)   DJIIPhoneCameraView  *delegateHandler;
 @end
 
 
 @implementation OSMOModeView
-
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraView*) camera
-{
-    if(self = [super initWithFrame:frame]){
-        self.cameraModel = model;
-        self.delegateHandler = camera;
-        [self initViews];
-    }
-    return self;
-}
 
 -(void) initViews
 {
@@ -57,8 +46,6 @@
 
 -(void) reloadSkins
 {
-
-    
     if([UIDevice isLandscape]){
         [self layoutLandscape];
     }else{
@@ -91,7 +78,7 @@
     button.selected = !button.selected;
     [self reloadSkins];
     
-    if(_delegateHandler){}
+    if(self.camera){}
 }
 
 @end
