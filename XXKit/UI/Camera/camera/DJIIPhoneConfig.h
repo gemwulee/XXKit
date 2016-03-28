@@ -9,11 +9,15 @@
 #ifndef DJIIPhoneConfig_h
 #define DJIIPhoneConfig_h
 
-
+//拍照还是摄影
+typedef NS_ENUM(NSUInteger, DJIIPhone_ConnectStatus){
+    DJIIPhone_ConnectNormal = 0,             //正常连接
+    DJIIPhone_ConnectDisabled                //连接不可用
+};
 
 //拍照还是摄影
 typedef NS_ENUM(NSUInteger, DJIIPhoneCameraMode){
-    DJIIPhone_PhotoModel = 0,                //拍照
+    DJIIPhone_PhotoModel,                    //拍照
     DJIIPhone_VideoModel                     //摄影
 };
 

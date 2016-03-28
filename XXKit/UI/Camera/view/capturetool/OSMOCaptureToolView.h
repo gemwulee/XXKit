@@ -7,6 +7,7 @@
 //
 #import <UIKit/UIKit.h>
 #import "OSMOView.h"
+@class DJIIPhoneCameraView;
 
 #define OSMO_ICON_WIDTH  (70.f)
 #define OSMO_ICON_HEIGHT (70.f)

@@ -20,6 +20,9 @@
 
 -(void) initDefaultConfig
 {
+    //不可用模式
+    self.connectStatus = DJIIPhone_ConnectNormal;
+    
     //拍照模式
     self.captureMode = DJIIPhone_PhotoModel;
     

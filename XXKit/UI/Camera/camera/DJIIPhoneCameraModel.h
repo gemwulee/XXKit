@@ -14,6 +14,8 @@
 
 @interface DJIIPhoneCameraModel : NSObject
 
+//是否可用
+@property(nonatomic,assign,readwrite) DJIIPhone_ConnectStatus connectStatus;
 //相机拍照或者摄影模式
 @property(nonatomic,assign,readwrite) DJIIPhoneCameraMode captureMode;
 //摄像头方向，默认后置

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "OSMOView.h"
+@class OSMOCaptureToolView;
 
 #define OSMOPhotoVideoView_IMAGE_WIDTH  (48.f)
 #define OSMOPhotoVideoView_IMAGE_HEIGHT (48.f)

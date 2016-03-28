@@ -26,4 +26,9 @@
 {
     assert(0);
 }
+
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model withHandler:(DJIIPhoneCameraView*) handler
+{
+    assert(0);
+}
 @end

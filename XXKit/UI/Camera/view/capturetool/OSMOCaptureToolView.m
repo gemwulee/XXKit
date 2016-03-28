@@ -13,7 +13,7 @@
 #import "OSMOPhotoVideoView.h"
 #import "DJIIPhoneCameraModel.h"
 #import "XXBase.h"
-
+#import "DJICameraIPhoneHandler.h"
 
 
 @interface OSMOCaptureToolView()
@@ -28,20 +28,20 @@
 
 @implementation OSMOCaptureToolView
 
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraView*) camera
 {
     if(self = [super initWithFrame:frame]){
         self.cameraModel = model;
-        [self initViews];
+        [self initViewsWithCamera:camera];
     }
     return self;
 }
 
--(void)initViews
+-(void)initViewsWithCamera:(DJIIPhoneCameraView*) camera
 {
     _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME];
     _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME];
-    _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel];
+    _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _advancedButton     = [[UIButton alloc] initWithFrame:OSMO_ICON_FRAME];
     _playBackButton     = [[UIButton alloc] initWithFrame:OSMO_ICON_FRAME];
     
@@ -70,18 +70,19 @@
 
 -(void) layoutLanscape
 {
-    _modeView.origin           = CGPointMake(_swtichView.right, 0);
-    _photoVideoButton.origin   = CGPointMake(_modeView.right, 0);
-    _advancedButton.origin     = CGPointMake(_photoVideoButton.right, 0);
-    _playBackButton.origin     = CGPointMake(_advancedButton.right, 0);
-}
-
--(void) layoutPortrait
-{
     _modeView.origin           = CGPointMake(0,_swtichView.bottom);
     _photoVideoButton.origin   = CGPointMake(0,_modeView.bottom);
     _advancedButton.origin     = CGPointMake(0,_photoVideoButton.bottom);
     _playBackButton.origin     = CGPointMake(0,_advancedButton.bottom);
+    
+}
+
+-(void) layoutPortrait
+{
+    _modeView.origin           = CGPointMake(_swtichView.right, 0);
+    _photoVideoButton.origin   = CGPointMake(_modeView.right, 0);
+    _advancedButton.origin     = CGPointMake(_photoVideoButton.right, 0);
+    _playBackButton.origin     = CGPointMake(_advancedButton.right, 0);
 }
 
 @end

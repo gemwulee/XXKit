@@ -8,13 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "DJIIPhoneCameraModel.h"
+@class DJIIPhoneCameraView;
 
 @protocol OSMOViewAutoRefreshInterface <NSObject>
 
 @required
 
 -(void) reloadSkins;
+
+
+@optional
+
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model;
+
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraView*) camera;
 
 
 @end
