@@ -21,7 +21,7 @@
 -(void) initDefaultConfig
 {
     //拍照模式
-    self.cameraModel = DJIIPhone_PhotoModel;
+    self.captureMode = DJIIPhone_PhotoModel;
     
     //后置摄像头
     self.devicePosition = DJIIPhone_DevicePositionBack;

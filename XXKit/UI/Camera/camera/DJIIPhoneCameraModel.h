@@ -15,7 +15,7 @@
 @interface DJIIPhoneCameraModel : NSObject
 
 //相机拍照或者摄影模式
-@property(nonatomic,assign,readwrite) DJIIPhoneCameraMode cameraModel;
+@property(nonatomic,assign,readwrite) DJIIPhoneCameraMode captureMode;
 //摄像头方向，默认后置
 @property(nonatomic,assign,readwrite) DJIIPhoneCameraPosition devicePosition;
 
@@ -48,7 +48,7 @@
 
 //----------------摄影机---------------
 //摄影模式
-@property(nonatomic,assign,readwrite) DJIIPhoneShootMode shootMode;
+@property(nonatomic,assign,readwrite) DJIIPhoneVideoMode shootMode;
 //延时摄影
 @property(nonatomic,assign,readwrite) CGFloat delayShootTime;
 

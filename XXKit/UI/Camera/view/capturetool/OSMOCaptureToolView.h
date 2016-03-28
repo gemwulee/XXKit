@@ -6,23 +6,12 @@
 //  Copyright (c) 2016年 DJIDevelopers.com. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+#import "OSMOView.h"
 
-@interface OSMOCaptureToolView : UIView
+#define OSMO_ICON_WIDTH  (70.f)
+#define OSMO_ICON_HEIGHT (70.f)
+#define OSMO_ICON_FRAME  CGRectMake(0, 0, OSMO_ICON_WIDTH, OSMO_ICON_HEIGHT)
 
-
-@property (weak, nonatomic) IBOutlet UIImageView *camModePotraitArrowIcon;
-
-@property (weak, nonatomic) IBOutlet UIImageView *camModeLandscapeArrowIcon;
-@property (weak, nonatomic) IBOutlet UIImageView *camModeRightLandscapeArrowIcon;
-
-@property (weak, nonatomic) IBOutlet UIView *cameraModeView;
-
-@property (weak, nonatomic) IBOutlet UIView *captureBtnView;
-
-@property (weak, nonatomic) IBOutlet UIView *psmaView;
-
-@property (weak, nonatomic) IBOutlet UIView *playbackView;
-
-@property (weak, nonatomic) IBOutlet UILabel *halfHourCounter;
+@interface OSMOCaptureToolView : OSMOView
 
 @end

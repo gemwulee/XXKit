@@ -14,7 +14,7 @@
 //拍照还是摄影
 typedef NS_ENUM(NSUInteger, DJIIPhoneCameraMode){
     DJIIPhone_PhotoModel = 0,                //拍照
-    DJIIPhone_ShootModel                     //摄影
+    DJIIPhone_VideoModel                     //摄影
 };
 
 //拍照模式
@@ -22,15 +22,15 @@ typedef NS_ENUM(NSUInteger, DJIIPhonePhotoMode) {
     DJIIPhone_PhotoSingleMode =  0,          //单拍
     DJIIPhone_PhotoContinuousMode,           //连拍
     DJIIPhone_PhotoOverAllMode,              //全景
-    DJIIPhone_PhotoTimeShootMode,            //延时
+    DJIIPhone_PhotoTimeVideoMode,            //延时
 };
 
 //摄影模式
-typedef NS_ENUM(NSUInteger, DJIIPhoneShootMode) {
-    DJIIPhone_ShootAutoMode =  0,            //自动录像
-    DJIIPhone_4KShootMode,                   //4k录像
-    DJIIPhone_SlowShootMode,                 //慢动作
-    DJIIPhone_DelayShootMode                 //延时摄影
+typedef NS_ENUM(NSUInteger, DJIIPhoneVideoMode) {
+    DJIIPhone_VideoAutoMode =  0,            //自动录像
+    DJIIPhone_4KVideoMode,                   //4k录像
+    DJIIPhone_SlowVideoMode,                 //慢动作
+    DJIIPhone_DelayVideoMode                 //延时摄影
 } ;
 
 //摄像头方向
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSUInteger, DJIIPhoneSettingAutoManual) {
 typedef NS_ENUM(NSUInteger, DJIIPhoneContextualMode){
     DJIIPhone_NoneMode  =  0,                //无
     DJIIPhone_SportMode,                     //运动模式
-    DJIIPhone_SceneryShootMode,              //景物模式
+    DJIIPhone_SceneryVideoMode,              //景物模式
     DJIIPhone_CustomMode,                    //自定义模式
 };
 

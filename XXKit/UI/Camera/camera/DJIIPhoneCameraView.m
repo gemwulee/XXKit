@@ -15,7 +15,6 @@
 @interface DJIIPhoneCameraView()<AVCaptureVideoDataOutputSampleBufferDelegate>
 
 @property (nonatomic, strong) DJICameraIPhoneHandler *handler;
-@property (nonatomic, strong) DJIIPhoneCameraModel   *cameraModel;
 @property (nonatomic, strong) AVCaptureSession       *session;           //AVCaptureSession对象来执行输入设备和输出设备之间的数据传递
 @property (nonatomic, strong) CALayer                *previewLayer;      //预览图层，来显示照相机拍摄到的画面
 
@@ -27,9 +26,9 @@
 
 @implementation DJIIPhoneCameraView
 
--(instancetype) initWithFrame:(CGRect) frame cameraModel:(DJIIPhoneCameraModel*) iPhoneCamera{
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model{
     if (self = [super initWithFrame:frame]) {
-        self.cameraModel = iPhoneCamera;
+        self.cameraModel = model;
         [self initData];
         [self initCamera];
         [self initEvent];
@@ -155,9 +154,10 @@
 
 
 #pragma mark- 根据model刷新参数
--(void) refreshCamera
+-(void) reloadSkins
 {
     
 }
+
 
 @end

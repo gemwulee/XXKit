@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OSMOView.h"
 
 @class DJIIPhoneCameraModel;
 
-@interface DJIIPhoneCameraView : UIView
+@interface DJIIPhoneCameraView : OSMOView
 
--(instancetype) initWithFrame:(CGRect) frame cameraModel:(DJIIPhoneCameraModel*) iPhoneCamera;
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model;
 
 //打开相机
 -(void) openCamera;
