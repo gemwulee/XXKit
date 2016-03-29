@@ -33,10 +33,16 @@
         _model = [DJIIPhoneCameraModel new];
         _camera =  [[DJIIPhoneCameraViewController alloc] initWithModel:_model];
         _handler = [OSMOIPhoneHandler new];
+        [self addKVOModel];
+
     }
     return self;
 }
 
+-(void)dealloc
+{
+    [self removeKVOModel];
+}
 
 -(void)viewDidLoad
 {
@@ -105,6 +111,22 @@
     [_captureToolPlaceView reloadSkins];
 }
 
+#pragma mark- 增加观察者
+-(void) addKVOModel
+{
+    [self addObserver:self forKeyPath:@"model.captureMode" options:0 context:nil];
+}
 
+-(void) removeKVOModel
+{
+    [self removeObserver:self forKeyPath:@"model.captureMode"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
+{
+    if(_captureToolPlaceView){
+        [_captureToolPlaceView reloadSkins];
+    }
+}
 
 @end

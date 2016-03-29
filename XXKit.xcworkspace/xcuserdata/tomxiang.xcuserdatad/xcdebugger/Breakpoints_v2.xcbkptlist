@@ -57,13 +57,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/view/capturetool/tool/OSMOSwitchView.m"
-            timestampString = "480918111.299498"
+            filePath = "XXKit/UI/Camera/controller/OSMOIPhoneViewController.m"
+            timestampString = "480934884.433957"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "-layoutPortrait"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-removeKVOModel"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/controller/OSMOIPhoneViewController.m"
+            timestampString = "480934884.433957"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-addKVOModel"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
