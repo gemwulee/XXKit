@@ -41,18 +41,12 @@
 
 -(void)initViewsWithCamera:(DJIIPhoneCameraViewController*) camera
 {
-    _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME];
+    self.backgroundColor = [UIColor grayColor];
+    _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _advancedButton     = [[OSMOAdvanceView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
     _playBackButton     = [[OSMOPlayBackView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
-    
-    _swtichView.backgroundColor = [UIColor redColor];
-    _modeView.backgroundColor = [UIColor clearColor];
-    _photoVideoButton.backgroundColor = [UIColor clearColor];
-    _advancedButton.backgroundColor = [UIColor clearColor];
-    _playBackButton.backgroundColor = [UIColor clearColor];
-    
     
     [self addSubview:_swtichView];
     [self addSubview:_modeView];

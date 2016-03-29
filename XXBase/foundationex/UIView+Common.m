@@ -1,30 +1,30 @@
 //
 //  UIView+Common.m
-//  XXBase
+//  Phantom3
 //
-//  Created by tomxiang on 16/3/10.
-//  Copyright © 2016年 tomxiang. All rights reserved.
+//  Created by tomxiang on 16/3/23.
+//  Copyright © 2016年 DJIDevelopers.com. All rights reserved.
 //
 
 #import "UIView+Common.h"
 
 @implementation UIView (Common)
 
-- (CGFloat)left {
+- (CGFloat)x {
     return self.frame.origin.x;
 }
 
-- (void)setLeft:(CGFloat)x {
+- (void)setX:(CGFloat)x {
     CGRect frame = self.frame;
     frame.origin.x = x;
     self.frame = frame;
 }
 
-- (CGFloat)top {
+- (CGFloat)y{
     return self.frame.origin.y;
 }
 
-- (void)setTop:(CGFloat)y {
+- (void)setY:(CGFloat)y {
     CGRect frame = self.frame;
     frame.origin.y = y;
     self.frame = frame;
@@ -52,22 +52,22 @@
 
 - (CGFloat)centerX
 {
-    return self.left + self.width * 0.5;
+    return self.x + self.width * 0.5;
 }
 
 - (void)setCenterX:(CGFloat)centerX
 {
-    self.left = centerX - self.width * 0.5;
+    self.x = centerX - self.width * 0.5;
 }
 
 - (CGFloat)centerY
 {
-    return self.top + self.height * 0.5;
+    return self.y + self.height * 0.5;
 }
 
 - (void)setCenterY:(CGFloat)centerY
 {
-    self.top = centerY - self.height * 0.5;
+    self.y = centerY - self.height * 0.5;
 }
 
 - (CGFloat)width {
