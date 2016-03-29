@@ -40,6 +40,9 @@
     
     //闪光灯默认关闭
     self.flashlight = NO;
+    
+    //现在处于停止状态
+    self.videoState = DJIIPhone_VideoRecordState_Stop;
 }
 
 @end

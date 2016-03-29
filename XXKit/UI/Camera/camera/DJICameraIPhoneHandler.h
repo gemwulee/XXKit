@@ -30,4 +30,6 @@
 //获取旋转角度
 -(CGAffineTransform) getCameraTransform;
 
+//获取视频文件名
+-(NSString*) getVideoFileName;
 @end

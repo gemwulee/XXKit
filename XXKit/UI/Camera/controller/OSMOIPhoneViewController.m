@@ -107,7 +107,6 @@
         [_rightSettingPlaceView setFrame:CGRectMake(0, 0,self.view.width, OSMO_ICON_HEIGHT)];
     }
 
-    
     [_captureToolPlaceView reloadSkins];
 }
 
@@ -115,18 +114,28 @@
 -(void) addKVOModel
 {
     [self addObserver:self forKeyPath:@"model.captureMode" options:0 context:nil];
+    [self addObserver:self forKeyPath:@"model.devicePosition" options:0 context:nil];
 }
 
 -(void) removeKVOModel
 {
     [self removeObserver:self forKeyPath:@"model.captureMode"];
+    [self addObserver:self forKeyPath:@"model.devicePosition" options:0 context:nil];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
-    if(_captureToolPlaceView){
-        [_captureToolPlaceView reloadSkins];
+    if ([keyPath isEqualToString:@"model.captureMode"]) {
+        if(_captureToolPlaceView){
+            [_captureToolPlaceView reloadSkins];
+            [_camera reloadSkins];
+        }
     }
+    
+    if([keyPath isEqualToString:@"model.devicePosition"]){
+        [self.camera swapFrontAndBackCameras];
+    }
+
 }
 
 @end

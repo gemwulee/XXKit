@@ -15,6 +15,14 @@ typedef NS_ENUM(NSUInteger, DJIIPhone_ConnectStatus){
     DJIIPhone_ConnectDisabled                //连接不可用
 };
 
+//摄影状态
+typedef NS_ENUM(NSUInteger, DJIIPhoneVideoRecordState){
+    DJIIPhone_VideoRecordState_Stop = 0,           //停止状态
+    DJIIPhone_VideoRecordState_ING                 //正在进行的状态
+};
+
+
+
 //拍照还是摄影
 typedef NS_ENUM(NSUInteger, DJIIPhoneCameraMode){
     DJIIPhone_PhotoModel,                    //拍照

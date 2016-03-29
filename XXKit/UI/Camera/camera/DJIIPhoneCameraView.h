@@ -27,6 +27,15 @@
 //拍照
 -(void) takePhoto;
 
+//切换摄像头
+- (void)swapFrontAndBackCameras;
+
+//开始录制视频
+-(void) startRecordVideo;
+
+//停止录制视频
+-(void) stopRecordVideo;
+
 
 
 @end

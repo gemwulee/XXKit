@@ -45,8 +45,29 @@
     [self.cameraView takePhoto];
 }
 
+-(void) swapFrontAndBackCameras
+{
+    [self.cameraView swapFrontAndBackCameras];
+}
+
 -(void) buttonPlayBack:(id) sender{
     NSLog(@"回放..");
 }
 
+//开始录制视频
+-(void) startRecordVideo
+{
+    [self.cameraView startRecordVideo];
+}
+
+//停止录制视频
+-(void) stopRecordVideo
+{
+    [self.cameraView stopRecordVideo];
+}
+
+-(void) reloadSkins
+{
+    [self.cameraView reloadSkins];
+}
 @end

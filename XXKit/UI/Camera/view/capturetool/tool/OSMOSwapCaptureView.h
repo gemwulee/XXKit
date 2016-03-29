@@ -1,5 +1,5 @@
 //
-//  OSMOAdvanceView.h
+//  OSMOSwapCaptureView.h
 //  XXKit
 //
 //  Created by tomxiang on 3/28/16.
@@ -8,6 +8,6 @@
 
 #import "OSMOView.h"
 
-@interface OSMOAdvanceView : OSMOView
+@interface OSMOSwapCaptureView : OSMOView
 
 @end

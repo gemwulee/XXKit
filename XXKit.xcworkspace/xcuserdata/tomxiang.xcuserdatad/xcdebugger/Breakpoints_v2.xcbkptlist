@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/camera/DJICameraIPhoneHandler.m"
-            timestampString = "480850243.943882"
+            filePath = "XXKit/UI/Camera/camera/DJIIPhoneCameraView.m"
+            timestampString = "480957252.265325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-takePhoto:context:"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "-stopRecordVideo"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/camera/DJIIPhoneCameraView.m"
-            timestampString = "480850258.682816"
+            timestampString = "480957252.265325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "-takePhoto"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "-reloadSkins"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/controller/OSMOIPhoneViewController.m"
-            timestampString = "480934884.433957"
+            filePath = "XXKit/UI/Camera/camera/DJIIPhoneCameraView.m"
+            timestampString = "480957100.782767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "-removeKVOModel"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "-setVideoSessionOutput"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +73,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/controller/OSMOIPhoneViewController.m"
-            timestampString = "480934884.433957"
+            filePath = "XXKit/UI/Camera/camera/DJIIPhoneCameraView.m"
+            timestampString = "480957100.782767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "-addKVOModel"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "-setVideoSessionOutput"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/camera/DJIIPhoneCameraView.m"
+            timestampString = "480957252.265325"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "-setPhotoSesstionOutput"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

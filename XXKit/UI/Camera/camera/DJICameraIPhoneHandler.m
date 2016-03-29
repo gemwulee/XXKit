@@ -132,5 +132,24 @@
     }
     return t;
 }
+#pragma mark- Video Name
+-(NSString*) getVideoFileName
+{
+    NSDate *now = [NSDate date];
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSUInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    NSDateComponents *dateComponent = [calendar components:unitFlags fromDate:now];
+    
+    NSInteger year = [dateComponent year];
+    NSInteger month = [dateComponent month];
+    NSInteger day = [dateComponent day];
+    NSInteger hour = [dateComponent hour];
+    NSInteger minute = [dateComponent minute];
+    NSInteger second = [dateComponent second];
+    
+    NSString *fileName = [NSString stringWithFormat:@"%d%d%d%d%d%d",year,month,day,hour,minute,second];
+    return fileName;
+}
 
 @end
