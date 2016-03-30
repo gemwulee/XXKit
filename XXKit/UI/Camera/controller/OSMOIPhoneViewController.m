@@ -115,17 +115,19 @@
 {
     [self addObserver:self forKeyPath:@"model.captureMode" options:0 context:nil];
     [self addObserver:self forKeyPath:@"model.devicePosition" options:0 context:nil];
+    [self addObserver:self forKeyPath:@"model.videoState" options:0 context:nil];
 }
 
 -(void) removeKVOModel
 {
     [self removeObserver:self forKeyPath:@"model.captureMode"];
-    [self addObserver:self forKeyPath:@"model.devicePosition" options:0 context:nil];
+    [self removeObserver:self forKeyPath:@"model.devicePosition"];
+    [self removeObserver:self forKeyPath:@"model.videoState"];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
-    if ([keyPath isEqualToString:@"model.captureMode"]) {
+    if ([keyPath isEqualToString:@"model.captureMode"] || [keyPath isEqualToString:@"model.videoState"]) {
         if(_captureToolPlaceView){
             [_captureToolPlaceView reloadSkins];
             [_camera reloadSkins];

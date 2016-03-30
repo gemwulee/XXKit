@@ -56,7 +56,7 @@
     [self reloadSkins];
 }
 
--(void) resetEvent
+-(void) bindEvent
 {
     [_buttonCapture removeTarget:nil
                        action:NULL
@@ -75,21 +75,7 @@
             break;
         case DJIIPhone_VideoModel:
         {
-            switch(self.cameraModel.videoState){
-                case DJIIPhone_VideoRecordState_Stop:{
-                    if(self.camera && [self.camera respondsToSelector:@selector(startRecordVideo)]){
-                        [_buttonCapture addTarget:self.camera action:@selector(startRecordVideo) forControlEvents:UIControlEventTouchUpInside];
-                    }
-                }
-                    break;
-                case DJIIPhone_VideoRecordState_ING:
-                {
-                    if(self.camera && [self.camera respondsToSelector:@selector(stopRecordVideo)]){
-                        [_buttonCapture addTarget:self.camera action:@selector(stopRecordVideo) forControlEvents:UIControlEventTouchUpInside];
-                    }
-                }
-                    break;
-            }
+            [_buttonCapture addTarget:self action:@selector(setVideoAnimation) forControlEvents:UIControlEventTouchUpInside];
         }
             break;
             
@@ -97,6 +83,41 @@
             break;
     }
   
+}
+
+-(void) setVideoAnimation
+{
+    [UIView animateWithDuration:0.3 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        if(self.cameraModel.videoState == DJIIPhone_VideoRecordState_Stop){
+            [_buttonCapture setImage:[UIImage imageNamed:@"handle_camera_tool_video_stop"] forState:UIControlStateNormal];
+        }else{
+            [_buttonCapture setImage:[UIImage imageNamed:@"handle_camera_tool_video"] forState:UIControlStateNormal];
+        }
+        
+    } completion:^(BOOL finished) {
+        
+        switch(self.cameraModel.videoState){
+                
+            case DJIIPhone_VideoRecordState_Stop:
+            {
+                self.cameraModel.videoState = DJIIPhone_VideoRecordState_ING;
+
+                if(self.camera){
+                    [self.camera startRecordVideo];
+                }
+            }
+                break;
+            case DJIIPhone_VideoRecordState_ING:
+            {
+                self.cameraModel.videoState = DJIIPhone_VideoRecordState_Stop;
+                
+                if(self.camera){
+                    [self.camera stopRecordVideo];
+                }
+            }
+                break;
+        }
+    }];
 }
 
 -(void) reloadSkins
@@ -119,7 +140,7 @@
             break;
     }
 
-    [self resetEvent];
+    [self bindEvent];
 
 }
 
