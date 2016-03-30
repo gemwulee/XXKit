@@ -7,7 +7,6 @@
 //
 
 #import "OSMOView.h"
-#import "DJIIPhoneCameraViewController.h"
 
 @implementation OSMOView
 
@@ -18,27 +17,32 @@
     // Drawing code
 }
 */
--(void) reloadSkins
-{
-    assert(0);
-}
-
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model
 {
     assert(0);
 }
 
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction
 {
     if(self = [super initWithFrame:frame]){
         self.cameraModel = model;
-        self.camera = camera;
+        self.cameraAction = cameraAction;
+        [self initData];
         [self initViews];
     }
     return self;
 }
 
+-(void) initData
+{}
+
+
 -(void) initViews
+{
+    assert(0);
+}
+
+-(void) reloadSkins
 {
     assert(0);
 }

@@ -27,6 +27,7 @@
 @implementation DJIIPhoneCameraView
 
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model{
+    self.backgroundColor = [UIColor yellowColor];
     if (self = [super initWithFrame:frame]) {
         self.cameraModel = model;
         [self initData];

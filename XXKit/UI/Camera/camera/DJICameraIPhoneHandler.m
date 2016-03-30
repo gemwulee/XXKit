@@ -148,7 +148,7 @@
     NSInteger minute = [dateComponent minute];
     NSInteger second = [dateComponent second];
     
-    NSString *fileName = [NSString stringWithFormat:@"%d%d%d%d%d%d",year,month,day,hour,minute,second];
+    NSString *fileName = [NSString stringWithFormat:@"%zd%zd%zd%zd%zd%zd",year,month,day,hour,minute,second];
     return fileName;
 }
 

@@ -77,8 +77,6 @@
     
     button.selected = !button.selected;
     [self reloadSkins];
-    
-    if(self.camera){}
-}
+    }
 
 @end

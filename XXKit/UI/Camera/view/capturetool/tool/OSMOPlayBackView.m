@@ -10,7 +10,7 @@
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
 #import "DJIIPhoneCameraView.h"
-#import "DJIIPhoneCameraViewController.h"
+#import "OSMOEventAction.h"
 #import "OSMOCaptureToolView.h"
 
 @interface OSMOPlayBackView()
@@ -36,16 +36,10 @@
     
     _buttonPlayBack.userInteractionEnabled = YES;
     
-    if(_buttonPlayBack){
-        [_buttonPlayBack addTarget:self.camera action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
-    }else{
-        assert(0);
-    }
-    
     [_buttonPlayBack setImage:[UIImage imageNamed:@"handle_playback"] forState:UIControlStateNormal];
-    if(self.camera && [self.camera respondsToSelector:@selector(buttonPlayBack:)]){
-        [_buttonPlayBack addTarget:self.camera action:@selector(buttonPlayBack:) forControlEvents:UIControlEventTouchUpInside];
-    }
+    
+    [_buttonPlayBack addTarget:self.cameraAction action:@selector(actionClick_PlayBackButton_OSMOPlayBackView) forControlEvents:UIControlEventTouchUpInside];
+    
 
     [self reloadSkins];
 }

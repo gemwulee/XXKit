@@ -11,7 +11,6 @@
 #import "DJIIPhoneCameraModel.h"
 #import "DJIIPhoneCameraView.h"
 #import "OSMOCaptureToolView.h"
-#import "DJIIPhoneCameraViewController.h"
 
 @interface OSMOSwapCaptureView()
 @property(nonatomic,strong) UIButton    *buttonSwap;

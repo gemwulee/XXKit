@@ -7,19 +7,22 @@
 //
 
 #import "OSMOIPhoneViewController.h"
-#import "DJIIPhoneCameraView.h"
 #import "OSMOIPhoneHandler.h"
 #import "DJIIPhoneCameraModel.h"
 #import "OSMOCaptureToolView.h"
 #import "XXBase.h"
-#import "DJIIPhoneCameraViewController.h"
+#import "DJIIPhoneCameraView.h"
+#import "OSMORightSettingView.h"
+#import "OSMOEventAction.h"
 
 @interface OSMOIPhoneViewController ()
 
-@property(nonatomic,strong)  OSMOCaptureToolView *captureToolPlaceView;
-@property(nonatomic,strong)  UIView *rightSettingPlaceView;
+@property(nonatomic,strong)  OSMOCaptureToolView  *captureToolPlaceView;
+@property(nonatomic,strong)  OSMORightSettingView *rightSettingPlaceView;
 
-@property(nonatomic,strong)  DJIIPhoneCameraViewController  *camera;
+@property(nonatomic,strong)  DJIIPhoneCameraView  *camera;
+@property(nonatomic,strong)  OSMOEventAction      *cameraAction;
+
 @property(nonatomic,strong)  OSMOIPhoneHandler    *handler;
 @property(nonatomic,strong)  DJIIPhoneCameraModel *model;
 
@@ -30,9 +33,11 @@
 
 -(instancetype)init{
     if (self = [super init]) {
-        _model = [DJIIPhoneCameraModel new];
-        _camera =  [[DJIIPhoneCameraViewController alloc] initWithModel:_model];
-        _handler = [OSMOIPhoneHandler new];
+        _model        = [DJIIPhoneCameraModel new];
+        _camera       = [[DJIIPhoneCameraView alloc] initWithFrame:CGRectZero withModel:_model];
+
+        _cameraAction = [[OSMOEventAction alloc] initWithModel:_model camera:_camera];
+        _handler      = [OSMOIPhoneHandler new];
         [self addKVOModel];
 
     }
@@ -62,15 +67,12 @@
 }
 
 -(void) initViews
-{
-    _captureToolPlaceView = [[OSMOCaptureToolView alloc] initWithFrame:CGRectZero withModel:_model camera:_camera];
-    _captureToolPlaceView.backgroundColor = [UIColor clearColor];
+{    
+    _captureToolPlaceView = [[OSMOCaptureToolView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
+    _rightSettingPlaceView = [[OSMORightSettingView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
+    _camera.frame = self.view.frame;
     
-    _rightSettingPlaceView = [[UIView alloc] initWithFrame:CGRectZero];
-    _rightSettingPlaceView.backgroundColor = [UIColor yellowColor];
-    
-    
-    [self.camera layoutInView:self.view];
+    [self.view addSubview:_camera];
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];
 }
@@ -95,8 +97,6 @@
 -(void) refreshViewFrame
 {
     [_camera resetCameraFrame:self.view.bounds];
-    //_captureToolPlaceView::左下
-    //_rightSettingPlaceView::右上
     
     if ([UIDevice isLandscape]) {
         [_captureToolPlaceView setFrame:CGRectMake(0, (self.view.height - OSMO_ICON_HEIGHT * 5)*1.f/2, OSMO_ICON_WIDTH , OSMO_ICON_HEIGHT * 5)];
@@ -108,6 +108,7 @@
     }
 
     [_captureToolPlaceView reloadSkins];
+    [_rightSettingPlaceView reloadSkins];
 }
 
 #pragma mark- 增加观察者

@@ -10,7 +10,6 @@
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
 #import "DJIIPhoneCameraView.h"
-#import "DJIIPhoneCameraViewController.h"
 
 @interface OSMOPhotoVideoView()
 @property(nonatomic,strong) UIImageView *imageViewBg;
@@ -65,17 +64,12 @@
     switch (self.cameraModel.captureMode) {
         case DJIIPhone_PhotoModel:
         {
-            if(self.camera){
-                [_buttonCapture addTarget:self.camera action:@selector(takePhoto:) forControlEvents:UIControlEventTouchUpInside];
-                
-            }else{
-                assert(0);
-            }
+            [_buttonCapture addTarget:self.cameraAction action:@selector(actionClick_PhotoButton_OSMOPhotoVideoView) forControlEvents:UIControlEventTouchUpInside];
         }
             break;
         case DJIIPhone_VideoModel:
         {
-            [_buttonCapture addTarget:self action:@selector(setVideoAnimation) forControlEvents:UIControlEventTouchUpInside];
+            [_buttonCapture addTarget:self action:@selector(onClickAfterVideoAnimation) forControlEvents:UIControlEventTouchUpInside];
         }
             break;
             
@@ -85,7 +79,7 @@
   
 }
 
--(void) setVideoAnimation
+-(void) onClickAfterVideoAnimation
 {
     [UIView animateWithDuration:0.3 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         if(self.cameraModel.videoState == DJIIPhone_VideoRecordState_Stop){
@@ -95,28 +89,7 @@
         }
         
     } completion:^(BOOL finished) {
-        
-        switch(self.cameraModel.videoState){
-                
-            case DJIIPhone_VideoRecordState_Stop:
-            {
-                self.cameraModel.videoState = DJIIPhone_VideoRecordState_ING;
-
-                if(self.camera){
-                    [self.camera startRecordVideo];
-                }
-            }
-                break;
-            case DJIIPhone_VideoRecordState_ING:
-            {
-                self.cameraModel.videoState = DJIIPhone_VideoRecordState_Stop;
-                
-                if(self.camera){
-                    [self.camera stopRecordVideo];
-                }
-            }
-                break;
-        }
+            [self.cameraAction actionClick_VideoButton_OSMOPhotoVideoView];
     }];
 }
 

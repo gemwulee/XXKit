@@ -14,7 +14,6 @@
 #import "DJIIPhoneCameraModel.h"
 #import "XXBase.h"
 #import "DJICameraIPhoneHandler.h"
-#import "DJIIPhoneCameraViewController.h"
 #import "OSMOPlayBackView.h"
 #import "OSMOSwapCaptureView.h"
 
@@ -31,23 +30,22 @@
 
 @implementation OSMOCaptureToolView
 
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction
 {
     if(self = [super initWithFrame:frame]){
         self.cameraModel = model;
-        [self initViewsWithCamera:camera];
+        [self initViewsWithCamera:cameraAction];
     }
     return self;
 }
 
--(void)initViewsWithCamera:(DJIIPhoneCameraViewController*) camera
+-(void)initViewsWithCamera:(OSMOEventAction*) cameraAction
 {
-    self.backgroundColor = [UIColor grayColor];
-    _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
-    _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
-    _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
-    _playBackButton     = [[OSMOPlayBackView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
-    _swapCaptureView    = [[OSMOSwapCaptureView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:camera];
+    _swtichView         = [[OSMOSwitchView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:cameraAction];
+    _modeView           = [[OSMOModeView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:cameraAction];
+    _photoVideoButton   = [[OSMOPhotoVideoView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:cameraAction];
+    _playBackButton     = [[OSMOPlayBackView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:cameraAction];
+    _swapCaptureView    = [[OSMOSwapCaptureView alloc] initWithFrame:OSMO_ICON_FRAME withModel:self.cameraModel camera:cameraAction];
 
     
     [self addSubview:_swtichView];
@@ -71,7 +69,6 @@
             [osView reloadSkins];
         }
     }
-    
 }
 
 -(void) layoutLanscape
