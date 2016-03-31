@@ -9,7 +9,6 @@
 #import "OSMOSwapCaptureView.h"
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
-#import "DJIIPhoneCameraView.h"
 #import "OSMOCaptureToolView.h"
 
 @interface OSMOSwapCaptureView()

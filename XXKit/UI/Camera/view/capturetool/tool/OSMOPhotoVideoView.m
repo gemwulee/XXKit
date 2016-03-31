@@ -9,7 +9,6 @@
 #import "OSMOPhotoVideoView.h"
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
-#import "DJIIPhoneCameraView.h"
 
 @interface OSMOPhotoVideoView()
 @property(nonatomic,strong) UIImageView *imageViewBg;

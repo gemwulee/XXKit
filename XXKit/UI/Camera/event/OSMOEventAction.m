@@ -8,16 +8,16 @@
 
 #import "OSMOEventAction.h"
 #import "DJIIPhoneCameraModel.h"
-#import "DJIIPhoneCameraView.h"
+#import "DJIIPhoneCameraViewController.h"
 
 @interface OSMOEventAction()
 @property(nonatomic,weak) DJIIPhoneCameraModel  *cameraModel;
-@property(nonatomic,weak) DJIIPhoneCameraView   *camera;
+@property(nonatomic,weak) DJIIPhoneCameraViewController   *camera;
 @end
 
 @implementation OSMOEventAction
 
--(instancetype)initWithModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraView*) camera
+-(instancetype)initWithModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera
 {
     if(self = [super init]){
         self.cameraModel = model;

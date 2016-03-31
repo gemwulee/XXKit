@@ -13,7 +13,6 @@
 #import "OSMOPhotoVideoView.h"
 #import "DJIIPhoneCameraModel.h"
 #import "XXBase.h"
-#import "DJICameraIPhoneHandler.h"
 #import "OSMOPlayBackView.h"
 #import "OSMOSwapCaptureView.h"
 

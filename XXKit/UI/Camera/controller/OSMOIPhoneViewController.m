@@ -11,7 +11,7 @@
 #import "DJIIPhoneCameraModel.h"
 #import "OSMOCaptureToolView.h"
 #import "XXBase.h"
-#import "DJIIPhoneCameraView.h"
+#import "DJIIPhoneCameraViewController.h"
 #import "OSMORightSettingView.h"
 #import "OSMOEventAction.h"
 
@@ -20,7 +20,10 @@
 @property(nonatomic,strong)  OSMOCaptureToolView  *captureToolPlaceView;
 @property(nonatomic,strong)  OSMORightSettingView *rightSettingPlaceView;
 
+@property(nonatomic,strong)  DJIIPhoneCameraViewController  *cameraVC;
+
 @property(nonatomic,strong)  DJIIPhoneCameraView  *camera;
+
 @property(nonatomic,strong)  OSMOEventAction      *cameraAction;
 
 @property(nonatomic,strong)  OSMOIPhoneHandler    *handler;
@@ -34,9 +37,11 @@
 -(instancetype)init{
     if (self = [super init]) {
         _model        = [DJIIPhoneCameraModel new];
-        _camera       = [[DJIIPhoneCameraView alloc] initWithFrame:CGRectZero withModel:_model];
+        _cameraVC     = [[DJIIPhoneCameraViewController alloc] initWithModel:_model];
 
-        _cameraAction = [[OSMOEventAction alloc] initWithModel:_model camera:_camera];
+//        _camera       = [[DJIIPhoneCameraView alloc] initWithFrame:CGRectZero withModel:_model];
+
+        _cameraAction = [[OSMOEventAction alloc] initWithModel:_model camera:_cameraVC];
         _handler      = [OSMOIPhoneHandler new];
         [self addKVOModel];
 
@@ -58,21 +63,25 @@
 
 - (void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [_camera openCamera];
+//    [_camera openCamera];
 }
 
 - (void) viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear: animated];
-    [_camera closeCamera];
+//    [_camera closeCamera];
 }
 
 -(void) initViews
 {    
     _captureToolPlaceView = [[OSMOCaptureToolView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _rightSettingPlaceView = [[OSMORightSettingView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
-    _camera.frame = self.view.frame;
+//    _camera.frame = self.view.frame;
     
-    [self.view addSubview:_camera];
+//    [self.view addSubview:_camera];
+    
+    [self addChildViewController:_cameraVC];
+    [self.view addSubview:_cameraVC.view];
+    
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];
 }
@@ -96,7 +105,7 @@
 
 -(void) refreshViewFrame
 {
-    [_camera resetCameraFrame:self.view.bounds];
+//    [_camera resetCameraFrame:self.view.bounds];
     
     if ([UIDevice isLandscape]) {
         [_captureToolPlaceView setFrame:CGRectMake(0, (self.view.height - OSMO_ICON_HEIGHT * 5)*1.f/2, OSMO_ICON_WIDTH , OSMO_ICON_HEIGHT * 5)];
@@ -131,12 +140,12 @@
     if ([keyPath isEqualToString:@"model.captureMode"] || [keyPath isEqualToString:@"model.videoState"]) {
         if(_captureToolPlaceView){
             [_captureToolPlaceView reloadSkins];
-            [_camera reloadSkins];
+            [_cameraVC reloadSkins];
         }
     }
     
     if([keyPath isEqualToString:@"model.devicePosition"]){
-        [self.camera swapFrontAndBackCameras];
+        [_cameraVC swapFrontAndBackCameras];
     }
 
 }

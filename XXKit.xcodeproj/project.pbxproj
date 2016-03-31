@@ -30,9 +30,7 @@
 		9A176B371CA6CA2F00807EF3 /* VoiceSearchStartBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767F41CA6CA2E00807EF3 /* VoiceSearchStartBtn@2x.png */; };
 		9A176B381CA6CA2F00807EF3 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767F61CA6CA2E00807EF3 /* Contents.json */; };
 		9A176B391CA6CA2F00807EF3 /* VoiceSearchStartBtnHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767F71CA6CA2E00807EF3 /* VoiceSearchStartBtnHL@2x.png */; };
-		9A176D9D1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D801CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m */; };
 		9A176D9E1CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D821CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m */; };
-		9A176D9F1CA6CCCF00807EF3 /* DJIIPhoneCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D841CA6CCCF00807EF3 /* DJIIPhoneCameraView.m */; };
 		9A176DA21CA6CCCF00807EF3 /* OSMOIPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D8C1CA6CCCF00807EF3 /* OSMOIPhoneViewController.m */; };
 		9A176DA41CA6CCCF00807EF3 /* OSMOIPhoneHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D901CA6CCCF00807EF3 /* OSMOIPhoneHandler.m */; };
 		9A176DA91CA6CCCF00807EF3 /* OSMOCaptureToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A176D991CA6CCCF00807EF3 /* OSMOCaptureToolView.m */; };
@@ -67,6 +65,7 @@
 		9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */; };
 		9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F01C819E5F00893ABA /* libuikit.a */; };
 		9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F21C81B93A00893ABA /* CoreText.framework */; };
+		9ADEE80E1CACDA29009C23FB /* DJIIPhoneCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEE80D1CACDA29009C23FB /* DJIIPhoneCameraViewController.m */; };
 		9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0BC9D1C97E79300B602C6 /* ContactsViewController.m */; };
 		9AF0BCA71C97E9AF00B602C6 /* ContactViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0BCA61C97E9AF00B602C6 /* ContactViewModel.m */; };
 		9AF0BCA91C97FC8900B602C6 /* ContactConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AF0BCA81C97FC8900B602C6 /* ContactConfig.plist */; };
@@ -138,12 +137,8 @@
 		9A1767F41CA6CA2E00807EF3 /* VoiceSearchStartBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VoiceSearchStartBtn@2x.png"; sourceTree = "<group>"; };
 		9A1767F61CA6CA2E00807EF3 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		9A1767F71CA6CA2E00807EF3 /* VoiceSearchStartBtnHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VoiceSearchStartBtnHL@2x.png"; sourceTree = "<group>"; };
-		9A176D7F1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJICameraIPhoneHandler.h; sourceTree = "<group>"; };
-		9A176D801CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJICameraIPhoneHandler.m; sourceTree = "<group>"; };
 		9A176D811CA6CCCF00807EF3 /* DJIIPhoneCameraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIIPhoneCameraModel.h; sourceTree = "<group>"; };
 		9A176D821CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIIPhoneCameraModel.m; sourceTree = "<group>"; };
-		9A176D831CA6CCCF00807EF3 /* DJIIPhoneCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIIPhoneCameraView.h; sourceTree = "<group>"; };
-		9A176D841CA6CCCF00807EF3 /* DJIIPhoneCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIIPhoneCameraView.m; sourceTree = "<group>"; };
 		9A176D851CA6CCCF00807EF3 /* DJIIPhoneConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIIPhoneConfig.h; sourceTree = "<group>"; };
 		9A176D8B1CA6CCCF00807EF3 /* OSMOIPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOIPhoneViewController.h; sourceTree = "<group>"; };
 		9A176D8C1CA6CCCF00807EF3 /* OSMOIPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOIPhoneViewController.m; sourceTree = "<group>"; };
@@ -208,6 +203,8 @@
 		9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Custom.m"; sourceTree = "<group>"; };
 		9AC4E2F01C819E5F00893ABA /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "XXBase/build/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9AC4E2F21C81B93A00893ABA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9ADEE80C1CACDA29009C23FB /* DJIIPhoneCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIIPhoneCameraViewController.h; sourceTree = "<group>"; };
+		9ADEE80D1CACDA29009C23FB /* DJIIPhoneCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJIIPhoneCameraViewController.m; sourceTree = "<group>"; };
 		9AF0BC9C1C97E79300B602C6 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		9AF0BC9D1C97E79300B602C6 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		9AF0BCA51C97E9AF00B602C6 /* ContactViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewModel.h; sourceTree = "<group>"; };
@@ -426,10 +423,8 @@
 				9A176D851CA6CCCF00807EF3 /* DJIIPhoneConfig.h */,
 				9A176D811CA6CCCF00807EF3 /* DJIIPhoneCameraModel.h */,
 				9A176D821CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m */,
-				9A176D831CA6CCCF00807EF3 /* DJIIPhoneCameraView.h */,
-				9A176D841CA6CCCF00807EF3 /* DJIIPhoneCameraView.m */,
-				9A176D7F1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.h */,
-				9A176D801CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m */,
+				9ADEE80C1CACDA29009C23FB /* DJIIPhoneCameraViewController.h */,
+				9ADEE80D1CACDA29009C23FB /* DJIIPhoneCameraViewController.m */,
 			);
 			path = camera;
 			sourceTree = "<group>";
@@ -1086,6 +1081,7 @@
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
+				9ADEE80E1CACDA29009C23FB /* DJIIPhoneCameraViewController.m in Sources */,
 				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
 				9A2535371CABEE0E002ACFD3 /* OSMOStateButton.m in Sources */,
 				9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */,
@@ -1094,7 +1090,6 @@
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A176D9E1CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m in Sources */,
-				9A176D9F1CA6CCCF00807EF3 /* DJIIPhoneCameraView.m in Sources */,
 				9A176DA41CA6CCCF00807EF3 /* OSMOIPhoneHandler.m in Sources */,
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
 				9A176DC21CA6D0F800807EF3 /* OSMOPhoneModel.m in Sources */,
@@ -1105,7 +1100,6 @@
 				9A7053811CA96D4F00501A72 /* OSMOModeView.m in Sources */,
 				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A176DA21CA6CCCF00807EF3 /* OSMOIPhoneViewController.m in Sources */,
-				9A176D9D1CA6CCCF00807EF3 /* DJICameraIPhoneHandler.m in Sources */,
 				9A7053821CA96D4F00501A72 /* OSMOPhotoVideoView.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
 				9A7053721CA922C900501A72 /* OSMOView.m in Sources */,

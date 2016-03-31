@@ -9,7 +9,6 @@
 #import "OSMOPlayBackView.h"
 #import "Masonry.h"
 #import "DJIIPhoneCameraModel.h"
-#import "DJIIPhoneCameraView.h"
 #import "OSMOEventAction.h"
 #import "OSMOCaptureToolView.h"
 

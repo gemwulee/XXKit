@@ -11,6 +11,7 @@
 #import "XXBaseViewModel.h"
 #import "OSMOIPhoneViewController.h"
 #import "OSMOIPhoneViewController.h"
+#import "DJIIPhoneCameraViewController.h"
 
 @implementation DiscoverViewController
 
@@ -25,6 +26,12 @@
         OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
         [self.navigationController presentViewController:osmoVC animated:YES completion:^{}];
     }
+    
+    if(indexPath.section == 1 && indexPath.row == 0){
+        DJIIPhoneCameraViewController *osmoVC = [[DJIIPhoneCameraViewController alloc] init];
+        [self.navigationController presentViewController:osmoVC animated:YES completion:^{}];
+    }
+    
 }
 
 

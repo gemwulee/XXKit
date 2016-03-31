@@ -12,7 +12,12 @@
 #import "DJICameraIPhoneHandler.h"
 #import "DJIIPhoneCameraModel.h"
 
-@interface DJIIPhoneCameraView()<AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface DJIIPhoneCameraView()<AVCaptureVideoDataOutputSampleBufferDelegate,UIGestureRecognizerDelegate>
+{
+    CGFloat beginGestureScale;
+    CGFloat effectiveScale;
+
+}
 
 @property (nonatomic, strong) DJICameraIPhoneHandler *handler;
 @property (nonatomic, strong) AVCaptureSession       *session;           //AVCaptureSession对象来执行输入设备和输出设备之间的数据传递
@@ -22,6 +27,8 @@
 @property (nonatomic, strong) CIContext              *context;
 @property (nonatomic, strong) NSArray                *filterNames;
 @property (nonatomic, strong) CIImage                *ciImage;
+
+@property (nonatomic, strong) AVCaptureVideoDataOutput *dataOutput;
 @end
 
 @implementation DJIIPhoneCameraView
@@ -33,6 +40,7 @@
         [self initData];
         [self initCamera];
         [self initEvent];
+        [self setUpGesture];
     }
     return self;
 }
@@ -70,17 +78,17 @@
         [self.session addInput:videoInput];
     }
     
-    AVCaptureVideoDataOutput *dataOutput = [[AVCaptureVideoDataOutput alloc] init];
+    _dataOutput = [[AVCaptureVideoDataOutput alloc] init];
     NSDictionary * outputSettings =   [NSDictionary dictionaryWithObject: [NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey];
-    dataOutput.videoSettings = outputSettings;
-    dataOutput.alwaysDiscardsLateVideoFrames = true;
+    _dataOutput.videoSettings = outputSettings;
+    _dataOutput.alwaysDiscardsLateVideoFrames = true;
     
-    if ([self.session canAddOutput:dataOutput]) {
-        [self.session addOutput:dataOutput];
+    if ([self.session canAddOutput:_dataOutput]) {
+        [self.session addOutput:_dataOutput];
     }
     
     dispatch_queue_t queue = dispatch_queue_create("VideoQueue", DISPATCH_QUEUE_SERIAL);
-    [dataOutput setSampleBufferDelegate:self queue:queue];
+    [_dataOutput setSampleBufferDelegate:self queue:queue];
     
     [self.session commitConfiguration];
     
@@ -177,4 +185,59 @@
     NSLog(@"结束录制");
 }
 
+#pragma mark- 创建手势
+- (void)setUpGesture{
+    
+    beginGestureScale = effectiveScale = 1.f;
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
+    pinch.delegate = self;
+    [self addGestureRecognizer:pinch];
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    if ( [gestureRecognizer isKindOfClass:[UIPinchGestureRecognizer class]] ) {
+        beginGestureScale = effectiveScale;
+    }
+    return YES;
+}
+
+// scale image depending on users pinch gesture
+- (void)handlePinchGesture:(UIPinchGestureRecognizer *)recognizer
+{
+    BOOL allTouchesAreOnThePreviewLayer = YES;
+    NSUInteger numTouches = [recognizer numberOfTouches], i;
+    for ( i = 0; i < numTouches; ++i ) {
+        CGPoint location = [recognizer locationOfTouch:i inView:self];
+        CGPoint convertedLocation = [_previewLayer convertPoint:location fromLayer:_previewLayer.superlayer];
+        if ( ! [_previewLayer containsPoint:convertedLocation] ) {
+            allTouchesAreOnThePreviewLayer = NO;
+            break;
+        }
+    }
+    
+    if ( allTouchesAreOnThePreviewLayer ) {
+        effectiveScale = beginGestureScale * recognizer.scale;
+        
+//        NSLog(@"effectiveScale0:%f",effectiveScale);
+
+        
+//        if (effectiveScale < 1.0)
+//            effectiveScale = 1.0;
+        CGFloat maxScaleAndCropFactor = [[_dataOutput connectionWithMediaType:AVMediaTypeVideo] videoMaxScaleAndCropFactor];
+
+        
+        if (effectiveScale > maxScaleAndCropFactor)
+            effectiveScale = 1.f / effectiveScale;
+        
+        NSLog(@"effectiveScale 1:%f ", effectiveScale);
+
+        
+        [CATransaction begin];
+        [CATransaction setAnimationDuration:.025];
+        
+        [_previewLayer setAffineTransform:CGAffineTransformMakeScale(effectiveScale, effectiveScale)];
+        [CATransaction commit];
+    }
+}
 @end
