@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cameraSetting</key>
+	<array>
+		<dict>
+			<key>titleL</key>
+			<string>DJIHandleSettingTitleCell</string>
+			<key>labelR</key>
+			<string>0</string>
+			<key>imageViewR</key>
+			<string>handleSettingCamera</string>
+			<key>swtichR</key>
+			<false/>
+			<key>showRightSideImage</key>
+			<false/>
+		</dict>
+	</array>
+</dict>
+</plist>
