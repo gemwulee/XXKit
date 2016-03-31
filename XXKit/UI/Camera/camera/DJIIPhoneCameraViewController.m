@@ -51,7 +51,7 @@
 -(void)initAVCapture{
     self.session = [AVCaptureSession new];
     [self.session beginConfiguration];
-    self.session.sessionPreset = AVCaptureSessionPresetHigh;//AVCaptureSessionPreset3840x2160;
+    self.session.sessionPreset = AVCaptureSessionPreset1280x720;//AVCaptureSessionPreset3840x2160;
     
     //AVCaptureDeviceInput对象是输入流
     AVCaptureDevice *device = (self.cameraModel.devicePosition == DJIIPhone_DevicePositionFront)?[self frontCamera]:[self backCamera];
@@ -82,7 +82,7 @@
     
     EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     NSDictionary *options = @{kCIContextWorkingColorSpace :  [NSNull null]};
-    self.context = [CIContext contextWithEAGLContext:eaglContext options:options];
+    _context = [CIContext contextWithEAGLContext:eaglContext options:options];
 
 }
 
@@ -121,6 +121,7 @@
 #pragma mark- capture delegate
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection{
     
+    
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
     CIImage *outputImage = [[CIImage alloc]initWithCVPixelBuffer:imageBuffer];
     
@@ -136,28 +137,6 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         self.previewLayer.contents = (__bridge_transfer id _Nullable)((cgImage));
     });
-}
-
-- (CGImageRef) imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer // Create a CGImageRef from sample buffer data
-{
-    CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-    CVPixelBufferLockBaseAddress(imageBuffer,0);        // Lock the image buffer
-    
-    uint8_t *baseAddress = (uint8_t *)CVPixelBufferGetBaseAddressOfPlane(imageBuffer, 0);   // Get information of the image
-    size_t bytesPerRow = CVPixelBufferGetBytesPerRow(imageBuffer);
-    size_t width = CVPixelBufferGetWidth(imageBuffer);
-    size_t height = CVPixelBufferGetHeight(imageBuffer);
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    
-    CGContextRef newContext = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow, colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
-    CGImageRef newImage = CGBitmapContextCreateImage(newContext);
-    CGContextRelease(newContext);
-    
-    CGColorSpaceRelease(colorSpace);
-    CVPixelBufferUnlockBaseAddress(imageBuffer,0);
-    /* CVBufferRelease(imageBuffer); */  // do not call this!
-    
-    return newImage;
 }
 
 
@@ -307,17 +286,21 @@
         effectiveScale = beginGestureScale * recognizer.scale;
         CGFloat maxScaleAndCropFactor = [[_dataOutput connectionWithMediaType:AVMediaTypeVideo] videoMaxScaleAndCropFactor];
         
-        
-        if (effectiveScale > maxScaleAndCropFactor)
-            effectiveScale = 1.f / effectiveScale;
+        if (effectiveScale < 1.f) {
+            return;
+        }
+//        if (effectiveScale > maxScaleAndCropFactor)
+//            effectiveScale = 1.f / effectiveScale;
         
         NSLog(@"effectiveScale 1:%f ", effectiveScale);
         
         
         [CATransaction begin];
         [CATransaction setAnimationDuration:.025];
+//        [[UIScreen mainScreen] setBrightness:effectiveScale];
+
         
-        [_previewLayer setAffineTransform:CGAffineTransformMakeScale(effectiveScale, effectiveScale)];
+        [self.view.layer setAffineTransform:CGAffineTransformMakeScale(effectiveScale, effectiveScale)];
         [CATransaction commit];
     }
 }

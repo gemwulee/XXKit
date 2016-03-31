@@ -66,7 +66,7 @@
 #pragma mark- right tool
 -(void) actionClick_HomeButton_OSMORightSettingView
 {
-    NSLog(@"actionClick_HomeButton_OSMORightSettingView");
+    [self.camera dismissViewControllerAnimated:NO completion:nil];
 }
 
 -(void) actionClick_CameraButton_OSMORightSettingView
