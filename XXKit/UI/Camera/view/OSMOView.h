@@ -37,4 +37,9 @@
 @property(nonatomic,strong) DJIIPhoneCameraModel  *cameraModel;
 @property(nonatomic,weak)   OSMOEventAction       *cameraAction;
 
+-(void) reloadSkins;
+
+-(void) layoutLandscape;
+-(void) layoutPortrait;
+
 @end

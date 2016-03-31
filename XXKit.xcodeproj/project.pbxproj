@@ -46,6 +46,14 @@
 		9A25353A1CAC08F5002ACFD3 /* OSMOEventAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2535391CAC08F5002ACFD3 /* OSMOEventAction.m */; };
 		9A5190C21CA9001B0091FAD2 /* OSMOCaptureToolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5190C11CA9001B0091FAD2 /* OSMOCaptureToolView.xib */; };
 		9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */; };
+		9A5FCE5F1CAD193F00C7C756 /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5D1CAD193F00C7C756 /* libuikit.a */; };
+		9A5FCE601CAD193F00C7C756 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5E1CAD193F00C7C756 /* libutility.a */; };
+		9A697E1C1CAD4B2F005749E0 /* OSMOMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E1B1CAD4B2F005749E0 /* OSMOMenuController.m */; };
+		9A697E261CAD4D40005749E0 /* OSMONavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E251CAD4D40005749E0 /* OSMONavController.m */; };
+		9A697E341CAD510B005749E0 /* OSMOMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E321CAD510B005749E0 /* OSMOMenuCell.m */; };
+		9A697E351CAD510B005749E0 /* OSMOMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A697E331CAD510B005749E0 /* OSMOMenuCell.xib */; };
+		9A697E3A1CAD5D70005749E0 /* OSMOTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E391CAD5D70005749E0 /* OSMOTableObject.m */; };
+		9A697E3C1CAD6CFA005749E0 /* OSMOTableObjectDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A697E3B1CAD6CFA005749E0 /* OSMOTableObjectDict.plist */; };
 		9A7053721CA922C900501A72 /* OSMOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7053711CA922C900501A72 /* OSMOView.m */; };
 		9A7053811CA96D4F00501A72 /* OSMOModeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A70537C1CA96D4F00501A72 /* OSMOModeView.m */; };
 		9A7053821CA96D4F00501A72 /* OSMOPhotoVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A70537E1CA96D4F00501A72 /* OSMOPhotoVideoView.m */; };
@@ -63,7 +71,6 @@
 		9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8834271C8ACE3400747277 /* XXThemeConfig.m */; };
 		9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A8834291C8ACF5700747277 /* DefaultThemeConfig.plist */; };
 		9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A88342C1C8AD4D200747277 /* UITableViewCell+Custom.m */; };
-		9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F01C819E5F00893ABA /* libuikit.a */; };
 		9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC4E2F21C81B93A00893ABA /* CoreText.framework */; };
 		9ADEE80E1CACDA29009C23FB /* DJIIPhoneCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADEE80D1CACDA29009C23FB /* DJIIPhoneCameraViewController.m */; };
 		9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0BC9D1C97E79300B602C6 /* ContactsViewController.m */; };
@@ -85,7 +92,6 @@
 		9AF3E9C11C3CBB55009DDD15 /* XXKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9C01C3CBB55009DDD15 /* XXKitTests.m */; };
 		9AF3E9CC1C3CBB55009DDD15 /* XXKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF3E9CB1C3CBB55009DDD15 /* XXKitUITests.m */; };
 		9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF41A711C881DD600C17947 /* UIViewController+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9AF41A841C8834B500C17947 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF41A831C8834B500C17947 /* libutility.a */; };
 		9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF4DEF31C89688A00E4CCB0 /* NSObject+SwizzleMethod.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9AF5234F1C91638400A59967 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF523461C91638400A59967 /* HomeViewController.m */; };
 		9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF523491C91638400A59967 /* SDAnalogDataGenerator.m */; };
@@ -166,8 +172,20 @@
 		9A2535391CAC08F5002ACFD3 /* OSMOEventAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOEventAction.m; sourceTree = "<group>"; };
 		9A5190C11CA9001B0091FAD2 /* OSMOCaptureToolView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOCaptureToolView.xib; sourceTree = "<group>"; };
 		9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9A5FCE5D1CAD193F00C7C756 /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
+		9A5FCE5E1CAD193F00C7C756 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
 		9A6753061C45276500099AF1 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
 		9A6753081C45283D00099AF1 /* libXXBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXXBase.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-aqemxrecrwvrscebsskvnrnslqdh/Build/Products/Debug-iphoneos/libXXBase.a"; sourceTree = "<group>"; };
+		9A697E1A1CAD4B2F005749E0 /* OSMOMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOMenuController.h; sourceTree = "<group>"; };
+		9A697E1B1CAD4B2F005749E0 /* OSMOMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuController.m; sourceTree = "<group>"; };
+		9A697E241CAD4D40005749E0 /* OSMONavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMONavController.h; sourceTree = "<group>"; };
+		9A697E251CAD4D40005749E0 /* OSMONavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMONavController.m; sourceTree = "<group>"; };
+		9A697E311CAD510B005749E0 /* OSMOMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOMenuCell.h; sourceTree = "<group>"; };
+		9A697E321CAD510B005749E0 /* OSMOMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuCell.m; sourceTree = "<group>"; };
+		9A697E331CAD510B005749E0 /* OSMOMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOMenuCell.xib; sourceTree = "<group>"; };
+		9A697E381CAD5D70005749E0 /* OSMOTableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOTableObject.h; sourceTree = "<group>"; };
+		9A697E391CAD5D70005749E0 /* OSMOTableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOTableObject.m; sourceTree = "<group>"; };
+		9A697E3B1CAD6CFA005749E0 /* OSMOTableObjectDict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OSMOTableObjectDict.plist; sourceTree = "<group>"; };
 		9A7053701CA922C900501A72 /* OSMOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOView.h; sourceTree = "<group>"; };
 		9A7053711CA922C900501A72 /* OSMOView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOView.m; sourceTree = "<group>"; };
 		9A70537B1CA96D4F00501A72 /* OSMOModeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOModeView.h; sourceTree = "<group>"; };
@@ -260,10 +278,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5FCE5F1CAD193F00C7C756 /* libuikit.a in Frameworks */,
+				9A5FCE601CAD193F00C7C756 /* libutility.a in Frameworks */,
 				9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */,
-				9AF41A841C8834B500C17947 /* libutility.a in Frameworks */,
 				9AC4E2F31C81B93A00893ABA /* CoreText.framework in Frameworks */,
-				9AC4E2F11C819E5F00893ABA /* libuikit.a in Frameworks */,
 				4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */,
 				4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */,
 				4B181F731C53233600308B12 /* libXXBase.a in Frameworks */,
@@ -291,6 +309,8 @@
 		157F5C4D49594E0D382284C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A5FCE5D1CAD193F00C7C756 /* libuikit.a */,
+				9A5FCE5E1CAD193F00C7C756 /* libutility.a */,
 				9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */,
 				9AF41A831C8834B500C17947 /* libutility.a */,
 				9AC4E2F21C81B93A00893ABA /* CoreText.framework */,
@@ -454,6 +474,7 @@
 			children = (
 				9A7053701CA922C900501A72 /* OSMOView.h */,
 				9A7053711CA922C900501A72 /* OSMOView.m */,
+				9A697E131CAD49CD005749E0 /* menu */,
 				9A25352B1CABCCC5002ACFD3 /* publiccameraui */,
 				9A176D921CA6CCCF00807EF3 /* capturetool */,
 				9A176D9A1CA6CCCF00807EF3 /* rightsettingbar */,
@@ -547,6 +568,47 @@
 				9A2535361CABEE0E002ACFD3 /* OSMOStateButton.m */,
 			);
 			path = publiccameraui;
+			sourceTree = "<group>";
+		};
+		9A697E131CAD49CD005749E0 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				9A697E361CAD5CC6005749E0 /* datasource */,
+				9A697E301CAD510B005749E0 /* cell */,
+				9A697E231CAD4D40005749E0 /* nav */,
+				9A697E1A1CAD4B2F005749E0 /* OSMOMenuController.h */,
+				9A697E1B1CAD4B2F005749E0 /* OSMOMenuController.m */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		9A697E231CAD4D40005749E0 /* nav */ = {
+			isa = PBXGroup;
+			children = (
+				9A697E241CAD4D40005749E0 /* OSMONavController.h */,
+				9A697E251CAD4D40005749E0 /* OSMONavController.m */,
+			);
+			path = nav;
+			sourceTree = "<group>";
+		};
+		9A697E301CAD510B005749E0 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A697E311CAD510B005749E0 /* OSMOMenuCell.h */,
+				9A697E321CAD510B005749E0 /* OSMOMenuCell.m */,
+				9A697E331CAD510B005749E0 /* OSMOMenuCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9A697E361CAD5CC6005749E0 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				9A697E381CAD5D70005749E0 /* OSMOTableObject.h */,
+				9A697E391CAD5D70005749E0 /* OSMOTableObject.m */,
+				9A697E3B1CAD6CFA005749E0 /* OSMOTableObjectDict.plist */,
+			);
+			path = datasource;
 			sourceTree = "<group>";
 		};
 		9A70537A1CA96D4F00501A72 /* tool */ = {
@@ -989,7 +1051,9 @@
 				9A176B321CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B291CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B351CA6CA2F00807EF3 /* VoiceSearchIconHL@2x.png in Resources */,
+				9A697E351CAD510B005749E0 /* OSMOMenuCell.xib in Resources */,
 				9A176B311CA6CA2F00807EF3 /* user_avatar_default@2x.png in Resources */,
+				9A697E3C1CAD6CFA005749E0 /* OSMOTableObjectDict.plist in Resources */,
 				9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */,
 				9A176DC51CA6D0F800807EF3 /* OSMOPhoneView_potrait.xib in Resources */,
 				9A88342A1C8ACF5700747277 /* DefaultThemeConfig.plist in Resources */,
@@ -1085,14 +1149,17 @@
 				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
 				9A2535371CABEE0E002ACFD3 /* OSMOStateButton.m in Sources */,
 				9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */,
+				9A697E341CAD510B005749E0 /* OSMOMenuCell.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A176D9E1CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m in Sources */,
 				9A176DA41CA6CCCF00807EF3 /* OSMOIPhoneHandler.m in Sources */,
+				9A697E1C1CAD4B2F005749E0 /* OSMOMenuController.m in Sources */,
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
 				9A176DC21CA6D0F800807EF3 /* OSMOPhoneModel.m in Sources */,
+				9A697E261CAD4D40005749E0 /* OSMONavController.m in Sources */,
 				9AF2A2BF1C8FD894005FE17F /* DiscoverViewController.m in Sources */,
 				9AF3E9A81C3CBB55009DDD15 /* main.m in Sources */,
 				9A25352A1CABA6A0002ACFD3 /* OSMORightSettingView.m in Sources */,
@@ -1110,6 +1177,7 @@
 				9A7053891CA96E3F00501A72 /* OSMOPlayBackView.m in Sources */,
 				9AF5234F1C91638400A59967 /* HomeViewController.m in Sources */,
 				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
+				9A697E3A1CAD5D70005749E0 /* OSMOTableObject.m in Sources */,
 				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
 				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
 				9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */,

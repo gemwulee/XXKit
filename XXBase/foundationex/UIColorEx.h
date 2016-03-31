@@ -71,6 +71,8 @@
  */
 + (UIColor *)colorWithRGB:(uint32_t)rgbValue alpha:(CGFloat)alpha;
 
++ (UIColor *)colorWithR:(CGFloat)r G:(CGFloat)g B:(CGFloat)b A:(CGFloat)a;
+
 
 - (BOOL)isEqualToColor:(UIColor*)color;
 

@@ -7,6 +7,7 @@
 //
 
 #import "OSMOView.h"
+#import "UIDevice+DJIUIKit.h"
 
 @implementation OSMOView
 
@@ -44,7 +45,20 @@
 
 -(void) reloadSkins
 {
-    assert(0);
+    if([UIDevice isLandscape]){
+        [self layoutLandscape];
+    }else{
+        [self layoutPortrait];
+    }
+}
+
+-(void) layoutLandscape
+{
+}
+
+-(void) layoutPortrait
+{
+    
 }
 
 @end
