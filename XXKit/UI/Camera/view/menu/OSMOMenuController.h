@@ -8,6 +8,10 @@
 
 #import "XXViewController.h"
 
+#define MENU_CAMERA_SETTING @"cameraSetting" //相机设置
+
 @interface OSMOMenuController : XXViewController
+
+-(instancetype)initWithPlistKey:(NSString*) plistkey;
 
 @end

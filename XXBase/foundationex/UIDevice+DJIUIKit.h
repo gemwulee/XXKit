@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#define IS_IPHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
 #define IS_IPAD ([UIDevice currentScreen] == DJIDeviceScreenType1024x768)
 #define IS_IPHONE4 ([UIDevice currentScreen] == DJIDeviceScreenType480x320)
 #define IS_IPHONE5 ([UIDevice currentScreen] == DJIDeviceScreenType568x320)

@@ -5,17 +5,47 @@
 	<key>cameraSetting</key>
 	<array>
 		<dict>
+			<key>celldentifier</key>
+			<string>OSMOMenuCellBaseIdentifier</string>
 			<key>titleL</key>
-			<string>DJIHandleSettingTitleCell</string>
+			<string>向晨宇</string>
 			<key>labelR</key>
-			<string>0</string>
+			<string></string>
 			<key>imageViewR</key>
 			<string>handleSettingCamera</string>
 			<key>swtichR</key>
 			<false/>
 			<key>showRightSideImage</key>
-			<false/>
+			<true/>
 		</dict>
+        <dict>
+            <key>celldentifier</key>
+            <string>OSMOMenuCellBaseIdentifier</string>
+            <key>titleL</key>
+            <string>何彬彬</string>
+            <key>labelR</key>
+            <string></string>
+            <key>imageViewR</key>
+            <string>handleSettingCamera</string>
+            <key>swtichR</key>
+            <false/>
+            <key>showRightSideImage</key>
+            <true/>
+        </dict>
+        <dict>
+            <key>celldentifier</key>
+            <string>OSMOMenuCellBaseIdentifier</string>
+            <key>titleL</key>
+            <string>灿灿</string>
+            <key>labelR</key>
+            <string></string>
+            <key>imageViewR</key>
+            <string>handleSettingCamera</string>
+            <key>swtichR</key>
+            <false/>
+            <key>showRightSideImage</key>
+            <true/>
+        </dict>
 	</array>
 </dict>
 </plist>

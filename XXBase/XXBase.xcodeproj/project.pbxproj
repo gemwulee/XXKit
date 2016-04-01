@@ -101,6 +101,7 @@
 		9AF41A811C88345200C17947 /* XXFPSEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXFPSEngine.m; sourceTree = "<group>"; };
 		9AF523531C91898700A59967 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
 		9AF523541C91898700A59967 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		9AFDA7241CAE259E001F20C7 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +174,7 @@
 		9AF3020A1C43880300FA232D /* macro */ = {
 			isa = PBXGroup;
 			children = (
+				9AFDA7241CAE259E001F20C7 /* Macro.h */,
 				9AF3020B1C43882000FA232D /* XXMacro.h */,
 			);
 			path = macro;

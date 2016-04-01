@@ -54,44 +54,6 @@
     [self reloadSkins];
 }
 
--(void) bindEvent
-{
-    [_buttonCapture removeTarget:nil
-                       action:NULL
-             forControlEvents:UIControlEventAllEvents];
-    
-    switch (self.cameraModel.captureMode) {
-        case DJIIPhone_PhotoModel:
-        {
-            [_buttonCapture addTarget:self.cameraAction action:@selector(actionClick_PhotoButton_OSMOPhotoVideoView) forControlEvents:UIControlEventTouchUpInside];
-        }
-            break;
-        case DJIIPhone_VideoModel:
-        {
-            [_buttonCapture addTarget:self action:@selector(onClickAfterVideoAnimation) forControlEvents:UIControlEventTouchUpInside];
-        }
-            break;
-            
-        default:
-            break;
-    }
-  
-}
-
--(void) onClickAfterVideoAnimation
-{
-    [UIView animateWithDuration:0.3 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        if(self.cameraModel.videoState == DJIIPhone_VideoRecordState_Stop){
-            [_buttonCapture setImage:[UIImage imageNamed:@"handle_camera_tool_video_stop"] forState:UIControlStateNormal];
-        }else{
-            [_buttonCapture setImage:[UIImage imageNamed:@"handle_camera_tool_video"] forState:UIControlStateNormal];
-        }
-        
-    } completion:^(BOOL finished) {
-            [self.cameraAction actionClick_VideoButton_OSMOPhotoVideoView];
-    }];
-}
-
 -(void) reloadSkins
 {
     switch(self.cameraModel.captureMode){
@@ -116,4 +78,41 @@
 
 }
 
+-(void) bindEvent
+{
+    [_buttonCapture removeTarget:nil
+                          action:NULL
+                forControlEvents:UIControlEventAllEvents];
+    
+    switch (self.cameraModel.captureMode) {
+        case DJIIPhone_PhotoModel:
+        {
+            [_buttonCapture addTarget:self.cameraAction action:@selector(actionClick_PhotoButton_OSMOPhotoVideoView) forControlEvents:UIControlEventTouchUpInside];
+        }
+            break;
+        case DJIIPhone_VideoModel:
+        {
+            [_buttonCapture addTarget:self action:@selector(onClickAfterVideoAnimation) forControlEvents:UIControlEventTouchUpInside];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+-(void) onClickAfterVideoAnimation
+{
+    [UIView animateWithDuration:0.3 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        if(self.cameraModel.videoState == DJIIPhone_VideoRecordState_Stop){
+            [_buttonCapture setImage:[UIImage imageNamed:@"handle_camera_tool_video_stop"] forState:UIControlStateNormal];
+        }else{
+            [_buttonCapture setImage:[UIImage imageNamed:@"handle_camera_tool_video"] forState:UIControlStateNormal];
+        }
+        
+    } completion:^(BOOL finished) {
+        [self.cameraAction actionClick_VideoButton_OSMOPhotoVideoView];
+    }];
+}
 @end

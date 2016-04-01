@@ -10,10 +10,11 @@
 #import <UIKit/UIKit.h>
 @class DJIIPhoneCameraViewController;
 @class DJIIPhoneCameraModel;
+@class OSMOIPhoneViewController;
 
 @interface OSMOEventAction : NSObject
 
-- (instancetype)initWithModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera;
+-(instancetype)initWithModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera rootVC:(OSMOIPhoneViewController*) rootVC;
 
 
 #pragma mark- capture tool

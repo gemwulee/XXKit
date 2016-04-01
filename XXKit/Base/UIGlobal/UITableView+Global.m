@@ -29,7 +29,7 @@
 + (UITableView*)commonPlainStyledTableView:(id <UITableViewDelegate>)delegate dataSource:(id <UITableViewDataSource>) dataSource frame:(CGRect)frame
 {
     UITableView* tableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
-    [tableView setBackgroundColor:[UIColor clearColor]];
+    [tableView setBackgroundColor:[UIColor blackColor]];
     tableView.backgroundView = nil;
     tableView.delegate = delegate;
     tableView.dataSource = dataSource;

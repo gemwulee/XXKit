@@ -8,10 +8,12 @@
 
 #import "OSMOMenuController.h"
 #import "UITableView+Global.h"
-#import "OSMOMenuCell.h"
+#import "OSMOMenuCellBase.h"
 #import "UITableView+DJIUIKit.h"
 #import "XXBase.h"
-#import "OSMOTableDataSource.h"
+#import "OSMODataLoader.h"
+#import "OSMOTableObject.h"
+#import "Masonry.h"
 
 #define osmoBasicSettingHeaderHeight 46
 #define osmoBasicSettingCellHeight 44
@@ -23,14 +25,17 @@
 @property(nonatomic,strong) UITableView     *tableViewMenu;
 @property(nonatomic,strong) NSMutableArray  *dataArray;
 
+@property(nonatomic,copy)   NSString        *plistKey;
+
 @end
 
 @implementation OSMOMenuController
 
--(instancetype)init
+-(instancetype)initWithPlistKey:(NSString*) plistkey
 {
     if (self = [super init]) {
-        self.dataArray = [OSMOTableDataSource getOSMOCameraDataSource];
+        self.plistKey = [plistkey copy];
+        self.dataArray = [[OSMODataLoader sharedInstance] loadOSMOTableObjectsFromPlist:plistkey];
     }
     return self;
 }
@@ -38,17 +43,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _viewHeader = [[UIView alloc] initWithFrame:self.view.bounds];
-    NSString *cameraTitle = [OSMOTableDataSource getOSMOCameraTitle];
-    self.title = cameraTitle;
+    self.title = self.plistKey ;
     
     _tableViewMenu = [UITableView commonPlainStyledTableView:self dataSource:self frame:self.view.bounds];
+    [self registerTableIdentifier];
     [self.view addSubview:_tableViewMenu];
     
-    [self registerTableIdentifier];
+    [_tableViewMenu mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+        make.width.equalTo(self.view);
+        make.height.equalTo(self.view);
+    }];
 }
 
 -(void)registerTableIdentifier{
-    [self.tableViewMenu registerNib:[UINib nibWithNibName:@"OSMOMenuCell" bundle:nil] forCellReuseIdentifier:OSMOMenuCellIdentifier];
+    [self.tableViewMenu registerNib:[UINib nibWithNibName:@"OSMOMenuCellBase" bundle:nil] forCellReuseIdentifier:OSMOMenuCellBaseIdentifier];
 }
 
 #pragma mark- DataSource
@@ -59,14 +68,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    OSMOMenuCell *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuCellIdentifier forIndexPath:indexPath];
+    OSMOTableObject *settingObject = [self.dataArray objectAtIndex:indexPath.row];
+    
+    if(!settingObject)
+        return nil;
+    
+    if(settingObject && [settingObject.celldentifier isEqualToString:OSMOMenuCellBaseIdentifier]){
+        OSMOMenuCellBase *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuCellBaseIdentifier forIndexPath:indexPath];
+        cell.contentView.backgroundColor = [UIColor blackColor];
+        [cell configureData:settingObject];
+        return cell;
+    }
+    return nil;
 
-    NSDictionary *dicCellRow = [self.dataArray objectAtIndex:indexPath.row];
-    
-    
-    
-    
-    return cell;
 }
 
 #pragma mark- Delegate
@@ -91,5 +105,29 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+#pragma marks - UITableView Delegate
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *sectionHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, osmoBasicSettingHeaderHeight)];
+    [sectionHeaderView setBackgroundColor:[UIColor clearColor]];
+    //下划线
+    CALayer *lineLayer = [[CALayer alloc] init];
+    CGFloat lineHeight = (1.f / [UIScreen mainScreen].scale);
+    lineLayer.frame = CGRectMake(0, sectionHeaderView.frame.size.height-lineHeight, sectionHeaderView.frame.size.width, lineHeight);
+    lineLayer.backgroundColor = tableView.separatorColor.CGColor;
+    [sectionHeaderView.layer addSublayer:lineLayer];
+    return sectionHeaderView;
+}
+
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView *sectionFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width,osmoBasicSettingHeaderHeight)];
+    [sectionFooterView setBackgroundColor:[UIColor clearColor]];
+    return sectionFooterView;
+}
+
 
 @end

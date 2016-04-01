@@ -8,24 +8,29 @@
 
 #import "OSMOTableObject.h"
 
-@implementation OSMOTableObject
+#define TITLEL              @"titleL"
+#define LABELR              @"labelR"
 
-+ (NSString*) getOSMOCameraTitle
-{
-    return @"相机";
-}
+#define IMAGEVIEWR          @"imageViewR"
+#define SWITCHR             @"swtichR"
+#define SHOWRIGHTSIDEIMAGE  @"showRightSideImage"
+
+#define CELLIDENTIFER       @"celldentifier"
+
+@implementation OSMOTableObject
 
 - (instancetype) initWithDic:(NSDictionary*) dic
 {
     self = [super init];
     if(self){
-        self.titleL = [dic objectForKey:OSMO_MENU_CELL_LABEL_L];
+        self.celldentifier      = [dic objectForKey:CELLIDENTIFER];
+        self.titleL             = [dic objectForKey:TITLEL];
 
-        self.labelR     = [dic objectForKey:OSMO_MENU_CELL_LABEL_R];
-        self.imageViewR = [dic objectForKey:OSMO_MENU_CELL_IMAGE_R];
+        self.labelR             = [dic objectForKey:LABELR];
+        self.imageViewR         = [dic objectForKey:IMAGEVIEWR];
         
-        self.swtichR    = [[dic objectForKey:OSMO_MENU_CELL_SWITCH_R] boolValue];
-        self.showRightSideImage = [[dic objectForKey:OSMO_MENU_CELL_IMAGE_INDICATOR] boolValue];
+        self.swtichR            = [[dic objectForKey:SWITCHR] boolValue];
+        self.showRightSideImage = [[dic objectForKey:SHOWRIGHTSIDEIMAGE] boolValue];
     }
     return self;
 }

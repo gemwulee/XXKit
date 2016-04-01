@@ -9,19 +9,27 @@
 #import "OSMOEventAction.h"
 #import "DJIIPhoneCameraModel.h"
 #import "DJIIPhoneCameraViewController.h"
+#import "OSMOIPhoneViewController.h"
+#import "OSMOMenuController.h"
+#import "OSMORightFirstMenuPlaceView.h"
+#import "Masonry.h"
 
 @interface OSMOEventAction()
-@property(nonatomic,weak) DJIIPhoneCameraModel  *cameraModel;
+
+@property(nonatomic,weak) DJIIPhoneCameraModel            *cameraModel;
 @property(nonatomic,weak) DJIIPhoneCameraViewController   *camera;
+@property(nonatomic,weak) OSMOIPhoneViewController        *rootVC;
+
 @end
 
 @implementation OSMOEventAction
 
--(instancetype)initWithModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera
+-(instancetype)initWithModel:(DJIIPhoneCameraModel*) model camera:(DJIIPhoneCameraViewController*) camera rootVC:(OSMOIPhoneViewController*) rootVC
 {
     if(self = [super init]){
         self.cameraModel = model;
-        self.camera = camera;
+        self.camera      = camera;
+        self.rootVC      = rootVC;
     }
     return self;
 }
@@ -71,8 +79,15 @@
 
 -(void) actionClick_CameraButton_OSMORightSettingView
 {
-    NSLog(@"actionClick_CameraButton_OSMORightSettingView");
-
+    OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
+    [self.rootVC addChildViewController:menuVC];
+    [self.rootVC.rightFirstMenuPlaceView addSubview:menuVC.view];
+    
+    [menuVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.rootVC.rightFirstMenuPlaceView);
+        make.width.equalTo(self.rootVC.rightFirstMenuPlaceView);
+        make.height.equalTo(self.rootVC.rightFirstMenuPlaceView);
+    }];
 }
 
 -(void) actionClick_GimbalButton_OSMORightSettingView

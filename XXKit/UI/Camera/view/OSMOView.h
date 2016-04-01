@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DJIIPhoneCameraModel.h"
 #import "OSMOEventAction.h"
-
-@class DJIIPhoneCameraViewController;
+@class OSMOIPhoneViewController;
 
 @protocol OSMOViewAutoRefreshInterface <NSObject>
 
@@ -26,6 +25,8 @@
 
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction;
 
+//-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction rootVC:(OSMOIPhoneViewController*) rootCameraVC;
+
 
 @end
 
@@ -34,8 +35,9 @@
  */
 @interface OSMOView : UIView<OSMOViewAutoRefreshInterface>
 
-@property(nonatomic,strong) DJIIPhoneCameraModel  *cameraModel;
+@property(nonatomic,weak)   DJIIPhoneCameraModel  *cameraModel;
 @property(nonatomic,weak)   OSMOEventAction       *cameraAction;
+@property(nonatomic,weak)   OSMOIPhoneViewController *rootCameraVC;
 
 -(void) reloadSkins;
 

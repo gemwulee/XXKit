@@ -8,6 +8,7 @@
 
 #import "OSMOView.h"
 #import "UIDevice+DJIUIKit.h"
+#import "OSMOIPhoneViewController.h"
 
 @implementation OSMOView
 
@@ -33,6 +34,19 @@
     }
     return self;
 }
+
+//-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction rootVC:(OSMOIPhoneViewController*) rootCameraVC
+//{
+//    if(self = [super initWithFrame:frame]){
+//        self.cameraModel = model;
+//        self.cameraAction = cameraAction;
+//        self.rootCameraVC = rootCameraVC;
+//        [self initData];
+//        [self initViews];
+//    }
+//    return self;
+//}
+
 
 -(void) initData
 {}

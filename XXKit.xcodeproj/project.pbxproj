@@ -50,8 +50,8 @@
 		9A5FCE601CAD193F00C7C756 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5E1CAD193F00C7C756 /* libutility.a */; };
 		9A697E1C1CAD4B2F005749E0 /* OSMOMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E1B1CAD4B2F005749E0 /* OSMOMenuController.m */; };
 		9A697E261CAD4D40005749E0 /* OSMONavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E251CAD4D40005749E0 /* OSMONavController.m */; };
-		9A697E341CAD510B005749E0 /* OSMOMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E321CAD510B005749E0 /* OSMOMenuCell.m */; };
-		9A697E351CAD510B005749E0 /* OSMOMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A697E331CAD510B005749E0 /* OSMOMenuCell.xib */; };
+		9A697E341CAD510B005749E0 /* OSMOMenuCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E321CAD510B005749E0 /* OSMOMenuCellBase.m */; };
+		9A697E351CAD510B005749E0 /* OSMOMenuCellBase.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A697E331CAD510B005749E0 /* OSMOMenuCellBase.xib */; };
 		9A697E3A1CAD5D70005749E0 /* OSMOTableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A697E391CAD5D70005749E0 /* OSMOTableObject.m */; };
 		9A697E3C1CAD6CFA005749E0 /* OSMOTableObjectDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A697E3B1CAD6CFA005749E0 /* OSMOTableObjectDict.plist */; };
 		9A7053721CA922C900501A72 /* OSMOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7053711CA922C900501A72 /* OSMOView.m */; };
@@ -97,6 +97,10 @@
 		9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF523491C91638400A59967 /* SDAnalogDataGenerator.m */; };
 		9AF523511C91638400A59967 /* XXMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5234B1C91638400A59967 /* XXMessageModel.m */; };
 		9AF523521C91638400A59967 /* HomeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF5234E1C91638400A59967 /* HomeTableCell.m */; };
+		9AFDA7181CAE0EF3001F20C7 /* OSMODataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDA7171CAE0EF2001F20C7 /* OSMODataLoader.m */; };
+		9AFDA7211CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDA71B1CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.m */; };
+		9AFDA7221CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDA71D1CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.m */; };
+		9AFDA7231CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDA71F1CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.m */; };
 		A18F73462600C6CD5719875F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA3AC528F81E8B6AE8B0185 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -180,9 +184,9 @@
 		9A697E1B1CAD4B2F005749E0 /* OSMOMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuController.m; sourceTree = "<group>"; };
 		9A697E241CAD4D40005749E0 /* OSMONavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMONavController.h; sourceTree = "<group>"; };
 		9A697E251CAD4D40005749E0 /* OSMONavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMONavController.m; sourceTree = "<group>"; };
-		9A697E311CAD510B005749E0 /* OSMOMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOMenuCell.h; sourceTree = "<group>"; };
-		9A697E321CAD510B005749E0 /* OSMOMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuCell.m; sourceTree = "<group>"; };
-		9A697E331CAD510B005749E0 /* OSMOMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOMenuCell.xib; sourceTree = "<group>"; };
+		9A697E311CAD510B005749E0 /* OSMOMenuCellBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOMenuCellBase.h; sourceTree = "<group>"; };
+		9A697E321CAD510B005749E0 /* OSMOMenuCellBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuCellBase.m; sourceTree = "<group>"; };
+		9A697E331CAD510B005749E0 /* OSMOMenuCellBase.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOMenuCellBase.xib; sourceTree = "<group>"; };
 		9A697E381CAD5D70005749E0 /* OSMOTableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOTableObject.h; sourceTree = "<group>"; };
 		9A697E391CAD5D70005749E0 /* OSMOTableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOTableObject.m; sourceTree = "<group>"; };
 		9A697E3B1CAD6CFA005749E0 /* OSMOTableObjectDict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OSMOTableObjectDict.plist; sourceTree = "<group>"; };
@@ -269,6 +273,14 @@
 		9AF5234B1C91638400A59967 /* XXMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXMessageModel.m; sourceTree = "<group>"; };
 		9AF5234D1C91638400A59967 /* HomeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableCell.h; sourceTree = "<group>"; };
 		9AF5234E1C91638400A59967 /* HomeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableCell.m; sourceTree = "<group>"; };
+		9AFDA7161CAE0EF2001F20C7 /* OSMODataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMODataLoader.h; sourceTree = "<group>"; };
+		9AFDA7171CAE0EF2001F20C7 /* OSMODataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMODataLoader.m; sourceTree = "<group>"; };
+		9AFDA71A1CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOLeftFirstMenuPlaceView.h; sourceTree = "<group>"; };
+		9AFDA71B1CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOLeftFirstMenuPlaceView.m; sourceTree = "<group>"; };
+		9AFDA71C1CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOLeftSecondMenuPlaceView.h; sourceTree = "<group>"; };
+		9AFDA71D1CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOLeftSecondMenuPlaceView.m; sourceTree = "<group>"; };
+		9AFDA71E1CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMORightFirstMenuPlaceView.h; sourceTree = "<group>"; };
+		9AFDA71F1CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMORightFirstMenuPlaceView.m; sourceTree = "<group>"; };
 		BBBAE1266467850FE6E768E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C6B32E2D742FAF463927253D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -477,6 +489,7 @@
 				9A697E131CAD49CD005749E0 /* menu */,
 				9A25352B1CABCCC5002ACFD3 /* publiccameraui */,
 				9A176D921CA6CCCF00807EF3 /* capturetool */,
+				9AFDA7191CAE2573001F20C7 /* secondview */,
 				9A176D9A1CA6CCCF00807EF3 /* rightsettingbar */,
 			);
 			path = view;
@@ -594,9 +607,9 @@
 		9A697E301CAD510B005749E0 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				9A697E311CAD510B005749E0 /* OSMOMenuCell.h */,
-				9A697E321CAD510B005749E0 /* OSMOMenuCell.m */,
-				9A697E331CAD510B005749E0 /* OSMOMenuCell.xib */,
+				9A697E311CAD510B005749E0 /* OSMOMenuCellBase.h */,
+				9A697E321CAD510B005749E0 /* OSMOMenuCellBase.m */,
+				9A697E331CAD510B005749E0 /* OSMOMenuCellBase.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -604,6 +617,8 @@
 		9A697E361CAD5CC6005749E0 /* datasource */ = {
 			isa = PBXGroup;
 			children = (
+				9AFDA7161CAE0EF2001F20C7 /* OSMODataLoader.h */,
+				9AFDA7171CAE0EF2001F20C7 /* OSMODataLoader.m */,
 				9A697E381CAD5D70005749E0 /* OSMOTableObject.h */,
 				9A697E391CAD5D70005749E0 /* OSMOTableObject.m */,
 				9A697E3B1CAD6CFA005749E0 /* OSMOTableObjectDict.plist */,
@@ -915,6 +930,27 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		9AFDA7191CAE2573001F20C7 /* secondview */ = {
+			isa = PBXGroup;
+			children = (
+				9AFDA71A1CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.h */,
+				9AFDA71B1CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.m */,
+				9AFDA71C1CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.h */,
+				9AFDA71D1CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.m */,
+				9AFDA71E1CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.h */,
+				9AFDA71F1CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.m */,
+				9AFDA7201CAE2573001F20C7 /* rightMenu */,
+			);
+			path = secondview;
+			sourceTree = "<group>";
+		};
+		9AFDA7201CAE2573001F20C7 /* rightMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = rightMenu;
+			sourceTree = "<group>";
+		};
 		BF25314DD4D97617C2672B89 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,7 +1087,7 @@
 				9A176B321CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B291CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B351CA6CA2F00807EF3 /* VoiceSearchIconHL@2x.png in Resources */,
-				9A697E351CAD510B005749E0 /* OSMOMenuCell.xib in Resources */,
+				9A697E351CAD510B005749E0 /* OSMOMenuCellBase.xib in Resources */,
 				9A176B311CA6CA2F00807EF3 /* user_avatar_default@2x.png in Resources */,
 				9A697E3C1CAD6CFA005749E0 /* OSMOTableObjectDict.plist in Resources */,
 				9AF2A2E41C9003C1005FE17F /* DiscoverViewController.plist in Resources */,
@@ -1145,13 +1181,16 @@
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
+				9AFDA7211CAE2573001F20C7 /* OSMOLeftFirstMenuPlaceView.m in Sources */,
 				9ADEE80E1CACDA29009C23FB /* DJIIPhoneCameraViewController.m in Sources */,
 				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
 				9A2535371CABEE0E002ACFD3 /* OSMOStateButton.m in Sources */,
 				9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */,
-				9A697E341CAD510B005749E0 /* OSMOMenuCell.m in Sources */,
+				9A697E341CAD510B005749E0 /* OSMOMenuCellBase.m in Sources */,
+				9AFDA7221CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
+				9AFDA7231CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.m in Sources */,
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A176D9E1CA6CCCF00807EF3 /* DJIIPhoneCameraModel.m in Sources */,
@@ -1167,6 +1206,7 @@
 				9A7053811CA96D4F00501A72 /* OSMOModeView.m in Sources */,
 				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A176DA21CA6CCCF00807EF3 /* OSMOIPhoneViewController.m in Sources */,
+				9AFDA7181CAE0EF3001F20C7 /* OSMODataLoader.m in Sources */,
 				9A7053821CA96D4F00501A72 /* OSMOPhotoVideoView.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
 				9A7053721CA922C900501A72 /* OSMOView.m in Sources */,
