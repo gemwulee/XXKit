@@ -13,7 +13,7 @@
 #import "OSMOIPhoneViewController.h"
 #import "DJIIPhoneCameraViewController.h"
 #import "OSMOMenuController.h"
-#import "OSMONavController.h"
+#import "OSMONavMenuController.h"
 
 @implementation DiscoverViewController
 
@@ -28,10 +28,23 @@
         OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
         [self.navigationController presentViewController:osmoVC animated:YES completion:^{}];
     }
+    
+    else if(indexPath.section == 1 && indexPath.row == 1){
+        
+        UIViewController *osmoNav = [[UIViewController alloc] init];
+        osmoNav.title = @"test";
+        osmoNav.view.backgroundColor = [UIColor redColor];
+        [self.navigationController pushViewController:osmoNav animated:YES];
+        
+        //        [self addChildViewController:menuVC];
+        //        [self.view addSubview:menuVC.view];
+    }
+    
+    
     else{
         OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
 
-        OSMONavController *osmoNav = [[OSMONavController alloc] initWithRootViewController:menuVC];
+        OSMONavMenuController *osmoNav = [[OSMONavMenuController alloc] initWithRootViewController:menuVC];
         
         [self.navigationController presentViewController:osmoNav animated:YES completion:^{}];
 

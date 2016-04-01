@@ -7,10 +7,11 @@
 //
 
 #import "XXViewController.h"
+#import "OSMOViewBaseController.h"
 
 #define MENU_CAMERA_SETTING @"cameraSetting" //相机设置
 
-@interface OSMOMenuController : XXViewController
+@interface OSMOMenuController : OSMOViewBaseController
 
 -(instancetype)initWithPlistKey:(NSString*) plistkey;
 

@@ -17,6 +17,12 @@
     self.view.backgroundColor = UIColorHex(0xf5f5f8);
 }
 
+
+- (void)backBarButtonPressed:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 -(instancetype)init
 {
     if(self = [super init]){

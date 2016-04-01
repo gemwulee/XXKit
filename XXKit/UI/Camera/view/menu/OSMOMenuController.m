@@ -16,16 +16,10 @@
 #import "Masonry.h"
 #import "UITableViewCell+Custom.h"
 
-#define osmoBasicSettingHeaderHeight 46
-#define osmoBasicSettingCellHeight 44
-#define osmoBasicSettingFootHeight 10
-
 @interface OSMOMenuController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property(nonatomic,strong) UIView          *viewHeader;
 @property(nonatomic,strong) UITableView     *tableViewMenu;
 @property(nonatomic,strong) NSMutableArray  *dataArray;
-
 @property(nonatomic,copy)   NSString        *plistKey;
 
 @end
@@ -43,17 +37,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _viewHeader = [[UIView alloc] initWithFrame:self.view.bounds];
     self.title = self.plistKey ;
     
-    _tableViewMenu = [UITableView commonMenuStyledTableView:self dataSource:self frame:self.view.bounds];
+    _tableViewMenu = [UITableView commonMenuStyledTableView:self dataSource:self frame:self.mainView.bounds];
     [self registerTableIdentifier];
-    [self.view addSubview:_tableViewMenu];
+    [self.mainView addSubview:_tableViewMenu];
     
     [_tableViewMenu mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-        make.width.equalTo(self.view);
-        make.height.equalTo(self.view);
+        make.edges.equalTo(self.mainView);
+        make.width.equalTo(self.mainView);
+        make.height.equalTo(self.mainView);
     }];
 }
 
@@ -80,23 +73,17 @@
         [cell configureData:settingObject];
         return cell;
     }
-    
-    
     return nil;
-
 }
 
 #pragma mark- Delegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return osmoBasicSettingHeaderHeight;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return osmoBasicSettingHeaderHeight;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    OSMOViewBaseController *vctest = [[OSMOViewBaseController alloc] init];
+    vctest.view.backgroundColor = [UIColor blackColor];
+    vctest.title = @"test";
+    [self.navigationController pushViewController:vctest animated:YES];
 }
 
 

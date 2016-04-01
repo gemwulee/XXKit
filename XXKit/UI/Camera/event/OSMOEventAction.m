@@ -13,6 +13,8 @@
 #import "OSMOMenuController.h"
 #import "OSMORightFirstMenuPlaceView.h"
 #import "Masonry.h"
+#import "OSMONavMenuController.h"
+
 
 @interface OSMOEventAction()
 
@@ -65,7 +67,7 @@
     }
 }
 
--(void) actionClick_PlayBackButton_OSMOPlayBackView:(id) sender
+-(void) actionClick_PlayBackButton_OSMOPlayBackView
 {
     NSLog(@"actionClick_PlayBackButton_OSMOPlayBackView");
 
@@ -83,10 +85,12 @@
     
     if (button.selected) {
         OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
-        [self.rootVC addChildViewController:menuVC];
-        [self.rootVC.rightFirstMenuPlaceView addSubview:menuVC.view];
+        OSMONavMenuController *osmoNav = [[OSMONavMenuController alloc] initWithRootViewController:menuVC];
         
-        [menuVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        [self.rootVC addChildViewController:osmoNav];
+        [self.rootVC.rightFirstMenuPlaceView addSubview:osmoNav.view];
+        
+        [osmoNav.view mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self.rootVC.rightFirstMenuPlaceView);
             make.width.equalTo(self.rootVC.rightFirstMenuPlaceView);
             make.height.equalTo(self.rootVC.rightFirstMenuPlaceView);
