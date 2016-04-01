@@ -13,6 +13,7 @@
 // styleGrouped的tableView，某些ios版本下，这类tableView会有系统的默认底图，要把它去掉
 + (UITableView*)commonGroupStyledTableView:(id <UITableViewDelegate>)delegate dataSource:(id <UITableViewDataSource>) dataSource frame:(CGRect)frame;
 + (UITableView*)commonPlainStyledTableView:(id <UITableViewDelegate>)delegate dataSource:(id <UITableViewDataSource>) dataSource frame:(CGRect)frame;
++ (UITableView*)commonMenuStyledTableView:(id <UITableViewDelegate>)delegate dataSource:(id <UITableViewDataSource>) dataSource frame:(CGRect)frame;
 
 // 设置分割线默认颜色
 - (void)setCurrentThemeSeparatorColor;

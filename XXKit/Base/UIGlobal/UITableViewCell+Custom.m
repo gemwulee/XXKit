@@ -8,6 +8,7 @@
 
 #import "UITableViewCell+Custom.h"
 #import "XXGlobalColor.h"
+#import "UIColorEx.h"
 
 @implementation UITableViewCell (Custom)
 
@@ -48,4 +49,30 @@
 
     self.selectedBackgroundView = bgView;
 }
+
+- (void)updateMenuBackgroundViewInTableView:(UITableView*)tableView atIndexPath:(NSIndexPath*)indexPath
+{
+    NSInteger row = [indexPath row];
+    NSInteger section = [indexPath section];
+    NSInteger rows = [tableView.dataSource tableView:tableView numberOfRowsInSection:section];
+    
+    [self setBackgroundColor:[UIColor blackColor]];
+    
+//    UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.frame.size.height, self.frame.size.width, 1)];
+//    line.backgroundColor = [UIColor colorWithR:255 G:255 B:255 A:0.2];
+//    [self addSubview:line];
+    
+    // 按下背景图
+    [self updateSelectedMenuBackgroundViewAtRow:row sectionRows:rows];
+}
+
+- (void)updateSelectedMenuBackgroundViewAtRow:(NSInteger)row sectionRows:(NSInteger)rows
+{
+    UIView* bgView = [[UIView alloc] initWithFrame:CGRectZero];
+    [bgView setBackgroundColor:[UIColor colorWithR:255 G:255 B:255 A:0.2]];
+    
+    self.selectedBackgroundView = bgView;
+}
+
+
 @end

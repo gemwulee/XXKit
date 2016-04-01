@@ -25,12 +25,12 @@
 
 
 #pragma mark- right tool
-- (void)actionClick_HomeButton_OSMORightSettingView;
+- (void)actionClick_HomeButton_OSMORightSettingView:(id) sender;
 
-- (void)actionClick_CameraButton_OSMORightSettingView;
+- (void)actionClick_CameraButton_OSMORightSettingView:(id) sender;
 
-- (void)actionClick_GimbalButton_OSMORightSettingView;
+- (void)actionClick_GimbalButton_OSMORightSettingView:(id) sender;
 
-- (void)actionClick_SettingButton_OSMORightSettingView;
+- (void)actionClick_SettingButton_OSMORightSettingView:(id) sender;
 
 @end

@@ -14,6 +14,7 @@
 #import "OSMODataLoader.h"
 #import "OSMOTableObject.h"
 #import "Masonry.h"
+#import "UITableViewCell+Custom.h"
 
 #define osmoBasicSettingHeaderHeight 46
 #define osmoBasicSettingCellHeight 44
@@ -45,7 +46,7 @@
     _viewHeader = [[UIView alloc] initWithFrame:self.view.bounds];
     self.title = self.plistKey ;
     
-    _tableViewMenu = [UITableView commonPlainStyledTableView:self dataSource:self frame:self.view.bounds];
+    _tableViewMenu = [UITableView commonMenuStyledTableView:self dataSource:self frame:self.view.bounds];
     [self registerTableIdentifier];
     [self.view addSubview:_tableViewMenu];
     
@@ -74,59 +75,28 @@
         return nil;
     
     if(settingObject && [settingObject.celldentifier isEqualToString:OSMOMenuCellBaseIdentifier]){
-        OSMOMenuCellBase *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuCellBaseIdentifier forIndexPath:indexPath];
-        cell.contentView.backgroundColor = [UIColor blackColor];
+        OSMOMenuCellBase *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuCellBaseIdentifier forIndexPath:indexPath];        
+        [cell updateMenuBackgroundViewInTableView:tableView atIndexPath:indexPath];
         [cell configureData:settingObject];
         return cell;
     }
+    
+    
     return nil;
 
 }
 
 #pragma mark- Delegate
-- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    [UITableView roundedHandleTableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath withSectionColor:[UIColor clearColor] selectedColor:[UIColor colorWithR:255 G:255 B:255 A:0.2]];
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return osmoBasicSettingHeaderHeight;
 }
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return osmoBasicSettingHeaderHeight;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return osmoBasicSettingFootHeight;
-}
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-#pragma marks - UITableView Delegate
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *sectionHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, osmoBasicSettingHeaderHeight)];
-    [sectionHeaderView setBackgroundColor:[UIColor clearColor]];
-    //下划线
-    CALayer *lineLayer = [[CALayer alloc] init];
-    CGFloat lineHeight = (1.f / [UIScreen mainScreen].scale);
-    lineLayer.frame = CGRectMake(0, sectionHeaderView.frame.size.height-lineHeight, sectionHeaderView.frame.size.width, lineHeight);
-    lineLayer.backgroundColor = tableView.separatorColor.CGColor;
-    [sectionHeaderView.layer addSublayer:lineLayer];
-    return sectionHeaderView;
-}
-
-
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
-{
-    UIView *sectionFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width,osmoBasicSettingHeaderHeight)];
-    [sectionFooterView setBackgroundColor:[UIColor clearColor]];
-    return sectionFooterView;
 }
 
 

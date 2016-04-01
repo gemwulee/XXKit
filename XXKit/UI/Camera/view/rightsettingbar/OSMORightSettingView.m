@@ -106,22 +106,22 @@
 
 #pragma mark- Button Click
 - (void)clickHandleHomeButton:(id)sender{
-    [self.cameraAction actionClick_HomeButton_OSMORightSettingView];
+    [self.cameraAction actionClick_HomeButton_OSMORightSettingView:sender];
     [self updateCameraStatus:sender];
 }
 
 - (void)clickHandleCameraButton:(id)sender{
-    [self.cameraAction actionClick_CameraButton_OSMORightSettingView];
+    [self.cameraAction actionClick_CameraButton_OSMORightSettingView:sender];
     [self updateCameraStatus:sender];
 }
 
 -(void)clickHandleGimbalButton:(id)sender{
-    [self.cameraAction actionClick_GimbalButton_OSMORightSettingView];
+    [self.cameraAction actionClick_GimbalButton_OSMORightSettingView:sender];
     [self updateCameraStatus:sender];
 }
 
 -(void)clickSettingButton:(id)sender{
-    [self.cameraAction actionClick_SettingButton_OSMORightSettingView];
+    [self.cameraAction actionClick_SettingButton_OSMORightSettingView:sender];
     [self updateCameraStatus:sender];
 }
 
@@ -130,9 +130,6 @@
     for(OSMOStateButton *button in self.arrayButtons){
         if(button != sender){
             button.selected = FALSE;
-        }
-        else{
-            button.selected = YES;
         }
     }
 }

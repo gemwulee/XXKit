@@ -65,38 +65,47 @@
     }
 }
 
--(void) actionClick_PlayBackButton_OSMOPlayBackView
+-(void) actionClick_PlayBackButton_OSMOPlayBackView:(id) sender
 {
     NSLog(@"actionClick_PlayBackButton_OSMOPlayBackView");
 
 }
 
 #pragma mark- right tool
--(void) actionClick_HomeButton_OSMORightSettingView
+-(void) actionClick_HomeButton_OSMORightSettingView:(id) sender
 {
     [self.camera dismissViewControllerAnimated:NO completion:nil];
 }
 
--(void) actionClick_CameraButton_OSMORightSettingView
+-(void) actionClick_CameraButton_OSMORightSettingView:(id) sender
 {
-    OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
-    [self.rootVC addChildViewController:menuVC];
-    [self.rootVC.rightFirstMenuPlaceView addSubview:menuVC.view];
+    UIButton *button = (UIButton*) sender;
     
-    [menuVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.rootVC.rightFirstMenuPlaceView);
-        make.width.equalTo(self.rootVC.rightFirstMenuPlaceView);
-        make.height.equalTo(self.rootVC.rightFirstMenuPlaceView);
-    }];
+    if (button.selected) {
+        OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
+        [self.rootVC addChildViewController:menuVC];
+        [self.rootVC.rightFirstMenuPlaceView addSubview:menuVC.view];
+        
+        [menuVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.rootVC.rightFirstMenuPlaceView);
+            make.width.equalTo(self.rootVC.rightFirstMenuPlaceView);
+            make.height.equalTo(self.rootVC.rightFirstMenuPlaceView);
+        }];
+    }else{
+        for (UIView *view in self.rootVC.rightFirstMenuPlaceView.subviews) {
+            [view removeFromSuperview];
+        }
+    }
+ 
 }
 
--(void) actionClick_GimbalButton_OSMORightSettingView
+-(void) actionClick_GimbalButton_OSMORightSettingView:(id) sender
 {
     NSLog(@"actionClick_GimbalButton_OSMORightSettingView");
 
 }
 
--(void) actionClick_SettingButton_OSMORightSettingView
+-(void) actionClick_SettingButton_OSMORightSettingView:(id) sender
 {
     NSLog(@"actionClick_SettingButton_OSMORightSettingView");
 

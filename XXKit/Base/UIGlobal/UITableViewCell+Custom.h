@@ -16,4 +16,6 @@
 
 - (void)updateSelectedBackgroundViewAtRow:(NSInteger)row sectionRows:(NSInteger)rows;
 
+- (void)updateMenuBackgroundViewInTableView:(UITableView*)tableView atIndexPath:(NSIndexPath*)indexPath;
+
 @end

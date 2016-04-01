@@ -122,13 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/view/menu/cell/OSMOMenuCellBase.m"
-            timestampString = "481184634.02892"
+            timestampString = "481192858.059961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-configureData:"
-            landmarkType = "5">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "@implementation OSMOMenuCellBase"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/view/menu/OSMOMenuController.m"
-            timestampString = "481186122.459586"
+            timestampString = "481193915.296421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -153,61 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
-            timestampString = "481185427.218103"
+            filePath = "XXKit/UI/Camera/view/publiccameraui/OSMOStateButton.m"
+            timestampString = "481191284.404487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "-actionClick_CameraButton_OSMORightSettingView"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[OSMOEventAction actionClick_CameraButton_OSMORightSettingView]"
-                  moduleName = "XXKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/event/OSMOEventAction.m"
-                  timestampString = "481186122.588979"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "332">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__64-[OSMOEventAction actionClick_CameraButton_OSMORightSettingView]_block_invoke"
-                  moduleName = "XXKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/event/OSMOEventAction.m"
-                  timestampString = "481186122.589332"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/view/menu/OSMOMenuController.m"
-            timestampString = "481186122.459586"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-tableView:viewForHeaderInSection:"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-buttonClick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
