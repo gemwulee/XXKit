@@ -10,7 +10,9 @@
 #import <CoreImage/CoreImage.h>
 #import <AVFoundation/AVFoundation.h>
 #import "DJIIPhoneCameraModel.h"
+#import <ImageIO/ImageIO.h>
 
+#define IMAGEOUTPUT 0
 @interface DJIIPhoneCameraViewController()<AVCaptureVideoDataOutputSampleBufferDelegate,UIGestureRecognizerDelegate>
 {
     CGFloat beginGestureScale;
@@ -19,7 +21,6 @@
 
 @property (nonatomic, strong) DJIIPhoneCameraModel   *cameraModel;
 @property (nonatomic, strong) AVCaptureSession       *session;           //AVCaptureSession对象来执行输入设备和输出设备之间的数据传递
-@property (nonatomic, strong) CALayer                *previewLayer;      //预览图层，来显示照相机拍摄到的画面
 
 @property (nonatomic, strong) CIFilter               *filter;            //滤镜
 @property (nonatomic, strong) CIContext              *context;
@@ -27,7 +28,14 @@
 @property (nonatomic, strong) CIImage                *ciImage;
 
 
+//图片预览图层
+@property (nonatomic, strong) AVCaptureStillImageOutput *stillImageOutput;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *previewLayer;
+
+//视频预览图层
 @property (nonatomic, strong) AVCaptureVideoDataOutput *dataOutput;
+@property (nonatomic, strong) CALayer                  *videoLayer;
+
 @end
 
 @implementation DJIIPhoneCameraViewController
@@ -40,7 +48,6 @@
     }
     return self;
 }
-
 
 -(void)dealloc
 {
@@ -59,31 +66,18 @@
     if ([self.session canAddInput:videoInput]) {
         [self.session addInput:videoInput];
     }
-    
-    _dataOutput = [[AVCaptureVideoDataOutput alloc] init];
-    NSDictionary * outputSettings =   [NSDictionary dictionaryWithObject: [NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey];
-    _dataOutput.videoSettings = outputSettings;
-    _dataOutput.alwaysDiscardsLateVideoFrames = true;
-    
-    if ([self.session canAddOutput:_dataOutput]) {
-        [self.session addOutput:_dataOutput];
-    }
-    
-    dispatch_queue_t queue = dispatch_queue_create("VideoQueue", DISPATCH_QUEUE_SERIAL);
-    [_dataOutput setSampleBufferDelegate:self queue:queue];
+#if IMAGEOUTPUT
+    [self addStillImageOutput];
+    [self addPreviewLayer];
+#else
+    [self addVideoOutput];
+    [self addVideoViewLayer];
+#endif
     
     [self.session commitConfiguration];
     
-    self.previewLayer = [CALayer layer];
-    self.previewLayer.anchorPoint = CGPointZero;
-    self.previewLayer.bounds = self.view.bounds;
+    //Preview Layer setup
     
-    [self.view.layer insertSublayer:_previewLayer atIndex:0];
-    
-    EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
-    NSDictionary *options = @{kCIContextWorkingColorSpace :  [NSNull null]};
-    _context = [CIContext contextWithEAGLContext:eaglContext options:options];
-
 }
 
 #pragma mark- 摄像头
@@ -129,24 +123,44 @@
         [self.filter setValue:outputImage forKey:kCIInputImageKey];
         outputImage = _filter.outputImage;
     }
-    
+
     outputImage = [outputImage imageByApplyingTransform:[self getCameraTransform]];
     
     CGImageRef cgImage = [_context createCGImage:outputImage fromRect:outputImage.extent];
     self.ciImage = outputImage;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.previewLayer.contents = (__bridge_transfer id _Nullable)((cgImage));
+        self.videoLayer.contents = (__bridge_transfer id _Nullable)((cgImage));
     });
 }
 
 
 -(void) takePhoto{
-    if (self.ciImage == nil){
-        return;
-    }
+    if (_dataOutput) {
+        if (self.ciImage == nil){
+            return;
+        }
     
-    CGImageRef cgImage = [_context createCGImage:_ciImage fromRect:_ciImage.extent];
-    UIImageWriteToSavedPhotosAlbum([UIImage imageWithCGImage: cgImage], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);}
+        CGImageRef cgImage = [_context createCGImage:_ciImage fromRect:_ciImage.extent];
+        UIImageWriteToSavedPhotosAlbum([UIImage imageWithCGImage: cgImage], self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+    }else{
+        AVCaptureConnection *videoConnection = [self getOrientationAdaptedCaptureConnection];
+
+        [[self stillImageOutput] captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:
+         ^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
+             CFDictionaryRef exifAttachments = CMGetAttachment(imageSampleBuffer, kCGImagePropertyExifDictionary, NULL);
+             if (exifAttachments) {
+                 //Attachements Found
+             } else {
+                 //No Attachments
+             }
+             NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+             UIImage *image = [[UIImage alloc] initWithData:imageData];
+             UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
+
+        }];
+    }
+
+}
 
 // 指定回调方法
 - (void)image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
@@ -169,7 +183,7 @@
 
 -(void)viewDidLayoutSubviews{
     [super viewWillLayoutSubviews];
-    [self.previewLayer setFrame:self.view.bounds];
+    [self.videoLayer setFrame:self.view.bounds];
 }
 
 
@@ -225,6 +239,7 @@
 //获取旋转角度
 -(CGAffineTransform) getCameraTransform
 {
+//    CGAffineTransform t = CGAffineTransformMakeRotation((CGFloat)(-M_PI / 2.0));
     UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
     CGAffineTransform t;
     if(orientation == UIDeviceOrientationPortrait) {
@@ -233,9 +248,14 @@
         t = CGAffineTransformMakeRotation((CGFloat)(M_PI / 2.0));
     } else if (orientation == UIDeviceOrientationLandscapeRight) {
         t = CGAffineTransformMakeRotation((CGFloat)(M_PI));
-    } else {
-        t = CGAffineTransformMakeRotation(0);
+    } else if (orientation == UIDeviceOrientationLandscapeLeft){
+        t = CGAffineTransformMakeRotation((CGFloat)(-M_PI));
+
     }
+    
+//    else {
+//        t = CGAffineTransformMakeRotation(0);
+//    }
     return t;
 }
 
@@ -260,48 +280,158 @@
     [self.view addGestureRecognizer:pinch];
 }
 
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+//- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+//{
+//    if ( [gestureRecognizer isKindOfClass:[UIPinchGestureRecognizer class]] ) {
+//        beginGestureScale = effectiveScale;
+//    }
+//    return YES;
+//}
+//
+//// scale image depending on users pinch gesture
+//- (void)handlePinchGesture:(UIPinchGestureRecognizer *)recognizer
+//{
+//    BOOL allTouchesAreOnThePreviewLayer = YES;
+//    NSUInteger numTouches = [recognizer numberOfTouches], i;
+//    for ( i = 0; i < numTouches; ++i ) {
+//        CGPoint location = [recognizer locationOfTouch:i inView:self.view];
+//        CGPoint convertedLocation = [_previewLayer convertPoint:location fromLayer:_previewLayer.superlayer];
+//        if ( ! [_previewLayer containsPoint:convertedLocation] ) {
+//            allTouchesAreOnThePreviewLayer = NO;
+//            break;
+//        }
+//    }
+//    
+//    if ( allTouchesAreOnThePreviewLayer ) {
+//        effectiveScale = beginGestureScale * recognizer.scale;
+//        CGFloat maxScaleAndCropFactor = [[_dataOutput connectionWithMediaType:AVMediaTypeVideo] videoMaxScaleAndCropFactor];
+//        
+//        if (effectiveScale < 1.f) {
+//            return;
+//        }
+////        if (effectiveScale > maxScaleAndCropFactor)
+////            effectiveScale = 1.f / effectiveScale;
+//        
+//        NSLog(@"effectiveScale 1:%f ", effectiveScale);
+//        
+//        
+//        [CATransaction begin];
+//        [CATransaction setAnimationDuration:.025];
+////        [[UIScreen mainScreen] setBrightness:effectiveScale];
+//
+//        
+//        [self.view.layer setAffineTransform:CGAffineTransformMakeScale(effectiveScale, effectiveScale)];
+//        [CATransaction commit];
+//    }
+//}
+
+#pragma orientationAdaptedcapture
+- (void)addVideoOutput
 {
-    if ( [gestureRecognizer isKindOfClass:[UIPinchGestureRecognizer class]] ) {
-        beginGestureScale = effectiveScale;
+    _dataOutput = [[AVCaptureVideoDataOutput alloc] init];
+    NSDictionary * outputSettings =   [NSDictionary dictionaryWithObject: [NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange] forKey:(id)kCVPixelBufferPixelFormatTypeKey];
+    _dataOutput.videoSettings = outputSettings;
+    _dataOutput.alwaysDiscardsLateVideoFrames = true;
+    
+    if ([self.session canAddOutput:_dataOutput]) {
+        [self.session addOutput:_dataOutput];
     }
-    return YES;
+    
+    dispatch_queue_t queue = dispatch_queue_create("VideoQueue", DISPATCH_QUEUE_SERIAL);
+    [_dataOutput setSampleBufferDelegate:self queue:queue];
 }
 
-// scale image depending on users pinch gesture
-- (void)handlePinchGesture:(UIPinchGestureRecognizer *)recognizer
+- (void)addVideoViewLayer {
+    self.videoLayer = [CALayer layer];
+    self.videoLayer.anchorPoint = CGPointZero;
+    self.videoLayer.bounds = self.view.bounds;
+
+    [self.view.layer insertSublayer:_videoLayer atIndex:0];
+
+    EAGLContext *eaglContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    NSDictionary *options = @{kCIContextWorkingColorSpace :  [NSNull null]};
+    _context = [CIContext contextWithEAGLContext:eaglContext options:options];
+
+}
+
+- (void)addStillImageOutput
 {
-    BOOL allTouchesAreOnThePreviewLayer = YES;
-    NSUInteger numTouches = [recognizer numberOfTouches], i;
-    for ( i = 0; i < numTouches; ++i ) {
-        CGPoint location = [recognizer locationOfTouch:i inView:self.view];
-        CGPoint convertedLocation = [_previewLayer convertPoint:location fromLayer:_previewLayer.superlayer];
-        if ( ! [_previewLayer containsPoint:convertedLocation] ) {
-            allTouchesAreOnThePreviewLayer = NO;
+    self.stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
+    NSDictionary *outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys:AVVideoCodecJPEG,AVVideoCodecKey,nil];
+    [_stillImageOutput setOutputSettings:outputSettings];
+    
+    [self getOrientationAdaptedCaptureConnection];
+    
+    [_session addOutput:[self stillImageOutput]];
+    
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus])
+    {
+        [device lockForConfiguration:nil];
+        [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+        [device unlockForConfiguration];
+    }
+}
+
+- (void)addPreviewLayer {
+    self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:_session];
+    [self.previewLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
+    
+    CGRect layerRect = self.view.layer.bounds;
+    [self.previewLayer setBounds:layerRect];
+    [self.previewLayer setPosition:CGPointMake(CGRectGetMidX(layerRect),CGRectGetMidY(layerRect))];
+    
+    //Apply animation effect to the camera's preview layer
+    CATransition *applicationLoadViewIn =[CATransition animation];
+    [applicationLoadViewIn setDuration:0.6];
+    [applicationLoadViewIn setType:kCATransitionReveal];
+    [applicationLoadViewIn setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    [self.previewLayer addAnimation:applicationLoadViewIn forKey:kCATransitionReveal];
+    
+    //Add to self.view's layer
+    [self.view.layer addSublayer:_previewLayer];
+
+}
+- (AVCaptureConnection *)getOrientationAdaptedCaptureConnection
+{
+    AVCaptureConnection *videoConnection = nil;
+    
+    for (AVCaptureConnection *connection in [_stillImageOutput connections]) {
+        for (AVCaptureInputPort *port in [connection inputPorts]) {
+            if ([[port mediaType] isEqual:AVMediaTypeVideo] ) {
+                videoConnection = connection;
+                [self assignVideoOrienationForVideoConnection:videoConnection];
+                break;
+            }
+        }
+        if (videoConnection) {
+            [self assignVideoOrienationForVideoConnection:videoConnection];
             break;
         }
     }
     
-    if ( allTouchesAreOnThePreviewLayer ) {
-        effectiveScale = beginGestureScale * recognizer.scale;
-        CGFloat maxScaleAndCropFactor = [[_dataOutput connectionWithMediaType:AVMediaTypeVideo] videoMaxScaleAndCropFactor];
-        
-        if (effectiveScale < 1.f) {
-            return;
-        }
-//        if (effectiveScale > maxScaleAndCropFactor)
-//            effectiveScale = 1.f / effectiveScale;
-        
-        NSLog(@"effectiveScale 1:%f ", effectiveScale);
-        
-        
-        [CATransaction begin];
-        [CATransaction setAnimationDuration:.025];
-//        [[UIScreen mainScreen] setBrightness:effectiveScale];
+    return videoConnection;
+}
 
-        
-        [self.view.layer setAffineTransform:CGAffineTransformMakeScale(effectiveScale, effectiveScale)];
-        [CATransaction commit];
+- (void)assignVideoOrienationForVideoConnection:(AVCaptureConnection *)videoConnection
+{
+    AVCaptureVideoOrientation newOrientation;
+    switch ([[UIDevice currentDevice] orientation]) {
+        case UIDeviceOrientationPortrait:
+            newOrientation = AVCaptureVideoOrientationPortrait;
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            newOrientation = AVCaptureVideoOrientationPortraitUpsideDown;
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            newOrientation = AVCaptureVideoOrientationLandscapeRight;
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            newOrientation = AVCaptureVideoOrientationLandscapeLeft;
+            break;
+        default:
+            newOrientation = AVCaptureVideoOrientationPortrait;
     }
+    [videoConnection setVideoOrientation: newOrientation];
 }
 @end

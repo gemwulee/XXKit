@@ -37,6 +37,4 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
-
-
 @end

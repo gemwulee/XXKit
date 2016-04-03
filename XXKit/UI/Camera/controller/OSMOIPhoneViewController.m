@@ -18,10 +18,8 @@
 #import "OSMORightFirstMenuPlaceView.h"
 #import "Macro.h"
 #import "XXBase.h"
-
+#
 @interface OSMOIPhoneViewController ()
-
-@property(nonatomic,strong)  DJIIPhoneCameraView  *camera;
 
 @property(nonatomic,strong)  OSMOEventAction      *cameraAction;
 
@@ -35,6 +33,7 @@
 
 -(instancetype)init{
     if (self = [super init]) {
+        [self initNotification];
         _model        = [DJIIPhoneCameraModel new];
         _cameraVC     = [[DJIIPhoneCameraViewController alloc] initWithModel:_model];
             
@@ -67,6 +66,10 @@
     [super viewDidDisappear: animated];
     //    [_camera closeCamera];
 }
+-(void) initNotification
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)    name:UIDeviceOrientationDidChangeNotification  object:nil];
+}
 
 -(void) initViews
 {
@@ -93,12 +96,22 @@
 }
 
 #pragma mark- 横竖屏
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskAll;
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-    return [[UIApplication sharedApplication] statusBarOrientation];
+- (BOOL)shouldAutorotate
+{
+    return NO;
 }
+-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+    return NO;
+}
+
 
 - (BOOL)prefersStatusBarHidden{
     return YES;
@@ -138,6 +151,18 @@
     [_captureToolPlaceView reloadSkins];
     [_rightSettingPlaceView reloadSkins];
 }
+
+- (void)orientationChanged:(NSNotification *)notification{
+    
+    [_rightFirstMenuPlaceView reloadSkins];
+    [_leftFirstMenuPlaceView reloadSkins];
+    [_leftSecondMenuPlaceView reloadSkins];
+    
+    [_captureToolPlaceView reloadSkins];
+    [_rightSettingPlaceView reloadSkins];
+}
+
+
 
 #pragma mark- 增加观察者
 -(void) addKVOModel

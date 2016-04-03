@@ -28,19 +28,6 @@
         OSMOIPhoneViewController *osmoVC = [[OSMOIPhoneViewController alloc] init];
         [self.navigationController presentViewController:osmoVC animated:YES completion:^{}];
     }
-    
-    else if(indexPath.section == 1 && indexPath.row == 1){
-        
-        UIViewController *osmoNav = [[UIViewController alloc] init];
-        osmoNav.title = @"test";
-        osmoNav.view.backgroundColor = [UIColor redColor];
-        [self.navigationController pushViewController:osmoNav animated:YES];
-        
-        //        [self addChildViewController:menuVC];
-        //        [self.view addSubview:menuVC.view];
-    }
-    
-    
     else{
         OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
 

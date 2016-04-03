@@ -13,7 +13,7 @@
 #import "foundationex/UIColorEx.h"
 #import "foundationex/UIDeviceEx.h"
 #import "foundationex/UIView+Common.h"
-
+#import "foundationex/UIDeviceEx.h"
 
 #import "macro/XXMacro.h"
 
