@@ -44,6 +44,8 @@
 		9A25352A1CABA6A0002ACFD3 /* OSMORightSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2535291CABA6A0002ACFD3 /* OSMORightSettingView.m */; };
 		9A2535371CABEE0E002ACFD3 /* OSMOStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2535361CABEE0E002ACFD3 /* OSMOStateButton.m */; };
 		9A25353A1CAC08F5002ACFD3 /* OSMOEventAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2535391CAC08F5002ACFD3 /* OSMOEventAction.m */; };
+		9A301E0D1CB11F9B00EAE223 /* OSMOToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A301E0C1CB11F9B00EAE223 /* OSMOToolViewController.m */; };
+		9A301E101CB132E600EAE223 /* OSMOToolWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A301E0F1CB132E600EAE223 /* OSMOToolWindow.m */; };
 		9A5190C21CA9001B0091FAD2 /* OSMOCaptureToolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5190C11CA9001B0091FAD2 /* OSMOCaptureToolView.xib */; };
 		9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */; };
 		9A5FCE5F1CAD193F00C7C756 /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5D1CAD193F00C7C756 /* libuikit.a */; };
@@ -175,6 +177,10 @@
 		9A2535361CABEE0E002ACFD3 /* OSMOStateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOStateButton.m; sourceTree = "<group>"; };
 		9A2535381CAC08F5002ACFD3 /* OSMOEventAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOEventAction.h; sourceTree = "<group>"; };
 		9A2535391CAC08F5002ACFD3 /* OSMOEventAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOEventAction.m; sourceTree = "<group>"; };
+		9A301E0B1CB11F9B00EAE223 /* OSMOToolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOToolViewController.h; sourceTree = "<group>"; };
+		9A301E0C1CB11F9B00EAE223 /* OSMOToolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOToolViewController.m; sourceTree = "<group>"; };
+		9A301E0E1CB132E600EAE223 /* OSMOToolWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOToolWindow.h; sourceTree = "<group>"; };
+		9A301E0F1CB132E600EAE223 /* OSMOToolWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOToolWindow.m; sourceTree = "<group>"; };
 		9A5190C11CA9001B0091FAD2 /* OSMOCaptureToolView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSMOCaptureToolView.xib; sourceTree = "<group>"; };
 		9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9A5FCE5D1CAD193F00C7C756 /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
@@ -467,6 +473,10 @@
 		9A176D861CA6CCCF00807EF3 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				9A301E0E1CB132E600EAE223 /* OSMOToolWindow.h */,
+				9A301E0F1CB132E600EAE223 /* OSMOToolWindow.m */,
+				9A301E0B1CB11F9B00EAE223 /* OSMOToolViewController.h */,
+				9A301E0C1CB11F9B00EAE223 /* OSMOToolViewController.m */,
 				9A176D8B1CA6CCCF00807EF3 /* OSMOIPhoneViewController.h */,
 				9A176D8C1CA6CCCF00807EF3 /* OSMOIPhoneViewController.m */,
 			);
@@ -1193,6 +1203,7 @@
 				9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */,
 				9A697E341CAD510B005749E0 /* OSMOMenuCellBase.m in Sources */,
 				9AFDA7221CAE2573001F20C7 /* OSMOLeftSecondMenuPlaceView.m in Sources */,
+				9A301E101CB132E600EAE223 /* OSMOToolWindow.m in Sources */,
 				9AF41A721C881DD600C17947 /* UIViewController+SwizzleMethod.m in Sources */,
 				9AF3E9AB1C3CBB55009DDD15 /* AppDelegate.m in Sources */,
 				9AFDA7231CAE2573001F20C7 /* OSMORightFirstMenuPlaceView.m in Sources */,
@@ -1226,6 +1237,7 @@
 				9A697E3A1CAD5D70005749E0 /* OSMOTableObject.m in Sources */,
 				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
 				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
+				9A301E0D1CB11F9B00EAE223 /* OSMOToolViewController.m in Sources */,
 				9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */,
 				9A7053861CA96DBD00501A72 /* OSMOSwapCaptureView.m in Sources */,
 				9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */,

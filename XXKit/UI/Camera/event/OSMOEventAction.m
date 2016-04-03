@@ -14,6 +14,7 @@
 #import "OSMORightFirstMenuPlaceView.h"
 #import "Masonry.h"
 #import "OSMONavMenuController.h"
+#import "OSMOToolViewController.h"
 
 
 @interface OSMOEventAction()
@@ -87,16 +88,16 @@
         OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
         OSMONavMenuController *osmoNav = [[OSMONavMenuController alloc] initWithRootViewController:menuVC];
         
-        [self.rootVC addChildViewController:osmoNav];
-        [self.rootVC.rightFirstMenuPlaceView addSubview:osmoNav.view];
+        [self.rootVC.toolVC addChildViewController:osmoNav];
+        [self.rootVC.toolVC.rightFirstMenuPlaceView addSubview:osmoNav.view];
         
         [osmoNav.view mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.rootVC.rightFirstMenuPlaceView);
-            make.width.equalTo(self.rootVC.rightFirstMenuPlaceView);
-            make.height.equalTo(self.rootVC.rightFirstMenuPlaceView);
+            make.edges.equalTo(self.rootVC.toolVC.rightFirstMenuPlaceView);
+            make.width.equalTo(self.rootVC.toolVC.rightFirstMenuPlaceView);
+            make.height.equalTo(self.rootVC.toolVC.rightFirstMenuPlaceView);
         }];
     }else{
-        for (UIView *view in self.rootVC.rightFirstMenuPlaceView.subviews) {
+        for (UIView *view in self.rootVC.toolVC.rightFirstMenuPlaceView.subviews) {
             [view removeFromSuperview];
         }
     }

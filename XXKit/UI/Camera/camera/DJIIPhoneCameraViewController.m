@@ -239,19 +239,20 @@
 //获取旋转角度
 -(CGAffineTransform) getCameraTransform
 {
-//    CGAffineTransform t = CGAffineTransformMakeRotation((CGFloat)(-M_PI / 2.0));
-    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
-    CGAffineTransform t;
-    if(orientation == UIDeviceOrientationPortrait) {
-        t = CGAffineTransformMakeRotation((CGFloat)(-M_PI / 2.0));
-    } else if(orientation == UIDeviceOrientationPortraitUpsideDown) {
-        t = CGAffineTransformMakeRotation((CGFloat)(M_PI / 2.0));
-    } else if (orientation == UIDeviceOrientationLandscapeRight) {
-        t = CGAffineTransformMakeRotation((CGFloat)(M_PI));
-    } else if (orientation == UIDeviceOrientationLandscapeLeft){
-        t = CGAffineTransformMakeRotation((CGFloat)(-M_PI));
-
-    }
+    CGAffineTransform t = CGAffineTransformMakeRotation((CGFloat)(-M_PI / 2.0));
+    return t;
+    
+//    UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
+//    if(orientation == UIDeviceOrientationPortrait) {
+//        t = CGAffineTransformMakeRotation((CGFloat)(-M_PI / 2.0));
+//    } else if(orientation == UIDeviceOrientationPortraitUpsideDown) {
+//        t = CGAffineTransformMakeRotation((CGFloat)(M_PI / 2.0));
+//    } else if (orientation == UIDeviceOrientationLandscapeRight) {
+//        t = CGAffineTransformMakeRotation((CGFloat)(M_PI));
+//    } else if (orientation == UIDeviceOrientationLandscapeLeft){
+//        t = CGAffineTransformMakeRotation((CGFloat)(-M_PI));
+//
+//    }
     
 //    else {
 //        t = CGAffineTransformMakeRotation(0);
