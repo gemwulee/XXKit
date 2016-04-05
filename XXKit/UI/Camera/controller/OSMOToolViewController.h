@@ -47,4 +47,5 @@
  */
 @property (strong, nonatomic) OSMORightFirstMenuPlaceView *rightFirstMenuPlaceView;
 
+-(void) refreshViewFrame;
 @end

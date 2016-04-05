@@ -33,8 +33,8 @@ typedef NS_ENUM(NSUInteger, DJIIPhoneCameraMode){
 typedef NS_ENUM(NSUInteger, DJIIPhonePhotoMode) {
     DJIIPhone_PhotoSingleMode =  0,          //单拍
     DJIIPhone_PhotoContinuousMode,           //连拍
-    DJIIPhone_PhotoOverAllMode,              //全景
-    DJIIPhone_PhotoTimeVideoMode,            //延时
+    DJIIPhone_PhotoPanoMode,                //全景
+    DJIIPhone_PhotoIntervalMode,            //延时
 };
 
 //摄影模式

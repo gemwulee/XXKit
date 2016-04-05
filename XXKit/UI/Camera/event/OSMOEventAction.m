@@ -94,8 +94,61 @@
 
 -(void) actionClick_PlayBackButton_OSMOPlayBackView
 {
-    NSLog(@"actionClick_PlayBackButton_OSMOPlayBackView");
+    NSLog(@"%s",__FUNCTION__);
+}
 
+#pragma mark- capture left first photo
+- (void)actionClick_SingleButton_PhotoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoMode = DJIIPhone_PhotoSingleMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+- (void)actionClick_MultipleButton_PhotoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoMode = DJIIPhone_PhotoContinuousMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+- (void)actionClick_PanoButton_PhotoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoMode = DJIIPhone_PhotoPanoMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+- (void)actionClick_IntervalButton_PhotoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoMode = DJIIPhone_PhotoIntervalMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+
+#pragma mark- capture left first video
+- (void)actionClick_VideoNormalButton_VideoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.videoMode = DJIIPhone_VideoAutoMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+
+- (void)actionClick_VideoHDButton_VideoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.videoMode = DJIIPhone_4KVideoMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+
+- (void)actionClick_VideoSlowButton_VideoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.videoMode = DJIIPhone_SlowVideoMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+}
+- (void)actionClick_VideoDelayButton_VideoModeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.videoMode = DJIIPhone_DelayVideoMode;
+    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
 
 #pragma mark- right tool

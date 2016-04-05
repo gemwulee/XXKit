@@ -61,10 +61,10 @@
     _leftSecondMenuPlaceView = [[OSMOLeftSecondMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _rightFirstMenuPlaceView = [[OSMORightFirstMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     
-    _leftFirstMenuPlaceView.backgroundColor = [UIColor blackColor];
+    _leftFirstMenuPlaceView.backgroundColor = [UIColor clearColor];
     
-    _leftSecondMenuPlaceView.backgroundColor = [UIColor blueColor];
-    _rightFirstMenuPlaceView.backgroundColor = [UIColor grayColor];
+    _leftSecondMenuPlaceView.backgroundColor = [UIColor clearColor];
+    _rightFirstMenuPlaceView.backgroundColor = [UIColor clearColor];
     
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];

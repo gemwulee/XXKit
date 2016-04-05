@@ -25,18 +25,15 @@
 - (void)actionClick_PlayBackButton_OSMOPlayBackView;
 
 #pragma mark- capture left first
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_SingleButton_PhotoModeView:(id) sender;
+- (void)actionClick_MultipleButton_PhotoModeView:(id) sender;
+- (void)actionClick_PanoButton_PhotoModeView:(id) sender;
+- (void)actionClick_IntervalButton_PhotoModeView:(id) sender;
 
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-- (void)actionClick_PlayBackButton_OSMOPlayBackView;
-
-
-
+- (void)actionClick_VideoNormalButton_VideoModeView:(id) sender;
+- (void)actionClick_VideoHDButton_VideoModeView:(id) sender;
+- (void)actionClick_VideoSlowButton_VideoModeView:(id) sender;
+- (void)actionClick_VideoDelayButton_VideoModeView:(id) sender;
 
 #pragma mark- right tool
 - (void)actionClick_HomeButton_OSMORightSettingView:(id) sender;

@@ -12,6 +12,7 @@
 
 -(void) initViews
 {
+
 }
 
 -(void) reloadSkins

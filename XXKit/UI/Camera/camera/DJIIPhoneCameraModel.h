@@ -52,7 +52,7 @@
 
 //----------------摄影机---------------
 //摄影模式
-@property(nonatomic,assign,readwrite) DJIIPhoneVideoMode shootMode;
+@property(nonatomic,assign,readwrite) DJIIPhoneVideoMode videoMode;
 //延时摄影
 @property(nonatomic,assign,readwrite) CGFloat delayShootTime;
 
