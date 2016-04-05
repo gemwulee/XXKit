@@ -14,7 +14,7 @@
 -(instancetype)init
 {
     if(self = [super init]){
-//        [self addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
 //        [self verticalImageAndTitle:SPACING];
     }
     return self;
@@ -23,15 +23,15 @@
 -(instancetype)initWithFrame:(CGRect)frame
 {
     if(self = [super initWithFrame:frame]){
-//        [self addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
 //        [self verticalImageAndTitle:SPACING];
     }
     return self;
 }
 
-//- (void)buttonClick:(UIButton *)button {
-//    self.selected = !self.selected;
-//}
+- (void)buttonClick:(UIButton *)button {
+    self.selected = !self.selected;
+}
 
 - (void)setStateIconNormal:(NSString*) imageNormal iconSelected:(NSString*) selectImage
                       text:(NSString*) text

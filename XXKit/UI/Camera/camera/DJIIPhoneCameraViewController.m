@@ -45,6 +45,7 @@
         self.cameraModel = model;
         [self initAVCapture];
         [self setUpGesture];
+        self.view.backgroundColor = [UIColor blackColor];
     }
     return self;
 }

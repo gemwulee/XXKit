@@ -1,19 +1,14 @@
 //
-//  OSMOLeftFirstMenuPlaceView.m
+//  OSMOLeftSecondMenuPlaceView.m
 //  Phantom3
 //
 //  Created by tomxiang on 3/31/16.
 //  Copyright © 2016 DJIDevelopers.com. All rights reserved.
 //
 
-#import "OSMOLeftFirstMenuPlaceView.h"
+#import "OSMOLeftSecondMenuPlaceView.h"
 
-@implementation OSMOLeftFirstMenuPlaceView
-
--(void) initViews
-{
-
-}
+@implementation OSMOLeftSecondMenuPlaceView
 
 -(void) reloadSkins
 {
@@ -31,5 +26,10 @@
     for (UIView *subView in self.subviews) {
         [subView removeFromSuperview];
     }
+}
+
+-(void) initViews
+{
+    
 }
 @end

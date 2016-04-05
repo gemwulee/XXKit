@@ -60,17 +60,17 @@
 -(void) layoutLandscape
 {
     _videoNormalButton.frame     = CGRectMake(0, 0, self.width, OSMOCapturePhotoModeView_HEIGHT);
-    _videoHDButton.frame    = CGRectMake(0, _videoNormalButton.bottom, self.width, OSMOCapturePhotoModeView_HEIGHT);
-    _videoSlowButton.frame   = CGRectMake(0, _videoHDButton.bottom, self.width, OSMOCapturePhotoModeView_HEIGHT);
-    _videoDelayButton.frame   = CGRectMake(0, _videoSlowButton.bottom, self.width, OSMOCapturePhotoModeView_HEIGHT);
+    _videoHDButton.frame         = CGRectMake(0, _videoNormalButton.bottom, self.width, OSMOCapturePhotoModeView_HEIGHT);
+    _videoSlowButton.frame       = CGRectMake(0, _videoHDButton.bottom, self.width, OSMOCapturePhotoModeView_HEIGHT);
+    _videoDelayButton.frame      = CGRectMake(0, _videoSlowButton.bottom, self.width, OSMOCapturePhotoModeView_HEIGHT);
 }
 
 -(void) layoutPortrait
 {
     _videoNormalButton.frame     = CGRectMake(0, 0, OSMOCapturePhotoModeView_WIDTH, self.height);
-    _videoHDButton.frame    = CGRectMake(_videoNormalButton.right,   0, OSMOCapturePhotoModeView_WIDTH, self.height);
-    _videoSlowButton.frame   = CGRectMake(_videoHDButton.right,  0, OSMOCapturePhotoModeView_WIDTH, self.height);
-    _videoDelayButton.frame   = CGRectMake(_videoSlowButton.right, 0, OSMOCapturePhotoModeView_WIDTH, self.height);
+    _videoHDButton.frame         = CGRectMake(_videoNormalButton.right, 0, OSMOCapturePhotoModeView_WIDTH, self.height);
+    _videoSlowButton.frame       = CGRectMake(_videoHDButton.right, 0, OSMOCapturePhotoModeView_WIDTH, self.height);
+    _videoDelayButton.frame      = CGRectMake(_videoSlowButton.right, 0, OSMOCapturePhotoModeView_WIDTH, self.height);
 }
 
 //根据mode刷状态

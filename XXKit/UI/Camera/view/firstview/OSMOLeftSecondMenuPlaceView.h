@@ -11,4 +11,6 @@
 
 @interface OSMOLeftSecondMenuPlaceView : OSMOView
 
+-(void) removeSubViews;
+
 @end

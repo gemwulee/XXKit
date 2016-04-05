@@ -17,6 +17,8 @@
 #import "OSMOCapturePhotoModeView.h"
 #import "OSMOLeftFirstMenuPlaceView.h"
 #import "OSMOCaptureVideoModeView.h"
+#import "OSMOLeftSecondMenuPlaceView.h"
+#import "OSMOCaptureModeSelectView.h"
 
 @interface OSMOEventAction()
 
@@ -86,9 +88,7 @@
             [self.rootVC.toolVC.leftFirstMenuPlaceView addSubview:videoView];
         }
     }else{
-        for (UIView *view in self.rootVC.toolVC.leftFirstMenuPlaceView.subviews) {
-            [view removeFromSuperview];
-        }
+        [self.rootVC.toolVC.leftFirstMenuPlaceView removeSubViews];
     }
 }
 
@@ -98,28 +98,46 @@
 }
 
 #pragma mark- capture left first photo
+-(void) showSecondView:(id) sender
+{
+    UIButton *button = (UIButton*) sender;
+    
+    if (button.selected) {
+        OSMOCaptureModeSelectView *modeVC = [[OSMOCaptureModeSelectView alloc] initWithFrame:self.rootVC.toolVC.leftSecondMenuPlaceView.bounds withModel:_cameraModel camera:self];
+        [self.rootVC.toolVC.leftSecondMenuPlaceView addSubview:modeVC];
+    }else{
+        [self.rootVC.toolVC.leftSecondMenuPlaceView removeSubViews];
+    }
+}
 - (void)actionClick_SingleButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoSingleMode;
+    [self showSecondView:sender];
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
 - (void)actionClick_MultipleButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoContinuousMode;
+    [self showSecondView:sender];
+
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
 - (void)actionClick_PanoButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoPanoMode;
+    [self showSecondView:sender];
+
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
 - (void)actionClick_IntervalButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoIntervalMode;
+    [self showSecondView:sender];
+
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
 

@@ -65,7 +65,6 @@
         [self layoutPortrait];
     }
     [self setNewStatus];
-
 }
 //根据mode刷状态
 -(void) setNewStatus

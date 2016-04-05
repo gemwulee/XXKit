@@ -70,9 +70,6 @@
         _toolWindow   = [[OSMOToolWindow alloc] initWithFrame:[UIScreen mainScreen].bounds toolViewController:_toolVC];
     }
     [_toolWindow showOSMOToolVC];
-    
-    [[XXFPSEngine sharedInstance] startMonistor];
-
 }
 
 #pragma mark- 横竖屏
