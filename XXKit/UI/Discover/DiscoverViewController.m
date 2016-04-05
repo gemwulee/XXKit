@@ -13,7 +13,6 @@
 #import "OSMOIPhoneViewController.h"
 #import "DJIIPhoneCameraViewController.h"
 #import "OSMOMenuController.h"
-#import "OSMONavMenuController.h"
 
 @implementation DiscoverViewController
 
@@ -31,7 +30,7 @@
     else{
         OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
 
-        OSMONavMenuController *osmoNav = [[OSMONavMenuController alloc] initWithRootViewController:menuVC];
+        UINavigationController *osmoNav = [[UINavigationController alloc] initWithRootViewController:menuVC];
         
         [self.navigationController presentViewController:osmoNav animated:YES completion:^{}];
 

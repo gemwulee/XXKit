@@ -64,7 +64,20 @@
     }else{
         [self layoutPortrait];
     }
+    [self setNewStatus];
+
 }
+//根据mode刷状态
+-(void) setNewStatus
+{
+    
+}
+//恢复默认态
+-(void) setDefaultStatus
+{
+    assert(0);
+}
+
 
 -(void) layoutLandscape
 {

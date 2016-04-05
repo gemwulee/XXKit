@@ -48,7 +48,7 @@
 
 -(void) initNotification
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)    name:UIDeviceOrientationDidChangeNotification  object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:)    name:UIDeviceOrientationDidChangeNotification  object:nil];
 }
 
 -(void) initViews
@@ -61,7 +61,8 @@
     _leftSecondMenuPlaceView = [[OSMOLeftSecondMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _rightFirstMenuPlaceView = [[OSMORightFirstMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     
-    _leftFirstMenuPlaceView.backgroundColor = [UIColor redColor];
+    _leftFirstMenuPlaceView.backgroundColor = [UIColor blackColor];
+    
     _leftSecondMenuPlaceView.backgroundColor = [UIColor blueColor];
     _rightFirstMenuPlaceView.backgroundColor = [UIColor grayColor];
     
@@ -87,7 +88,7 @@
     return YES;
 }
 
--(void)viewDidLayoutSubviews{
+-(void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
     [self refreshViewFrame];
 }
@@ -97,40 +98,41 @@
 -(void) refreshViewFrame
 {
     if ([UIDevice isLandscape]) {
-        [self.captureToolPlaceView setFrame:CGRectMake(0, 0, paramSettingWidth, MAIN_SCREEN_HEIGHT)];
-        [self.rightSettingPlaceView setFrame:CGRectMake(MAIN_SCREEN_WIDTH-rightBarWidth, 0, rightBarWidth,MAIN_SCREEN_HEIGHT )];
+        [_captureToolPlaceView setFrame:CGRectMake(0, 0, paramSettingWidth, MAIN_SCREEN_HEIGHT)];
+        [_rightSettingPlaceView setFrame:CGRectMake(MAIN_SCREEN_WIDTH-rightBarWidth, 0, rightBarWidth,MAIN_SCREEN_HEIGHT )];
         
-        [self.leftFirstMenuPlaceView setFrame:CGRectMake(self.captureToolPlaceView.width+6, 0, self.captureToolPlaceView.width, MAIN_SCREEN_HEIGHT)];
-        [self.leftSecondMenuPlaceView setFrame:CGRectMake(self.leftFirstMenuPlaceView.x + self.leftFirstMenuPlaceView.width,0,self.captureToolPlaceView.width, MAIN_SCREEN_HEIGHT)];
-        [self.rightFirstMenuPlaceView setFrame:CGRectMake(_rightSettingPlaceView.x - 200,(MAIN_SCREEN_HEIGHT-timelapseHeight)/2,200,timelapseHeight)];
+        [_leftFirstMenuPlaceView setFrame:CGRectMake(self.captureToolPlaceView.width+6, 0, self.captureToolPlaceView.width, MAIN_SCREEN_HEIGHT)];
+        [_leftSecondMenuPlaceView setFrame:CGRectMake(self.leftFirstMenuPlaceView.x + self.leftFirstMenuPlaceView.width,0,self.captureToolPlaceView.width, MAIN_SCREEN_HEIGHT)];
+        [_rightFirstMenuPlaceView setFrame:CGRectMake(_rightSettingPlaceView.x - 200,(MAIN_SCREEN_HEIGHT-timelapseHeight)/2,200,timelapseHeight)];
     }else{
         
         [_captureToolPlaceView setFrame:CGRectMake(0, MAIN_SCREEN_HEIGHT - paramSettingWidth, MAIN_SCREEN_WIDTH, paramSettingWidth)];
         [_rightSettingPlaceView setFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, rightBarWidth)];
         
-        [self.leftFirstMenuPlaceView setFrame:CGRectMake(0, self.captureToolPlaceView.y-6-self.captureToolPlaceView.height, self.captureToolPlaceView.width, self.captureToolPlaceView.height)];
-        [self.leftSecondMenuPlaceView setFrame:CGRectMake(0, self.leftFirstMenuPlaceView.y-self.leftFirstMenuPlaceView.height, self.leftFirstMenuPlaceView.width, self.leftFirstMenuPlaceView.height)];
-        [self.rightFirstMenuPlaceView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, self.rightSettingPlaceView.height, timelapseHeight, 200) ];
+        [_leftFirstMenuPlaceView setFrame:CGRectMake(0, self.captureToolPlaceView.y-6-self.captureToolPlaceView.height, self.captureToolPlaceView.width, self.captureToolPlaceView.height)];
+        [_leftSecondMenuPlaceView setFrame:CGRectMake(0, self.leftFirstMenuPlaceView.y-self.leftFirstMenuPlaceView.height, self.leftFirstMenuPlaceView.width, self.leftFirstMenuPlaceView.height)];
+        [_rightFirstMenuPlaceView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, self.rightSettingPlaceView.height, timelapseHeight, 200) ];
         
     }
     
+    [_captureToolPlaceView reloadSkins];
+    [_rightSettingPlaceView reloadSkins];
+
     [_rightFirstMenuPlaceView reloadSkins];
     [_leftFirstMenuPlaceView reloadSkins];
     [_leftSecondMenuPlaceView reloadSkins];
     
-    [_captureToolPlaceView reloadSkins];
-    [_rightSettingPlaceView reloadSkins];
 }
 
-- (void)orientationChanged:(NSNotification *)notification{
-    
-    [_rightFirstMenuPlaceView reloadSkins];
-    [_leftFirstMenuPlaceView reloadSkins];
-    [_leftSecondMenuPlaceView reloadSkins];
-    
-    [_captureToolPlaceView reloadSkins];
-    [_rightSettingPlaceView reloadSkins];
-}
+//- (void)orientationChanged:(NSNotification *)notification{
+//    
+//    [_rightFirstMenuPlaceView reloadSkins];
+//    [_leftFirstMenuPlaceView reloadSkins];
+//    [_leftSecondMenuPlaceView reloadSkins];
+//    
+//    [_captureToolPlaceView reloadSkins];
+//    [_rightSettingPlaceView reloadSkins];
+//}
 
 
 

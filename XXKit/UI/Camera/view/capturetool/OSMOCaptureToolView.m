@@ -82,12 +82,7 @@
 
 -(void) layoutPortrait
 {
-    _swtichView.origin         = CGPointMake((self.width - OSMO_ICON_HEIGHT*5)/2,0
-                                             
-                                             
-                                             
-                                             );
-    
+    _swtichView.origin         = CGPointMake((self.width - OSMO_ICON_HEIGHT*5)/2,0);
     _modeView.origin           = CGPointMake(_swtichView.right, 0);
     _photoVideoButton.origin   = CGPointMake(_modeView.right, 0);
     _playBackButton.origin     = CGPointMake(_photoVideoButton.right, 0);
@@ -95,6 +90,10 @@
     
 }
 
+-(void) setDefaultStatus
+{
+    [_modeView setDefaultStatus];
+}
 
 @end
 

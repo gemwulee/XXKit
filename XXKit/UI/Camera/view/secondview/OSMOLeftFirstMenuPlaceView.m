@@ -16,6 +16,19 @@
 
 -(void) reloadSkins
 {
+    for (OSMOView *subView in self.subviews) {
+        if([subView isKindOfClass:[OSMOView class]])
+        {
+            subView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+            [subView reloadSkins];
+        }
+    }
 }
 
+-(void) removeSubViews
+{
+    for (UIView *subView in self.subviews) {
+        [subView removeFromSuperview];
+    }
+}
 @end

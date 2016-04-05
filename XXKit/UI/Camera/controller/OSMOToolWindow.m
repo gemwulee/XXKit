@@ -20,7 +20,7 @@
 {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor clearColor];
-        [self setWindowLevel:UIWindowLevelAlert + 10000000];
+        [self setWindowLevel:UIWindowLevelAlert];
         self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
         
         self.rootViewController = toolViewcontroller;

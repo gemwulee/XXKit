@@ -44,4 +44,9 @@
 -(void) layoutLandscape;
 -(void) layoutPortrait;
 
+//根据mode刷状态
+-(void) setNewStatus;
+
+//恢复默认态
+-(void) setDefaultStatus;
 @end

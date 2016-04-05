@@ -13,9 +13,10 @@
 #import "OSMOMenuController.h"
 #import "OSMORightFirstMenuPlaceView.h"
 #import "Masonry.h"
-#import "OSMONavMenuController.h"
 #import "OSMOToolViewController.h"
-
+#import "OSMOCapturePhotoModeView.h"
+#import "OSMOLeftFirstMenuPlaceView.h"
+#import "OSMOCaptureVideoModeView.h"
 
 @interface OSMOEventAction()
 
@@ -68,6 +69,29 @@
     }
 }
 
+-(void) actionClick_CaptureButton_OSMOModeView:(id) sender
+{
+    UIButton *button = (UIButton*) sender;
+    
+    if (button.selected) {
+        
+        if(self.cameraModel.captureMode == DJIIPhone_PhotoModel){
+            OSMOCapturePhotoModeView *photoView = [[OSMOCapturePhotoModeView alloc] initWithFrame:self.rootVC.toolVC.leftFirstMenuPlaceView.bounds withModel:_cameraModel camera:self];
+            [self.rootVC.toolVC.leftFirstMenuPlaceView addSubview:photoView];
+            
+            
+        }else if(self.cameraModel.captureMode == DJIIPhone_VideoModel){
+            
+            OSMOCaptureVideoModeView *videoView = [[OSMOCaptureVideoModeView alloc] initWithFrame:self.rootVC.toolVC.leftFirstMenuPlaceView.bounds withModel:_cameraModel camera:self];
+            [self.rootVC.toolVC.leftFirstMenuPlaceView addSubview:videoView];
+        }
+    }else{
+        for (UIView *view in self.rootVC.toolVC.leftFirstMenuPlaceView.subviews) {
+            [view removeFromSuperview];
+        }
+    }
+}
+
 -(void) actionClick_PlayBackButton_OSMOPlayBackView
 {
     NSLog(@"actionClick_PlayBackButton_OSMOPlayBackView");
@@ -86,7 +110,7 @@
     
     if (button.selected) {
         OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
-        OSMONavMenuController *osmoNav = [[OSMONavMenuController alloc] initWithRootViewController:menuVC];
+        UINavigationController *osmoNav = [[UINavigationController alloc] initWithRootViewController:menuVC];
         
         [self.rootVC.toolVC addChildViewController:osmoNav];
         [self.rootVC.toolVC.rightFirstMenuPlaceView addSubview:osmoNav.view];

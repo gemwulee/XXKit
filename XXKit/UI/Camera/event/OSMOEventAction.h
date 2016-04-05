@@ -18,8 +18,11 @@
 
 
 #pragma mark- capture tool
+
 - (void)actionClick_PhotoButton_OSMOPhotoVideoView;
 - (void)actionClick_VideoButton_OSMOPhotoVideoView;
+
+-(void) actionClick_CaptureButton_OSMOModeView:(id) sender;
 
 - (void)actionClick_PlayBackButton_OSMOPlayBackView;
 

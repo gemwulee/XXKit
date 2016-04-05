@@ -105,6 +105,10 @@
     if ([keyPath isEqualToString:@"model.captureMode"] || [keyPath isEqualToString:@"model.videoState"]) {
         if(_toolVC.captureToolPlaceView){
             [_toolVC.captureToolPlaceView reloadSkins];
+            
+            [_toolVC.leftFirstMenuPlaceView removeSubViews];
+            [_toolVC.captureToolPlaceView setDefaultStatus];
+            
             [_cameraVC reloadSkins];
         }
     }
