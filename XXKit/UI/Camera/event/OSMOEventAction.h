@@ -21,19 +21,27 @@
 
 - (void)actionClick_PhotoButton_OSMOPhotoVideoView;
 - (void)actionClick_VideoButton_OSMOPhotoVideoView;
-
 -(void) actionClick_CaptureButton_OSMOModeView:(id) sender;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+
+#pragma mark- capture left first
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
 
 - (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+- (void)actionClick_PlayBackButton_OSMOPlayBackView;
+
+
 
 
 #pragma mark- right tool
 - (void)actionClick_HomeButton_OSMORightSettingView:(id) sender;
-
 - (void)actionClick_CameraButton_OSMORightSettingView:(id) sender;
-
 - (void)actionClick_GimbalButton_OSMORightSettingView:(id) sender;
-
 - (void)actionClick_SettingButton_OSMORightSettingView:(id) sender;
 
 @end

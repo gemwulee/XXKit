@@ -9,7 +9,7 @@
 #import "OSMOView.h"
 
 #define OSMOCapturePhotoModeView_WIDTH (70.f)
-#define OSMOCapturePhotoModeView_HEIGHT (70.f)
+#define OSMOCapturePhotoModeView_HEIGHT (80.f)
 
 
 @interface OSMOCapturePhotoModeView : OSMOView
