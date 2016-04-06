@@ -34,7 +34,7 @@
     [_videoNormalButton addTarget:self.cameraAction action:@selector(actionClick_VideoNormalButton_VideoModeView:) forControlEvents:UIControlEventTouchUpInside];
     
     _videoHDButton =[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];
-    [_videoHDButton setStateIconNormal:@"handleMultipleOff" iconSelected:@"handleMultipleOn" text:NSLocalizedString(@"handleMultiple",nil) textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
+    [_videoHDButton setStateIconNormal:@"handle_mode_video_4K_off" iconSelected:@"handle_mode_video_4K_on" text:NSLocalizedString(@"handleMultiple",nil) textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
     [_videoHDButton addTarget:self.cameraAction action:@selector(actionClick_VideoHDButton_VideoModeView:) forControlEvents:UIControlEventTouchUpInside];
     
     _videoSlowButton=[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];

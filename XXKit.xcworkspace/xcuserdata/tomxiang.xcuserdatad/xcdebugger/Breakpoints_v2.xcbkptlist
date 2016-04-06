@@ -227,13 +227,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/controller/OSMOToolViewController.m"
-            timestampString = "481606381.457085"
+            filePath = "XXKit/UI/Camera/controller/OSMOToolWindow.m"
+            timestampString = "481620751.533085"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-refreshViewFrame"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-hideOSMOToolVC"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
