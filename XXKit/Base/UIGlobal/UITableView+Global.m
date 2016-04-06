@@ -20,7 +20,7 @@
     tableView.backgroundView = nil;
     tableView.delegate = delegate;
     tableView.dataSource = dataSource;
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     [tableView setCurrentThemeSeparatorColor];
     
     return tableView;
@@ -33,7 +33,7 @@
     tableView.backgroundView = nil;
     tableView.delegate = delegate;
     tableView.dataSource = dataSource;
-    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     [tableView setCurrentThemeSeparatorColor];
     [tableView removeExtraSeparatorLine];
     

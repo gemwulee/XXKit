@@ -75,6 +75,7 @@
 		9A3CFA731CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CFA711CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist */; };
 		9A3CFA761CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CFA751CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m */; };
 		9A3CFA7A1CB50E5F00840AE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CFA7C1CB50E5F00840AE8 /* Localizable.strings */; };
+		9A3CFA851CB5464300840AE8 /* OSMOSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CFA841CB5464300840AE8 /* OSMOSwitch.m */; };
 		9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */; };
 		9A5FCE5F1CAD193F00C7C756 /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5D1CAD193F00C7C756 /* libuikit.a */; };
 		9A5FCE601CAD193F00C7C756 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5E1CAD193F00C7C756 /* libutility.a */; };
@@ -249,6 +250,8 @@
 		9A3CFA801CB50EAC00840AE8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		9A3CFA811CB50EAC00840AE8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		9A3CFA821CB50EAC00840AE8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9A3CFA831CB5464300840AE8 /* OSMOSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOSwitch.h; sourceTree = "<group>"; };
+		9A3CFA841CB5464300840AE8 /* OSMOSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOSwitch.m; sourceTree = "<group>"; };
 		9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9A5FCE5D1CAD193F00C7C756 /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9A5FCE5E1CAD193F00C7C756 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
@@ -656,6 +659,8 @@
 				9A36D2041CB355F400E8E8EC /* OSMOStateButton.m */,
 				9A36D2511CB39D4B00E8E8EC /* OSMOImageLabelButton.h */,
 				9A36D2521CB39D4B00E8E8EC /* OSMOImageLabelButton.m */,
+				9A3CFA831CB5464300840AE8 /* OSMOSwitch.h */,
+				9A3CFA841CB5464300840AE8 /* OSMOSwitch.m */,
 			);
 			path = publiccameraui;
 			sourceTree = "<group>";
@@ -1314,6 +1319,7 @@
 				9A8834281C8ACE3400747277 /* XXThemeConfig.m in Sources */,
 				9A36D2231CB355F400E8E8EC /* DJIIPhoneCameraModel.m in Sources */,
 				9A36D2261CB355F400E8E8EC /* OSMOToolViewController.m in Sources */,
+				9A3CFA851CB5464300840AE8 /* OSMOSwitch.m in Sources */,
 				9A88340D1C8AACCB00747277 /* XXTabBarItem.m in Sources */,
 				9A88340F1C8AACCB00747277 /* XXViewController.m in Sources */,
 				9A36D2841CB3EC3800E8E8EC /* OSMOTableObject.m in Sources */,

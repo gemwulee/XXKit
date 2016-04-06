@@ -53,8 +53,8 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DfF-RS-Lrn">
-                        <rect key="frame" x="328" y="8" width="51" height="31"/>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DfF-RS-Lrn" customClass="OSMOSwitch">
+                        <rect key="frame" x="338" y="8" width="51" height="31"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="31" id="GcR-bz-9ax"/>
                             <constraint firstAttribute="width" constant="49" id="HDG-gJ-2TH"/>
@@ -66,7 +66,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="sfy-mv-ZXr" firstAttribute="centerY" secondItem="LCm-lH-zaf" secondAttribute="centerY" id="2Ed-uH-Yhw"/>
-                    <constraint firstItem="sfy-mv-ZXr" firstAttribute="leading" secondItem="DfF-RS-Lrn" secondAttribute="trailing" constant="10" id="MKa-39-8jG"/>
+                    <constraint firstItem="sfy-mv-ZXr" firstAttribute="leading" secondItem="DfF-RS-Lrn" secondAttribute="trailing" id="MKa-39-8jG"/>
                     <constraint firstAttribute="trailing" secondItem="sfy-mv-ZXr" secondAttribute="trailing" constant="5" id="ObG-J9-ldu"/>
                     <constraint firstItem="sfy-mv-ZXr" firstAttribute="leading" secondItem="tie-ri-jqm" secondAttribute="trailing" constant="10" id="Ogo-wZ-cZ0"/>
                     <constraint firstItem="sfy-mv-ZXr" firstAttribute="leading" secondItem="eO7-iV-mLW" secondAttribute="trailing" constant="10" id="PeA-gN-S78"/>

@@ -9,12 +9,13 @@
 #import "OSMOMenuCellBase.h"
 #import "XXBase.h"
 #import "OSMOTableObject.h"
+#import "OSMOSwitch.h"
 
 @interface OSMOMenuCellBase()
 @property (weak, nonatomic) IBOutlet UILabel *titleL;
 @property (weak, nonatomic) IBOutlet UILabel *labelR;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewR;
-@property (weak, nonatomic) IBOutlet UISwitch *swtichR;
+@property (weak, nonatomic) IBOutlet OSMOSwitch *swtichR;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewIndicator;
 @end
 
