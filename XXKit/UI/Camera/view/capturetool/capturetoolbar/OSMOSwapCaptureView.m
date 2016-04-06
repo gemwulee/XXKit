@@ -31,8 +31,8 @@
     _buttonSwap.userInteractionEnabled = YES;
 
     [_buttonSwap addTarget:self action:@selector(swapFrontAndBackCameras) forControlEvents:UIControlEventTouchUpInside];
-    [_buttonSwap setImage:[UIImage imageNamed:@"captureTool_pasm_pmode_off"] forState:UIControlStateNormal];
-//    [_buttonSwap setImage:[UIImage imageNamed:@"captureTool_pasm_pmode_on"] forState:UIControlStateSelected];
+    [_buttonSwap setImage:[UIImage imageNamed:@"captureTool_switch_off"] forState:UIControlStateNormal];
+    [_buttonSwap setImage:[UIImage imageNamed:@"captureTool_switch_on"] forState:UIControlStateHighlighted];
 
     [self reloadSkins];
 }

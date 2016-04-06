@@ -19,6 +19,8 @@
 @property(assign, nonatomic)  BOOL swtichR;             //是否有switch
 @property(assign, nonatomic)  BOOL showRightSideImage;  //右边箭头图或加号图
 
+@property(copy, nonatomic)  NSString *childTablePlistKey; //child的plist
+
 - (instancetype) initWithDic:(NSDictionary*) dic;
 
 @end

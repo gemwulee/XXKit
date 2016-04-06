@@ -1,0 +1,7403 @@
+/*   */
+"1080P 120"="1080P SLO";
+
+"1920x1080  120fps"="1920x1080  SLO";
+
+"4kNotSupportDigitalZoom"="4K分辨率不支持數碼變焦";
+
+"A3_unactivation_tips"="A3未激活, 請連接PC調參軟件DJI Assistant 2進行激活, 調試。";
+
+"ABOUT"="關於";
+
+"AFAssistFocus"="AF輔助對焦";
+
+"AIR368"="空中編碼器";
+
+"AIROFDM"="空中無線";
+
+"About"="關於";
+
+/* TODO TRANSLATE */
+"About_MC_SN"="飛控序列號";
+
+"About_contact"="聯繫";
+
+"About_email"="郵箱";
+
+"About_phone"="電話";
+
+"About_version"="版本";
+
+"About_website"="網站";
+
+"Altitude exception"="高度漂移";
+
+"Angular velocity Inconsistent"="角速度不一致";
+
+"Anti-Flicker"="抗閃爍";
+
+"App"="App";
+
+"AssistFocus"="輔助對焦";
+
+"Attitude Inconsistent"="姿態不一致";
+
+"Attitude exception"="姿態異常";
+
+"AutoCalibrationGimbal"="雲台正在校準，請稍候...";
+
+"AutoCalibrationGimbalFailed"="雲台校準失敗。";
+
+"AutoCalibrationGimbalSuccess"="雲台校準完畢。";
+
+"AutoISOMax"="自動ISO最大值";
+
+"BATTERY"="電池";
+
+"Bias large"="零偏過大";
+
+"CAMERA"="相機";
+
+"CB"="中心板";
+
+"CacheMapView"="後台緩存地圖";
+
+"CalibrateCoordinate"="坐標糾正(中國大陸地區使用)";
+
+"Calibrating"="正在校準";
+
+"Calibration Version Undated"="校準版本已更新";
+
+"Calibration failed"="校準異常";
+
+"CameraGrid_intro"="網格";
+
+"Camera_AntiFlicker_intro"="抗閃爍";
+
+"Camera_Continuous_intro"="拍照模式";
+
+"Camera_Contrast_intro"="對比度";
+
+"Camera_DigitalFilter_intro"="色彩";
+
+"Camera_ExposureCompensation_intro"="曝光補償";
+
+"Camera_ExposureMode_value_A_intro"="光圈優先曝光";
+
+"Camera_ExposureMode_value_M_intro"="手動曝光";
+
+"Camera_ExposureMode_value_P_intro"="自動曝光";
+
+"Camera_ExposureMode_value_S_intro"="快門優先曝光";
+
+"Camera_FileIndexMode"="文件序號模式";
+
+"Camera_ISO_intro"="感光度";
+
+"Camera_ImageFormat_intro"="照片格式";
+
+"Camera_ImageQuality_intro"="照片質量";
+
+"Camera_ImageSize_intro"="照片尺寸";
+
+"Camera_Metering_intro"="測光模式";
+
+"Camera_NTSCPAL_intro"="NTSC/PAL";
+
+"Camera_PictureStyle_intro"="風格";
+
+"Camera_QuickView_intro"="快速預覽";
+
+"Camera_Saturation_intro"="飽和度";
+
+"Camera_SceneMode_intro"="特定場景曝光";
+
+"Camera_Sharpe_intro"="銳度";
+
+"Camera_ShutterSpeed_intro"="快門模式";
+
+"Camera_Tonal_intro"="色調";
+
+"Camera_VideoFormat_intro"="視頻尺寸";
+
+"Camera_VideoQuality_intro"="視頻質量";
+
+"Camera_VideoStoreFormat_intro"="視頻格式";
+
+"Camera_WhiteBalance_intro"="白平衡";
+
+"Cancel"="取消";
+
+"CannotFormat_busy"="相機正忙，無法格式化";
+"Cannot_set_format_error_busy"="相機正忙";
+
+"Celsius"="攝氏度";
+
+"Check IMU"="檢查 IMU";
+
+"ClearAirLine"="清除航線";
+
+"ClearLineButton_title"="清除參考線";
+
+"Communication exception"="通信異常";
+
+"Compass"="指南針";
+
+"ConfirmClearAirLine"="確認要清除航線";
+
+"ConfirmFormat"="確認要格式化SD卡？";
+
+"ConfirmResetCamera"="重置相機參數後相機需要重啟，請確認";
+
+/* Bias较大 */
+"DJIAccState_BiasBig"="零偏大";
+
+/* Bias正好 */
+"DJIAccState_BiasNormal"="零偏正常";
+
+/* Bias较小 */
+"DJIAccState_BiasSmall"="零偏小";
+
+"DJIAccState_Calibration"="校準中";
+
+"DJIAccState_CalibrationFail"="校準失敗";
+
+"DJIAccState_DataException"="數據異常";
+
+"DJIAccState_Disconnect"="未連接";
+
+/* 不静止 */
+"DJIAccState_Motion"="非靜止";
+
+"DJIAccState_None"="未知";
+
+/* 预热中 */
+"DJIAccState_WarmUp"="預熱中";
+
+"DJIAircraftBatteryView_Breakdown"="損壞";
+
+"DJIAircraftBatteryView_Cell"="電芯";
+
+"DJIAircraftBatteryView_ChargingTimes"="循環次數";
+
+"DJIAircraftBatteryView_CurrentInfo"="當前信息";
+
+"DJIAircraftBatteryView_CurrentRecord"="當前狀態";
+
+"DJIAircraftBatteryView_Day"="天";
+
+"DJIAircraftBatteryView_Days"="天";
+
+"DJIAircraftBatteryView_DischargeHappen"="發生存儲自放電";
+
+"DJIAircraftBatteryView_DischargeWarning"="電池放電保護";
+
+"DJIAircraftBatteryView_FirstLowtemperature"="一級低溫警報";
+
+"DJIAircraftBatteryView_FirstOvercurrent"="一級過流警告";
+
+"DJIAircraftBatteryView_FirstOvertemperature"="一級過溫警報";
+
+"DJIAircraftBatteryView_HistoryInfo"="歷史信息";
+
+"DJIAircraftBatteryView_HistoryInfoTitle"="電池歷史記錄信息";
+
+"DJIAircraftBatteryView_Info"="信息";
+
+"DJIAircraftBatteryView_Landing"="降落";
+
+"DJIAircraftBatteryView_LessBattery"="插入電池太少";
+
+"DJIAircraftBatteryView_Lowtemperature"="放電低溫";
+
+"DJIAircraftBatteryView_Normal"="正常";
+
+"DJIAircraftBatteryView_Overcurrent"="放電過流";
+
+"DJIAircraftBatteryView_Overtemperature"="放電過溫";
+
+"DJIAircraftBatteryView_ProductDate"="生產日期";
+
+"DJIAircraftBatteryView_Record"="記錄";
+
+"DJIAircraftBatteryView_ReplaceCell"="電芯更換";
+
+"DJIAircraftBatteryView_Replaced"="更換過";
+
+"DJIAircraftBatteryView_Reset"="電池異常複位";
+
+"DJIAircraftBatteryView_SN"="電池SN: %@";
+
+"DJIAircraftBatteryView_SecondOvercurrent"="二級過流警報";
+
+"DJIAircraftBatteryView_SecondOvertemperature"="二級過溫警報";
+
+"DJIAircraftBatteryView_SelfDischarge"="開始自放電時間";
+
+"DJIAircraftBatteryView_SeriousNumber"="序列號";
+
+"DJIAircraftBatteryView_Shortcut"="放電短路";
+
+"DJIAircraftBatteryView_Temperature"="溫度";
+
+"DJIAircraftBatteryView_Undervoltage"="電池低壓保護";
+
+"DJIAircraftBatteryView_WarningButton"="歷史記錄";
+
+"DJIAircraftBatteryView_batteryLife"="電池壽命";
+
+"DJIAircraftBatteryView_batteryVoltage"="電壓";
+
+"DJIAircraftBatteryView_brokenCell"="電芯損壞";
+
+"DJIAircraftBatteryView_connectException"="通訊異常";
+
+"DJIAircraftBatteryView_connectNormal"="連接正常";
+
+"DJIAircraftBatteryView_current"="當前";
+
+"DJIAircraftBatteryView_currentBattery"="當前電量";
+
+"DJIAircraftBatteryView_diffVoltage"="電芯損壞";
+
+"DJIAircraftBatteryView_errorInfo"="錯誤信息";
+
+"DJIAircraftBatteryView_flightTime"="飛行時間";
+
+"DJIAircraftBatteryView_fullBattery"="電池容量";
+
+"DJIAircraftBatteryView_goHome"="返航";
+
+"DJIAircraftBatteryView_hasDiffFireware"="固件不一致";
+
+"DJIAircraftBatteryView_hasSmallVoltages"="電芯欠壓";
+
+"DJIAircraftBatteryView_invalidBattery"="無效電池";
+
+"DJIAircraftBatteryView_lowBatteryWarning"="低電量警報";
+
+"DJIAircraftBatteryView_seriousLowBatteryWarning"="嚴重低電量警報";
+
+/* DJIAircraftBatteryView */
+"DJIAircraftBatteryView_title"="智能電池設置";
+
+"DJIAricraftBatteryView_SecondLowtemperature"="二級低溫警報";
+
+"DJIBattery_first_charge_not_full"="請注意，您的智能電池從未充滿過，建議充滿電後再飛行";
+
+/* 请远离地面磁场干扰 */
+"DJICompassState_AwayInterfered"="請遠離地面磁場干擾";
+
+"DJICompassState_Calibration"="校準中";
+
+/* 校准失败 */
+"DJICompassState_CalibrationFail"="校準失敗";
+
+/* 请远离干扰源或重新校准指南针 */
+"DJICompassState_CalibrationFail_UserTips"="請遠離干擾源或重新校準指南針";
+
+/*   */
+"DJICompassState_Calibration_UserTips"=" ";
+
+/* 请检查安装方向 AK: As above */
+"DJICompassState_CheckInstallDirection"="檢查安裝方向";
+
+"DJICompassState_DataException"="數據異常";
+
+/* 重启复现请联系技术支持 */
+"DJICompassState_DataException_UserTips"="傳感器異常無法修復，請聯繫技術支持";
+
+/* 方向异常 */
+"DJICompassState_DifferDirection"="指向異常";
+
+/* 请远离磁场干扰 */
+"DJICompassState_DifferDirection_UserTips"="請遠離磁場干擾";
+
+/* 未校准 */
+"DJICompassState_DisCalibration"="未校準";
+
+/* 请校准指南针 */
+"DJICompassState_DisCalibration_UserTips"="請校準指南針";
+
+"DJICompassState_Disconnect"="未連接";
+
+"DJICompassState_Disconnect_UserTips"="請重啟飛行器";
+
+/* 异常 */
+"DJICompassState_Exception"="指南針異常";
+
+/* 严重偏离模长 */
+"DJICompassState_ModDeviate"="嚴重偏離模長";
+
+/* 请远离干扰源或重新校准指南针 */
+"DJICompassState_ModDeviate_UserTips"="請遠離干擾源或重新校準指南針";
+
+/* 超模量很小 AK:What is Supermodulus? */
+"DJICompassState_ModSmall"="超模量很小";
+
+/*   */
+"DJICompassState_ModSmall_UserTips"=" ";
+
+/* 微弱超模长 */
+"DJICompassState_ModWeak"="微弱超模長";
+
+/*   */
+"DJICompassState_ModWeak_UserTips"=" ";
+
+"DJICompassState_None"="未知";
+
+"DJICompassState_None_UserTips"="請重啟飛行器";
+
+"DJICompassState_Normal"="正常";
+
+/* 请重启飞行器 */
+"DJICompassState_Restart"="請重啟飛行器";
+
+"DJICompassState_Unkown"="未知";
+
+"DJIDevice_AirConvert"="串並轉換(天空)";
+
+"DJIDevice_AirDM368"="天空端編碼器";
+
+"DJIDevice_AirFPGA"="高清圖傳（天空端FPGA）";
+
+"DJIDevice_AirOFDM"="OFDM";
+
+/* TODO, check */
+"DJIDevice_AirWifi"="Wi-Fi";
+
+"DJIDevice_Battery"="電池";
+
+"DJIDevice_Camera"="相機";
+
+"DJIDevice_Center"="中心板";
+
+"DJIDevice_DoubleVision"="雙目";
+
+"DJIDevice_ElectricallyControll"="電調";
+
+/* todo */
+"DJIDevice_FPGA"="FPGA";
+
+"DJIDevice_Gimbal"="雲台";
+
+"DJIDevice_GroundConvert"="串並轉換(地面)";
+
+"DJIDevice_GroundDM368"="地面端編碼器";
+
+"DJIDevice_GroundFPGA"="高清圖傳（地面端FPGA）";
+
+"DJIDevice_GroundOFDM"="地面端高清圖傳";
+
+/* TODO, check */
+"DJIDevice_GroundWifi"="地面端 Wi-Fi";
+
+"DJIDevice_MC"="主控";
+
+"DJIDevice_Mobile"="手機";
+
+"DJIDevice_PC"="PC";
+
+"DJIDevice_RC"="遙控器";
+
+"DJIDevice_Simulator"="模擬器";
+
+"DJIDevice_SingleVision"="單目";
+
+"DJIDevice_Test"="測試";
+
+"DJIDevice_UpgradeErrorMessage1"=" 需要升級，當前版本:";
+
+"DJIDevice_UpgradeErrorMessage2"=" 最新版本:";
+
+"DJIDevice_Wifi"="Wifi";
+
+/* Bias较大 */
+"DJIGyroState_BiasBig"="零偏較大";
+
+/* Bias正好 */
+"DJIGyroState_BiasNormal"="零偏正常";
+
+/* Bias较小 */
+"DJIGyroState_BiasSmall"="零偏較小";
+
+/* 校准中 */
+"DJIGyroState_Calibration"="校準中";
+
+/* 校准失败 */
+"DJIGyroState_CalibrationFail"="校準失敗";
+
+/* 数据异常 */
+"DJIGyroState_DataException"="數據異常";
+
+/* 未连接 */
+"DJIGyroState_Disconnect"="未連接";
+
+/* 不静止 */
+"DJIGyroState_Motion"="非靜止";
+
+/* 未知 */
+"DJIGyroState_None"="無";
+
+/* 预热中 */
+"DJIGyroState_WarmUp"="預熱中";
+
+/* 请检查安装方向 AK: Install direction of what? */
+"DJIIMUState_CheckInstallDirection"="檢查安裝方向";
+
+/* 异常 */
+"DJIIMUState_Exception"="傳感器異常";
+
+"DJIIMUState_Normal"="正常";
+
+/* offset异常 */
+"DJIIMUState_OffsetException"="抵消異常";
+
+/* 请重启飞行器 */
+"DJIIMUState_Restart"="請重啟飛行器";
+
+"DJIIMUState_Unkown"="未知";
+
+/* 预热中 */
+"DJIIMUState_WarmingUp"="預熱中";
+
+"DJIIMUState_WormingUp"="預熱中";
+
+"DJIIMUState_WormingUp //Warming"="預熱中";
+
+"DJIWorld_TabBarItem_title"="DJI 世界";
+
+"DJIWorld_bar_title"="DJI 世界";
+
+"DJI_RCMode_Type_Chinese"="中國手";
+
+"DJI_RCMode_Type_Customize"="自定義RCMode";
+
+"DJI_RCMode_Type_Japanese"="日本手";
+
+"DJI_RCMode_Type_USA"="美國手";
+
+"Data exception"="數據異常";
+
+"Data inconsistent"="數據不一致";
+
+"Disconnect"="斷開連接";
+
+"EnableTransform"="使能強制變形";
+
+"End"="結束";
+
+"Error"="錯誤";
+
+"Exit"="退出";
+
+"Fahrenheit"="華氏度";
+
+"FileIndexMode"="文件序號模式";
+
+"FileIndexMode_continue"="連續";
+
+"FileIndexMode_continue_intro"="連續";
+
+"FileIndexMode_reset"="複位";
+
+"FileIndexMode_reset_intro"="複位";
+
+"Finished"="完成";
+
+"FlightController"="飛控";
+
+"FormatFailed"="格式化SD卡失敗";
+
+"FormatSDCard"="格式化SD卡";
+
+"FormatSDCard_alert"="確定要格式化SD卡嗎?";
+
+"FormatSDCard_intro"="格式化SD卡";
+
+/* todo */
+"FormatSSDCard_intro"="格式化固態硬盤";
+
+"FormatSSDFailed"="格式化固態硬盤失敗";
+
+"FormatSSDSuccess"="格式化固態硬盤成功";
+
+"FormatSSDTimeout"="格式化固態硬盤超時";
+
+"FormatSuccess"="格式化SD卡成功";
+
+"FormatTimeout"="格式化SD卡超時";
+
+"FullScreen"="全屏";
+
+"GIMBAL"="雲台";
+
+"GPS"="GPS";
+
+"GROUND368"="地面編碼器";
+
+"GROUNDOFDM"="地面無線";
+
+"GROUNDWIFI"="地面Wi-Fi";
+
+"Generating a pano photo"="正在生成全景圖...";
+
+"Get File Error"="獲取文件失敗";
+
+/* TODO:需要确认文桉 */
+"GetLensInfo"="獲取鏡頭信息";
+
+"GoHome_RCHomePoint_alertTitle"="你確定要設置遙控器的位置為返航點嗎？";
+
+"GoHome_aircraftHomePoint_alertTitle"="你確定要設置飛機的位置為返航點嗎?";
+
+"Graphic_Transmitter"="圖傳";
+
+"GridLine"="網格線";
+
+"GridWithDiagonal"="網格線和對角線";
+
+"Gyro bias estimation exception"="陀螺儀零偏估計異常";
+
+"Gyroscope"="陀螺儀";
+
+"HandleAutoCalibrationGimbalFailedByMove"="校準失敗，請把OSMO固定在平面上，校準時請保持OSMO靜止。";
+
+"Heading Inconsistent"="航向不一致";
+
+"Heading exception"="航向異常";
+
+"Heating"="預熱中";
+
+"Heating failed"="預熱失敗";
+
+"Height Inconsistent"="高度不一致";
+
+"HomePoint_Aircraft_content_prefix"="飛行器將設置返航點到當前位置，如果需要時，返航時飛機將會適當調整高度並以不低於 %@ 的高度返航，請留意地圖返航位置更新。";
+
+"HomePoint_Aircraft_title"="設置飛機當前位置為返航點";
+
+"HomePoint_Follow_content"="當你的位置不斷改變時，返航點將實時跟隨遙控器位置刷新，請設置返航點刷新距離範圍。";
+
+"HomePoint_Follow_title"="當移動遙控器超出以下範圍時自動設置返航點";
+
+"HomePoint_Mobile_alert"="手機GPS信號微弱，暫時獲取不到當前位置信息.";
+
+"HomePoint_Mobile_content"="飛行器將設置返航點到您當前的位置，距離原來返航點%.1f%@，請確認是否更改";
+
+"HomePoint_Mobile_title"="設置遙控器當前位置為返航點";
+
+"HomePoint_RC_alert"="遙控器GPS信號微弱，暫時獲取不到當前位置信息.";
+
+"Horizontal velocity exception"="速度異常";
+
+"IMU"="IMU";
+
+"Idle"="Idle";
+
+"Imperial"="英制";
+
+"In Initial"="初始化中";
+
+"In Initial "="初始化中";
+
+"Inch"="英尺";
+
+"Information"="提示";
+
+"Initial failed"="初始化失敗";
+
+"Invalid Data"="數據非法";
+
+"IosthermLower"="下";
+
+"IosthermMiddle"="中";
+
+"IosthermSwitcher"="Isotherm";
+
+"IosthermUnitPercentage"="百分比";
+
+"IosthermUnits"="單位";
+
+"IosthermUpper"="上";
+
+"IsothermSwitchClose"="關";
+
+"IsothermSwitchOpen"="開";
+
+"JPEG+Video"="視頻+圖片";
+
+"JVNotSupportInterval"="J+V模式下不支持1s快門間隔時間";
+
+"Kelvin"="開爾文";
+
+"LensInfo"="相機鏡頭信息";
+
+"LensInfo_intro"="相機鏡頭信息";
+
+"LimitDistance"="限遠";
+
+"LimitHeight"="限高";
+
+"LimitLow"="限低";
+
+"M"="米";
+
+"MAP"="地圖";
+
+"MC"="主控";
+
+"MFAssistFocus"="MF輔助對焦";
+
+"Metric"="公制";
+
+"More"="更多";
+
+"Motion"="運動";
+
+"Motion acceleration Inconsistent"="加速度不一致";
+
+"Motion acceleration exception"="加速度異常";
+
+"Mounting parameter exception"="安裝矩陣異常";
+
+"Navigation_gohome_altitude_alert_current_height_title"="當前高度：";
+
+/* Go home */
+"Navigation_gohome_altitude_alert_intro"="飛機電量不足時將進入智能返航，請根據環境設置合適的返航高度，保障飛機安全。";
+
+"Navigation_gohome_altitude_alert_title"="返航高度";
+
+"No Calibration Data"="無校準參數";
+
+"No offset information"="安裝位置未填寫";
+
+"No offset information???"="安裝位置未填寫";
+
+"Not Converge"="收斂中";
+
+"Not Converge???"="收斂中";
+
+"Not calibrated"="未校準";
+
+"Not calibrated at factory"="工廠未校準";
+
+"OK"="確定";
+
+"OSMO_Handle"="手柄";
+
+"OTHER"="其他";
+
+"Off"="關閉";
+
+"Offset information exception"="安裝位置異常";
+
+"Offset information exception？？？"="安裝位置異常";
+
+"PanoNotSupportDigitalZoom"="全景拍照不支持數碼變焦";
+
+"ParameterUnit"="參數單位";
+
+"ParameterUnitTemperature"="溫度單位";
+
+"Position inconsistent"="位置不一致";
+
+"QuickReview"="快速預覽";
+
+"ROITypeFull"="全屏";
+
+"ROITypeSky_33"="剔除天空區域（33%）";
+
+"ROITypeSky_50"="剔除天空區域（50%）";
+
+"Radar"="雷達";
+
+"Rate"="打分";
+
+"ReCalibrateLens"="標定鏡頭";
+
+"Ready"="就緒";
+
+"Ready to start pano"="可以開始全景拍攝";
+
+"Regular"="普通";
+
+"ResetCameraFail"="重置相機參數設置失敗";
+
+"ResetCameraSetting"="重置相機參數";
+
+"ResetCameraSetting_intro"="重置參數";
+
+"ResetCameraSuccess"="重置相機參數設置成功";
+
+"RotationRange"="旋轉範圍";
+
+"ServiceEmail_SN"="產品序列號: ";
+
+"ServiceEmail_briefDescript"="問題描述: ";
+
+"ServiceEmail_location"="地區: ";
+
+"ServiceEmail_name"="姓名: ";
+
+"ServiceEmail_title"="產品問題描述";
+
+"Service_Live800Label"="Live800";
+
+"Service_MailLabel"="郵箱";
+
+"Service_PhoneCallAlertButton1"="撥打北美服務電話";
+
+"Service_PhoneCallAlertButton2"="撥打歐洲服務電話";
+
+"Service_PhoneCallAlertButton3"="撥打中國服務電話";
+
+"Service_PhoneCallAlertTitle"="北美: Mon-Fri 9:00am - 5:00pm PST, 請撥打 +1(818)235-0789\n\n 歐洲國家: Mon-Fri 9:00am - 5:00pm 歐洲中部時間, 請撥打 +49(0)9747-9304200 \n\n 中國: 請撥打 400-700-0303 獲得現場技術支持服務";
+
+"Service_PhoneCallAlertTitleForiPhone"=" 北美: Mon-Fri 9:00am - 5:00pm PST \n歐洲國家: Mon-Fri 9:00am - 5:00pm 歐洲中部時間";
+
+"Service_TelLabel"="電話";
+
+"Service_TextLabel1"="您在使用中遇到的任何問題，都可以通過以上三種方式聯繫我們，感謝您的支持，DJI將繼續致力於提供更優質的產品和服務。";
+
+"Service_TextLabel2"="DJI產品應用技術支持中心";
+
+"Service_TitleLabel"="DJI 24x7小時服務";
+
+"Service_live800_startNewChat"="發起新對話";
+
+/* TODO */
+"Service_newSubTitle"="24x7小時在線服務，保證您的使用";
+
+/* TODO */
+"Service_newTitle"="在線客服";
+
+"ShowAirLine"="顯示航線";
+
+"ShowFocusWarningThreshold"="峰值對焦閾值";
+
+"ShowGrid"="顯示網格";
+
+"ShowOverExposedWarning"="過曝警告";
+
+"ShowOverExposedWarning_intro"="過曝警告";
+
+"ShutterNotSupportInterval"="快門間隔時間需大於快門時間";
+
+"SlowMotionNotSupportDigitalZoom"="慢動作錄像不支持數碼變焦";
+
+"SpeedCoefficient"="速度係數";
+
+"Start"="開始";
+
+"Stationary"="靜止";
+
+"Step 1"="步驟 1";
+
+"Step 2"="步驟 2";
+
+"Synchronization exception"="數據同步異常";
+
+"Temperature exception"="溫度異常";
+
+"Temperature high"="溫度過高";
+
+"Temperature low"="溫度過低";
+
+"Temperature warning"="溫度即將過高";
+
+"Tutorial"="用戶指南";
+
+"TutorialView_altitude"=" 高度  ";
+
+"TutorialView_autoGoHome"=" 自動返航  ";
+
+"TutorialView_autoGohome"=" 自動返航  ";
+
+/* FPV Tips 2 */
+"TutorialView_autoTakeOff"=" 自動起飛/降落  ";
+
+"TutorialView_batteryForLanding"=" 降落所需電量  ";
+
+"TutorialView_cameraAdvancedMode"=" 相機高級模式  ";
+
+"TutorialView_cameraExposureMode"=" 相機曝光模式  ";
+
+"TutorialView_cameraSettingString"=" 相機設置  ";
+
+"TutorialView_clearFlightRoute"=" 清除航線  ";
+
+"TutorialView_compassMode"=" 指南針模式  ";
+
+/* FPV Tips 3 */
+"TutorialView_criticalBatteryWarning"=" 嚴重低電量警報  ";
+
+"TutorialView_currentLocation"=" 您當前位置  ";
+
+"TutorialView_distanceBetween"=" 您到飛行器的距離 ";
+
+"TutorialView_flightBattery"=" 飛行器電量    ";
+
+"TutorialView_flightMode"=" 飛行器模式   ";
+
+"TutorialView_flightStatus"=" 飛行器狀態   ";
+
+"TutorialView_fnString"=" FN  ";
+
+"TutorialView_generalSetting"=" 通用設置   ";
+
+"TutorialView_gimbalMode"=" 雲台模式  ";
+
+"TutorialView_gpsStatus"=" GPS狀態   ";
+
+/* GroundStation Tips */
+"TutorialView_guideLine"=" 飛行參考線  ";
+
+"TutorialView_hideMap"=" 隱藏地圖  ";
+
+/* FPV Tips 1 */
+"TutorialView_homePage"=" 主頁   ";
+
+"TutorialView_homePoint"=" 返航點  ";
+
+"TutorialView_homePointSetting"=" 返航點設置  ";
+
+"TutorialView_horiSpeed"=" 水平速度  ";
+
+"TutorialView_hoziDistance"=" 水平距離（返航點與飛行器）  ";
+
+"TutorialView_imageTransmission"=" 圖傳信號   ";
+
+"TutorialView_leftFlightTime"=" 剩餘飛行時間  ";
+
+"TutorialView_leftPhotoNumRecordTime"=" 剩餘拍照張數/剩餘錄像時間  ";
+
+"TutorialView_leftRecordTime"=" 剩餘錄像時間  ";
+
+"TutorialView_leftTakePhotoNum"=" 剩餘拍照張數  ";
+
+"TutorialView_locate"=" 定位   ";
+
+"TutorialView_lowBatteryWarning"=" 低電量警報  ";
+
+"TutorialView_mapMode"=" 地圖模式  ";
+
+"TutorialView_mapZoomOut"=" 縮放地圖  ";
+
+"TutorialView_opticalFlowStatus"=" 視覺定位系統 ";
+
+"TutorialView_playBack"=" 回放  ";
+
+"TutorialView_rcSignalString"=" 遙控器信號   ";
+
+"TutorialView_selectAll"=" 全選  ";
+
+/* PlaybackMultipleEdit Tips */
+"TutorialView_selectAllInPage"=" 本頁全選  ";
+
+"TutorialView_takePhoto"=" 拍照/錄像  ";
+
+"TutorialView_takePhotoMode"=" 拍照/錄像  ";
+
+"TutorialView_verticalSpeed"=" 垂直速度  ";
+
+"TutorialView_yellowWhiteTips"="黃色提示為按鈕功能  白色提示為狀態，不可點擊";
+
+"Ultrasonic"="超聲波";
+
+"Units"="單位";
+
+"VIDEO720_30"="720p 30fps";
+
+"Velocity inconsistent"="速度不一致";
+
+"Version Mismatch"="版本不匹配";
+
+"Video"="視頻";
+
+"VideoStandard"="NTSC/PAL選擇";
+
+"Vision optic"="視覺模塊";
+
+"Warning"="警告";
+
+"ablum_access_denie_localAlbumTitle"="本地相冊";
+
+"ablum_access_denie_msg"="請在iOS設置中允許本程序訪問相冊";
+
+"ablum_access_denie_ok"="好";
+
+"ablum_access_denie_title"="拒絕訪問";
+
+"ablum_title_on_DJIAblumUploadQueueType_items"="已選擇 %d 對象";
+
+"ablum_title_on_DJIAblumUploadQueueType_none"="選擇項目";
+
+"ablum_title_on_DJIAblumUploadQueueType_one_photo"="已選擇 1 照片";
+
+"ablum_title_on_DJIAblumUploadQueueType_one_video"="已選擇 1 視頻";
+
+"ablum_title_on_DJIAblumUploadQueueType_photos"="已選擇 %d 照片";
+
+"ablum_title_on_DJIAblumUploadQueueType_videos"="已選擇 %d 視頻";
+
+"ablum_title_preview"="相冊";
+
+"accelerometer"="加速度計";
+
+"accept"="同意";
+
+"account"="賬戶";
+
+"acticatioon_new_need_network_wifi_msg"="激活需要將您的帳號和設備在互聯網上進行綁定。可暫時斷開設備的Wifi連接，並連上一個可訪問互聯網的網絡。";
+
+"activation_activate_activate_more"="激活次數過多";
+
+"activation_activate_device_failed"="激活失敗";
+
+"activation_activate_inspire"="激活 INSPIRE";
+
+"activation_activate_n1"="激活 M100";
+
+"activation_activate_now"="激活";
+
+"activation_activate_p3"="激活 PHANTOM3";
+
+"activation_activating"="正在激活";
+
+"activation_announcement_hintText"="我已閱讀，不再提示";
+
+"activation_cancel_activation"="暫不激活";
+
+"activation_confirm_account"="確認您的登錄賬號";
+
+"activation_confirm_introduce"="飛行器的信息將與您的賬號綁定，作為維修及售後服務的依據。";
+
+"activation_confirm_introduce_osmo"="OSMO的信息將與您的賬號綁定，作為維修及售後服務的依據。";
+
+"activation_custom_mode_help"="改變搖桿模式將直接影響對飛行器的控制邏輯，請確認是否熟悉其他搖桿模式";
+
+"activation_custom_title"="設置您的操作習慣";
+
+"activation_default_inspire_name"="My DJI Aircraft";
+
+"activation_default_osmo_name"="My OSMO";
+
+"activation_has_activated_inspire"="您的 INSPIRE 已經激活";
+
+"activation_help_title"="公告";
+
+"activation_input_inspire_placeholder"="為您的飛行器起名字吧";
+
+"activation_input_osmo_placeholder"="為您的 OSMO 起名字吧";
+
+"activation_invalidate_device"="非法設備";
+
+/* 激活|欢迎页面|描述信息-飞机（法语有问题） */
+"activation_need_activate"="首次連接飛行器，需要對硬件模塊進行激活。至此你將擁有一年的保修服務。";
+
+/* 激活|欢迎页面|描述信息-OSMO */
+"activation_need_activate_osmo"="首次連接OSMO，需要對硬件模塊進行激活，未激活的設備雲台將無法正常工作。激活之日起，您將擁有一年的保修服務。";
+
+"activation_need_internet"="激活需要連接上互聯網";
+
+"activation_new_active_device"="激活設備…";
+
+/* page5 */
+"activation_new_beginner_title"="新手模式";
+
+"activation_new_complete_skip"="跳過";
+
+/* page6 */
+"activation_new_confirm_account"="確認您的激活帳號";
+
+"activation_new_confirm_change"="更改";
+
+"activation_new_limit_image"="新手飛行限制";
+
+"activation_new_need_aircraft_msg"="請把設備重新連接至飛行器的Wifi連接，並點擊繼續激活";
+
+"activation_new_need_aircraft_title"="請連接您的飛行器";
+
+"activation_new_need_login"="登錄或註冊帳號";
+
+"activation_new_need_network_msg"="請確認是否已連入網絡。激活需要將您的帳號和設備在互聯網上進行綁定。";
+
+/* TODO CHECK */
+"activation_new_need_osmo_msg"="請把設備重新連接至OSMO的Wifi連接，並點擊繼續激活";
+
+/* TODO CHECK */
+"activation_new_need_osmo_msg_title"="連接你的OSMO";
+
+"activation_new_post_server"="向服務器註冊設備信息…";
+
+/* 遥控器背面 */
+"activation_new_rc_backside"="遙控器背面";
+
+/* page3 */
+"activation_new_rc_mode"="設置您的搖桿模式";
+
+"activation_new_rc_mode_custom"="如需自定義可激活後進入遙控設置";
+
+"activation_new_rc_mode_subtitle"="搖桿模式示意";
+
+/* page3-1 */
+"activation_new_rc_shortcut"="設置您的快捷鍵";
+
+"activation_new_rc_shortcut_sub"="您可以自定義遙控器背後的C1,C2按鍵，方便飛行時進行操作。";
+
+/* page last */
+"activation_new_simulator_advice"="建議您在實地飛行前進行模擬飛行練習";
+
+"activation_new_unit_title"="參數單位";
+
+/* 激活完成的升级文案 */
+"activation_new_update_advice"="建議你在飛行前將固件升級到最新版本";
+
+"activation_new_video_title"="視頻制式";
+
+/* page4 */
+"activation_new_video_unit_title"="設置您的參數單位及視頻制式";
+
+"activation_next"="下一步";
+
+"activation_ntsc_mode"="NTSC制式";
+
+"activation_pal_mode"="PAL制式";
+
+"activation_previous"="上一步";
+
+"activation_retry_activate"="激活失敗 重試";
+
+"activation_rookie_introduce"="為了您的飛行安全，出廠設置默認為新手模式，無GPS信號不允許起飛，並且限制飛行高度及半徑。";
+
+"activation_rookie_open"="開啟模式";
+
+"activation_rookie_title"="新手模式";
+
+"activation_service_error"="服務器錯誤";
+
+"activation_status_broken"="您的飛行器已經斷開連接";
+
+"activation_status_connected"="已經連接上您的飛行器";
+
+"activation_success"="激活成功";
+
+/* 激活|标题-带产品名称 */
+"activation_title"="激活 %@";
+
+/* 激活完成的升级按钮 */
+"activation_upgrade_title"="固件升級";
+
+"activation_wrong_account"="不是您的賬號？";
+
+"adjust_landingGear_title"="飛行器腳架微調";
+
+"admin_FR_returnHomeReason0"="未發生";
+
+"admin_FR_returnHomeReason1"="用戶設定電量報警返航";
+
+"admin_FR_returnHomeReason10"=" 遙控器觸發自動起飛";
+
+"admin_FR_returnHomeReason11"="遙控器觸發自動降落";
+
+"admin_FR_returnHomeReason12"="APP觸發返航";
+
+"admin_FR_returnHomeReason13"="APP觸發降落";
+
+"admin_FR_returnHomeReason14"="APP觸發起飛";
+
+"admin_FR_returnHomeReason15"="遙控器失控觸發返航";
+
+"admin_FR_returnHomeReason16"="API觸發自動起飛";
+
+"admin_FR_returnHomeReason17"="API觸發自動下降";
+
+"admin_FR_returnHomeReason18"="API 觸發自動反航";
+
+"admin_FR_returnHomeReason19"="防觸地自動降落";
+
+"admin_FR_returnHomeReason2"="用戶設定電量報警下降";
+
+"admin_FR_returnHomeReason20"="限飛自動降落";
+
+"admin_FR_returnHomeReason21"="飛行器距離返航點太近，返航切換為自動降落";
+
+"admin_FR_returnHomeReason22"="飛行器距離返航點太遠，返航切換為自動降落";
+
+"admin_FR_returnHomeReason3"="智能電量報警返航";
+
+"admin_FR_returnHomeReason4"="智能電量報警下降";
+
+"admin_FR_returnHomeReason5"="主電壓低下降";
+
+"admin_FR_returnHomeReason6"="主電壓低返航";
+
+"admin_FR_returnHomeReason7"="主電壓超低下降";
+
+"admin_FR_returnHomeReason8"="遙控器一鍵返航";
+
+"admin_FR_returnHomeReason9"="遙控器輔助起飛";
+
+"admin_fr_HDOP"="gps信號差：衛星HDOP值太大導致未能進入p-gps";
+
+"admin_fr_already_p-gps"="已經處於p-gps模式";
+
+"admin_fr_batteryCell"="電芯電壓";
+
+"admin_fr_batteryI"="電池電流";
+
+"admin_fr_batteryTemp"="電池溫度";
+
+"admin_fr_cmpsErrGpsErrr"="指南針干擾：gps偏航誤差太大";
+
+"admin_fr_cmpsErrGpsSpeed"="指南針干擾：gps速度誤差太大";
+
+"admin_fr_cmpsErrNaviErrr"="指南針干擾：指南針偏航誤差太大";
+
+"admin_fr_funcForbidden"="此功能被禁止";
+
+"admin_fr_gpsNum"="gps衛星數目";
+
+"admin_fr_gpsSpeed"="gps信號差：衛星速度位置不匹配導致未能進入p-gps";
+
+"admin_fr_gpsWeak"="gps信號差：衛星數太少導致未能進入p-gps";
+
+"admin_fr_isNearLimitFar"="是否接近限遠";
+
+"admin_fr_isNearLimitHeight"="是否接近限高";
+
+"admin_fr_lowBatteryWarnValue"="低電壓報警數值";
+
+"admin_fr_rcMode"="遙控器檔位";
+
+"admin_fr_rcPush"="遙控推送";
+
+"admin_fr_rc_a"="姿態檔";
+
+"admin_fr_rc_f"="輔助檔";
+
+"admin_fr_rc_p"="gps檔";
+
+"admin_fr_returnAccomplished"="返航完成";
+
+"admin_fr_returnDirection"="返航航向對準";
+
+"admin_fr_returnHeight"="返航高度";
+
+"admin_fr_returnLand"="返航下降";
+
+"admin_fr_returnNavi"="返航自主巡航";
+
+"admin_fr_returnPreparing"="返航準備中";
+
+"admin_fr_returnRaise"="返航上升";
+
+"admin_fr_returnState"="返航階段狀態";
+
+"admin_fr_seriouslowBatteryWarnValue"="低電壓報警數值";
+
+"admin_fr_takeOffAltittude"="起飛海拔";
+
+"admin_fr_takeOffReturnReason"="起飛降落返航原因";
+
+"admin_fr_unknown"="未知";
+
+"advanced_more_advanced_mode"="高級模式";
+
+"advanced_more_antifliker_50hz_intro"="";
+
+"advanced_more_antifliker_60hz_intro"="";
+
+"advanced_more_antifliker_auto_intro"="";
+
+"advanced_more_digitalFilter_art_intro"="藝術";
+
+"advanced_more_digitalFilter_blackWhite_intro"="黑白";
+
+"advanced_more_digitalFilter_film_intro"="D-Cinelike";
+
+"advanced_more_digitalFilter_jugo_intro"="懷舊";
+
+"advanced_more_digitalFilter_kdx_intro"="夢幻";
+
+"advanced_more_digitalFilter_m31_intro"="海灘";
+
+"advanced_more_digitalFilter_neutral_intro"="D-Log";
+
+"advanced_more_digitalFilter_none_intro"="普通";
+
+"advanced_more_digitalFilter_prismo_intro"="經典";
+
+"advanced_more_digitalFilter_punk_intro"="人像";
+
+"advanced_more_digitalFilter_vivid_intro"="鮮艷";
+
+/* TODO:需确认和翻译 */
+"advanced_more_grid_centerpoint_intro"="中心點";
+
+"advanced_more_grid_diagonal_intro"="網格線和對角線";
+
+"advanced_more_grid_sudoku_intro"="網格線";
+
+"advanced_more_hdr"="HDR";
+
+/* 不需要提示 */
+"advanced_more_imageSize_16_9_intro"=" ";
+
+/* 不需要提示 */
+"advanced_more_imageSize_4_3_intro"=" ";
+
+"advanced_more_none_intro"="關閉";
+
+"advanced_more_off_intro"="";
+
+"advanced_more_photoformat_jpeg_intro"="JPEG";
+
+"advanced_more_photoformat_jpeg_raw_intro"="JPEG+RAW";
+
+"advanced_more_photoformat_raw_intro"="RAW";
+
+"advanced_more_photostyle_contrast"="對比度";
+
+"advanced_more_photostyle_custom_intro"="自定義";
+
+"advanced_more_photostyle_landscape_intro"="風光";
+
+"advanced_more_photostyle_neutral_intro"="中性";
+
+"advanced_more_photostyle_saturation"="飽和度";
+
+"advanced_more_photostyle_sharpness"="銳利度";
+
+"advanced_more_photostyle_soft_intro"="柔和";
+
+"advanced_more_photostyle_standard_intro"="標準";
+
+"advanced_more_photostyle_vivid_intro"="明快";
+
+"advanced_more_quickview_1s_intro"="";
+
+"advanced_more_quickview_2s_intro"="";
+
+"advanced_more_quickview_3s_intro"="";
+
+"advanced_more_quickview_4s_intro"="";
+
+"advanced_more_quickview_5s_intro"="";
+
+"advanced_more_videoFormat_1280x720_120p_intro"="1280x720 120fps";
+
+"advanced_more_videoFormat_1280x720_240p_intro"="1280x720 240fps";
+
+"advanced_more_videoFormat_1280x720_24p_intro"="1280x720 24";
+
+"advanced_more_videoFormat_1280x720_25p_intro"="1280x720 25";
+
+"advanced_more_videoFormat_1280x720_30p_intro"="1280x720 30";
+
+"advanced_more_videoFormat_1280x720_48p_intro"="1280x720 48";
+
+"advanced_more_videoFormat_1280x720_50p_intro"="1280x720 50";
+
+"advanced_more_videoFormat_1280x720_60p_intro"="1280x720 60";
+
+/* ytao test: */
+"advanced_more_videoFormat_1920x1080_120p_intro"="1920x1080 120";
+
+"advanced_more_videoFormat_1920x1080_24p_intro"="1920x1080 24";
+
+"advanced_more_videoFormat_1920x1080_25p_intro"="1920x1080 25";
+
+"advanced_more_videoFormat_1920x1080_30p_intro"="1920x1080 30";
+
+"advanced_more_videoFormat_1920x1080_48p_intro"="1920x1080 48";
+
+"advanced_more_videoFormat_1920x1080_50p_intro"="1920x1080 50";
+
+"advanced_more_videoFormat_1920x1080_60p_intro"="1920x1080 60";
+
+"advanced_more_videoFormat_2704x1520_24p_intro"="2704x1520 24";
+
+"advanced_more_videoFormat_2704x1520_25p_intro"="2704x1520 25";
+
+"advanced_more_videoFormat_2704x1520_30p_intro"="2704x1520 30";
+
+"advanced_more_videoFormat_2704x1520_48p_intro"="2704x1520 48";
+
+"advanced_more_videoFormat_2704x1520_50p_intro"="2704x1520 50";
+
+"advanced_more_videoFormat_2704x1520_60p_intro"="2704x1520 60";
+
+"advanced_more_videoFormat_3840x2160_24p_intro"="3840x2160 24";
+
+"advanced_more_videoFormat_3840x2160_25p_intro"="3840x2160 25";
+
+"advanced_more_videoFormat_3840x2160_30p_intro"="3840x2160 30";
+
+"advanced_more_videoFormat_4096x2160_24p_intro"="4096x2160 24";
+
+"advanced_more_videoFormat_4096x2160_25p_intro"="4096x2160 25";
+
+"advanced_more_videoStoreFormat_mov_intro"="MOV";
+
+"advanced_more_videoStoreFormat_mp4_intro"="MP4";
+
+"advanced_more_video_caption"="視頻字幕";
+
+"advanced_more_videoformat_mov_intro"="MOV";
+
+"advanced_more_videoformat_mp4_intro"="MP4";
+
+"advanced_more_videotype_ntsc_intro"="NTSC";
+
+"advanced_more_videotype_pal_intro"="PAL";
+
+"advanced_more_whitebalance_auto_intro"="自動";
+
+"advanced_more_whitebalance_custom_intro"="自定義";
+
+"advanced_more_whitebalance_inhouse_intro"="陰天";
+
+"advanced_more_whitebalance_neon_intro"="熒光燈";
+
+"advanced_more_whitebalance_outdoor_intro"="晴天";
+
+"advanced_more_whitebalance_tungsten_intro"="白熾燈";
+
+"agree"="同意";
+
+"aircraft"="飛行器";
+
+"aircraft_fv"="飛行器";
+
+"aircraft_isbehind_self"="飛行器現在您的後方，請注意。";
+
+"album_add_overlay_label"="添加水印";
+
+/* album photo overlay */
+"album_add_overlay_title"="編輯照片";
+
+"album_cancelSelectItemButton"="取消";
+
+"album_convert_error_album_can_not_create"="無法創建相冊";
+
+"album_convert_error_content"="編碼錯誤";
+
+"album_convert_error_done"="好";
+
+"album_convert_error_file_can_not_play"="視頻數據錯誤";
+
+"album_convert_error_file_not_found"="文件未找到";
+
+"album_convert_error_no_disk_space"="沒有足夠的磁盤空間";
+
+"album_convert_error_title"="視頻導出失敗";
+
+"album_copy_link"="複製鏈接";
+
+"album_copy_link_success"="複製分享鏈接成功";
+
+"album_photo_share_title"="分享照片";
+
+"album_photoinfoview_aperture"="光圈:";
+
+"album_photoinfoview_date"="拍攝日期:";
+
+"album_photoinfoview_iso"="感光度:";
+
+"album_photoinfoview_location"="位置";
+
+"album_photoinfoview_maker"="設備製造商:";
+
+"album_photoinfoview_model"="拍攝設備:";
+
+"album_photoinfoview_program"="曝光程序:";
+
+"album_photoinfoview_res"="分辨率:";
+
+"album_photoinfoview_shutter"="快門:";
+
+"album_photoprocess_next"="繼續";
+
+"album_photoprocess_upload_failed_msg"="請檢查網絡";
+
+"album_photoprocess_upload_failed_title"="處理失敗";
+
+"album_processed_save_to_album"="保存到相冊";
+
+"album_selectItemButton"="選擇";
+
+"album_share_image"="分享照片";
+
+"album_share_image_by"="來自 %@ 的照片";
+
+"album_share_image_common"="我用 %@ 拍攝了一張航拍照片，快來看!";
+
+"album_share_image_location_at"="拍攝於 %@";
+
+"album_share_image_location_failed"="未能獲取拍攝位置";
+
+"album_share_image_location_loading"="查詢拍攝位置中";
+
+"album_share_image_my_photo"="我的照片";
+
+"album_share_image_success"="照片已分享";
+
+"album_share_photo_with_link"="分享圖片鏈接";
+
+"album_title_delete_multi_item"="刪除 %d 個文件";
+
+"album_title_delete_one_item"="刪除 %d 個文件";
+
+"album_unknown_date"="未知";
+
+"album_video_pool_section_title"="視頻緩存";
+
+"alertView_OKButtonTitle"="好";
+
+"allImport_albumName"="所有導入的照片";
+
+"app_need_update"="固件版本不匹配，App需要升級到最新版本。";
+
+"ass_button_title"="商城";
+
+"atti_gps_not_ready"="指南針或星況不好，已變為Atti模式，請注意";
+
+"audioGainControl"="音頻增益控制";
+
+"auth_fail"="授權失敗";
+
+"awake_osmo"="喚醒";
+
+"back_navBarButton_title"="返回";
+
+"barometer"="氣壓計";
+
+"basicSetting"="設置";
+
+"battery_limit_flight_movement"="電池功率限制，已自動降低飛行器機動性。";
+
+"battery_show_voltage_on_main_screen"="主屏顯示電壓";
+
+/* "camera_setting_decode_type_alert_msg"="启用硬件解码将缩短视频时延并节约设备电量。\n但由于iOS系统缺陷，至目前 iOS 8.1.3 使用硬件解码可能导致设备重启或无响应，请谨慎使用。"; //TODO: | TODO: */
+"camera_info_ssd_need_restart"="固態硬盤異常，請重啟飛行器";
+
+"camera_lens_info_format"="廠商ID:%d\n品牌:%d\n硬件版本號:%d\n鏡頭名稱: %s";
+
+"camera_setting_360_continuous_icon_intro"="360全景拍攝";
+
+"camera_setting_aeb_continuous_icon_intro"="AEB連拍";
+
+"camera_setting_autoTimer_continuous_icon_intro"="定時拍攝";
+
+"camera_setting_continuous_icon_intro"="連拍";
+
+"camera_setting_continuous_value_hdr_intro"="HDR拍攝";
+
+"camera_setting_continuous_value_single_intro"="單張拍攝";
+
+"camera_setting_decode_type"="啟用硬件解碼";
+
+"camera_setting_digitalFilter_Art_intro"="藝術";
+
+"camera_setting_digitalFilter_BlackAndWhite_intro"="黑白";
+
+"camera_setting_digitalFilter_Bright_intro"="鮮艷";
+
+"camera_setting_digitalFilter_Inverse_intro"="反色";
+
+"camera_setting_digitalFilter_Movie_intro"="影片";
+
+"camera_setting_digitalFilter_None_intro"="無";
+
+"camera_setting_digitalFilter_PopArt_intro"="流行藝術";
+
+"camera_setting_digitalFilter_Punk_intro"="朋克";
+
+"camera_setting_digitalFilter_Reminiscence_intro"="懷舊";
+
+"camera_setting_five_aeb_continuous_icon_intro"="AEB五連拍";
+
+"camera_setting_five_continuous_icon_intro"="五連拍";
+
+"camera_setting_imageQuality_FINE_icon_intro"="較佳";
+
+"camera_setting_imageQuality_NORMAL_icon_intro"="一般";
+
+"camera_setting_imageQuality_SFINE_icon_intro"="最佳";
+
+"camera_setting_jpeg+raw_icon_intro"="JPEG+RAW";
+
+"camera_setting_jpeg_icon_intro"="JPEG";
+
+"camera_setting_metering_value_area_intro"="中央重點測光";
+
+"camera_setting_metering_value_global_intro"="平均測光";
+
+"camera_setting_metering_value_point_intro"="點測光";
+
+"camera_setting_pano_intro"="全景拍攝";
+
+"camera_setting_photoSize_value_16x9_intro"="16:9";
+
+"camera_setting_photoSize_value_4x3_intro"="4:3";
+
+"camera_setting_photoSize_value_large16x9_intro"="大 16:9";
+
+"camera_setting_photoSize_value_large4x3_intro"="大 4:3";
+
+"camera_setting_photoSize_value_middle16x9_intro"="中 16:9";
+
+"camera_setting_photoSize_value_middle4x3_intro"="中 4:3";
+
+"camera_setting_photoSize_value_small16x9_intro"="小 16:9";
+
+"camera_setting_photoSize_value_small4x3_intro"="小 4:3";
+
+"camera_setting_raw_icon_intro"="RAW";
+
+"camera_setting_sceneMode_Auto_icon_intro"="自動";
+
+"camera_setting_sceneMode_Beach_icon_intro"="海灘";
+
+"camera_setting_sceneMode_Landscape_icon_intro"="風景";
+
+"camera_setting_sceneMode_NightScene_icon_intro"="夜景";
+
+"camera_setting_sceneMode_Portrait_icon_intro"="肖像";
+
+"camera_setting_sceneMode_Standard_icon_intro"="標準";
+
+"camera_setting_sceneMode_Sunset_icon_intro"="傍晚";
+
+"camera_setting_sceneMode_WaterSurface_icon_intro"="水面";
+
+"camera_setting_seven_aeb_continuous_icon_intro"="AEB七連拍";
+
+"camera_setting_seven_continuous_icon_intro"="七連拍";
+
+"camera_setting_three_aeb_continuous_icon_intro"="AEB三連拍";
+
+"camera_setting_three_continuous_icon_intro"="三連拍";
+
+"camera_setting_videoFormat_1080P_24_icon_intro"="1920x1080 24P";
+
+"camera_setting_videoFormat_1080P_25_icon_intro"="1920x1080 25P";
+
+"camera_setting_videoFormat_1080P_30_icon_intro"="1920x1080 30P";
+
+"camera_setting_videoFormat_1080P_48_icon_intro"="1920x1080 48P";
+
+"camera_setting_videoFormat_1080P_50_icon_intro"="1920x1080 50P";
+
+"camera_setting_videoFormat_1080P_60_icon_intro"="1920x1080 60P";
+
+"camera_setting_videoFormat_1280x720_icon_intro"="1280x720";
+
+"camera_setting_videoFormat_1920x1080_icon_intro"="1920x1080";
+
+"camera_setting_videoFormat_2704x1520_icon_intro"="2704x1520";
+
+"camera_setting_videoFormat_3840x2160_24_icon_intro"="3840x2160 24P";
+
+"camera_setting_videoFormat_3840x2160_25_icon_intro"="3840x2160 25P";
+
+"camera_setting_videoFormat_3840x2160_30_icon_intro"="3840x2160 30P";
+
+"camera_setting_videoFormat_3840x2160_icon_intro"="3840x2160";
+
+"camera_setting_videoFormat_3840x2880_icon_intro"="3840x2880";
+
+"camera_setting_videoFormat_4096x2048_icon_intro"="4096x2048";
+
+"camera_setting_videoFormat_4096x2160_24_icon_intro"="4096x2160 24P";
+
+"camera_setting_videoFormat_4096x2160_25_icon_intro"="4096x2160 25P";
+
+"camera_setting_videoFormat_4096x2160_icon_intro"="4096x2160";
+
+"camera_setting_videoFormat_4608x2160_icon_intro"="4608x2160";
+
+"camera_setting_videoFormat_4608x2592_icon_intro"="4608x2592";
+
+"camera_setting_videoFormat_720P_24_icon_intro"="1280x720 24P";
+
+"camera_setting_videoFormat_720P_25_icon_intro"="1280x720 25P";
+
+"camera_setting_videoFormat_720P_30_icon_intro"="1280x720 30P";
+
+"camera_setting_videoFormat_720P_48_icon_intro"="1280x720 48P";
+
+"camera_setting_videoFormat_720P_50_icon_intro"="1280x720 50P";
+
+"camera_setting_videoFormat_720P_60_icon_intro"="1280x720 60P";
+
+"camera_setting_videoFormat_error"="分辨率設置失敗";
+
+"camera_setting_videoQuality_FINE_icon_intro"="較佳";
+
+"camera_setting_videoQuality_NORMAL_icon_intro"="一般";
+
+"camera_setting_videoQuality_SFINE_icon_intro"="最佳";
+
+"camera_setting_videoStorageFormat_MOV_icon_intro"="MOV";
+
+"camera_setting_videoStorageFormat_MP4_icon_intro"="MP4";
+
+"camera_setting_video_caption"="視頻字幕(錄像狀態下不可操作)";
+
+"camera_setting_wb_value_auto_intro"="自動";
+
+"camera_setting_wb_value_indoor_intro"="陰天";
+
+"camera_setting_wb_value_neon_intro"="熒光燈";
+
+"camera_setting_wb_value_outdoor_intro"="晴天";
+
+"camera_setting_wb_value_tungsten_intro"="白熾燈";
+
+"camera_setting_wb_value_water_intro"="水面";
+
+/* TODO: */
+"camera_tips_start_video_with_ssd_full"="固態硬盤已滿，繼續錄影將僅保存至SD卡，是否繼續？";
+
+/* 只连接p4飞机的情况下，不允许进入相机提示 */
+"cameravc_cannot_enter_fpv_drone_only"="如果要進入相機，請連接遙控器。";
+
+"cancel"="取消";
+
+"cancel_gohome_success"="取消返航成功";
+
+"cancel_landing_success"="取消降落成功";
+
+"cancel_upload_alertTitle"="取消上傳？";
+
+"cannot_uploadVideo_alertTitle"="正在上傳視頻，請等待上傳結束後重試";
+
+"cannot_uploadYouku_alertTitle"="正在上傳一個Youku視頻，請等待上傳結束後重試";
+
+"cannot_uploadYoutube_alertTitle"="正在上傳一個YouTube視頻，請等待上傳結束後重試";
+
+"category"="類別";
+
+"channel_gimbal_speed_fast"="快";
+
+"channel_gimbal_speed_pitch"="俯仰";
+
+"channel_gimbal_speed_roll"="橫滾";
+
+"channel_gimbal_speed_slow"="慢";
+
+"channel_gimbal_speed_yaw"="偏航";
+
+/* 天空端编码器异常，1860异常 */
+"check_1860_reason"="天空端編碼器異常";
+
+"check_1860_restart_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_1860_return_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+/* CheckList|2100异常|请重新标定视觉系统 */
+"check_2100_calibrate_solution"="需使用DJI Assistant軟件標定視覺系統";
+
+/* CheckList|2100异常|视觉内部通信异常 */
+"check_2100_connect_reason"="視覺傳感器通訊異常";
+
+/* CheckList|2100异常|视觉下视标定异常 */
+"check_2100_down_calibrate_reason"="下視傳感器標定異常";
+
+/* CheckList|2100异常|视觉前视标定异常 */
+"check_2100_front_calibrate_reason"="前視傳感器標定異常";
+
+"check_2100_restart_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_2100_return_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+/* CheckList|2100异常|视觉传感器状态异常 */
+"check_2100_sensor_reason"="視覺傳感器狀態異常";
+
+/* CheckList|2100异常|下视左侧传感器状态异常 */
+"check_2100_sensor_reason_down_left"="下視左側傳感器狀態異常";
+
+/* CheckList|2100异常|下视右侧传感器状态异常 */
+"check_2100_sensor_reason_down_right"="下視右側傳感器狀態異常";
+
+/* CheckList|2100异常|前视左侧传感器状态异常 */
+"check_2100_sensor_reason_front_left"="前視左側傳感器狀態異常";
+
+/* CheckList|2100异常|前视右侧传感器状态异常 */
+"check_2100_sensor_reason_front_right"="前視右側傳感器狀態異常";
+
+/* CheckList|2100异常|视觉系统异常 */
+"check_2100_vision_reason"="視覺系統異常";
+
+"check_app_must_upgrade"="您的應用程序需要升級到最新版本才能使用";
+
+"check_app_upgrade_btn_title"="立即更新";
+
+"check_battery_broken"="電池電芯損壞";
+
+"check_battery_broken_reason"="電池電芯損壞";
+
+/* TODO, New */
+"check_battery_broken_solution"="解決方案：停止使用該電池，聯繫售後服務";
+
+"check_battery_discharge_current"="電池放電過流警告";
+
+"check_battery_discharge_current_reason"="電池放電過流警告";
+
+"check_battery_discharge_current_solution"="解決方案：檢查飛機是否有多餘負重導致飛行電流過大；減少過大動作的飛行";
+
+"check_battery_first_charge_not_full"="請注意，您的智能電池從未充滿過，建議充滿電後再飛行，否則可能因電量檢測不準確導致飛行事故";
+
+/* TODO, New */
+"check_battery_first_charge_not_full_reason"="請注意，你的智能電池從未充滿過，建議充滿電後重新飛行，否則可能因電量檢測不準確導致飛行事故。";
+
+"check_battery_first_charge_not_full_solution"="解決方案：請充滿電後再飛行";
+
+"check_battery_low_temperature"="環境溫度過低，電池不適合飛行警告";
+
+/* TODO, New */
+"check_battery_low_temperature_reason"="電池溫度過低警告";
+
+/* TODO, New */
+"check_battery_low_temperature_solution"="解決方案：預熱電池至5攝氏度以上後重新飛行";
+
+/* TODO, New */
+"check_battery_need_learn_reason"="電池需要進行一次完整的充放電。否則可能因電量檢測不準確導致飛行事故";
+
+"check_battery_need_learn_solution"="解決方案：飛行結束後，請將電池繼續放電至5%以下。如要存儲電池，請將電池充電至半滿";
+
+"check_battery_over_temperature"="電池溫度過高警告";
+
+"check_battery_over_temperature_reason"="電池溫度過高警告";
+
+/* TODO, New */
+"check_battery_over_temperature_solution"="解決方案：停止飛行，待電池冷卻到常溫後重新飛行";
+
+"check_camera_encrypt_error"="相機加密檢驗失敗";
+
+"check_camera_encrypt_error_reason"="相機錯誤 (錯誤碼 01)";
+
+"check_camera_no_encrypt"="相機未加密";
+
+"check_camera_over_heat"="相機過熱";
+
+"check_camera_over_heat_reason"="相機過熱";
+
+"check_camera_over_heat_solution"="解決方案：請冷卻相機後，再嘗試";
+
+"check_camera_sensor"="相機傳感器錯誤";
+
+"check_camera_sensor_reason"="相機傳感器錯誤";
+
+"check_camera_sensor_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_camera_upgrade"="飛行器升級錯誤";
+
+"check_camera_upgrade_reason"="飛行器升級錯誤";
+
+"check_camera_upgrade_solution"="解決方案：請按照正確升級步驟，重新嘗試";
+
+"check_center_battery_connection"="中心板連接電池失敗";
+
+"check_center_battery_connection_reason"="中心板連接電池失敗";
+
+"check_center_battery_connection_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_center_gps_connection"="中心板連接GPS失敗";
+
+"check_center_gps_connection_reason"="中心板連接GPS失敗";
+
+"check_center_gps_connection_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_center_mc_connection"="中心板連接飛控失敗";
+
+"check_center_mc_connection_reason"="中心板連接飛控失敗";
+
+"check_center_mc_connection_solution"="解決方案：重啟飛行器，如果多次啟動問題仍在，需要返廠返修，請聯繫售後服務";
+
+"check_dm368_68013_connection"="串並轉換器未連接";
+
+"check_dm368_68013_connection_reason"="串並轉換器未連接";
+
+"check_dm368_68013_connection_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_dm368_encrypt"="解碼器未加密";
+
+"check_dm368_encrypt_reason"="解碼器未加密";
+
+"check_dm368_encrypt_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_firmware_compatible"="固件版本可能存在兼容問題";
+
+"check_firmware_ground_compatible"="遙控器固件版本不匹配";
+
+"check_firmware_sky_compatible"="飛行器固件版本不匹配";
+
+"check_gimbal_gyroscope"="雲台陀螺儀錯誤";
+
+"check_gimbal_gyroscope_reason"="雲台陀螺儀錯誤";
+
+"check_gimbal_gyroscope_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_gimbal_mc_conn"="雲台未收到飛控數據";
+
+/* 云台和飞控通信异常，P4没有pin8线，需要修改文案解决方案：云台与飞控间通信链路中断, 请检查飞控是否处于初始化或数据导出状态, 若飞机处于可安全飞行状态而此警告持续存在, 请联系客服处理//应该由app检查飞控是否处于初始化或数据导出状态，并制定一个发出警告的判定时间。在此基础上使用以下建议文案：//建议文案：解决方案：云台与飞控的通信链路中断，请重启飞行器。 如情况持续，请联系客服处理//要不要建议先重启飞机 */
+"check_gimbal_mc_conn_p4_solution"="雲台與飛控的通信鏈路中斷，請重啟飛行器。 如情況持續，請聯繫技術支持";
+
+"check_gimbal_mc_conn_reason"="雲台無法與飛行器通信";
+
+"check_gimbal_mc_conn_solution"="解決方案：嘗試重新插拔減震板與飛機之間連接的8pin線, 檢查8pin線接口的插針是否有鬆動，如果多次均失敗，請聯繫售後服務";
+
+"check_gimbal_pitch"="雲台Pitch電調數據錯誤";
+
+"check_gimbal_pitch_reason"="雲台Pitch電調數據錯誤";
+
+"check_gimbal_pitch_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_gimbal_roll"="雲台Roll電調數據錯誤";
+
+"check_gimbal_roll_reason"="雲台Roll電調數據錯誤";
+
+"check_gimbal_roll_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_gimbal_yaw"="雲台Yaw電調數據錯誤";
+
+"check_gimbal_yaw_reason"="雲台Yaw電調數據錯誤";
+
+"check_gimbal_yaw_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_list_aircraft_battery_content"="飛行器電量不足，請更換電池";
+
+"check_list_aircraft_battery_detail_title"="飛行器電池狀態";
+
+"check_list_aircraft_battery_title"="飛行器電量";
+
+"check_list_aircraft_mode_content"="飛行模式";
+
+"check_list_aircraft_mode_title"="飛行模式";
+
+"check_list_aircraft_temperature_content"="飛行器電池溫度過高，請更換";
+
+"check_list_aircraft_temperature_title"="飛行器電池溫度";
+
+"check_list_battery_exchange_op"="將%d號倉電池和%d號倉電池盒互換，";
+
+"check_list_battery_exchange_tips"="請先關閉飛行器電源，%s再重新開啟飛行器電源。";
+
+"check_list_battery_ronin_battery"="RONIN-M電量:%d";
+
+"check_list_button_calibrate"="校準";
+
+"check_list_button_detail"="詳情";
+
+"check_list_button_update_fireware"="升級固件";
+
+"check_list_calibrateButton_title"="校準";
+
+"check_list_calibrate_warning"="請勿在校準過程中移動飛行器。 校準過程需時5-10分鐘。";
+
+/* TODO, double check */
+"check_list_compass_calibration_disable_motor"="關閉飛行器電機後才能進行指南針校準";
+
+"check_list_compass_calibration_title"="確定要校準指南針嗎？";
+
+/* 指南针异常提示 */
+"check_list_compass_content_error"="指南針異常，禁止飛行：\n請檢查飛行器周圍是否有鋼鐵、磁鐵等物質，如某些包含鋼材的地面和牆壁。遠離干擾源後再起飛；\n起飛前請先校準指南針。";
+
+"check_list_compass_content_normal"="指南針是保證系統正常工作的關鍵傳感器，請按下列要求使用: \n\
+1.指南針處於機身最前部，請勿覆蓋鐵磁性物體。（重要）\n\
+2.在一個新的地域使用，請先校準指南針。（重要）\n\
+3.室內校準和室外校準有很大的差異，請在新環境下重新校準指南針（重要）。注意：在室內校準後在室外飛行是非常危險的，切記。\n\
+4.在飛行中出現指南針錯誤，請儘快返回並重新校準。\n\
+5.飛行中請遠離電線等，防止電磁干擾。";
+
+"check_list_compass_disturb"="飛行中，指南針受擾，退出了P-GPS模式，在此情況下請注意遠離鋼鐵、磁鐵等物質，並謹慎飛行。\n注:地面和牆壁都會包含一些鋼材。請盡量遠離再嘗試起飛。";
+
+"check_list_compass_error"="異常";
+
+"check_list_compass_normal"="正常";
+
+"check_list_compass_title"="指南針";
+
+"check_list_current_version"="當前版本: %@";
+
+"check_list_detailButton_title"="詳情";
+
+"check_list_download_firmware"="下載升級包";
+
+"check_list_download_firmware_cancel"="取消下載";
+
+"check_list_download_firmware_version"="下載版本: %@";
+
+"check_list_finished"="檢查完畢";
+
+"check_list_fireware_title"="固件";
+
+"check_list_flight_problem_title"="飛行問題記錄";
+
+"check_list_gear_content"="腳架狀態";
+
+"check_list_gear_status_title"="腳架狀態";
+
+"check_list_gimbal_battery_title"="雲台電量";
+
+"check_list_gimbal_motor_overload"="雲台電機過載";
+
+"check_list_gimbal_motor_overload_solution"="請檢查雲台固定架和泡沫塊是否已卸下，如果已經卸下，請聯繫售後";
+
+"check_list_gimbal_state"="雲台狀態";
+
+"check_list_has_error"="錯誤";
+
+"check_list_imu_hot_tips"="飛行器正在初始化，請稍等片刻。";
+
+"check_list_imu_ok_tips"="飛行器初始化成功。";
+
+"check_list_imu_title"="IMU";
+
+"check_list_led_battery_serious"="電池嚴重低電量報警";
+
+"check_list_led_battery_warning"="電池低電量報警";
+
+"check_list_led_compass_out"="指南針異常";
+
+"check_list_led_fid_vibrate"="飛行器明顯振動";
+
+"check_list_led_fly_limit"="靠近限飛區域";
+
+"check_list_led_imu_bad_atti"="IMU姿態錯誤";
+
+"check_list_led_imu_error"="IMU錯誤";
+
+"check_list_led_imu_gyro"="IMU數據丟失";
+
+"check_list_led_imu_need_cali"="IMU需要校準";
+
+"check_list_led_imu_warning"="IMU bias 過大";
+
+"check_list_led_mag_cali0"="指南針校準步驟一";
+
+"check_list_led_mag_cali1"="指南針校準步驟二";
+
+"check_list_led_mag_cali_error"="指南針校準失敗";
+
+"check_list_led_no_atti"="沒有姿態數據";
+
+"check_list_led_normal"="正常";
+
+"check_list_led_pack_failed"="打包失敗";
+
+"check_list_led_pack_normal"="打包模式";
+
+"check_list_led_rc_lost"="失控";
+
+"check_list_led_set_course"="設置航向";
+
+"check_list_led_set_home"="設置返航點";
+
+"check_list_led_set_round"="設置環繞熱點";
+
+"check_list_led_sys_error"="系統錯誤";
+
+"check_list_led_temp_warning"="IMU預熱";
+
+"check_list_led_test_led"="正在自檢";
+
+"check_list_led_title"="狀態指示燈";
+
+"check_list_led_usb_valid"="USB通信啟用";
+
+"check_list_module_check_title"="模塊檢查";
+
+"check_list_no_error"="正常";
+
+"check_list_radio_quality"="無線信道質量";
+
+"check_list_radio_quality_bad"="差";
+
+"check_list_radio_quality_good"="好";
+
+"check_list_radio_quality_poor_tips"="環境干擾較強，請謹慎飛行";
+
+"check_list_rc_battery_content"="遙控器電量不足，請先給遙控器充電";
+
+"check_list_rc_battery_title"="遙控器電量";
+
+"check_list_rc_mode_content"="遙控器模式";
+
+"check_list_rc_mode_title"="遙控器模式";
+
+"check_list_redownload_firmware"="重新下載";
+
+"check_list_sdCard_error"="SD卡不正常";
+
+"check_list_sdCard_format"="格式化";
+
+"check_list_sdCard_noCard"="SD卡未插入";
+
+"check_list_sd_content"="SD卡剩餘容量";
+
+"check_list_sd_title"="SD卡剩餘容量";
+
+"check_list_self_test_title"="模塊自檢";
+
+"check_list_start_upgrade_firmware"="開始升級";
+
+"check_list_top_title"="飛行器狀態列表";
+
+"check_list_update_fireware_error"="請升級固件";
+
+"check_list_update_fireware_title"="升級固件";
+
+"check_list_upgrade_download_failed_info"="請確保網絡連接正常";
+
+"check_list_upgrade_download_firmware_fail"="升級包下載失敗";
+
+"check_list_upgrade_download_firmware_pause"="下載暫停";
+
+"check_list_upgrade_download_firmware_success"="升級包下載成功";
+
+"check_list_upgrade_downloading_firmware"="升級包下載中...";
+
+"check_list_upgrade_firmware_fail"="升級失敗";
+
+"check_list_upgrade_follow_tutorial"="%@需要升級，請參考\"學院\"中的固件升級的教學視頻";
+
+"check_list_upgrade_lb2_follow_tutorial"="天空端需要升級，請連接DJI Assistant 2進行升級。詳情參見官網產品頁面下的用戶手冊";
+
+"check_list_upgrade_motor_up"="電機正在起轉，請稍後再進行升級";
+
+"check_list_upgrade_need_upgrade"="%@需要升級";
+
+"check_list_upgrade_parse_pack_error"="升級包解釋錯誤，請重新下載升級包";
+
+"check_list_upgrade_rc_cannot_upgrade_by_app"="當前遙控器不支持App升級，請通過USB升級";
+
+"check_list_upgrade_rc_cannot_upgrade_by_app_inspire"="當前遙控器固件不支持通過APP升級。請前往DJI官方網站下載Inspire固件v1.3.0.00，通過U盤對遙控器進行升級";
+
+"check_list_upgrade_rc_cannot_upgrade_by_app_p3"="當前遙控器固件不支持通過APP升級。請前往DJI官方網站下載Phantom 3固件v1.3.20，通過U盤對遙控器進行升級";
+
+/* %@需要升级请回到主页升级，（P4固件需要升级的时候check list 提示） */
+"check_list_upgrade_return_main"="%@ 固件需要升級，請回首頁升級";
+
+"check_list_upgrade_start_info"="開始升級前，請勿斷開遙控器連接，請確保遙控器電量有50%以上，\n此次升級大概需要10分鐘，升級過程中請勿關閉遙控器電源。";
+
+"check_list_upgrade_success"="%@升級成功";
+
+"check_list_upgrade_success_info"="%@已經升級到最新版本V%@，\n請重啟你的%@";
+
+"check_list_upgrade_version"="升級版本: %@";
+
+"check_list_upgrading_firmware"="正在升級%@...";
+
+"check_mc_accelarate_data_error"="加速度計數據異常，請重新啟動，如果多次啟動均異常，請聯繫售後服務";
+
+"check_mc_accelarate_data_error_reason"="加速度計數據異常";
+
+"check_mc_accelarate_data_error_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_accelerate"="飛控加速度計錯誤";
+
+"check_mc_accelerate_reason"="加速度計錯誤";
+
+"check_mc_accelerate_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+/* New Error */
+"check_mc_aircraft_stationary_reason"="檢測到飛行器可能在晃動";
+
+/* New Error */
+"check_mc_aircraft_stationary_solution"="解決方案：請靜止飛行器，若問題依然存在，請聯繫售後服務";
+
+"check_mc_atti_angle_error"="飛行器姿態角過大，請將飛行器水平放置後重新啟動，如果多次啟動均異常，請聯繫售後服務";
+
+"check_mc_atti_angle_error_reason"="飛行器姿態角過大";
+
+"check_mc_atti_angle_error_solution"="解決方案：請將飛行器水平放置並重啟飛行器，如果多次啟動均異常，請聯繫售後服務";
+
+"check_mc_barometer"="飛控氣壓計錯誤";
+
+"check_mc_barometer_data_error"="氣壓計數據異常，請重新啟動，如果多次啟動均異常，請聯繫售後服務";
+
+"check_mc_barometer_data_error_reason"="氣壓計數據異常";
+
+"check_mc_barometer_data_error_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_barometer_init_error"="氣壓計初始化失敗，請重新啟動，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_barometer_init_error_reason"="氣壓計初始化失敗";
+
+"check_mc_barometer_init_error_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_barometer_reason"="氣壓計錯誤";
+
+"check_mc_barometer_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_calibrate_version_mismatch"="需重新進行IMU校準";
+
+"check_mc_calibrate_version_mismatch_reason"="需重新進行IMU校準";
+
+"check_mc_calibrate_version_mismatch_solution"="解決方案：請校準IMU";
+
+"check_mc_compass"="飛控指南針錯誤";
+
+/* New Error */
+"check_mc_compass_error_reason"="指南針異常";
+
+/* New Error */
+"check_mc_compass_error_solution"="解決方案：1.移動至其他地方，重啟飛行器；2.若問題依然存在，請校準指南針";
+
+"check_mc_compass_reason"="指南針錯誤";
+
+"check_mc_compass_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_data_record_error"="數據記錄儀異常，原因：(1)存儲空間不足；(2)sd卡接觸不良；(3)sd卡壞；重新開啟電源，若問題依然存在請聯繫售後服務";
+
+"check_mc_data_record_error_reason"="數據記錄儀異常";
+
+"check_mc_data_record_error_solution"="解決方案：請重啟飛行器，若問題依然存在請聯繫售後服務";
+
+"check_mc_gps"="飛控GPS錯誤";
+
+"check_mc_gps_reason"="飛行器GPS錯誤";
+
+"check_mc_gps_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_gyroscope"="飛控陀螺儀錯誤";
+
+"check_mc_gyroscope_data_error"="陀螺儀數據異常，請重新啟動，如果多次啟動均異常，請聯繫售後服務";
+
+"check_mc_gyroscope_data_error_reason"="陀螺儀數據異常";
+
+"check_mc_gyroscope_data_error_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_gyroscope_reason"="陀螺儀錯誤";
+
+"check_mc_gyroscope_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_horizontal_calibrate"="請返廠維修";
+
+"check_mc_horizontal_calibrate_reason"="硬件故障";
+
+"check_mc_horizontal_calibrate_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+/* New Error */
+"check_mc_imu_cali_error_reason"="IMU異常";
+
+/* New Error */
+"check_mc_imu_cali_error_solution"="解決方案：請重新進行IMU校準";
+
+"check_mc_imu_cali_not_finished"="IMU校準未完成，請重新進行IMU校準";
+
+"check_mc_imu_cali_not_finished_reason"="IMU校準未完成";
+
+"check_mc_imu_cali_not_finished_solution"="解決方案：請重新進行IMU校準";
+
+"check_mc_imu_data_error"="IMU數據異常，請將飛行器靜止放置後重新啟動，如果多次啟動均異常，請進行基礎校準";
+
+"check_mc_imu_data_error_reason"="IMU數據異常";
+
+"check_mc_imu_data_error_solution"="解決方案：請將飛行器水平放置並重啟飛行器，如果多次啟動均異常，請聯繫售後服務";
+
+"check_mc_imu_direction_param_erro"="IMU參數錯誤，請聯繫售後服務";
+
+"check_mc_imu_direction_param_erro_reason"="IMU參數錯誤";
+
+"check_mc_imu_direction_param_erro_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_mc_imu_init_error"="IMU初始化失敗，請重新啟動，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_imu_init_error_reason"="IMU初始化失敗";
+
+"check_mc_imu_init_error_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_mc_need_imu_calibrate"="未進行IMU校準，請進行IMU校準";
+
+"check_mc_need_imu_calibrate_reason"="未進行IMU校準";
+
+"check_mc_need_imu_calibrate_solution"="解決方案：請校準IMU";
+
+"check_mc_sd_card"="飛控SD卡讀寫異常";
+
+"check_mc_sd_card_reason"="飛控數據記錄儀讀寫異常";
+
+"check_mc_sd_card_solution"="解決方案：請重啟飛行器，如果多次啟動均失敗，請聯繫售後服務";
+
+"check_module_firmware_latest"="(固件已最新)";
+
+"check_module_need_upgrade"="需要升級";
+
+"check_module_normal"="正常";
+
+"check_module_pretty_upgrade"="固件可升級";
+
+"check_motor_cannot_start_reason"="飛行器將不能正常起飛";
+
+"check_new_firmware_for_upgrade"="有新的固件發布，請前往下載並升級。";
+
+"check_rc_battery"="遙控器電池初始化錯誤";
+
+"check_rc_battery_reason"="遙控器電池初始化錯誤";
+
+"check_rc_battery_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_rc_encryption"="遙控器加密錯誤";
+
+"check_rc_encryption_reason"="遙控器加密錯誤";
+
+"check_rc_encryption_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_rc_fpga"="遙控器FPGA錯誤";
+
+"check_rc_fpga_reason"="遙控器FPGA錯誤";
+
+"check_rc_fpga_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_rc_gps"="遙控器GPS錯誤";
+
+"check_rc_gps_reason"="遙控器GPS錯誤";
+
+"check_rc_gps_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_rc_power"="遙控器電量低";
+
+"check_rc_power_reason"="遙控器電量低";
+
+"check_rc_power_solution"="解決方案：請及時充電";
+
+"check_rc_reset"="遙控器被重置，請檢查遙控器設置";
+
+"check_rc_reset_reason"="遙控器被重置，請檢查遙控器設置";
+
+"check_rc_reset_solution"="解決方案：檢查遙控器設置，確認遙控器設置（特別是美國手，日本手的設置）沒有問題後重新啟動遙控器";
+
+"check_rc_stick"="遙控器搖桿不在中位";
+
+"check_rc_stick_reason"="遙控器搖桿不在中位";
+
+"check_rc_stick_solution"="解決方案：請斷開與飛機鏈接，進入遙控器設置頁面校準搖桿";
+
+"check_rc_timeout"="遙控器已待機";
+
+/* TODO, New */
+"check_rc_timeout_reason"="遙控器已待機";
+
+"check_rc_timeout_solution"="解決方案：請關閉遙控器";
+
+"check_rc_too_hot_reason"="遙控器當前溫度過高";
+
+"check_rc_too_hot_solution"="解決方案：請注意遙控器周圍環境溫度";
+
+"check_rc_transmitter"="遙控器5G模塊錯誤";
+
+"check_rc_transmitter_reason"="遙控器5G模塊錯誤";
+
+"check_rc_transmitter_solution"="解決方案：硬件故障，需要返廠維修，請聯繫售後服務";
+
+"check_upgrade_remain_time_tips"="檢測到有重要固件需要更新，請在%d天內完成升級，否則您的飛行器將會被鎖上！";
+
+"colleage_ad_default_subtitle"="全方位了解您的飛行器";
+
+"college_3g_sure"="確認要下載文檔?";
+
+"college_ad_default_title"="從這裡開始";
+
+"college_cancel"="取消";
+
+"college_doc_manuel"="手冊";
+
+"college_download"="下載";
+
+"college_download_failed"="下載失敗";
+
+"college_download_in_3g"="您當前處於3G/4G網絡";
+
+"college_flight_sim"="飛行模擬器";
+
+"college_need_download"="下載";
+
+"college_no_network"="網絡異常";
+
+"college_no_network_detail"="請檢查網絡連接";
+
+"college_title"="學院";
+
+"college_video"="視頻";
+
+"common_back"="返回";
+
+"compass_adjust_cancel_title"="取消校準";
+
+/* 水平旋转飞行器360度 */
+"compass_adjust_first_step_intro"="水平旋轉飛行器360度";
+
+"compass_adjust_intro_error"="環境磁場干擾過大，請遠離干擾源（如大型電器設備，鋼筋鐵柱等）並保持飛行器距離地面1米以上後，重新進行校準";
+
+"compass_adjust_intro_first"="左右的距離度";
+
+"compass_adjust_intro_first_prefix"="請遠離金屬或帶強電物體等，並在離地";
+
+"compass_adjust_intro_second"="豎直旋轉飛行器360度";
+
+"compass_adjust_intro_second_prefix"="請檢查飛行器周圍是否有鋼鐵、磁鐵等物質";
+
+"compass_adjust_intro_title"="請遠離金屬或帶強電物體等，並使飛行器離地 %@ 左右的距離";
+
+"compass_adjust_recalibrate"="重新校準";
+
+/* 竖直旋转飞行器360度 */
+"compass_adjust_second_step_intro"="豎直旋轉飛行器360度";
+
+"confirmCloseLiveStream_title"="確定要關閉YouTube直播嗎?";
+
+"confirmOsmoEnterSleep"="確認是否將OSMO進入休眠模式？";
+
+"confirmOsmoShutDown"="確認是否關閉OSMO?";
+
+/* TDOO:translate */
+"continue"="繼續";
+
+"copy"="複製";
+
+"createDJI_bar_title"="Sky pixel";
+
+"decline"="拒絕";
+
+"delete"="刪除";
+
+"description"="描述";
+
+"digitalZoom"="數碼變焦";
+
+"disabled"="禁用";
+
+"disagree"="不同意";
+
+"disconnect"="未連接";
+
+"disconnect_gohome_alert_gohome_button"="立刻返航";
+
+"disconnect_gohome_alert_title"="無圖像顯示，是否返航？";
+
+"disconnect_gohome_alert_title_front"="無圖像顯示，在";
+
+"disconnect_gohome_alert_title_tail"="秒後飛行器將自動返航，請確認或取消。(取消後將不再提示此消息)";
+
+"disk_is_full"="磁盤空間不足";
+
+"distance"="距離";
+
+"done"="完成";
+
+"download_completed"="下載完畢!";
+
+"download_downloading_file"="正在下載文件";
+
+"download_downloading_files"="正在下載文件";
+
+"download_failed"="下載失敗";
+
+"download_initizalize"="正在初始化下載";
+
+"download_saving_album"="正在保存到相冊...";
+
+"droneType_inspire_1"="Inspire 1";
+
+"droneType_phantom_3_adv"="P3 Advanced";
+
+"droneType_phantom_3_pro"="P3 Professional";
+
+"end"="結束";
+
+"error_code_firmware_checksum_error"="固件校驗錯誤";
+
+"error_code_firmware_length_error"="固件長度錯誤";
+
+"error_code_firmware_seq_discontinuous"="固件文件序號不連續";
+
+"error_code_get_param_failed"="獲取參數失敗";
+
+"error_code_invalid_param"="錯誤的參數";
+
+"error_code_memory_failed"="內存分配失敗";
+
+"error_code_no_sdcard"="未插入SD卡";
+
+"error_code_no_support"="不支持該功能";
+
+"error_code_no_support_now"="當前無法執行該操作";
+
+"error_code_param_too_long"="參數長度過長";
+
+"error_code_sdcard_error"="SD卡錯誤";
+
+"error_code_sdcard_full"="SD卡已滿";
+
+"error_code_sensor_error"="Sensor錯誤";
+
+"error_code_set_param_failed"="設置參數失敗";
+
+"error_code_system_error"="相機系統錯誤";
+
+"error_code_time_not_sync"="相機時間未同步";
+
+"error_code_timeout"="執行超時";
+
+"error_code_unknow"="未知錯誤";
+
+"exit"="退出";
+
+"film_button_title"="剪輯";
+
+"firmwareSetting"="固件信息";
+
+"firmware_need_update"="固件版本不匹配，固件需要升級到最新版本。";
+
+"firmware_unlock_motor_title"="請注意，固件升級後主控參數會被重置，點擊確定後將解除電機鎖定。";
+
+"firmware_upgrade_alert"="1. 從http://www.dji.com下載最新固件，解壓後將bin文件放到SD卡中。\n2. 將SD卡插到相機卡槽中，並啟動飛行器。\n3. 飛行器將自動升級。\n4. 如果遙控器也被要求升級固件，請用USB線，將遙控器和相機連接，都加電後等待30秒左右，遙控器將自動升級。升級提示音停止後，請重啟遙控器。\n";
+
+/* TODO, check */
+"firmware_upgrade_alert_3c"="請退到主頁面按照界面提示對飛行器進行升級。";
+
+"firmware_upgrade_alert_title"="固件升級提示";
+
+"firmware_upgrade_new"="請到模塊自檢中查看相應的升級方法";
+
+"first_tips_gimbal"="雲台模式";
+
+"first_tips_gimbal_adown"="FPV朝下";
+
+"first_tips_gimbal_ahead"="FPV朝前";
+
+"first_tips_gimbal_follow"="跟隨模式";
+
+"first_tips_gimbal_fpv"="FPV模式";
+
+"first_tips_gimbal_not_follow"="自由模式";
+
+"first_tips_gimbal_reset_gimbal"="回中/朝下";
+
+"first_tips_home_point_aircraft"="設置飛機當前位置為返航點";
+
+"first_tips_home_point_mobile"="設置遙控器當前位置為返航點";
+
+"first_tips_home_point_tracking"="動態返航點開關";
+
+"flightRecord_All"="全部";
+
+"flightRecord_IOCMode"="智能航向鎖定";
+
+"flightRecord_ReturnHome"="返航中";
+
+"flightRecord_attiMode"="姿態模式";
+
+"flightRecord_back"="返回";
+
+"flightRecord_capture"="拍照次數";
+
+"flightRecord_dataLoading"="N/A";
+
+"flightRecord_date"="日期";
+
+"flightRecord_deleteErrorNumber"="刪除失敗數目：";
+
+"flightRecord_detailDate"="飛行日期";
+
+"flightRecord_detailLocation"="地理位置";
+
+"flightRecord_downloadErrorNumber"="下載失敗數目：";
+
+"flightRecord_emptyAll"="清除本地所有記錄緩存";
+
+"flightRecord_emptyCache"="清除本地記錄緩存";
+
+"flightRecord_emptyEspectFavourite"="本地只保留收藏的記錄";
+
+"flightRecord_favourites"="收藏";
+
+"flightRecord_flightMileage"="飛行里程";
+
+"flightRecord_flightTime"="飛行時間";
+
+"flightRecord_flightTimes"="飛行次數";
+
+"flightRecord_gpsMode"="GPS模式";
+
+"flightRecord_hybridMap"="複合地圖";
+
+"flightRecord_lastFlight"="上次飛行";
+
+"flightRecord_lastLocation"="上次位置";
+
+"flightRecord_location"="位置";
+
+"flightRecord_mapLoading"="地圖載入中...";
+
+"flightRecord_maxH"="最大高度";
+
+"flightRecord_maxHeight"="最大高度";
+
+"flightRecord_mileage"="里程";
+
+"flightRecord_moment"="精彩時刻";
+
+"flightRecord_noGPS"="無衛星信號";
+
+"flightRecord_noRecords"="暫無記錄";
+
+"flightRecord_noSignal"="信號丟失";
+
+"flightRecord_pilotLevel"="評定等級";
+
+/* to be done */
+"flightRecord_recorver"="數據恢復";
+
+"flightRecord_satelliteMap"="衛星地圖";
+
+"flightRecord_standardMap"="標準地圖";
+
+"flightRecord_syncCancel"="取消";
+
+/* to be done */
+"flightRecord_syncFailed"="同步失敗";
+
+/* TODO */
+"flightRecord_syncFailedRetry"="同步失敗，請重試";
+
+"flightRecord_syncNoNetwork_content"="不能連接到網絡";
+
+"flightRecord_syncNoNetwork_title"="無法進行同步";
+
+"flightRecord_syncOK"="確定";
+
+"flightRecord_syncRetry"="重試";
+
+"flightRecord_syncSetting"="同步時，將緩存以下時間段內生成的飛行記錄：";
+
+"flightRecord_syncSetting2"="同步時，將緩存收藏的記錄及以下時間段內生成的飛行記錄：";
+
+"flightRecord_syncSuccess"="完成";
+
+"flightRecord_sync_clearAllLocalCache"="清除本地緩存的飛行記錄";
+
+"flightRecord_sync_clearCache_clearAll"="清除所有本地緩存";
+
+"flightRecord_sync_clearCache_saveFavorit"="只保留本地收藏的緩存";
+
+"flightRecord_sync_hint1Label"="選擇你要同步的時間範圍";
+
+"flightRecord_sync_hint2Label"="*已收藏的飛行記錄即使不在所選時間範圍也會被同步";
+
+"flightRecord_sync_startSync"="開始同步";
+
+"flightRecord_sync_synchronizing"="同步中";
+
+"flightRecord_sync_title"="同步你的飛行記錄";
+
+"flightRecord_time"="時長";
+
+"flightRecord_title"="飛行記錄";
+
+"flightRecord_totalDistance"="飛行總里程";
+
+"flightRecord_totalTime"="飛行總時間";
+
+"flightRecord_uploadErrorNumber"="上傳失敗數目：";
+
+"flightRecord_video"="錄像時長";
+
+"flightRecord_withinHalfYear"="六個月";
+
+"flightRecord_withinMonth"="一個月";
+
+"flight_action_avoid_ground_auto_landing"="防觸地保護結束，開始自動降落";
+
+"flight_action_fly_limit_zone_landing"="您的飛機處於限飛區域內, 正在降落";
+
+"flight_action_tips_api_auto_gohome"="第三方發起的自動返航開始";
+
+"flight_action_tips_api_auto_landing"="第三方發起的自動降落開始";
+
+"flight_action_tips_api_auto_takeoff"="第三方發起的自動起飛開始";
+
+"flight_action_tips_app_auto_gohome"="開始自動返航";
+
+"flight_action_tips_app_auto_landing"="開始自動下降";
+
+"flight_action_tips_app_auto_takeoff"="開始自動起飛";
+
+"flight_action_tips_change_atti_content"="為了您的飛行安全，請切換到GPS檔位";
+
+"flight_action_tips_change_atti_title"="當前為Atti檔位";
+
+/* TODO, New */
+"flight_action_tips_low_voltage_gohome"="低電壓警報，飛機開始返航，短按遙控器上的返航按鈕停止返航";
+
+/* TODO, New */
+"flight_action_tips_low_voltage_landing"="低電壓警報，飛機開始降落，短按遙控器上的返航按鈕停止降落";
+
+"flight_action_tips_out_of_contorl_gohome"="飛機失控，開始返航";
+
+"flight_action_tips_rc_assistant_takeoff"="遙控器輔助起飛開始";
+
+"flight_action_tips_rc_onekey_gohome"="遙控器智能返航開始";
+
+"flight_action_tips_rc_onekey_landing"="遙控器自動降落開始";
+
+"flight_action_tips_rc_onekey_takeoff"="遙控器自動起飛開始";
+
+/* TODO, New */
+"flight_action_tips_seriou_low_voltage_landing"="電池電壓過低，系統強制降落，無法取消，你可以通過推油門減緩下降速度，調整搖桿方向避開危險";
+
+"flight_action_tips_smart_power_gohome"="系統計算您當前電量僅足夠返回返航點，飛機開始返航";
+
+"flight_action_tips_smart_power_landing"="當前電量僅夠當前高度降落，系統將強制下降，無法取消";
+
+"flight_action_tips_warning_power_gohome"="低電量，飛機開始返航";
+
+/* TODO, New */
+"flight_action_tips_warning_power_landing"="嚴重低電量，系統強制降落，無法取消，你可以通過推油門減緩下降速度，調整搖桿方向避開危險";
+
+"flight_action_too_close_landing"="飛行器距離返航點過近，返航切換為自動降落";
+
+"flight_action_too_far_landing"="飛行器距離返航點過遠，返航切換為自動降落";
+
+"flight_limit_action_collison"="觸碰到禁飛區";
+
+"flight_record_syncing"="正在同步飛行記錄";
+
+"flirCameraProfile"="相機規格:";
+
+"flirCustomButton"="重置相機參數";
+
+"flirCustomGainMode"="增益模式";
+
+"flirCustomIostherm"="Isotherm";
+
+"flirCustomPalette"="調色盤";
+
+"flirCustomROI"="興趣區域";
+
+"flirCustomScene"="場景";
+
+"flirFormatSDCardButton"="格式化SD卡";
+
+"flirImageFormat"="照片格式";
+
+"flirImageFormatJPEG"="JPEG (8Bit)";
+
+"flirImageFormatTIFF14B"="TIFF (14Bit)";
+
+"flirImageFormatTIFF8B"="TIFF (8Bit)";
+
+"flirShootingMode"="拍照模式";
+
+"flirShootingModeInterval"="定時拍攝";
+
+"flirShootingModeSingle"="單張拍攝";
+
+"flirVideoFormat"="視頻格式";
+
+"forceTransformation"="使能強制變形";
+
+"forcetransform_set_timeout"="使能強制變形設置超時";
+
+/* TODO:需要确认文桉 */
+"format_ssd"="格式化固態硬盤";
+
+/* TODO:需要确认文桉 */
+"format_ssd_fast"="快速";
+
+/* TODO:需要确认文桉 */
+"format_ssd_normal"="正常";
+
+"fpv_advanced_hide_intro"="向左滑動以隱藏";
+
+"fpv_button_title"="相機";
+
+/* 主控确认落地警告框|内容（飞机悬停在30cm处） */
+"fpv_confirm_touchdown_msg"="已降落到0.3m(0.98ft)，確認讓飛機降落到地面？";
+
+/* 飞行模式|ATTI下进入视觉、SMART的提示文案 */
+"fpv_flight_mode_atti_tip"="姿態模式下不能進入智能飛行模式";
+
+/* 飞行状态|不在P档下开机提示（主控会自动切换到P档，需要用户手动切换档位） */
+"fpv_flight_mode_non_p_startup_tip"="如果要以非P檔起飛，請切換檔位到其他檔再切回當前檔以確認";
+
+/* 飞行模式|新手模式下进入SMART的提示文案 */
+"fpv_flight_mode_novice_tip"="新手模式下不能進入智能飛行模式";
+
+/* 飞行状态|P档下退化Atti提示文案 */
+"fpv_flight_mode_patti_tip"="GPS信號弱，已自動進入姿態模式，飛行器將不會懸停，請謹慎飛行。";
+
+/* 飞行模式|切换模式失败的提示文案 */
+"fpv_flight_mode_switch_failed"="無法進入當前飛行模式，請重新嘗試";
+
+"fpv_focus_calibrate_later"="以後提醒我";
+
+"fpv_focus_calibrate_next"="開始標定";
+
+/* TODO CEHCK */
+"fpv_focus_calibration_content"="1.移動鏡頭，使鏡頭朝向遠處\n2.點擊取景框中50米外高反差物體，進行鏡頭標定";
+
+/* TODO CHECK */
+"fpv_focus_calibration_title"="鏡頭標定";
+
+/* TODO CHECK */
+"fpv_focus_calibration_too_close"="標定物體距離不夠遠，建議針對戶外無窮遠的物體進行標定";
+
+"fpv_focus_meter_switch_focus"="對焦";
+
+"fpv_focus_meter_switch_meter"="測光";
+
+"fpv_focus_please_calibrate_title"="請標定鏡頭";
+
+"fpv_focus_please_calibration_content"="首次使用手動對焦需要標定鏡頭，標定不準確將造成鏡頭無窮遠端無法合焦，在相機設置中可以隨時重新標定。";
+
+/* todo, check */
+"fpv_focusing_lens_mf"="鏡頭處於MF狀態下不能進行自動對焦";
+
+/* TODO CHECK */
+"fpv_meter_can_not_meter_aelock"="當前AE已鎖定，無法測光";
+
+/* TODO CHECK */
+"fpv_meter_can_not_meter_mExposure"="當前曝光模式為M檔，無法測光";
+
+/* TODO, CHECK */
+"fpv_shot_nonconnect_tip"="鏡頭未連接，請檢查相機鏡頭";
+
+"fpv_takephoto_failed"="拍照失敗";
+
+"fpv_tips_use_tb48"="請選擇TB48/TB49（待開發）電池以獲得更佳飛行體驗";
+
+/* TODO CHECK */
+"fpv_warning_cannot_focus_ass_record"="錄像模式下，輔助對焦將不起作用";
+
+"frFootPrints"="足跡";
+
+"frTopAlttitude"="最高起飛海拔";
+
+"frTopDistance"="最長曆程";
+
+"frTopHSpeed"="最大速度";
+
+"frTopVSpeed"="最大垂直速度";
+
+"fv"="固件:";
+
+"gainModeAuto"="自動";
+
+"gainModeHigh"="高";
+
+"gainModeLow"="低";
+
+"general_setting"="通用設置";
+
+"getIOC_mode_failed"="獲取 IOC 模式失敗";
+
+"gimbalFlashlight"="手電筒模式";
+
+"gimbalPortrait"="豎拍模式";
+
+"gimbalUnderslung"="倒掛模式";
+
+"gimbal_Camera_Type_5D3"="5D3";
+
+"gimbal_Camera_Type_A7S2"="A7S2";
+
+"gimbal_Camera_Type_GH4"="GH4";
+
+"gimbal_Camera_Type_Red"="Red";
+
+"gimbal_Camera_Type_custom1"="自定義1";
+
+"gimbal_Camera_Type_custom2"="自定義2";
+
+"gimbal_Camera_Type_custom3"="自定義3";
+
+"gimbal_FPV_content"="雲台將與飛行器機頭方向保持一致，並且傾斜度跟隨";
+
+"gimbal_FPV_title"="FPV模式";
+
+"gimbal_Follow_content"="雲台將以當前角度跟隨飛行器運動";
+
+"gimbal_Follow_title"="跟隨模式";
+
+"gimbal_GestureControl_content"="屏幕左區域控制雲台左右移動，右區域控制雲台上下移動";
+
+"gimbal_GestureControl_title"="屏幕手勢控制";
+
+"gimbal_NotFollow_content"="雲台將與不跟隨飛行器運動，適合雙人獨立操作";
+
+"gimbal_NotFollow_title"="自由模式";
+
+"gimbal_ResetGimbal_content"="雲台將調整與飛行器機頭方向一致，並保持原有模式狀態";
+
+"gimbal_ResetGimbal_title"="複位完成";
+
+"gimbal_RollCalibrate_title"="畫面水平傾斜，可適合微調整畫面至水平";
+
+"gimbal_auto_calibration"="雲台自動校準";
+
+"gimbal_auto_calibration_tips"="請確保您的飛機在地面上，並保持水平。按確定後雲台將會開始自動校準";
+
+"gimbal_balance_test"="平衡度測試";
+
+"gimbal_calibration"="校準系統";
+
+"gimbal_camera_select"="相機選擇";
+
+"gimbal_camera_upsidedown"="允許相機倒掛";
+
+"gimbal_close_motor"="關閉電機";
+
+"gimbal_follow_setting"="跟隨設置";
+
+"gimbal_follow_setting_dead_zone"="死區";
+
+"gimbal_follow_setting_speed"="速度";
+
+"gimbal_fpv_mode"="雲台跟隨機頭方向 ";
+
+"gimbal_limit_pitch"="俯仰";
+
+"gimbal_limit_pitchdown"="向下";
+
+"gimbal_limit_pitchup"="向上";
+
+"gimbal_limit_setting"="限位設置";
+
+"gimbal_limit_yaw"="平移";
+
+"gimbal_limit_yawleft"="向左";
+
+"gimbal_limit_yawright"="向右";
+
+"gimbal_motor_denoise"="降噪濾波";
+
+"gimbal_motor_dynamics"="力度";
+
+"gimbal_motor_expand"="展開";
+
+"gimbal_motor_pack"="收起";
+
+"gimbal_motor_precontrol"="超前控制";
+
+"gimbal_motor_strength"="強度";
+
+"gimbal_no_follow_head"="雲台不跟隨機頭方向";
+
+/* TODO, CHECK */
+"gimbal_osd_pitch_limited"="雲台Pitch軸已經達到最大限位";
+
+/* TODO, CHECK */
+"gimbal_osd_roll_limited"="雲台Roll軸已經達到最大限位";
+
+"gimbal_pitch"="俯仰";
+
+"gimbal_pitch_axis"="俯仰軸";
+
+"gimbal_pitch_down"="雲台俯仰角朝下";
+
+"gimbal_rc_setting"="遙控設置";
+
+"gimbal_rc_setting_dead_zone"="死區";
+
+"gimbal_rc_setting_max_speed"="最大速度";
+
+"gimbal_rc_setting_smoothness"="平滑度";
+
+"gimbal_rest"="默認設置";
+
+"gimbal_roll_adjust"="雲台Roll軸微調";
+
+"gimbal_roll_axis"="橫滾軸";
+
+"gimbal_ronin_m_battery"="RONIN－M電量：";
+
+"gimbal_scan_setting_range"="扇掃範圍(角度)";
+
+"gimbal_scan_setting_speed"="速度";
+
+"gimbal_sector_scan"="扇掃設置";
+
+"gimbal_set_params"="設置雲台參數";
+
+"gimbal_setting"="雲台設置";
+
+"gimbal_setting_configure_1"="配置1";
+
+"gimbal_setting_configure_2"="配置2";
+
+"gimbal_setting_configure_3"="配置3";
+
+"gimbal_setting_confirm_reset_settings"="確定要重置所有參數嗎？";
+
+"gimbal_setting_pitch_exp_title"="雲台俯仰軸EXP";
+
+"gimbal_setting_pitch_limit_title"="擴展雲台俯仰軸限位至上30度";
+
+"gimbal_setting_pitch_smooth_track_title"="雲台俯仰平滑";
+
+"gimbal_setting_title"="雲台設置";
+
+"gimbal_setting_yaw_exp_title"="雲台偏航軸EXP";
+
+"gimbal_setting_yaw_follow_title"="雲台偏航跟隨同步";
+
+/* TODO CHECK */
+"gimbal_setting_yaw_smooth_track_title"="雲台偏航平滑";
+
+"gimbal_translation"="平移";
+
+"gimbal_trim"="微調";
+
+"gimbal_yaw_axis"="平移軸";
+
+"gimbal_yaw_backcenter"="雲台偏航角回中";
+
+"gimbal_yaw_heading"="水平旋轉角度回中";
+
+"gohome_cancel_button_title"="取消返航";
+
+"gohome_cancel_tips"="飛行器正在返航中，適當調整方向可避開障礙物，如有緊急情況請取消返航";
+
+"gohome_cancel_title"="智能返航中";
+
+"gohome_control_cancel_warning"="請確認是否要停止返航?";
+
+"gohome_control_slide_tips"="向右滑動返航";
+
+"gohome_control_title"="請確認是否自動返航";
+
+"gohome_control_warning"="飛行器將朝向返航點並根據當前設置返航。你仍然可以使用遙控器調整飛行器方向。短按遙控器上的返航按鈕可停止返航。";
+
+/* gs */
+"gs_alert_change_map_satellite"="當前處於無wifi網絡，加載衛星地圖可能耗費較大流量";
+
+"gs_button_title"="地圖";
+
+"guidance_setting_backward_tips"="該功能啟用後，跟隨目標接近飛行器時，飛行器將後退。請確保飛行器後方沒有障礙物，建議在開闊場地使用此功能。";
+
+"guidance_setting_left_right_tips"="該功能啟動後，飛行器會自動向左或者向右繞開障礙物飛行（默認為向上繞開）。";
+
+/* tracking 主动避障描述文案 */
+"guidance_setting_tracking_avoid_tips"="該功能啟動後，飛行器遇到障礙物會自動向左或者向右繞開。若關閉則會懸停。";
+
+"guidance_setting_vps_tips1"="飛行器在前視視野中檢測到障礙物時，會自動懸停。（前視感知系統工作時，最大飛行速度限制為10m/s）";
+
+"guidance_setting_vps_tips2"="返航時，如果檢測到飛行器前方視野有障礙物，飛機將自動升高避開。";
+
+"guidance_setting_vps_tips3"="前視感知攝像頭的可視角度為水平60度，垂直54度，超出視野範圍的障礙物將無法被檢測。";
+
+"guidance_setting_vps_tips4"="注意：前視感知攝像頭在光線不足時將無法正常工作；障礙物檢測精度與障礙物大小有關，詳細請參考用戶指南。";
+
+"handelBatteryLessThanTen"="OSMO電量不足%@%%";
+
+"handleAEB3"="包圍曝光連拍";
+
+"handleAEB5"="包圍曝光連拍";
+
+"handleAbout"="關於";
+
+"handleAntiBlink"="抗閃爍";
+
+"handleAuto"="自動";
+
+"handleAutoCleanCache"="自動清理視頻緩存（大於2GB時）";
+
+"handleAwake"="喚醒";
+
+"handleAwareHeat"="在錄音時，風扇在相機內部溫度過高時才開始工作。請避免觸碰相機，小心燙傷。";
+
+/* TODO */
+"handleBattery1Volt"="電芯1電壓";
+
+/* TODO */
+"handleBattery2Volt"="電芯2電壓";
+
+/* TODO */
+"handleBattery3Volt"="電芯3電壓";
+
+"handleBatteryChargingTimes"="電池循環次數";
+
+"handleBatteryInfo"="電池信息";
+
+/* TODO */
+"handleBatteryLog"="錯誤信息日誌";
+
+/* TODO */
+"handleBatteryProduceTime"="生產日期";
+
+/* TODO */
+"handleBatterySN"="序列號";
+
+"handleC1"="C1";
+
+"handleC2"="C2";
+
+"handleCache"="緩存";
+
+/* TODO CHECK and translate */
+"handleCalibrateLens"="標定鏡頭";
+
+"handleCameraSetting"="相機";
+
+/* TO DO */
+"handleCompassCalibrate"="指南針校準";
+
+/* TODO */
+"handleControlStick"="搖桿設置";
+
+/* TODO */
+"handleControlStickPan"="Pan";
+
+/* TODO */
+"handleControlStickTilt"="Tilt";
+
+/* TODO */
+"handleCurrentCapacity"="當前電量";
+
+"handleCurrentFWNotSupport"="目前版本固件暫不支持";
+
+/* TODO */
+"handleCurrentVolt"="當前電壓";
+
+"handleCustom"="自定義";
+
+"handleDefault"="默認";
+
+"handleDelete"="刪除";
+
+"handleDeleteAllCache"="刪除全部視頻緩存";
+
+"handleDigitalZoom"="數碼變焦控件";
+
+"handleDone"="完成";
+
+"handleExit"="退出";
+
+"handleFast"="快";
+
+"handleFastConfigure"="快速配置";
+
+"handleFileSerialNum"="文件序列號模式";
+
+"handleFirmwareVersion"="固件版本號";
+
+"handleFirst"="快";
+
+"handleFormat"="格式化";
+
+"handleFormatSDcard"="格式化sd卡";
+
+"handleGeneralSetting"="通用";
+
+"handleGimbalAdvanced"="高級";
+
+"handleGimbalAutoCalibrate"="雲台自動校準";
+
+"handleGimbalAutoCalibrateMsg"="請確保你的手柄直立在穩定平面上（可用手幫助手柄保持穩定），且雲台可自由轉動。按確認後雲台將會自動校準。";
+
+"handleGimbalBeginCalibrate"="開始校準";
+
+"handleGimbalCalibrate"="雲台校準";
+
+/* SmoothTrack速度表示云台在平移及俯仰方向上跟随动作的快慢。速度值越高，云台跟随得越快。UI上的描述文字：死区值越大，代表俯仰方向上改变云台方向的动作控制区域越大。平滑度越高，云台的响应动作越缓慢，遥控命令停止时云台将缓慢减速直至停止平滑度值越低，云台的响应动作会越急速，遥控命令停止时云台将迅速停止。 */
+"handleGimbalExplain"="死區值越大，代表俯仰方向上改變雲台方向的動作控制區域越大。平滑度越高，雲台的響應動作越緩慢，遙控命令停止時雲台將緩慢減速直至停止平滑度值越低，雲台的響應動作會越急速，遙控命令停止時雲台將迅速停止。";
+
+"handleGimbalFastConfigure"="快速配置";
+
+"handleGimbalHorizontalCalibrate"="水平微調";
+
+"handleGimbalLocked"="檢測到雲台被鎖定，請解鎖雲台。";
+
+"handleGimbalSetting"="雲台";
+
+"handleGrid"="網格";
+
+"handleGridCenter"="中心點";
+
+"handleGridDiagonal"="方格+對角線";
+
+"handleGridNone"="無";
+
+"handleGridSquare"="方格";
+
+"handleHardDecode"="啟用硬件解碼";
+
+"handleHistgram"="直方圖";
+
+"handleInterval"="定時拍攝";
+
+"handleLiveStream"="Youtube直播";
+
+"handleMiddle"="中";
+
+/* TO DO */
+"handleMotorCalibrate"="電機校準";
+
+"handleMultiple"="連拍";
+
+"handleNotShow"="不再提示";
+
+"handleOSMOOnSleep"="OSMO處於休眠模式";
+
+"handleOther"="其他";
+
+"handleOverExpoWarning"="過曝警告";
+
+"handlePano"="全景";
+
+"handlePanoAutoPanorama"="自動全景";
+
+"handlePanoCannotStartByAngle"="請保持手柄水平正置或倒置，傾斜時無法拍攝全景照片";
+
+"handlePanoFront180"="向前全景";
+
+"handlePanoSelfiePanorama"="自拍全景";
+
+"handlePhotoFormat"="照片格式";
+
+"handlePhotoRatio"="照片比例";
+
+"handlePitchLimit"="俯仰軸上限";
+
+"handlePitchLimitExplain"="死區值越大，代表俯仰方向上改變雲台方向的動作控制區域越大。";
+
+"handlePreSetting"="預設配置";
+
+"handlePreview"="快速預覽";
+
+"handleRCSmoothExplain"="平滑度越高，雲台的響應動作越緩慢，遙控命令停止時雲台將緩慢減速直至停止平滑度值越低，雲台的響應動作會越急速，遙控命令停止時雲台將迅速停止。";
+
+"handleRCcurve"="遙桿平滑度";
+
+"handleRebootOSMO"="電機保護，請手動重啟OSMO";
+
+"handleRecoverGimbal"="點擊重啟雲台";
+
+"handleResetAll"="恢復出廠設置";
+
+"handleResetAll_alert"="是否恢復出廠設置";
+
+"handleResetCamera"="重置相機參數";
+
+"handleResetGimbal"="重置雲台參數";
+
+"handleResetGimbal_alert"="確定重置雲台參數";
+
+"handleResetParam"="重置參數";
+
+"handleSecond"="中";
+
+"handleSingle"="單拍";
+
+"handleSlow"="慢";
+
+"handleSmoothTrack"="跟隨速度";
+
+/* TODO */
+"handleSmoothTrackAdjustments"="SmoothTrack設置調整";
+
+"handleSmoothTrackExplain"="SmoothTrack速度表示雲台在平移及俯仰方向上跟隨動作的快慢。速度值越高，雲台跟隨得越快。";
+
+/* TODO */
+"handleSmoothTrackSetting"="SmoothTrack設置開關";
+
+/* TO DO */
+"handleStartCalibrate"="開始校準";
+
+/* TO DO */
+"handleStartTune"="開始";
+
+"handleStickDecouple"="搖桿響應方向";
+
+"handleStickFreeDirection"="自由方向";
+
+"handleStickHorVerDirection"="水平/豎直";
+
+"handleStopFanForAudio"="錄音時風扇停轉";
+
+"handleTLPStabilizationNotFor1s"="電子消抖在2s及以上快門間隔才會工作";
+
+"handleTapToReload"="連接故障，輕觸重新獲取文件。";
+
+"handleThird"="慢";
+
+"handleTimeaspeGenerate"="生成";
+
+"handleTimelapse"="延時攝影";
+
+"handleTimelapseFormat"="延時攝影格式";
+
+"handleTimelapseInterval"="快門間隔";
+
+"handleTimelapseSettings"="延時攝影";
+
+"handleTimelapseVideo"="視頻";
+
+"handleTimelaspeDuration"="持續時間";
+
+/* TODO */
+"handleTitleAccel"="加速度";
+
+/* TODO */
+"handleTitleDeadband"="死區";
+
+/* TODO */
+"handleTitleSmoothing"="平滑度";
+
+/* TODO */
+"handleTitleSpeed"="速度";
+
+/* TODO */
+"handleTrackAdjustPan"="Pan";
+
+/* TODO */
+"handleTrackAdjustRoll"="Roll";
+
+/* TODO */
+"handleTrackAdjustTilt"="Tilt";
+
+/* TODO */
+"handleTrackSetPan"="Pan";
+
+/* TODO */
+"handleTrackSetRoll"="Roll";
+
+/* TODO */
+"handleTrackSetTilt"="Tilt";
+
+"handleTuTorialLoseConnection"="與OSMO斷開連接，教程中斷。";
+
+"handleTutorialEnd"="這樣坐沙發上就可以控制遠處的Osmo相機了，酷吧！";
+
+/* appcontrolGimbal */
+"handleTutorialState_AppControl"="最後一步。長按屏幕不放直到藍色光圈出現，然後試試拖動它。";
+
+"handleTutorialState_AppControlResult"="Osmo不在手邊時，你也可以輕鬆控制相機。";
+
+"handleTutorialState_Continue"="繼續";
+
+"handleTutorialState_Finish"="恭喜！你已經掌握Osmo的操作技巧了，立即享受創作的樂趣吧！";
+
+/* 按住前面free模式 */
+"handleTutorialState_FreeGimbal"="按住Osmo手柄前方的“扳機鍵”不放，然後轉動手柄看看。";
+
+"handleTutorialState_FreeGimbalResult"="按非常好。按住“扳機鍵”不放，不管怎麼轉動，相機鏡頭都始終保持不動。";
+
+/* 保持osmo竖直 */
+"handleTutorialState_KeepStraight"="請保持OSMO豎直。";
+
+/* 动手柄摇杆 */
+"handleTutorialState_MoveStick"="試試上下或左右推動Osmo手柄上的搖桿。";
+
+"handleTutorialState_MoveStickResult"="通過搖桿可以控制相機平滑地移動。";
+
+"handleTutorialState_Next"="下一步";
+
+"handleTutorialState_NextTime"="下次吧";
+
+"handleTutorialState_Ready"="準備好了";
+
+/* 双击回中 */
+"handleTutorialState_Recenter"="試一下雙擊手柄前的“扳機鍵”";
+
+"handleTutorialState_RecenterResult"="讓相機回中，輕鬆愉快。";
+
+/* appcontrolGimbal */
+"handleTutorialState_Recover"="";
+
+/* 转动手腕 */
+"handleTutorialState_RotateWrist"="開始教程。請將Osmo的鏡頭指向你的左、右或上、下。";
+
+"handleTutorialState_RotateWristResult"="很好! Osmo會將你的動作轉換成相機的平滑運動。";
+
+/* 自拍 */
+"handleTutorialState_Self"="想自拍么？試試三擊“扳機鍵”。";
+
+"handleTutorialState_SelfResult"="好! 現在你可以自拍或者錄製視頻了。";
+
+/* 解除云台锁定 */
+"handleTutorialState_UnlockGimbal"="檢測到雲台被鎖定，請解鎖雲台。";
+
+/* 直接上手 */
+"handleTutorialState_UseHand"="試試直接用手扭動相機來構圖？";
+
+"handleTutorialState_UseHandResult"="非常好！相機角度調整是可以直接下手的。";
+
+"handleTutorialState_WelcomeContent"="通過以下教程，你可以迅速了解Osmo的核心功能，準備好了嗎?";
+
+/* 欢迎使用界面 */
+"handleTutorialState_WelcomeTitle"="歡迎使用OSMO !";
+
+"handleVideoAudio"="視頻錄音";
+
+"handleVideoAuto"="錄影";
+
+"handleVideoCache"="視頻自動緩存";
+
+"handleVideoContrast"="視頻對比度增強";
+
+"handleVideoFormat"="視頻格式";
+
+"handleVideoNP"="視頻制式";
+
+"handleVideoResolution"="視頻分辨率";
+
+"handleWifi"="Wi-Fi";
+
+"handleWifiCountryCode"="WI-FI 國家代碼";
+
+/* todo */
+"handleWifiFrequency"="WI-FI 頻率";
+
+"handleWifiOccupied"="其他移動設備正在使用此OSMO。";
+
+/* todo */
+"handleWifiPassword"="WI-FI 密碼";
+
+/* todo */
+"handleWifiPasswordText"="密碼";
+
+/* todo */
+"handleWifiSSID"="WI-FI SSID";
+
+/* todo */
+"handleWifiSSIDText"="SSID";
+
+"handleWifiSetting"="Wi-Fi設置";
+
+"hanldeTutorialAskClickClose"="確定要退出指引教程么?";
+
+"height"="高度";
+
+"home_point_set_aircraft_failed"="設置飛機當前位置為返航點失敗。";
+
+"home_point_set_aircraft_successful"="設置飛機當前位置為返航點成功。";
+
+"home_point_set_aircraft_timeout"="設置飛機當前位置為返航點超時";
+
+"home_point_set_rc_failed"="設置遙控器當前位置為返航點失敗。";
+
+"home_point_set_rc_successful"="設置遙控器當前位置為返航點成功。";
+
+"home_point_set_rc_timeout"="設置遙控器當前位置為返航點超時。";
+
+"home_point_set_successful"="返航點設置成功";
+
+"horizontal velocity Inconsistent"="水平速度不一致";
+
+"hv"="硬件:";
+
+"iknow"="知道了";
+
+"import_album_name"="DJI Import";
+
+"interface"="界面";
+
+"interface_advanced"="高級";
+
+"interface_basic"="簡約";
+
+"interface_style"="風格";
+
+"interfere"="超量程";
+
+/* 假电池打击|警告信息 */
+"invalid_battery_warning_msg"="檢測到非DJI電池，飛行器將無法飛行";
+
+/* 假电池打击|警告信息 */
+"invalid_battery_warning_msg "="檢測到非DJI電池，飛行器將無法飛行";
+
+"ioc_course_lock_angle_reset"="重設";
+
+"ioc_follow_me"="跟隨鎖定";
+
+"ioc_home_lock"="返航點鎖定";
+
+"ioc_home_point"="返航點";
+
+"ioc_homepoint_lock"="啟用返航點鎖定";
+
+"ioc_hotpoint_lock"="啟用興趣點環繞";
+
+"ioc_interest_point"="興趣點";
+
+"ioc_orientation_lock"="航向鎖定";
+
+"ioc_orientation_lock_intro"="開啟智能方向控制後，會鎖定當前機頭方向，以遙控器正方向為前後左右。\n\n點擊\"重設\"可重新設置機頭鎖定方向。";
+
+"ioc_point_lock"="興趣點鎖定";
+
+"ioc_setting"="智能航向設置";
+
+"landing_set_successful"="一鍵降落";
+
+"lastImport_albumName"="最新導入的照片";
+
+"lb2_osd_setting_bottom_margin"="底邊距";
+
+"lb2_osd_setting_left_margin"="左邊距";
+
+"lb2_osd_setting_right_margin"="右邊距";
+
+"lb2_osd_setting_switch_title"="顯示OSD";
+
+"lb2_osd_setting_top_margin"="頂邊距";
+
+"lb2_output_pip_setting_bottom_left"="左下角";
+
+"lb2_output_pip_setting_bottom_right"="右下角";
+
+"lb2_output_pip_setting_top_left"="左上角";
+
+"lb2_output_pip_setting_top_right"="右上角";
+
+"lb2_pip_setting_antenna_title"="天線";
+
+"lb2_setting_368_work_mode"="368 工作模式";
+
+"lb2_setting_aerial_detection_distance"="請保持兩米距離";
+
+"lb2_setting_aerial_detection_place"="請保持遙控器和天空端天線與地面垂直，並保持平行";
+
+"lb2_setting_aerial_detection_tips"="RSSI接收信號強度指示";
+
+"lb2_setting_aerial_detection_title"="天線檢測";
+
+"lb2_setting_aerial_detection_warning"="檢查天空端天線是否扣緊或者正常安裝。";
+
+"lb2_setting_app_output_mode_title"="App輸出模式";
+
+"lb2_setting_bandwidth_assign_title"="帶寬分配";
+
+"lb2_setting_bandwidth_mode_high_quality"="高畫質";
+
+"lb2_setting_bandwidth_mode_low_delay"="低延遲";
+
+"lb2_setting_bandwidth_mode_title"="圖傳模式";
+
+"lb2_setting_hdmi_osd_setting_title"="OSD設置";
+
+"lb2_setting_hdmi_output_device_title"="視頻輸出設備";
+
+"lb2_setting_hdmi_output_format_title"="視頻輸出格式";
+
+"lb2_setting_hdmi_output_mode_title"="視頻輸出模式";
+
+"lb2_setting_hdmi_output_switch_title"="HDMI/SDI視頻輸出";
+
+"lb2_setting_open_ext"="開啟EXT端口";
+
+"lb2_setting_output_pip_setting_title"="畫中畫設置";
+
+"lb2_setting_warning_bandwidth_av_only"="請注意，您已切換帶寬分配至單路模式，當前僅有AV模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_ext_only"="請注意，您已切換帶寬分配至單路模式，當前僅有EXT模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_hdmi_only"="請注意，您已切換帶寬分配至單路模式，當前僅有HDMI模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_lb_only"="請注意，您已切換帶寬分配至單路模式，當前僅有LB模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_slave_av_only"="請注意，主機已切換帶寬分配至單路模式，當前僅有AV模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_slave_ext_only"="請注意，主機已切換帶寬分配至單路模式，當前僅有EXT模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_slave_hdmi_only"="請注意，主機已切換帶寬分配至單路模式，當前僅有HDMI模式視頻輸出";
+
+"lb2_setting_warning_bandwidth_slave_lb_only"="請注意，主機已切換帶寬分配至單路模式，當前僅有LB模式視頻輸出";
+
+"lb2_setting_warning_output_bandwidth_not_support"="在該帶寬分配下無法設置其他模式，請調節帶寬分配";
+
+"lb2_setting_warning_output_bandwidth_slave_not_support"="單路視頻情況下從機無法切換該模式，請在主機下切換";
+
+"lens_info_0_1001_0"="M.ZUIKO DIGITAL ED 14-42mm F3.5-5.6";
+
+"lens_info_0_1007_0"="M.ZUIKO DIGITAL ED 12mm F2.0";
+
+"lens_info_0_1011_0"="M.ZUIKO DIGITAL 45mm F1.8";
+
+"lens_info_0_1016_0"="M.ZUIKO DIGITAL 17mm F1.8";
+
+"lens_info_0_1021_0"="M.ZUIKO DIGITAL ED 14-42mm F3.5-5.6 EZ";
+
+"lens_info_0_1022_0"="M.ZUIKO DIGITAL 25mm F1.8";
+
+"lens_info_2_1005_0"="LUMIX G 20mm F1.7";
+
+"lens_info_2_1014_0"="LUMIX G VARIO PZ 14-42mm /F3.5-5.6";
+
+"lens_info_2_1023_0"="LUMIX G VARIO 35-100mm/F4.0-5.6";
+
+"lens_info_8_1001_0"="DJI MFT 15mm F1.7 ASPH";
+
+/* 未知镜头 */
+"lens_info_unknown"="未知鏡頭";
+
+"limitDistance"="限遠距離";
+
+"limitHeight"="限高高度";
+
+"limitLow"="限低高度";
+
+"login_assistant_label"="調參助手";
+
+"login_button_activate"="激活";
+
+"login_button_cancel"="取消登錄";
+
+"login_button_login"="登錄";
+
+"login_button_registlater"="暫不激活";
+
+"login_button_signup"="註冊";
+
+"login_community_label"="社區";
+
+"login_confirm_email_label"="請確認您的DJI帳號";
+
+"login_failed_by_network"="登錄失敗，請檢查設備網絡";
+
+"login_failed_common"="登錄失敗";
+
+"login_failed_password"="用戶名或密碼錯誤";
+
+"login_forgot"="忘記密碼";
+
+"login_main_title"="登陸您的DJI賬號";
+
+"login_placeholder_confirm"="確認密碼";
+
+"login_placeholder_email"="郵箱";
+
+"login_placeholder_password"="密碼";
+
+"login_store_label"="DJI 商城";
+
+"login_sub_title"="賬號系統同時支持以下平台";
+
+"login_usercenter_label"="用戶中心";
+
+"logout"="退出";
+
+"logout_alertTitle"="確定註銷嗎？";
+
+"lv"="Loader:";
+
+"manual_cameraSettingDial"="相機設置轉盤";
+
+"manual_flightMode"="左起： F（輔助）\nA（姿態）\nP（定位）";
+
+"manual_flightModeSwitch"="飛行模式切換開關";
+
+"manual_gimbalDial"="雲台俯仰控制撥輪";
+
+"manual_playback"="回放按鍵";
+
+"manual_recording"="錄影按鍵";
+
+"manual_shutter"="拍照按鍵";
+
+"maxdistance_set_timeout"="限遠參數設置超時";
+
+"maxheight_set_timeout"="限高參數設置超時";
+
+"mc_a3_redundancy_sys_1"="內置IMU";
+
+"mc_a3_redundancy_sys_2"="外置IMU1";
+
+"mc_a3_redundancy_sys_3"="外置IMU2";
+
+"mc_advanced_beginnerMode_info"="注意: 限高: 30M(98.4252ft), 限遠: 30M(98.4252ft)";
+
+"mc_advanced_setting"="高級設置";
+
+"mc_advanced_setting_intro"="只建議進階用戶設置飛控高級參數，不恰當的操作，可能會引起嚴重後果，請謹慎操作。";
+
+"mc_advanced_setting_section"="高級";
+
+"mc_advanced_turn_off_vision_alert_msg"="關閉後，飛行器將無法在室內低空定高懸停。";
+
+"mc_advanced_turn_off_vision_alert_title"="請確認是否關閉視覺定位系統?";
+
+"mc_advanced_turn_on_vision"="啟用視覺定位";
+
+"mc_ass_disable_msg"="障礙物感知功能未生效";
+
+"mc_ass_enable_msg"="障礙物感知功能生效";
+
+"mc_ass_title"="障礙物感知功能";
+
+"mc_atti_gain_vertical"="垂直";
+
+/* 电芯数 AK: When does this appear? */
+"mc_battery_count"="電芯數";
+
+"mc_beginner_mode"="新手模式";
+
+"mc_beginner_mode_warning"="為安全起見，飛行器起飛後不允許打開新手模式。";
+
+/* 指南针受扰起飞|限高生效+高度 */
+"mc_campass_limit_height_active"="指南針受擾，已限高%@";
+
+/* 指南针受扰起飞|解除 */
+"mc_campass_limit_height_deactive"="指南針自動校準完成，限高已解除";
+
+/* 指南针受扰起飞|限高达到 */
+"mc_campass_limit_height_reached"="已抵達受擾限高高度，請等待指南針自動校準完成或手動校準指南針後再升高";
+
+"mc_clear_redundancy_history"="清除歷史記錄";
+
+"mc_compass"="指南針";
+
+"mc_compass1"="指南針1";
+
+"mc_compass2"="指南針2";
+
+"mc_compass3"="指南針3";
+
+"mc_compass_calibration"="指南針校準";
+
+"mc_compass_calibration_intro"="點擊開始進行指南針校準";
+
+"mc_compass_warning_content"="請重新校準指南針";
+
+"mc_compass_warning_title"="指南針不正常";
+
+"mc_control_feel_exp"="EXP";
+
+"mc_control_feel_reset"="恢復操控手感參數";
+
+"mc_control_feel_sensitivity"="靈敏度";
+
+"mc_control_feel_setting"="操控手感設置";
+
+"mc_control_feel_title"="操控手感";
+
+"mc_control_sensitivity_atti"="姿態";
+
+"mc_control_sensitivity_brake"="剎車";
+
+/* TODO, CHECK */
+"mc_control_sensitivity_endpoint"="偏航行程";
+
+"mc_enterTravelMode_auto"="自動模式";
+
+"mc_enterTravelMode_manual"="手動模式";
+
+"mc_exp_back_left"="後退/向左";
+
+"mc_exp_description"="X 軸為您的當前搖桿物理輸出量，Y 軸為您當前搖桿的邏輯輸出量。係數範圍(0.2-0.8)";
+
+"mc_exp_down"="下降";
+
+"mc_exp_forward_right"="前進/向右";
+
+"mc_exp_turn_left"="左轉";
+
+"mc_exp_turn_right"="右轉";
+
+"mc_exp_up"="上升";
+
+"mc_extra_setting"="其他";
+
+"mc_f_mode"="F檔飛行模式";
+
+"mc_f_mode_auto"="智能飛行模式";
+
+"mc_f_mode_manal"="手動飛行模式";
+
+"mc_f_mode_manal_warning"="手動飛行模式免責聲明";
+
+"mc_failesafe_gohome_title"="失控保護模式";
+
+"mc_failsafe"="返航";
+
+"mc_failsafe_action"="失控行為";
+
+"mc_failsafe_alt_gohome"="返航高度";
+
+"mc_failsafe_gohome"="返航";
+
+"mc_failsafe_heading"="返航朝向";
+
+"mc_failsafe_heading_backwards"="背向返航點";
+
+"mc_failsafe_heading_forwards"="朝向返航點";
+
+"mc_failsafe_heading_intro"="改變飛行器返航時機頭朝向";
+
+/* TODO:need to check the translation */
+"mc_failsafe_hover"="懸停";
+
+"mc_failsafe_landing"="下降";
+
+"mc_failsafe_methods"="返航高度";
+
+"mc_failsafe_methods_intro"="調整高度將作用於失控返航及主動返航，飛行器將上升到當前設置的最低安全高度返航.";
+
+"mc_failsafe_setting"="返航設置";
+
+"mc_format_sd"="格式化數據記錄儀";
+
+"mc_format_sd_cmd_timeout"="格式化數據記錄儀失敗";
+
+"mc_format_sd_confirm_msg"="格式化數據記錄儀將清除之前的記錄儀數據，建議格式化前先對記錄儀數據進行備份";
+
+"mc_format_sd_success"="格式化數據記錄儀完成";
+
+"mc_formating_sd"="正在格式化數據記錄儀";
+
+"mc_gain"="感度";
+
+"mc_gain_atti_gain"="姿態";
+
+"mc_gain_brake_gain"="剎車";
+
+"mc_gain_gyro_gain"="角速度";
+
+"mc_gain_pitch"="俯仰";
+
+"mc_gain_roll"="橫滾";
+
+"mc_gain_setting"="感度設置";
+
+"mc_gain_setting_atti_title"="高級感度";
+
+"mc_gain_setting_basic_title"="基礎感度";
+
+"mc_gain_setting_intro"="此功能調整直接影響飛控姿態及感度，適合進階用戶設置，請謹慎操作.";
+
+"mc_gain_yaw"="航向";
+
+"mc_guidance"="Guidance";
+
+"mc_guidance_bottom"="飛機後方距離過近";
+
+"mc_guidance_breaking_title"="正在自動剎車";
+
+"mc_guidance_close_title"="關閉";
+
+"mc_guidance_disable_msg"="Guidance系統失效，障礙物感知功能將無法正常工作";
+
+"mc_guidance_enable_msg"="Guidance系統恢復，障礙物感知功能將正常工作";
+
+"mc_guidance_help_content"="1.請勿在狹小空間(長或者寬小於 3m)飛行,例如:走廊。\n2.飛行高度低於 0.5 m 時,障礙物感知功能將會自動關閉,請謹慎操作。\n3.飛行時,建議兩台或多台 Guidance 直線距離不小於 15m,以避免超聲波相互干擾。\n4.飛行時,Guidance 存在觀測盲區,在盲區內的障礙物不會被檢測到。\n";
+
+"mc_guidance_help_tips"="Guidance 飛行安全注意事項";
+
+"mc_guidance_left"="飛機左方距離過近";
+
+"mc_guidance_monitor_title"="障礙物感知功能提示窗";
+
+"mc_guidance_right"="飛機右方距離過近";
+
+/* guidance settings */
+"mc_guidance_title"="Guidance";
+
+"mc_guidance_top"="飛機前方距離過近";
+
+/* 飞行中 */
+"mc_in_air"="飛行中";
+
+"mc_ioc_mode"="允許航向鎖定模式";
+
+"mc_limit_distance_flight"="限遠";
+
+"mc_limit_distance_flight_beginner"="限遠";
+
+/* - Allowing the P4 to fly at max distance or setting a maximum distance for it to fly? */
+"mc_limit_distance_flight_switch"="距離限制";
+
+"mc_limit_height_flight"="限高";
+
+"mc_limit_height_flight_beginner"="限高";
+
+"mc_limit_height_flight_switch"="最大高度限制";
+
+"mc_limit_low_flight"="限低";
+
+"mc_limit_low_flight_switch"="防觸地限制";
+
+"mc_limit_not_msg"="你正在修改最高飛行高度，這可能違反當地法律法規（比如：美國聯邦航空管理局規定的400英尺，約121米）。你且只有你對在這個高度被修改後的飛行負責和需承擔法律責任。大疆創新和它的分公司和分支機構不會對在此之後的任何事故負責。無論是合同上的還是衡平法上。";
+
+"mc_limit_note"="聲明";
+
+/* TODO: Translate */
+"mc_limit_update_course_reversal_altitude"="由於原返航高度大于飛行器的最大高度限制，新的返航高度被設置為%dm。";
+
+/* LED警告 AK: Shouldn't this be Low Battery Warning? */
+"mc_low_battery_led_warning"="LED警告";
+
+/* 低电压动作 AK: What is meant by \"Action\" */
+"mc_low_voltage_action"="低電壓動作";
+
+/* 低电压警告 */
+"mc_low_voltage_warning"="低電壓警告";
+
+"mc_max_atti_angle"="最大姿態角";
+
+"mc_multi_mode"="允許切換飛行模式";
+
+"mc_p4_redundancy_sys_1"="IMU1";
+
+"mc_p4_redundancy_sys_2"="IMU2";
+
+"mc_param_disabled_gear_procted"="關閉智能腳架開關";
+
+"mc_param_disabled_gear_procted_msg"="關閉智能腳架開關後，您的飛行器在落地時將不會自動放下腳架, 可能會導致雲台相機受損";
+
+"mc_param_exit_pack_mode"="退出運輸模式";
+
+"mc_param_failed"="命令發送失敗";
+
+"mc_param_gear_procted"="智能腳架開關";
+
+"mc_param_pack_mode"="進入運輸模式";
+
+"mc_param_pack_mode_failed"="無法進入運輸模式，請確認是否放置在光滑，硬的平地上，且已將雲台拆卸。";
+
+"mc_param_pack_mode_success"="請移除相機，飛行器腳架會自動移動，進入運輸模式。";
+
+"mc_param_pack_mode_tips"="進入運輸模式前，請確認是否放置在光滑，硬的平地上，且已將雲台拆卸。如果無法正常進入運輸模式，可以使用手動模式。";
+
+"mc_param_reset"="重置所有參數";
+
+"mc_param_reset_courselock_angle_failed"="設置航向鎖定角度失敗";
+
+"mc_param_reset_courselock_angle_success"="設置航向鎖定角度成功";
+
+"mc_param_reset_courselock_angle_timeout"="設置航向鎖定角度超時";
+
+/* TODO, double check */
+"mc_param_reset_in_motorup"="電機轉動過程中不能重置飛控參數";
+
+"mc_param_reset_intro"="該操作將會將所有飛控相關參數還原至初始狀態，請確認是否要進行該項操作?";
+
+"mc_param_reset_success"="重置參數成功";
+
+"mc_param_reset_timeout"="重置參數超時";
+
+"mc_param_success"="命令發送成功";
+
+"mc_param_timeout"="命令發送超時";
+
+"mc_param_unlock_motor"="解除電機鎖定";
+
+"mc_perception_setting"="感知";
+
+"mc_redundancy_acc"="加速計";
+
+"mc_redundancy_gyro"="陀螺儀";
+
+"mc_reset_courselock"="重置航向鎖定的角度";
+
+"mc_sensor"="傳感器";
+
+"mc_sensor_acceration_title"="加速度(g)";
+
+"mc_sensor_adv_calibrating"="高級校準中...  校準完成後將自動進行一次基礎校準";
+
+"mc_sensor_adv_finish"="校準完成";
+
+"mc_sensor_adva_cali_alert_title"="IMU 校準";
+
+"mc_sensor_adva_cali_confirm_msg"="請再次確認飛行器靜止不動，否則將無法正常飛行，需要重新進行 IMU 校準。";
+
+"mc_sensor_adva_cali_msg"="請確保飛行器已經斷電冷卻超過 5 分鐘並保持飛行器水平靜止不動，在校準過程中請勿移動飛行器，否則請重新校準。該過程大概持續 5 到 10 分鐘，請耐心等候。";
+
+"mc_sensor_adva_cali_status"="高級校準狀態";
+
+"mc_sensor_adva_cali_title"="IMU 校準";
+
+"mc_sensor_adva_motor_up"="電機起轉不能校準";
+
+"mc_sensor_basic_cali_alert_title"="基礎校準";
+
+"mc_sensor_basic_cali_msg"="校準中請保持主控處於水平位置，否則需要進行重新校準";
+
+"mc_sensor_basic_cali_not_ready"="主控還沒達到基礎校準溫度，請等待";
+
+"mc_sensor_basic_cali_status"="基礎校準狀態";
+
+"mc_sensor_basic_cali_title"="基礎校準";
+
+"mc_sensor_basic_calibrating"="基礎校準中...";
+
+"mc_sensor_basic_finish"="校準完成";
+
+"mc_sensor_button_calibrating"="校準中";
+
+"mc_sensor_button_start_calibrate"="開始校準";
+
+"mc_sensor_calibrate_title"="校準";
+
+"mc_sensor_calibrating"="IMU校準中，請耐心等待";
+
+"mc_sensor_calibrating_no_reach_tips"="主控校準時未達到目標溫度，請關閉主控，冷卻5分鐘後再進行高級校準";
+
+"mc_sensor_calibrating_too_hot_tips"="主控校準時溫度過高，為了達到最好的校準效果，請關閉主控，冷卻5分鐘後再進行高級校準";
+
+/* 校准指南针 */
+"mc_sensor_calibration_button_compass"="校準指南針";
+
+/* 校准IMU */
+"mc_sensor_calibration_button_imu"="校準傳感器";
+
+"mc_sensor_check_imu_msg"="檢查 IMU 過程中，請保持飛行器水平靜止不動，否則請重新檢查 IMU";
+
+"mc_sensor_check_imu_title"="檢查 IMU";
+
+"mc_sensor_checking_imu"="正在檢查 IMU 數據";
+
+"mc_sensor_compass_title"="指南針";
+
+"mc_sensor_flash_error_tips"="主控芯片通訊出錯，如反覆重試後仍提示該錯誤，請聯繫我們或代理商";
+
+"mc_sensor_gyroTemp_title"="陀螺儀溫度";
+
+"mc_sensor_gyrosope_title"="陀螺儀(角度/秒)";
+
+"mc_sensor_heaterPower_title"="IMU加熱功率";
+
+"mc_sensor_imu_abnormally"="IMU 工作異常, 請聯繫我們或代理商";
+
+"mc_sensor_imu_need_calibrate"="需要校準，請點擊相應的按鈕進行校準";
+
+"mc_sensor_imu_no_need_calibrate"="不需要校準";
+
+"mc_sensor_information_title"="信息";
+
+"mc_sensor_move_imu_tips"="校準時飛機被移動，故校準未完成，請重新開始 IMU 校準";
+
+"mc_sensor_need_adv_cali"="飛行器需要高級校準";
+
+"mc_sensor_need_basic_cali"="飛行器需要基礎校準";
+
+"mc_sensor_need_calibrate_tips"="請點擊高級校準對IMU進行校準";
+
+"mc_sensor_no_need_cali"="飛行器不需要校準";
+
+"mc_sensor_setting"="傳感器設置";
+
+"mc_sensor_state_cur_use"="當前使用";
+
+"mc_sensor_state_excellent"="優";
+
+"mc_sensor_state_fair"="良";
+
+"mc_sensor_state_poor"="差";
+
+"mc_sensor_temp_no_reach_tips"="主控溫度未達到就開始基礎校準";
+
+"mc_sensor_too_hot_tips"="主控溫度過高，為了達到最好的校準效果，請關閉主控，冷卻5分鐘後再進行高級校準";
+
+"mc_sensor_unknown_error_tips"="校準時發生未知錯誤，請重試";
+
+/* bias AK: This make sense? */
+"mc_sensor_value_name_bias"="零偏";
+
+/* 超模量 AK: As above- When would this be seen? */
+"mc_sensor_value_name_mod"="干擾量";
+
+/* 严重低电压警告 */
+"mc_serious_voltage_warning"="嚴重低電壓警告";
+
+"mc_setting"="飛控參數設置";
+
+/* 新手模式说明 */
+"mc_setting_beginner_tips"="新手模式下，飛行器只能在返航點的30米半徑範圍內飛行，飛行器飛行速度將顯著變慢。";
+
+/* 飞控设置｜基础设置 */
+"mc_setting_seciton_basic"="基礎設置";
+
+/* 飞控设置｜飞行限制 */
+"mc_setting_seciton_flight_limit"="飛行限制";
+
+/* 不带vision的返航高度说明 */
+"mc_settting_go_home_height_no_vision_tips"="返航時，飛行器將上升到設置的最低安全高度返航。如果當前高度高於安全高度，飛行器會水平飛行。";
+
+"mc_settting_go_home_height_tips"="返航時，飛行器將上升到設置的最低安全高度返航。如果前視障礙物感知系統正常工作，飛行器遇障會上升躲避。";
+
+/* 没有运动模式时的说明 */
+"mc_settting_multi_mode_tips"="P 模式 (定位) - 使用GPS或視覺定位系統實現精確懸停；\nA 模式 (姿態) - 不使用GPS和視覺定位系統，不能精確懸停；\nF 模式 (功能) - 和P 模式類似，可使用智能飛行模式。";
+
+/* 有运动模式时的说明（内容需修改） */
+"mc_settting_multi_mode_tips_sport"="P 模式 (定位) - 前視障礙物感知系統默認開啟，GPS定位和下視感知定位正常工作；\nS 模式 (運動) - 飛行器機動性提高，最快速度達20m/s，前視障礙物感知系統關閉，GPS定位和下視感知定位正常工作；\nA 模式 (姿態) - 前視障礙物感知系統、GPS定位和下視視覺定位系統不工作，不能精確懸停。";
+
+/* 有运动模式且没有前视时的说明 */
+"mc_settting_multi_mode_tips_sport_no_vision"="P 模式 (定位) - GPS定位和下視感知定位正常工作；\nS 模式 (運動) - 飛行器機動性提高，最快速度達20m/s，GPS定位和下視感知定位正常工作；\nA 模式 (姿態) - GPS定位和下視視覺定位系統不工作，不能精確懸停。";
+
+/* 智能低电量返航 */
+"mc_smart_action_title"="低電量智能返航";
+
+"mc_snsor_check_error"="需要校準，請點擊相應的按鈕進行校準";
+
+"mc_snsor_check_ok"="不需要校準";
+
+"mc_switch_mode_with_mulit_off"="無法切換當前飛行模式，如需切到A/F模式，請在飛控設置打開'允許切換飛行模式'開關";
+
+/* FPV|档位切换|启用多模式开关 */
+"mc_switch_mode_with_mult_off_v11"="不允許切換飛行模式，如需切到姿態/運動模式，請在飛控設置打開'允許切換飛行模式'開關;";
+
+"mc_switch_sd_mode"="進入讀取飛行數據模式";
+
+"mc_switch_sd_mode_confirm_msg"="使用USB數據線將飛行器與電腦連接，可導出飛行數據，重啟飛行器即可退出該模式。";
+
+"mc_switch_sd_mode_error"="無法進入讀取飛行數據模式，請重試";
+
+"mc_switch_sd_mode_error_motor_up"="電機起轉，無法進入讀取飛行數據模式";
+
+"mc_switch_sd_mode_success"="成功進入讀取飛行數據模式，請連接USB讀取數據";
+
+"mc_switching_sd_mode"="正在進入讀取飛行數據模式，請稍後";
+
+/* 辅助飞行设置 */
+"mc_tomato_guidance_settings"="感知設置";
+
+/* MC设置|辅助飞行设置|关闭辅助刹车确认对话框|内容 */
+"mc_tomato_guidance_settings_ass_off_alert_content"="關閉前視感知系統後，飛行器將不會在偵測到障礙物時自動減速和懸停。 請確認是否關閉？";
+
+/* MC设置|辅助飞行设置|关闭辅助刹车确认对话框|标题 */
+"mc_tomato_guidance_settings_ass_off_alert_title"="關閉前視感知系統";
+
+/* MC设置|辅助飞行设置|启用辅助刹车开关//Turn on Auto-braking */
+"mc_tomato_guidance_settings_ass_on"="啟用前視感知系統";
+
+/* MC设置|辅助飞行设置|关闭返航避障确认对话框|内容 */
+"mc_tomato_guidance_settings_gohome_avoid_off_alert_content"="關閉返航障礙物檢測後，飛行器返航時偵測到障礙物將不會自動升高躲避，確認要關閉此功能？";
+
+/* MC设置|辅助飞行设置|关闭返航避障确认对话框|标题 */
+"mc_tomato_guidance_settings_gohome_avoid_off_alert_title"="關閉返航障礙物檢測";
+
+/* MC设置|辅助飞行设置|启用返航避障开关 */
+"mc_tomato_guidance_settings_gohome_avoid_on"="返航障礙物檢測";
+
+/* 暂时无用 */
+"mc_tomato_guidance_settings_precision_mode_on"="Precision Mode";
+
+/* MC设置|辅助飞行设置|Tracking主动避障 */
+"mc_tomato_guidance_settings_tracking_can_active_avoid"="主動避障（飛行器將繞開障礙物）";
+
+/* MC设置|辅助飞行设置|允许倒退Tracking */
+"mc_tomato_guidance_settings_tracking_can_go_backward"="智能跟隨時允許倒退";
+
+"mc_turn_on_led"="打開前臂燈";
+
+"mc_ultrasoud_locked"="超聲波系統定高故障，請及時降落";
+
+"mc_vision_title"="是否啟用GPS";
+
+"mc_warning"="當前飛行模式為手動，若您不熟悉該模式，請切換到其他模式。";
+
+/* unlock */
+"mine_nfz_no_license_description"="No application yet.\nYou can submit applications to unlock \nauthorization zone at https://flysafe.dji.com.";
+
+/* unlock */
+"mine_nfz_no_license_description_title"="無申請";
+
+"mine_nfz_unlock_title"="My Unlock NFZ Application";
+
+"minheight_set_timeout"="限低參數設置超時";
+
+"more_info_required"="需要更多信息";
+
+/* 起飞异常，请检测传感器和电机的状态 */
+"motor_stop_reason_auto_takeoff_lanch_faile"="起飛異常，請檢測傳感器和電機的狀態";
+
+/* 起飞异常，请检测电机和桨的状态 */
+"motor_stop_reason_engine_start_failed"="起飛異常，請檢測電機和槳的狀態";
+
+/* 电机或桨异常，请检测电机和桨的状态 */
+"motor_stop_reason_esc_part_empty_on_grd"="電機或槳異常，請檢測電機和槳的狀態";
+
+/* 电机或桨异常，请检测电机和桨的状态 */
+"motor_stop_reason_esc_stall_near_gound"="電機或槳異常，請檢測電機和槳的狀態";
+
+/* 电机或桨异常，请检测电机和桨的状态 */
+"motor_stop_reason_esc_unbalance_on_grd"="電機或槳異常，請檢測電機和槳的狀態";
+
+/* 撞击地面，请检测飞行器损坏情况 */
+"motor_stop_reason_impact_on_grd"="撞擊地面，請檢測飛行器損壞情況";
+
+/* 机身倾翻，请检测飞行器损坏情况 */
+"motor_stop_reason_roll_over_on_grd"="機身傾翻，請檢測飛行器損壞情況";
+
+/* todo */
+"motor_stop_reason_takeoff_exception"="起飛異常，請檢測傳感器和電機的狀態";
+
+"multi_rotor_type"="多旋翼類型";
+
+"multi_rotor_type_4M"="I型四旋翼";
+
+"multi_rotor_type_4M_X"="X型四旋翼";
+
+"multi_rotor_type_6M"="I型六旋翼";
+
+"multi_rotor_type_6M_X"="V型六旋翼";
+
+"multi_rotor_type_8M"="I型八旋翼";
+
+"multi_rotor_type_8M_UD"="I型共軸雙槳八旋翼";
+
+"multi_rotor_type_8M_UD_X"="X型共軸雙槳八旋翼";
+
+"multi_rotor_type_8M_X"="V型八旋翼";
+
+"multi_rotor_type_Y6"="IY型共軸雙槳六旋翼";
+
+"multi_rotor_type_Y6_X"="Y型共軸雙槳六旋翼";
+
+"myAircraft_bar_title"="我的飛行器";
+
+"myDroneInfo_activateDate"="激活日期";
+
+"myDroneInfo_bindingEmail"="綁定郵箱";
+
+"myDroneInfo_deviceName"="設備名稱";
+
+"myDroneInfo_firmware"="固件版本";
+
+"myDroneInfo_ip"="IP地址";
+
+"myDroneInfo_productType"="設備類型";
+
+"myDroneInfo_sn"="序列號";
+
+"myDroneInfo_software"="軟件版本";
+
+"myEarnings_balance_title"="賬戶餘額";
+
+"myEarnings_earnings_title"="預估收入";
+
+"myEarnings_title"="我的推廣收入";
+
+"myFlight_TabBarItem_title"="飛行記錄";
+
+"myFlight_bar_title"="飛行記錄";
+
+"myInfo_TabBarItem_title"="我";
+
+"myInfo_aircraftBar_Text"="我的飛行器";
+
+"myInfo_badgeLabel"="初級飛行員";
+
+"myInfo_bar_about"="關於";
+
+"myInfo_bar_title"="我";
+
+"myInfo_button_editProfile"="編輯資料";
+
+"myInfo_editProfileButton"="編輯個人資料";
+
+"myInfo_myDrone"="我的飛行器";
+
+"myInfo_myProfileLabel"="我的個人資料";
+
+"myInfo_pick_avatar_album"="從相冊選擇";
+
+"myInfo_pick_avatar_camera"="由相機拍攝";
+
+"myInfo_ratingLabel"="飛行員等級";
+
+"myOrder_TabBarItem_title"="我的訂單";
+
+"myOrder_bar_title"="我的訂單";
+
+"myShare_TabBarItem_title"="我的分享";
+
+"myShare_bar_title"="我的分享";
+
+"my_Info_title"="我的信息";
+
+"navigaiton_alert_exit_intro"="退出該模式後，飛機將原地懸停";
+
+/* TODO:translate */
+"navigaiton_waypoint_create_help_title"="提示";
+
+/* tracking 指点不支持数码变焦 */
+"navigationModeNotSupportDigitalZoom"="當前模式不支持數碼變焦";
+
+/* 条款|智能模式 */
+"navigationTerms_intelligentNavigation_content"="您即將使用包含自動飛行功能的智能飛行模式，該功能可能會對他人造成損失或傷害。進入此模式即代表您已清楚了解該風險會顯著增加，同時，您同意將獨自承擔所有由此導致的責任。建議您遵循以下提示以減低風險：\n\n1. 始終確保飛行器避開人、動物、細小物體（如：樹枝或電線等）、或透明物體（如：玻璃或水等）；\n\n2. 始終留意來自飛行器四周的物體並通過手動操作來避免事故；\n\n3. 時刻準備在緊急情況下手動控制飛行器或點擊屏幕上的 \"STOP\"；\n\n4. 操作前請仔細閱讀本產品的《免責聲明和安全操作指引》。";
+
+/* 条款|智能模式 */
+"navigationTerms_intelligentNavigation_title"="智能模式條款";
+
+/* 条款|运动档 */
+"navigationTerms_sportMode_content"="1. 飛行器的飛行速度將大幅度提升，由此會造成剎車距離也將相應地大幅度增加。在無風環境下，操作者應預留最少50米以上的剎車距離；\n\n2. 飛行器的姿態控制靈敏度將大幅度提升，遙控器上小幅度的操作會導致飛行器產生大幅度的飛行動作。根據實際的風速和環境，操作者應預留足夠的飛行空間；\n\n3. 飛行器的下降速度也將大幅提升，高速下降時下視視覺感應系統可能無法及時剎車，操作者應預留足夠的剎車高度；\n\n4. 前視視覺感知系統不會生效，飛行器無法主動剎車或躲避障礙物，操作者務必留意周圍環境，操控飛行器躲避飛行路線上的障礙物。";
+
+/* 条款|运动档 */
+"navigationTerms_sportMode_title"="S模式（運動）使用須知";
+
+"navigation_aircraft_goinghome"="飛行器返航中，不能使用該功能！";
+
+"navigation_aircraft_landing"="飛行器降落中，不能使用該功能！";
+
+"navigation_aircraft_not_fly"="飛行器未起飛，請起飛後重試";
+
+"navigation_alert_exit_title"="是否退出該模式";
+
+/* TODO:translate */
+"navigation_apply_title"="立刻執行";
+
+/* Navigation Bar */
+"navigation_bar_done"="完成";
+
+"navigation_bar_hide"="隱藏";
+
+/* 和杨硕确定最后叫Intelligent而不是Smart */
+"navigation_common_smart_title"="智能";
+
+"navigation_common_tips_left_bottom_title"="高度-";
+
+"navigation_common_tips_left_left_title"="左航向";
+
+"navigation_common_tips_left_right_title"="右航向";
+
+/* Common */
+"navigation_common_tips_left_title"="左搖桿";
+
+"navigation_common_tips_left_top_title"="高度+";
+
+"navigation_common_tips_right_bottom_title"="環繞半徑+";
+
+"navigation_common_tips_right_left_title"="順時針";
+
+"navigation_common_tips_right_right_title"="逆時針";
+
+"navigation_common_tips_right_title"="右搖桿";
+
+"navigation_common_tips_right_top_title"="環繞半徑-";
+
+"navigation_cource_lock_angle_title"="航向角度";
+
+"navigation_cource_lock_reset_direction"="重置航向";
+
+/* TODO:translate */
+"navigation_cource_lock_tips_intro"="調整您的機頭方向（即想鎖定的航向）後執行任務，飛行器進入無頭模式，請參考上圖的操控方向。";
+
+/* Cource Lock */
+"navigation_cource_lock_title"="航向鎖定";
+
+"navigation_course_lock_exit_failed"="航向鎖定關閉失敗！";
+
+"navigation_course_lock_failed"="航向鎖定開啟失敗！";
+
+"navigation_course_lock_started"="航向鎖定開啟成功！";
+
+/* TODO: Translate */
+"navigation_course_reversal_altitude_larger_than_altitude_limit"="返航高度不能大於限高%dm.";
+
+"navigation_distance_title"="與您距離:";
+
+"navigation_error_altitude_too_high"="飛機飛行高度太高";
+
+"navigation_error_altitude_too_low"="飛機飛行高度太低";
+
+/* 智能飞行|无法启用智能飞行|新手模式 */
+"navigation_error_beginner_mode"="新手模式下無法使用智能飛行";
+
+"navigation_error_condition_not_satisified"="任務條件不滿足";
+
+"navigation_error_entry_point_invalid"="任務起始點無效";
+
+"navigation_error_estimate_time_too_long"="需要執行任務的時間過長";
+
+"navigation_error_fm_gps_lost"="目標GPS丟失";
+
+"navigation_error_gimbal_pitch"="雲台初始化pitch角太大";
+
+"navigation_error_gps_signal_weak"="GPS信號太弱";
+
+"navigation_error_heading_mode_invalid"="任務機頭模式無效";
+
+"navigation_error_high_priority_mission_executing"="高優先級的任務正在執行";
+
+"navigation_error_home_point_not_record"="未記錄返航點";
+
+"navigation_error_in_no_fly_zone"="飛機在禁飛區";
+
+"navigation_error_invalid_product"="該產品不支持地面站功能";
+
+"navigation_error_ioc_working"="航向鎖定或返航點鎖定正在執行";
+
+"navigation_error_low_battery"="低電量";
+
+"navigation_error_mc_mode_error"="地面站功能未開啟";
+
+"navigation_error_mission_across_no_fly_zone"="任務穿過了禁飛區";
+
+"navigation_error_mission_conflict"="任務衝突";
+
+"navigation_error_mission_not_exist"="任務不存在";
+
+"navigation_error_mission_not_init"="任務沒初始化";
+
+"navigation_error_mission_too_far"="飛機當前位置離起始點太遠";
+
+"navigation_error_mission_wp_data_invalid"="航點數據不合法";
+
+"navigation_error_mission_wp_info_invalid"="航線信息不合法";
+
+"navigation_error_mission_wp_total_too_long"="整體飛行距離過長";
+
+"navigation_error_mission_wp_trace_too_long"="航線距離過長";
+
+"navigation_error_not_in_the_air"="請先起飛後, 再嘗試該功能";
+
+"navigation_error_param_invalid"="任務參數無效";
+
+"navigation_error_radius_invalid"="任務半徑無效";
+
+"navigation_error_radius_over_limited"="任務超出限制";
+
+"navigation_error_rc_mode_error"="遙控器模式錯誤";
+
+"navigation_error_resume_failed"="任務恢復失敗";
+
+"navigation_error_speed_too_large"="速度過大";
+
+"navigation_error_target_too_far"="初始化手機與飛機距離太遠";
+
+"navigation_error_too_close_to_home_point"="離返航點太近";
+
+/* Navigation mission error */
+"navigation_error_unknown_error"="未知錯誤，錯誤碼:%d";
+
+/* TODO:translate */
+"navigation_exit_title"="退出";
+
+/* //多模式选择|通用多模式图标 */
+"navigation_flight_mode_common_smart_title"="智能";
+
+/* //多模式选择|普通模式图标 */
+"navigation_flight_mode_normal"="普通";
+
+/* TODO:translate */
+"navigation_follow_me_apply_intro"="跟隨模式下，飛機將和您保持相對位置一致，跟隨您移動。";
+
+"navigation_follow_me_failed"="熱點跟隨任務開啟失敗！";
+
+"navigation_follow_me_gps_none"="無";
+
+/* TODO:Need Check */
+"navigation_follow_me_gps_quality_bad"="GPS信號弱";
+
+"navigation_follow_me_gps_service_failed"="GPS服務開啟失敗";
+
+"navigation_follow_me_gps_strong"="強";
+
+"navigation_follow_me_gps_title"="GPS信號強度";
+
+"navigation_follow_me_gps_weak"="弱";
+
+/* TODO: need review */
+"navigation_follow_me_home_point"="低電量行為";
+
+"navigation_follow_me_home_point_my_position"="下降";
+
+"navigation_follow_me_home_point_origin"="返航";
+
+"navigation_follow_me_limit_gps"="衛星數目小於15顆，無法開始熱點跟隨任務";
+
+"navigation_follow_me_limit_height"="高度小於10M，無法開始熱點跟隨任務";
+
+"navigation_follow_me_lost_gps"="跟隨熱點GPS丟失，請重試";
+
+"navigation_follow_me_started"="熱點跟隨任務開啟成功！";
+
+/* TODO:translate */
+"navigation_follow_me_tips_intro"="當飛行器與你的距離超過200m時，飛行器將懸停，在熱點跟隨過程中，從F檔切出即可退出航向鎖定模式。";
+
+"navigation_follow_me_title"="熱點跟隨";
+
+"navigation_follow_me_user_location_invalid"="跟隨熱點位置無效，請重試!";
+
+"navigation_follow_me_warning_gps_limit"="手機GPS信號弱，無法執行熱點跟隨功能。";
+
+"navigation_follow_me_warning_height_limit"="飛行器高度低於10M，無法執行熱點跟隨功能。";
+
+"navigation_followme_exit_failed"="熱點跟隨任務關閉失敗！";
+
+"navigation_forbidden_home_lock_with_atti"="請切換到GPS模式，再進入返航模式。";
+
+"navigation_gohome_altitude_alert_execute_title"="確定";
+
+"navigation_gps_quality_bad"="GPS信號質量差！";
+
+"navigation_height_title"="高度:";
+
+"navigation_hidden_tips_title"="在這裡重新調出此選項";
+
+/* TODO:translate */
+"navigation_home_lock_distance_title"="距離返航點:";
+
+"navigation_home_lock_exit_failed"="返航鎖定關閉失敗！";
+
+"navigation_home_lock_failed"="返航鎖定開啟失敗！";
+
+/* TODO:translate */
+"navigation_home_lock_intro"="點擊確認後，即開啟返航鎖定功能，您只需往後拉杆，飛行器即可直線返航。\n抵達返航點5M範圍即懸停，左右控制可環繞返航點。";
+
+"navigation_home_lock_limit_distance"="返航點與飛行器距離小於5M，無法開啟返航鎖定";
+
+"navigation_home_lock_no_home"="返航點未記錄！";
+
+/* TODO:translate */
+"navigation_home_lock_no_home_point"="返航點未記錄";
+
+/* IOC */
+"navigation_home_lock_started"="返航鎖定開啟成功！";
+
+/* TODO:translate */
+"navigation_home_lock_tips_intro"="開啟返航鎖定功能，飛行器處於無頭模式，您只需往後拉杆，飛行器即可直線返航。抵達返航點5M範圍懸停，左右控制可環繞返航點。";
+
+/* Home Lock */
+"navigation_home_lock_title"="返航鎖定";
+
+/* TODO:translate */
+"navigation_low_power_warning"="低電量警報，無法執行智能飛行";
+
+/* TODO:translate */
+"navigation_low_voltage_warning"="低電壓警報，無法執行智能飛行.";
+
+/* TODO: Translation */
+"navigation_lower_than_min_altitude"="飛行器低於最低高度%.1fm。";
+
+"navigation_not_support"="此設備暫不支持智能飛行功能";
+
+"navigation_open_navigation_failed"="智能飛行開啟失敗！";
+
+/* 多飞行模式|无法进入当前飞行模式 */
+"navigation_overview_cannot_enter"="無法進入當前飛行模式";
+
+"navigation_overview_exit_alert_title"="換擋即可退出F模式";
+
+/* Navigation | TODO:Check */
+"navigation_overview_title"="智能飛行";
+
+/* TODO:translate */
+"navigation_poi_auto_mode_abouttime_title"="飛完一圈需要";
+
+/* TODO:translate */
+"navigation_poi_auto_mode_intro"="飛行器將以緩慢速度自動環繞，你可通過遙控器調整環繞半徑，高度及速度";
+
+/* TODO:translate */
+"navigation_poi_auto_mode_title"="興趣點環繞設置成功";
+
+"navigation_poi_download_failed"="興趣點環繞任務下載失敗！";
+
+"navigation_poi_exit_failed"="興趣點環繞任務退出失敗！";
+
+"navigation_poi_limit_height"="飛行器高度低於5M，無法開始興趣點環繞";
+
+"navigation_poi_location_invalid"="當前飛行器位置無效!";
+
+"navigation_poi_mission_failed"="興趣點環繞任務開啟失敗";
+
+"navigation_poi_mission_started"="興趣點環繞任務開啟成功!";
+
+"navigation_poi_radius_too_large"="環繞半徑太大(> 500M)";
+
+"navigation_poi_radius_too_small"="環繞半徑太小(< 5M)";
+
+/* TODO:translate */
+"navigation_poi_select_intro"="在興趣點環繞模式下，飛行器將環繞你設置的興趣點飛行";
+
+/* TODO:translate */
+"navigation_poi_set_center_intro"="控制飛行器飛到興趣點上方，點擊設置興趣點，飛行器將記錄興趣點位置";
+
+/* TODO:translate */
+"navigation_poi_set_center_title"="設置興趣點";
+
+/* TODO:translate */
+"navigation_poi_set_radius_intro"="控制飛行器從興趣點往外飛，點擊設置半徑，飛行器將記錄環繞半徑";
+
+/* TODO:translate */
+"navigation_poi_set_radius_title"="設置半徑";
+
+"navigation_poi_tips_anticlockwise"="逆時針";
+
+"navigation_poi_tips_clockwise"="順時針";
+
+/* TODO:translate */
+"navigation_poi_tips_reset_center"="航向回中";
+
+/* POI */
+"navigation_poi_title"="興趣點環繞";
+
+"navigation_radius_title"="環繞半徑:";
+
+/* TODO:translate */
+"navigation_retry_title"="重試";
+
+"navigation_set_multiple_enquire"="是否允許切換飛行模式？";
+
+"navigation_set_multiple_failed"="允許切換飛行模式失敗！";
+
+"navigation_speed_title"="速度";
+
+/* 智能飞行|视觉飞行|介绍标题 */
+"navigation_tomato_vision_distance_title"="視覺飛行";
+
+/* 智能飞行|视觉飞行|介绍内容 */
+"navigation_tomato_vision_intro"="在指點飛行模式下，用戶可以點擊屏幕控制飛行器的飛行方向。";
+
+/* 智能飞行|指点飞行|允许左右绕行 */
+"navigation_tomato_vision_pointing_allow_left_right_avoid"="允許左右繞行";
+
+/* 智能飞行|指点飞行|简介 */
+"navigation_tomato_vision_pointing_desc"="點擊你希望飛行器前往的方向，飛行器將自動向所指方向飛行。點擊其他方向即可讓飛行器自動轉向。\n如果在飛行過程中感知到障礙物，飛行器將自動調整飛行路線繞過障礙物。如果障礙物過大，飛行器將減速至懸停。";
+
+/* 智能飞行|指点飞行|巡航速度 */
+"navigation_tomato_vision_pointing_flight_speed"="巡航速度";
+
+/* 暂时无用 */
+"navigation_tomato_vision_pointing_mode_advanced"="高級模式";
+
+/* 暂时无用 */
+"navigation_tomato_vision_pointing_mode_beginner"="新手模式";
+
+/* 智能飞行|指点飞行页面|标题 */
+"navigation_tomato_vision_pointing_title"="指點飛行";
+
+"navigation_tomato_vision_stop_timeout"="停止視覺飛行失敗";
+
+/* 智能飞行|视觉飞行标题 */
+"navigation_tomato_vision_title"="視覺飛行";
+
+"navigation_tomato_vision_tracking_cancel_confirm_timeout"="取消智能跟隨失敗";
+
+/* 暂时无用 */
+"navigation_tomato_vision_tracking_mode_gimbal"="雲台模式";
+
+/* 暂时无用 */
+"navigation_tomato_vision_tracking_mode_headless"="無頭模式";
+
+/* 暂时无用 */
+"navigation_tomato_vision_tracking_mode_parallel"="跟隨模式";
+
+"navigation_tomato_vision_tracking_start_tracking_timeout"="啟動智能跟隨失敗";
+
+/* 智能飞行|跟踪飞行页面|标题 */
+"navigation_tomato_vision_tracking_title"="智能跟隨";
+
+/* TODO:translate */
+"navigation_waypoint_auto_mode_distance_to_start"="距離任務起始點";
+
+"navigation_waypoint_auto_mode_finished_title"="飛行任務完成後";
+
+/* TODO:check */
+"navigation_waypoint_auto_mode_gohome"="返航";
+
+"navigation_waypoint_auto_mode_heading_auto"="跟隨航線";
+
+"navigation_waypoint_auto_mode_heading_free"="自由控制";
+
+"navigation_waypoint_auto_mode_heading_recorded_heading"="跟隨航點";
+
+"navigation_waypoint_auto_mode_heading_title"="飛行時朝向";
+
+/* 地面站|航点yaw模式|视觉追踪 */
+"navigation_waypoint_auto_mode_heading_vision"="智能跟隨模式";
+
+/* TODO:translate */
+"navigation_waypoint_auto_mode_intro"="請控制飛機回到起始點";
+
+"navigation_waypoint_auto_mode_loop"="懸停";
+
+"navigation_waypoint_auto_mode_remove_from_favorites"="已從任務收藏夾刪除";
+
+"navigation_waypoint_auto_mode_save_to_favorites"="已保存到任務收藏夾";
+
+/* TODO:translate */
+"navigation_waypoint_auto_mode_too_far_warning_intro"="請確認是否直線飛向起始點.";
+
+/* TODO:translate */
+"navigation_waypoint_auto_mode_too_far_warning_title"="飛行器距離起始點較遠";
+
+/* TODO:translate */
+"navigation_waypoint_auto_record"="自動記錄";
+
+"navigation_waypoint_cancel_failed"="航點飛行任務上傳取消失敗，任務開啟成功";
+
+"navigation_waypoint_collection"="收藏夾";
+
+/* TODO:translate */
+"navigation_waypoint_collection_created_title"="創建日期";
+
+/* TODO:translate */
+"navigation_waypoint_collection_distance_title"="距離";
+
+/* TODO:translate */
+"navigation_waypoint_collection_location_title"="地點";
+
+/* TODO:translate */
+"navigation_waypoint_collection_node_title"="航點數目";
+
+/* TODO:translate */
+"navigation_waypoint_collection_title"="任務收藏夾";
+
+"navigation_waypoint_count_invalid"="航點飛行任務至少有兩個航點！";
+
+/* TODO:translate */
+"navigation_waypoint_create_delete_title"="刪除航點";
+
+/* TODO:translate */
+"navigation_waypoint_create_distance_title"="里程";
+
+/* TODO:translate */
+"navigation_waypoint_create_help_intro"="您需要用飛行器預先設置航點，然後將根據你設置的航點進行飛行。";
+
+/* TODO:translate */
+"navigation_waypoint_create_intro"="(半徑範圍：500M，總里程小於5000M)";
+
+/* TODO:translate */
+"navigation_waypoint_create_ok"="好的";
+
+/* TODO:translate */
+"navigation_waypoint_create_record_num_title"="已記錄航點數:";
+
+/* TODO:translate */
+"navigation_waypoint_create_record_title"="記錄航點";
+
+"navigation_waypoint_create_title"="創建任務";
+
+"navigation_waypoint_create_too_low"="航點高度低於10m，請注意控制飛行速度，以防觸地。";
+
+"navigation_waypoint_distance_to_home_too_close"="航點距離返航點距離大於500M!";
+
+"navigation_waypoint_distance_too_close"="距離上一個航點的距離太小(小於5米)!";
+
+"navigation_waypoint_distance_too_far"="距離返航點的距離太大(大於500米)!";
+
+"navigation_waypoint_download_failed"="航點任務下載失敗！";
+
+"navigation_waypoint_download_success"="航點任務下載成功！";
+
+/* TODO: Translation */
+"navigation_waypoint_enter_altitude_limited_mode"="飛機進入限低模式。";
+
+"navigation_waypoint_location_invalid"="無法獲取飛行器位置！";
+
+/* Waypoint | TODO:check */
+"navigation_waypoint_mark_too_much"="航點數量過多.";
+
+"navigation_waypoint_mission_failed"="航點飛行任務開啟失敗！";
+
+"navigation_waypoint_mission_started"="航點飛行任務開始。";
+
+"navigation_waypoint_mission_started_height"="返航高度:";
+
+"navigation_waypoint_mission_stop_failed"="航點飛行任務停止失敗, 請重試!";
+
+/* TODO:check */
+"navigation_waypoint_reach_last_point"="已經到達終點";
+
+/* TODO:check */
+"navigation_waypoint_reach_start_point"="已經到達起始點，開始航點飛行";
+
+"navigation_waypoint_select_title"="請先選擇一條已有的航線，或開始記錄一條新的航線";
+
+/* TODO:translate */
+"navigation_waypoint_tips_intro"="如果飛行器失控，將繼續執行任務";
+
+/* TODO:translate */
+"navigation_waypoint_title"="航點飛行";
+
+"navigation_waypoint_total_distance_too_long"="航線總距離太長(大於5000米)";
+
+"navigation_waypoint_upload_canceled"="航點飛行任務上傳取消！";
+
+"navigation_waypoint_upload_failed"="航點飛行任務上傳失敗，請重試！";
+
+"navigation_waypoint_upload_low_power_warning"="低電量警報，無法上傳航點";
+
+"navigation_waypoint_upload_low_voltage_warning"="低電壓警報，無法上傳航點";
+
+/* TODO:translate */
+"navigation_waypoint_upload_state_intro"="正在上傳航點任務，請稍候";
+
+/* TODO:translate */
+"navigatoin_waypoint_create_alert_intro"="退出將清空當前記錄的航點，確認要退出?";
+
+"needPassword"="設置密碼";
+
+"needPassword_desc"="需要輸入密碼才能觀看";
+
+"network_notAvailable"="網絡不可用，請檢查";
+
+"next"="後一項";
+
+/* 3D MCTF智能降噪 */
+"noisefilte_intro"="3D降噪";
+
+"notSupportSleepMode"="Inspire 1的Zenmuse X3相機不支持休眠模式";
+
+"not_support_device"="不支持該設備";
+
+/* TODO:tranlate */
+"note"=" 聲明";
+
+"nt_30fps"="NTSC";
+
+"ntsc_pal_warning"="確定要設置為 %@ 模式嗎?";
+
+"ntsc_pal_warning_title"="切換 NTSC/PAL 模式將會重啟相機";
+
+"offset information exception"="安裝位置異常";
+
+"offset information exception？？？"="安裝位置異常";
+
+"ok"="確定";
+
+"onlyFriend"="僅好友";
+
+"onlyFriend_desc"="僅對我關注的人公開";
+
+/* todo, check */
+"osd_warning_altitude"="您所在的位置海拔高於3000m（9842ft），飛行時請注意高海拔環境對飛行器動力的影響";
+
+"osmo_gimbal_orientationLock"="方向鎖定";
+
+"osmo_gimbal_recenter"="回中";
+
+"osmo_gimbal_selfie"="自拍";
+
+"osmo_photostyle_custom_intro"="自定義";
+
+"osmo_photostyle_landscape_intro"="風光";
+
+"osmo_photostyle_neutral_intro"="中性";
+
+"osmo_photostyle_soft_intro"="柔和";
+
+/* lanscape 太长了 取一个近义词 */
+"osmo_photostyle_standard_intro"="標準";
+
+"osmo_photostyle_vivid_intro"="明快";
+
+"pal_25fps"="PAL";
+
+"paletteTypeBlackHot"="黑熱";
+
+"paletteTypeBlackHotIso"="黑熱等溫";
+
+"paletteTypeColor1"="顏色1";
+
+"paletteTypeColor1Iso"="白熱中段等溫";
+
+"paletteTypeColor2"="顏色2";
+
+"paletteTypeColor2Iso"="黑熱中段等溫";
+
+"paletteTypeFusion"="熔岩";
+
+"paletteTypeFusionIso"="熔岩等溫";
+
+"paletteTypeGlobow"="灼熱";
+
+"paletteTypeGlobowIso"="灼熱等溫";
+
+"paletteTypeGreenHot"="綠熱";
+
+"paletteTypeGreenHotIso"="綠熱等溫";
+
+"paletteTypeIcefire"="冷熱";
+
+"paletteTypeIcefireIso"="冷熱等溫";
+
+"paletteTypeIronSepia"="紅棕";
+
+"paletteTypeIronSepiaIso"="紅棕等溫";
+
+"paletteTypeIronbow1"="鐵紅1";
+
+"paletteTypeIronbow1Iso"="白熱鐵紅等溫";
+
+"paletteTypeIronbow2"="鐵紅2";
+
+"paletteTypeIronbow2Iso"="黑熱鐵紅等溫";
+
+"paletteTypeRain"="雨天";
+
+"paletteTypeRainIso"="彩虹2等溫";
+
+"paletteTypeRainbow"="彩虹";
+
+"paletteTypeRainbowIso"="彩虹等溫";
+
+"paletteTypeRedHot"="紅熱";
+
+"paletteTypeRedHotIso"="紅熱等溫";
+
+"paletteTypeWhiteHot"="白熱";
+
+"paletteTypeWhiteHotIso"="白熱等溫";
+
+/* TDOO:translate */
+"pause"="暫停";
+
+"pitchExpo"="Pitch 軸搖桿 Expo";
+
+"pitchFollowDead"="Pitch 軸跟隨死區";
+
+"pitchFollowSpeed"="Pitch 軸跟隨速度";
+
+"pitchRangeExtend"="pitch 擴展開關";
+
+"pitchSmoothTrack"="Pitch 軸搖桿平滑";
+
+"playback_delete_multiple_title_prefix"="刪除";
+
+"playback_delete_multiple_title_suffix"="個文件";
+
+"playback_delete_no"="取消";
+
+"playback_delete_single_title"="刪除該文件";
+
+"playback_delete_yes"="確定";
+
+"playback_download_alert_msg"="只支持無線下載JPEG格式圖片和1080P清晰度以下的視頻，其他文件需要通過USB傳輸或SD卡拷貝";
+
+"playback_download_master_downloading"="主機正在下載，請等待下載完成";
+
+"playback_download_multipleFile_title"="下載這些文件";
+
+"playback_download_singleFile_title"="下載該文件";
+
+"playback_error_type_empty_sdcard"="SD卡為空";
+
+"playback_error_type_no_sdcard"="SD卡被拔出";
+
+"playback_error_type_sdcard_broken"="無效SD卡";
+
+"playback_multiple_item"="個文件";
+
+"playback_multiple_items"="個文件";
+
+"playback_multiple_selected"="被選中";
+
+"playback_select_multiple"="選擇";
+
+"please_login"="請先登錄";
+
+"position Inconsistent"="位置不一致";
+
+"previous"="前一項";
+
+"private"="私有";
+
+"private_desc_youku"="只有Youku的特定用戶可以觀看";
+
+"private_desc_youtube"="只有YouTube的特定用戶可以觀看";
+
+"processing"="正在處理...";
+
+"profile_birthday"="生日";
+
+"profile_choose"="選擇";
+
+"profile_city"="城市";
+
+"profile_email"="郵箱";
+
+"profile_firstname"="姓";
+
+"profile_gender"="性別";
+
+"profile_gender_female"="女";
+
+"profile_gender_male"="男";
+
+"profile_gender_not_specific"="保密";
+
+"profile_lastname"="名";
+
+"profile_logoutAccount"="註銷賬號";
+
+"profile_push_failed_msg"="未能更新用戶信息";
+
+"profile_push_failed_ok"="好";
+
+"profile_push_failed_title"="網絡異常";
+
+"profile_region"="國家/地區";
+
+"profile_sectionHeaderName"="我的資料";
+
+"profile_state"="省份";
+
+"profile_username"="用戶名";
+
+"public"="公開";
+
+"public_desc"="任何人都可以搜索和觀看";
+
+"publish"="發布";
+
+"radio_channel"="信道模式";
+
+"radio_channel_auto"="自動選擇";
+
+"radio_channel_custom"="自定義";
+
+"radio_channel_custom_warning"="信道1-32對應頻率2.28~2.59GHz,請根據當地法規選擇許可的信道使用,我同意為一切因使用自定義信道而造成的損失，傷害以及法律後果承擔一切責任。";
+
+"radio_channel_custom_warning_title"="聲明";
+
+"radio_currentQualityLabel"="當前信道";
+
+"radio_hdmi_double"="APP與HDMI同時輸出畫面";
+
+/* TODO:待确认 */
+"radio_hdmi_fps"="幀率";
+
+"radio_hdmi_metric"="HDMI輸出公制單位";
+
+"radio_hdmi_osd"="HDMI輸出顯示OSD";
+
+"radio_ism_channel"="信道 13-20 ISM";
+
+"radio_mcs"="MCS";
+
+"radio_mode"="圖傳模式";
+
+"radio_mode_distance"="距離優先";
+
+"radio_mode_screen"="畫質優先";
+
+"radio_select_channel"="選擇信道";
+
+"radio_select_mcs"="圖像傳輸質量";
+
+"radio_settings"="圖傳設置";
+
+"radio_snr"="噪聲(dBm)";
+
+"radio_stableQualityLabel"="信道干擾較少";
+
+"radio_unStableQualityLabel"="信道干擾較多";
+
+"rc_apply_to_control"="請求控制權";
+
+"rc_atti_exp_curve"="姿態EXP曲線";
+
+/* 遥控器设置|自定义按键组标题 */
+"rc_button_custom_title"="遙控器自定義按鍵";
+
+"rc_calibrate"="遙控器校準";
+
+"rc_calibrate_aircrcaft_connected"="連接飛行器狀態下不能校準，請關閉飛行器電源";
+
+"rc_calibrate_not_calibrate_connected_aircraft"="連接飛行器狀態下不能校準";
+
+"rc_calibrate_section_gimbal_wheel"="雲台撥輪";
+
+"rc_calibrate_section_stick_channel"="搖桿通道";
+
+"rc_calibrate_start_msg"="點擊開始前，將所有搖桿都放到中位。在校準過程中，務必嚴格根據提示進行操作，否則可能導致校準不成功。";
+
+"rc_calibrate_warn"="警告";
+
+"rc_calibrating_calibrate"="校準";
+
+"rc_calibrating_finish"="完成";
+
+"rc_calibrating_record_center"="請將搖桿放在中位並點擊開始按鈕";
+
+"rc_calibrating_record_finish"="請點擊完成按鈕完成校準";
+
+"rc_calibrating_record_limit"="推動所有通道的搖桿到最大工作範圍並重複幾次";
+
+"rc_calibrating_start"="開始";
+
+"rc_channel"="信道";
+
+"rc_connect_information"="連接遙控器主機:%@\n請輸入密碼(四位數字):";
+
+"rc_control"="控制";
+
+"rc_controlSetting_title"="遙控器設置";
+
+"rc_control_backLabel"="後退";
+
+"rc_control_cannot_frequency_motorup"="電機正在起轉不能對頻";
+
+"rc_control_downLabel"="向下";
+
+"rc_control_leftLabel"="向左";
+
+"rc_control_rightLabel"="向右";
+
+"rc_control_set_frequency_title"="確認要進行對頻嗎？";
+
+"rc_control_setting"="遙控器設置";
+
+"rc_control_setting_customButtonListCacheVideo"="緩存實時視頻";
+
+"rc_control_setting_customButtonListCameraSetting"="相機高級設置";
+
+/* TODO: translate */
+"rc_control_setting_customButtonListCenterAreaMetering"="中央重點測光";
+
+"rc_control_setting_customButtonListClearLine"="清除航線";
+
+"rc_control_setting_customButtonListClickCancel"="取消";
+
+"rc_control_setting_customButtonListClickOK"="確定";
+
+"rc_control_setting_customButtonListGimbalReset"="雲台朝向回中";
+
+"rc_control_setting_customButtonListGimbalReset_Phantom3"="回中/朝下";
+
+"rc_control_setting_customButtonListGimbalSwitchMode"="雲台跟隨/自由模式";
+
+"rc_control_setting_customButtonListGimbalSwitchMode_Phantom3"="雲台跟隨/FPV";
+
+"rc_control_setting_customButtonListShowBattery"="電池頁面";
+
+"rc_control_setting_customButtonListSwitchFPVGS"="地圖/FPV切換";
+
+"rc_control_setting_customButtonNotSetting"="未定義";
+
+/* 遥控器设置|自定义|AE锁定，解锁 */
+"rc_control_setting_customButtonSwitchAELock"="AE 鎖定/解鎖";
+
+"rc_control_setting_customButtonSwitchWheelGimbalControl"="雲台方向 上下/左右";
+
+"rc_control_towardLabel"="前進";
+
+"rc_control_turnLeftLabel"="左轉";
+
+"rc_control_turnRightLabel"="右轉";
+
+"rc_control_upLabel"="向上";
+
+"rc_custom_channel"="自定義通道";
+
+"rc_custom_channel_warning"="通道不能為空!";
+
+"rc_custom_mode"="自定義";
+
+/* 激活|遥控器模式设置|默认设置 */
+"rc_default_mode"="默認";
+
+"rc_exp_setting"="遙控靈敏度";
+
+"rc_func"="主從機功能";
+
+"rc_function_keys_text"="你可以自定義遙控器背後的C1, C2按鍵，更加便捷的進行飛行操作";
+
+"rc_fv"="遙控器";
+
+"rc_gimbalControlSetting_gimbalSpeed"="雲台速度";
+
+"rc_gimbalControlSetting_gimbalSpeedButtonTitle"="雲台速度";
+
+"rc_gimbalControlSetting_pitchDown"="向下";
+
+"rc_gimbalControlSetting_pitchUp"="向上";
+
+"rc_gimbalControlSetting_rollAnticlockwise"="向右傾斜";
+
+"rc_gimbalControlSetting_rollClockwise"="向左傾斜";
+
+"rc_gimbalControlSetting_yawLeft"="右旋轉";
+
+"rc_gimbalControlSetting_yawRight"="左旋轉";
+
+"rc_host"="主機";
+
+"rc_info2_text"="您可自定義遙控器背後的C1，C2按鈕，方便飛行時進行操作。";
+
+"rc_info_text"="系統默認遙控模式為美國手，更換搖桿模式會改變遙控器對飛機的控制方式。如果你不熟悉所選擇的操作模式，可能會導致嚴重事故，請謹慎操作。";
+
+"rc_input_continue"="繼續";
+
+"rc_linking_RC"="遙控器對頻";
+
+"rc_master_list"="主機列表";
+
+"rc_master_stick_mode"="主機搖桿模式";
+
+"rc_mode1"="日本手";
+
+"rc_mode2"="美國手";
+
+"rc_mode3"="中國手";
+
+"rc_moniter"="監視器";
+
+"rc_name"="遙控器名稱";
+
+"rc_name_warning"="名稱不能為空";
+
+"rc_off"="關閉";
+
+"rc_pair_cacel_message"="請點擊飛行器上的對頻按鈕完成對頻";
+
+"rc_pair_cancel_when_finished"="取消對頻失敗，因為飛行器已經對頻成功";
+
+"rc_pair_finished"="對頻完成";
+
+"rc_pair_timeout"="對頻超時";
+
+"rc_pairing_frequency"="正在對頻";
+
+"rc_paring_with_timeout"="正在對頻，%d 秒後超時";
+
+"rc_password"="連接密碼";
+
+"rc_password_numbernotcorret"="輸入的密碼不為四位數字";
+
+"rc_password_warning"="密碼必須為4位數";
+
+"rc_request_control"="點擊確認請求雲台控制權.";
+
+"rc_request_control_failed"="請求雲台控制權失敗.";
+
+"rc_request_control_had_right"="本機已有雲台控制權.";
+
+"rc_request_control_success"="請求雲台控制權成功.";
+
+"rc_request_control_timeout"="請求雲台控制權超時.";
+
+"rc_response_message"="%@ 向你請求控制權,是否同意?";
+
+"rc_search_master"="搜索主機";
+
+"rc_searching"="搜索";
+
+"rc_searching_master"="正在搜索主機";
+
+"rc_selectMasterMode_alertView_msg"="請確認是否熟悉該搖桿模式操作，切換將改變原有控制邏輯，謹慎操作。";
+
+"rc_selectMasterMode_alertView_title"="切換搖桿模式";
+
+"rc_selectSlaverMode_alertView_msg"="請確認是否熟悉該搖桿模式操作，切換將改變原有控制邏輯，謹慎操作。";
+
+"rc_selectSlaverMode_alertView_title"="切換搖桿模式";
+
+"rc_setRCState_alertView_title"="確定要切換主從機模式嗎?";
+
+"rc_set_slaver"="設置遙控器狀態";
+
+"rc_settings"="遙控器設置";
+
+"rc_slaver"="從機";
+
+"rc_slaver_gimbalSpeed"="雲台速度設置";
+
+"rc_slaver_list"="從機列表";
+
+"rc_slaver_mode1"="模式1";
+
+"rc_slaver_mode2"="模式2";
+
+"rc_slaver_mode3"="模式3";
+
+"rc_slaver_mode4"="模式4";
+
+"rc_slaver_stick_mode"="從機搖桿模式";
+
+"rc_startup"="開啟主從機功能";
+
+"rc_state"="狀態";
+
+"rc_stick_mode"="搖桿模式";
+
+"rc_stick_sensitivity"="搖桿EXP曲線";
+
+"rc_throttle_exp_curve"="油門EXP曲線";
+
+"rc_tips_backLabel"="後退";
+
+"rc_tips_downLabel"="下降";
+
+"rc_tips_leftLabel"="向左";
+
+"rc_tips_rightLabel"="向右";
+
+"rc_tips_title"="提示";
+
+"rc_tips_towardLabel"="前進";
+
+"rc_tips_turnLeftLabel"="左轉";
+
+"rc_tips_turnRightLabel"="右轉";
+
+"rc_tips_upLabel"="上升";
+
+"rc_wheel_control_gain"="雲台撥輪控制速度";
+
+"rc_yaw_exp_curve"="航向EXP曲線";
+
+"recordVolumeControl"="音頻控制";
+
+"redundancy_IMU_calibration"="IMU校準";
+
+/* 检测%d个IMU需要校准，你也可以自行选择要校准的IMU */
+"redundancy_calibration_count_tips"="%d個IMU需要校準，你可以選擇要校準的IMU";
+
+/* 校准失败，不在目标校准温度范围 */
+"redundancy_calibration_error-11"="校準失敗，不在目標校準溫度範圍";
+
+/* 校准失败，温度超限 */
+"redundancy_calibration_error-12"="校準失敗，溫度超限";
+
+/* 校准失败，温度没有ready */
+"redundancy_calibration_error-13"="校準失敗，未到達可校準溫度";
+
+/* 校准失败，FLASH操作错误 */
+"redundancy_calibration_error-30"="校準失敗，閃存操作錯誤";
+
+/* 校准失败，飞机被移动或震动比较大 */
+"redundancy_calibration_error-43"="校準失敗，飛機被移動或震動比較大";
+
+/* 校准失败，方向自动识别错误 */
+"redundancy_calibration_error-50"="校準失敗，方向自動識別錯誤";
+
+/* 校准失败，电机已启动禁止校准 */
+"redundancy_calibration_error-51"="校準失敗，電機已啟動禁止校準";
+
+/* 校准失败，仿真模式下禁止校准 */
+"redundancy_calibration_error-52"="校準失敗，仿真模式下禁止校準";
+
+/* 校准失败，FLASH操作错误 */
+"redundancy_calibration_error-60"="校準失敗，閃存操作錯誤";
+
+/* 校准失败，FLASH操作错误 */
+"redundancy_calibration_error-61"="校準失敗，閃存操作錯誤";
+
+"redundancy_calibration_error1"="傳感器校準中";
+
+/* IMU校准中 */
+"redundancy_calibration_error11"="傳感器校準中";
+
+"redundancy_calibration_error12"="傳感器校準成功";
+
+"redundancy_calibration_error2"="傳感器校準中";
+
+"redundancy_calibration_error80"="傳感器校準成功";
+
+/* 校准成功 */
+"redundancy_calibration_error81"="校準成功";
+
+/* 校准失败，错误码:%d */
+"redundancy_calibration_error_other"="校準失敗，錯誤碼:%d";
+
+/* 校准成功，请重启飞行器 */
+"redundancy_calibration_sucess"="校準成功，請重啟飛行器";
+
+/* 请保持飞行器静止不动，在校准过程中请勿移动飞行器，否则请重新校准。该过程大约需要5-10分钟，请耐心等待。 */
+"redundancy_calibration_warning"="請勿在校準過程中移動飛行器。 校準過程需時5-10分鐘。";
+
+/* 校准大约需要五分钟 */
+"redundancy_calibration_warning_wait"="校準大約需要五分鐘，請耐心等待";
+
+"redundancy_comapp_calibration"="指南針校準";
+
+"redundancy_extend"="外置IMU";
+
+"redundancy_fail"="失敗";
+
+"redundancy_history"="歷史記錄";
+
+"redundancy_history_long"="冗餘系統歷史記錄";
+
+"redundancy_inner"="內置IMU";
+
+"redundancy_motor_up_with_error_tips"="備份傳感器異常，建議停止電機並檢查冗餘狀態。";
+
+"redundancy_normal"="正常";
+
+"redundancy_success"="成功";
+
+"redundancy_switch_fail5"="目標傳感器健康狀態不如當前傳感器";
+
+"redundancy_switch_history"="切換歷史";
+
+/* %@请求从%@切换到%@ */
+"redundancy_switch_history_tips"="%@請求從%@切換到%@。";
+
+/* 导航系统发生重构，请小心飞行。//P4不需要 */
+"redundancy_switch_success_tips"="傳感器已成功切換";
+
+"redundancy_sys"="系統";
+
+"redundancy_title_state"="冗餘狀態";
+
+"redundancy_un_use_priority"="啟用";
+
+"redundancy_use_priority"="優先啟用";
+
+"redundancy_user"="用戶";
+
+"redundancy_using"="使用中";
+
+"register_alertEmptyConfirmPasswordMsg"="請輸入有效的確認密碼";
+
+"register_alertEmptyPasswordMsg"="請輸入有效的密碼";
+
+"register_alertNotFillInEnoughText"="請檢查是否填寫完整信息";
+
+"register_alertNotValidEmailMsg"="請輸入有效的郵箱地址";
+
+"register_alertPasswordNotTheSameMsg"="請確保您輸入的密碼一致";
+
+"register_alertSignupSuccess"="恭喜！你已註冊成功";
+
+"register_failed_by_network"="註冊失敗，請檢查設備網絡";
+
+"register_failed_common"="註冊失敗";
+
+"register_failed_format_error"="錯誤的郵箱格式";
+
+"register_failed_repeat"="郵箱已被註冊";
+
+"register_password_length"="密碼長度應當為6至20字符";
+
+"remote_focus_ccw_enable_focus"="焦距已鎖定，逆時針旋轉至當前焦距位置解鎖";
+
+"remote_focus_ccw_enable_iris"="光圈值已鎖定，逆時針旋轉至當前光圈值位置位置解鎖";
+
+"remote_focus_connected_tips"="跟焦器已連接";
+
+"remote_focus_cw_enable_focus"="焦距已鎖定，順時針旋轉至當前焦距位置解鎖";
+
+"remote_focus_cw_enable_iris"="光圈值已鎖定，順時針旋轉至當前光圈值位置解鎖";
+
+"remote_gallery_download_multipleFile_title"="只支持無線下載JPEG格式圖片和1080P清晰度以下的視頻，其他文件需要通過USB傳輸或SD卡拷貝";
+
+/* 起飞异常，请检测传感器和电机的状态 */
+"remotor_stop_reason_takeoff_exception"="起飛異常，請檢測傳感器和電機的狀態";
+
+"resume"="繼續";
+
+"rtk_altitude"="海拔高度";
+
+"rtk_antenna_angle_with_north"="與正北的夾角";
+
+"rtk_antenna_direct"="雙天線定向方向";
+
+"rtk_antenna_m"="天線M";
+
+"rtk_antenna_s"="天線S";
+
+"rtk_beidou_star_count"="北斗星數";
+
+/* 修改 */
+"rtk_direct_angle_title"="航向角";
+
+"rtk_error_code_0"="RTK當前已連接";
+
+"rtk_error_code_DataConnectLoss"="RTK數傳連接丟失，請檢查信號鏈路";
+
+"rtk_error_code_GroundAntennaError"="RTK基站天線錯誤，請確認基站天線接入正確端口";
+
+"rtk_error_code_ResetGroundCoordinate"="已重新設定基站坐標";
+
+"rtk_error_code_StartError"="RTK啟動錯誤，請重新上電";
+
+"rtk_error_code_unkown"="未知錯誤,錯誤碼:%d";
+
+"rtk_flight_coordinate"="飛行器坐標";
+
+"rtk_glonass_star_count"="GLONASS星數";
+
+"rtk_gps_star_count"="GPS星數";
+
+"rtk_ground_station"="基站";
+
+"rtk_ground_station_coordinate"="基站坐標";
+
+"rtk_latitude"="緯度";
+
+"rtk_location_status_no"="未定位";
+
+"rtk_longitude"="經度";
+
+"rtk_setting_title"="RTK衛星狀態";
+
+"rtk_status_fix_direct"="定向";
+
+"rtk_status_fix_location"="定位";
+
+"save"="保存";
+
+"sceneTypeDefault"="默認";
+
+"sceneTypeInDoor"="室內";
+
+"sceneTypeLinear"="線性";
+
+"sceneTypeManual"="手動";
+
+"sceneTypeOutDoor"="室外";
+
+"sceneTypeSea"="海/天";
+
+"sceneTypeUser1"="用戶1";
+
+"sceneTypeUser2"="用戶2";
+
+"sceneTypeUser3"="用戶3";
+
+"screen_lock"="屏幕旋轉";
+
+"select"="選擇";
+
+"share"="分享";
+
+/* Upload Videos to youtube, youku */
+"share_file_size"="文件大小：";
+
+"shutDownComplete"="OSMO已經關機";
+
+"shutDownFailed"="OSMO執行關機失敗";
+
+"shutDownTimeout"="OSMO執行關機超時";
+
+"shut_down"="關機";
+
+"simulator_E"="東";
+
+"simulator_EnterWarning_content"="模擬飛行模式中，建議將飛行器螺旋槳拆卸";
+
+"simulator_EnterWarning_title"="進入模擬飛行";
+
+"simulator_N"="北";
+
+"simulator_NoConnectionNoEnter_content"="未連接到飛行器，無法進入模擬飛行。請檢查連接。";
+
+"simulator_NotEnterWarning_content"="電機正在起轉，無法進入模擬飛行";
+
+"simulator_NotEnterWarning_title"="進入模擬飛行失敗";
+
+"simulator_S"="南";
+
+"simulator_W"="西";
+
+"simulator_bigMapNotAllowed"="模擬飛行模式下，不提供全屏地圖服務";
+
+"simulator_calm"="減弱";
+
+"simulator_checkConnection"="請檢查移動設備與遙控器連接及遙控器與飛行器對頻";
+
+"simulator_checkConnectionMC"="請檢查遙控器與飛行器對頻";
+
+"simulator_checkConnectionRC"="請檢查移動設備與遙控器USB連接";
+
+"simulator_disconnected_content"="請檢查飛行器連接。按\"重新開始\" 重置模擬器。在模擬器就緒前請不要掰桿啟動電機。";
+
+"simulator_disconnected_title"="飛行器斷開連接";
+
+"simulator_exitWarning_content"="請重啟飛行器，以解鎖電機。";
+
+"simulator_exitWarning_content1"="1秒鐘後，遙控器掰桿會使飛行器正常起轉，請注意安全。";
+
+"simulator_exitWarning_content2"="2秒鐘後，遙控器掰桿會使飛行器正常起轉，請注意安全。";
+
+"simulator_exitWarning_content3"="3秒鐘後，遙控器掰桿會使飛行器正常起轉，請注意安全。";
+
+"simulator_exitWarning_title"="模擬飛行退出";
+
+"simulator_flying"="電機起轉";
+
+"simulator_hurricane"="加強";
+
+"simulator_motorIsOn"="關閉飛行器電機後，才能進行模擬飛行";
+
+"simulator_playBackNotAllowed"="模擬飛行模式下，不提供回放服務";
+
+"simulator_pressRestart"="如果不能正常工作，請按\"重新開始\"";
+
+"simulator_ready"="模擬飛行準備就緒，請起轉電機";
+
+"simulator_reset"="正在重啟模擬飛行，請等待3秒鐘...";
+
+"simulator_restart"="重新開始";
+
+"simulator_settingUpGPS"="正在設置模擬飛行GPS，請等待左上方MODE變為P-GPS，再操作";
+
+"simulator_setup"="正在準備模擬飛行...";
+
+"simulator_tips0"="起飛前，點擊App頂部狀態欄進行狀態檢查。等待飛行器指示燈綠燈閃爍，進入可安全飛行狀態。執行內八字掰桿動作，啟動電機。電機起轉後，請馬上鬆開搖桿。";
+
+"simulator_tips1"="向上推桿，飛行器爬升；向下拉杆，飛行器下降。飛機起飛時，請緩慢將油門桿向上推過中位，飛行器將離地起飛。";
+
+"simulator_tips2"="向左打桿，飛行器逆時針旋轉。向右打桿，飛行器順時針旋轉。打桿幅度越大，轉動的角速度越大。";
+
+"simulator_tips3"="向上推桿，飛行器前傾並向前飛行；向下拉杆，飛行器後傾並向後飛行；向左掰桿，飛行器向左傾斜並向左飛行；向右掰桿，飛行器向右傾斜並向右飛行。";
+
+"simulator_tips4"="雲台俯仰撥輪用於控制雲台的俯仰角度。順時針撥動撥輪，雲台上仰；逆時針撥動撥輪，雲台下俯。";
+
+"simulator_tips5"="飛行器腳架撥動鍵向上撥動，起落架升至最高。向下撥動，起落架降至最低。使用DJI GO App一鍵起飛/降落功能時，腳架自動上升/降落。飛行器處於地面或降落時請保證腳架處於最低，以免損壞相機。";
+
+"simulator_tips6"="長按圓形按鍵激活智能返航。返航指示燈白燈常亮表示飛行器正在進入返航模式,飛行器將返航至最近記錄 的返航點。在返航過程中,用戶仍然可通過打桿控制飛行器。短按一次此按鍵將結束返航,重新獲得控制權。";
+
+"simulator_tipsP3C5"="S2開關可觸發智能返航，上下撥動S2開關2次可觸發智能返航，返航過程中用戶可控制飛行器航向。";
+
+"simulator_tipsP3C6"="上下撥動S1開關2次（P-A-F-A-P）可奪回自動返航時的控制權";
+
+/* ytao: do not modify the name of simulator_tips? */
+"simulator_tipsTitle0"="如何啟動電機：";
+
+"simulator_tipsTitle1"="如何起飛/降落：";
+
+"simulator_tipsTitle2"="如何轉動機頭：";
+
+"simulator_tipsTitle3"="如何前後左右飛行：";
+
+"simulator_tipsTitle4"="如何調整鏡頭俯仰：";
+
+"simulator_tipsTitle5"="調整腳架：";
+
+"simulator_tipsTitle6"="如何智能返航：";
+
+"simulator_tipsTitleP3C5"="開始智能返航：";
+
+"simulator_tipsTitleP3C6"="中斷智能返航：";
+
+/* wind */
+"simulator_wind"="風：";
+
+"simulator_windSetting"="風速設置";
+
+"simulator_windSpeed"="風速";
+
+"slaveRc_info_text"="系統默認的從遙控器搖桿可用於控制雲台的pitch和yaw方向。你可以定製每個搖桿對應的雲台控制方向,並且可以配置相應的控制速度。";
+
+"sleepComplete"="OSMO已經休眠";
+
+"sleepFailed"="OSMO執行休眠失敗";
+
+"sleepTimeout"="OSMO執行休眠超時";
+
+"sleep_mode"="休眠";
+
+/* A9 Gimbal Settings */
+"sliceMode"="靜默模式";
+
+"slow_motion"="慢動作";
+
+"smart_electricity_gohome_alert_gohome_button"="立刻返航";
+
+"smart_electricity_gohome_alert_title_front"="系統計算您當前電量僅足夠返回返航點，在";
+
+"smart_electricity_gohome_alert_title_tail"="秒後飛行器將自動返航，請確認或取消。(取消後將不再提示此消息)";
+
+"spot_metering_area_failed"="點測光區域設置失敗";
+
+"start"="開始";
+
+"support_Label_Text"="支持";
+
+"swipeDownToExit"="下滑屏幕退出";
+
+"tag_is_required"="需要填寫標記才能發布";
+
+"tags"="標記 *";
+
+"takeoff_control_Landing_title"="請確認是否要自動降落";
+
+"takeoff_control_Landing_warning"="飛行器將從當前位置自動下降，請注意附近建築物及下降位置是否水平，遇到緊急情況時取消下降";
+
+"takeoff_control_cancel"="取消";
+
+"takeoff_control_cancel_landing_warning"="請確認是否要取消自動降落?";
+
+"takeoff_control_cancel_takeoff_warning"="請確認是否要取消自動起飛?";
+
+"takeoff_control_landing_slide_tips"="向右滑動降落";
+
+"takeoff_control_ok"="確定";
+
+"takeoff_control_takeoff_slide_tips"="向右滑動起飛";
+
+"takeoff_control_takeoff_title"="請確認是否自動起飛?";
+
+"takeoff_control_takeoff_warning"="  飛行器將自動起飛到1.2米高度，請確保飛行器處於地面，請勿在狹窄空間，人群中或建築物旁起飛，手切勿觸碰螺旋槳。";
+
+"takeoff_control_takeoff_warning_atti"="  當前環境無法精確定位，飛行器將自動起飛到1.2米高度，請確保飛行器處於地面，請勿在狹窄空間，人群中或建築物旁起飛，手切勿觸碰螺旋槳。";
+
+"takeoff_control_takeoff_warning_atti_imperialUnit"="  當前環境無法精確定位，飛行器將自動起飛到4英尺高度，請確保飛行器處於地面，請勿在狹窄空間，人群中或建築物旁起飛，手切勿觸碰螺旋槳。";
+
+"takeoff_control_takeoff_warning_imperialUnit"="  飛行器將自動起飛到4英尺高度，請確保飛行器處於地面，請勿在狹窄空間，人群中或建築物旁起飛，手切勿觸碰螺旋槳。";
+
+"takeoff_failed_IMU_calibration_finished"="傳感器校準完成，請重啟飛行器";
+
+"takeoff_failed_RC_calibration_exception"="校準異常，請校準遙控器";
+
+"takeoff_failed_RC_calibration_unfinished"="校準未完成，請校準遙控器";
+
+"takeoff_failed_RC_is_in_calibration"="正在校準遙控器";
+
+"takeoff_failed_RC_mapping_exception"="校準異常，請檢查遙控器通道映射";
+
+"takeoff_failed_SD_card_exception"="SD卡異常，如果重啟復現，請維修SD卡";
+
+"takeoff_failed_aircraft_type_mismatch"="飛行器機型設置不匹配，請檢查飛行器類型";
+
+"takeoff_failed_battery_authentication_exception"="電池認證失敗，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_battery_communication_exception"="電池通信異常，請檢查電池連接情況";
+
+"takeoff_failed_battery_number_is_not_engouh"="請插入足夠的電池";
+
+"takeoff_failed_battery_voltage_difference_large"="電池電壓差過大，請查看電池狀態";
+
+"takeoff_failed_battery_voltage_difference_very_large"="電池電壓差太大，請查看電池狀態";
+
+"takeoff_failed_device_topology_exception"="設備拓撲異常，請重啟並檢查連接情況";
+
+"takeoff_failed_find_unconfigured_module"="存在未設置模塊，如果重啟復現請聯繫技術支持";
+
+"takeoff_failed_navigation_system_disconnect"="導航模塊未連接，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_navigation_system_exception"="導航系統異常，請查看冗餘狀態";
+
+"takeoff_failed_software_data_invalid"="軟件數據非法，如果重啟復現請聯繫技術支持";
+
+"takeoff_failed_tips_GPS_disconnect"="GPS未連接";
+
+"takeoff_failed_tips_IMU_cali_success"="校準成功，請重啟飛行器";
+
+"takeoff_failed_tips_IMU_disconnect"="傳感器未連接";
+
+"takeoff_failed_tips_RC_calibration_exception"="遙控器校準數據錯誤，請重新校準。";
+
+"takeoff_failed_tips_RC_calibration_unfinished"="遙控器校準未完成，請重新校準。";
+
+"takeoff_failed_tips_RC_center_out_range"="遙控器中位超過範圍，請重新校準。";
+
+"takeoff_failed_tips_RC_is_in_calibration"="正在校準遙控器";
+
+"takeoff_failed_tips_RC_mapping_exception"="遙控器映射錯誤";
+
+"takeoff_failed_tips_SD_card_exception"="數據記錄儀錯誤。如果重啟復現，請聯繫技術支持。";
+
+"takeoff_failed_tips_accelerometer_bias_too_large"="加速度計bias太大，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_accelerometer_dead"="加速度計故障，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_aircraft_type_mismatch"="飛行器類型錯誤";
+
+"takeoff_failed_tips_assistant_protected"="調參保護，請斷開調參軟件。";
+
+"takeoff_failed_tips_atti_error"="IMU沒有姿態數據";
+
+"takeoff_failed_tips_attitude_limit"="IMU姿態限制";
+
+"takeoff_failed_tips_baro_abnormal"="氣壓計錯誤，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_tips_barometer_dead"="氣壓計故障，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_barometer_negative"="氣壓計為負值，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_barometer_noise_too_large"="氣壓計噪聲太大，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_bat_version_error"="電池版本錯誤";
+
+"takeoff_failed_tips_battery_authentication_exception"="電池認證失敗";
+
+"takeoff_failed_tips_battery_cell_error"="電池電芯錯誤，請及時降落並更換電池。";
+
+"takeoff_failed_tips_battery_communication_exception"="電池通訊錯誤，檢查電池連接";
+
+/* TODO, New */
+"takeoff_failed_tips_battery_communite_error"="電池通信錯誤，請檢查電池連接。";
+
+"takeoff_failed_tips_battery_not_ready"="電池沒有準備好";
+
+"takeoff_failed_tips_battery_number_is_not_engouh"="需要六塊電池";
+
+"takeoff_failed_tips_battery_voltage_differenceVery_large"="電池間壓差過大，請確保所有電池電量一致";
+
+"takeoff_failed_tips_battery_voltage_difference_large"="按圖示移動電池";
+
+"takeoff_failed_tips_bias_limit"="IMU BIAS過大，請重新校準IMU。";
+
+"takeoff_failed_tips_compass_abnormal"="指南針錯誤，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_tips_compass_calibrating"="指南針正在校準";
+
+"takeoff_failed_tips_compass_dead"="指南針故障，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_compass_error"="指南針異常,請重新校準。";
+
+"takeoff_failed_tips_compass_mod_too_large"="指南針模值太大，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_compass_noise_too_large"="指南針噪聲太大，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+/* 电机被锁，英文中的解锁办法已经不适用了 */
+"takeoff_failed_tips_device_locked"="設備鎖定";
+
+"takeoff_failed_tips_device_topology_exception"="拓撲錯誤，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_tips_distance_limit"="距離Home點過遠無法起飛，請靠近Home點或重新設置限遠值。";
+
+"takeoff_failed_tips_esc_error"="電調異常，請檢查電調連接。";
+
+"takeoff_failed_tips_fail_invalid_SN"="序列號無效";
+
+"takeoff_failed_tips_flash_operation"="正在操作閃存";
+
+"takeoff_failed_tips_gimbal_disorder"="雲台失控，若重啟復現，請聯繫技術支持。";
+
+"takeoff_failed_tips_gimbal_dsc_pitch_no_data"="雲台俯仰軸電機異常，若重啟復現，請聯繫技術支持。";
+
+"takeoff_failed_tips_gimbal_firm_is_updata"="雲台正在升級";
+
+"takeoff_failed_tips_gimbal_gyro_abnormal"="雲台陀螺儀異常，若重啟復現，請聯繫技術支持。";
+
+"takeoff_failed_tips_gimbal_pitch_no_data"="雲台俯仰軸電機異常，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_tips_gimbal_pitch_shock"="雲台俯仰軸自激震蕩，請鎖緊相機或降低感度。";
+
+"takeoff_failed_tips_gimbal_roll_no_data"="雲台橫滾軸電機異常，若重啟復現，請聯繫技術支持。";
+
+"takeoff_failed_tips_gimbal_roll_shock"="雲台橫滾軸自激震蕩，請鎖緊相機或降低感度。";
+
+"takeoff_failed_tips_gimbal_yaw_no_data"="雲台平移軸電機異常，若重啟復現，請聯繫技術支持。";
+
+"takeoff_failed_tips_gimbal_yaw_shock"="雲台平移軸自激震蕩，請鎖緊相機或降低感度。";
+
+"takeoff_failed_tips_gps_abnormal"="GPS錯誤，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_tips_gyro_acc_abnormal"="陀螺儀加速計錯誤。請重啟飛行器，如果問題仍然存在，請聯繫技術支持。";
+
+"takeoff_failed_tips_gyro_bias_too_large"="陀螺儀bias太大，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_gyro_dead"="陀螺儀故障，請重啟飛行器，如果問題仍然存在，請聯繫售後服務";
+
+"takeoff_failed_tips_imu_calibrating"="IMU正在校準，請等待。";
+
+"takeoff_failed_tips_imu_initing"="IMU正在初始化";
+
+"takeoff_failed_tips_imu_need_calibration"="IMU異常，請重新校準IMU。";
+
+"takeoff_failed_tips_imu_sn_error"="SN錯誤";
+
+"takeoff_failed_tips_imu_warming"="IMU預熱中，請等待。";
+
+"takeoff_failed_tips_in_fly_limit_zone"="在限飛區";
+
+"takeoff_failed_tips_large_tilt"="地面傾斜過大，請將飛行器移至水平面再起飛。";
+
+"takeoff_failed_tips_low_voltage"="電池電壓低，請更換電池";
+
+"takeoff_failed_tips_navigation_system_exception"="導航系統錯誤，如果重啟復現，請聯繫技術支持";
+
+"takeoff_failed_tips_not_activated"="設備未激活，請激活。";
+
+"takeoff_failed_tips_novice_protected"="新手模式下，無GPS時不允許起飛。";
+
+"takeoff_failed_tips_pack_mode"="正在打包模式";
+
+"takeoff_failed_tips_rc_need_calibration"="遙控器需要校準";
+
+/* checklist|无法起飞原因|电池严重低电量 */
+"takeoff_failed_tips_seriou_low_power"="電池嚴重低電量，起飛前請充電。";
+
+"takeoff_failed_tips_seriou_low_voltage"="電池嚴重低電壓，請充電。";
+
+"takeoff_failed_tips_simulator_mode"="正在運行模擬器，請重啟飛行器。";
+
+"takeoff_failed_tips_simulator_run"="已經運行過模擬器";
+
+/* TODO, New */
+"takeoff_failed_tips_smart_low_to_land"="智能二級低電量";
+
+"takeoff_failed_tips_software_data_invalid"="浮點數錯誤";
+
+"takeoff_failed_tips_some_module_not_configured"="有未完成設置的模塊";
+
+/* need check */
+"takeoff_failed_tips_tempure_vol_low"="低溫情況下影響飛行安全，不建議起飛。";
+
+"takeoff_failed_tips_unknown_error"="未知錯誤 (code: %d)，無法起飛，請聯繫售後人員";
+
+"takeoff_failed_tips_upgrading"="系統正在升級";
+
+"takeoff_failed_tips_version_mismatch"="固件版本不匹配，請重新升級所有模塊";
+
+"takeoff_failed_version_mismatch"="版本不匹配，請檢查固件版本";
+
+"takeoff_set_successful"="一鍵起飛";
+
+"takeoff_tips_low_battery_temp"="電池溫度低於15度，性能會顯著下降，影響飛行安全，建議將電池充滿電並預熱至25度以上。";
+
+"tips"="提示";
+
+"tips_close_camera_advanced_mode"="高級模式關閉";
+
+"tips_cmd_timeout"="命令發送超時";
+
+"tips_connect_broken"="連接斷開";
+
+"tips_connect_failed"="連接失敗";
+
+"tips_connect_success"="連接成功";
+
+"tips_metering_cmd_timeout"="測光模式設置命令超時";
+
+"tips_newbie_gps_extra"="可在飛控設置中關閉新手模式";
+
+"tips_newbie_gps_message"="GPS信號穩定，返航點已記錄。為了儘快熟悉您的飛行器及操作安全，飛機高度限制為30M，距離限制為30M。";
+
+"tips_newbie_gps_title"="新手模式啟用";
+
+"tips_newbie_no_gps_extra"="需強制起飛，請在飛控設置中關閉新手模式";
+
+"tips_newbie_no_gps_message"="為了您的飛行安全，請在GPS信號穩定的區域飛行，Atti模式下，飛行器無法定位返航點及穩定懸停。";
+
+"tips_newbie_no_gps_title"="新手模式, 無GPS不允許起飛";
+
+"tips_open_camera_advanced_mode"="高級模式開啟";
+
+"tips_press_cancel_gohome"="點擊取消返航";
+
+"tips_press_cancel_landing"="點擊取消降落";
+
+"tips_reach_distance_limit"="已達最大限飛距離, 可根據需要在飛控設置中調整";
+
+"tips_reach_height_limit"="已達最大限飛高度, 可根據需要在飛控設置中調整";
+
+"tips_videocaption_cmd_timeout"="視頻字幕設置命令超時";
+
+"title"="標題 *";
+
+"title_is_required"="需要填寫標題才能發布.";
+
+/* 视觉教程|操作按钮文案 */
+"tomatoVision_tutorial_complete_button"="完成";
+
+/* 视觉教程|操作按钮文案 */
+"tomatoVision_tutorial_continue_button"="繼續";
+
+/* 视觉教程|操作按钮文案 */
+"tomatoVision_tutorial_enable_button"="啟用";
+
+/* 视觉教程|退出教程弹框 */
+"tomatoVision_tutorial_exit_alert_title"="確認要退出新手互動教程嗎？";
+
+/* 视觉教程|退出教程弹框 */
+"tomatoVision_tutorial_notshow_button"="不再顯示";
+
+/* [ Discard ] 视觉教程|指点飞行章节|调整指点飞行方向 */
+"tomatoVision_tutorial_pointingSection_adjustPointingDirection_explanation"="指點飛行時，點擊其他位置，或者長按屏幕並左右拖動出現的籃圈，都可以改變飛行方向。試一下改變飛行方向吧。";
+
+/* [ Discard ] 视觉教程|指点飞行章节|调整指点飞行方向 */
+"tomatoVision_tutorial_pointingSection_adjustPointingDirection_title"="調整飛行方向";
+
+/* 视觉教程|指点飞行章节|调整指点飞行速度 */
+"tomatoVision_tutorial_pointingSection_adjustPointingSpeed_explanation"="右側藍色速度條為當前巡航速度。";
+
+/* 视觉教程|指点飞行章节|调整指点飞行速度 */
+"tomatoVision_tutorial_pointingSection_adjustPointingSpeed_title"="調整巡航速度";
+
+/* 视觉教程|指点飞行章节|进入指点飞行章节 */
+"tomatoVision_tutorial_pointingSection_enterPointingSection_explanation"="好的，讓我們練習指點飛行。若有需要，可以點擊右上角的關閉按鈕退出教程，飛機將會懸停。";
+
+/* 视觉教程|指点飞行章节|进入指点飞行章节 */
+"tomatoVision_tutorial_pointingSection_enterPointingSection_title"="指點飛行";
+
+/* [ Discard ] 视觉教程|指点飞行章节|完成指点飞行章节 */
+"tomatoVision_tutorial_pointingSection_finishPointingSection_explanation"="恭喜你，你已經掌握指點飛行功能了。學習進度已保存，你可以繼續學習智能跟隨功能或者暫時退出。";
+
+/* [ Discard ] 视觉教程|指点飞行章节|完成指点飞行章节 */
+"tomatoVision_tutorial_pointingSection_finishPointingSection_title"="指點飛行";
+
+/* 视觉教程|指点飞行章节|完成指点飞行章节 type2 */
+"tomatoVision_tutorial_pointingSection_finish_exit_PointingSection_explanation"="恭喜，您已學會指點功能，開始享受你的新飛行方式吧。";
+
+/* 视觉教程|指点飞行章节|完成指点飞行章节 type2 */
+"tomatoVision_tutorial_pointingSection_finish_exit_PointingSection_title"="教程完畢";
+
+/* 视觉教程|指点飞行章节|选择飞行方向 */
+"tomatoVision_tutorial_pointingSection_selectPointingDirection_explanation"="先點擊屏幕選擇飛行方向，然後點 GO 啟動飛行。";
+
+/* 视觉教程|指点飞行章节|选择飞行方向 */
+"tomatoVision_tutorial_pointingSection_selectPointingDirection_title"="指點飛行";
+
+/* 视觉教程|指点飞行章节|停止指点飞行 */
+"tomatoVision_tutorial_pointingSection_stopPointing_explanation"="點擊 STOP 按鈕，可以讓飛行器停止前進。";
+
+/* 视觉教程|指点飞行章节|停止指点飞行 */
+"tomatoVision_tutorial_pointingSection_stopPointing_title"="指點飛行";
+
+/* 视觉教程|指点飞行章节|水平参考线 */
+"tomatoVision_tutorial_pointingSection_tapOnHorizontalLine_explanation"="點擊水平線飛行器將平飛。 點擊上方或下方則將斜飛。";
+
+/* 视觉教程|指点飞行章节|水平参考线 */
+"tomatoVision_tutorial_pointingSection_tapOnHorizontalLine_title"="指點水平參考線";
+
+/* 视觉教程|操作按钮文案 */
+"tomatoVision_tutorial_retry_button"="重試";
+
+/* 视觉教程|开始章节|开启辅助飞行 */
+"tomatoVision_tutorial_startSection_enableAssistFlight_explanation"="請啟用輔助飛行功能。";
+
+/* 视觉教程|开始章节|开启辅助飞行 */
+"tomatoVision_tutorial_startSection_enableAssistFlight_title"="開啟輔助飛行";
+
+/* 视觉教程|开始章节|进入教程 */
+"tomatoVision_tutorial_startSection_enterTutorial_explanation"="以下小教程能讓你迅速掌握用法。請在空曠區域練習。";
+
+/* 视觉教程|开始章节|进入教程 */
+"tomatoVision_tutorial_startSection_enterTutorial_title"="新手教程";
+
+/* 视觉教程|开始章节|开启辅助飞行 */
+"tomatoVision_tutorial_startSection_failed_warning"="開啟前視感知系統失敗，是否重試？";
+
+/* 视觉教程|开始章节|调整飞行高度 */
+"tomatoVision_tutorial_startSection_flyToRecommededAltitude_explanation"="請起飛並調整高度至 3 米以上。當前高度為 %.1f 米。";
+
+/* 视觉教程|开始章节|调整飞行高度 */
+"tomatoVision_tutorial_startSection_flyToRecommededAltitude_title"="調整飛行高度";
+
+/* 视觉教程|操作按钮文案 */
+"tomatoVision_tutorial_start_button"="開始";
+
+/* 视觉教程|智能跟随章节|POI */
+"tomatoVision_tutorial_trackingSection_POI_explanation"="成功跟隨目標後，左右打桿可以環繞目標，試試看。";
+
+/* 视觉教程|智能跟随章节|POI */
+"tomatoVision_tutorial_trackingSection_POI_title"="環繞跟隨目標";
+
+/* [ Discard ] 视觉教程|智能跟随章节|进入智能跟随章节 */
+"tomatoVision_tutorial_trackingSection_enterTrackingSection_explanation"="現在讓我們來練習智能跟隨。若有需要，可以點擊右上角的關閉按鈕退出教程，飛行器將會懸停。";
+
+/* [ Discard ] 视觉教程|智能跟随章节|进入智能跟随章节 */
+"tomatoVision_tutorial_trackingSection_enterTrackingSection_title"="智能跟隨";
+
+/* 视觉教程|智能跟随章节|完成智能跟随章节 */
+"tomatoVision_tutorial_trackingSection_finishTrackingSection_explanation"="你已完成智能跟隨教程了，開始享受飛行吧。";
+
+/* 视觉教程|智能跟随章节|完成智能跟随章节 */
+"tomatoVision_tutorial_trackingSection_finishTrackingSection_title"="教程完畢";
+
+/* 视觉教程|智能跟随章节|优化对人的跟随 */
+"tomatoVision_tutorial_trackingSection_humanRecognition_explanation"="若要跟隨站立的人，只需要點擊一下。 點自己試試看。如果不成功，請調整距離和雲台高度。";
+
+/* 视觉教程|智能跟随章节|优化对人的跟随 */
+"tomatoVision_tutorial_trackingSection_humanRecognition_title"="優化對人的跟隨";
+
+/* 视觉教程|智能跟随章节|选定追踪目标 */
+"tomatoVision_tutorial_trackingSection_selectTrackingTarget_explanation"="將飛行器朝向自己，調整距離到 5 米以內，框選自己並點擊 OK。";
+
+/* 视觉教程|智能跟随章节|选定追踪目标 AK: Is this for non-human subjects? */
+"tomatoVision_tutorial_trackingSection_selectTrackingTarget_tipsLabel_title"="請框選自己";
+
+/* 视觉教程|智能跟随章节|选定追踪目标 */
+"tomatoVision_tutorial_trackingSection_selectTrackingTarget_title"="智能跟隨";
+
+/* [ Discard ] 视觉教程|智能跟随章节|停止跟踪飞行 */
+"tomatoVision_tutorial_trackingSection_stopTracking_explanation"="這樣飛是不是很好玩？好的，現在請點擊左側的 STOP 按鈕，讓飛行器將會懸停吧。";
+
+/* [ Discard ] 视觉教程|智能跟随章节|停止跟踪飞行 */
+"tomatoVision_tutorial_trackingSection_stopTracking_title"="智能跟隨";
+
+/* [ Discard ] 视觉教程|智能跟随章节|切换到智能跟随 */
+"tomatoVision_tutorial_trackingSection_switchToTrackingMode_explanation"="恭喜，您已學會指點功能，下面學習智能跟隨。";
+
+/* [ Discard ] 视觉教程|智能跟随章节|切换到智能跟随 */
+"tomatoVision_tutorial_trackingSection_switchToTrackingMode_title"="切換到智能跟隨";
+
+/* [ Discard ] 视觉教程|智能跟随章节|结合遥控器使用 */
+"tomatoVision_tutorial_trackingSection_usingRemoteController_explanation"="如果同時使用遙控器還可以讓智能跟隨更加有趣哦，撥動遙控器搖桿讓飛機向左或者向右飛看看吧。";
+
+/* [ Discard ] 视觉教程|智能跟随章节|结合遥控器使用 */
+"tomatoVision_tutorial_trackingSection_usingRemoteController_title"="結合遙控器使用";
+
+/* 视觉教程|智能跟随章节|走两步试试 */
+"tomatoVision_tutorial_trackingSection_walkAround_explanation"="很好，朝左右走走看看效果。";
+
+/* 视觉教程|智能跟随章节|走两步试试 */
+"tomatoVision_tutorial_trackingSection_walkAround_title"="智能跟隨";
+
+/* 倒退tracking警告 */
+"tomato_tracking_backward_warning_content"="請確保啟用前飛行器後方沒有障礙物，並僅在開闊場地使用此功能。";
+
+"tomato_vision_below_vison_section_title"="下視視覺定位";
+
+"tomato_vision_cell_"="啟用下視視覺定位";
+
+"tomato_vision_cell_turn_on_vision"="啟用下視視覺定位";
+
+/* 进入视觉飞行失败|无法在模拟器中使用 */
+"tomato_vision_failed_by_simulator"="無法在模擬器中使用此功能";
+
+/* 被动避障|前视失效|（图标下面的文案） */
+"tomato_vision_front_radar_disabled_tips"="前視感知系統失效";
+
+"tomato_vision_front_vison_section_title"="前視障礙物感知";
+
+/* 指点飞行|确认飞行方向 */
+"tomato_vision_pointing_confirm_logo_below"="指點即飛";
+
+/* 指点飞行|正在下降 */
+"tomato_vision_pointing_downflying"="正在下降";
+
+/* 指点飞行|已经退出指点飞行|默认 */
+"tomato_vision_pointing_exit_ret_default"="指點飛行已停止";
+
+/* 指点或追踪|通用失败|电池电量低 */
+"tomato_vision_pointing_failed_ret_battery"="電池電量低";
+
+/* 指点飞行|指点失败|未能成功指点飞行，未知原因（在有其它原因的时候会作为tips的标题） */
+"tomato_vision_pointing_failed_ret_default"="啟動指點飛行失敗";
+
+/* 追踪或指点|退出|达到限飞区域，限远，限高 */
+"tomato_vision_pointing_failed_ret_limit"="飛行器進入限制區域";
+
+/* 指点飞行|指点失败|飞行器高度较低且向下指点（新逻辑改成在限低模式都不让指点） */
+"tomato_vision_pointing_failed_ret_low_limit"="飛行器低於可指點飛行的高度";
+
+/* 指点或追踪|通用失败|没有启用辅助飞行 */
+"tomato_vision_pointing_failed_ret_no_avoid"="前視感知系統未打開";
+
+/* 指点或追踪|通用失败|没有雷达信息 */
+"tomato_vision_pointing_failed_ret_no_radar"="前視感知系統無響應";
+
+/* 指点飞行|指点失败|有障碍物 */
+"tomato_vision_pointing_failed_ret_obstacle"="前方有障礙物，請更換方向重試";
+
+/* 指点飞行|指点失败|方向非法 AK: Can't fly into open sky? Cameras have to see something? */
+"tomato_vision_pointing_failed_ret_out_of_range"="指點方向在前視感知系統視野外，請重新指定方向";
+
+/* 指点飞行|退出指点飞行|遥控器向后快速拉 */
+"tomato_vision_pointing_failed_ret_rc_pull"="指點飛行已停止";
+
+/* 指点飞行|指点失败|未起飞 */
+"tomato_vision_pointing_failed_ret_takeoff"="飛行器未起飛，請起飛後重試。";
+
+/* 指点飞行|指点失败|启用避障对话框|内容 */
+"tomato_vision_pointing_need_avoid_alert_content"="進入指點飛行模式前，請先啟用前視感知系統。 在指點飛行過程中遇到障礙物時，飛行器將自動繞飛或剎車懸停。";
+
+/* 指点飞行|指点失败|启用避障对话框|标题 */
+"tomato_vision_pointing_need_avoid_alert_title"="需要啟用前視感知功能";
+
+/* 指点飞行|遇到障碍 */
+"tomato_vision_pointing_target_blocked"="前方有障礙物";
+
+/* 指点飞行|绕行中 */
+"tomato_vision_pointing_target_by_passing"="正在繞行";
+
+/* 指点飞行|防触地（目前还不能跟随地形，只能平飞防触地） */
+"tomato_vision_pointing_terrain_following"="防觸地保護啟動";
+
+/* 指点飞行|正在上升 */
+"tomato_vision_pointing_upflying"="正在上升";
+
+/* 被动避障|雷达失效 */
+"tomato_vision_radar_detect_failed"="前視感知系統失效";
+
+/* 被动避障|雷达失效|环境太暗 */
+"tomato_vision_radar_detect_failed_reason_dark"="環境光線不足";
+
+/* 被动避障|雷达失效|未知原因 */
+"tomato_vision_radar_detect_failed_reason_default"="前視感知系統失效，請小心飛行";
+
+/* 被动避障|视觉失效|前视差异过大 */
+"tomato_vision_radar_detect_failed_reason_diff"="前視感知系統被部分遮擋或障礙物距離太近";
+
+/* 被动避障|雷达失效|环境太亮 */
+"tomato_vision_radar_detect_failed_reason_light"="環境光線過亮";
+
+/* 被动避障|雷达失效|保护罩 */
+"tomato_vision_radar_detect_failed_reason_propeller_guard"="螺旋槳保護罩已安裝";
+
+/* 被动避障|雷达失效|保护罩|左侧飘窗 */
+"tomato_vision_radar_detect_failed_reason_propeller_guard_detail"="已安裝螺旋槳保護罩，前視感知系統將自動關閉";
+
+/* 视觉追踪|进入视觉追踪|相机设置调整 */
+"tomato_vision_tracking_adjusted_camera_settings"="相機參數已調整至推薦設置";
+
+/* 智能跟随|发送命令超时 */
+"tomato_vision_tracking_cmd_timeout"="發送智能跟隨指令超時";
+
+/* 智能跟随|飞行器高度太高 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_drone_too_high"="飛行器高度過高";
+
+/* 智能跟随|飞行器高度太低 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_drone_too_low"="飛行器高度過低";
+
+/* 智能跟随|目标附近有障碍物 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_obstacle"="檢測到前方障礙物";
+
+/* 智能跟随|相 机角度太低 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_pitch_too_low"="雲台角度過低";
+
+/* 智能跟随|目标太高 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_target_too_high"="目標高度過高";
+
+/* 智能跟随|距离目标太近 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_too_close"="目標距離過近";
+
+/* 智能跟随|距离目标太远 */
+"tomato_vision_tracking_confirm_below_cannot_confirm_too_far"="目標距離過遠";
+
+/* 智能跟随|默认确认追踪目标 */
+"tomato_vision_tracking_confirm_below_default"="點擊跟隨";
+
+/* 智能跟随|需要重新确认目标 */
+"tomato_vision_tracking_confirm_below_reconfirm_default"="請確認目標";
+
+/* 智能跟随|目标前后抖动 AK: Jolting? What does this mean? */
+"tomato_vision_tracking_confirm_below_reconfirm_shake"="目標前後晃動";
+
+/* 智能跟随|目标丢失，正在搜索 */
+"tomato_vision_tracking_event_track_lost"="目標丟失，搜索中...";
+
+/* 智能跟随|追踪退出|未能原因（在有其它原因的时候会作为tips的标题） */
+"tomato_vision_tracking_exit_reason_common"="智能跟隨模式已結束";
+
+/* 智能跟随|追踪退出|内部帧率低 */
+"tomato_vision_tracking_exit_ret_inner_low_fps"="內部異常（04）";
+
+/* 智能跟随|追踪退出|相机输入异常 */
+"tomato_vision_tracking_exit_ret_no_camera_input"="內部異常（03）";
+
+/* 智能跟随|追踪退出|速度融合不可用 */
+"tomato_vision_tracking_exit_ret_no_fusion_velocity"="飛行器速度不可用";
+
+/* 智能跟随|追踪退出|未能找到目标（搜索3分钟后超时） */
+"tomato_vision_tracking_exit_ret_timeout"="未能重新找到目標";
+
+/* 智能跟随|追踪失败|未能成功追踪目标，未知原因（在有其它原因的时候会作为tips的标题） */
+"tomato_vision_tracking_failed_ret_default"="未能成功跟隨目標";
+
+/* 智能跟随|追踪失败|特征不明显 */
+"tomato_vision_tracking_failed_ret_low_detect"="無法識別目標";
+
+/* 视觉追踪|追踪失败|未起飞 */
+"tomato_vision_tracking_failed_ret_takeoff"="飛行器未起飛，請起飛後重試。";
+
+/* 智能跟随|追踪失败|未能成功追踪目标，太大 */
+"tomato_vision_tracking_failed_ret_too_large"="目標太大，請遠離後重試";
+
+/* 智能跟随|追踪失败|未能成功追踪目标，太小 */
+"tomato_vision_tracking_failed_ret_too_small"="目標太小，請靠近後重試";
+
+/* 视觉追踪|启用避障对话框|内容 */
+"tomato_vision_tracking_need_avoid_alert_content"="進入智能跟隨模式前，請先啟用前視感知系統。 在跟隨飛行過程中遇到障礙物時，飛行器將自動繞飛或剎車懸停。";
+
+/* 视觉飞行|无图传时提示 */
+"tomatovision_general_check_novideo"="無圖像，請稍後再試";
+
+"topbar_auto"="自動";
+
+"topbar_histogram"="直方圖";
+
+"topbar_sdcard_error_advise_reformat"="建議格式化SD卡";
+
+"topbar_sdcard_error_formating"="SD卡正在格式化";
+
+"topbar_sdcard_error_invalid_filesystem"="SD卡文件系統錯誤";
+
+"topbar_sdcard_error_invalid_sdcard"="無效SD卡";
+
+"topbar_sdcard_error_no_format"="SD卡未格式化";
+
+"topbar_sdcard_error_no_sdcard"="SD卡未插入";
+
+"topbar_sdcard_error_normal"="SD卡正常";
+
+"topbar_sdcard_error_sdcard_busy"="SD卡正忙";
+
+"topbar_sdcard_error_sdcard_full"="SD卡已滿";
+
+"topbar_sdcard_error_sdcard_index_full"="SD卡目錄已滿";
+
+"topbar_sdcard_error_sdcard_initing"="SD卡正在初始化...";
+
+"topbar_sdcard_error_sdcard_slow"="低速SD卡";
+
+"topbar_sdcard_error_sdcard_unknow_error"="SD卡未知錯誤";
+
+"topbar_sdcard_error_write_protect"="SD卡寫保護";
+
+"topbar_sdcard_error_writing_slow"="SD卡速度下降,建議格式化";
+
+/* todo */
+"topbar_ssd_error_cognize_fail"="固態硬盤識別失敗";
+
+/* todo */
+"topbar_ssd_error_formating_fast"="正在格式化";
+
+/* todo */
+"topbar_ssd_error_formating_low"="正在格式化";
+
+/* todo */
+"topbar_ssd_error_full"="固態硬盤已滿";
+
+/* todo */
+"topbar_ssd_error_init"="正在初始化";
+
+/* todo */
+"topbar_ssd_error_no_ssd"="未插入固態硬盤";
+
+/* todo */
+"topbar_ssd_error_normal"="固態硬盤正常";
+
+/* todo */
+"topbar_ssd_error_saving"="正在存盤";
+
+/* todo */
+"topbar_ssd_error_validate_fail"="固態硬盤驗證失敗";
+
+"topbar_ssd_error_waiting"="等待任務";
+
+/* todo */
+"topbar_ssd_error_write_protect"="固態硬盤寫保護";
+
+"topbar_wanring_disconnect"="設備未連接";
+
+"topbar_warning_aircraft_warning_up"="飛行器系統預熱中";
+
+"topbar_warning_align"="返航—航向調整";
+
+"topbar_warning_ascending"="返航—上升";
+
+"topbar_warning_atti"="可安全飛行（無GPS）";
+
+"topbar_warning_barometer_air_error"="氣壓計異常，請儘可能緩慢降落";
+
+"topbar_warning_battery_broken"="電池電芯損壞";
+
+"topbar_warning_battery_communication_error"="電池異常，請及時檢查";
+
+"topbar_warning_battery_low_temperature"="電池放電低溫";
+
+"topbar_warning_battery_over_current"="電池放電過流";
+
+"topbar_warning_battery_over_temperature"="電池放電高溫";
+
+"topbar_warning_camera_encrypt_error"="相機錯誤";
+
+"topbar_warning_cannot_takeoff"="無法起飛";
+
+/* 新手模式无gps */
+"topbar_warning_cannot_takeoff_novice_protected"="無法起飛（無GPS）";
+
+"topbar_warning_compass_error"="指南針異常，請移動飛機或校準指南針";
+
+"topbar_warning_cruise"="返航—自主回航";
+
+/* topbar警告|ecs pwm 信号在空中短路 */
+"topbar_warning_ecs_shortcut_air_error"="電調異常，請立即降落檢查";
+
+/* topbar警告|ecs pwm 信号短路 */
+"topbar_warning_ecs_shortcut_error"="電調異常";
+
+"topbar_warning_failsafe"="遙控信號丟失";
+
+"topbar_warning_failsafe_gohome"="失控返航中";
+
+"topbar_warning_firmware_no_match"="固件需要升級";
+
+"topbar_warning_gohome_failed"="返航停止";
+
+"topbar_warning_going_home"="安全返航中";
+
+"topbar_warning_imu_error"="IMU異常，請校準IMU";
+
+"topbar_warning_imu_initing"="IMU初始化中";
+
+"topbar_warning_imu_need_calibration"="需要進行IMU校準";
+
+"topbar_warning_landing"="，降落中";
+
+"topbar_warning_limit_close"="您的飛機正在靠近限飛區域\n請小心飛行";
+
+"topbar_warning_limit_in_gradient"="您的飛機處於限飛區域下方";
+
+"topbar_warning_limit_in_strict"="您的飛機處於限飛區域內";
+
+"topbar_warning_limit_slow_down"="您的飛機處於限飛減速區域";
+
+/* AK: Is this a popup that appears when low battery? If so can just say \"Low Power\" */
+"topbar_warning_low_battery"="低電量警報";
+
+"topbar_warning_low_battery_gohome"="低電量警報，返航中";
+
+"topbar_warning_low_radio_quality"="信號干擾較強";
+
+"topbar_warning_mc_blade_fly_away"="電機空載(螺旋槳脫落或未裝螺旋槳)";
+
+"topbar_warning_mc_data_error"="主控數據異常";
+
+"topbar_warning_mc_motor_blocked"="電機堵轉";
+
+"topbar_warning_mc_read_sd_mode"="讀取飛行數據模式，重啟後退出";
+
+"topbar_warning_no_signal"="無圖傳信號";
+
+"topbar_warning_normal"="可安全飛行（GPS）";
+
+"topbar_warning_normal_handheld"="正常拍攝";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_not_enough_force"="飛行器動力飽和";
+
+"topbar_warning_othermc_normal"="正常";
+
+"topbar_warning_patti_error"="指南針受擾，退出P-GPS模式";
+
+"topbar_warning_preascending"="返航—預備上升";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_radio_airencoder_disconnect"="天空端編碼器異常";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_radio_camera_disconnect"="相機未連接";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_radio_gimbal_disconnect"="雲台未連接";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_radio_grounddecoder_disconnect"="地面端解碼器異常";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_radio_mc_disconnect"="飛行器未連接";
+
+/* TODO:以下待翻译确认 */
+"topbar_warning_radio_rc_disconnect"="設備未連接";
+
+/* 当天空端和地面端版本只有一个是加密版本的时候提示 */
+"topbar_warning_radio_version_not_match"="固件需要升級";
+
+"topbar_warning_radio_weak_signal"="圖傳信號微弱，請調整天線";
+
+"topbar_warning_rc_low_battery"="遙控器電量不足";
+
+"topbar_warning_rc_weak_signal"="遙控器信號微弱，請調整天線";
+
+"topbar_warning_safe_fly_non_gps"="可安全飛行（無GPS）";
+
+"topbar_warning_sensor_error"="傳感器故障，請重啟飛行器";
+
+"topbar_warning_seriou_low_battery"="嚴重低電量警報";
+
+"topbar_warning_seriou_low_voltage"="嚴重低電壓警報";
+
+"topbar_warning_smart_low_battery"="智能低電量";
+
+"tripod"="腳架";
+
+"tripod_drop_down"="腳架放下完成";
+
+"tripod_droping_down"="腳架放下中";
+
+"tripod_stop"="腳架停止動作";
+
+"tripod_unfold"="腳架展開完成";
+
+"tripod_unfolding"="腳架展開中";
+
+"unLimit_ask_unlock_msg"="The drone is approaching a nearby (%@) zone. This area may include flight restrictions. Do you wish to unlock this area?";
+
+"unLimit_close_can_lock_space_msg"="你已抵達限飛區（%@）邊緣，根據本地法律，當前區域存在飛行限制。是否需要解鎖這些飛行限制？";
+
+"unLimit_close_limit_need_off_line_unlock_msg"="你正在靠近限飛區，請前往http://www.dji.com/flysafe解禁該限飛區。";
+
+"unLimit_close_no_lock_space_msg"="你已抵達限飛區（%@）邊緣，飛機將無法再靠近";
+
+"unLimit_close_warning_space_msg"="你在限飛區（%@）內，請確認你有在這裡飛行的相關資質，並小心飛行";
+
+"unLimit_confirm_content_msg"="This area may include flight restrictions.\nPlease confirm:";
+
+"unLimit_confirm_entry_1"="I have authorization (if required) to fly in this location.";
+
+"unLimit_confirm_entry_2"="I accept full responsibility for my flight here.";
+
+"unLimit_confirm_entry_3"="I consent to disclosure of all information about this flight to the relevant authorities.";
+
+"unLimit_confirm_open_term_title"="By unlocking you reaffirm all terms and conditions of use.";
+
+"unLimit_credit_card_ccv_placeholder"="CVV";
+
+"unLimit_credit_card_content"="A verified account is required. You may verify your account now. DJI does not collect or store this information.";
+
+"unLimit_credit_card_expire_placeholder"="Expiration (MM/YY)";
+
+"unLimit_credit_card_learn_more_title"="For more information, refer to the verification FAQ.";
+
+"unLimit_credit_card_number_placeholder"="Credit Card Number";
+
+"unLimit_credit_card_verify_title"="Verify";
+
+"unLimit_first_unlock_msg"="There GEO System has detected %d nearby Authorization Zones. These area may include flight restrictions. Do you wish to unlock these areas?";
+
+"unLimit_hover_title"="The drone will hover in the current location";
+
+"unLimit_in_can_lock_space_land_msg"="你正在限飛區（%@）起飛，根據本地法律，當前區域存在飛行限制。是否需要解鎖這些飛行限制？";
+
+"unLimit_in_can_lock_space_takeoff_msg"="你正在限飛區（%@）起飛，根據本地法律，當前區域存在飛行限制。是否需要解鎖這些飛行限制？";
+
+"unLimit_in_limit_need_off_line_unlock_msg"="你在限飛區/禁飛區內，請前往http://www.dji.com/flysafe解禁當前限飛區。";
+
+"unLimit_in_no_lock_space_land_msg"="飛機在（%@）限飛區內，根據當地法律，不允許飛行，正在降落";
+
+"unLimit_in_no_lock_space_takeoff_msg"="飛機在 (%@) 限飛區內，根據當地法律，不允許起飛";
+
+"unLimit_in_warning_space_msg"="你在限飛區 (%@) 內，請確認你有在這裡飛行的相關資質，並小心飛行";
+
+"unLimit_need_internet_msg_content"="An internet connection is required. Alternatively, use the flight planner prior to flying here.";
+
+"unLimit_report_content_msg"="What kind of error do you want to report?";
+
+"unLimit_report_error"="Report an error";
+
+"unLimit_report_first_issue"="Abandoned NFZ";
+
+"unLimit_report_other_issue"="Other";
+
+"unLimit_report_report_title"="Submit";
+
+"unLimit_report_second_issue"="Over coverage";
+
+"unLimit_report_third_issue"="Unlock Fail";
+
+"unLimit_unlimit_success_content"="解禁成功";
+
+"unknow_version"="未知版本";
+
+"unknown"="未知";
+
+/* todo check */
+"unlimit_app_expired"="Your App had expired, please update a new one.";
+
+"unlimit_confirm_title"="確定";
+
+/* unlock error */
+"unlimit_error_request_error"="請求參數不對。錯誤代碼(%d)";
+
+"unlimit_error_request_invalidate_sn"="飛控序列號非法";
+
+"unlimit_error_request_too_frequent"="請求過於頻繁";
+
+"unlimit_error_sapce_not_allowed_unlock"="This area is not eligible for unlocking.";
+
+"unlimit_error_system_error"="網絡系統錯誤";
+
+"unlimit_error_too_many_unlock_area"="解禁區域已達到上限，請刪除不用的解禁區域後再嘗試解禁";
+
+"unlimit_error_user_auth_failed"="用戶驗證失敗";
+
+"unlimit_report_error_failed"="Report error information failed";
+
+"unlimit_terms_title"="Legal Provisions";
+
+/* space type */
+"unlimit_type_airport"="Airport";
+
+"unlimit_type_class_b"="Class B";
+
+"unlimit_type_class_c"="Class C";
+
+"unlimit_type_class_d"="Class D";
+
+"unlimit_type_class_e0"="Class E0";
+
+"unlimit_type_commerial_airport"="Commerial airport";
+
+"unlimit_type_heliport"="Heliport";
+
+"unlimit_type_military"="Military";
+
+"unlimit_type_national_park"="National park";
+
+"unlimit_type_noaa"="Noaa";
+
+"unlimit_type_nuclear_power_plant"="核電站";
+
+"unlimit_type_parcel"="Parcel";
+
+"unlimit_type_power_plant"="Power plant";
+
+"unlimit_type_prison"="Prison";
+
+"unlimit_type_private_commerial_airport"="Private Commerial airport";
+
+"unlimit_type_private_recreational_airport"="Private recreation airport";
+
+"unlimit_type_recreational_airport"="Recreational airport";
+
+"unlimit_type_school"="School";
+
+"unlimit_type_special"="Special";
+
+"unlimit_type_statium"="Statium";
+
+"unlimit_type_sua_prhobite"="Prhobite SUA";
+
+"unlimit_type_sub_restricte"="Restricte SUA";
+
+"unlimit_type_tfrs"="TFRs";
+
+"unlimit_unknown_error"="未知錯誤。錯誤代碼(%d)";
+
+"unlimit_unlocking_title"="解禁中...";
+
+"unlimit_upload_unlimit_info_failed"="Upload unlock information failed";
+
+"unlimit_verify_user_right_failed"="Verify user information failed";
+
+"unlimt_unlimit_failed_content"="Unlock failed";
+
+"unlisted"="不公開";
+
+"unlisted_desc"="任何擁有相關鏈接的人均可以觀看";
+
+"unlock_areatype_title"="Type";
+
+"unlock_location_title"="Location";
+
+"unlock_place_title"="Place";
+
+"unlock_places_title"="Places";
+
+"unlock_status_expired"="Expired";
+
+"unlock_status_inactivate"="Inactivate";
+
+"unlock_status_title"="Status";
+
+"unlock_status_valid"="Valid";
+
+"unlock_time_title"="Time";
+
+"update"="更新";
+
+"upgade_firmware_transfering_to"="傳輸固件到%@";
+
+"upgradeBatteryLow"="電量低於50%，不能進行升級操作，請充電或更換電池。";
+
+"upgrade_canceled"="固件升級取消！";
+
+"upgrade_checking_message"="檢測到新固件，正在校驗固件...";
+
+"upgrade_completed"="固件升級完成, %d秒後將重啟飛機！";
+
+"upgrade_confirm_message"="是否確認升級固件？";
+
+"upgrade_confirm_ok"="升級";
+
+"upgrade_device_completed"="升級完成。請重啟OSMO。";
+
+"upgrade_failed"="固件升級失敗，請重新升級！";
+
+"upgrade_firmwareUpgrade_downloadFailedAlert_message"="無法下載固件，請關閉設備，檢查互聯網連接。";
+
+"upgrade_firmwareUpgrade_downloadFailedAlert_title"="未連接互聯網";
+
+/* todo need check and translate */
+"upgrade_firmware_cannot_enter_fpv_msg"="升級過程中不能進入相機界面，請耐心等候升級完成";
+
+/* todo need check and translate */
+"upgrade_firmware_cannot_enter_fpv_title"="不能進入相機界面";
+
+"upgrade_firmware_connectAircraft"="請啟動飛機，並連接你的移動設備到遙控器的WIFI上";
+
+/* OSMO */
+"upgrade_firmware_connectAircraft_device"="請重啟OSMO並連接到Wi-Fi.";
+
+"upgrade_firmware_connectWifiAndCheckConnection"="成功下載升級包, 請開啟您的飛機, 並把移動設備連接至以下WIFI:";
+
+/* 升级P4需要打开遥控器并通过转接线连接飞行器进行升级（to check，点击升级的提示） */
+"upgrade_firmware_connect_aircraft"="請確保飛行器已直接連接移動設備，遙控器已開啟";
+
+/* 1860保存了飞机大包，如果某些部件跟大包版本不匹配，弹框提示用户确定是否需要升级（一般是电池版本号不匹配）| Alert view的Message。 */
+"upgrade_firmware_deivce_needUpgrade_msg"="有部分模塊的固件版本與飛行器整體固件版本不一致，可能會產生兼容性問題，是否進行固件刷新？";
+
+/* OSMO */
+"upgrade_firmware_device_connectWifiAndCheckConnection"="下載固件成功，請啟動OSMO並連接到Wi-Fi:";
+
+/* 版本不匹配不进行升级 | Alert View 的取消按钮 */
+"upgrade_firmware_device_needUpgrade_no"="不需要";
+
+/* 1860保存了飞机大包，如果某些部件跟大包版本不匹配，弹框提示用户确定是否需要升级（一般是电池版本号不匹配）| Alert view的标题。 */
+"upgrade_firmware_device_needUpgrade_title"="固件版本不一致";
+
+/* 立刻升级 | Alert View 的确定按钮 */
+"upgrade_firmware_device_needUpgrade_yes"="刷新";
+
+"upgrade_firmware_disconnected"="未連接到飛行器";
+
+/* OSMO */
+"upgrade_firmware_disconnected_device"="與設備斷連";
+
+"upgrade_firmware_download_info"="已下載%d%%";
+
+"upgrade_firmware_download_with_mobile_data"="使用移動網絡下載固件，可能會產生流量費用，你可以關閉設備，切換到WiFi網絡進行下載。";
+
+"upgrade_firmware_error"="固件錯誤！";
+
+"upgrade_firmware_firmwareNotExist"="升級包文件不存在";
+
+/* "upgrade_firmware_ftpUploadFailed" = "FTP 上传失败"; */
+"upgrade_firmware_ftpUploadFailed"="固件上傳失敗";
+
+/* "upgrade_firmware_ftpUploadSuccess" = "FTP 上传完成"; */
+"upgrade_firmware_ftpUploadSuccess"="固件上傳完成";
+
+"upgrade_firmware_identical"="固件版本相同，不用升級！";
+
+/* todo need check and translate */
+"upgrade_firmware_no_sdcard_descript"="請插入SD卡後再開始升級";
+
+/* todo need check and translate */
+"upgrade_firmware_no_sdcard_title"="未插入SD卡";
+
+"upgrade_firmware_notConnectToDevice"="未連接到飛機";
+
+/* OSMO */
+"upgrade_firmware_notConnectToDevice_device"="未連接到設備";
+
+"upgrade_firmware_notNeedToUpgrade"="固件已最新，無需升級";
+
+/* 没连接飞机时候升级按钮title（需要确定文案） */
+"upgrade_firmware_not_connect_aircraft"="未連接到飛行器";
+
+"upgrade_firmware_old_firmware_delete_title"="刪除固件";
+
+"upgrade_firmware_old_firmware_description"="升級需要先刪除低版本固件，是否刪除？";
+
+"upgrade_firmware_old_firmware_title"="SD卡內存在更低版本固件";
+
+/* 1860升级时候重启，MFI启用失败需要插拔数据线 */
+"upgrade_firmware_please_re_connected_device"="重新插拔數據線以更新飛行器的升級狀態";
+
+/* OSMO升级的时候可能出现Wi-Fi断连的情况，这时候需要提醒用户连接Wi-Fi（请确认文案） */
+"upgrade_firmware_please_re_connected_device_wifi"="升級狀態沒有更新，請確認設備和App的連接是否正常";
+
+"upgrade_firmware_remove_old_firmware_failed_msg"="刪除固件失敗，請連接SD卡，手動刪除SD卡內固件";
+
+"upgrade_firmware_remove_old_firmware_failed_title"="刪除固件失敗";
+
+"upgrade_firmware_sdCardCapacityNotEnough_descript"="此次升級需要至少200MB空間";
+
+"upgrade_firmware_sdCardCapacityNotEnough_title"="SD Card空間不足";
+
+/* 划按钮安装固件（slide to install，代确定) */
+"upgrade_firmware_slide_to_upgrade"="滑動來刷新";
+
+/* todo need check and translate */
+"upgrade_firmware_slow_sdcard_description"="SD卡速度過低，請更換高速SD卡";
+
+/* todo need check and translate */
+"upgrade_firmware_slow_sdcard_title"="SD卡速度過低";
+
+"upgrade_firmware_startUpgrade072"="開始升級遙控器";
+
+"upgrade_firmware_tranferFailed"="傳輸失敗";
+
+"upgrade_firmware_transfering"="傳輸中";
+
+"upgrade_firmware_upgrade072Success"="遙控器升級成功";
+
+"upgrade_firmware_upgradeComplete"="升級完成";
+
+"upgrade_firmware_upgradeComplete_pre"="升級完成 ";
+
+"upgrade_firmware_upgradeComplete_sub"="請重啟設備";
+
+"upgrade_firmware_upgradeFailed"="升級失敗";
+
+"upgrade_firmware_upgradeFailedAlert"="固件升級失敗，請重啟設備重新升級";
+
+/* todo need check and translate */
+"upgrade_firmware_upgradeInfoView_download_pause"="固件下載暫停";
+
+/* todo check */
+"upgrade_firmware_upgradeInfoView_download_pause_osmo"="OSMO 更新包下載暫停";
+
+/* todo check */
+"upgrade_firmware_upgradeInfoView_download_pause_osmo_x5"="OSMO PRO 更新包下載暫停";
+
+/* todo check */
+"upgrade_firmware_upgradeInfoView_download_pause_p3c"="Phantom 3 Standar 更新包下載暫停";
+
+/* todo check */
+"upgrade_firmware_upgradeInfoView_download_pause_p3xw"="Phantom 3 4K 更新包下載暫停";
+
+/* todo check */
+"upgrade_firmware_upgradeInfoView_download_pause_p4x"="Phantom 4 更新包下載暫停";
+
+/* todo need check and translate */
+"upgrade_firmware_upgrade_fail_msg"="升級失敗，請重啟設備後再嘗試升級。";
+
+/* 升级界面中提示需要通过转接口连接到飞行器进行升级（需要确定文案） */
+"upgrade_firmware_upgrade_need_connected_to_aircraft"="請使用隨機附送的轉接線連接飛行器和移動設備。";
+
+/* todo need check and translate */
+"upgrade_firmware_upgrade_progress"="正在升級固件，請勿關閉設備或退出App。";
+
+/* todo need check and translate */
+"upgrade_firmware_upgrade_success_msg"="升級完成，請重啟設備";
+
+/* P4升级成功后出现的消息 */
+"upgrade_firmware_upgrade_success_msg_p4x"="升級成功，請連接遙控器以使用飛行器.";
+
+"upgrade_firmware_upgrading"="升級中";
+
+"upgrade_firmware_upgradingGroundOFDM"="正在升級遙控器";
+
+/* 连接升级的标题 */
+"upgrade_firmware_wait_conn_p4_title"="連接飛行器";
+
+"upgrade_ground_air_not_match_air"="飛行器與遙控器固件不匹配，請回首頁升級飛行器固件";
+
+"upgrade_ground_air_not_match_air_other"="飛行器與遙控器固件不匹配，請參考\"學院\"頁面的固件升級的教學視頻";
+
+"upgrade_ground_air_not_match_rc"="飛行器與遙控器固件不匹配，請在模塊自檢內升級遙控器固件。";
+
+"upgrade_in_progress"="正在升級，請等待";
+
+"upgrade_motor_working"="電機正在工作！";
+
+"upgrade_prohibited_message"="電機正在工作，不允許進行固件升級！";
+
+"upgrade_roll_back_3c_upgrading_tips"="刷入固件過程大概需要30分鐘，請勿關閉電源，並保持與 Wi-Fi 的連接";
+
+"upgrade_roll_back_choose_version"="請選擇刷入固件版本";
+
+/* 回滚里面如果没连接飞机点击刷入固件会弹出对话框 */
+"upgrade_roll_back_direct_connect_aircraft"="請使用轉接線連接你的移動設備和飛機";
+
+"upgrade_roll_back_download"="下載固件";
+
+"upgrade_roll_back_download_continue"="繼續下載";
+
+/* todo review */
+"upgrade_roll_back_download_failed"="下載失敗";
+
+"upgrade_roll_back_download_pause"="暫停下載";
+
+"upgrade_roll_back_download_progress"="下載固件 %d%%";
+
+/* 回滚里面App正在获取网络上的版本的时候会提示 */
+"upgrade_roll_back_fetching_list"="正在獲取固件版本列表";
+
+"upgrade_roll_back_firmware"="當前版本: ";
+
+"upgrade_roll_back_no_firmware"="獲取版本信息失敗";
+
+"upgrade_roll_back_none"="None";
+
+/* TODO Review */
+"upgrade_roll_back_not_connected"="設備未連接";
+
+"upgrade_roll_back_not_support"="不支持回滾";
+
+/* 回滚里面刷入固件成功的提示，P4不需要重启飞机 */
+"upgrade_roll_back_p4_upgrade_success"="固件刷入成功，請連接遙控器以使用飛行器";
+
+/* 固件回滚过程中的提示（需要确定文案） */
+"upgrade_roll_back_p4_upgrading_tips"="刷入固件過程大概需要15分鐘，請勿關閉電源，刷入固件過程中請勿關閉App或者退到後台，保持與飛機的連接。";
+
+/* rollback */
+"upgrade_roll_back_product"="產品: ";
+
+"upgrade_roll_back_rc_upgrade_failed"="刷入固件失敗，請重啟設備後重新刷入";
+
+"upgrade_roll_back_rc_upgrade_success"="刷入固件成功，請重啟設備";
+
+"upgrade_roll_back_rc_upgrading_tips"="刷入固件過程大概需要15分鐘，請勿關閉電源，並保持與遙控器的連接";
+
+"upgrade_roll_back_upgrade"="刷入固件";
+
+"upgrade_roll_back_upgrade_progress"="升級固件 %d%%";
+
+"upgrade_timeout"="固件升級等待超時！";
+
+/* 飞行器固件升级方法： */
+"upgrade_tutorial_aircaraft_title"="飛行器固件升級方法：";
+
+/* 飞机升级方法 */
+"upgrade_tutorial_aircraft_content"="1.請到DJI官網下載Phantom或Inspire的最新版本固件升級包（v1.6.0.40）\n2.複製固件到SD卡根目錄，把SD卡插入相機，重啟飛行器即可升級固件\n";
+
+/* 通过App升级遥控器文案 */
+"upgrade_tutorial_rc_content_app"="請在相機界面的模塊自檢內直接升級遙控器固件。";
+
+/* 通过U盘升级遥控器的文案 */
+"upgrade_tutorial_rc_content_usb"="請到DJI官網下載固件升級包並複製到U盤或讀卡器根目錄，使用U盤/讀卡器插入遙控器背後USB接口升級固件。";
+
+/* 遥控器固件升级方法： */
+"upgrade_tutorial_rc_title"="遙控器固件升級方法：";
+
+"upgrade_unknown_error"="未知錯誤！";
+
+"upgrade_upgrade_progress_info"="已升級%d%%";
+
+"upload_failed"="上傳失敗";
+
+"upload_success"="上傳成功";
+
+"uploading"="上傳中";
+
+"userCenter_button_title"="用戶中心";
+
+"userCenter_service_label"="幫助";
+
+"userSettingACE"="ACE";
+
+"userSettingBrightness"="亮度";
+
+"userSettingContrast"="對比度";
+
+"userSettingDDE"="DDE";
+
+"userSettingSSO"="SSO";
+
+"usercenter_token_invalid_cancel"="取消";
+
+"usercenter_token_invalid_login"="登錄";
+
+"usercenter_token_invalid_msg"="請重新登錄您的DJI帳號";
+
+"usercenter_token_invalid_title"="認證過期";
+
+"ve_asset_pick_title"="添加視頻片段";
+
+"ve_clipselect_back_btn"="返回";
+
+"ve_clipselect_done_btn"="完成";
+
+"ve_clipselect_speed"="播放速度";
+
+"ve_compose_back_confirm_msg"="退出並暫存未完成的作品";
+
+"ve_compose_back_confirm_title"="退出視頻合成";
+
+"ve_compose_cancel"="取消";
+
+"ve_compose_compose_btn"="合成";
+
+"ve_compose_duration_too_long_msg"="影片總時長過長";
+
+"ve_compose_duration_too_long_title"="不能添加片段";
+
+"ve_compose_failed_msg"="合成發生錯誤";
+
+"ve_compose_failed_title"="導出失敗";
+
+"ve_compose_moments_btn"="片段";
+
+"ve_compose_percent"="正在導出 %d%%";
+
+"ve_compose_template_btn"="主題";
+
+"ve_compose_trim_video_msg"="超出模板範圍的片段將被裁剪";
+
+"ve_entrance_btn"="視頻編輯";
+
+"ve_entrance_compose"="創作短片";
+
+"ve_entrance_convert_all"="全部轉換";
+
+"ve_entrance_convert_stop"="停止轉換";
+
+"ve_entrance_low_space_compose"="無法合成短片";
+
+"ve_entrance_low_space_msg"="需要至少200MB空餘磁盤空間。";
+
+"ve_entrance_low_space_title"="磁盤空間不足";
+
+"ve_entrance_saved_msg"="加載上次未完成的視頻?";
+
+"ve_entrance_saved_new"="創建新的視頻";
+
+"ve_entrance_saved_ok"="加載未完成的視頻";
+
+"ve_entrance_saved_title"="存在未完成的視頻";
+
+"ve_entrance_title"="視頻中心";
+
+"ve_filter_"="原圖";
+
+"ve_filter_GPUImageAmatorkaFilter"="強烈";
+
+"ve_filter_GPUImageGrayscaleFilter"="黑白";
+
+"ve_filter_GPUImageKuwaharaRadius3Filter"="油畫";
+
+"ve_filter_GPUImageMissEtikateFilter"="清新";
+
+"ve_filter_GPUImageSaturationFilter"="鮮艷";
+
+"ve_filter_GPUImageSoftEleganceFilter"="懷舊";
+
+"ve_filter_GPUImageVignetteFilter"="暗角";
+
+"ve_filter_pick_title"="濾鏡效果";
+
+"ve_group_placeholder_cache"="相機錄製視頻時，DJI GO會同時緩存一份視頻到本設備。你可以在“媒體庫”中查看和編輯已緩存的視頻。（設備存儲空間不足時，緩存視頻文件將被自動刪除）";
+
+"ve_group_placeholder_default"="暫無內容";
+
+"ve_group_placeholder_import"="從相機下載的視頻將會在這裡顯示";
+
+"ve_group_placeholder_moments"="從其它視頻裁剪出的視頻片段將在這裡顯示";
+
+"ve_group_placeholder_works"="你創作的短片將在這裡顯示";
+
+"ve_group_title_import"="素材庫";
+
+"ve_group_title_import_photo"="照片";
+
+"ve_group_title_import_video"="視頻";
+
+"ve_group_title_moment"="精彩片段";
+
+"ve_group_title_works"="我的作品";
+
+"ve_playback_clip_confirm_cancel"="取消";
+
+"ve_playback_clip_confirm_download"="獲取";
+
+"ve_playback_clip_confirm_download_multi"="下載視頻片段";
+
+"ve_playback_clip_confirm_download_multi_msg"="確認從相機獲取視頻片段?";
+
+"ve_quickclip_back_btn"="返回";
+
+"ve_quickclip_cancel"="取消";
+
+"ve_quickclip_clip_btn"="剪輯";
+
+"ve_quickclip_exit"="離開";
+
+"ve_quickclip_exit_save_msg"="是否在離開前導出視頻片段?";
+
+"ve_quickclip_exit_save_title"="你有尚未導出的視頻片段";
+
+"ve_quickclip_export"="導出";
+
+"ve_quickclip_export_btn"="導出";
+
+"ve_quickclip_export_error_msg"="%d/%d 個片段被成功保存";
+
+"ve_quickclip_export_error_title"="導出錯誤";
+
+"ve_quickclip_export_more_msg"="導出 %d 個片段至 \"DJI Moments\" 相冊";
+
+"ve_quickclip_export_one_msg"="導出 1 個片段至 \"DJI Moments\" 相冊";
+
+"ve_quickclip_export_title"="導出";
+
+"ve_quickclip_help_msg"="拖拽調整視頻片段的長度與範圍。";
+
+"ve_quickclip_help_title"="點擊按鈕獲取10秒片段";
+
+"ve_quickclip_load_asset_failed_msg"="資源加載失敗";
+
+"ve_quickclip_ok"="好";
+
+"ve_quickclip_on_exporting"="正在導出 %d/%d 個視頻片段";
+
+"ve_quickclip_on_exporting_one"="正在導出 1 個視頻片段";
+
+"ve_quickclip_pause_btn"="暫停";
+
+"ve_quickclip_play_btn"="播放";
+
+"ve_quickclip_sorce_duration_msg"="視頻時長過短";
+
+"ve_quickclip_start_failed_title"="剪輯無法啟動";
+
+"ve_tab_clip"="剪選";
+
+"ve_tab_clip_help_msg"="剪輯生成的片段將會顯示在 \"精彩片段\"中, 你可以在 \"合成\" 標籤頁中合成它們。";
+
+"ve_tab_clip_help_title"="剪輯精彩片段,\n為創作做好準備。";
+
+"ve_tab_compose"="合成";
+
+"ve_tab_compose_help_msg"="將精彩片段合成為一段短片。";
+
+"ve_tab_compose_help_title"="選擇片段，創作短片";
+
+"ve_tab_videocenter"="預覽";
+
+"ve_template_none_name"="無配樂";
+
+"ve_templateselect_apply"="使用";
+
+"ve_templateselect_duration_prefix"="時長:";
+
+"ve_templateselect_free_title"="無模板";
+
+"ve_templateselect_from_prefix"="來自:";
+
+"ve_templateselect_segment_prefix"="模板分段:";
+
+"ve_templateselect_skip"="無主題";
+
+"ve_templateselect_title"="創作主題";
+
+"ve_templateselect_video_segment_free"="自由模板";
+
+"ve_toolbar_apply_to_all"="全部應用";
+
+"ve_toolbar_apply_to_one"="應用";
+
+"ve_toolbar_del"="移除";
+
+"ve_toolbar_edit"="編輯";
+
+"ve_toolbar_filter"="濾鏡";
+
+"ve_toolbar_speed"="速度";
+
+"ve_video_delete"="刪除視頻";
+
+"version"="版本";
+
+"version mismatch"="通信異常";
+
+"version mismatch ???"="通信異常";
+
+"version_not_supported"="不支持該硬件或者該硬件沒有版本信息";
+
+"vertical velocity Inconsistent"="垂直速度不一致";
+
+"vertical velocity exception"="垂直速度異常";
+
+"video_pool_already_msg"="可以取消正在運行的導出操作";
+
+"video_pool_already_title"="正在導出視頻";
+
+"video_pool_auto_cleanup"="自動清理視頻緩存 (大於2GB時)";
+
+"video_pool_bg_cancel_msg"="由於App進入後台或設備屏幕鎖定，視頻緩存導出被取消。";
+
+"video_pool_bg_cancel_title"="視頻緩存導出中止";
+
+"video_pool_choose_cancel"="取消";
+
+"video_pool_choose_msg"="記錄於: ";
+
+"video_pool_choose_title"="視頻緩存";
+
+"video_pool_clear_all"="刪除全部視頻緩存";
+
+"video_pool_clear_confirm"="確認刪除 %@ 視頻緩存";
+
+"video_pool_convert"="轉換緩存的視頻文件";
+
+"video_pool_delete"="刪除";
+
+"video_pool_leave_cancel_msg"="離開視頻中心將中止視頻緩存導出操作";
+
+"video_pool_leave_cancel_title"="中止視頻緩存導出";
+
+"video_pool_stop_convert"="終止視頻導出";
+
+"video_pool_workmode_always"="一直記錄";
+
+"video_pool_workmode_disable"="禁用";
+
+"video_pool_workmode_onrecord"="錄像時記錄";
+
+"voice_word_PGPSMode"="P-GPS模式";
+
+"voice_word_autopilot"="當前電量足夠返航，飛行器將在5秒後自動返航";
+
+"voice_word_batteryError"="電池錯誤，請及時返航";
+
+"voice_word_batteryOverheat"="電池過熱，請及時返航";
+
+"voice_word_beginnerMode1"="新手模式開啟，飛行器將限制飛行高度為30米，半徑為30米，請注意安全飛行";
+
+"voice_word_beginnerMode2"="新手模式，無衛星定位無法起飛，請轉移到信號較強區域";
+
+"voice_word_compassCali"="指南針錯誤，請校準";
+
+"voice_word_enableOpticalFlow"="視覺定位系統啟用";
+
+"voice_word_gearRaised"="起落架上升完畢";
+
+"voice_word_gimbalLimit"="雲台已達最大限位";
+
+"voice_word_goHome"="返航";
+
+"voice_word_goHomeRecord"="返航點已被記錄，請留意返航位置";
+
+"voice_word_goHomeUpdate"="返航點已更新，請留意返航位置";
+
+"voice_word_gpsSignalLose"="GPS信號丟失，請留意";
+
+"voice_word_imageTransmissionDisconnect"="圖傳信號已斷開，飛行器將立即返航，請留意";
+
+"voice_word_imageTransmissionWeakSignal"="圖傳信號微弱，請調整天線方向";
+
+"voice_word_landing"="降落";
+
+"voice_word_lowBatteryWarning"="低電量警報";
+
+"voice_word_lowered"="起落架下降完畢";
+
+"voice_word_nearRestrictedArea"="您即將接近限飛區，飛行器高度正在下降";
+
+"voice_word_rcSignalDisconnect"="遙控器信號已斷開，飛行器將立刻返航，請留意";
+
+"voice_word_reachMaxDistance"="已達最大限飛距離";
+
+"voice_word_reachMaxHeight"="已大最大限飛高度";
+
+"voice_word_restrictedArea"="您所在位置為限飛區，無法起飛";
+
+"voice_word_sdCardError"="內存卡錯誤，請更換";
+
+"voice_word_sdCardFull"="內存卡已滿";
+
+"voice_word_seriousBatteryWarning"="嚴重低電量警報，飛行器正在降落";
+
+"voice_word_switchPGPSMode"="當前為姿態模式，為了您的飛行安全，請切換到P-GPS模式";
+
+"voice_word_takeOff"="起飛";
+
+"voice_word_upgradeFirmware"="請確認是否升級固件";
+
+"voice_word_welcome"="歡迎使用inspire One，請在起飛前進行飛行檢查";
+
+"voltage_warning_get_timeout"="獲取低電壓報警值超時";
+
+"voltage_warning_set_timeout"="低電壓報警值設置超時";
+
+"warning"="警告";
+
+"warning_failed"="失敗";
+
+"warning_get"="獲取";
+
+"warning_no_signal"="無信號";
+
+/* TODO: Translation */
+"warning_out_of_distance_limit"="飛行器在限遠圈外。";
+
+"warning_set"="設置";
+
+"warning_timeout"="超時";
+
+"wechat"="微信朋友圈";
+
+"wechat_need_install_msg"="請先安裝微信APP來進行分享";
+
+"wechat_need_install_title"="沒有安裝微信";
+
+"weibo"="新浪微博";
+
+"weibo_need_install_msg"="請先安裝新浪微博APP來進行分享";
+
+"weibo_need_install_title"="沒有安裝新浪微博";
+
+"wifi_set_SSID_failed"="更改Wi-Fi SSID失敗。";
+
+"wifi_set_SSID_success"="更改Wi-Fi SSID成功，重啟設備後生效。";
+
+"wifi_set_countrycode_failed"="更改Wi-Fi國家代碼失敗";
+
+"wifi_set_countrycode_success"="更改Wi-Fi國家代碼成功，重啟設備後生效。";
+
+"wifi_set_freq_failed"="更改Wi-Fi頻率失敗.";
+
+"wifi_set_freq_success"="更改Wi-Fi頻率成功，重啟設備後生效。";
+
+"wifi_set_password_failed"="更改Wi-Fi密碼失敗。";
+
+"wifi_set_password_success"="更改Wi-Fi密碼成功，重啟設備後生效。";
+
+"wifi_setting_SSID"="Wi-Fi SSID";
+
+"wifi_setting_apply"="應用修改";
+
+"wifi_setting_apply_info_title"="重啟Wi-Fi 設置生效，請確認是否需要修改Wi-Fi信息?";
+
+"wifi_setting_change_password_title"="修改Wi-Fi 密碼";
+
+"wifi_setting_change_ssid_title"="修改Wi-Fi SSID";
+
+"wifi_setting_invalidate_password_msg"="密碼只能包含字母，數字，長度不小8個字符，長度不大於64個字符";
+
+"wifi_setting_invalidate_password_title"="輸入的密碼格式不對";
+
+"wifi_setting_invalidate_ssid_msg"="SSID只能包含字母，數字，減號，下劃線和空格，長度不大於32個字符";
+
+"wifi_setting_invalidate_ssid_title"="輸入的SSID格式不對";
+
+"wifi_setting_password"="Wi-Fi 密碼";
+
+"wifi_setting_reboot_success"="設置Wi-Fi 信息成功，請重新連接Wifi";
+
+"wifi_setting_set_failed"="設置Wi-Fi 信息失敗";
+
+"wifi_setting_short_password"="密碼不能少於8字符";
+
+"wifi_setting_title"="Wi-Fi 設置";
+
+"windDirection_East"="正東";
+
+"windDirection_North"="正北";
+
+"windDirection_Northeast"="東北";
+
+"windDirection_Northwest"="西北";
+
+"windDirection_South"="正南";
+
+"windDirection_Southeast"="東南";
+
+"windDirection_Southwest"="西南";
+
+"windDirection_West"="正西";
+
+"write_error"="寫入錯誤";
+
+"yawExpo"="Yaw 軸搖桿 Expo";
+
+"yawFollowDead"="Yaw 軸跟隨死區";
+
+"yawFollowSpeed"="Yaw 軸跟隨速度";
+
+"yawSmoothTrack"="Yaw 軸搖桿平滑";
+
+"youkuTags_illegal_alertMsg"="只允許輸入a~z, A~Z 和 0~9 的字符";
+
+"youkuTags_illegal_alertTitle"="您輸入的標記中存在無效字符（如空格，標點符號）";
+
+"youku_authYoukuFailed"="優酷授權失敗";
+
+"youku_not_available"="優酷不可用";
+
+"youku_title"="優酷";
+
+"youku_uploadFailed"="上傳到優酷失敗";
+
+/* Youtube LiveStream Feature */
+"youtubeLiveStream"="YouTube直播";
+
+"youtubeLiveStream_basicMode"="使用基礎模式，在app中快速創建直播事件。";
+
+"youtubeLiveStream_basicModeButtonTitle"="基礎模式";
+
+"youtubeLiveStream_closeStreamingButtonTitle"="停止流式傳輸";
+
+"youtubeLiveStream_customHelpLabel"="   注意: 請在以下網頁找到“視頻流名稱”和“主服務器網址”:";
+
+"youtubeLiveStream_customHelpTitle"="如何設置Youtube直播的自定義模式";
+
+"youtubeLiveStream_customMode"="使用自定義模式來添加多個攝像機進行直播，你可以在該模式中設置你自己的RTMP服務器URL和視頻流名稱。";
+
+"youtubeLiveStream_customModeButtonTitle"="自定義模式";
+
+"youtubeLiveStream_defaultDesc"="航拍視頻直播";
+
+"youtubeLiveStream_defaultTitle"="YouTube直播，DJI";
+
+"youtubeLiveStream_firmwareNotSupport"="當前固件版本不支持Youtube直播功能";
+
+"youtubeLiveStream_firmwareUpgradeRequired"="請升級飛機固件到最新版本";
+
+"youtubeLiveStream_helpLabel1"="1. 選擇My Channel";
+
+"youtubeLiveStream_helpLabel2"="2. 選擇Video Manager";
+
+"youtubeLiveStream_helpLabel3"="3. 選擇“Live Events”,啟動live event功能";
+
+"youtubeLiveStream_helpLabel4"="4. 當“Create live event”按鈕出現時, 你就可以開始創建直播活動了";
+
+"youtubeLiveStream_helpTitle"="  注意: 本提示針對首次使用Live Stream的用戶，請按以下流程開啟功能.";
+
+"youtubeLiveStream_helpViewTitle"="如何啟動YouTube直播功能";
+
+"youtubeLiveStream_info"="直播中";
+
+"youtubeLiveStream_liveLabel"="直播中!";
+
+"youtubeLiveStream_notGetFirmwareVersionTitle"="獲取不到該設備的版本信息";
+
+"youtubeLiveStream_notSupportCurrentDevice"="該飛行器不支持YouTube直播功能，請留意後續固件更新";
+
+"youtubeLiveStream_safariHelpLabel"="   注意: 請打開您移動設備中的Safari瀏覽器，在地址欄輸入“www.youtube.com”，然後按照以下步驟進入YouTube的電腦版網頁";
+
+"youtubeLiveStream_serverURLLabel"="主服務器網址";
+
+"youtubeLiveStream_shareLink"="分享鏈接";
+
+"youtubeLiveStream_shareTitle"="分享YouTube直播";
+
+"youtubeLiveStream_startAt"="開始時間: ";
+
+"youtubeLiveStream_startEncoderButtonTitle"="啟動編碼器";
+
+"youtubeLiveStream_startEncoderFailed_alertMsg"="請等待10~30秒再嘗試, YouTube上的“啟動編碼器”還沒準備好";
+
+"youtubeLiveStream_startEncoderFailed_alertTitle"="啟動編碼器失敗";
+
+"youtubeLiveStream_startStreamFailed_alertMsg"="請等待10~30秒再嘗試, YouTube上的“開始流式傳輸”還沒準備好";
+
+"youtubeLiveStream_startStreamFailed_alertTitle"="開始流式傳輸失敗";
+
+"youtubeLiveStream_startStreamingButtonTitle"="開始流式傳輸";
+
+"youtubeLiveStream_status_broken"="視頻流已斷開,請檢查網絡或者相機設備";
+
+"youtubeLiveStream_status_initialize"="直播正在初始化, 請稍等...";
+
+"youtubeLiveStream_status_notReady"="視頻流還沒準備好";
+
+"youtubeLiveStream_status_startEncoder"="直播初始化成功, 請點擊 “啟動編碼器”";
+
+"youtubeLiveStream_status_startStreaming"="視頻流已準備好, 請點擊 “開始流式傳輸”，啟動直播";
+
+"youtubeLiveStream_status_stopStreaming"="直播已經開始, 請點擊 “停止流式傳輸” 來關閉直播活動";
+
+"youtubeLiveStream_status_waitStartStreaming"="Youtube 正在處理視頻流, 請等待10~60秒，“開始流式傳輸”按鈕將啟用...";
+
+"youtubeLiveStream_step1"="步驟1";
+
+"youtubeLiveStream_step2"="步驟2";
+
+"youtubeLiveStream_stopStreamFailed_alertCancelTitle"="強制關閉";
+
+"youtubeLiveStream_stopStreamFailed_alertMsg"="請檢查網絡情況或者YouTube網站上的視頻流狀態，然後再嘗試";
+
+"youtubeLiveStream_stopStreamFailed_alertTitle"="停止流式傳輸失敗";
+
+"youtubeLiveStream_streamNameLabel"="視頻流名稱";
+
+"youtubeLiveStream_transitionFailedAlertMsg"="請檢查網絡，再重試";
+
+"youtubeLiveStream_transitionFailedAlertTitle"="切換直播狀態失敗";
+
+"youtubeLiveStream_updateStatusFailed_alertTitle"="更新狀態失敗";
+
+"youtubeLiveStream_updateStatusSuccess_alertTitle"="更新狀態成功";
+
+"youtubeLiveStream_userNotEnabledForLiveStream_alertTitle"="您的YouTube帳號未開啟直播功能，請根據教程開啟該功能。";
+
+"youtubeLiveStream_waitToGetFirmwareVersionMsg"="請等待幾秒鐘後再嘗試";
+
+"youtube_accessTokenExpired"="證書過期，請重新登陸";
+
+"youtube_fetchCategoryFailed"="獲取YouTube分類失敗";
+
+"youtube_not_available"="YouTube 不可用";
+
+"youtube_uploadFailed"="上傳到YouTube失敗";
+
+/* 文案正确性测试 */
+"zzzzz"="DJI GO";
+

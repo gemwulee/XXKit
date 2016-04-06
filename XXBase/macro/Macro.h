@@ -13,4 +13,6 @@
 #define MAIN_SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
 #define MAIN_SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
+#define LOCALIZE(text) NSLocalizedString(text, nil)
+
 #endif /* Macro_h */

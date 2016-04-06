@@ -32,7 +32,7 @@
 -(void) initViews
 {
     _singleButton =[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];
-    [_singleButton setStateIconNormal:@"handle_single_off" iconSelected:@"handle_single_on" text:NSLocalizedString(@"handleSingle",nil) textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
+    [_singleButton setStateIconNormal:@"handle_single_off" iconSelected:@"handle_single_on" text:LOCALIZE(@"handleSingle") textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
     [_singleButton addTarget:self.cameraAction action:@selector(actionClick_SingleButton_PhotoModeView:) forControlEvents:UIControlEventTouchUpInside];
     
 //    _multipleButton =[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];
@@ -40,7 +40,7 @@
 //    [_multipleButton addTarget:self.cameraAction action:@selector(actionClick_MultipleButton_PhotoModeView:) forControlEvents:UIControlEventTouchUpInside];
     
     _panoButton=[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];
-    [_panoButton setStateIconNormal:@"handle_mode_pano_off" iconSelected:@"handle_mode_pano_on" text:NSLocalizedString(@"handleSingle",nil) textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
+    [_panoButton setStateIconNormal:@"handle_mode_pano_off" iconSelected:@"handle_mode_pano_on" text:LOCALIZE(@"handlePano") textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
     [_panoButton addTarget:self.cameraAction action:@selector(actionClick_PanoButton_PhotoModeView:) forControlEvents:UIControlEventTouchUpInside];
     
 //    _intervalButton =[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];

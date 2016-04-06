@@ -37,7 +37,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.plistKey ;
+
+    self.view.layer.cornerRadius = 7;
+    self.view.layer.masksToBounds = YES;
+    self.view.layer.borderWidth = 1;
+    self.view.layer.borderColor = [UIColor colorWithR:189 G:189 B:189 A:1].CGColor;
+    
+    [self setTextTitle : LOCALIZE(self.plistKey)];
     
     _tableViewMenu = [UITableView commonMenuStyledTableView:self dataSource:self frame:self.mainView.bounds];
     [self registerTableIdentifier];
@@ -80,10 +86,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    OSMOMenuViewBaseController *vctest = [[OSMOMenuViewBaseController alloc] init];
-    vctest.view.backgroundColor = [UIColor blackColor];
-    vctest.title = @"test";
-    [self.navigationController pushViewController:vctest animated:YES];
+    OSMOTableObject *settingObject = [self.dataArray objectAtIndex:indexPath.row];
+    
+    if(!settingObject)
+        return;
+    
+    NSString* childPlistKey = settingObject.childTablePlistKey;
+    if(settingObject && childPlistKey.length > 0){
+        OSMOMenuController *vctest = [[OSMOMenuController alloc] initWithPlistKey:childPlistKey];
+        [vctest setTextTitle:LOCALIZE(childPlistKey)];
+        [self.navigationController pushViewController:vctest animated:YES];
+    }
 }
 
 

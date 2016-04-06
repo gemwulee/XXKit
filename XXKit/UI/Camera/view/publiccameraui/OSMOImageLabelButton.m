@@ -40,6 +40,7 @@
     [self setImage:[UIImage imageNamed:imageNormal] forState:UIControlStateNormal];
     [self setImage:[UIImage imageNamed:selectImage] forState: UIControlStateSelected];
     [self setTitle:text forState:UIControlStateNormal];
+    self.titleLabel.font = [UIFont systemFontOfSize:14.f];
     [self setTitleColor:normalTextColor forState:UIControlStateNormal];
     [self setTitleColor:selectColor forState:UIControlStateSelected];
 

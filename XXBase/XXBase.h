@@ -16,6 +16,7 @@
 #import "foundationex/UIDeviceEx.h"
 
 #import "macro/XXMacro.h"
+#import "macro/Macro.h"
 
 #import "utility/XXFPSEngine.h"
 

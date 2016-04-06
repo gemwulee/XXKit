@@ -7,15 +7,17 @@
 //
 
 #import "OSMOTableObject.h"
+#import "XXBase.h"
 
 #define TITLEL              @"titleL"
 #define LABELR              @"labelR"
 
-#define IMAGEVIEWR          @"imageViewR"
+#define IMAGEVIEWRNORMAL    @"imageViewRNormal"
 #define SWITCHR             @"swtichR"
 #define SHOWRIGHTSIDEIMAGE  @"showRightSideImage"
 
 #define CELLIDENTIFER       @"celldentifier"
+#define CHILDTABLEPLISTKEY  @"childTablePlistKey"
 
 @implementation OSMOTableObject
 
@@ -24,13 +26,15 @@
     self = [super init];
     if(self){
         self.celldentifier      = [dic objectForKey:CELLIDENTIFER];
-        self.titleL             = [dic objectForKey:TITLEL];
+        self.titleL             = LOCALIZE([dic objectForKey:TITLEL]);
 
-        self.labelR             = [dic objectForKey:LABELR];
-        self.imageViewR         = [dic objectForKey:IMAGEVIEWR];
+        self.labelR             = LOCALIZE([dic objectForKey:LABELR]);
+        self.imageViewR         = [dic objectForKey:IMAGEVIEWRNORMAL];
         
         self.swtichR            = [[dic objectForKey:SWITCHR] boolValue];
         self.showRightSideImage = [[dic objectForKey:SHOWRIGHTSIDEIMAGE] boolValue];
+        
+        self.childTablePlistKey = [dic objectForKey: CHILDTABLEPLISTKEY];
     }
     return self;
 }

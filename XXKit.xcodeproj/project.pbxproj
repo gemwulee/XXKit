@@ -74,6 +74,7 @@
 		9A3CFA721CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CFA6F1CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m */; };
 		9A3CFA731CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CFA711CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist */; };
 		9A3CFA761CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CFA751CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m */; };
+		9A3CFA7A1CB50E5F00840AE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CFA7C1CB50E5F00840AE8 /* Localizable.strings */; };
 		9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */; };
 		9A5FCE5F1CAD193F00C7C756 /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5D1CAD193F00C7C756 /* libuikit.a */; };
 		9A5FCE601CAD193F00C7C756 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5E1CAD193F00C7C756 /* libutility.a */; };
@@ -241,6 +242,13 @@
 		9A3CFA711CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OSMOCaptureModeDict.plist; sourceTree = "<group>"; };
 		9A3CFA741CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureModeSelectObject.h; sourceTree = "<group>"; };
 		9A3CFA751CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureModeSelectObject.m; sourceTree = "<group>"; };
+		9A3CFA7B1CB50E5F00840AE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9A3CFA7D1CB50E8200840AE8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		9A3CFA7E1CB50E8200840AE8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9A3CFA7F1CB50E8200840AE8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9A3CFA801CB50EAC00840AE8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		9A3CFA811CB50EAC00840AE8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9A3CFA821CB50EAC00840AE8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9A5FCE5D1CAD193F00C7C756 /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9A5FCE5E1CAD193F00C7C756 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
@@ -760,6 +768,14 @@
 			path = datasource;
 			sourceTree = "<group>";
 		};
+		9A3CFA771CB50D9A00840AE8 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9A3CFA7C1CB50E5F00840AE8 /* Localizable.strings */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		9A8833FE1C8AACCB00747277 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -960,6 +976,7 @@
 		9AF3E9A51C3CBB55009DDD15 /* XXKit */ = {
 			isa = PBXGroup;
 			children = (
+				9A3CFA771CB50D9A00840AE8 /* resource */,
 				9AF41A6E1C881D7A00C17947 /* Core */,
 				9A8833FE1C8AACCB00747277 /* Base */,
 				9AF302071C43861D00FA232D /* UI */,
@@ -1147,6 +1164,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"zh-Hant",
 			);
 			mainGroup = 9AF3E99A1C3CBB55009DDD15;
 			productRefGroup = 9AF3E9A41C3CBB55009DDD15 /* Products */;
@@ -1175,6 +1194,7 @@
 				9A36D2311CB355F400E8E8EC /* OSMOCaptureToolView.xib in Resources */,
 				9A176B271CA6CA2F00807EF3 /* Icon-60@2x.png in Resources */,
 				9A176B2A1CA6CA2F00807EF3 /* Contents.json in Resources */,
+				9A3CFA7A1CB50E5F00840AE8 /* Localizable.strings in Resources */,
 				9A36D2851CB3EC3800E8E8EC /* OSMOTableObjectDict.plist in Resources */,
 				9A176B341CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176DC41CA6D0F800807EF3 /* OSMOPhoneView_landscape.xib in Resources */,
@@ -1369,10 +1389,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9A3CFA7C1CB50E5F00840AE8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A3CFA7B1CB50E5F00840AE8 /* en */,
+				9A3CFA7F1CB50E8200840AE8 /* zh-Hans */,
+				9A3CFA821CB50EAC00840AE8 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9AF3E9AF1C3CBB55009DDD15 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9AF3E9B01C3CBB55009DDD15 /* Base */,
+				9A3CFA7D1CB50E8200840AE8 /* zh-Hans */,
+				9A3CFA801CB50EAC00840AE8 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1381,6 +1413,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				9AF3E9B51C3CBB55009DDD15 /* Base */,
+				9A3CFA7E1CB50E8200840AE8 /* zh-Hans */,
+				9A3CFA811CB50EAC00840AE8 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
