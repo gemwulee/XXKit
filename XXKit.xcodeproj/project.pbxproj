@@ -71,7 +71,9 @@
 		9A36D2861CB3EC3800E8E8EC /* OSMOMenuViewBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D2771CB3EC3800E8E8EC /* OSMOMenuViewBaseController.m */; };
 		9A36D2871CB3EC3800E8E8EC /* OSMOMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D2791CB3EC3800E8E8EC /* OSMOMenuController.m */; };
 		9A36D28D1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D28C1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.m */; };
-		9A36D2901CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A36D28F1CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.m */; };
+		9A3CFA721CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CFA6F1CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m */; };
+		9A3CFA731CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A3CFA711CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist */; };
+		9A3CFA761CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3CFA751CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m */; };
 		9A5A75C91CA27E0A009E3A1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */; };
 		9A5FCE5F1CAD193F00C7C756 /* libuikit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5D1CAD193F00C7C756 /* libuikit.a */; };
 		9A5FCE601CAD193F00C7C756 /* libutility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5FCE5E1CAD193F00C7C756 /* libutility.a */; };
@@ -234,8 +236,11 @@
 		9A36D2791CB3EC3800E8E8EC /* OSMOMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuController.m; sourceTree = "<group>"; };
 		9A36D28B1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureModeSelectView.h; sourceTree = "<group>"; };
 		9A36D28C1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureModeSelectView.m; sourceTree = "<group>"; };
-		9A36D28E1CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureModeSelectCell.h; sourceTree = "<group>"; };
-		9A36D28F1CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureModeSelectCell.m; sourceTree = "<group>"; };
+		9A3CFA6E1CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureModeSelectCell.h; sourceTree = "<group>"; };
+		9A3CFA6F1CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureModeSelectCell.m; sourceTree = "<group>"; };
+		9A3CFA711CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OSMOCaptureModeDict.plist; sourceTree = "<group>"; };
+		9A3CFA741CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOCaptureModeSelectObject.h; sourceTree = "<group>"; };
+		9A3CFA751CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOCaptureModeSelectObject.m; sourceTree = "<group>"; };
 		9A5A75C81CA27E0A009E3A1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9A5FCE5D1CAD193F00C7C756 /* libuikit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikit.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libuikit.a"; sourceTree = "<group>"; };
 		9A5FCE5E1CAD193F00C7C756 /* libutility.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutility.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-eweufvmnkrjjenfbulidicorbidn/Build/Products/Debug-iphoneos/libutility.a"; sourceTree = "<group>"; };
@@ -588,11 +593,11 @@
 		9A36D1EB1CB355F400E8E8EC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				9A36D2001CB355F400E8E8EC /* OSMOView.h */,
+				9A36D2011CB355F400E8E8EC /* OSMOView.m */,
 				9A36D25C1CB3EC3800E8E8EC /* firstview */,
 				9A36D27A1CB3EC3800E8E8EC /* secondview */,
 				9A36D1EC1CB355F400E8E8EC /* capturetool */,
-				9A36D2001CB355F400E8E8EC /* OSMOView.h */,
-				9A36D2011CB355F400E8E8EC /* OSMOView.m */,
 				9A36D2021CB355F400E8E8EC /* publiccameraui */,
 			);
 			path = view;
@@ -602,10 +607,10 @@
 			isa = PBXGroup;
 			children = (
 				9A36D1ED1CB355F400E8E8EC /* capturetoolbar */,
+				9A36D1FD1CB355F400E8E8EC /* rightsettingbar */,
 				9A36D1FA1CB355F400E8E8EC /* OSMOCaptureToolView.h */,
 				9A36D1FB1CB355F400E8E8EC /* OSMOCaptureToolView.m */,
 				9A36D1FC1CB355F400E8E8EC /* OSMOCaptureToolView.xib */,
-				9A36D1FD1CB355F400E8E8EC /* rightsettingbar */,
 			);
 			path = capturetool;
 			sourceTree = "<group>";
@@ -652,13 +657,13 @@
 			children = (
 				9A36D25D1CB3EC3800E8E8EC /* dataLoader */,
 				9A36D2601CB3EC3800E8E8EC /* leftMenu */,
+				9A36D26C1CB3EC3800E8E8EC /* rightMenu */,
 				9A36D2661CB3EC3800E8E8EC /* OSMOLeftFirstMenuPlaceView.h */,
 				9A36D2671CB3EC3800E8E8EC /* OSMOLeftFirstMenuPlaceView.m */,
 				9A36D2681CB3EC3800E8E8EC /* OSMOLeftSecondMenuPlaceView.h */,
 				9A36D2691CB3EC3800E8E8EC /* OSMOLeftSecondMenuPlaceView.m */,
 				9A36D26A1CB3EC3800E8E8EC /* OSMORightFirstMenuPlaceView.h */,
 				9A36D26B1CB3EC3800E8E8EC /* OSMORightFirstMenuPlaceView.m */,
-				9A36D26C1CB3EC3800E8E8EC /* rightMenu */,
 			);
 			path = firstview;
 			sourceTree = "<group>";
@@ -728,12 +733,31 @@
 		9A36D27A1CB3EC3800E8E8EC /* secondview */ = {
 			isa = PBXGroup;
 			children = (
+				9A3CFA6D1CB4AB6D00840AE8 /* cell */,
+				9A3CFA701CB4AB6D00840AE8 /* datasource */,
 				9A36D28B1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.h */,
 				9A36D28C1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.m */,
-				9A36D28E1CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.h */,
-				9A36D28F1CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.m */,
 			);
 			path = secondview;
+			sourceTree = "<group>";
+		};
+		9A3CFA6D1CB4AB6D00840AE8 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A3CFA6E1CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.h */,
+				9A3CFA6F1CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9A3CFA701CB4AB6D00840AE8 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				9A3CFA711CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist */,
+				9A3CFA741CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.h */,
+				9A3CFA751CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m */,
+			);
+			path = datasource;
 			sourceTree = "<group>";
 		};
 		9A8833FE1C8AACCB00747277 /* Base */ = {
@@ -1145,6 +1169,7 @@
 				9A176B2F1CA6CA2F00807EF3 /* table_arrow@2x.png in Resources */,
 				9A176B2C1CA6CA2F00807EF3 /* RecordingBkg@2x.png in Resources */,
 				9A36D27C1CB3EC3800E8E8EC /* OSMOCaptureModeDict.plist in Resources */,
+				9A3CFA731CB4AB6D00840AE8 /* OSMOCaptureModeDict.plist in Resources */,
 				9A176B2B1CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A176B381CA6CA2F00807EF3 /* Contents.json in Resources */,
 				9A36D2311CB355F400E8E8EC /* OSMOCaptureToolView.xib in Resources */,
@@ -1299,11 +1324,12 @@
 				9AF4DEF41C89688A00E4CCB0 /* NSObject+SwizzleMethod.m in Sources */,
 				9A8834251C8ACD8F00747277 /* XXGlobalColor.m in Sources */,
 				9A8834131C8AAF2700747277 /* UIView+Global.m in Sources */,
+				9A3CFA761CB4ABAA00840AE8 /* OSMOCaptureModeSelectObject.m in Sources */,
 				9AF2A2EB1C9009D2005FE17F /* XXBaseTableCell.m in Sources */,
 				9A36D27E1CB3EC3800E8E8EC /* OSMOCaptureVideoModeView.m in Sources */,
 				9A36D2341CB355F400E8E8EC /* OSMOStateButton.m in Sources */,
 				9A36D2821CB3EC3800E8E8EC /* OSMOMenuCellBase.m in Sources */,
-				9A36D2901CB3F0F100E8E8EC /* OSMOCaptureModeSelectCell.m in Sources */,
+				9A3CFA721CB4AB6D00840AE8 /* OSMOCaptureModeSelectCell.m in Sources */,
 				9A36D27B1CB3EC3800E8E8EC /* OSMODataLoader.m in Sources */,
 				9AF523501C91638400A59967 /* SDAnalogDataGenerator.m in Sources */,
 				9A176DC01CA6D0F800807EF3 /* OSMOPhoneController.m in Sources */,

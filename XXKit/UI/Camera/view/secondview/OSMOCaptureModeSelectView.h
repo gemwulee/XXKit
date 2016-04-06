@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "OSMOView.h"
 
+#define photoSingleModeSetting_PLIST @"photoSingleModeSetting"
+#define photoPanoModeSetting_PLIST @"photoPanoModeSetting"
+
 @interface OSMOCaptureModeSelectView : OSMOView
+
 
 @end

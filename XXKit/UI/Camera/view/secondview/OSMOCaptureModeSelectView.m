@@ -10,62 +10,80 @@
 #import "OSMOCaptureModeSelectCell.h"
 #import "XXBase.h"
 #import "OSMOToolViewController.h"
+#import "OSMODataLoader.h"
+#import "OSMOStateButton.h"
+#import "OSMOCaptureModeSelectObject.h"
 
 @interface OSMOCaptureModeSelectView ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
-    UICollectionView *mainCollectionView;
+    UICollectionView *_mainCollectionView;
     UICollectionViewFlowLayout *_layout;
 }
+@property(nonatomic,copy)   NSString        *plistKey;
+@property(nonatomic,strong) NSMutableArray  *dataArray;
+
 
 @end
 
 @implementation OSMOCaptureModeSelectView
 
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction plist:(NSString*) plistkey
+{
+    if (self = [super initWithFrame:frame withModel:model camera:cameraAction]) {
+        self.plistKey = [plistkey copy];
+        self.dataArray = [[OSMODataLoader sharedInstance] loadOSMOCaptureModeObjectsFromPlist:plistkey];
+    }
+    return self;
+}
+
 -(void)initViews
 {
     // Do any additional setup after loading the view.
-    self.backgroundColor = [UIColor whiteColor];
-    
+    self.backgroundColor = [UIColor clearColor];
     //1.初始化layout
     _layout = [[UICollectionViewFlowLayout alloc] init];
-    //设置collectionView滚动方向
-    [_layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     
     //2.初始化collectionView
-    mainCollectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:_layout];
-    [self addSubview:mainCollectionView];
-    mainCollectionView.backgroundColor = [UIColor clearColor];
+    _mainCollectionView = [[UICollectionView alloc] initWithFrame:self.bounds collectionViewLayout:_layout];
+    _mainCollectionView.backgroundColor = [UIColor clearColor];
     
     //3.注册collectionViewCell
     //注意，此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致 均为 cellId
-    [mainCollectionView registerClass:[OSMOCaptureModeSelectCell class] forCellWithReuseIdentifier:@"cellId"];
+    [self registerReuseIdentifier];
     
     //注册headerView  此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致  均为reusableView
-    [mainCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"reusableView"];
+    [_mainCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"reusableView"];
     
     //4.设置代理
-    mainCollectionView.delegate = self;
-    mainCollectionView.dataSource = self;
+    _mainCollectionView.delegate = self;
+    _mainCollectionView.dataSource = self;
     
+    [self addSubview:_mainCollectionView];
+
     [self reloadSkins];
 }
 
+-(void) registerReuseIdentifier
+{
+
+    [_mainCollectionView registerClass:[OSMOCaptureModeSelectCell class] forCellWithReuseIdentifier:OSMOPhotoSingleModeIdentifier];
+    [_mainCollectionView registerClass:[OSMOCaptureModeSelectCell class] forCellWithReuseIdentifier:OSMOPhotoPanoModeIdentifier];
+
+}
 #pragma mark- 横竖屏
-
-
 -(void) layoutLandscape{
-    mainCollectionView.frame = CGRectMake(0, 0, paramSettingWidth, self.height);
+    _mainCollectionView.frame = CGRectMake(0, 0, paramSettingWidth, self.height);
     [_layout setScrollDirection:UICollectionViewScrollDirectionVertical];
 }
 
 -(void) layoutPortrait{
-    mainCollectionView.frame = CGRectMake(0, 0, self.width, self.height);
+    _mainCollectionView.frame = CGRectMake(0, 0, self.width, self.height);
 
     [_layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
 }
 
 -(void) setNewStatus{
-    [mainCollectionView reloadData];
+    [_mainCollectionView reloadData];
 }
 
 //设置顶部的大小
@@ -86,40 +104,50 @@
 //每个section的item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 2;
+    return self.dataArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    OSMOCaptureModeSelectCell *cell = (OSMOCaptureModeSelectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"cellId" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor yellowColor];
+    OSMOCaptureModeSelectObject *settingObject = [self.dataArray objectAtIndex:indexPath.row];
     
-    return cell;
+    if(!settingObject)
+        return nil;
+    
+    if(settingObject && [settingObject.celldentifier isEqualToString:OSMOPhotoSingleModeIdentifier]){
+        OSMOCaptureModeSelectCell *cell = (OSMOCaptureModeSelectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:OSMOPhotoSingleModeIdentifier forIndexPath:indexPath];
+        [cell configureData:settingObject];
+        return cell;
+    }
+    else if(settingObject && [settingObject.celldentifier isEqualToString:OSMOPhotoPanoModeIdentifier]){
+        OSMOCaptureModeSelectCell *cell = (OSMOCaptureModeSelectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:OSMOPhotoPanoModeIdentifier forIndexPath:indexPath];
+        [cell configureData:settingObject];
+        return cell;
+    }
+    return nil;
 }
 
 //设置每个item的尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(paramSettingWidth, paramSettingWidth);
+    return CGSizeMake(paramSettingWidth-10, paramSettingWidth-10);
 }
 
 //设置每个item的UIEdgeInsets
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(0, 0, 0, 0);
+    return UIEdgeInsetsZero;
 }
 
 //设置每个item水平间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 10;
+    return 0;
 }
-
-
 //设置每个item垂直间距
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return 10;
+    return 0;
 }
 
 

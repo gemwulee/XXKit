@@ -41,18 +41,19 @@
     }];
     
     
+    CGRect backframe= CGRectMake(0, 0, OSMO_NAV_HEIGHT, OSMO_NAV_HEIGHT);
+    _backButton = [[UIButton alloc] initWithFrame:backframe];
+    _backButton.backgroundColor = [UIColor clearColor];
+
     UIImage* image= [UIImage imageNamed:@"back_arrow"];
-    CGRect backframe= CGRectMake(0, 0, OSMO_NAV_HEIGHT, image.size.height);
-    _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _backButton.frame = backframe;
-    
-    [_backButton setBackgroundImage:image forState:UIControlStateNormal];
+    [_backButton setImage:image forState:UIControlStateNormal];
     [_backButton addTarget:self action:@selector(popself) forControlEvents:UIControlEventTouchUpInside];
     [_navView addSubview:_backButton];
     
     [_backButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(_navView);
-        make.left.equalTo(_navView).with.offset(10);
+        make.height.equalTo(_navView);
+        make.width.mas_equalTo(OSMO_NAV_HEIGHT);
     }];
     
 
@@ -81,8 +82,6 @@
     }else{
         _backButton.hidden = YES;
     }
-    
-
 }
 
 -(void)popself{

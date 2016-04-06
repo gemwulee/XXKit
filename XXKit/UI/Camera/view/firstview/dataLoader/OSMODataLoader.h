@@ -20,5 +20,10 @@
  */
 -(NSMutableArray*) loadOSMOTableObjectsFromPlist:(NSString*) vcTitle;
 
+/**
+ *加载OSMOCaptureModeDict.plist中的其中一个collectionview
+ */
+-(NSMutableArray*) loadOSMOCaptureModeObjectsFromPlist:(NSString*) vcTitle;
+
 
 @end

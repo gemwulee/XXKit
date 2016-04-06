@@ -42,7 +42,7 @@
     [_videoSlowButton addTarget:self.cameraAction action:@selector(actionClick_VideoSlowButton_VideoModeView:) forControlEvents:UIControlEventTouchUpInside];
     
     _videoDelayButton =[[OSMOImageLabelButton alloc] initWithFrame:CGRectZero];
-    [_videoDelayButton setStateIconNormal:@"handleIntervalOff" iconSelected:@"handleIntervalOn" text:NSLocalizedString(@"handleSingle",nil) textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
+    [_videoDelayButton setStateIconNormal:@"handle_mode_video_timelapse_off" iconSelected:@"handle_mode_video_timelapse_on" text:NSLocalizedString(@"handle_mode_video_timelapse",nil) textNormalColor:[UIColor whiteColor] textSelectedColor:[UIColor colorWithR:0 G:200 B:255 A:1]];
     [_videoDelayButton addTarget:self.cameraAction action:@selector(actionClick_VideoDelayButton_VideoModeView:) forControlEvents:UIControlEventTouchUpInside];
 
     [_arrayButtons addObject:_videoNormalButton];

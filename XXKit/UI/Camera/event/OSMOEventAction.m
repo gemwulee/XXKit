@@ -73,6 +73,9 @@
 
 -(void) actionClick_CaptureButton_OSMOModeView:(id) sender
 {
+    [self.rootVC.toolVC.leftFirstMenuPlaceView removeSubViews];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView removeSubViews];
+    
     UIButton *button = (UIButton*) sender;
     
     if (button.selected) {
@@ -87,8 +90,6 @@
             OSMOCaptureVideoModeView *videoView = [[OSMOCaptureVideoModeView alloc] initWithFrame:self.rootVC.toolVC.leftFirstMenuPlaceView.bounds withModel:_cameraModel camera:self];
             [self.rootVC.toolVC.leftFirstMenuPlaceView addSubview:videoView];
         }
-    }else{
-        [self.rootVC.toolVC.leftFirstMenuPlaceView removeSubViews];
     }
 }
 
@@ -97,16 +98,42 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
+
 #pragma mark- capture left first photo
+-(NSString*) _getPlistConfig
+{
+    NSString *plist = nil;
+    if(self.cameraModel.captureMode == DJIIPhone_PhotoModel){
+        switch (self.cameraModel.photoMode ) {
+            case DJIIPhone_PhotoSingleMode:{
+                plist = photoSingleModeSetting_PLIST;
+            }
+                break;
+            case DJIIPhone_PhotoPanoMode:{
+                plist = photoPanoModeSetting_PLIST;
+            }
+                break;
+            default:{
+                assert(0);
+                break;
+            }
+        }
+    }
+    else{
+        assert(0);
+    }
+    return plist;
+}
+
 -(void) showSecondView:(id) sender
 {
+    NSString *plist = [self _getPlistConfig];
     UIButton *button = (UIButton*) sender;
-    
+    [self.rootVC.toolVC.leftSecondMenuPlaceView removeSubViews];
+
     if (button.selected) {
-        OSMOCaptureModeSelectView *modeVC = [[OSMOCaptureModeSelectView alloc] initWithFrame:self.rootVC.toolVC.leftSecondMenuPlaceView.bounds withModel:_cameraModel camera:self];
+        OSMOCaptureModeSelectView *modeVC = [[OSMOCaptureModeSelectView alloc] initWithFrame:self.rootVC.toolVC.leftSecondMenuPlaceView.bounds withModel:_cameraModel camera:self plist:plist];
         [self.rootVC.toolVC.leftSecondMenuPlaceView addSubview:modeVC];
-    }else{
-        [self.rootVC.toolVC.leftSecondMenuPlaceView removeSubViews];
     }
 }
 - (void)actionClick_SingleButton_PhotoModeView:(id) sender
