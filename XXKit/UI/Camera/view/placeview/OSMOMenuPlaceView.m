@@ -1,14 +1,14 @@
 //
-//  OSMOLeftSecondMenuPlaceView.m
-//  Phantom3
+//  OSMOMenuPlaceView.m
+//  XXKit
 //
-//  Created by tomxiang on 3/31/16.
-//  Copyright © 2016 DJIDevelopers.com. All rights reserved.
+//  Created by tomxiang on 4/7/16.
+//  Copyright © 2016 tomxiang. All rights reserved.
 //
 
-#import "OSMOLeftSecondMenuPlaceView.h"
+#import "OSMOMenuPlaceView.h"
 
-@implementation OSMOLeftSecondMenuPlaceView
+@implementation OSMOMenuPlaceView
 
 -(void) reloadSkins
 {
@@ -27,9 +27,5 @@
         [subView removeFromSuperview];
     }
 }
-
--(void) initViews
-{
-    
-}
+-(void) initViews{}
 @end

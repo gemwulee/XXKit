@@ -11,13 +11,11 @@
 #import "DJIIPhoneCameraViewController.h"
 #import "OSMOIPhoneViewController.h"
 #import "OSMOMenuController.h"
-#import "OSMORightFirstMenuPlaceView.h"
+#import "OSMOMenuPlaceView.H"
 #import "Masonry.h"
 #import "OSMOToolViewController.h"
 #import "OSMOCapturePhotoModeView.h"
-#import "OSMOLeftFirstMenuPlaceView.h"
 #import "OSMOCaptureVideoModeView.h"
-#import "OSMOLeftSecondMenuPlaceView.h"
 #import "OSMOCaptureModeSelectView.h"
 
 @interface OSMOEventAction()

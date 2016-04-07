@@ -13,39 +13,54 @@
 
 #define timelapseHeight  (IS_IPAD?355.0:(IS_IPHONE5?240.0:(IS_IPHONE6?295:334)))
 
+#define osmoMenumodeViewHeight  40
+
+
 @class OSMOCaptureToolView;
 @class OSMORightSettingView;
-@class OSMOLeftFirstMenuPlaceView;
-@class OSMOLeftSecondMenuPlaceView;
-@class OSMORightFirstMenuPlaceView;
+@class OSMOMenuPlaceView;
 @class DJIIPhoneCameraViewController;
 @class OSMOToolViewController;
 @class OSMOEventAction;
 @class DJIIPhoneCameraModel;
+@class OSMOMenumodeView;
 
 @interface OSMOToolViewController : XXViewController
 
 
 -(instancetype)initWithModel:(DJIIPhoneCameraModel*) model action:(OSMOEventAction*) action;
 
+/**
+ * 左侧原始设置栏弹框
+ */
+@property(nonatomic,strong) OSMOCaptureToolView  *captureToolPlaceView;
 
-@property(nonatomic,strong)  OSMOCaptureToolView  *captureToolPlaceView;
-@property(nonatomic,strong)  OSMORightSettingView *rightSettingPlaceView;
+/**
+ * 右侧原始设置栏弹框
+ */
+@property(nonatomic,strong) OSMORightSettingView *rightSettingPlaceView;
 
 /**
  * 左侧一级设置栏弹框
  */
-@property (strong, nonatomic) OSMOLeftFirstMenuPlaceView *leftFirstMenuPlaceView;
+@property(nonatomic,strong) OSMOMenuPlaceView *leftFirstMenuPlaceView;
 
 /**
  * 左侧二级设置栏弹框
  */
-@property (strong, nonatomic) OSMOLeftSecondMenuPlaceView *leftSecondMenuPlaceView;
+@property(nonatomic,strong) OSMOMenuPlaceView *leftSecondMenuPlaceView;
 
 /**
  * 右侧一级设置栏弹框
  */
-@property (strong, nonatomic) OSMORightFirstMenuPlaceView *rightFirstMenuPlaceView;
+@property(nonatomic,strong) OSMOMenuPlaceView *rightFirstMenuPlaceView;
+
+/**
+ * 手动模式出现的菜单
+ */
+@property(nonatomic,strong) OSMOMenumodeView *osmoMenumodeView;
+
 
 -(void) refreshViewFrame;
+
 @end
