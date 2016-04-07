@@ -7334,3 +7334,10 @@
 /* 文案正确性测试 */
 "zzzzz"="DJI GO";
 
+/* osmo相机 */
+"cameraSetting"="Camera Setting";
+
+"WhiteBalanceMenu"="White Balance";
+
+"gridMenu"="Grid";
+

@@ -8,13 +8,13 @@
 
 #import "OSMOMenuController.h"
 #import "UITableView+Global.h"
-#import "OSMOMenuCellBase.h"
 #import "UITableView+DJIUIKit.h"
 #import "XXBase.h"
 #import "OSMODataLoader.h"
 #import "OSMOTableObject.h"
 #import "Masonry.h"
 #import "UITableViewCell+Custom.h"
+#import "OSMOMenuNormaLCell.h"
 
 @interface OSMOMenuController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -57,7 +57,8 @@
 }
 
 -(void)registerTableIdentifier{
-    [self.tableViewMenu registerNib:[UINib nibWithNibName:@"OSMOMenuCellBase" bundle:nil] forCellReuseIdentifier:OSMOMenuCellBaseIdentifier];
+    [self.tableViewMenu  registerClass:[OSMOMenuNormaLCell class] forCellReuseIdentifier:OSMOMenuNormaLCellBaseIdentifier];
+
 }
 
 #pragma mark- DataSource
@@ -73,12 +74,15 @@
     if(!settingObject)
         return nil;
     
-    if(settingObject && [settingObject.celldentifier isEqualToString:OSMOMenuCellBaseIdentifier]){
-        OSMOMenuCellBase *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuCellBaseIdentifier forIndexPath:indexPath];        
+    if(settingObject && [settingObject.celldentifier isEqualToString:OSMOMenuNormaLCellBaseIdentifier]){
+
+        OSMOMenuNormaLCell *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuNormaLCellBaseIdentifier forIndexPath:indexPath];
         [cell updateMenuBackgroundViewInTableView:tableView atIndexPath:indexPath];
         [cell configureData:settingObject];
+        
         return cell;
     }
+    
     return nil;
 }
 

@@ -7401,3 +7401,9 @@
 /* 文案正确性测试 */
 "zzzzz"="DJI GO";
 
+/* osmo相机 */
+"cameraSetting"="相機設置";
+
+"WhiteBalanceMenu"="白平衡";
+
+"gridMenu"="網格";

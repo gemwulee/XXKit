@@ -9,7 +9,7 @@
 #import "XXViewController.h"
 #import "OSMOMenuViewBaseController.h"
 
-#define MENU_CAMERA_SETTING @"TutorialView_cameraSettingString" //相机设置
+#define MENU_CAMERA_SETTING @"cameraSetting" //相机设置
 
 @interface OSMOMenuController : OSMOMenuViewBaseController
 

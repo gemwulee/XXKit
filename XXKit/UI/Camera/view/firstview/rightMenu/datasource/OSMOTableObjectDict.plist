@@ -2,11 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>TutorialView_cameraSettingString</key>
+	<key>cameraSetting</key>
 	<array>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>mc_enterTravelMode_manual</string>
 			<key>labelR</key>
@@ -22,7 +22,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>Camera_WhiteBalance_intro</string>
 			<key>labelR</key>
@@ -36,11 +36,11 @@
 			<key>showRightSideImage</key>
 			<true/>
 			<key>childTablePlistKey</key>
-			<string>Camera_WhiteBalance_intro</string>
+			<string>WhiteBalanceMenu</string>
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>handleGrid</string>
 			<key>labelR</key>
@@ -54,11 +54,11 @@
 			<key>showRightSideImage</key>
 			<true/>
 			<key>childTablePlistKey</key>
-			<string>handleGrid</string>
+			<string>gridMenu</string>
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>闪光灯</string>
 			<key>labelR</key>
@@ -73,11 +73,11 @@
 			<true/>
 		</dict>
 	</array>
-	<key>Camera_WhiteBalance_intro</key>
+	<key>WhiteBalanceMenu</key>
 	<array>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>camera_setting_wb_value_auto_intro</string>
 			<key>labelR</key>
@@ -93,7 +93,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>camera_setting_wb_value_indoor_intro</string>
 			<key>labelR</key>
@@ -109,7 +109,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>camera_setting_wb_value_neon_intro</string>
 			<key>labelR</key>
@@ -125,7 +125,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>camera_setting_wb_value_outdoor_intro</string>
 			<key>labelR</key>
@@ -141,7 +141,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>camera_setting_wb_value_tungsten_intro</string>
 			<key>labelR</key>
@@ -157,7 +157,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>advanced_more_whitebalance_custom_intro</string>
 			<key>labelR</key>
@@ -172,11 +172,11 @@
 			<false/>
 		</dict>
 	</array>
-	<key>handleGrid</key>
+	<key>gridMenu</key>
 	<array>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>handleGridNone</string>
 			<key>labelR</key>
@@ -192,7 +192,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>handleGridDiagonal</string>
 			<key>labelR</key>
@@ -208,7 +208,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>handleGridSquare</string>
 			<key>labelR</key>
@@ -224,7 +224,7 @@
 		</dict>
 		<dict>
 			<key>celldentifier</key>
-			<string>OSMOMenuCellBaseIdentifier</string>
+			<string>OSMOMenuNormaLCellBaseIdentifier</string>
 			<key>titleL</key>
 			<string>handleGridCenter</string>
 			<key>labelR</key>
