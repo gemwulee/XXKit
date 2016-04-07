@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 @interface NSString (other)
 -(NSRange)firstRangeOfEmojiInRange:(NSRange)searchRange;
 -(NSString *)stringByTrim;
+- (CGSize)sizeForString:(NSString *)string font:(UIFont*) font;
 @end
 
 @interface NSString(NSData)

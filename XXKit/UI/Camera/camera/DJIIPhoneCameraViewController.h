@@ -36,4 +36,11 @@
 -(void) stopRecordVideo;
 
 -(void) reloadSkins;
+
+-(NSArray*) getWhiteBalanceArea;
+
+-(NSArray*) getISOArea;
+
+-(NSArray*) getShutterArea;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "NSStringEx.h"
 #import "PYMethod.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 unichar convertAscFromChar(char c) {
     if (c >= 0 && c < 10) {
@@ -126,6 +127,13 @@ char convertCharFromAsc(unichar uchar) {
     NSString *result = [temp stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     return result;
 }
+
+- (CGSize)sizeForString:(NSString *)string font:(UIFont*) font
+{
+    CGSize size = [string sizeWithAttributes:@{NSFontAttributeName: font}];
+    return size;
+}
+
 @end
 
 

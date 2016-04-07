@@ -47,6 +47,10 @@
 //初始化事件
 -(void) initEvent;
 
+//初始化数据
+-(void) initData;
+
 //初始化视图
 -(void) initViews;
+
 @end

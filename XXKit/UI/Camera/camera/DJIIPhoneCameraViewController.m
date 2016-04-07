@@ -77,8 +77,65 @@
     
     [self.session commitConfiguration];
     
+    [self getWhiteBalanceArea];
+    [self getISOArea];
+    [self getShutterArea];
+    
     //Preview Layer setup
     
+}
+#pragma mark- 获取最新数据
+-(NSArray*) getWhiteBalanceArea
+{
+    NSMutableArray *arrayWhiteBalance = [NSMutableArray array];
+    for (int i = 2000; i<= 8000; i += 100) {
+        [arrayWhiteBalance addObject:@(i)];
+    }
+    return arrayWhiteBalance;
+}
+
+-(NSArray*) getISOArea
+{
+    AVCaptureDevice *captureDevice = [self _getCurrentDevice];
+    AVCaptureDeviceFormat *activeFormat = captureDevice.activeFormat;
+    
+    NSMutableArray *arrayISO = [NSMutableArray array];
+    for (CGFloat i = activeFormat.minISO; i<=activeFormat.maxISO; i+=50) {
+        [arrayISO addObject:@(i)];
+    }
+    return arrayISO;
+}
+
+-(NSArray*) getShutterArea
+{
+    AVCaptureDevice *captureDevice = [self _getCurrentDevice];
+
+    double minDurationSeconds = CMTimeGetSeconds(captureDevice.activeFormat.minExposureDuration);
+    double maxDurationSeconds = CMTimeGetSeconds(captureDevice.activeFormat.maxExposureDuration);
+   
+    NSMutableArray *arrayShutter = [NSMutableArray array];
+    for (double i = minDurationSeconds;i < maxDurationSeconds; i += 0.01) {
+        [arrayShutter addObject:@(i)];
+    }
+    return arrayShutter;
+}
+
+
+-(AVCaptureDevice*) _getCurrentDevice
+{
+    NSArray *inputs = _session.inputs;
+
+    AVCaptureDevice *newCamera = nil;
+    for ( AVCaptureDeviceInput *input in inputs ) {
+        AVCaptureDevice *device = input.device;
+        AVCaptureDevicePosition position = device.position;
+            
+        if (position == AVCaptureDevicePositionFront)
+            newCamera = [self cameraWithPosition:AVCaptureDevicePositionFront];
+        else
+            newCamera = [self cameraWithPosition:AVCaptureDevicePositionBack];
+    }
+    return newCamera;
 }
 
 #pragma mark- 摄像头

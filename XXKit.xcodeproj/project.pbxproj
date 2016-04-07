@@ -20,6 +20,9 @@
 		9A035B7F1CB6499100FE644A /* OSMOPlayBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B761CB6499100FE644A /* OSMOPlayBackView.m */; };
 		9A035B801CB6499100FE644A /* OSMOSwapCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B781CB6499100FE644A /* OSMOSwapCaptureView.m */; };
 		9A035B811CB6499100FE644A /* OSMOSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B7A1CB6499100FE644A /* OSMOSwitchView.m */; };
+		9A035B961CB685A400FE644A /* OSMOVerticalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B911CB685A400FE644A /* OSMOVerticalPickerView.m */; };
+		9A035BA01CB68F0200FE644A /* OSMOVerticalPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B9B1CB68F0200FE644A /* OSMOVerticalPickerViewCell.m */; };
+		9A035BA11CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B9F1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m */; };
 		9A176B261CA6CA2F00807EF3 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767DB1CA6CA2E00807EF3 /* Contents.json */; };
 		9A176B271CA6CA2F00807EF3 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767DC1CA6CA2E00807EF3 /* Icon-60@2x.png */; };
 		9A176B281CA6CA2F00807EF3 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767DD1CA6CA2E00807EF3 /* Icon-60@3x.png */; };
@@ -157,6 +160,12 @@
 		9A035B781CB6499100FE644A /* OSMOSwapCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOSwapCaptureView.m; sourceTree = "<group>"; };
 		9A035B791CB6499100FE644A /* OSMOSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOSwitchView.h; sourceTree = "<group>"; };
 		9A035B7A1CB6499100FE644A /* OSMOSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOSwitchView.m; sourceTree = "<group>"; };
+		9A035B901CB685A400FE644A /* OSMOVerticalPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOVerticalPickerView.h; sourceTree = "<group>"; };
+		9A035B911CB685A400FE644A /* OSMOVerticalPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOVerticalPickerView.m; sourceTree = "<group>"; };
+		9A035B9A1CB68F0200FE644A /* OSMOVerticalPickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOVerticalPickerViewCell.h; sourceTree = "<group>"; };
+		9A035B9B1CB68F0200FE644A /* OSMOVerticalPickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOVerticalPickerViewCell.m; sourceTree = "<group>"; };
+		9A035B9E1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOVerticalPickerViewLayout.h; sourceTree = "<group>"; };
+		9A035B9F1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOVerticalPickerViewLayout.m; sourceTree = "<group>"; };
 		9A1767DB1CA6CA2E00807EF3 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		9A1767DC1CA6CA2E00807EF3 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		9A1767DD1CA6CA2E00807EF3 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
@@ -378,6 +387,7 @@
 		9A035B591CB6135200FE644A /* topview */ = {
 			isa = PBXGroup;
 			children = (
+				9A035B8F1CB685A400FE644A /* pickerview */,
 				9A035B5A1CB6175E00FE644A /* OSMOManualmodeView.h */,
 				9A035B5B1CB6175E00FE644A /* OSMOManualmodeView.m */,
 			);
@@ -408,6 +418,35 @@
 				9A035B7A1CB6499100FE644A /* OSMOSwitchView.m */,
 			);
 			path = subview;
+			sourceTree = "<group>";
+		};
+		9A035B8F1CB685A400FE644A /* pickerview */ = {
+			isa = PBXGroup;
+			children = (
+				9A035B991CB68F0200FE644A /* cell */,
+				9A035B9D1CB68F0200FE644A /* layout */,
+				9A035B901CB685A400FE644A /* OSMOVerticalPickerView.h */,
+				9A035B911CB685A400FE644A /* OSMOVerticalPickerView.m */,
+			);
+			path = pickerview;
+			sourceTree = "<group>";
+		};
+		9A035B991CB68F0200FE644A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A035B9A1CB68F0200FE644A /* OSMOVerticalPickerViewCell.h */,
+				9A035B9B1CB68F0200FE644A /* OSMOVerticalPickerViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		9A035B9D1CB68F0200FE644A /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				9A035B9E1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.h */,
+				9A035B9F1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m */,
+			);
+			path = layout;
 			sourceTree = "<group>";
 		};
 		9A1767DA1CA6CA2E00807EF3 /* AppIcon.appiconset */ = {
@@ -1311,6 +1350,7 @@
 				9A88340E1C8AACCB00747277 /* XXNavigationController.m in Sources */,
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
+				9A035BA11CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m in Sources */,
 				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
 				9A035B5C1CB6175E00FE644A /* OSMOManualmodeView.m in Sources */,
 				9A36D2241CB355F400E8E8EC /* DJIIPhoneCameraViewController.m in Sources */,
@@ -1337,6 +1377,8 @@
 				9AF2A2C31C8FD894005FE17F /* MineViewController.m in Sources */,
 				9A035B6C1CB6312700FE644A /* OSMOManualView.m in Sources */,
 				9A36D2271CB355F400E8E8EC /* OSMOToolWindow.m in Sources */,
+				9A035B961CB685A400FE644A /* OSMOVerticalPickerView.m in Sources */,
+				9A035BA01CB68F0200FE644A /* OSMOVerticalPickerViewCell.m in Sources */,
 				9A88340C1C8AACCB00747277 /* XXTabBarController.m in Sources */,
 				9A176DC61CA6D0F800807EF3 /* OSMOPhoneViewModel.m in Sources */,
 				9A36D2291CB355F400E8E8EC /* OSMOIPhoneHandler.m in Sources */,

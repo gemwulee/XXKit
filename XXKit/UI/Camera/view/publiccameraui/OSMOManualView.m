@@ -60,11 +60,4 @@
     [self setNeedsLayout];
 }
 
-
-#pragma mark- Event
--(void) initEvent
-{
-    UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
-
-}
 @end

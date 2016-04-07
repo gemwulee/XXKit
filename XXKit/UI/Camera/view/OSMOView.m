@@ -19,8 +19,7 @@
     // Drawing code
 }
 */
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model
-{
+-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model{
     assert(0);
 }
 
@@ -48,18 +47,14 @@
 //    return self;
 //}
 
-
 -(void) initData
 {}
 
-
--(void) initViews
-{
+-(void) initViews{
     assert(0);
 }
 
--(void) reloadSkins
-{
+-(void) reloadSkins{
     if([UIDevice isLandscape]){
         [self layoutLandscape];
     }else{
@@ -67,27 +62,23 @@
     }
     [self setNewStatus];
 }
+
 //根据mode刷状态
 -(void) setNewStatus
-{
-    
-}
+{}
+
 //恢复默认态
--(void) setDefaultStatus
-{
+-(void) setDefaultStatus{
     assert(0);
 }
 
-
 -(void) layoutLandscape
-{
-}
+{}
 
 -(void) layoutPortrait
-{
-    
-}
+{}
 
 -(void) initEvent
 {}
+
 @end
