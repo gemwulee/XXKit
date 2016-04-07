@@ -23,7 +23,7 @@
 @class OSMOToolViewController;
 @class OSMOEventAction;
 @class DJIIPhoneCameraModel;
-@class OSMOMenumodeView;
+@class OSMOManualmodeView;
 
 @interface OSMOToolViewController : XXViewController
 
@@ -58,7 +58,7 @@
 /**
  * 手动模式出现的菜单
  */
-@property(nonatomic,strong) OSMOMenumodeView *osmoMenumodeView;
+@property(nonatomic,strong) OSMOManualmodeView *osmoMenumodeView;
 
 
 -(void) refreshViewFrame;

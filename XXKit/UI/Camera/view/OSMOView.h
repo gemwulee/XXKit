@@ -13,12 +13,6 @@
 
 @protocol OSMOViewAutoRefreshInterface <NSObject>
 
-@required
-
--(void) reloadSkins;
-
--(void) initViews;
-
 @optional
 
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model;
@@ -49,4 +43,10 @@
 
 //恢复默认态
 -(void) setDefaultStatus;
+
+//初始化事件
+-(void) initEvent;
+
+//初始化视图
+-(void) initViews;
 @end

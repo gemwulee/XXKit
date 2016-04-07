@@ -1,17 +1,17 @@
 //
-//  OSMOMenumodeView.m
+//  OSMOManualmodeView.m
 //  XXKit
 //
 //  Created by tomxiang on 4/7/16.
 //  Copyright © 2016 tomxiang. All rights reserved.
 //
 
-#import "OSMOMenumodeView.h"
+#import "OSMOManualmodeView.h"
 #import "OSMOManualView.h"
 #import "Masonry.h"
 #import "XXBase.h"
 
-@interface OSMOMenumodeView()
+@interface OSMOManualmodeView()
 
 @property(nonatomic,strong) OSMOManualView *manualViewISO;
 @property(nonatomic,strong) OSMOManualView *manualViewShutter;
@@ -20,7 +20,7 @@
 @end
 
 
-@implementation OSMOMenumodeView
+@implementation OSMOManualmodeView
 
 -(void)initViews
 {
@@ -29,15 +29,15 @@
     self.layer.masksToBounds = YES;
     self.alpha = 0.5f;
     
-    _manualViewISO = [[OSMOManualView alloc] initWithFrame:CGRectZero];
+    _manualViewISO = [[OSMOManualView alloc] initWithFrame:CGRectZero withModel:self.cameraModel camera:self.cameraAction];
     [_manualViewISO setLabelTipText:@"ISO"];
     [_manualViewISO setLabelContentText:@"200"];
     
-    _manualViewShutter = [[OSMOManualView alloc] initWithFrame:CGRectZero];
+    _manualViewShutter = [[OSMOManualView alloc] initWithFrame:CGRectZero withModel:self.cameraModel camera:self.cameraAction];
     [_manualViewShutter setLabelTipText:@"sec"];
     [_manualViewShutter setLabelContentText:@"1/4"];
 
-    _manualViewWhiteBalance = [[OSMOManualView alloc] initWithFrame:CGRectZero];
+    _manualViewWhiteBalance = [[OSMOManualView alloc] initWithFrame:CGRectZero withModel:self.cameraModel camera:self.cameraAction];
     [_manualViewWhiteBalance setLabelTipText:@"WB"];
     [_manualViewWhiteBalance setLabelContentText:@"3000K"];
     
@@ -52,7 +52,7 @@
         make.height.equalTo(self);
         make.centerY.equalTo(self);
         make.width.equalTo(self.mas_width).multipliedBy(1.f/3);
-        make.left.mas_equalTo(self.mas_left).with.offset(10.f);
+        make.left.mas_equalTo(self.mas_left).with.offset(5.f);
     }];
     
     [_manualViewShutter mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -64,7 +64,17 @@
     [_manualViewWhiteBalance mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.centerY.width.equalTo(_manualViewISO);
         make.left.mas_equalTo(_manualViewShutter.mas_right).with.offset(0);
-    }];}
+    }];
+    
+    UITapGestureRecognizer *tapGestureISO = [[UITapGestureRecognizer alloc]initWithTarget:self.cameraAction  action:@selector(actionClick_ISO_OSMOManualmodeView:)];
+    [_manualViewISO addGestureRecognizer:tapGestureISO];
+    
+    UITapGestureRecognizer *tapGestureShutter = [[UITapGestureRecognizer alloc]initWithTarget:self.cameraAction  action:@selector(actionClick_Shutter_OSMOManualmodeView:)];
+    [_manualViewShutter addGestureRecognizer:tapGestureShutter];
+    
+    UITapGestureRecognizer *tapGestureWhiteBalance = [[UITapGestureRecognizer alloc]initWithTarget:self.cameraAction  action:@selector(actionClick_WhiteBalance_OSMOManualmodeView:)];
+    [_manualViewWhiteBalance addGestureRecognizer:tapGestureWhiteBalance];
+}
 
 
 

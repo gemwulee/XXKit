@@ -31,6 +31,7 @@
         self.cameraAction = cameraAction;
         [self initData];
         [self initViews];
+        [self initEvent];
     }
     return self;
 }
@@ -87,4 +88,6 @@
     
 }
 
+-(void) initEvent
+{}
 @end

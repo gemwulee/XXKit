@@ -1,5 +1,5 @@
 //
-//  OSMOMenumodeView.h
+//  OSMOManualmodeView.h
 //  XXKit
 //
 //  Created by tomxiang on 4/7/16.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "OSMOView.h"
 
-@interface OSMOMenumodeView : OSMOView
+@interface OSMOManualmodeView : OSMOView
 
 @end

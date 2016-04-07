@@ -10,7 +10,7 @@
 		4B181F731C53233600308B12 /* libXXBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F721C53233600308B12 /* libXXBase.a */; };
 		4B181F771C53242500308B12 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F741C53242500308B12 /* libAFNetworking.a */; };
 		4B181F781C53242500308B12 /* libfoundationex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B181F751C53242500308B12 /* libfoundationex.a */; };
-		9A035B5C1CB6175E00FE644A /* OSMOMenumodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B5B1CB6175E00FE644A /* OSMOMenumodeView.m */; };
+		9A035B5C1CB6175E00FE644A /* OSMOManualmodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B5B1CB6175E00FE644A /* OSMOManualmodeView.m */; };
 		9A035B691CB6182A00FE644A /* OSMOMenuPlaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B681CB6182A00FE644A /* OSMOMenuPlaceView.m */; };
 		9A035B6C1CB6312700FE644A /* OSMOManualView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B6B1CB6312700FE644A /* OSMOManualView.m */; };
 		9A035B7B1CB6499100FE644A /* OSMOCaptureToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B6E1CB6499100FE644A /* OSMOCaptureToolView.m */; };
@@ -138,8 +138,8 @@
 		4B181F741C53242500308B12 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
 		4B181F751C53242500308B12 /* libfoundationex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoundationex.a; path = "../../Library/Developer/Xcode/DerivedData/XXKit-hkzedohowdjljhcypvoclyixszyz/Build/Products/Debug-iphoneos/libfoundationex.a"; sourceTree = "<group>"; };
 		4B181F761C53242500308B12 /* libuikitex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libuikitex.a; path = "XXBase/build/Debug-iphoneos/libuikitex.a"; sourceTree = "<group>"; };
-		9A035B5A1CB6175E00FE644A /* OSMOMenumodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOMenumodeView.h; sourceTree = "<group>"; };
-		9A035B5B1CB6175E00FE644A /* OSMOMenumodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenumodeView.m; sourceTree = "<group>"; };
+		9A035B5A1CB6175E00FE644A /* OSMOManualmodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOManualmodeView.h; sourceTree = "<group>"; };
+		9A035B5B1CB6175E00FE644A /* OSMOManualmodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOManualmodeView.m; sourceTree = "<group>"; };
 		9A035B671CB6182A00FE644A /* OSMOMenuPlaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOMenuPlaceView.h; sourceTree = "<group>"; };
 		9A035B681CB6182A00FE644A /* OSMOMenuPlaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOMenuPlaceView.m; sourceTree = "<group>"; };
 		9A035B6A1CB6312700FE644A /* OSMOManualView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOManualView.h; sourceTree = "<group>"; };
@@ -378,8 +378,8 @@
 		9A035B591CB6135200FE644A /* topview */ = {
 			isa = PBXGroup;
 			children = (
-				9A035B5A1CB6175E00FE644A /* OSMOMenumodeView.h */,
-				9A035B5B1CB6175E00FE644A /* OSMOMenumodeView.m */,
+				9A035B5A1CB6175E00FE644A /* OSMOManualmodeView.h */,
+				9A035B5B1CB6175E00FE644A /* OSMOManualmodeView.m */,
 			);
 			path = topview;
 			sourceTree = "<group>";
@@ -1312,7 +1312,7 @@
 				9AF2A2E81C9009AD005FE17F /* XXBaseViewController.m in Sources */,
 				9A8834161C8AAF6A00747277 /* UITableView+Global.m in Sources */,
 				9AF0BCA01C97E79300B602C6 /* ContactsViewController.m in Sources */,
-				9A035B5C1CB6175E00FE644A /* OSMOMenumodeView.m in Sources */,
+				9A035B5C1CB6175E00FE644A /* OSMOManualmodeView.m in Sources */,
 				9A36D2241CB355F400E8E8EC /* DJIIPhoneCameraViewController.m in Sources */,
 				9A176DC31CA6D0F800807EF3 /* OSMOPhoneView.m in Sources */,
 				9A36D2871CB3EC3800E8E8EC /* OSMOMenuController.m in Sources */,

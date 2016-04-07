@@ -17,7 +17,7 @@
 #import "Macro.h"
 #import "XXBase.h"
 #import "OSMOMenuPlaceView.h"
-#import "OSMOMenumodeView.h"
+#import "OSMOManualmodeView.h"
 
 @interface OSMOToolViewController ()
 
@@ -55,7 +55,7 @@
     self.view.backgroundColor = [UIColor clearColor];
     _captureToolPlaceView = [[OSMOCaptureToolView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _rightSettingPlaceView = [[OSMORightSettingView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
-    _osmoMenumodeView = [[OSMOMenumodeView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
+    _osmoMenumodeView = [[OSMOManualmodeView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     
     _leftFirstMenuPlaceView  = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _leftSecondMenuPlaceView = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
@@ -63,11 +63,12 @@
     
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];
-    [self.view addSubview:_osmoMenumodeView];
     
     [self.view addSubview:_leftFirstMenuPlaceView];
     [self.view addSubview:_leftSecondMenuPlaceView];
     [self.view addSubview:_rightFirstMenuPlaceView];
+    
+    [self.view addSubview:_osmoMenumodeView];
 }
 
 #pragma mark- 横竖屏

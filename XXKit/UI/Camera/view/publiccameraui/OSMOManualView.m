@@ -18,15 +18,8 @@
 
 @implementation OSMOManualView
 
--(instancetype)initWithFrame:(CGRect)frame
-{
-    if (self = [super initWithFrame:frame]) {
-        [self setupViews];
-    }
-    return self;
-}
-
--(void) setupViews
+#pragma mark- View
+-(void) initViews
 {
     _labelTip = [[UILabel alloc] initWithFrame:CGRectZero];
     _labelTip.font = [UIFont systemFontOfSize:16.f];
@@ -39,9 +32,6 @@
     _labelContent.textColor = [UIColor whiteColor];
     _labelContent.textAlignment = NSTextAlignmentCenter;
     [self addSubview:_labelContent];
-    
-//    _labelTip.backgroundColor = [UIColor redColor];
-//    _labelContent.backgroundColor = [UIColor yellowColor];
 
     [_labelTip mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(self);
@@ -68,5 +58,13 @@
     self.labelContent.text = labelContent;
     [self.labelContent sizeToFit];
     [self setNeedsLayout];
+}
+
+
+#pragma mark- Event
+-(void) initEvent
+{
+    UITapGestureRecognizer *tapGesture=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
+
 }
 @end

@@ -38,7 +38,7 @@
     return self;
 }
 
-
+#pragma mark- capture tool
 -(void) actionClick_PhotoButton_OSMOPhotoVideoView
 {
     [self.camera takePhoto];
@@ -221,18 +221,32 @@
             [view removeFromSuperview];
         }
     }
- 
 }
 
 -(void) actionClick_GimbalButton_OSMORightSettingView:(id) sender
 {
-    NSLog(@"actionClick_GimbalButton_OSMORightSettingView");
-
+    NSLog(@"%s",__FUNCTION__);
 }
 
 -(void) actionClick_SettingButton_OSMORightSettingView:(id) sender
 {
-    NSLog(@"actionClick_SettingButton_OSMORightSettingView");
-
+    NSLog(@"%s",__FUNCTION__);
 }
+
+#pragma mark- manualMode tool
+- (void)actionClick_ISO_OSMOManualmodeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)actionClick_Shutter_OSMOManualmodeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)actionClick_WhiteBalance_OSMOManualmodeView:(id) sender
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
 @end

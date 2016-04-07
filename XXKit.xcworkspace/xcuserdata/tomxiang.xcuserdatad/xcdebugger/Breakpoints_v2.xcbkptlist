@@ -286,22 +286,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/view/firstview/rightMenu/OSMOMenuController.m"
-            timestampString = "481691871.57562"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-registerTableIdentifier"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/view/firstview/rightMenu/OSMOMenuController.m"
             timestampString = "481691875.981153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -318,7 +302,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/view/topview/OSMOMenumodeView.m"
-            timestampString = "481712022.819543"
+            timestampString = "481714537.363723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -333,13 +317,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/view/topview/OSMOMenumodeView.m"
-            timestampString = "481712022.819543"
+            filePath = "XXKit/UI/Camera/view/topview/OSMOManualmodeView.m"
+            timestampString = "481716734.883975"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-initViews"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
+            timestampString = "481715474.151647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "-actionClick_ISO_OSMOManualmodeView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
+            timestampString = "481715476.091693"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "-actionClick_Shutter_OSMOManualmodeView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
+            timestampString = "481715476.635452"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
+            landmarkName = "-actionClick_WhiteBalance_OSMOManualmodeView:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
