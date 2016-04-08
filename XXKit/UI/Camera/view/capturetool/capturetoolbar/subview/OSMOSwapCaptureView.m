@@ -17,6 +17,8 @@
 
 @implementation OSMOSwapCaptureView
 
+-(void) initData
+{}
 -(void) initViews
 {
     _buttonSwap = [[UIButton alloc] init];
@@ -37,7 +39,17 @@
     [self reloadSkins];
 }
 
--(void) reloadSkins
+-(void) initEvent
+{}
+-(void) layoutLandscape
+{}
+-(void) layoutPortrait
+{}
+//根据mode刷状态
+-(void) refreshViewForIPhoneCameraMode
+{}
+//恢复默认态
+-(void) restoreDefaultStatus
 {}
 
 -(void) swapFrontAndBackCameras

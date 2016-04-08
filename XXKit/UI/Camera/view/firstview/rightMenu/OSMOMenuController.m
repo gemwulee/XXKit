@@ -15,6 +15,7 @@
 #import "Masonry.h"
 #import "UITableViewCell+Custom.h"
 #import "OSMOMenuNormaLCell.h"
+#import "DJIIPhoneCameraModel.h"
 
 @interface OSMOMenuController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -22,15 +23,21 @@
 @property(nonatomic,strong) NSMutableArray  *dataArray;
 @property(nonatomic,copy)   NSString        *plistKey;
 
+@property(nonatomic,weak)   OSMOEventAction *cameraAction;
+@property(nonatomic,weak)   DJIIPhoneCameraModel *cameraModel;
+
+
 @end
 
 @implementation OSMOMenuController
 
--(instancetype)initWithPlistKey:(NSString*) plistkey
+-(instancetype)initWithPlistKey:(NSString*) plistkey withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction;
 {
     if (self = [super init]) {
         self.plistKey = [plistkey copy];
         self.dataArray = [[OSMODataLoader sharedInstance] loadOSMOTableObjectsFromPlist:plistkey];
+        self.cameraAction = cameraAction;
+        self.cameraModel = model;
     }
     return self;
 }
@@ -79,11 +86,33 @@
         OSMOMenuNormaLCell *cell = [tableView dequeueReusableCellWithIdentifier:OSMOMenuNormaLCellBaseIdentifier forIndexPath:indexPath];
         [cell updateMenuBackgroundViewInTableView:tableView atIndexPath:indexPath];
         [cell configureData:settingObject];
+        [self _setUISwitchState:settingObject.titleL cell:cell];
         
+        weakSelf(target);
+        cell.clickSwitchButtonCell = ^(OSMOMenuNormaLCell *cell,BOOL isOn){
+            weakReturn(target);
+            //外部会观察到内部的变化从而去刷新
+            if (isOn)
+                self.cameraModel.autoManual = DJIIPhone_SettingManual;
+            else
+                self.cameraModel.autoManual = DJIIPhone_SettingAuto;
+        };
+
         return cell;
     }
     
     return nil;
+}
+
+-(void) _setUISwitchState:(NSString*) title cell:(OSMOMenuNormaLCell*) cell
+{
+    if (title && [title isEqualToString:@"mc_enterTravelMode_manual"]) {
+        if(self.cameraModel.autoManual == DJIIPhone_SettingAuto){
+            [cell setSwitchOn:NO];
+        }else{
+            [cell setSwitchOn:YES];
+        }
+    }
 }
 
 #pragma mark- Delegate
@@ -97,7 +126,7 @@
     
     NSString* childPlistKey = settingObject.childTablePlistKey;
     if(settingObject && childPlistKey.length > 0){
-        OSMOMenuController *vctest = [[OSMOMenuController alloc] initWithPlistKey:childPlistKey];
+        OSMOMenuController *vctest = [[OSMOMenuController alloc] initWithPlistKey:childPlistKey withModel:self.cameraModel camera:self.cameraAction];
         [vctest setTextTitle:LOCALIZE(childPlistKey)];
         [self.navigationController pushViewController:vctest animated:YES];
     }

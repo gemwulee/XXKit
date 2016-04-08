@@ -21,6 +21,8 @@
 
 @implementation OSMOPlayBackView
 
+-(void) initData
+{}
 
 -(void) initViews
 {
@@ -38,11 +40,19 @@
     [_buttonPlayBack setImage:[UIImage imageNamed:@"handle_playback"] forState:UIControlStateNormal];
     
     [_buttonPlayBack addTarget:self.cameraAction action:@selector(actionClick_PlayBackButton_OSMOPlayBackView) forControlEvents:UIControlEventTouchUpInside];
-    
-
-    [self reloadSkins];
 }
 
--(void) reloadSkins{}
+-(void) initEvent
+{}
+-(void) layoutLandscape
+{}
+-(void) layoutPortrait
+{}
+//根据mode刷状态
+-(void) refreshViewForIPhoneCameraMode
+{}
+//恢复默认态
+-(void) restoreDefaultStatus
+{}
 
 @end

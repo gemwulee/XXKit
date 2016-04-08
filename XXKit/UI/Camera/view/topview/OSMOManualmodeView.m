@@ -22,22 +22,23 @@
 
 @implementation OSMOManualmodeView
 
--(void)initViews
+- (void)initData{}
+- (void)initViews
 {
     self.backgroundColor = [UIColor blackColor];
     self.layer.cornerRadius = 5.f;
     self.layer.masksToBounds = YES;
     self.alpha = 0.5f;
     
-    _manualViewISO = [[OSMOManualView alloc] initWithFrame:CGRectZero withModel:self.cameraModel camera:self.cameraAction];
+    _manualViewISO = [[OSMOManualView alloc] initWithFrame:CGRectZero];
     [_manualViewISO setLabelTipText:@"ISO"];
     [_manualViewISO setLabelContentText:@"200"];
     
-    _manualViewShutter = [[OSMOManualView alloc] initWithFrame:CGRectZero withModel:self.cameraModel camera:self.cameraAction];
+    _manualViewShutter = [[OSMOManualView alloc] initWithFrame:CGRectZero];
     [_manualViewShutter setLabelTipText:@"sec"];
     [_manualViewShutter setLabelContentText:@"1/4"];
 
-    _manualViewWhiteBalance = [[OSMOManualView alloc] initWithFrame:CGRectZero withModel:self.cameraModel camera:self.cameraAction];
+    _manualViewWhiteBalance = [[OSMOManualView alloc] initWithFrame:CGRectZero];
     [_manualViewWhiteBalance setLabelTipText:@"WB"];
     [_manualViewWhiteBalance setLabelContentText:@"3000K"];
     
@@ -66,6 +67,10 @@
         make.left.mas_equalTo(_manualViewShutter.mas_right).with.offset(0);
     }];
     
+
+}
+
+- (void)initEvent{
     UITapGestureRecognizer *tapGestureISO = [[UITapGestureRecognizer alloc]initWithTarget:self.cameraAction  action:@selector(actionClick_ISO_OSMOManualmodeView:)];
     [_manualViewISO addGestureRecognizer:tapGestureISO];
     
@@ -76,6 +81,8 @@
     [_manualViewWhiteBalance addGestureRecognizer:tapGestureWhiteBalance];
 }
 
-
-
+- (void)layoutLandscape{}
+- (void)layoutPortrait{}
+- (void)refreshViewForIPhoneCameraMode{}
+- (void)restoreDefaultStatus{}
 @end

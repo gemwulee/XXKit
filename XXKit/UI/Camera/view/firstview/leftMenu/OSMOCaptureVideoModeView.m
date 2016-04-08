@@ -56,7 +56,7 @@
     
     [self reloadSkins];
 }
-
+-(void) initEvent{}
 -(void) layoutLandscape
 {
     _videoNormalButton.frame     = CGRectMake(0, 0, self.width, OSMOCapturePhotoModeView_HEIGHT);
@@ -74,7 +74,7 @@
 }
 
 //根据mode刷状态
--(void) setNewStatus
+-(void) refreshViewForIPhoneCameraMode
 {
     switch (self.cameraModel.videoMode) {
         case DJIIPhone_VideoAutoMode:{
@@ -98,6 +98,7 @@
     }
 }
 
+- (void)restoreDefaultStatus{}
 
 -(void) setButtonSelectedStatus : (UIButton*) buttonCurrent
 {

@@ -18,15 +18,18 @@
 #import "XXBase.h"
 #import "OSMOToolViewController.h"
 #import "OSMOToolWindow.h"
+#import "OSMOStatusObserveManager.h"
 
 @interface OSMOIPhoneViewController ()
 
-@property(nonatomic,strong)  OSMOEventAction        *cameraAction;
+@property(nonatomic,strong)  OSMOEventAction          *cameraAction;
 
-@property(nonatomic,strong)  OSMOIPhoneHandler      *handler;
-@property(nonatomic,strong)  DJIIPhoneCameraModel   *model;
+@property(nonatomic,strong)  OSMOIPhoneHandler        *handler;
+@property(nonatomic,strong)  DJIIPhoneCameraModel     *model;
+@property(nonatomic,assign)  OSMOStatusObserveManagerState  currentState;
 
-@property(nonatomic,strong)  OSMOToolWindow         *toolWindow;
+@property(nonatomic,strong)  OSMOToolWindow           *toolWindow;
+
 @end
 
 
@@ -37,16 +40,14 @@
         _model        = [DJIIPhoneCameraModel new];
         _cameraVC     = [[DJIIPhoneCameraViewController alloc] initWithModel:_model];
         _cameraAction = [[OSMOEventAction alloc] initWithModel:_model camera:_cameraVC rootVC:self];
-        
         _toolVC = [[OSMOToolViewController alloc] initWithModel:_model action:_cameraAction];
+        _observeManager = [[OSMOStatusObserveManager alloc] initWithModel:_model camera:_cameraVC rootVC:self camera:_cameraAction];
     }
-    [self addKVOModel];
     return self;
 }
 
 -(void)dealloc
 {
-    [self removeKVOModel];
     [_toolWindow hideOSMOToolVC];
     [_toolWindow removeFromSuperview];
     _toolWindow = nil;
@@ -78,40 +79,6 @@
 - (BOOL)shouldAutorotate
 {
     return NO;
-}
-
-#pragma mark- 增加观察者
--(void) addKVOModel
-{
-    [self addObserver:self forKeyPath:@"model.captureMode" options:0 context:nil];
-    [self addObserver:self forKeyPath:@"model.devicePosition" options:0 context:nil];
-    [self addObserver:self forKeyPath:@"model.videoState" options:0 context:nil];
-}
-
--(void) removeKVOModel
-{
-    [self removeObserver:self forKeyPath:@"model.captureMode"];
-    [self removeObserver:self forKeyPath:@"model.devicePosition"];
-    [self removeObserver:self forKeyPath:@"model.videoState"];
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:@"model.captureMode"] || [keyPath isEqualToString:@"model.videoState"]) {
-        if(_toolVC.captureToolPlaceView){
-            [_toolVC.captureToolPlaceView reloadSkins];
-            
-            [_toolVC.leftFirstMenuPlaceView removeSubViews];
-            [_toolVC.captureToolPlaceView setDefaultStatus];
-            
-            [_cameraVC reloadSkins];
-        }
-    }
-    
-    if([keyPath isEqualToString:@"model.devicePosition"]){
-        [_cameraVC swapFrontAndBackCameras];
-    }
-    
 }
 
 @end

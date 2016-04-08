@@ -18,9 +18,14 @@
 
 @implementation OSMOManualView
 
-#pragma mark- View
--(void) initViews
-{
+- (instancetype) initWithFrame:(CGRect)frame{
+    if(self = [super initWithFrame:frame]){
+        [self initViews];
+    }
+    return self;
+}
+
+- (void)initViews{
     _labelTip = [[UILabel alloc] initWithFrame:CGRectZero];
     _labelTip.font = [UIFont systemFontOfSize:16.f];
     _labelTip.textColor = [UIColor whiteColor];
@@ -44,7 +49,6 @@
         make.left.mas_equalTo(_labelTip.mas_right).with.offset(5);
     }];
 }
-
 
 -(void) setLabelTipText:(NSString*) labelTip
 {

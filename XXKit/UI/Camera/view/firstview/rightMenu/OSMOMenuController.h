@@ -8,11 +8,12 @@
 
 #import "XXViewController.h"
 #import "OSMOMenuViewBaseController.h"
+#import "OSMOEventAction.h"
 
 #define MENU_CAMERA_SETTING @"cameraSetting" //相机设置
 
 @interface OSMOMenuController : OSMOMenuViewBaseController
 
--(instancetype)initWithPlistKey:(NSString*) plistkey;
+-(instancetype)initWithPlistKey:(NSString*) plistkey withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction;
 
 @end

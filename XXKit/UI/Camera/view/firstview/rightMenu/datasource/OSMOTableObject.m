@@ -26,9 +26,9 @@
     self = [super init];
     if(self){
         self.celldentifier      = [dic objectForKey:CELLIDENTIFER];
-        self.titleL             = LOCALIZE([dic objectForKey:TITLEL]);
+        self.titleL             = [dic objectForKey:TITLEL];
 
-        self.labelR             = LOCALIZE([dic objectForKey:LABELR]);
+        self.labelR             = [dic objectForKey:LABELR];
         self.imageViewR         = [dic objectForKey:IMAGEVIEWRNORMAL];
         
         self.swtichR            = [[dic objectForKey:SWITCHR] boolValue];

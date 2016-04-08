@@ -108,10 +108,10 @@
 
 -(void) configureData:(OSMOTableObject*) settingObject
 {
-    self.titleL.text = settingObject.titleL;
+    self.titleL.text = LOCALIZE(settingObject.titleL);
     
     if(settingObject.labelR.length > 0){
-        self.labelR.text = settingObject.labelR;
+        self.labelR.text = LOCALIZE(settingObject.labelR);
         self.labelR.hidden = NO;
     }else{
         self.labelR.hidden = YES;
@@ -129,4 +129,8 @@
     self.imageViewIndicator.hidden = !settingObject.showRightSideImage;
 }
 
+-(void) setSwitchOn:(BOOL) isOn
+{
+    [self.swtichR setOn:isOn animated:YES];;
+}
 @end

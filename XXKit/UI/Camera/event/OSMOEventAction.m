@@ -17,6 +17,11 @@
 #import "OSMOCapturePhotoModeView.h"
 #import "OSMOCaptureVideoModeView.h"
 #import "OSMOCaptureModeSelectView.h"
+#import "OSMOVerticalPickerView.h"
+#import "XXBase.h"
+#import "OSMOManualmodeView.h"
+#import "OSMOTableObject.h"
+#import "OSMORightSettingView.h"
 
 @interface OSMOEventAction()
 
@@ -71,13 +76,11 @@
 
 -(void) actionClick_CaptureButton_OSMOModeView:(id) sender
 {
-    [self.rootVC.toolVC.leftFirstMenuPlaceView removeSubViews];
-    [self.rootVC.toolVC.leftSecondMenuPlaceView removeSubViews];
+    [self.rootVC.toolVC.leftFirstMenuPlaceView removeOSMOSubViews];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView removeOSMOSubViews];
     
     UIButton *button = (UIButton*) sender;
-    
     if (button.selected) {
-        
         if(self.cameraModel.captureMode == DJIIPhone_PhotoModel){
             OSMOCapturePhotoModeView *photoView = [[OSMOCapturePhotoModeView alloc] initWithFrame:self.rootVC.toolVC.leftFirstMenuPlaceView.bounds withModel:_cameraModel camera:self];
             [self.rootVC.toolVC.leftFirstMenuPlaceView addSubview:photoView];
@@ -127,7 +130,7 @@
 {
     NSString *plist = [self _getPlistConfig];
     UIButton *button = (UIButton*) sender;
-    [self.rootVC.toolVC.leftSecondMenuPlaceView removeSubViews];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView removeOSMOSubViews];
 
     if (button.selected) {
         OSMOCaptureModeSelectView *modeVC = [[OSMOCaptureModeSelectView alloc] initWithFrame:self.rootVC.toolVC.leftSecondMenuPlaceView.bounds withModel:_cameraModel camera:self plist:plist];
@@ -205,7 +208,7 @@
     UIButton *button = (UIButton*) sender;
     
     if (button.selected) {
-        OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING];
+        OSMOMenuController *menuVC = [[OSMOMenuController alloc] initWithPlistKey:MENU_CAMERA_SETTING withModel:self.cameraModel camera:self];
         UINavigationController *osmoNav = [[UINavigationController alloc] initWithRootViewController:menuVC];
         
         [self.rootVC.toolVC addChildViewController:osmoNav];
@@ -216,6 +219,9 @@
             make.width.equalTo(self.rootVC.toolVC.rightFirstMenuPlaceView);
             make.height.equalTo(self.rootVC.toolVC.rightFirstMenuPlaceView);
         }];
+        
+        [self _hiddenTopManualPlaceView];
+        
     }else{
         for (UIView *view in self.rootVC.toolVC.rightFirstMenuPlaceView.subviews) {
             [view removeFromSuperview];
@@ -233,10 +239,44 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
+#pragma mark- right left first
+//- (void) onSwitchChanged:(OSMOTableObject*)object status:(BOOL)isOn
+//{
+//    if (object && [object.titleL isEqualToString:@"mc_enterTravelMode_manual"]) {
+//        if (isOn) {
+//            self.cameraModel.autoManual = DJIIPhone_SettingManual;
+//
+//            [self _showTopManualPlaceView];
+//            OSMOManualmodeView *manualModeView = [[OSMOManualmodeView alloc] initWithFrame:CGRectZero withModel:_cameraModel camera:self];
+//            [self.rootVC.toolVC.topManualPlaceView addSubview:manualModeView];
+//            
+//            [manualModeView mas_makeConstraints:^(MASConstraintMaker *make) {
+//                make.edges.equalTo(self.rootVC.toolVC.topManualPlaceView);
+//                make.width.equalTo(self.rootVC.toolVC.topManualPlaceView);
+//                make.height.equalTo(self.rootVC.toolVC.topManualPlaceView);
+//            }];
+//            
+//            [self.rootVC.toolVC.rightSettingPlaceView restoreDefaultStatus];
+//            
+//        }else{
+//            self.cameraModel.autoManual = DJIIPhone_SettingAuto;
+//
+//            for (UIView *view in self.rootVC.toolVC.topManualPlaceView.subviews) {
+//                [view removeFromSuperview];
+//            }
+//            [self _hiddenTopManualPlaceView];
+//            
+//        }
+//    }
+//}
+
 #pragma mark- manualMode tool
 - (void)actionClick_ISO_OSMOManualmodeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
+    OSMOVerticalPickerView *verticalView = [[OSMOVerticalPickerView alloc] initWithFrame:CGRectZero withModel:_cameraModel camera:self];
+    verticalView.backgroundColor = [UIColor redColor];
+    [self.rootVC.toolVC.view addSubview:verticalView];
 }
 
 - (void)actionClick_Shutter_OSMOManualmodeView:(id) sender
@@ -249,4 +289,24 @@
     NSLog(@"%s",__FUNCTION__);
 }
 
+#pragma mark- 内部方法
+-(void) _showTopManualPlaceView{
+    self.rootVC.toolVC.topManualPlaceView.hidden = NO;
+}
+-(void) _hiddenTopManualPlaceView{
+    self.rootVC.toolVC.topManualPlaceView.hidden = YES;
+
+}
+#pragma mark- event
+-(void) addOSMOManualmodeView
+{
+    OSMOManualmodeView *manualModeView = [[OSMOManualmodeView alloc] initWithFrame:CGRectZero withModel:_cameraModel camera:self];
+    [self.rootVC.toolVC.topManualPlaceView addSubview:manualModeView];
+    [manualModeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.rootVC.toolVC.topManualPlaceView);
+        make.width.equalTo(self.rootVC.toolVC.topManualPlaceView);
+        make.height.equalTo(self.rootVC.toolVC.topManualPlaceView);
+    }];
+    
+}
 @end

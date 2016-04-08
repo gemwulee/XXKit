@@ -20,6 +20,10 @@
 
 @implementation OSMOVerticalPickerView
 
+- (void)initData{
+    self.dataArray = [NSMutableArray array];
+}
+
 - (void)initViews
 {
     [self.collectionView removeFromSuperview];
@@ -50,10 +54,11 @@
     [self reloadSkins];
 }
 
--(void)initData
-{
-    self.dataArray = [NSMutableArray array];
+- (void)initEvent{}
+- (void)refreshViewForIPhoneCameraMode{
+    [_collectionView reloadData];
 }
+- (void)restoreDefaultStatus{}
 
 #pragma mark- 横竖屏
 -(void) layoutLandscape{
@@ -62,10 +67,6 @@
 
 -(void) layoutPortrait{
     _collectionView.frame = CGRectMake(0, 0, self.width *1.F /3, self.height);
-}
-
--(void) setNewStatus{
-    [_collectionView reloadData];
 }
 
 //设置顶部的大小
@@ -123,7 +124,5 @@
 {
     return 0;
 }
-
-
 
 @end

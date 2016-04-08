@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OSMOView.h"
 
-@interface OSMOManualView : OSMOView
+@interface OSMOManualView : UIView
 
 -(void) setLabelTipText:(NSString*) labelTip;
 

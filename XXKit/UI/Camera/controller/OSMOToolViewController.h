@@ -56,9 +56,14 @@
 @property(nonatomic,strong) OSMOMenuPlaceView *rightFirstMenuPlaceView;
 
 /**
- * 手动模式出现的菜单
+ * 手动模式出现的顶部菜单
  */
-@property(nonatomic,strong) OSMOManualmodeView *osmoMenumodeView;
+@property(nonatomic,strong) OSMOMenuPlaceView *topManualPlaceView;
+
+/**
+ * 手动模式出现的一级菜单
+ */
+@property(nonatomic,strong) OSMOMenuPlaceView *topFirstPickerPlaceView;
 
 
 -(void) refreshViewFrame;

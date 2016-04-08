@@ -24,6 +24,7 @@
 
 @implementation OSMOModeView
 
+- (void)initData{}
 -(void) initViews
 {
     _modeButton = [[OSMOStateButton alloc] init];
@@ -40,25 +41,13 @@
         make.size.mas_equalTo(CGSizeMake(OSMOModeView_BUTTON_WIDTH, OSMOModeView_BUTTON_HEIGHT));
     }];
     
-    [_modeButton addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self reloadSkins];
 }
-
--(void) setNewStatus
-{
-    if(self.cameraModel.captureMode == DJIIPhone_PhotoModel){
-        [_modeButton setStateIconNormal:@"handleCameraOff" iconSelected:@"handleCameraOn"];
-    }else if(self.cameraModel.captureMode == DJIIPhone_VideoModel){
-        [_modeButton setStateIconNormal:@"handle_mode_video_auto_off" iconSelected:@"handle_mode_video_auto_on"];
-    }
+- (void)initEvent{
+    [_modeButton addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
--(void) setDefaultStatus
-{
-    if(self.modeButton.selected == YES){
-        [self.modeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
-    }
-}
+
 
 -(void) layoutLandscape
 {
@@ -77,6 +66,23 @@
         _imageArrow.image = [UIImage imageNamed:@"handleArrowPotraitOn"];
     }else{
         _imageArrow.image = [UIImage imageNamed:@"handleArrowPotraitOff"];
+    }
+}
+
+
+-(void) refreshViewForIPhoneCameraMode
+{
+    if(self.cameraModel.captureMode == DJIIPhone_PhotoModel){
+        [_modeButton setStateIconNormal:@"handleCameraOff" iconSelected:@"handleCameraOn"];
+    }else if(self.cameraModel.captureMode == DJIIPhone_VideoModel){
+        [_modeButton setStateIconNormal:@"handle_mode_video_auto_off" iconSelected:@"handle_mode_video_auto_on"];
+    }
+}
+
+-(void) restoreDefaultStatus
+{
+    if(self.modeButton.selected == YES){
+        [self.modeButton sendActionsForControlEvents:UIControlEventTouchUpInside];
     }
 }
 

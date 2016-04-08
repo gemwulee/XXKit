@@ -23,6 +23,7 @@
 		9A035B961CB685A400FE644A /* OSMOVerticalPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B911CB685A400FE644A /* OSMOVerticalPickerView.m */; };
 		9A035BA01CB68F0200FE644A /* OSMOVerticalPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B9B1CB68F0200FE644A /* OSMOVerticalPickerViewCell.m */; };
 		9A035BA11CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A035B9F1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m */; };
+		9A15D1C81CB780A000EAFCFF /* OSMOStatusObserveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A15D1C71CB780A000EAFCFF /* OSMOStatusObserveManager.m */; };
 		9A176B261CA6CA2F00807EF3 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767DB1CA6CA2E00807EF3 /* Contents.json */; };
 		9A176B271CA6CA2F00807EF3 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767DC1CA6CA2E00807EF3 /* Icon-60@2x.png */; };
 		9A176B281CA6CA2F00807EF3 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A1767DD1CA6CA2E00807EF3 /* Icon-60@3x.png */; };
@@ -166,6 +167,8 @@
 		9A035B9B1CB68F0200FE644A /* OSMOVerticalPickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOVerticalPickerViewCell.m; sourceTree = "<group>"; };
 		9A035B9E1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOVerticalPickerViewLayout.h; sourceTree = "<group>"; };
 		9A035B9F1CB68F0200FE644A /* OSMOVerticalPickerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOVerticalPickerViewLayout.m; sourceTree = "<group>"; };
+		9A15D1C61CB780A000EAFCFF /* OSMOStatusObserveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMOStatusObserveManager.h; sourceTree = "<group>"; };
+		9A15D1C71CB780A000EAFCFF /* OSMOStatusObserveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMOStatusObserveManager.m; sourceTree = "<group>"; };
 		9A1767DB1CA6CA2E00807EF3 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		9A1767DC1CA6CA2E00807EF3 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
 		9A1767DD1CA6CA2E00807EF3 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
@@ -649,6 +652,8 @@
 			children = (
 				9A36D1E71CB355F400E8E8EC /* OSMOEventAction.h */,
 				9A36D1E81CB355F400E8E8EC /* OSMOEventAction.m */,
+				9A15D1C61CB780A000EAFCFF /* OSMOStatusObserveManager.h */,
+				9A15D1C71CB780A000EAFCFF /* OSMOStatusObserveManager.m */,
 				9A36D1E91CB355F400E8E8EC /* OSMOIPhoneHandler.h */,
 				9A36D1EA1CB355F400E8E8EC /* OSMOIPhoneHandler.m */,
 			);
@@ -1343,6 +1348,7 @@
 				9A36D2281CB355F400E8E8EC /* OSMOEventAction.m in Sources */,
 				9A36D2531CB39D4B00E8E8EC /* OSMOImageLabelButton.m in Sources */,
 				9AF3E9AE1C3CBB55009DDD15 /* ViewController.m in Sources */,
+				9A15D1C81CB780A000EAFCFF /* OSMOStatusObserveManager.m in Sources */,
 				9A36D28D1CB3F0BB00E8E8EC /* OSMOCaptureModeSelectView.m in Sources */,
 				9A88342D1C8AD4D200747277 /* UITableViewCell+Custom.m in Sources */,
 				9A035B7E1CB6499100FE644A /* OSMOPhotoVideoView.m in Sources */,

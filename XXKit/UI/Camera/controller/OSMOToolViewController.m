@@ -55,11 +55,15 @@
     self.view.backgroundColor = [UIColor clearColor];
     _captureToolPlaceView = [[OSMOCaptureToolView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _rightSettingPlaceView = [[OSMORightSettingView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
-    _osmoMenumodeView = [[OSMOManualmodeView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
+    _topManualPlaceView = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     
     _leftFirstMenuPlaceView  = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _leftSecondMenuPlaceView = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
     _rightFirstMenuPlaceView = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
+    _topFirstPickerPlaceView = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
+   
+    _topManualPlaceView.backgroundColor = [UIColor grayColor];
+    _topFirstPickerPlaceView.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];
@@ -67,8 +71,11 @@
     [self.view addSubview:_leftFirstMenuPlaceView];
     [self.view addSubview:_leftSecondMenuPlaceView];
     [self.view addSubview:_rightFirstMenuPlaceView];
+    [self.view addSubview:_topManualPlaceView];
+    [self.view addSubview:_topFirstPickerPlaceView];
     
-    [self.view addSubview:_osmoMenumodeView];
+    _topManualPlaceView.hidden = YES;
+    _topFirstPickerPlaceView.hidden = YES;
 }
 
 #pragma mark- 横竖屏
@@ -102,7 +109,8 @@
         [_leftSecondMenuPlaceView setFrame:CGRectMake(self.leftFirstMenuPlaceView.x + self.leftFirstMenuPlaceView.width,0,self.captureToolPlaceView.width, MAIN_SCREEN_HEIGHT)];
         [_rightFirstMenuPlaceView setFrame:CGRectMake(_rightSettingPlaceView.x - 200,(MAIN_SCREEN_HEIGHT-timelapseHeight)/2,200,timelapseHeight)];
         
-        [_osmoMenumodeView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, 20, timelapseHeight,osmoMenumodeViewHeight)];
+        [_topManualPlaceView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, 20, timelapseHeight,20)];
+        [_topFirstPickerPlaceView setFrame:CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, _topManualPlaceView.bottom, timelapseHeight,200)];
     }else{
         
         [_captureToolPlaceView setFrame:CGRectMake(0, MAIN_SCREEN_HEIGHT - paramSettingWidth, MAIN_SCREEN_WIDTH, paramSettingWidth)];
@@ -110,20 +118,21 @@
         
         [_leftFirstMenuPlaceView setFrame:CGRectMake(0, self.captureToolPlaceView.y-6-self.captureToolPlaceView.height, self.captureToolPlaceView.width, self.captureToolPlaceView.height)];
         [_leftSecondMenuPlaceView setFrame:CGRectMake(0, self.leftFirstMenuPlaceView.y-self.leftFirstMenuPlaceView.height, self.leftFirstMenuPlaceView.width, self.leftFirstMenuPlaceView.height)];
-        [_rightFirstMenuPlaceView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, self.rightSettingPlaceView.height, timelapseHeight, 200) ];
+        [_rightFirstMenuPlaceView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, self.rightSettingPlaceView.bottom, timelapseHeight, 200) ];
         
-        [_osmoMenumodeView setFrame: CGRectMake((MAIN_SCREEN_WIDTH-timelapseHeight)/2, self.rightSettingPlaceView.height, timelapseHeight,osmoMenumodeViewHeight)];
-
-        
+        [_topManualPlaceView setFrame: CGRectMake(_rightFirstMenuPlaceView.x, _rightFirstMenuPlaceView.y, timelapseHeight,20)];
+        [_topFirstPickerPlaceView setFrame:CGRectMake(_topManualPlaceView.x, _topManualPlaceView.bottom, timelapseHeight, 200)];
     }
     
     [_captureToolPlaceView reloadSkins];
     [_rightSettingPlaceView reloadSkins];
-
-    [_rightFirstMenuPlaceView reloadSkins];
-    [_leftFirstMenuPlaceView reloadSkins];
-    [_leftSecondMenuPlaceView reloadSkins];
     
+    [_leftFirstMenuPlaceView reloadSkinsSize];
+    [_leftSecondMenuPlaceView reloadSkinsSize];
+
+    [_rightFirstMenuPlaceView reloadSkinsSize];
+    [_topManualPlaceView reloadSkinsSize];
+    [_topFirstPickerPlaceView reloadSkinsSize];
 }
 
 //- (void)orientationChanged:(NSNotification *)notification{

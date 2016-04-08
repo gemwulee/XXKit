@@ -28,13 +28,6 @@
 
 @implementation OSMORightSettingView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 -(void) initData{
     _arrayButtons = [NSMutableArray array];
 }
@@ -43,22 +36,18 @@
 {
     _homeButton =[[OSMOStateButton alloc] initWithFrame:CGRectZero];
     [_homeButton setStateIconNormal:@"handleHomeOff" iconSelected:@"handleHomeOn"];
-    [_homeButton addTarget:self action:@selector(clickHandleHomeButton:) forControlEvents:UIControlEventTouchUpInside];
     
     _blankButton = [[OSMOStateButton alloc] initWithFrame:CGRectZero];
     _blankButton.backgroundColor = [UIColor clearColor];
     
     _cameraButton =[[OSMOStateButton alloc] initWithFrame:CGRectZero];
     [_cameraButton setStateIconNormal:@"handleMenuCamOff" iconSelected:@"handleMenuCamOn"];
-    [_cameraButton addTarget:self action:@selector(clickHandleCameraButton:) forControlEvents:UIControlEventTouchUpInside];
     
     _gimbalButton =[[OSMOStateButton alloc] initWithFrame:CGRectZero];
     [_gimbalButton setStateIconNormal:@"handleMenuGimbalOff" iconSelected:@"handleMenuGimbalOn"];
-    [_gimbalButton addTarget:self action:@selector(clickHandleGimbalButton:) forControlEvents:UIControlEventTouchUpInside];
 
     _settingButton =[[OSMOStateButton alloc] initWithFrame:CGRectZero];
     [_settingButton setStateIconNormal:@"handleSettingOff" iconSelected:@"handleSettingOn"];
-    [_settingButton addTarget:self action:@selector(clickSettingButton:) forControlEvents:UIControlEventTouchUpInside];
     
     [_arrayButtons addObject:_homeButton];
     [_arrayButtons addObject:_blankButton];
@@ -72,19 +61,18 @@
     }
 }
 
--(void) reloadSkins
+-(void) initEvent
 {
-    if([UIDevice isLandscape]){
-        [self layoutLandscape];
-    }else{
-        [self layoutPortrait];
-    }
+    [_homeButton addTarget:self action:@selector(clickHandleHomeButton:) forControlEvents:UIControlEventTouchUpInside];
+    [_cameraButton addTarget:self action:@selector(clickHandleCameraButton:) forControlEvents:UIControlEventTouchUpInside];
+    [_gimbalButton addTarget:self action:@selector(clickHandleGimbalButton:) forControlEvents:UIControlEventTouchUpInside];
+    [_settingButton addTarget:self action:@selector(clickSettingButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void) layoutLandscape
 {
     int divideHeight = self.height / BUTTONSum;
-    
+
     _homeButton.frame     = CGRectMake(0, 0, self.width, divideHeight);
     _blankButton.frame    = CGRectMake(0, _homeButton.bottom, self.width, divideHeight);
     _cameraButton.frame   = CGRectMake(0, _blankButton.bottom, self.width, divideHeight);
@@ -102,7 +90,15 @@
     _gimbalButton.frame   = CGRectMake(_cameraButton.right, 0, divideWidth, self.height);
     _settingButton.frame  = CGRectMake(_gimbalButton.right, 0, divideWidth, self.height);
 }
+-(void) refreshViewForIPhoneCameraMode{}
 
+-(void) restoreDefaultStatus{
+    for(OSMOStateButton *button in self.arrayButtons){
+        if(button.selected == YES){
+            [button sendActionsForControlEvents:UIControlEventTouchUpInside];
+        }
+    }
+}
 
 #pragma mark- Button Click
 - (void)clickHandleHomeButton:(id)sender{
@@ -133,5 +129,6 @@
         }
     }
 }
+
 
 @end

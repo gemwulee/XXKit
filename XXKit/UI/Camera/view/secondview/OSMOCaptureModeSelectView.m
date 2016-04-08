@@ -27,7 +27,7 @@
 
 @implementation OSMOCaptureModeSelectView
 
--(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction plist:(NSString*) plistkey
+- (instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction plist:(NSString*) plistkey
 {
     if (self = [super initWithFrame:frame withModel:model camera:cameraAction]) {
         self.plistKey = [plistkey copy];
@@ -35,8 +35,8 @@
     }
     return self;
 }
-
--(void)initViews
+- (void)initData{}
+- (void)initViews
 {
     // Do any additional setup after loading the view.
     self.backgroundColor = [UIColor clearColor];
@@ -62,10 +62,8 @@
 
     [self reloadSkins];
 }
-
--(void) registerReuseIdentifier
-{
-
+- (void)initEvent{}
+- (void)registerReuseIdentifier{
     [_mainCollectionView registerClass:[OSMOCaptureModeSelectCell class] forCellWithReuseIdentifier:OSMOPhotoSingleModeIdentifier];
     [_mainCollectionView registerClass:[OSMOCaptureModeSelectCell class] forCellWithReuseIdentifier:OSMOPhotoPanoModeIdentifier];
 
@@ -78,13 +76,14 @@
 
 -(void) layoutPortrait{
     _mainCollectionView.frame = CGRectMake(0, 0, self.width, self.height);
-
     [_layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
 }
 
--(void) setNewStatus{
+-(void) refreshViewForIPhoneCameraMode{
     [_mainCollectionView reloadData];
 }
+
+- (void)restoreDefaultStatus{}
 
 //设置顶部的大小
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section

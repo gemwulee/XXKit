@@ -11,6 +11,7 @@
 @class DJIIPhoneCameraViewController;
 @class DJIIPhoneCameraModel;
 @class OSMOIPhoneViewController;
+@class OSMOTableObject;
 
 @interface OSMOEventAction : NSObject
 
@@ -40,10 +41,16 @@
 - (void)actionClick_GimbalButton_OSMORightSettingView:(id) sender;
 - (void)actionClick_SettingButton_OSMORightSettingView:(id) sender;
 
+#pragma mark- right left first
+//- (void) onSwitchChanged:(OSMOTableObject*)object status:(BOOL)isOn;
 
 #pragma mark- manualMode tool
 - (void)actionClick_ISO_OSMOManualmodeView:(id) sender;
 - (void)actionClick_Shutter_OSMOManualmodeView:(id) sender;
 - (void)actionClick_WhiteBalance_OSMOManualmodeView:(id) sender;
 
+
+
+#pragma mark- event
+-(void) addOSMOManualmodeView;
 @end

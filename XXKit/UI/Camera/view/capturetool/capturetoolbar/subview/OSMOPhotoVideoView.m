@@ -18,7 +18,7 @@
 @end
 
 @implementation OSMOPhotoVideoView
-
+-(void) initData{}
 -(void) initViews
 {
     _imageViewBg = [[UIImageView alloc] initWithFrame:CGRectZero];
@@ -50,11 +50,15 @@
     
     _imageViewBg.image = [UIImage imageNamed:@"handle_camera_tool_bg"];
     _imageViewSaving.image = [UIImage imageNamed:@"handle_camera_tool_saving"];
-    
-    [self reloadSkins];
 }
 
--(void) reloadSkins
+-(void) initEvent
+{}
+-(void) layoutLandscape
+{}
+-(void) layoutPortrait
+{}
+-(void) refreshViewForIPhoneCameraMode
 {
     switch(self.cameraModel.captureMode){
         case DJIIPhone_PhotoModel:
@@ -75,9 +79,9 @@
     }
 
     [self bindEvent];
-
 }
-
+-(void) restoreDefaultStatus
+{}
 -(void) bindEvent
 {
     [_buttonCapture removeTarget:nil
@@ -99,8 +103,9 @@
         default:
             break;
     }
-    
 }
+
+
 
 -(void) onClickAfterVideoAnimation
 {

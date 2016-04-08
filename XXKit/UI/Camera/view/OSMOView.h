@@ -13,13 +13,26 @@
 
 @protocol OSMOViewAutoRefreshInterface <NSObject>
 
+@required
+//界面三元素
+-(void) initData;
+-(void) initViews;
+-(void) initEvent;
+
+//根据mode刷状态
+-(void) layoutLandscape;
+-(void) layoutPortrait;
+-(void) refreshViewForIPhoneCameraMode;
+
+//恢复默认态
+-(void) restoreDefaultStatus;
+
 @optional
 
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model;
 
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction;
 
-//-(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction rootVC:(OSMOIPhoneViewController*) rootCameraVC;
 -(instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction plist:(NSString*) plistkey;
 
 @end
@@ -34,23 +47,7 @@
 @property(nonatomic,weak)   OSMOIPhoneViewController *rootCameraVC;
 
 -(void) reloadSkins;
-
--(void) layoutLandscape;
--(void) layoutPortrait;
-
-//根据mode刷状态
--(void) setNewStatus;
-
-//恢复默认态
--(void) setDefaultStatus;
-
-//初始化事件
--(void) initEvent;
-
-//初始化数据
--(void) initData;
-
-//初始化视图
--(void) initViews;
+-(void) removeOSMOSubViews;
+-(void) reloadSkinsSize;
 
 @end

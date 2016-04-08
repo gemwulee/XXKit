@@ -9,7 +9,4 @@
 #import "OSMOView.h"
 
 @interface OSMOMenuPlaceView : OSMOView
-
--(void) removeSubViews;
-
 @end

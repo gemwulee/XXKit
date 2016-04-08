@@ -8,14 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, OSMOStateButtonState) {
-    OSMOStateButtonState_Normal = 0,
-    OSMOStateButtonState_Select
-};
-
 @interface OSMOStateButton : UIButton
 
 - (void)setStateIconNormal:(NSString*) imageNormal iconSelected:(NSString*) selectImage;
-
 
 @end

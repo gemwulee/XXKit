@@ -58,7 +58,7 @@
     
     [self reloadSkins];
 }
-
+-(void) initEvent{}
 -(void) layoutLandscape
 {
     _singleButton.frame     = CGRectMake(0, 0, self.width, OSMOCapturePhotoModeView_HEIGHT);
@@ -76,7 +76,7 @@
 }
 
 //根据mode刷状态
--(void) setNewStatus
+-(void) refreshViewForIPhoneCameraMode
 {
     switch (self.cameraModel.photoMode) {
         case DJIIPhone_PhotoSingleMode:{
@@ -100,6 +100,7 @@
     }
 }
 
+- (void)restoreDefaultStatus{}
 
 -(void) setButtonSelectedStatus : (UIButton*) buttonCurrent
 {

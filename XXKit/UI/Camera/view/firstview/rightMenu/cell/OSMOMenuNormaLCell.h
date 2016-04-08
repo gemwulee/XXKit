@@ -24,4 +24,6 @@ static NSString *const OSMOMenuNormaLCellBaseIdentifier = @"OSMOMenuNormaLCellBa
 
 @property (nonatomic, copy) void (^clickSwitchButtonCell)(OSMOMenuNormaLCell *cell,BOOL isOn);
 
+-(void) setSwitchOn:(BOOL) isOn;
+
 @end
