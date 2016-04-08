@@ -271,25 +271,43 @@
 //}
 
 #pragma mark- manualMode tool
-- (void)actionClick_ISO_OSMOManualmodeView:(id) sender
+-(void) actionClick_ISO_OSMOManualmodeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
-    OSMOVerticalPickerView *verticalView = [[OSMOVerticalPickerView alloc] initWithFrame:CGRectZero withModel:_cameraModel camera:self];
-    verticalView.backgroundColor = [UIColor redColor];
-    [self.rootVC.toolVC.view addSubview:verticalView];
+    [self _showPickerView:[_camera getISOArea]];
 }
 
-- (void)actionClick_Shutter_OSMOManualmodeView:(id) sender
+-(void) actionClick_Shutter_OSMOManualmodeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
+    [self _showPickerView:nil];
 }
 
-- (void)actionClick_WhiteBalance_OSMOManualmodeView:(id) sender
+-(void) actionClick_WhiteBalance_OSMOManualmodeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
+    [self _showPickerView:nil];
 }
+
 
 #pragma mark- 内部方法
+-(void) _showPickerView:(NSArray*) arrayDatasouce{
+    self.rootVC.toolVC.topFirstPickerPlaceView.hidden = !self.rootVC.toolVC.topFirstPickerPlaceView.hidden;
+    
+    if(self.rootVC.toolVC.topFirstPickerPlaceView.hidden == NO){
+        OSMOVerticalPickerView *verticalView = [[OSMOVerticalPickerView alloc] initWithFrame:CGRectZero withModel:_cameraModel camera:self];
+        [verticalView setDataSourceArray:arrayDatasouce];
+        [self.rootVC.toolVC.topFirstPickerPlaceView addSubview:verticalView];
+
+        [verticalView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.rootVC.toolVC.topFirstPickerPlaceView);
+            make.width.equalTo(self.rootVC.toolVC.topFirstPickerPlaceView);
+            make.height.equalTo(self.rootVC.toolVC.topFirstPickerPlaceView);
+        }];
+    }else{
+        [self.rootVC.toolVC.topFirstPickerPlaceView removeOSMOSubViews];
+    }
+}
 -(void) _showTopManualPlaceView{
     self.rootVC.toolVC.topManualPlaceView.hidden = NO;
 }

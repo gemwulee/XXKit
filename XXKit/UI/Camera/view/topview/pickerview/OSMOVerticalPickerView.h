@@ -17,4 +17,6 @@
 
 @interface OSMOVerticalPickerView : OSMOView
 
+-(void) setDataSourceArray:(NSArray*) array;
+
 @end

@@ -10,15 +10,22 @@
 #import "OSMOVerticalPickerViewLayout.h"
 #import "OSMOVerticalPickerViewCell.h"
 #import "XXBase.h"
+#import "Masonry.h"
 
 #define interitemSpacing 5.f
 
 @interface OSMOVerticalPickerView()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) NSMutableArray *dataArray;
+@property (nonatomic, strong) NSMutableArray  *dataArray;
+@property (nonatomic, strong) CAGradientLayer *maskLayer;
 @end
 
 @implementation OSMOVerticalPickerView
+
+-(void) setDataSourceArray:(NSMutableArray*) array{
+    self.dataArray = [array mutableCopy];
+    [self.collectionView reloadData];
+}
 
 - (void)initData{
     self.dataArray = [NSMutableArray array];
@@ -27,29 +34,18 @@
 - (void)initViews
 {
     [self.collectionView removeFromSuperview];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.bounds
+    self.backgroundColor = [UIColor clearColor];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
                                              collectionViewLayout:[OSMOVerticalPickerViewLayout new]];
     self.collectionView.showsVerticalScrollIndicator = NO;
-    self.collectionView.backgroundColor = [UIColor clearColor];
     self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
     self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[OSMOVerticalPickerViewCell class]
             forCellWithReuseIdentifier:NSStringFromClass([OSMOVerticalPickerViewCell class])];
     [self addSubview:self.collectionView];
-    
-    CAGradientLayer *maskLayer = [CAGradientLayer layer];
-    maskLayer.frame = self.collectionView.bounds;
-    maskLayer.colors = @[(id)[[UIColor clearColor] CGColor],
-                         (id)[[UIColor blackColor] CGColor],
-                         (id)[[UIColor blackColor] CGColor],
-                         (id)[[UIColor clearColor] CGColor],];
-    maskLayer.locations = @[@0.0, @0.33, @0.66, @1.0];
-    maskLayer.startPoint = CGPointMake(0.0, 0.0);
-    maskLayer.endPoint = CGPointMake(0.0, 1.0);
-    self.collectionView.layer.mask = maskLayer;
 
     [self reloadSkins];
 }
@@ -62,11 +58,12 @@
 
 #pragma mark- 横竖屏
 -(void) layoutLandscape{
-    _collectionView.frame = CGRectMake(0, 0, self.width *1.F /3, self.height);
+    _collectionView.frame = CGRectMake(0, 0, self.width/3, self.height);
 }
 
 -(void) layoutPortrait{
-    _collectionView.frame = CGRectMake(0, 0, self.width *1.F /3, self.height);
+    _collectionView.frame = CGRectMake(0, 0, self.width/3, self.height);
+
 }
 
 //设置顶部的大小
@@ -92,12 +89,13 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *settingObject = [self.dataArray objectAtIndex:indexPath.row];
+    NSNumber *settingObject = [self.dataArray objectAtIndex:indexPath.row];
     
     if(!settingObject)
         return nil;
     NSString *identifier = NSStringFromClass([OSMOVerticalPickerViewCell class]);
     OSMOVerticalPickerViewCell *item = (OSMOVerticalPickerViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    
     [item configureData:settingObject];
     return item;
 }
@@ -105,7 +103,8 @@
 //设置每个item的尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(collectionView.width, OSMOVerticalPickerViewItemHeight) ;
+    CGSize size = CGSizeMake(collectionView.width, OSMOVerticalPickerViewItemHeight);
+    return  size;
 }
 
 //设置每个item的UIEdgeInsets

@@ -10,6 +10,6 @@
 
 @interface OSMOVerticalPickerViewCell : UICollectionViewCell
 
--(void) configureData:(NSString*) text;
+-(void) configureData:(NSNumber*) text;
 
 @end

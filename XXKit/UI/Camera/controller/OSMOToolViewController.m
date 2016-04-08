@@ -63,7 +63,7 @@
     _topFirstPickerPlaceView = [[OSMOMenuPlaceView alloc] initWithFrame:CGRectZero withModel:_model camera:_cameraAction];
    
     _topManualPlaceView.backgroundColor = [UIColor grayColor];
-    _topFirstPickerPlaceView.backgroundColor = [UIColor redColor];
+//    _topFirstPickerPlaceView.backgroundColor = [UIColor redColor];
     
     [self.view addSubview:_captureToolPlaceView];
     [self.view addSubview:_rightSettingPlaceView];
@@ -144,9 +144,4 @@
 //    [_captureToolPlaceView reloadSkins];
 //    [_rightSettingPlaceView reloadSkins];
 //}
-
-
-
-
-
 @end
