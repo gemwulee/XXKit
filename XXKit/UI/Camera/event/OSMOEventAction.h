@@ -49,8 +49,4 @@
 - (void)actionClick_Shutter_OSMOManualmodeView:(id) sender;
 - (void)actionClick_WhiteBalance_OSMOManualmodeView:(id) sender;
 
-
-
-#pragma mark- event
--(void) addOSMOManualmodeView;
 @end

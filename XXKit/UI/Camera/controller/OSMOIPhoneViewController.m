@@ -26,8 +26,6 @@
 
 @property(nonatomic,strong)  OSMOIPhoneHandler        *handler;
 @property(nonatomic,strong)  DJIIPhoneCameraModel     *model;
-@property(nonatomic,assign)  OSMOStatusObserveManagerState  currentState;
-
 @property(nonatomic,strong)  OSMOToolWindow           *toolWindow;
 
 @end
