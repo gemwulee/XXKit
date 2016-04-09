@@ -14,8 +14,15 @@
 @class OSMOCaptureModeSelectObject;
 
 
+
+
 @interface OSMOCaptureModeSelectCell : UICollectionViewCell
 
 -(void) configureData:(OSMOCaptureModeSelectObject*) modeSelectObject;
+
+-(void) setButtonSelected:(BOOL) isSelected;
+
+
+@property (nonatomic, copy) void (^clickButtonAction)(OSMOCaptureModeSelectCell *cell,id sender);
 
 @end

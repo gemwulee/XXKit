@@ -35,6 +35,16 @@
 - (void)actionClick_VideoSlowButton_VideoModeView:(id) sender;
 - (void)actionClick_VideoDelayButton_VideoModeView:(id) sender;
 
+#pragma mark- capture left second
+-(void) actionClick_PhotoSingleNormalMode_OSMOCaptureModeSelectView:(id)sender;
+-(void) actionClick_PhotoSingleDelay2Mode_OSMOCaptureModeSelectView:(id)sender;
+-(void) actionClick_PhotoSingleDelay5Mode_OSMOCaptureModeSelectView:(id)sender;
+-(void) actionClick_PhotoSingleDelay10Mode_OSMOCaptureModeSelectView:(id)sender;
+
+-(void) actionClick_PhotoPano180Mode_OSMOCaptureModeSelectView:(id)sender;
+-(void) actionClick_PhotoPano360Mode_OSMOCaptureModeSelectView:(id)sender;
+-(void) actionClick_PhotoPano720Mode_OSMOCaptureModeSelectView:(id)sender;
+
 #pragma mark- right tool
 - (void)actionClick_HomeButton_OSMORightSettingView:(id) sender;
 - (void)actionClick_CameraButton_OSMORightSettingView:(id) sender;

@@ -22,21 +22,30 @@
 
 @implementation OSMOCaptureModeSelectCell
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
-    if (self)
-    {
+    if (self){
         _captureModeButton = [[OSMOStateButton alloc] initWithFrame:self.bounds];
         _captureModeButton.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:_captureModeButton];
+        [_captureModeButton addTarget:self action:@selector(onButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
-    
     return self;
 }
 
--(void) configureData:(OSMOCaptureModeSelectObject*) modeSelectObject
-{
+-(void) setButtonSelected:(BOOL) isSelected{
+    _captureModeButton.selected = isSelected;
+}
+
+-(void) onButtonClick:(id) sender{
+    weakSelf(target);
+    if (target.clickButtonAction) {
+        weakReturn(target);
+        target.clickButtonAction(target,sender);
+    }
+}
+
+-(void) configureData:(OSMOCaptureModeSelectObject*) modeSelectObject{
     [_captureModeButton setStateIconNormal:modeSelectObject.imageViewN iconSelected:modeSelectObject.imageViewS];
 }
 

@@ -17,7 +17,15 @@
 //根据mode刷状态
 -(void) layoutLandscape{}
 -(void) layoutPortrait{}
--(void) refreshViewForIPhoneCameraMode{}
+
+-(void) refreshViewForIPhoneCameraMode{
+    for (UIView *subView in self.subviews) {
+        if([subView isKindOfClass:[OSMOView class]]){
+            [(OSMOView*)subView refreshViewForIPhoneCameraMode];
+        }
+    }
+}
+
 -(void) restoreDefaultStatus{}
 
 @end

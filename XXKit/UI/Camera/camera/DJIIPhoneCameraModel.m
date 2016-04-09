@@ -43,6 +43,11 @@
     
     //现在处于停止状态
     self.videoState = DJIIPhone_VideoRecordState_Stop;
+    
+    //照相机
+    self.photoMode = DJIIPhone_PhotoSingleMode;
+    self.photoSingleModeDetail = DJIIPhone_PhotoSingleModeDetail_Single_Normal;
+    self.photoPanoModeDetail   = DJIIPhone_PhotoPanoModeDetail_180;
 }
 
 @end

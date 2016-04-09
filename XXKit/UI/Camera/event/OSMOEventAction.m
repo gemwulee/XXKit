@@ -162,32 +162,69 @@
 }
 
 #pragma mark- capture left first video
-- (void)actionClick_VideoNormalButton_VideoModeView:(id) sender
-{
+- (void)actionClick_VideoNormalButton_VideoModeView:(id) sender{
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.videoMode = DJIIPhone_VideoAutoMode;
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
-
-- (void)actionClick_VideoHDButton_VideoModeView:(id) sender
-{
+- (void)actionClick_VideoHDButton_VideoModeView:(id) sender{
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.videoMode = DJIIPhone_4KVideoMode;
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
 
-- (void)actionClick_VideoSlowButton_VideoModeView:(id) sender
-{
+- (void)actionClick_VideoSlowButton_VideoModeView:(id) sender{
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.videoMode = DJIIPhone_SlowVideoMode;
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
-- (void)actionClick_VideoDelayButton_VideoModeView:(id) sender
-{
+- (void)actionClick_VideoDelayButton_VideoModeView:(id) sender{
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.videoMode = DJIIPhone_DelayVideoMode;
     [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
 }
+
+#pragma mark- capture left second
+-(void) actionClick_PhotoSingleNormalMode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoSingleModeDetail = DJIIPhone_PhotoSingleModeDetail_Single_Normal;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+-(void) actionClick_PhotoSingleDelay2Mode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoSingleModeDetail = DJIIPhone_PhotoSingleModeDetail_Single_Delay_2;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+-(void) actionClick_PhotoSingleDelay5Mode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoSingleModeDetail = DJIIPhone_PhotoSingleModeDetail_Single_Delay_5;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+-(void) actionClick_PhotoSingleDelay10Mode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoSingleModeDetail = DJIIPhone_PhotoSingleModeDetail_Single_Delay_10;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+
+
+-(void) actionClick_PhotoPano180Mode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoPanoModeDetail = DJIIPhone_PhotoPanoModeDetail_180;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+
+-(void) actionClick_PhotoPano360Mode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoPanoModeDetail = DJIIPhone_PhotoPanoModeDetail_360;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+
+-(void) actionClick_PhotoPano720Mode_OSMOCaptureModeSelectView:(id)sender{
+    NSLog(@"%s",__FUNCTION__);
+    self.cameraModel.photoPanoModeDetail = DJIIPhone_PhotoPanoModeDetail_720;
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+
 
 #pragma mark- right tool
 -(void) actionClick_HomeButton_OSMORightSettingView:(id) sender

@@ -11,6 +11,7 @@
 #define IMAGEVIEWN          @"imageViewN"
 #define IMAGEVIEWS          @"imageViewS"
 #define CELLIDENTIFER       @"celldentifier"
+#define BUTTONTEXTN         @"buttonTextN"
 
 @implementation OSMOCaptureModeSelectObject
 
@@ -22,6 +23,7 @@
         
         self.imageViewN    = [dic objectForKey:IMAGEVIEWN];
         self.imageViewS    = [dic objectForKey:IMAGEVIEWS];
+        self.buttonTextN   = [dic objectForKey:BUTTONTEXTN];
     }
     return self;
 }

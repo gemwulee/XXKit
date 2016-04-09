@@ -46,9 +46,10 @@
 //----------------照相机--------------
 //拍摄模式
 @property(nonatomic,assign,readwrite) DJIIPhonePhotoMode photoMode;
-//延时拍照的时间
-@property(nonatomic,assign,readwrite) CGFloat delayCameraTime;
-
+//单拍的具体模式
+@property(nonatomic,assign,readwrite) DJIIPhonePhotoSingleModeDetail photoSingleModeDetail;
+//全景的具体模式
+@property(nonatomic,assign,readwrite )DJIIPhone_PhotoPanoModeDetail photoPanoModeDetail;
 
 //----------------摄影机---------------
 //摄影模式

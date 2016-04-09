@@ -13,6 +13,7 @@
 @property(copy, nonatomic)  NSString *imageViewN;     //正常的图片
 @property(copy, nonatomic)  NSString *imageViewS;     //选择后的图片
 @property(copy, nonatomic)  NSString *celldentifier;  //加载哪个cell
+@property(copy, nonatomic)  NSString *buttonTextN;    //标记是哪个button
 
 - (instancetype) initWithDic:(NSDictionary*) dic;
 

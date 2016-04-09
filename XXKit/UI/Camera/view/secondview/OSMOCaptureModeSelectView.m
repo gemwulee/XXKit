@@ -51,9 +51,6 @@
     //注意，此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致 均为 cellId
     [self registerReuseIdentifier];
     
-    //注册headerView  此处的ReuseIdentifier 必须和 cellForItemAtIndexPath 方法中 一致  均为reusableView
-    [_mainCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"reusableView"];
-    
     //4.设置代理
     _mainCollectionView.delegate = self;
     _mainCollectionView.dataSource = self;
@@ -85,12 +82,6 @@
 
 - (void)restoreDefaultStatus{}
 
-//设置顶部的大小
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
-{
-    CGSize size={0,0};
-    return size;
-}
 
 #pragma mark- Collectionview
 #pragma mark collectionView代理方法
@@ -116,15 +107,23 @@
     if(settingObject && [settingObject.celldentifier isEqualToString:OSMOPhotoSingleModeIdentifier]){
         OSMOCaptureModeSelectCell *cell = (OSMOCaptureModeSelectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:OSMOPhotoSingleModeIdentifier forIndexPath:indexPath];
         [cell configureData:settingObject];
+        [self _setUIPhotoSingleButtonState:settingObject.buttonTextN selectCell:cell];
+        [self _setPhotoClickAction:cell indexPath:indexPath];
         return cell;
     }
     else if(settingObject && [settingObject.celldentifier isEqualToString:OSMOPhotoPanoModeIdentifier]){
         OSMOCaptureModeSelectCell *cell = (OSMOCaptureModeSelectCell *)[collectionView dequeueReusableCellWithReuseIdentifier:OSMOPhotoPanoModeIdentifier forIndexPath:indexPath];
         [cell configureData:settingObject];
+        
+        [self _setUIPhotoPanoButtonState:settingObject.buttonTextN selectCell:cell];
+        [self _setPanoClickAction:cell indexPath:indexPath];
+        
         return cell;
     }
     return nil;
 }
+
+
 
 //设置每个item的尺寸
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -148,8 +147,113 @@
 {
     return 0;
 }
+#pragma mark- private method
+-(void) _setUIPhotoSingleButtonState:(NSString*) buttonN selectCell:(OSMOCaptureModeSelectCell*) cell
+{
+    switch (self.cameraModel.photoSingleModeDetail)
+    {
+        case DJIIPhone_PhotoSingleModeDetail_Single_Normal:{
+            if([buttonN isEqualToString:@"0"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+        case DJIIPhone_PhotoSingleModeDetail_Single_Delay_2:{
+            if([buttonN isEqualToString:@"2"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+        case DJIIPhone_PhotoSingleModeDetail_Single_Delay_5:{
+            if([buttonN isEqualToString:@"5"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+        case DJIIPhone_PhotoSingleModeDetail_Single_Delay_10:{
+            if([buttonN isEqualToString:@"10"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+    }
+}
 
+-(void) _setPhotoClickAction:(OSMOCaptureModeSelectCell *) cell indexPath:(NSIndexPath*) indexPath{
+    weakSelf(target);
+    cell.clickButtonAction = ^(OSMOCaptureModeSelectCell *cell,id sender){
+        weakReturn(target);
+        //外部会观察到内部的变化从而去刷新
+        OSMOCaptureModeSelectObject *settingObject = [target.dataArray objectAtIndex:indexPath.row];
+        if([settingObject.buttonTextN isEqualToString:@"0"]){
+            [target.cameraAction actionClick_PhotoSingleNormalMode_OSMOCaptureModeSelectView:sender];
+        }else if ([settingObject.buttonTextN isEqualToString:@"2"]){
+            [target.cameraAction actionClick_PhotoSingleDelay2Mode_OSMOCaptureModeSelectView:sender];
+            
+        }else if ([settingObject.buttonTextN isEqualToString:@"5"]){
+            [target.cameraAction actionClick_PhotoSingleDelay5Mode_OSMOCaptureModeSelectView:sender];
+        }else if ([settingObject.buttonTextN isEqualToString:@"10"]){
+            [target.cameraAction actionClick_PhotoSingleDelay10Mode_OSMOCaptureModeSelectView:sender];
+            
+        }
+    };
+}
 
+-(void) _setUIPhotoPanoButtonState:(NSString*) buttonN selectCell:(OSMOCaptureModeSelectCell*) cell
+{
+    switch (self.cameraModel.photoPanoModeDetail)
+    {
+        case DJIIPhone_PhotoPanoModeDetail_180:{
+            if([buttonN isEqualToString:@"180"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+        case DJIIPhone_PhotoPanoModeDetail_360:{
+            if([buttonN isEqualToString:@"360"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+        case DJIIPhone_PhotoPanoModeDetail_720:{
+            if([buttonN isEqualToString:@"720"]){
+                [cell setButtonSelected:YES];
+            }else{
+                [cell setButtonSelected:NO];
+            }
+        }
+            break;
+    }
+}
+
+-(void) _setPanoClickAction:(OSMOCaptureModeSelectCell *) cell indexPath:(NSIndexPath*) indexPath{
+    weakSelf(target);
+    cell.clickButtonAction = ^(OSMOCaptureModeSelectCell *cell,id sender){
+        weakReturn(target);
+        //外部会观察到内部的变化从而去刷新
+        OSMOCaptureModeSelectObject *settingObject = [target.dataArray objectAtIndex:indexPath.row];
+        if([settingObject.buttonTextN isEqualToString:@"180"]){
+            [target.cameraAction actionClick_PhotoPano180Mode_OSMOCaptureModeSelectView:sender];
+        }else if ([settingObject.buttonTextN isEqualToString:@"360"]){
+            [target.cameraAction actionClick_PhotoPano360Mode_OSMOCaptureModeSelectView:sender];
+            
+        }else if ([settingObject.buttonTextN isEqualToString:@"720"]){
+            [target.cameraAction actionClick_PhotoPano720Mode_OSMOCaptureModeSelectView:sender];
+        }
+    };
+}
 
 
 @end

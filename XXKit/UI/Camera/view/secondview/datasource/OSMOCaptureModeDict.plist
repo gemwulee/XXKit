@@ -22,7 +22,7 @@
 			<key>imageViewS</key>
 			<string>handle_mode_singlephoto_2s_on</string>
 			<key>buttonTextN</key>
-			<string>0</string>
+			<string>2</string>
 		</dict>
 		<dict>
 			<key>celldentifier</key>
@@ -44,16 +44,16 @@
 			<key>buttonTextN</key>
 			<string>10</string>
 		</dict>
-		<dict>
-			<key>celldentifier</key>
-			<string>OSMOPhotoSingleModeIdentifier</string>
-			<key>imageViewN</key>
-			<string>handle_mode_singlephoto_HDR_off</string>
-			<key>imageViewS</key>
-			<string>handle_mode_singlephoto_HDR_on</string>
-			<key>buttonTextN</key>
-			<string>HDR</string>
-		</dict>
+<!--		<dict>-->
+<!--			<key>celldentifier</key>-->
+<!--			<string>OSMOPhotoSingleModeIdentifier</string>-->
+<!--			<key>imageViewN</key>-->
+<!--			<string>handle_mode_singlephoto_HDR_off</string>-->
+<!--			<key>imageViewS</key>-->
+<!--			<string>handle_mode_singlephoto_HDR_on</string>-->
+<!--			<key>buttonTextN</key>-->
+<!--			<string>HDR</string>-->
+<!--		</dict>-->
 	</array>
 	<key>photoPanoModeSetting</key>
 	<array>
@@ -77,16 +77,16 @@
 			<key>buttonTextN</key>
 			<string>360</string>
 		</dict>
-		<dict>
-			<key>celldentifier</key>
-			<string>OSMOPhotoPanoModeIdentifier</string>
-			<key>imageViewN</key>
-			<string>handle_mode_pano_ball_off</string>
-			<key>imageViewS</key>
-			<string>handle_mode_pano_ball_on</string>
-			<key>buttonTextN</key>
-			<string>720</string>
-		</dict>
+<!--		<dict>-->
+<!--			<key>celldentifier</key>-->
+<!--			<string>OSMOPhotoPanoModeIdentifier</string>-->
+<!--			<key>imageViewN</key>-->
+<!--			<string>handle_mode_pano_ball_off</string>-->
+<!--			<key>imageViewS</key>-->
+<!--			<string>handle_mode_pano_ball_on</string>-->
+<!--			<key>buttonTextN</key>-->
+<!--			<string>720</string>-->
+<!--		</dict>-->
 	</array>
 </dict>
 </plist>
