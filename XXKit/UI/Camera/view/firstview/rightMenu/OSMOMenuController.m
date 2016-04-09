@@ -58,8 +58,6 @@
     
     [_tableViewMenu mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.mainView);
-        make.width.equalTo(self.mainView);
-        make.height.equalTo(self.mainView);
     }];
 }
 

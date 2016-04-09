@@ -93,72 +93,34 @@
 
 
 #pragma mark- capture left first photo
--(NSString*) _getPlistConfig
-{
-    NSString *plist = nil;
-    if(self.cameraModel.captureMode == DJIIPhone_PhotoModel){
-        switch (self.cameraModel.photoMode ) {
-            case DJIIPhone_PhotoSingleMode:{
-                plist = photoSingleModeSetting_PLIST;
-            }
-                break;
-            case DJIIPhone_PhotoPanoMode:{
-                plist = photoPanoModeSetting_PLIST;
-            }
-                break;
-            default:{
-                assert(0);
-                break;
-            }
-        }
-    }
-    else{
-        assert(0);
-    }
-    return plist;
-}
 
--(void) showSecondView:(id) sender
-{
-    NSString *plist = [self _getPlistConfig];
-    UIButton *button = (UIButton*) sender;
-    [self.rootVC.toolVC.leftSecondMenuPlaceView removeOSMOSubViews];
-
-    if (button.selected) {
-        OSMOCaptureModeSelectView *modeVC = [[OSMOCaptureModeSelectView alloc] initWithFrame:self.rootVC.toolVC.leftSecondMenuPlaceView.bounds withModel:_cameraModel camera:self plist:plist];
-        [self.rootVC.toolVC.leftSecondMenuPlaceView addSubview:modeVC];
-    }
-}
 - (void)actionClick_SingleButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoSingleMode;
-    [self showSecondView:sender];
-    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+    [self.rootVC.toolVC.leftFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
 }
 - (void)actionClick_MultipleButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoContinuousMode;
-    [self showSecondView:sender];
-
-    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+    [self.rootVC.toolVC.leftFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
 }
 - (void)actionClick_PanoButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoPanoMode;
-    [self showSecondView:sender];
-
-    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+    [self.rootVC.toolVC.leftFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
 }
 - (void)actionClick_IntervalButton_PhotoModeView:(id) sender
 {
     NSLog(@"%s",__FUNCTION__);
     self.cameraModel.photoMode = DJIIPhone_PhotoIntervalMode;
-    [self showSecondView:sender];
-
-    [self.rootVC.toolVC.leftFirstMenuPlaceView reloadSkins];
+    [self.rootVC.toolVC.leftFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+    [self.rootVC.toolVC.leftSecondMenuPlaceView refreshViewForIPhoneCameraMode];
 }
 
 #pragma mark- capture left first video

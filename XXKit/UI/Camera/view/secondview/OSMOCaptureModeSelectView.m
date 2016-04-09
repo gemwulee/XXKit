@@ -30,11 +30,17 @@
 - (instancetype)initWithFrame:(CGRect)frame withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction plist:(NSString*) plistkey
 {
     if (self = [super initWithFrame:frame withModel:model camera:cameraAction]) {
-        self.plistKey = [plistkey copy];
-        self.dataArray = [[OSMODataLoader sharedInstance] loadOSMOCaptureModeObjectsFromPlist:plistkey];
+        [self reloadDatasource:plistkey];
     }
     return self;
 }
+
+-(void) reloadDatasource:(NSString*) plistkey
+{
+    self.plistKey = [plistkey copy];
+    self.dataArray = [[OSMODataLoader sharedInstance] loadOSMOCaptureModeObjectsFromPlist:plistkey];
+}
+
 - (void)initData{}
 - (void)initViews
 {
@@ -77,6 +83,11 @@
 }
 
 -(void) refreshViewForIPhoneCameraMode{
+    if (self.cameraModel.photoMode == DJIIPhone_PhotoSingleMode){
+        [self reloadDatasource:photoSingleModeSetting_PLIST];
+    }else if(self.cameraModel.photoMode == DJIIPhone_PhotoPanoMode){
+        [self reloadDatasource:photoPanoModeSetting_PLIST];
+    }
     [_mainCollectionView reloadData];
 }
 

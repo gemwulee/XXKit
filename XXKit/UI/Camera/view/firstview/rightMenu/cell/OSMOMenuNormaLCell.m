@@ -131,6 +131,6 @@
 
 -(void) setSwitchOn:(BOOL) isOn
 {
-    [self.swtichR setOn:isOn animated:YES];;
+    [self.swtichR setOn:isOn];
 }
 @end

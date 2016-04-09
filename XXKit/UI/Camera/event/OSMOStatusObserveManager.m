@@ -19,7 +19,7 @@
 #import "OSMOCapturePhotoModeView.h"
 #import "OSMOCaptureVideoModeView.h"
 #import "OSMOMenuController.h"
-
+#import "OSMOCaptureModeSelectView.h"
 @interface OSMOStatusObserveManager()
 @property(nonatomic,weak)   DJIIPhoneCameraModel          *model;
 @property(nonatomic,weak)   OSMOIPhoneViewController      *rootCameraVC;
@@ -162,6 +162,9 @@
         case OSMOViewManagerState_LEFT_FIRST_OPEN:{
             self.managerStateTop = OSMOViewManagerState_TOP_FIRST_CLOSE;
             [self _showLeftView];
+            if (self.model.captureMode == DJIIPhone_PhotoModel) {
+                [self _showSecondView];
+            }
         }
             break;
         case OSMOViewManagerState_LEFT_FIRST_CLOSE:{
@@ -169,6 +172,9 @@
                 self.managerStateTop = OSMOViewManagerState_TOP_FIRST_OPEN;
             }
             [self _closeLeftView];
+            if (self.model.captureMode == DJIIPhone_PhotoModel) {
+                [self _closeSecondView];
+            }
         }
             break;
     };
@@ -198,6 +204,42 @@
     [self.rootCameraVC.toolVC.leftFirstMenuPlaceView removeOSMOSubViews];
     [self.rootCameraVC.toolVC.leftSecondMenuPlaceView removeOSMOSubViews];
     [self.rootCameraVC.toolVC.captureToolPlaceView restoreDefaultStatus];
+}
+
+-(NSString*) _getPlistConfig
+{
+    NSString *plist = nil;
+    if(self.model.captureMode == DJIIPhone_PhotoModel){
+        switch (self.model.photoMode ) {
+            case DJIIPhone_PhotoSingleMode:{
+                plist = photoSingleModeSetting_PLIST;
+            }
+                break;
+            case DJIIPhone_PhotoPanoMode:{
+                plist = photoPanoModeSetting_PLIST;
+            }
+                break;
+            default:{
+                assert(0);
+                break;
+            }
+        }
+    }
+    else{
+        assert(0);
+    }
+    return plist;
+}
+
+-(void) _showSecondView{
+    [self _closeSecondView];
+    NSString *plist = [self _getPlistConfig];
+    OSMOCaptureModeSelectView *modeVC = [[OSMOCaptureModeSelectView alloc] initWithFrame:self.rootCameraVC.toolVC.leftSecondMenuPlaceView.bounds withModel:_model camera:_cameraAction plist:plist];
+    [self.rootCameraVC.toolVC.leftSecondMenuPlaceView addSubview:modeVC];
+}
+
+-(void) _closeSecondView{
+    [self.rootCameraVC.toolVC.leftSecondMenuPlaceView removeOSMOSubViews];
 }
 
 #pragma mark- TopView Open/Close
