@@ -133,4 +133,13 @@
 {
     [self.swtichR setOn:isOn];
 }
+
+-(void) setCellSelected:(BOOL)selected
+{
+    self.imageViewIndicator.hidden = !selected;
+    
+    if (selected) {
+        self.imageViewIndicator.image = [UIImage imageNamed:@"handlePickerMidArrow"];
+    }
+}
 @end
