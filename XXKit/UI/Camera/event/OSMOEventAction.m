@@ -216,35 +216,28 @@
 }
 
 #pragma mark- right left first
-//- (void) onSwitchChanged:(OSMOTableObject*)object status:(BOOL)isOn
-//{
-//    if (object && [object.titleL isEqualToString:@"mc_enterTravelMode_manual"]) {
-//        if (isOn) {
-//            self.cameraModel.autoManual = DJIIPhone_SettingManual;
-//
-//            [self _showTopManualPlaceView];
-//            OSMOManualmodeView *manualModeView = [[OSMOManualmodeView alloc] initWithFrame:CGRectZero withModel:_cameraModel camera:self];
-//            [self.rootVC.toolVC.topManualPlaceView addSubview:manualModeView];
-//            
-//            [manualModeView mas_makeConstraints:^(MASConstraintMaker *make) {
-//                make.edges.equalTo(self.rootVC.toolVC.topManualPlaceView);
-//                make.width.equalTo(self.rootVC.toolVC.topManualPlaceView);
-//                make.height.equalTo(self.rootVC.toolVC.topManualPlaceView);
-//            }];
-//            
-//            [self.rootVC.toolVC.rightSettingPlaceView restoreDefaultStatus];
-//            
-//        }else{
-//            self.cameraModel.autoManual = DJIIPhone_SettingAuto;
-//
-//            for (UIView *view in self.rootVC.toolVC.topManualPlaceView.subviews) {
-//                [view removeFromSuperview];
-//            }
-//            [self _hiddenTopManualPlaceView];
-//            
-//        }
-//    }
-//}
+- (void) onSwitchChanged:(OSMOTableObject*)object status:(BOOL)isOn
+{
+    if (object  && [object.titleL isEqualToString:@"mc_enterTravelMode_manual"]) {
+        if (isOn)
+            self.cameraModel.autoManual = DJIIPhone_SettingManual;
+        else
+            self.cameraModel.autoManual = DJIIPhone_SettingAuto;
+    }
+    [self.rootVC.toolVC.rightFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+
+- (void) onActionClickWhiteBalanceMetux:(OSMOTableObject*) object status:(DJIIPhoneWhiteBalanceStyle) whiteBalance
+{
+    self.cameraModel.balanceWhiteBalanceMode = whiteBalance;
+    [self.rootVC.toolVC.rightFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+}
+
+- (void) onActionClickGridMetux:(OSMOTableObject*) object status:(DJIIPhoneGridStyle) gridStyle
+{
+    self.cameraModel.gridStyle = gridStyle;
+    [self.rootVC.toolVC.rightFirstMenuPlaceView refreshViewForIPhoneCameraMode];
+}
 
 #pragma mark- manualMode tool
 -(void) actionClick_ISO_OSMOManualmodeView:(id) sender

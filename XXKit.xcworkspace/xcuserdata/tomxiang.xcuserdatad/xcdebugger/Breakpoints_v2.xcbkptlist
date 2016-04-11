@@ -222,11 +222,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
-            timestampString = "481897787.827036"
+            timestampString = "482051790.291586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "258"
-            endingLineNumber = "258"
+            startingLineNumber = "251"
+            endingLineNumber = "251"
             landmarkName = "-actionClick_Shutter_OSMOManualmodeView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -238,11 +238,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
-            timestampString = "481897787.827036"
+            timestampString = "482051790.291586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "265"
-            endingLineNumber = "265"
+            startingLineNumber = "258"
+            endingLineNumber = "258"
             landmarkName = "-actionClick_WhiteBalance_OSMOManualmodeView:"
             landmarkType = "5">
          </BreakpointContent>
@@ -254,11 +254,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/view/capturetool/rightsettingbar/OSMORightSettingView.m"
-            timestampString = "481795952.953197"
+            timestampString = "482035736.975538"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-clickHandleCameraButton:"
             landmarkType = "5">
          </BreakpointContent>
@@ -318,28 +318,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XXKit/UI/Camera/event/OSMOEventAction.m"
-            timestampString = "481897787.827036"
+            timestampString = "482051790.291586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "273"
-            endingLineNumber = "273"
+            startingLineNumber = "266"
+            endingLineNumber = "266"
             landmarkName = "-_showPickerView:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XXKit/UI/Camera/event/OSMOStatusObserveManager.m"
-            timestampString = "481897885.927234"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "248"
-            endingLineNumber = "248"
-            landmarkName = "-dealViewManagerStateLogicRight"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -446,12 +430,12 @@
                   moduleName = "XXKit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/view/firstview/leftMenu/OSMOCapturePhotoModeView.m"
-                  timestampString = "481898170.987678"
+                  timestampString = "482051791.408228"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "107"
                   endingLineNumber = "107"
-                  offsetFromSymbolStart = "92">
+                  offsetFromSymbolStart = "86">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -461,12 +445,12 @@
                   moduleName = "XXKit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/view/firstview/leftMenu/OSMOCapturePhotoModeView.m"
-                  timestampString = "481898170.987787"
+                  timestampString = "482051791.409116"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "107"
                   endingLineNumber = "107"
-                  offsetFromSymbolStart = "112">
+                  offsetFromSymbolStart = "101">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -494,12 +478,12 @@
                   moduleName = "XXKit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/view/secondview/OSMOCaptureModeSelectView.m"
-                  timestampString = "481898170.988387"
+                  timestampString = "482051791.418053"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "254"
                   endingLineNumber = "254"
-                  offsetFromSymbolStart = "92">
+                  offsetFromSymbolStart = "84">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -509,12 +493,124 @@
                   moduleName = "XXKit"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/view/secondview/OSMOCaptureModeSelectView.m"
-                  timestampString = "481898170.988503"
+                  timestampString = "482051791.418171"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "254"
                   endingLineNumber = "254"
                   offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/view/firstview/rightMenu/OSMOMenuController.m"
+            timestampString = "482051790.291586"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "-_setUIMetexSelected:cell:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/view/firstview/rightMenu/OSMOMenuController.m"
+            timestampString = "482046218.988596"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/view/firstview/rightMenu/OSMOMenuController.m"
+            timestampString = "482046218.988596"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/view/firstview/rightMenu/OSMOMenuController.m"
+            timestampString = "482036610.553364"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-refreshViewForIPhoneCameraMode"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "XXKit/UI/Camera/camera/DJIIPhoneCameraModel.h"
+            timestampString = "482050904.533795"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "gridStyle"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DJIIPhoneCameraModel gridStyle]"
+                  moduleName = "XXKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/camera/DJIIPhoneCameraModel.h"
+                  timestampString = "482051791.464445"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DJIIPhoneCameraModel setGridStyle:]"
+                  moduleName = "XXKit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tomxiang/private/XXKit/XXKit/UI/Camera/camera/DJIIPhoneCameraModel.h"
+                  timestampString = "482051791.464561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
                </Location>
             </Locations>
          </BreakpointContent>

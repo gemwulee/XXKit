@@ -84,8 +84,8 @@ typedef NS_ENUM(NSUInteger, DJIIPhoneContextualMode){
 typedef NS_ENUM(NSUInteger, DJIIPhoneGridStyle) {
     DJIIPhone_GridNoneStyle =  0,            //无
     DJIIPhone_GridCircleDiagonalStyle,       //网格＋对角线
-    DJIIPhone_SquareStyle,                   //方格
-    DJIIPhon_eCenterPointStyle               //中心点
+    DJIIPhone_GridSquareStyle,                   //方格
+    DJIIPhone_GridCenterPointStyle               //中心点
 };
 
 //滤镜模式
@@ -110,6 +110,14 @@ typedef NS_ENUM(NSUInteger,DJIIPhoneResulotion){
     DJIIPhone_AVCaptureSessionPresetInputPriority
 };
 
-
+//白平衡
+typedef NS_ENUM(NSUInteger,DJIIPhoneWhiteBalanceStyle){
+    DJIIPhone_WhiteBalanceAuto = 0,
+    DJIIPhone_WhiteBalanceIndoor,     //阴天
+    DJIIPhone_WhiteBalanceNeon,       //荧光灯
+    DJIIPhone_WhiteBalanceOutdoor,    //晴天
+    DJIIPhone_WhiteBalancetTungsten,  //白织灯
+    DJIIPhone_WhiteBalanceCustom      //自定义
+};
 
 #endif /* DJIIPhoneConfig_h */

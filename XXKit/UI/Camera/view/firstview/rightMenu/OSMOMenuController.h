@@ -16,4 +16,6 @@
 
 -(instancetype)initWithPlistKey:(NSString*) plistkey withModel:(DJIIPhoneCameraModel*) model camera:(OSMOEventAction*) cameraAction;
 
+-(void) refreshViewForIPhoneCameraMode;
+
 @end

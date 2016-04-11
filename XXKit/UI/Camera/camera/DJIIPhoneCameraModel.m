@@ -48,6 +48,12 @@
     self.photoMode = DJIIPhone_PhotoSingleMode;
     self.photoSingleModeDetail = DJIIPhone_PhotoSingleModeDetail_Single_Normal;
     self.photoPanoModeDetail   = DJIIPhone_PhotoPanoModeDetail_180;
+
+    //白平衡
+    self.balanceWhiteBalanceMode = DJIIPhone_WhiteBalanceAuto;
+    
+    //网格模式
+    self.gridStyle = DJIIPhone_GridNoneStyle;
 }
 
 @end

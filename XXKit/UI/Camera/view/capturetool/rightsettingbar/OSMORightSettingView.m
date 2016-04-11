@@ -90,7 +90,9 @@
     _gimbalButton.frame   = CGRectMake(_cameraButton.right, 0, divideWidth, self.height);
     _settingButton.frame  = CGRectMake(_gimbalButton.right, 0, divideWidth, self.height);
 }
--(void) refreshViewForIPhoneCameraMode{}
+-(void) refreshViewForIPhoneCameraMode{
+
+}
 
 -(void) restoreDefaultStatus{
     for(OSMOStateButton *button in self.arrayButtons){

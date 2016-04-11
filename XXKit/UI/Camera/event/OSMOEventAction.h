@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "DJIIPhoneConfig.h"
+
 @class DJIIPhoneCameraViewController;
 @class DJIIPhoneCameraModel;
 @class OSMOIPhoneViewController;
@@ -52,7 +54,9 @@
 - (void)actionClick_SettingButton_OSMORightSettingView:(id) sender;
 
 #pragma mark- right left first
-//- (void) onSwitchChanged:(OSMOTableObject*)object status:(BOOL)isOn;
+- (void) onSwitchChanged:(OSMOTableObject*)object status:(BOOL)isOn;
+- (void) onActionClickWhiteBalanceMetux:(OSMOTableObject*) object status:(DJIIPhoneWhiteBalanceStyle) whiteBalance;
+- (void) onActionClickGridMetux:(OSMOTableObject*) object status:(DJIIPhoneGridStyle) gridStyle;
 
 #pragma mark- manualMode tool
 - (void)actionClick_ISO_OSMOManualmodeView:(id) sender;

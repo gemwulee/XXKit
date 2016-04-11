@@ -36,12 +36,13 @@
 //视频分辨率
 @property(nonatomic,assign,readwrite) DJIIPhoneResulotion resolution;
 //白平衡
-@property(nonatomic,assign,readwrite) AVCaptureWhiteBalanceTemperatureAndTintValues balanceAndTintValues;
+@property(nonatomic,assign,readwrite) DJIIPhoneWhiteBalanceStyle balanceWhiteBalanceMode;
 //闪光灯
 @property(nonatomic,assign,readwrite) BOOL flashlight;
 //情景模式
 @property(nonatomic,assign,readwrite) DJIIPhoneContextualMode contextualMode;
-
+//网格
+@property(nonatomic,assign,readwrite) DJIIPhoneGridStyle gridStyle;
 
 //----------------照相机--------------
 //拍摄模式
